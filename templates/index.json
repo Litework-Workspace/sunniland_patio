@@ -45,32 +45,6 @@
         "button_background": "#ffffff"
       }
     },
-    "featured-collections": {
-      "type": "featured-collections",
-      "blocks": {
-        "featured-collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": "",
-            "grid_items_count": 8,
-            "button_text": "View all products"
-          }
-        }
-      },
-      "block_order": [
-        "featured-collection-0"
-      ],
-      "settings": {
-        "title": "Featured collection",
-        "layout_mode": "grid",
-        "show_product_info": true,
-        "show_vendor": false,
-        "show_color_swatch": false,
-        "grid_mobile_items_per_row": "2",
-        "grid_desktop_items_per_row": 4
-      }
-    },
     "collection-list": {
       "type": "collection-list",
       "blocks": {
@@ -78,13 +52,14 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "image": "shopify:\/\/shop_images\/st.catherine-sling-alloy.jpg",
             "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "Sub-heading",
-            "title": "Collection name",
-            "button_text": "View products",
+            "content_position": "bottomCenter",
+            "subheading": "",
+            "title": "",
+            "button_text": "Dining Sets",
             "button_link": "",
-            "apply_overlay": true
+            "apply_overlay": false
           }
         },
         "collection-1": {
@@ -120,7 +95,7 @@
         "collection-2"
       ],
       "settings": {
-        "image_size": "normal",
+        "image_size": "small",
         "add_spacing": true,
         "expand_collection": false,
         "stack_on_mobile": true,
@@ -130,6 +105,7 @@
     },
     "featured-product": {
       "type": "featured-product",
+      "disabled": true,
       "blocks": {
         "product-meta": {
           "type": "product_meta",
@@ -173,6 +149,32 @@
         "title": "Featured product",
         "show_headings_on_mobile": true,
         "product": ""
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "featured-collection-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "ledge-lounger-pool-furniture",
+            "title": "Best Sellers",
+            "grid_items_count": 8,
+            "button_text": "Shop All"
+          }
+        }
+      },
+      "block_order": [
+        "featured-collection-0"
+      ],
+      "settings": {
+        "title": "Best Sellers",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": true,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
       }
     },
     "timeline": {
@@ -286,9 +288,9 @@
   },
   "order": [
     "slideshow",
-    "featured-collections",
     "collection-list",
     "featured-product",
+    "featured-collections",
     "timeline",
     "blog-posts",
     "shop-the-look"
