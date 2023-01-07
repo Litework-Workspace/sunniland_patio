@@ -257,6 +257,19 @@
         "button_text": "View all articles"
       }
     },
+    "a99db379-c319-41ad-9aac-158785cb0f55": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "large",
+        "image": "shopify:\/\/shop_images\/067881ed-2117-41f9-9ddf-c37c47eb5af9_1.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "subheading": "",
+        "title": "Find Sunniland on Youtube",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+      }
+    },
     "shop-the-look": {
       "type": "shop-the-look",
       "blocks": {
@@ -301,17 +314,38 @@
         "show_mobile_product_info": false
       }
     },
-    "a99db379-c319-41ad-9aac-158785cb0f55": {
-      "type": "image-with-text-overlay",
+    "654c65c4-1510-4fc8-8c6c-4733e02e3b62": {
+      "type": "testimonials",
+      "blocks": {
+        "template--17486863663400__654c65c4-1510-4fc8-8c6c-4733e02e3b62-1673056524ee598275-0": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Share what your customers are saying about your products, your company...<\/p>"
+          }
+        },
+        "template--17486863663400__654c65c4-1510-4fc8-8c6c-4733e02e3b62-1673056524ee598275-1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Share what your customers are saying about your products, your company...<\/p>"
+          }
+        },
+        "template--17486863663400__654c65c4-1510-4fc8-8c6c-4733e02e3b62-1673056524ee598275-2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Share what your customers are saying about your products, your company...<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17486863663400__654c65c4-1510-4fc8-8c6c-4733e02e3b62-1673056524ee598275-0",
+        "template--17486863663400__654c65c4-1510-4fc8-8c6c-4733e02e3b62-1673056524ee598275-1",
+        "template--17486863663400__654c65c4-1510-4fc8-8c6c-4733e02e3b62-1673056524ee598275-2"
+      ],
       "settings": {
-        "section_size": "large",
-        "image": "shopify:\/\/shop_images\/067881ed-2117-41f9-9ddf-c37c47eb5af9_1.jpg",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30,
-        "subheading": "",
-        "title": "Find Sunniland on Youtube",
-        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "#eaeaea",
+        "text_color": "#1c1b1b"
       }
     }
   },
@@ -323,7 +357,8 @@
     "4bc92e0f-c367-49c4-af19-f17b0bece191",
     "timeline",
     "blog-posts",
+    "a99db379-c319-41ad-9aac-158785cb0f55",
     "shop-the-look",
-    "a99db379-c319-41ad-9aac-158785cb0f55"
+    "654c65c4-1510-4fc8-8c6c-4733e02e3b62"
   ]
 }
