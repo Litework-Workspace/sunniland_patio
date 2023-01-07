@@ -6,10 +6,15 @@
         "slide-0": {
           "type": "image",
           "settings": {
-            "apply_overlay": true,
+            "mobile_image": "shopify:\/\/shop_images\/Image_1.png",
+            "apply_overlay": false,
             "content_position": "bottomLeft",
-            "subheading": "Slide title",
-            "title": "Tell your story"
+            "subheading": "Build Your Perfect",
+            "title": "Staycation Space",
+            "button_1_text": "Patio",
+            "button_1_link": "",
+            "button_2_text": "Repairs",
+            "button_2_link": ""
           }
         },
         "slide-1": {
@@ -18,7 +23,11 @@
             "apply_overlay": true,
             "content_position": "bottomLeft",
             "subheading": "Slide title",
-            "title": "Tell your story"
+            "title": "Tell your story",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
           }
         }
       },
@@ -32,29 +41,8 @@
         "autoplay": true,
         "cycle_speed": 5,
         "text_color": "#ffffff",
-        "button_color": "#363636"
-      }
-    },
-    "featured-collections": {
-      "type": "featured-collections",
-      "blocks": {
-        "featured-collection-0": {
-          "type": "collection",
-          "settings": {
-            "grid_items_count": 8,
-            "button_text": "View all products"
-          }
-        }
-      },
-      "block_order": [
-        "featured-collection-0"
-      ],
-      "settings": {
-        "title": "Featured collection",
-        "layout_mode": "grid",
-        "show_product_info": true,
-        "grid_mobile_items_per_row": "2",
-        "grid_desktop_items_per_row": 4
+        "button_color": "#363636",
+        "button_background": "#ffffff"
       }
     },
     "collection-list": {
@@ -63,27 +51,40 @@
         "collection-0": {
           "type": "collection",
           "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/st.catherine-sling-alloy.jpg",
             "image_alignment": "center center",
-            "subheading": "Sub-heading",
-            "button_text": "View products",
-            "apply_overlay": true
+            "content_position": "bottomCenter",
+            "subheading": "",
+            "title": "",
+            "button_text": "Dining Sets",
+            "button_link": "",
+            "apply_overlay": false
           }
         },
         "collection-1": {
           "type": "collection",
           "settings": {
+            "collection": "",
             "image_alignment": "center center",
+            "content_position": "bottomLeft",
             "subheading": "Sub-heading",
+            "title": "Collection name",
             "button_text": "View products",
+            "button_link": "",
             "apply_overlay": true
           }
         },
         "collection-2": {
           "type": "collection",
           "settings": {
+            "collection": "",
             "image_alignment": "center center",
+            "content_position": "bottomLeft",
             "subheading": "Sub-heading",
+            "title": "Collection name",
             "button_text": "View products",
+            "button_link": "",
             "apply_overlay": true
           }
         }
@@ -94,18 +95,25 @@
         "collection-2"
       ],
       "settings": {
+        "image_size": "small",
         "add_spacing": true,
         "expand_collection": false,
+        "stack_on_mobile": true,
         "text_color": "#ffffff",
         "button_color": "#363636"
       }
     },
     "featured-product": {
       "type": "featured-product",
+      "disabled": true,
       "blocks": {
         "product-meta": {
           "type": "product_meta",
           "settings": {
+            "show_vendor": true,
+            "show_sku": false,
+            "show_product_rating": false,
+            "show_taxes_included": false
           }
         },
         "share-buttons": {
@@ -116,11 +124,17 @@
         "variant-selector": {
           "type": "variant_selector",
           "settings": {
+            "selector_mode": "dropdown",
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "size_chart": ""
           }
         },
         "buy-buttons": {
           "type": "buy_buttons",
           "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": true
           }
         }
       },
@@ -131,11 +145,54 @@
         "buy-buttons"
       ],
       "settings": {
-        "title": "Featured product"
+        "subheading": "",
+        "title": "Featured product",
+        "show_headings_on_mobile": true,
+        "product": ""
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "featured-collection-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "ledge-lounger-pool-furniture",
+            "title": "Best Sellers",
+            "grid_items_count": 8,
+            "button_text": "Shop All"
+          }
+        }
+      },
+      "block_order": [
+        "featured-collection-0"
+      ],
+      "settings": {
+        "title": "Best Sellers",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": true,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "4bc92e0f-c367-49c4-af19-f17b0bece191": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "large",
+        "image": "shopify:\/\/shop_images\/46fc9616-a0b0-4843-86a5-efe68f1e35a3_1.png",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "subheading": "",
+        "title": "Sustainability Actions by SunnilandPatio Team",
+        "content": "<p>Idea of planting trees towards planet conscious ecommerce brand<\/p>"
       }
     },
     "timeline": {
       "type": "timeline",
+      "disabled": true,
       "blocks": {
         "item-0": {
           "type": "item",
@@ -149,6 +206,7 @@
         },
         "item-1": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "apply_overlay": true,
             "title": "2001",
@@ -159,6 +217,7 @@
         },
         "item-2": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "apply_overlay": true,
             "title": "2002",
@@ -183,7 +242,7 @@
         "blog-0": {
           "type": "blog",
           "settings": {
-            "blog": "news"
+            "blog": "sunniblog"
           }
         }
       },
@@ -191,22 +250,41 @@
         "blog-0"
       ],
       "settings": {
+        "subheading": "Will be DIY Tutorials",
         "title": "Featured article",
         "show_category": false,
+        "button_link": "",
         "button_text": "View all articles"
+      }
+    },
+    "a99db379-c319-41ad-9aac-158785cb0f55": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "large",
+        "image": "shopify:\/\/shop_images\/067881ed-2117-41f9-9ddf-c37c47eb5af9_1.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "subheading": "",
+        "title": "Find Sunniland on Youtube",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
       }
     },
     "shop-the-look": {
       "type": "shop-the-look",
+      "disabled": true,
       "blocks": {
         "look-0": {
           "type": "look",
           "settings": {
             "dot_style": "light",
+            "product_1": "",
             "product_1_horizontal_position": 30,
             "product_1_vertical_position": 40,
+            "product_2": "",
             "product_2_horizontal_position": 45,
             "product_2_vertical_position": 65,
+            "product_3": "",
             "product_3_horizontal_position": 70,
             "product_3_vertical_position": 50
           }
@@ -215,10 +293,13 @@
           "type": "look",
           "settings": {
             "dot_style": "light",
+            "product_1": "",
             "product_1_horizontal_position": 25,
             "product_1_vertical_position": 45,
+            "product_2": "",
             "product_2_horizontal_position": 55,
             "product_2_vertical_position": 30,
+            "product_3": "",
             "product_3_horizontal_position": 65,
             "product_3_vertical_position": 60
           }
@@ -230,17 +311,55 @@
       ],
       "settings": {
         "subheading": "Shop",
-        "title": "Our looks"
+        "title": "Our looks",
+        "show_mobile_product_info": false
+      }
+    },
+    "654c65c4-1510-4fc8-8c6c-4733e02e3b62": {
+      "type": "testimonials",
+      "blocks": {
+        "template--17486863663400__654c65c4-1510-4fc8-8c6c-4733e02e3b62-1673056524ee598275-0": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Share what your customers are saying about your products, your company...<\/p>"
+          }
+        },
+        "template--17486863663400__654c65c4-1510-4fc8-8c6c-4733e02e3b62-1673056524ee598275-1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Share what your customers are saying about your products, your company...<\/p>"
+          }
+        },
+        "template--17486863663400__654c65c4-1510-4fc8-8c6c-4733e02e3b62-1673056524ee598275-2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Share what your customers are saying about your products, your company...<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17486863663400__654c65c4-1510-4fc8-8c6c-4733e02e3b62-1673056524ee598275-0",
+        "template--17486863663400__654c65c4-1510-4fc8-8c6c-4733e02e3b62-1673056524ee598275-1",
+        "template--17486863663400__654c65c4-1510-4fc8-8c6c-4733e02e3b62-1673056524ee598275-2"
+      ],
+      "settings": {
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "#eaeaea",
+        "text_color": "#1c1b1b"
       }
     }
   },
   "order": [
     "slideshow",
-    "featured-collections",
     "collection-list",
     "featured-product",
+    "featured-collections",
+    "4bc92e0f-c367-49c4-af19-f17b0bece191",
     "timeline",
     "blog-posts",
-    "shop-the-look"
+    "a99db379-c319-41ad-9aac-158785cb0f55",
+    "shop-the-look",
+    "654c65c4-1510-4fc8-8c6c-4733e02e3b62"
   ]
 }
