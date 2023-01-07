@@ -9,7 +9,7 @@
     "product_on_sale_color": "#f94c43",
     "button_background": "#5c5c5c",
     "button_text_color": "#ffffff",
-    "header_background": "#5c5c5c",
+    "header_background": "#263238",
     "header_heading_color": "#ffffff",
     "header_light_color": "#939393",
     "footer_background": "#ffffff",
@@ -59,8 +59,8 @@
         "settings": {
           "enable_bar": true,
           "home_page_only": false,
-          "background": "#f3f3f3",
-          "text_color": "#5c5c5c",
+          "background": "#1e272c",
+          "text_color": "#ffffff",
           "content": "Announce something here",
           "link": ""
         }
