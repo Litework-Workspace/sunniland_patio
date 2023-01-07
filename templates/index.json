@@ -177,8 +177,22 @@
         "grid_desktop_items_per_row": 4
       }
     },
+    "4bc92e0f-c367-49c4-af19-f17b0bece191": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "large",
+        "image": "shopify:\/\/shop_images\/46fc9616-a0b0-4843-86a5-efe68f1e35a3_1.png",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "subheading": "",
+        "title": "Sustainability Actions by SunnilandPatio Team",
+        "content": "<p>Idea of planting trees towards planet conscious ecommerce brand<\/p>"
+      }
+    },
     "timeline": {
       "type": "timeline",
+      "disabled": true,
       "blocks": {
         "item-0": {
           "type": "item",
@@ -192,6 +206,7 @@
         },
         "item-1": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "apply_overlay": true,
             "title": "2001",
@@ -202,6 +217,7 @@
         },
         "item-2": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "apply_overlay": true,
             "title": "2002",
@@ -226,7 +242,7 @@
         "blog-0": {
           "type": "blog",
           "settings": {
-            "blog": "news"
+            "blog": "sunniblog"
           }
         }
       },
@@ -234,7 +250,7 @@
         "blog-0"
       ],
       "settings": {
-        "subheading": "",
+        "subheading": "Will be DIY Tutorials",
         "title": "Featured article",
         "show_category": false,
         "button_link": "",
@@ -291,6 +307,7 @@
     "collection-list",
     "featured-product",
     "featured-collections",
+    "4bc92e0f-c367-49c4-af19-f17b0bece191",
     "timeline",
     "blog-posts",
     "shop-the-look"
