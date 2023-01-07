@@ -300,6 +300,19 @@
         "title": "Our looks",
         "show_mobile_product_info": false
       }
+    },
+    "a99db379-c319-41ad-9aac-158785cb0f55": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "large",
+        "image": "shopify:\/\/shop_images\/067881ed-2117-41f9-9ddf-c37c47eb5af9_1.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "subheading": "",
+        "title": "Find Sunniland on Youtube",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+      }
     }
   },
   "order": [
@@ -310,6 +323,7 @@
     "4bc92e0f-c367-49c4-af19-f17b0bece191",
     "timeline",
     "blog-posts",
-    "shop-the-look"
+    "shop-the-look",
+    "a99db379-c319-41ad-9aac-158785cb0f55"
   ]
 }
