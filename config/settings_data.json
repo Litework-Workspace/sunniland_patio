@@ -38,6 +38,9 @@
     "cart_enable_notes": true,
     "cart_show_free_shipping_threshold": false,
     "cart_free_shipping_threshold": "50",
+    "social_facebook": "#",
+    "social_instagram": "#",
+    "social_youtube": "#",
     "checkout_logo_position": "center",
     "checkout_logo_size": "small",
     "checkout_body_background_color": "#fff",
@@ -91,7 +94,7 @@
             "settings": {
               "title": "About the shop",
               "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
-              "show_social_media": false
+              "show_social_media": true
             }
           },
           "footer-2": {
