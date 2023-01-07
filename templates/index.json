@@ -272,6 +272,7 @@
     },
     "shop-the-look": {
       "type": "shop-the-look",
+      "disabled": true,
       "blocks": {
         "look-0": {
           "type": "look",
