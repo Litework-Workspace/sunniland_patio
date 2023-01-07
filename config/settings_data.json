@@ -1,12 +1,5 @@
 {
   "current": {
-    "checkout_logo_position": "center",
-    "checkout_logo_size": "small",
-    "checkout_body_background_color": "#fff",
-    "checkout_input_background_color_mode": "white",
-    "checkout_sidebar_background_color": "#fafafa",
-    "checkout_accent_color": "#323232",
-    "checkout_button_color": "#5c5c5c",
     "heading_color": "#5c5c5c",
     "text_color": "#5c5c5c",
     "text_light_color": "#939393",
@@ -22,12 +15,12 @@
     "footer_background": "#ffffff",
     "footer_heading_color": "#5c5c5c",
     "footer_text_color": "#939393",
+    "navigation_background": "#ffffff",
+    "navigation_text_color": "#5c5c5c",
     "newsletter_popup_background": "#ffffff",
     "newsletter_popup_text_color": "#1c1b1b",
     "secondary_elements_background": "#5c5c5c",
     "secondary_elements_text_color": "#ffffff",
-    "navigation_background": "#ffffff",
-    "navigation_text_color": "#5c5c5c",
     "heading_font": "futura_n4",
     "heading_size": "large",
     "uppercase_heading": false,
@@ -45,30 +38,48 @@
     "cart_enable_notes": true,
     "cart_show_free_shipping_threshold": false,
     "cart_free_shipping_threshold": "50",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "small",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_accent_color": "#323232",
+    "checkout_button_color": "#5c5c5c",
     "sections": {
       "sidebar-menu": {
         "type": "sidebar-menu",
         "settings": {
           "primary_menu": "main-menu",
+          "secondary_menu": "",
           "show_social_media": true
         }
       },
       "announcement": {
         "type": "announcement",
         "settings": {
+          "enable_bar": true,
+          "home_page_only": false,
           "background": "#f3f3f3",
           "text_color": "#5c5c5c",
-          "content": "Announce something here"
+          "content": "Announce something here",
+          "link": ""
         }
       },
       "header": {
         "type": "header",
         "settings": {
           "use_sticky_header": true,
+          "logo": "shopify:\/\/shop_images\/sunnilandpatio-com-logo-white-1_231a0aa5-3663-4dd7-8c10-ab757f715d32.png",
           "logo_max_width": 140,
+          "mobile_logo_max_width": 90,
+          "show_country_selector": false,
+          "show_locale_selector": true,
           "navigation_menu": "main-menu",
           "navigation_style": "center",
+          "show_icons": false,
           "enable_transparent_header": true,
+          "enable_transparent_header_collection": false,
+          "show_transparent_header_border": true,
           "transparent_text_color": "#ffffff"
         }
       },
@@ -103,10 +114,28 @@
           "footer-2"
         ],
         "settings": {
-          "show_payment_methods": true
+          "show_payment_methods": true,
+          "show_country_selector": true,
+          "show_locale_selector": true
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "show_popup": false,
+          "show_only_on_index": true,
+          "show_only_for_visitors": true,
+          "show_only_once": true,
+          "title": "Popup",
+          "content": "<p>You can use this popup to display some useful information to your customers.<\/p>",
+          "show_newsletter": true,
+          "apparition_delay": 5
         }
       }
-    }
+    },
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Allure": {
