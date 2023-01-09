@@ -6,6 +6,7 @@
         "slide-0": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Van_Dyke_Seating_1.png",
             "mobile_image": "shopify:\/\/shop_images\/Image_1.png",
             "apply_overlay": false,
             "content_position": "bottomLeft",
