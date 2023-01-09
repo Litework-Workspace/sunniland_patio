@@ -416,6 +416,13 @@ th {
   .hidden-phone {
     display: none !important;
   }
+}
+
+@media screen and (min-width: 1140px) {
+  .hidden-phone-desktop {
+    display: none !important;
+  }
+}
 
   .\31\/2--phone, .\32\/4--phone, .\36\/12--phone {
     width: 50%;
