@@ -74,7 +74,7 @@
           "use_sticky_header": false,
           "logo": "shopify:\/\/shop_images\/sunnilandpatio-com-logo-white-1_231a0aa5-3663-4dd7-8c10-ab757f715d32.png",
           "logo_max_width": 140,
-          "mobile_logo_max_width": 180,
+          "mobile_logo_max_width": 145,
           "show_country_selector": false,
           "show_locale_selector": false,
           "navigation_menu": "main-menu",
