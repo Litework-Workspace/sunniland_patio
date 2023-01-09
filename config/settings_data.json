@@ -76,13 +76,13 @@
           "logo_max_width": 140,
           "mobile_logo_max_width": 145,
           "show_country_selector": false,
-          "show_locale_selector": true,
+          "show_locale_selector": false,
           "navigation_menu": "main-menu",
           "navigation_style": "center",
           "show_icons": false,
           "enable_transparent_header": false,
           "enable_transparent_header_collection": false,
-          "show_transparent_header_border": true,
+          "show_transparent_header_border": false,
           "transparent_text_color": "#ffffff"
         }
       },
