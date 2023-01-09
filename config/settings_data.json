@@ -78,7 +78,7 @@
           "show_country_selector": false,
           "show_locale_selector": true,
           "navigation_menu": "main-menu",
-          "navigation_style": "center",
+          "navigation_style": "logoLeft",
           "show_icons": false,
           "enable_transparent_header": false,
           "enable_transparent_header_collection": false,
