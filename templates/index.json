@@ -189,7 +189,11 @@
         "overlay_opacity": 30,
         "subheading": "",
         "title": "Sustainability Actions by SunnilandPatio Team",
-        "content": "<p>Idea of planting trees towards planet conscious ecommerce brand<\/p>"
+        "content": "<p>Idea of planting trees towards planet conscious ecommerce brand<\/p>",
+        "button_1_text": "Learn More",
+        "button_1_link": "",
+        "button_2_text": "",
+        "button_2_link": ""
       }
     },
     "timeline": {
@@ -269,7 +273,11 @@
         "overlay_opacity": 30,
         "subheading": "",
         "title": "Find Sunniland on Youtube",
-        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "button_1_text": "",
+        "button_1_link": "",
+        "button_2_text": "",
+        "button_2_link": ""
       }
     },
     "shop-the-look": {
