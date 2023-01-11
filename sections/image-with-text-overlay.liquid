@@ -40,10 +40,33 @@
               {%- endif -%}
             </header>
           {%- endif -%}
+
+          {% comment %} Star of button on image overlay {% endcomment %}
+          {%- if block.settings.button_1_text != blank and block.settings.button_2_text != blank -%}
+              {%- assign has_two_buttons = true -%}
+            {%- else -%}
+              {%- assign has_two_buttons = false -%}
+            {%- endif -%}
+
+            {%- if block.settings.button_1_text != blank or block.settings.button_2_text != blank -%}
+              <div class="SectionHeader__ButtonWrapper">
+                <div class="ButtonGroup ButtonGroup--spacingSmall {% if has_two_buttons %}ButtonGroup--sameSize{% endif %}">
+                  {%- if block.settings.button_1_text != blank -%}
+                    <a href="{{ block.settings.button_1_link }}" class="ButtonGroup__Item Button">{{ block.settings.button_1_text | escape }}</a>
+                  {%- endif -%}
+
+                  {%- if block.settings.button_2_text != blank -%}
+                    <a href="{{ block.settings.button_2_link }}" class="ButtonGroup__Item Button">{{ block.settings.button_2_text | escape }}</a>
+                  {%- endif -%}
+                </div>
+              </div>
+            {%- endif -%}
+          {% comment %} End of button on image overlay {% endcomment %}
+
         </div>
       {%- endif -%}
-    </div>
-  </div>
+      </div>
+      </div>
 </section>
 
 <style>
@@ -126,7 +149,35 @@
       "id": "content",
       "label": "Text",
       "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
-    }
+    },
+    {
+          "type": "header",
+          "content": "Button 1"
+        },
+        {
+          "type": "text",
+          "id": "button_1_text",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "button_1_link",
+          "label": "Link"
+        },
+        {
+          "type": "header",
+          "content": "Button 2"
+        },
+        {
+          "type": "text",
+          "id": "button_2_text",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "button_2_link",
+          "label": "Link"
+        }
   ],
   "presets": [
     {
