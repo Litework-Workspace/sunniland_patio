@@ -79,6 +79,16 @@
     {%- assign overlay_opacity = section.settings.overlay_opacity | divided_by: 100.0 -%}
     background-color: {{ section.settings.overlay_color | color_modify: 'alpha', overlay_opacity }};
   }
+
+  #section-{{ section.id }} .Button {
+    color: {{ section.settings.button_color }};
+    {% comment %} border-color: {{ section.settings.button_background }}; {% endcomment %}
+  }
+
+  #section-{{ section.id }} .Button::before {
+    background-color: {{ section.settings.button_background }};
+    border-radius: 50px
+  }
 </style>
 
 {% schema %}
@@ -177,7 +187,20 @@
           "type": "url",
           "id": "button_2_link",
           "label": "Link"
+        },
+        {
+          "type": "color",
+          "id": "button_color",
+          "label": "Button text",
+          "default": "#363636"
+        },
+        {
+          "type": "color",
+          "id": "button_background",
+          "label": "Button background",
+          "default": "#ffffff"
         }
+        
   ],
   "presets": [
     {
