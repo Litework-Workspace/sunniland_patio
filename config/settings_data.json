@@ -27,6 +27,7 @@
     "text_font": "century_gothic_n4",
     "base_text_font_size": 15,
     "show_page_transition": false,
+    "show_button_transition": false,
     "search_mode": "product,article",
     "product_show_price_on_hover": true,
     "product_show_secondary_image": false,

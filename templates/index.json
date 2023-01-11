@@ -193,7 +193,9 @@
         "button_1_text": "Learn More",
         "button_1_link": "",
         "button_2_text": "",
-        "button_2_link": ""
+        "button_2_link": "",
+        "button_color": "#323232",
+        "button_background": "#ffffff"
       }
     },
     "timeline": {
@@ -274,10 +276,12 @@
         "subheading": "",
         "title": "Find Sunniland on Youtube",
         "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-        "button_1_text": "",
+        "button_1_text": "Watch Tutorials",
         "button_1_link": "",
         "button_2_text": "",
-        "button_2_link": ""
+        "button_2_link": "",
+        "button_color": "#363636",
+        "button_background": "#ffffff"
       }
     },
     "shop-the-look": {
