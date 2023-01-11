@@ -392,6 +392,8 @@ HEADER CONTENT
       {%- endif -%}
     </div>
 
+
+
     <div class="Header__FlexItem Header__FlexItem--fill">
       {%- unless section.settings.show_icons or use_sidebar_menu -%}
         <nav class="Header__SecondaryNav hidden-phone">
@@ -413,11 +415,16 @@ HEADER CONTENT
             {%- endif -%}
 
             <li class="HorizontalList__Item">
-              <a href="{{ routes.search_url }}" class="Heading Link Link--primary Text--subdued u-h8" data-action="toggle-search">{{ 'header.navigation.search' | t }}</a>
+              <a href="{{ routes.search_url }}" class="Heading Link Link--primary Text--subdued u-h8" data-action="toggle-search">{{ 'header.navigation.search' | t }}
+                {{}}
+                {%- render 'icon' with 'search-desktop' -%}</a>
+              
             </li>
 
             <li class="HorizontalList__Item">
-              <a href="{{ routes.cart_url }}" class="Heading u-h6" {% unless template == 'cart' or settings.cart_type == 'page' %}data-action="open-drawer" data-drawer-id="sidebar-cart" aria-label="{{ 'header.navigation.open_cart' | t }}"{% endunless %}>{{ 'header.navigation.cart' | t }} (<span class="Header__CartCount">{{ cart.item_count }}</span>)</a>
+              <a href="{{ routes.cart_url }}" class="Heading u-h6" {% unless template == 'cart' or settings.cart_type == 'page' %}data-action="open-drawer" data-drawer-id="sidebar-cart" aria-label="{{ 'header.navigation.open_cart' | t }}"{% endunless %}>{{ 'header.navigation.cart' | t }} (<span class="Header__CartCount">{{ cart.item_count }}</span>)
+              {{}}
+              {%- render 'icon' with 'cart' -%}</a>
             </li>
           </ul>
         </nav>
@@ -446,10 +453,10 @@ HEADER CONTENT
       {%- endif -%}
 
 
-      <a href="{{ routes.search_url }}" class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable {% unless section.settings.show_icons or use_sidebar_menu %}hidden-desk{% endunless %}" data-action="toggle-search" aria-label="{{ 'header.navigation.search' | t }}">
+      {% comment %} <a href="{{ routes.search_url }}" class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable {% unless section.settings.show_icons or use_sidebar_menu %}hidden-desk{% endunless %}" data-action="toggle-search" aria-label="{{ 'header.navigation.search' | t }}">
         <span class="hidden-tablet-and-up">{%- render 'icon' with 'search' -%}</span>
         <span class="hidden-phone">{%- render 'icon' with 'search-desktop' -%}</span>
-      </a>
+      </a> {% endcomment %}
 
       <a href="{{ routes.cart_url }}" class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable {% unless section.settings.show_icons or use_sidebar_menu %}hidden-desk{% endunless %}" {% if settings.cart_type == 'drawer' %}data-action="open-drawer" data-drawer-id="sidebar-cart" aria-expanded="false" aria-label="{{ 'header.navigation.open_cart' | t }}"{% endif %}>
         <span class="hidden-tablet-and-up">{%- render 'icon' with 'cart' -%}</span>
@@ -459,6 +466,31 @@ HEADER CONTENT
     </div>
   </div>
 
+  <div class="Search__Inner hide-on-desktop">
+    <div class="Search__SearchBar">
+      <form action="{{ routes.search_url }}" name="GET" role="search" class="Search__Form">
+        <div class="Search__InputIconWrapper">
+          <span class="hidden-tablet-and-up">{%- render 'icon' with 'search' -%}</span>
+          <span class="hidden-phone">{%- render 'icon' with 'search-desktop' -%}</span>
+        </div>
+
+        <input type="search" class="Search__Input Heading" name="q" autocomplete="off" autocorrect="off" autocapitalize="off" aria-label="{{ 'search.general.input_placeholder' | t }}" placeholder="{{ 'search.general.input_placeholder' | t }}" autofocus>
+        <input type="hidden" name="type" value="product">
+        <input type="hidden" name="options[prefix]" value="last">
+      </form>
+
+      {% comment %} <button class="Search__Close Link Link--primary" data-action="close-search" aria-label="{{ 'header.navigation.close_search' | t }}">{% render 'icon' with 'close' %}</button> {% endcomment %}
+    </div>
+
+    <div class="Search__Results" aria-hidden="true">
+      {%- if settings.search_mode != 'product' -%}
+        <div class="PageLayout PageLayout--breakLap">
+          <div class="PageLayout__Section"></div>
+          <div class="PageLayout__Section PageLayout__Section--secondary"></div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
 
 </header>
 

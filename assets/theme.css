@@ -10362,9 +10362,19 @@ shopify-payment-terms {
   }
 }
 
+@media screen and (min-width: 1140px) {
+  .hide-on-desktop {
+    display: none !important;
+  }
+}
+
 .Search__SearchBar {
   display: flex;
   align-items: center;
+  padding: 0 1rem;
+  background: #37474F;
+  border: 2px solid transparent;
+  border-radius: 20px;
 }
 
 .Search__Form {
