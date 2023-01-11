@@ -133,11 +133,12 @@
 
   #section-{{ section.id }} .Button {
     color: {{ section.settings.button_color }};
-    border-color: {{ section.settings.button_background }};
+    {% comment %} border-color: {{ section.settings.button_background }}; {% endcomment %}
   }
 
   #section-{{ section.id }} .Button::before {
     background-color: {{ section.settings.button_background }};
+    border-radius: 50px
   }
 
   {%- if settings.show_button_transition -%}

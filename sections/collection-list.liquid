@@ -36,11 +36,12 @@
 
   #section-{{ section.id }} .CollectionItem__Link {
     color: {{ section.settings.button_color }};
-    border-color: {{ section.settings.text_color }};
+    {% comment %} border-color: {{ section.settings.text_color }}; {% endcomment %}
   }
 
   #section-{{ section.id }} .CollectionItem__Link::before {
     background-color: {{ section.settings.text_color }};
+    border-radius: 50px;
   }
 
   {%- if settings.show_button_transition -%}
