@@ -11397,3 +11397,20 @@ shopify-payment-terms {
     margin-top: 65px;
   }
 }
+
+
+/* Newly installed font code */
+
+@font-face {
+  font-family: "Figtree";
+  src: url("Figtree-VariableFont_wght.woff") format("woff");
+}
+@font-face {
+  font-family: "Figtree Italic";
+  src: url("Figtree-Italic-VariableFont_wght.woff") format("woff");
+}
+
+h2 {font-family: "Figtree Italic" !important; }
+
+
+
