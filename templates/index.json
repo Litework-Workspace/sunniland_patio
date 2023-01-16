@@ -89,12 +89,26 @@
             "button_link": "",
             "apply_overlay": true
           }
+        },
+        "1c863ae9-bc07-4caf-bd0a-b158b2388e8c": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
         }
       },
       "block_order": [
         "collection-0",
         "collection-1",
-        "collection-2"
+        "collection-2",
+        "1c863ae9-bc07-4caf-bd0a-b158b2388e8c"
       ],
       "settings": {
         "image_size": "small",
