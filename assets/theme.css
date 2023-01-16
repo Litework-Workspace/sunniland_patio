@@ -1459,7 +1459,7 @@ input.spr-button-primary,
 .spr-pagination-next > a {
   position: relative;
   display: inline-block;
-  padding: 14px 28px;
+  padding: 14px 20px;
   line-height: normal;
   border: 1px solid transparent;
   border-radius: 0;
@@ -6943,7 +6943,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   }
 
   .CollectionItem__Content {
-    padding: 0 40px;
+    padding: 0 6px;
   }
 
   .CollectionItem__Content--bottomLeft,
