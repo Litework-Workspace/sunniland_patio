@@ -70,8 +70,8 @@
             "collection": "",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
-            "subheading": "Sub-heading",
-            "title": "Collection name",
+            "subheading": "",
+            "title": "",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": true
@@ -83,8 +83,8 @@
             "collection": "",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
-            "subheading": "Sub-heading",
-            "title": "Collection name",
+            "subheading": "",
+            "title": "",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": true
