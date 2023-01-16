@@ -69,7 +69,7 @@
           "settings": {
             "collection": "",
             "image_alignment": "center center",
-            "content_position": "bottomLeft",
+            "content_position": "bottomCenter",
             "subheading": "Sub-heading",
             "title": "Collection name",
             "button_text": "View products",
@@ -82,7 +82,7 @@
           "settings": {
             "collection": "",
             "image_alignment": "center center",
-            "content_position": "bottomLeft",
+            "content_position": "bottomCenter",
             "subheading": "Sub-heading",
             "title": "Collection name",
             "button_text": "View products",
