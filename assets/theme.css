@@ -6283,6 +6283,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .js .features--show-element-staggering .ArticleItem {
   visibility: hidden;
+  white-space: normal;
 }
 
 .ArticleItem__ImageWrapper {
@@ -6319,6 +6320,10 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .ArticleItem__Content {
   margin: 0 8px;
+}
+
+.ArticleItem__Title {
+  display: block;
 }
 
 .ArticleItem__Category {
