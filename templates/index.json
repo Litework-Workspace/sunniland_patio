@@ -67,7 +67,7 @@
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "conversation-sets",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
@@ -80,7 +80,7 @@
         "collection-2": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "patio-umbrellas-bases",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
@@ -93,7 +93,7 @@
         "1c863ae9-bc07-4caf-bd0a-b158b2388e8c": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "belden-cushion",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
