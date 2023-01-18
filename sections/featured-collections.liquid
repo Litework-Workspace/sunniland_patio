@@ -21,12 +21,8 @@
 {%- endcapture -%}
 
 <section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="featured-collections" data-settings='{{ section_settings }}'>
-  <header class="SectionHeader SectionHeader--center">
+  <header class="SectionHeader SectionHeader--left">
     <div class="Container">
-    {%- if section.settings.title != blank -%}
-      <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.title | escape }}</h3>
-    {%- endif -%}
-
     {%- if section.blocks.size > 1 -%}
       <div class="SectionHeader__TabList TabList" role="tablist">
         {%- for block in section.blocks -%}
@@ -49,6 +45,10 @@
       {%- else -%}
         <h2 class="SectionHeader__Heading Heading u-h1">{{ 'home_page.onboarding.collection_title' | t }}</h2>
       {%- endif -%}
+    {%- endif -%}
+
+    {%- if section.settings.title != blank -%}
+      <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.title | escape }}</h3>
     {%- endif -%}
     </div>
   </header>
