@@ -32,7 +32,7 @@
           <h3 class="SectionHeader__SubHeading Heading u-h6">{{ block.settings.subheading | escape }}</h3>
         {%- endif -%}
 
-        <h2 class="SectionHeader__Heading SectionHeader__Heading--emphasize Heading u-h1">{{ block.settings.title | default: collection.title | escape }}</h2>
+        {% comment %} <h2 class="SectionHeader__Heading SectionHeader__Heading--emphasize Heading u-h1">{{ block.settings.title | default: collection.title | escape }}</h2> {% endcomment %}
 
         <div class="SectionHeader__ButtonWrapper">
           {%- if block.settings.button_text != blank -%}
