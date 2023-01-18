@@ -45,6 +45,12 @@
       {%- endfor -%}
     </div>
   {%- endif -%}
+
+  {%- if section.settings.button_text != blank -%}
+    <div class="SectionFooter">
+      <a href="{{ section.settings.button_link }}" id="Shop-all_link" class="Button Button--primary">{{ section.settings.button_text | escape }}<img src="/assets/Vector.png" alt=""></a>
+    </div>
+  {%- endif -%}
 </section>
 
 <style>
@@ -91,6 +97,17 @@
       "id": "text_color",
       "label": "Text",
       "default": "#1c1b1b"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Explore"
     }
   ],
   "blocks": [
