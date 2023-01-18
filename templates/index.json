@@ -118,7 +118,9 @@
         "expand_collection": false,
         "stack_on_mobile": true,
         "text_color": "#ffffff",
-        "button_color": "#363636"
+        "button_color": "#363636",
+        "link_text": "Shop all",
+        "shop-all_link": ""
       }
     },
     "featured-product": {
@@ -278,7 +280,7 @@
         "title": "Featured article",
         "show_category": false,
         "button_link": "",
-        "button_text": "View all articles"
+        "button_text": "Explore"
       }
     },
     "a99db379-c319-41ad-9aac-158785cb0f55": {
@@ -376,7 +378,9 @@
         "autoplay": true,
         "cycle_speed": 5,
         "background": "#eaeaea",
-        "text_color": "#1c1b1b"
+        "text_color": "#1c1b1b",
+        "button_link": "",
+        "button_text": "Explore"
       }
     }
   },
