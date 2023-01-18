@@ -40,6 +40,14 @@
       {{ collection_items }}
     </div>
   {%- endif -%}
+
+  {%- if section.settings.link_text != blank -%}
+    <div class="Container">
+      <div class="SectionFooter">
+        <a href="{{ section.settings.shop-all_link }}" class="Button Button--primary">{{ section.settings.link_text | escape }}</a>
+      </div>
+    </div>
+  {%- endif -%}
 </section>
 
 <style>
@@ -133,6 +141,17 @@
       "id": "button_color",
       "label": "Button text",
       "default": "#363636"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Shop All Link Text",
+      "default": "Shop all"
+    },
+    {
+      "type": "url",
+      "id": "shop-all_link",
+      "label": "Shop All Link"
     }
   ],
   "blocks": [
