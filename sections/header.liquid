@@ -163,11 +163,45 @@ HEADER CONTENT
         data-section-settings='{{ section_settings }}'
         role="banner">
   <div class="Header__Wrapper">
+    {%- capture header_logo -%}
+      <a href="{{ routes.root_url }}" class="Header__LogoLink">
+        {%- if section.settings.logo != blank -%}
+          {%- capture image_size -%}{{ section.settings.logo_max_width }}x{%- endcapture -%}
+
+          <img class="Header__LogoImage Header__LogoImage--primary"
+               src="{{ section.settings.logo | img_url: image_size }}"
+               srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
+               width="{{ section.settings.logo.width }}"
+               height="{{ section.settings.logo.height }}"
+               alt="{{ section.settings.logo.alt | default: shop.name | escape }}">
+
+          {%- if use_transparent_header and section.settings.transparent_logo != blank -%}
+            <img class="Header__LogoImage Header__LogoImage--transparent"
+                 src="{{ section.settings.transparent_logo | img_url: image_size }}"
+                 srcset="{{ section.settings.transparent_logo | img_url: image_size }} 1x, {{ section.settings.transparent_logo | img_url: image_size, scale: 2 }} 2x"
+                 width="{{ section.settings.logo.width }}"
+                 height="{{ section.settings.logo.height }}"
+                 alt="{{ section.settings.transparent_logo.alt | default: shop.name | escape }}">
+          {%- endif -%}
+        {%- else -%}
+          <span class="Heading u-h4">{{ shop.name }}</span>
+        {%- endif -%}
+      </a>
+    {%- endcapture -%}
+
+    <div class="Header__FlexItem Header__FlexItem--logo">
+      {%- if template == 'index' -%}
+        <h1 class="Header__Logo">{{ header_logo }}</h1>
+      {%- else -%}
+        <div class="Header__Logo">{{ header_logo }}</div>
+      {%- endif -%}
+    </div>
+  
     <div class="Header__FlexItem Header__FlexItem--fill">
-      <button class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable {% unless use_sidebar_menu %}hidden-desk{% endunless %}" aria-expanded="false" data-action="open-drawer" data-drawer-id="sidebar-menu" aria-label="{{ 'header.navigation.open_sidebar' | t }}">
+      {% comment %} <button class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable {% unless use_sidebar_menu %}hidden-desk{% endunless %}" aria-expanded="false" data-action="open-drawer" data-drawer-id="sidebar-menu" aria-label="{{ 'header.navigation.open_sidebar' | t }}">
         <span class="hidden-tablet-and-up">{%- render 'icon' with 'nav' -%}</span>
         <span class="hidden-phone">{%- render 'icon' with 'nav-desktop' -%}</span>
-      </button>
+      </button> {% endcomment %}
 
       {%- comment -%}
       --------------------------------------------------------------------------------------------------------------------
@@ -358,7 +392,9 @@ HEADER CONTENT
       {%- endunless -%}
     </div>
 
-    {%- capture header_logo -%}
+    {% comment %} Moved Header logo content higher on page to move position of logo {% endcomment %}
+
+    {% comment %} {%- capture header_logo -%}
       <a href="{{ routes.root_url }}" class="Header__LogoLink">
         {%- if section.settings.logo != blank -%}
           {%- capture image_size -%}{{ section.settings.logo_max_width }}x{%- endcapture -%}
@@ -382,16 +418,17 @@ HEADER CONTENT
           <span class="Heading u-h4">{{ shop.name }}</span>
         {%- endif -%}
       </a>
-    {%- endcapture -%}
+    {%- endcapture -%} {% endcomment %}
 
-    <div class="Header__FlexItem Header__FlexItem--logo">
+    {% comment %} <div class="Header__FlexItem Header__FlexItem--logo">
       {%- if template == 'index' -%}
         <h1 class="Header__Logo">{{ header_logo }}</h1>
       {%- else -%}
         <div class="Header__Logo">{{ header_logo }}</div>
       {%- endif -%}
-    </div>
+    </div> {% endcomment %}
 
+    {% comment %} end of moving logo content {% endcomment %}
 
 
     <div class="Header__FlexItem Header__FlexItem--fill">
@@ -463,6 +500,11 @@ HEADER CONTENT
         <span class="hidden-phone">{%- render 'icon' with 'cart-desktop' -%}</span>
         <span class="Header__CartDot {% if cart.item_count > 0 %}is-visible{% endif %}"></span>
       </a>
+
+    <button class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable {% unless use_sidebar_menu %}hidden-desk{% endunless %}" aria-expanded="false" data-action="open-drawer" data-drawer-id="sidebar-menu" aria-label="{{ 'header.navigation.open_sidebar' | t }}">
+      <span class="hidden-tablet-and-up">{%- render 'icon' with 'nav' -%}</span>
+      <span class="hidden-phone">{%- render 'icon' with 'nav-desktop' -%}</span>
+    </button>
     </div>
   </div>
 
