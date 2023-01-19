@@ -6959,11 +6959,11 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   }
 
   .CollectionList--spaced {
-    margin: 15px;
+    margin: 0px;
   }
 
   .CollectionList--spaced .CollectionItem {
-    padding: 15px;
+    padding: 8px;
   }
 
   .CollectionItem {
@@ -7462,7 +7462,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
  */
 
 .ProductList--carousel .Carousel__Cell {
-  width: 62%;
+  width: 73%;
   padding: 0 12px;
   vertical-align: top;
 }
