@@ -162,28 +162,6 @@
   "name": "Featured collections",
   "class": "shopify-section--bordered",
   "max_blocks": 2,
-  "blocks": [
-    {
-      "type": "buy_buttons",
-      "name": "Buy buttons",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "checkbox",
-          "id": "show_price_in_button",
-          "label": "Show price in add to cart button",
-          "default": false
-        },
-        {
-          "type": "checkbox",
-          "id": "show_payment_button",
-          "label": "Show dynamic checkout button",
-          "info": "Each customer will see their preferred payment method from those available on your store, such as PayPal or Apple Pay. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)",
-          "default": true
-        }
-      ]
-    }
-  ],
   "settings": [
     {
       "type": "text",
@@ -286,6 +264,26 @@
           "id": "button_text",
           "label": "Button text",
           "default": "View all products"
+        }
+      ]
+    },
+    {
+      "type": "buy_buttons",
+      "name": "Buy buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_price_in_button",
+          "label": "Show price in add to cart button",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "show_payment_button",
+          "label": "Show dynamic checkout button",
+          "info": "Each customer will see their preferred payment method from those available on your store, such as PayPal or Apple Pay. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)",
+          "default": true
         }
       ]
     }
