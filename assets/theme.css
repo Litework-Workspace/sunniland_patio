@@ -6336,12 +6336,18 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   }
 }
 
+.ArticleItem {
+  background-color: #8D795C;
+  padding-bottom: 30px;
+}
+
 .ArticleItem__Content {
   margin: 0 8px;
 }
 
 .ArticleItem__Title {
   display: block;
+  color: #ffffff
 }
 
 .ArticleItem__Category {
@@ -6351,6 +6357,11 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .ArticleItem__Excerpt {
   margin-bottom: 20px;
+  color: #ffffff
+}
+
+.ArticleItem__Link{
+  color: #ffffff;
 }
 
 @media screen and (min-width: 641px) {
