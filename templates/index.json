@@ -184,10 +184,20 @@
             "grid_items_count": 8,
             "button_text": "Shop All"
           }
+        },
+        "f0b7f981-e2ec-498c-b85b-c3c569267ae2": {
+          "type": "collection",
+          "settings": {
+            "collection": "aluminum",
+            "title": "",
+            "grid_items_count": 8,
+            "button_text": "View all products"
+          }
         }
       },
       "block_order": [
-        "featured-collection-0"
+        "featured-collection-0",
+        "f0b7f981-e2ec-498c-b85b-c3c569267ae2"
       ],
       "settings": {
         "title": "Our widely admired patio replacement slings",
