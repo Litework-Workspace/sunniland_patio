@@ -82,11 +82,6 @@
                   {% comment %} Start of Buy Button addition {% endcomment %}
                   {%- form 'product', product, class: 'ProductForm' -%}
                     {%- render 'product-data', product: product -%}
-                    {%- for block in section.blocks -%}
-                      {%- case block.type -%}
-                        {%- when '@app' -%}
-                          {%- render block -%}
-                          {%- when 'buy_buttons' -%}
                             {%- if block.settings.show_payment_button == false or product.selling_plan_groups.size > 0 -%}
                               {%- assign use_primary_button = true -%}
                             {%- else -%}
@@ -119,8 +114,6 @@
                                 {{ form | payment_button }}
                               {%- endif -%}
                             </div>
-                      {% endcase %}
-                    {% endfor %}
                     {%- unless has_ouputted_variant_selector -%}
                       {%- comment -%}If for any reason the merchant has removed the variant selector block, we still output the ID here{%- endcomment -%}
                       <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
