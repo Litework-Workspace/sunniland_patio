@@ -72,7 +72,9 @@
             {%- endif -%}
 
             {% if block.settings.content != blank %}
-              <p>{{ block.settings.content | escape }}</p>
+            <div class="SectionHeader__Description">
+              {{ block.settings.content }}
+            </div>
             {% endif %}
 
             {%- if block.settings.button_1_text != blank and block.settings.button_2_text != blank -%}
@@ -133,6 +135,10 @@
   #section-{{ section.id }} .Heading,
    #section-{{ section.id }} .flickity-page-dots {
     color: {{ section.settings.text_color }};
+  }
+
+  .SectionHeader__Description{
+    color: {{ section.settings.text_color }} !important
   }
 
   #section-{{ section.id }} .Button {
