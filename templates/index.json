@@ -127,6 +127,7 @@
     },
     "featured-product": {
       "type": "featured-product",
+      "disabled": true,
       "blocks": {
         "product-meta": {
           "type": "product_meta",
@@ -169,7 +170,7 @@
         "subheading": "",
         "title": "Featured product",
         "show_headings_on_mobile": true,
-        "product": "ledge-lounger-signature-chair-0-9-depths"
+        "product": ""
       }
     },
     "featured-collections": {
