@@ -196,6 +196,7 @@ HEADER CONTENT
         <div class="Header__Logo">{{ header_logo }}</div>
       {%- endif -%}
     </div>
+    
   
     <div class="Header__FlexItem Header__FlexItem--fill">
       {% comment %} <button class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable {% unless use_sidebar_menu %}hidden-desk{% endunless %}" aria-expanded="false" data-action="open-drawer" data-drawer-id="sidebar-menu" aria-label="{{ 'header.navigation.open_sidebar' | t }}">
@@ -391,7 +392,33 @@ HEADER CONTENT
         {{- localization_form -}}
       {%- endunless -%}
     </div>
+    
 
+    <div class="Search__Inner hide-on-mobile Search__Inner-desktop">
+    <div class="Search__SearchBar SearchBar_desktop">
+      <form action="{{ routes.search_url }}" name="GET" role="search" class="Search__Form">
+        <div class="Search__InputIconWrapper">
+          <span class="hidden-tablet-and-up">{%- render 'icon' with 'search' -%}</span>
+          <span class="hidden-phone">{%- render 'icon' with 'search-desktop' -%}</span>
+        </div>
+
+        <input type="search" class="Search__Input Heading" name="q" autocomplete="off" autocorrect="off" autocapitalize="off" aria-label="{{ 'search.general.input_placeholder' | t }}" placeholder="{{ 'search.general.input_placeholder' | t }}" autofocus>
+        <input type="hidden" name="type" value="product">
+        <input type="hidden" name="options[prefix]" value="last">
+      </form>
+
+      <button class="Search__Close Link Link--primary" data-action="close-search" aria-label="{{ 'header.navigation.close_search' | t }}">{% render 'icon' with 'close' %}</button>
+    </div>
+
+    <div class="Search__Results" aria-hidden="true">
+      {%- if settings.search_mode != 'product' -%}
+        <div class="PageLayout PageLayout--breakLap">
+          <div class="PageLayout__Section"></div>
+          <div class="PageLayout__Section PageLayout__Section--secondary"></div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
     {% comment %} Moved Header logo content higher on page to move position of logo {% endcomment %}
 
     {% comment %} {%- capture header_logo -%}
@@ -451,12 +478,12 @@ HEADER CONTENT
               </li>
             {%- endif -%}
 
-            <li class="HorizontalList__Item">
+            {% comment %} <li class="HorizontalList__Item">
               <a href="{{ routes.search_url }}" class="Heading Link Link--primary Text--subdued u-h8" data-action="toggle-search">{{ 'header.navigation.search' | t }}
                 {{}}
                 {%- render 'icon' with 'search-desktop' -%}</a>
               
-            </li>
+            </li> {% endcomment %}
 
             <li class="HorizontalList__Item">
               <a href="{{ routes.cart_url }}" class="Heading u-h6" {% unless template == 'cart' or settings.cart_type == 'page' %}data-action="open-drawer" data-drawer-id="sidebar-cart" aria-label="{{ 'header.navigation.open_cart' | t }}"{% endunless %}>{{ 'header.navigation.cart' | t }} (<span class="Header__CartCount">{{ cart.item_count }}</span>)
