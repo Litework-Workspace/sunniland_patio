@@ -8271,9 +8271,10 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
     position: absolute;
     bottom: 0;
     left: 0;
-    padding-bottom: 18px;
+    padding: 10px 0;
     width: 100%;
     text-align: center;
+    background: #37474F;
   }
 
   .Header--center .Header__MainNav .HorizontalList {
