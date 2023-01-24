@@ -187,6 +187,7 @@
         },
         "f0b7f981-e2ec-498c-b85b-c3c569267ae2": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "aluminum",
             "title": "",
