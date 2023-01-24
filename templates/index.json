@@ -209,6 +209,51 @@
         "grid_desktop_items_per_row": 4
       }
     },
+    "shop-the-look": {
+      "type": "shop-the-look",
+      "blocks": {
+        "look-0": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_1.png",
+            "dot_style": "light",
+            "product_1": "chair-replacement-sling-1pc",
+            "product_1_horizontal_position": 14,
+            "product_1_vertical_position": 49,
+            "product_2": "aruba-ii-tangerine-dining-set",
+            "product_2_horizontal_position": 59,
+            "product_2_vertical_position": 37,
+            "product_3": "st-catherine-mgp-cushion-sofa",
+            "product_3_horizontal_position": 70,
+            "product_3_vertical_position": 50
+          }
+        },
+        "look-1": {
+          "type": "look",
+          "settings": {
+            "dot_style": "light",
+            "product_1": "",
+            "product_1_horizontal_position": 25,
+            "product_1_vertical_position": 45,
+            "product_2": "",
+            "product_2_horizontal_position": 55,
+            "product_2_vertical_position": 30,
+            "product_3": "",
+            "product_3_horizontal_position": 65,
+            "product_3_vertical_position": 60
+          }
+        }
+      },
+      "block_order": [
+        "look-0",
+        "look-1"
+      ],
+      "settings": {
+        "subheading": "Shop",
+        "title": "Our looks",
+        "show_mobile_product_info": false
+      }
+    },
     "4bc92e0f-c367-49c4-af19-f17b0bece191": {
       "type": "image-with-text-overlay",
       "settings": {
@@ -314,51 +359,6 @@
         "button_background": "#ffffff"
       }
     },
-    "shop-the-look": {
-      "type": "shop-the-look",
-      "blocks": {
-        "look-0": {
-          "type": "look",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Image_1.png",
-            "dot_style": "light",
-            "product_1": "chair-replacement-sling-1pc",
-            "product_1_horizontal_position": 14,
-            "product_1_vertical_position": 49,
-            "product_2": "aruba-ii-tangerine-dining-set",
-            "product_2_horizontal_position": 59,
-            "product_2_vertical_position": 37,
-            "product_3": "st-catherine-mgp-cushion-sofa",
-            "product_3_horizontal_position": 70,
-            "product_3_vertical_position": 50
-          }
-        },
-        "look-1": {
-          "type": "look",
-          "settings": {
-            "dot_style": "light",
-            "product_1": "",
-            "product_1_horizontal_position": 25,
-            "product_1_vertical_position": 45,
-            "product_2": "",
-            "product_2_horizontal_position": 55,
-            "product_2_vertical_position": 30,
-            "product_3": "",
-            "product_3_horizontal_position": 65,
-            "product_3_vertical_position": 60
-          }
-        }
-      },
-      "block_order": [
-        "look-0",
-        "look-1"
-      ],
-      "settings": {
-        "subheading": "Shop",
-        "title": "Our looks",
-        "show_mobile_product_info": false
-      }
-    },
     "654c65c4-1510-4fc8-8c6c-4733e02e3b62": {
       "type": "testimonials",
       "blocks": {
@@ -403,11 +403,11 @@
     "collection-list",
     "featured-product",
     "featured-collections",
+    "shop-the-look",
     "4bc92e0f-c367-49c4-af19-f17b0bece191",
     "timeline",
     "blog-posts",
     "a99db379-c319-41ad-9aac-158785cb0f55",
-    "shop-the-look",
     "654c65c4-1510-4fc8-8c6c-4733e02e3b62"
   ]
 }
