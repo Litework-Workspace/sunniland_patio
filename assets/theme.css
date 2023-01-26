@@ -7486,6 +7486,14 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
     margin-bottom: 20px; /* hack, would require some better code */
   }
 }
+.ProductList--carousel {
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 30px; /* This is a trick to hide the scrollbar on iOS */
+  margin-bottom: -30px;
+}
 
 @media screen and (max-width: 1007px) {
   /* On phone and tablet we do not use the carousel but instead use a free scroll, which offers better performance */
@@ -7507,7 +7515,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   }
 
   .ProductList--carousel .Carousel__Cell:first-child {
-    margin-left: 19%; /* This is (100% - 62%) / 2, where 62% is the width of a single cell */
+    margin-left: 0%; /* This is (100% - 62%) / 2, where 62% is the width of a single cell */
   }
   .ProductList--carousel .Carousel__Cell:last-child {
     margin-right: 19%; /* This is (100% - 62%) / 2, where 62% is the width of a single cell */
@@ -7521,7 +7529,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   }
 
   .ProductList--carousel .Carousel__Cell:first-child {
-    margin-left: 26%; /* This is (100% - 48%) / 2, where 48% is the width of a single cell */
+    margin-left: 0%; /* This is (100% - 48%) / 2, where 48% is the width of a single cell */
   }
   .ProductList--carousel .Carousel__Cell:last-child {
     margin-right: 26%; /* This is (100% - 48%) / 2, where 48% is the width of a single cell */
@@ -7530,7 +7538,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 @media screen and (min-width: 1008px) {
   .ProductList--carousel {
-    margin: 0 90px;
+    margin: 0 0px;
   }
 
   .ProductList--carousel::after {
@@ -7539,9 +7547,9 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   }
 
   .ProductList--carousel .Carousel__Cell {
-    width: 33.3333%;
+    /* width: 33.3333%; */
     left: 0;
-    padding: 0 calc(var(--horizontal-spacing-four-products-per-row) / 2);
+    /* padding: 0 calc(var(--horizontal-spacing-four-products-per-row) / 2); */
     margin-left: 0;
   }
 
@@ -9799,7 +9807,7 @@ shopify-payment-terms {
   justify-content: center;
   background-color: #263238;
   border-radius: 50px;
-  
+  color: #ffffff;
 }
 
 /**
@@ -11170,14 +11178,36 @@ shopify-payment-terms {
     max-width: 110px;
   }
 }
+/* additions to testimonial section */
+.Testimonial__Content {
+  width: 100%;
+  margin: 0 auto;
+  white-space: normal;
+  background-color: #00897B;
+  height: 26rem;
+}
+
+.Testimonial__Content p {
+  padding: 1rem 2rem;
+  text-align: initial;
+}
+
+.quotation_mark {
+  padding-top: 2rem;
+  padding-right: 10rem;
+}
+
 @media screen and (min-width: 641px) {
   .Testimonial {
     font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 20px));
   }
 
   .Testimonial__Content {
-    max-width: 550px;
+    /* max-width: 550px; */
     margin: 0 auto;
+    white-space: normal;
+    background-color: #00897B;
+    width: 100%;
   }
 
   .Testimonial__Logo,
