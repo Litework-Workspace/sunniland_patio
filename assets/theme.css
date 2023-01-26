@@ -9797,6 +9797,9 @@ shopify-payment-terms {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #263238;
+  border-radius: 50px;
+  
 }
 
 /**
