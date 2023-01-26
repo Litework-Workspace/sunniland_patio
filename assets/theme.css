@@ -6848,6 +6848,16 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
  * ----------------------------------------------------------------------------
  */
 
+.CollectionList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+.CollectionList--grid {
+  margin: 12px 12px 12px 12px;
+}
+
 .CollectionList::after {
   content: "flickity";
   display: none;
@@ -6859,14 +6869,15 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .CollectionItem__Wrapper {
   position: relative;
-  height: 500px;
+  /* height: 500px; */
   background-size: cover;
   background-position: center;
   overflow: hidden;
 }
 
 .CollectionItem__Wrapper--small {
-  height: 270px;
+  /* height: 270px; */
+  aspect-ratio: 1/1;
 }
 
 .CollectionItem__Wrapper--large {
@@ -6989,15 +7000,17 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 @media screen and (min-width: 1140px) {
   .CollectionItem {
-    min-width: 33.33333%;
+    width: 20%;
+    padding: 8px;
   }
 
   .CollectionItem__Wrapper {
-    height: 600px;
+    /* height: 600px; */
   }
 
   .CollectionItem__Wrapper--small {
-    height: 500px;
+    /* height: 500px; */
+    aspect-ratio: 1/1;
   }
 
   .CollectionItem__Wrapper--large {
