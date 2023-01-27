@@ -1170,7 +1170,11 @@ body {
 
 .Icon-Wrapper--clickable {
   position: relative;
-  background: transparent; /* This is used to increase the clickable area */
+  background: #ffffff;
+  color: #37474F;
+  padding: 0.1rem 0.2rem 0.15rem 0.2rem;
+  border-radius: 1rem; 
+  /*background: transparent; This is used to increase the clickable area */
 }
 
 .Icon-Wrapper--clickable::before {
