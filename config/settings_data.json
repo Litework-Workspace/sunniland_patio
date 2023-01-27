@@ -95,14 +95,8 @@
           "footer-2": {
             "type": "newsletter",
             "settings": {
-              "title": "Newsletter",
-              "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
-            }
-          },
-          "footer-1": {
-            "type": "links",
-            "settings": {
-              "menu": "footer"
+              "title": "Join The Sunniland Family!",
+              "content": "<p>Get discounts, rewards and more surprises each month straight to your inbox! Join now and get Free Shipping on your first order.<\/p>"
             }
           },
           "0ef39866-42e6-47bd-8276-3056f67842e9": {
@@ -111,10 +105,10 @@
               "menu": "list-collections"
             }
           },
-          "8f60b98e-ebc3-4f3b-95f1-f77a83a05eee": {
+          "footer-1": {
             "type": "links",
             "settings": {
-              "menu": ""
+              "menu": "footer"
             }
           },
           "footer-0": {
@@ -128,9 +122,8 @@
         },
         "block_order": [
           "footer-2",
-          "footer-1",
           "0ef39866-42e6-47bd-8276-3056f67842e9",
-          "8f60b98e-ebc3-4f3b-95f1-f77a83a05eee",
+          "footer-1",
           "footer-0"
         ],
         "settings": {
