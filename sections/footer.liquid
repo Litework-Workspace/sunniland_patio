@@ -1,5 +1,24 @@
 <footer id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="footer" class="Footer {% if section.blocks.size <= 2 %}Footer--center{% endif %}" role="contentinfo">
   <div class="Container">
+    <div class="Footer_Upper">
+      <h2 class="Footer__Title Heading">Family Owned Since 1972</h2>
+      <p>For the last 50 years we have been serving generations of families to build their dream patios. Inheriting the craft from his mother & father, Jeff Bender and his team of experts is here to help you find all your patio furniture and fixtures in one place!</p>
+      <div class="Upper_Footer-Features">
+        <img src="{{ 'Quality.svg' | asset_url }}" alt="">
+        <img src="{{ 'Shipping.svg' | asset_url }}" alt="">
+        <img src="{{ 'Experience.svg' | asset_url }}" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="Footer_Logos">
+    <div class="Logo_Container">
+      <img src="{{'SW-Logow.svg' | asset_url }}" alt="SW Logo" class="logos">
+      <img src="{{ 'Lloyd-Flanders-logo-vector.svg' | asset_url }}" alt="" class="logos">
+      <img src="{{ 'Woodard_Logo_BW.svg' | asset_url }}" alt="" class="logos">
+      <img src="{{ 'Telescope-Casual-2018.svg' | asset_url }}" alt="" class="logos">
+    </div>
+  </div>
+  <div class="Container Footer_Lower_Container">
     {%- if section.blocks.size > 0 -%}
       <div class="Footer__Inner">
         {%- for block in section.blocks -%}
@@ -7,7 +26,7 @@
             {%- case block.type -%}
               {%- when 'text' -%}
                 {%- if block.settings.title != blank -%}
-                  <h2 class="Footer__Title Heading u-h6">{{ block.settings.title | escape }}</h2>
+                  <h2 class="Footer__Title Heading">{{ block.settings.title | escape }}</h2>
                 {%- endif -%}
 
                 {%- if block.settings.content != blank -%}
@@ -24,7 +43,7 @@
                 {%- assign linklist = linklists[block.settings.menu] -%}
 
                 {%- if linklist != empty -%}
-                  <h2 class="Footer__Title Heading u-h6">{{ linklist.title | escape }}</h2>
+                  <h2 class="Footer__Title Heading">{{ linklist.title | escape }}</h2>
 
                   <ul class="Linklist">
                     {%- for link in linklist.links -%}
@@ -37,7 +56,7 @@
 
               {%- when 'newsletter' -%}
                 {%- if block.settings.title != blank -%}
-                  <h2 class="Footer__Title Heading u-h6">{{ block.settings.title | escape }}</h2>
+                  <h2 class="Footer__Title Heading">{{ block.settings.title | escape }}</h2>
                 {%- endif -%}
 
                 {%- if block.settings.content != blank -%}

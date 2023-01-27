@@ -8019,11 +8019,11 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 @media screen and (min-width: 1140px) {
   .Footer__Block--text {
-    flex-basis: 400px;
+    flex-basis: 20rem;
   }
 
   .Footer__Block--newsletter {
-    flex-basis: 305px;
+    flex-basis: 22rem;
   }
 }
 .GiftCard {

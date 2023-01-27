@@ -1,0 +1,76 @@
+/* Newly installed font code */
+
+@font-face {
+  font-family: "Figtree";
+  src: url({{"Figtree-VariableFont_wght.woff" | asset_url}}) format("woff"),url({{"Figtree-VariableFont_wght.woff2" | asset_url}}) format("woff2");
+}
+@font-face {
+  font-family: "Figtree Italic";
+  src: url({{"Figtree-Italic-VariableFont_wght.woff" | asset_url}}) format("woff"),url({{"Figtree-Italic-VariableFont_wght.woff2" | asset_url}}) format("woff2");
+}
+
+* {font-family: "Figtree" !important; }
+
+
+/* START 'Featured Collections' section editing */
+.is-draggable.ProductList--carousel .Carousel__Cell {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+/* END 'Featured Collections' section editing */
+
+/* Start of Footer section editing */
+.Footer_Upper {
+  /* height: 10rem; */
+  padding-bottom: 6rem;
+}
+.Footer_Upper h2, .Footer_Upper p {
+  color: #263238;
+}
+.Upper_Footer-Features {
+  display: flex;
+}
+
+.Upper_Footer-Features img {
+  width: 100%;
+}
+
+.Footer_Logos{
+  width: 100%;
+  height: 8rem;
+  background: #455A64;
+  display: flex;
+  justify-content: center;
+}
+.Logo_Container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logos {
+  background: transparent;
+}
+
+.Footer_Lower_Container {
+  background: #37474F;
+  color: #ffffff;
+  padding-top: 4rem;
+}
+
+.Footer__Title {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.Footer__Block--text {
+  text-align: end;
+}
+
+.Rte p {
+  margin-bottom: 0 !important;
+}
+
+/* End of Footer section editing */
