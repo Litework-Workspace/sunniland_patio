@@ -11540,11 +11540,11 @@ shopify-payment-terms {
 
 @font-face {
   font-family: "Figtree";
-  src: url("Figtree-VariableFont_wght.woff") format("woff");
+  src: url({{"Figtree-VariableFont_wght.woff"| asset_url}}) format("woff");
 }
 @font-face {
   font-family: "Figtree Italic";
-  src: url("Figtree-Italic-VariableFont_wght.woff") format("woff");
+  src: url({{"Figtree-Italic-VariableFont_wght.woff"| asset_url}}) format("woff");
 }
 
 * {font-family: "Figtree" !important; }
