@@ -96,7 +96,7 @@
             "type": "text",
             "settings": {
               "title": "About the shop",
-              "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+              "content": "<p>6101 N Federal Hwy.<\/p><p>Boca Raton, Florida 33487<\/p><p>Call us: 1-561-997-7114<\/p><p>Email us: info@sunnilandpatio.com<\/p>",
               "show_social_media": true
             }
           },
