@@ -6854,6 +6854,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 0;
+  padding: 0 4%;
 }
 
 .CollectionList--grid {
@@ -8643,7 +8644,17 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   justify-content: end;
 }
 
+@media screen and (max-width: 640px) {
+  .ImageHero__ContentOverlay {
+    margin: 0 0 150px 10px
+  }
+}
+
 h2.SectionHeader__Heading {
+  text-align: left;
+}
+
+.SectionHeader__SubHeading{
   text-align: left;
 }
 
