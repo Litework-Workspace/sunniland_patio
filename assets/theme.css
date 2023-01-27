@@ -8652,6 +8652,9 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 h2.SectionHeader__Heading {
   text-align: left;
 }
+.SectionHeader__SubHeading {
+  text-align: left;
+}
 
 .SectionHeader:not(:only-child) {
   margin-bottom: 35px;
