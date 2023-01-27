@@ -5647,6 +5647,8 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .SectionHeader__Description {
   max-width: 530px;
+  text-align: left;
+  margin-top: 0;
 }
 
 .SectionHeader__Description a {
@@ -7517,6 +7519,9 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   .ProductList--carousel .Carousel__Cell:first-child {
     margin-left: 0%; /* This is (100% - 62%) / 2, where 62% is the width of a single cell */
   }
+  .ProductList--carousel .Carousel__Cell:first-child {
+    margin-left: 0%; /* This is (100% - 62%) / 2, where 62% is the width of a single cell */
+  }
   .ProductList--carousel .Carousel__Cell:last-child {
     margin-right: 19%; /* This is (100% - 62%) / 2, where 62% is the width of a single cell */
   }
@@ -8622,12 +8627,36 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 }
 
 .ImageHero__ContentOverlay {
-  position: relative;
+  /* position: relative; */
   flex-basis: 425px;
   flex-grow: 0;
   padding: 0 15px;
   text-shadow: 0 1px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  margin: 0 0 92px 92px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
+
+h2.SectionHeader__Heading {
+  text-align: left;
+}
+
+.SectionHeader:not(:only-child) {
+  margin-bottom: 35px;
+}
+
+.SectionHeader__ButtonWrapper {
+  margin-top: 0;
+  display: flex;
+}
+
+
 
 .ImageHero__TextContent {
   position: absolute;

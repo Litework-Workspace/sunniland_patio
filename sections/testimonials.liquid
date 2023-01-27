@@ -30,10 +30,11 @@
   </header>
   <div class="ProductList ProductList--carousel Carousel">
     {%- for block in section.blocks -%}
-      <div class="Carousel__Cell Testimonial" {{ block.shopify_attributes }} data-slide-index="{{ forloop.index0 }}">
+      {% assign remainder = forloop.index | modulo: 2  %}
+      <div class="Carousel__Cell Testimonial" {{ block.shopify_attributes }} data-slide-index="{{ forloop.index0 }}" >
 
           {%- if block.settings.quote != blank -%}
-            <div class="Testimonial__Content">
+            <div class="Testimonial__Content" {% if remainder == 0 %}style="background: #00695C;"{% endif %}>
               <img class="quotation_mark" src="/assets/iocn.svg" alt="opening quotation mark">
               {{ block.settings.quote }}
             </div>
@@ -74,6 +75,7 @@
   #section-{{ section.id }} .flickity-page-dots .dot:not(.is-selected) {
     border-color: {{section.settings.background | color_mix: section.settings.text_color, 85}};
   }
+
 </style>
 
 {% schema %}
