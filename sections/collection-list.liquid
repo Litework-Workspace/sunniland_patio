@@ -23,7 +23,7 @@
     </div>
   </header>
 
-
+  <div class="Container">
   {%- capture collection_items -%}
     {%- for block in section.blocks -%}
       {%- assign collection = collections[block.settings.collection] -%}
@@ -49,6 +49,7 @@
       </div>
     </div>
   {%- endif -%}
+  </div>
 </section>
 
 <style>

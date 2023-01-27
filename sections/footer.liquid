@@ -74,14 +74,16 @@
                     {%- endif -%}
 
                     <input type="hidden" name="contact[tags]" value="newsletter">
-                    <input type="email" name="contact[email]" class="Form__Input" aria-label="{{ 'footer.newsletter.input' | t }}" placeholder="{{ 'footer.newsletter.input' | t }}" required>
-                    <button type="submit" class="Form__Submit Button Button--primary">{{ 'footer.newsletter.submit' | t }}</button>
+                    <input type="email" name="contact[email]" class="Form__Input Footer-Form_Input" aria-label="{{ 'footer.newsletter.input' | t }}" placeholder="{{ 'footer.newsletter.input' | t }}" required>
+                    <button type="submit" class="Form__Submit Button Button--primary Footer_Form-Submit">{{ 'footer.newsletter.submit' | t }}</button>
                   {%- endif -%}
                 {%- endform -%}
-                
+
               {% when 'html' %}
                 {%- if block.settings.title != blank -%}
                   <h2 class="Footer__Title Heading">{{ block.settings.title | escape }}</h2>
+                {% else %}
+                  <img src="{{ 'Footer-Logo.svg' | asset_url }}" alt="Footer Logo">
                 {%- endif -%}
 
                 {%- if block.settings.content != blank -%}
