@@ -5862,7 +5862,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .TabPanel {
   display: none;
-  padding: 60px;
+  padding: 0 70px;
 }
 
 .TabPanel[aria-hidden=false] {
