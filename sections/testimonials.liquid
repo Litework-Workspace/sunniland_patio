@@ -28,7 +28,7 @@
       <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
     {%- endif -%}
   </header>
-  <div class="ProductList ProductList--carousel Carousel">
+  <div class="ProductList ProductList--carousel Carousel" data-flickity-config="{{ flickity_options }}">
     {%- for block in section.blocks -%}
       {% assign remainder = forloop.index | modulo: 2  %}
       <div class="Carousel__Cell Testimonial" {{ block.shopify_attributes }} data-slide-index="{{ forloop.index0 }}" >

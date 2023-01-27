@@ -7500,8 +7500,10 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   -webkit-overflow-scrolling: touch;
   padding-bottom: 30px; /* This is a trick to hide the scrollbar on iOS */
   margin-bottom: -30px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
+
+
 
 @media screen and (max-width: 1007px) {
   /* On phone and tablet we do not use the carousel but instead use a free scroll, which offers better performance */
@@ -11233,7 +11235,7 @@ shopify-payment-terms {
 
 .quotation_mark {
   padding-top: 2rem;
-  padding-right: 10rem;
+  padding-right: 68%;
 }
 
 @media screen and (min-width: 641px) {
