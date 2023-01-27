@@ -130,6 +130,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Martel:wght@600&display=swap" rel="stylesheet">
 
     {% render 'microdata-schema' %}
+
+    {{ 'font.css.liquid' | asset_url | stylesheet_tag }}
   </head>
 
   {%- capture classes -%}features--heading-{{ settings.heading_size }}{%- endcapture -%}
