@@ -16,6 +16,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  font-family: 'Figtree', sans-serif;
+}
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
