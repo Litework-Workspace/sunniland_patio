@@ -35,7 +35,7 @@
 
           {%- if block.settings.quote != blank -%}
             <div class="Testimonial__Content" {% if remainder == 0 %}style="background: #00695C;"{% endif %}>
-              <img class="quotation_mark" src="/assets/iocn.svg" alt="opening quotation mark">
+              <img class="quotation_mark" src="{{ 'iocn.svg' | asset_url }}" alt="opening quotation mark">
               {{ block.settings.quote }}
             </div>
           {%- endif -%}
@@ -60,7 +60,7 @@
 
   {%- if section.settings.button_text != blank -%}
     <div class="SectionFooter">
-      <a href="{{ section.settings.button_link }}" id="Shop-all_link" class="Button Button--primary">{{ section.settings.button_text | escape }}<img src="/assets/Vector.svg" alt=""></a>
+      <a href="{{ section.settings.button_link }}" id="Shop-all_link" class="Button Button--primary">{{ section.settings.button_text | escape }}<img src="{{ 'Vector.svg' | asset_url }}" alt=""></a>
     </div>
   {%- endif -%}
   </div>
