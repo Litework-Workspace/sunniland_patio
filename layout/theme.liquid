@@ -135,7 +135,7 @@
 
     {% render 'microdata-schema' %}
 
-    {{ 'font.css.liquid' | asset_url | stylesheet_tag }}
+    {{ 'font.css' | asset_url | stylesheet_tag }}
   </head>
 
   {%- capture classes -%}features--heading-{{ settings.heading_size }}{%- endcapture -%}

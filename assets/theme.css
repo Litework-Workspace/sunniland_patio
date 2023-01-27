@@ -6858,7 +6858,6 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 0;
-  padding: 0 4%;
 }
 
 .CollectionList--grid {
@@ -8648,17 +8647,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   justify-content: end;
 }
 
-@media screen and (max-width: 640px) {
-  .ImageHero__ContentOverlay {
-    margin: 0 0 150px 10px
-  }
-}
-
 h2.SectionHeader__Heading {
-  text-align: left;
-}
-
-.SectionHeader__SubHeading{
   text-align: left;
 }
 
@@ -11540,18 +11529,7 @@ shopify-payment-terms {
 }
 
 
-/* Newly installed font code */
 
-@font-face {
-  font-family: "Figtree";
-  src: url({{"Figtree-VariableFont_wght.woff"| asset_url}}) format("woff");
-}
-@font-face {
-  font-family: "Figtree Italic";
-  src: url({{"Figtree-Italic-VariableFont_wght.woff"| asset_url}}) format("woff");
-}
-
-* {font-family: "Figtree" !important; }
 
 
 
