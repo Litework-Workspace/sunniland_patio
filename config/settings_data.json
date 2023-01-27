@@ -92,14 +92,6 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "footer-0": {
-            "type": "text",
-            "settings": {
-              "title": "About the shop",
-              "content": "<p>6101 N Federal Hwy.<\/p><p>Boca Raton, Florida 33487<\/p><p>Call us: 1-561-997-7114<\/p><p>Email us: info@sunnilandpatio.com<\/p>",
-              "show_social_media": true
-            }
-          },
           "footer-2": {
             "type": "newsletter",
             "settings": {
@@ -112,12 +104,34 @@
             "settings": {
               "menu": "footer"
             }
+          },
+          "0ef39866-42e6-47bd-8276-3056f67842e9": {
+            "type": "links",
+            "settings": {
+              "menu": "list-collections"
+            }
+          },
+          "8f60b98e-ebc3-4f3b-95f1-f77a83a05eee": {
+            "type": "links",
+            "settings": {
+              "menu": ""
+            }
+          },
+          "footer-0": {
+            "type": "text",
+            "settings": {
+              "title": "About the shop",
+              "content": "<p>6101 N Federal Hwy.<\/p><p>Boca Raton, Florida 33487<\/p><p>Call us: 1-561-997-7114<\/p><p>Email us: info@sunnilandpatio.com<\/p>",
+              "show_social_media": true
+            }
           }
         },
         "block_order": [
-          "footer-0",
           "footer-2",
-          "footer-1"
+          "footer-1",
+          "0ef39866-42e6-47bd-8276-3056f67842e9",
+          "8f60b98e-ebc3-4f3b-95f1-f77a83a05eee",
+          "footer-0"
         ],
         "settings": {
           "show_payment_methods": true,
