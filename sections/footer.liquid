@@ -286,9 +286,20 @@
     {
       "type": "html",
       "name": "Custom HTML",
-      "id": "html",
-      "label": "HTML content",
-      "default": "<p>Write your own custom HTML content.</p>"
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "About the shop"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Text",
+          "default": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.</p>"
+        }
+      ]
     }
   ],
   "default": {
