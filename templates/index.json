@@ -120,13 +120,97 @@
             "button_link": "",
             "apply_overlay": true
           }
+        },
+        "30e05b38-a5f8-46b5-a504-caab5dfa4fe3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "a23bfc27-f6b0-4106-872b-8541ba27f482": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "3555c8cd-acb7-4905-a2e0-15a01bf6ab18": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "9694911a-0ceb-4cc2-9369-ba7042d4d59b": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "0184f0bb-5a7a-4017-8955-cf30b2827ddb": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "9ac41b38-45a1-4cd4-aa92-b037b29edc77": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
         }
       },
       "block_order": [
         "collection-0",
         "collection-1",
         "collection-2",
-        "1c863ae9-bc07-4caf-bd0a-b158b2388e8c"
+        "1c863ae9-bc07-4caf-bd0a-b158b2388e8c",
+        "30e05b38-a5f8-46b5-a504-caab5dfa4fe3",
+        "a23bfc27-f6b0-4106-872b-8541ba27f482",
+        "3555c8cd-acb7-4905-a2e0-15a01bf6ab18",
+        "9694911a-0ceb-4cc2-9369-ba7042d4d59b",
+        "0184f0bb-5a7a-4017-8955-cf30b2827ddb",
+        "9ac41b38-45a1-4cd4-aa92-b037b29edc77"
       ],
       "settings": {
         "title": "Shop By Department",
