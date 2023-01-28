@@ -1170,11 +1170,7 @@ body {
 
 .Icon-Wrapper--clickable {
   position: relative;
-  background: #ffffff;
-  color: #37474F;
-  padding: 0.1rem 0.2rem 0.15rem 0.2rem;
-  border-radius: 1rem; 
-  /*background: transparent; This is used to increase the clickable area */
+  background: transparent; /* This is used to increase the clickable area */
 }
 
 .Icon-Wrapper--clickable::before {
@@ -4519,6 +4515,10 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
     padding-left: 25px;
     padding-right: 25px;
   }
+
+  .ImageHero__ContentOverlay {
+    margin: 0 0 92px 0px;
+  }
 }
 
 @media screen and (min-width: 641px) {
@@ -6986,7 +6986,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   }
 
   .CollectionList--spaced {
-    margin: 0px;
+    margin: -.43rem;
   }
 
   .CollectionList--spaced .CollectionItem {
@@ -7011,6 +7011,10 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   .CollectionItem__Content--bottomRight,
   .CollectionItem__Content--bottomCenter {
     bottom: 40px;
+  }
+
+  .TabPanel {
+    padding: 0;
   }
 }
 
@@ -8651,6 +8655,11 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   z-index: 1;
 }
 
+@media screen and (min-width: 641px){
+  .ImageHero__ContentOverlay {
+    margin: 0 0 92px 92px;
+  }
+}
 .ImageHero__ContentOverlay {
   /* position: relative; */
   flex-basis: 425px;
@@ -8658,7 +8667,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   padding: 0 15px;
   text-shadow: 0 1px rgba(0, 0, 0, 0.5);
   position: absolute;
-  margin: 0 0 92px 92px;
+  /* margin: 0 0 92px 92px; */
   width: 100%;
   height: 100%;
   left: 0;

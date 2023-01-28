@@ -98,6 +98,30 @@
             {%- endcase -%}
           </div>
         {%- endfor -%}
+
+        {% comment %} <div class="links_container">
+          {%- for block in section.blocks -%}
+            <div class="Footer__Block Footer__Block--{{ block.type }} mobile_links" {{ block.shopify_attributes }}></div>
+            {%- case block.type -%}
+              {%- when 'links' -%}
+                {%- assign linklist = linklists[block.settings.menu] -%}
+
+                {%- if linklist != empty -%}
+                <div class="linklist_container">
+                  <h2 class="Footer__Title Heading">{{ linklist.title | escape }}</h2>
+                  
+                  <ul class="Linklist">
+                    {%- for link in linklist.links -%}
+                      <li class="Linklist__Item">
+                        <a href="{{ link.url }}" class="Link Link--primary">{{ link.title | escape }}</a>
+                        </li>
+                      {%- endfor -%}
+                      </ul>
+                </div>
+                {%- endif -%}
+            {%- endcase -%}
+          {%- endfor -%}
+        </div> {% endcomment %}
       </div>
     {%- endif -%}
 
