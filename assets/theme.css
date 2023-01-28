@@ -1672,8 +1672,13 @@ input.spr-button-primary[disabled],
 }
 
 .ButtonGroup--spacingSmall {
+  margin: -8px;
+}
+
+.Slideshow__Button {
   margin: 4rem -8px 0 -8px;
 }
+
 .ButtonGroup--spacingSmall .ButtonGroup__Item {
   margin: 8px;
 }
@@ -6298,7 +6303,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
  */
 
 .ArticleListWrapper {
-  max-width: 1260px;
+  /* max-width: 1260px; */
   margin: 0 auto 60px auto;
 }
 
@@ -6866,7 +6871,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 }
 
 .CollectionList--grid {
-  margin: 12px 12px 12px 12px;
+  margin: 12px -8px 12px -8px;
 }
 
 .CollectionList::after {
@@ -7555,7 +7560,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 @media screen and (min-width: 1008px) {
   .ProductList--carousel {
-    margin: 0 0px;
+    margin: 0 -.75rem;
   }
 
   .ProductList--carousel::after {
@@ -11260,7 +11265,8 @@ shopify-payment-terms {
     margin: 0 auto;
     white-space: normal;
     background-color: #00897B;
-    width: 100%;
+    width: 17.75rem;
+    height: 28.125rem;
   }
 
   .Testimonial__Logo,
