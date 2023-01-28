@@ -1672,7 +1672,7 @@ input.spr-button-primary[disabled],
 }
 
 .ButtonGroup--spacingSmall {
-  margin: -8px;
+  margin: 4rem -8px 0 -8px;
 }
 .ButtonGroup--spacingSmall .ButtonGroup__Item {
   margin: 8px;
@@ -8183,6 +8183,10 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   height: 20px;
 }
 
+.Icon--cart {
+  margin-left: 1rem;
+}
+
 .Header__Icon .Icon--search {
   position: relative;
   top: 1px; /* for pixel perfect */
@@ -8260,6 +8264,10 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
     top: 2px; /* for pixel perfect alignment with the cart icon */
     width: 20px;
     height: 20px;
+  }
+
+  .Icon--account {
+    margin-left: 1rem;
   }
 
   .Header--withIcons .Header__SecondaryNav {
