@@ -99,7 +99,7 @@
           </div>
         {%- endfor -%}
 
-        {% comment %} <div class="links_container">
+        <div class="links_container">
           {%- for block in section.blocks -%}
             <div class="Footer__Block Footer__Block--{{ block.type }} mobile_links" {{ block.shopify_attributes }}></div>
             {%- case block.type -%}
@@ -121,7 +121,7 @@
                 {%- endif -%}
             {%- endcase -%}
           {%- endfor -%}
-        </div> {% endcomment %}
+        </div>
       </div>
     {%- endif -%}
 
