@@ -109,7 +109,7 @@
   border-radius: 1rem; 
 }
 
-.mobile_links {
+.links_container {
   display: none;
 }
 
@@ -138,8 +138,23 @@
     text-align: start;
   }
 
-  .mobile_links {
+  .links_container {
     display: flex;
+    order: 2;
+  }
+
+  .Footer__Block--newsletter {
+    order: 1;
+    margin-bottom: 2rem;
+  }
+
+  .Footer__Block--html {
+    order: 3;
+  }
+
+  .Footer__Inner {
+    display: flex;
+    flex-direction: column;
   }
 }
 /* End of Footer section editing */
