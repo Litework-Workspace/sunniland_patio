@@ -7043,7 +7043,8 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
   .CollectionItem__Wrapper--small {
     /* height: 500px; */
-    aspect-ratio: 1/1;
+/*     aspect-ratio: 1/1; */
+    aspect-ratio: .7;
   }
 
   .CollectionItem__Wrapper--large {
