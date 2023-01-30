@@ -124,13 +124,12 @@
         "30e05b38-a5f8-46b5-a504-caab5dfa4fe3": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/Weekend_Retreat2008_002_1.png",
+            "collection": "cayman-isle-cushion",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "Sub-heading",
             "title": "Collection name",
-            "button_text": "View products",
+            "button_text": "Patio Tables",
             "button_link": "",
             "apply_overlay": true
           }
@@ -138,12 +137,12 @@
         "a23bfc27-f6b0-4106-872b-8541ba27f482": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "andover-cushion",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
-            "subheading": "Sub-heading",
-            "title": "Collection name",
-            "button_text": "View products",
+            "subheading": "",
+            "title": "",
+            "button_text": "Patio Umbrellas",
             "button_link": "",
             "apply_overlay": true
           }
