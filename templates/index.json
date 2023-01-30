@@ -90,7 +90,7 @@
             "content_position": "bottomCenter",
             "subheading": "",
             "title": "",
-            "button_text": "View products",
+            "button_text": "Conversational Sets",
             "button_link": "",
             "apply_overlay": false
           }
@@ -103,7 +103,7 @@
             "content_position": "bottomCenter",
             "subheading": "",
             "title": "",
-            "button_text": "View products",
+            "button_text": "Patio Seating",
             "button_link": "",
             "apply_overlay": true
           }
@@ -125,6 +125,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "image": "shopify:\/\/shop_images\/Weekend_Retreat2008_002_1.png",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "Sub-heading",
