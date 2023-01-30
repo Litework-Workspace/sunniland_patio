@@ -34,7 +34,7 @@
 
         {% comment %} <h2 class="SectionHeader__Heading SectionHeader__Heading--emphasize Heading u-h1">{{ block.settings.title | default: collection.title | escape }}</h2> {% endcomment %}
 
-        <div class="SectionHeader__ButtonWrapper">
+        <div class="SectionHeader__ButtonWrapper Collection-List_ButtonWrapper">
           {%- if block.settings.button_text != blank -%}
             <span class="CollectionItem__Link Button">{{ block.settings.button_text | escape }}</span>
           {%- else -%}
