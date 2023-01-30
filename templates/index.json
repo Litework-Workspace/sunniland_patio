@@ -150,12 +150,12 @@
         "3555c8cd-acb7-4905-a2e0-15a01bf6ab18": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "reunion-collection",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
-            "subheading": "Sub-heading",
-            "title": "Collection name",
-            "button_text": "View products",
+            "subheading": "",
+            "title": "",
+            "button_text": "Replacement Cushions",
             "button_link": "",
             "apply_overlay": true
           }
