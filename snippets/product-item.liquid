@@ -88,13 +88,14 @@
           <a href="{{ product.url }}">{{ product.title }}</a>
         </h2>
 
-        {%- if settings.show_product_rating -%}
+        {% comment %} Changed Position to under price {% endcomment %}
+        {% comment %} {%- if settings.show_product_rating -%}
           {%- unless use_horizontal -%}
             <div class="ProductItem__Rating Heading Text--subdued u-h7">
               {%- render 'product-rating', product: product -%}
             </div>
           {%- endunless -%}
-        {%- endif -%}
+        {%- endif -%} {% endcomment %}
 
         {%- if show_color_swatch -%}
           {%- assign color_swatch_list = '' -%}
@@ -171,15 +172,24 @@
                 {%- capture formatted_max_price -%}{{ product.price_max | money }}{%- endcapture -%}
               {%- endif -%}
 
-              <span class="ProductItem__Price Price Text--subdued">{{ 'collection.product.from_price_html' | t: min_price: formatted_min_price, max_price: formatted_max_price }}</span>
+              <span class="ProductItem__Price Price Price_Bold Text--subdued">From {{ 'collection.product.from_price_html' | t: min_price: formatted_min_price, max_price: formatted_max_price }}</span>
             {%- else -%}
               {%- if settings.currency_code_enabled -%}
-                <span class="ProductItem__Price Price Text--subdued">{{ product.price | money_with_currency }}</span>
+                <span class="ProductItem__Price Price Price_Bold Text--subdued">{{ product.price | money_with_currency }}</span>
               {%- else -%}
-                <span class="ProductItem__Price Price Text--subdued">{{ product.price | money }}</span>
+                <span class="Price">From </span>
+                <span class="ProductItem__Price Price Price_Bold Text--subdued">{{ product.price | money }}</span>
               {%- endif -%}
             {%- endif -%}
           </div>
+
+          {%- if settings.show_product_rating -%}
+          {%- unless use_horizontal -%}
+            <div class="ProductItem__Rating Heading Text--subdued u-h7">
+              {%- render 'product-rating', product: product -%}
+            </div>
+          {%- endunless -%}
+        {%- endif -%}
 
           {%- if product.selected_or_first_available_variant.unit_price_measurement -%}
             <div class="ProductItem__UnitPriceMeasurement">
