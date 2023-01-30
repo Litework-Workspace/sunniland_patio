@@ -176,12 +176,12 @@
         "0184f0bb-5a7a-4017-8955-cf30b2827ddb": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "sling-rail-caps",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
-            "subheading": "Sub-heading",
-            "title": "Collection name",
-            "button_text": "View products",
+            "subheading": "",
+            "title": "",
+            "button_text": "Repair Services",
             "button_link": "",
             "apply_overlay": true
           }
@@ -189,12 +189,12 @@
         "9ac41b38-45a1-4cd4-aa92-b037b29edc77": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "commercial-furniture",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
-            "subheading": "Sub-heading",
-            "title": "Collection name",
-            "button_text": "View products",
+            "subheading": "",
+            "title": "",
+            "button_text": "Commercial Furniture",
             "button_link": "",
             "apply_overlay": true
           }
