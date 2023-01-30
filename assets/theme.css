@@ -11597,6 +11597,9 @@ shopify-payment-terms {
 .CollectionItem__Content--bottomCenter{
   bottom: 20px;
 }
+[data-section-type="collection-list"] .button{
+  padding: 12px 16px;
+}
 @media screen and (min-width: 1140px) {
   .CollectionItem__Wrapper--small{
     aspect-ratio: .70;  
