@@ -11590,14 +11590,22 @@ shopify-payment-terms {
 
 
 /* CUSTOM EDITS */
+/* START Edits to Collection List section */
 .CollectionItem__Wrapper--small{
   aspect-ratio: .70;  
 }
-
+.CollectionItem__Content--bottomCenter{
+  bottom: 20px;
+}
 @media screen and (min-width: 1140px) {
   .CollectionItem__Wrapper--small{
     aspect-ratio: .70;  
   }
+  .CollectionItem__Content--bottomCenter{
+    bottom: 25px;
+  }
 }
+/* END Edits to Collection List section */
+
 
 
