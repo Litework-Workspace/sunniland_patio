@@ -11589,7 +11589,15 @@ shopify-payment-terms {
 }
 
 
+/* CUSTOM EDITS */
+.CollectionItem__Wrapper--small{
+  aspect-ratio: .70;  
+}
 
-
+@media screen and (min-width: 1140px) {
+  .CollectionItem__Wrapper--small{
+    aspect-ratio: .70;  
+  }
+}
 
 
