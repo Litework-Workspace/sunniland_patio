@@ -163,12 +163,12 @@
         "9694911a-0ceb-4cc2-9369-ba7042d4d59b": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "pre-cut-vinyl-straps",
             "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "Sub-heading",
-            "title": "Collection name",
-            "button_text": "View products",
+            "content_position": "bottomCenter",
+            "subheading": "",
+            "title": "",
+            "button_text": "Repair Parts",
             "button_link": "",
             "apply_overlay": true
           }
