@@ -11603,12 +11603,18 @@ shopify-payment-terms {
 .SectionHeader:not(:only-child){
   margin-bottom: 33.4px;
 }
+.SectionFooter {
+  margin-top: 18.4px;
+}
 @media screen and (min-width: 1140px) {
   .CollectionItem__Wrapper--small{
     aspect-ratio: .70;  
   }
   .CollectionItem__Content--bottomCenter{
     bottom: 25px;
+  }
+  .SectionFooter {
+    margin-top: 23.4px;
   }
 }
 /* END Edits to Collection List section */
