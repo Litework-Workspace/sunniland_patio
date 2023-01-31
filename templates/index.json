@@ -465,37 +465,43 @@
         "template--17486863663400__654c65c4-1510-4fc8-8c6c-4733e02e3b62-1673056524ee598275-0": {
           "type": "testimonial",
           "settings": {
-            "quote": "<p>Always a great experience at Sunniland. We have been there multiple times to help furnish our patio. Very knowledgeable and a beautiful selection to choose from. So nice to have a local spot to see everything in person.<\/p>"
+            "quote": "<p>Always a great experience at Sunniland. We have been there multiple times to help furnish our patio. Very knowledgeable and a beautiful selection to choose from. So nice to have a local spot to see everything in person.<\/p>",
+            "name": "Jill Fox"
           }
         },
         "template--17486863663400__654c65c4-1510-4fc8-8c6c-4733e02e3b62-1673056524ee598275-1": {
           "type": "testimonial",
           "settings": {
-            "quote": "<p>Share what your customers are saying about your products, your company...<\/p>"
+            "quote": "<p>Share what your customers are saying about your products, your company...<\/p>",
+            "name": "<p>John Doe<\/p>"
           }
         },
         "template--17486863663400__654c65c4-1510-4fc8-8c6c-4733e02e3b62-1673056524ee598275-2": {
           "type": "testimonial",
           "settings": {
-            "quote": "<p>Share what your customers are saying about your products, your company...<\/p>"
+            "quote": "<p>Share what your customers are saying about your products, your company...<\/p>",
+            "name": "<p>John Doe<\/p>"
           }
         },
         "2d2fc9eb-0a63-47b7-8aae-12c685fa2b46": {
           "type": "testimonial",
           "settings": {
-            "quote": "<p>Share what your customers are saying about your products, your company...<\/p>"
+            "quote": "<p>Share what your customers are saying about your products, your company...<\/p>",
+            "name": "<p>John Doe<\/p>"
           }
         },
         "b8f1590c-b24a-48ae-bd9a-db9ade371854": {
           "type": "testimonial",
           "settings": {
-            "quote": "<p>Share what your customers are saying about your products, your company...<\/p>"
+            "quote": "<p>Share what your customers are saying about your products, your company...<\/p>",
+            "name": "<p>John Doe<\/p>"
           }
         },
         "16cd714a-93ad-4ab2-8e72-685a703ebc08": {
           "type": "testimonial",
           "settings": {
-            "quote": "<p>Share what your customers are saying about your products, your company...<\/p>"
+            "quote": "<p>Share what your customers are saying about your products, your company...<\/p>",
+            "name": "<p>John Doe<\/p>"
           }
         }
       },
