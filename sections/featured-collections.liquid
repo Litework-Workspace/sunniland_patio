@@ -55,7 +55,7 @@
 
   {%- for block in section.blocks -%}
     {%- assign collection = collections[block.settings.collection] -%}
-
+    
     <div class="TabPanel" id="block-{{ block.id }}" aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}" role="tabpanel" {{ block.shopify_attributes }}>
       <div class="ProductListWrapper">
         {%- if collection != empty -%}
@@ -149,7 +149,7 @@
       </div>
 
       {%- if block.settings.button_text != blank -%}
-        <div>
+        <div class="Container Best_Seller-Container">
           <div class="SectionFooter">
             <a href="{{ collection.url }}" id="Shop-all_link" class="Button Button--primary">{{ block.settings.button_text | escape }}<img class="shop-all_vector" src="{{'Vector.svg' | asset_url}}" alt=""></a>
           </div>

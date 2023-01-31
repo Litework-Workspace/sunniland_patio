@@ -157,10 +157,12 @@
           <div class="ProductItem__PriceList {% if show_price_on_hover %}ProductItem__PriceList--showOnHover{% endif %} Heading">
             {%- if product.compare_at_price > product.price -%}
               {%- if settings.currency_code_enabled -%}
-                <span class="ProductItem__Price Price Price--highlight Text--subdued">{{ product.price | money_with_currency }}</span>
+                <span class="Price">From </span>
+                <span class="ProductItem__Price Price Price_Bold Price--highlight Text--subdued">{{ product.price | money_with_currency }}</span>
                 <span class="ProductItem__Price Price Price--compareAt Text--subdued">{{ product.compare_at_price | money_with_currency }}</span>
               {%- else -%}
-                <span class="ProductItem__Price Price Price--highlight Text--subdued">{{ product.price | money }}</span>
+                <span class="Price">From </span>
+                <span class="ProductItem__Price Price Price_Bold Price--highlight Text--subdued"> {{ product.price | money }}</span>
                 <span class="ProductItem__Price Price Price--compareAt Text--subdued">{{ product.compare_at_price | money }}</span>
               {%- endif -%}
             {%- elsif product.price_varies -%}
@@ -171,10 +173,11 @@
                 {%- capture formatted_min_price -%}{{ product.price_min | money }}{%- endcapture -%}
                 {%- capture formatted_max_price -%}{{ product.price_max | money }}{%- endcapture -%}
               {%- endif -%}
-
-              <span class="ProductItem__Price Price Price_Bold Text--subdued">From {{ 'collection.product.from_price_html' | t: min_price: formatted_min_price, max_price: formatted_max_price }}</span>
+              <span class="Price">From </span>
+              <span class="ProductItem__Price Price Price_Bold Text--subdued">{{ 'collection.product.from_price_html' | t: min_price: formatted_min_price, max_price: formatted_max_price }}</span>
             {%- else -%}
               {%- if settings.currency_code_enabled -%}
+                <span class="Price">From </span>
                 <span class="ProductItem__Price Price Price_Bold Text--subdued">{{ product.price | money_with_currency }}</span>
               {%- else -%}
                 <span class="Price">From </span>
