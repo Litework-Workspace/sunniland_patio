@@ -11283,6 +11283,16 @@ shopify-payment-terms {
   padding: 1rem 2rem;
   text-align: initial;
   color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.Testimonial_Writer-Name {
+  font-family: "Avenir";
+  font-weight: 500;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .quotation_mark {

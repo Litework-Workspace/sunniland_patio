@@ -37,6 +37,9 @@
             <div class="Testimonial__Content" {% if remainder == 0 %}style="background: #00695C;"{% endif %}>
               <img class="quotation_mark" src="{{ 'iocn.svg' | asset_url }}" alt="opening quotation mark">
               {{ block.settings.quote }}
+              {%  if block.settings.name != blank %}
+              <p class="Testimonial_Writer-Name">{{ block.settings.name }}</p>
+              {% endif %} %}
             </div>
           {%- endif -%}
 
@@ -152,6 +155,12 @@
           "label": "Quote",
           "default": "<p>Share what your customers are saying about your products, your company...</p>",
           "info": "For best results, keep the word count consistent in each quote."
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name",
+          "default": "<p>John Doe</p>",
         }
       ]
     }
