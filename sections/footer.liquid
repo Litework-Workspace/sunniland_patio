@@ -199,8 +199,8 @@
       {%- endif -%}
 
       <div class="Footer__Copyright">
-        <a href="{{ routes.root_url }}" class="Footer__StoreName Heading u-h7 Link Link--secondary">© {{ shop.name }}</a>
-        <p class="Footer__ThemeAuthor">{{ powered_by_link }}</p>
+        {% comment %} <a href="{{ routes.root_url }}" class="Footer__StoreName Heading u-h7 Link Link--secondary">© {{ shop.name }}</a> {% endcomment %}
+        {% comment %} <p class="Footer__ThemeAuthor">{{ powered_by_link }}</p> {% endcomment %}
       </div>
 
       {%- if section.settings.show_payment_methods -%}
@@ -217,7 +217,13 @@
         {%- endif -%}
       {%- endif -%}
     </div>
-  </div>
+    </div>
+    <div>
+      <div class="Container Copyright_Footer">
+        <span class="Sunniland_Copyright">Copyright © 2022 SunnilandPatio Furniture.</span>
+        <span class="Powered_Era">Powered by <b>Era of Purpose</b></span>
+      </div>
+    </div>
 </footer>
 
 {%- if settings.footer_background == settings.background -%}

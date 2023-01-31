@@ -7969,7 +7969,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 @media screen and (min-width: 641px) {
   .Footer {
-    padding: 75px 0 42px 0;
+    padding-top: 75px;
   }
 
   .Footer__Inner {
@@ -11280,19 +11280,21 @@ shopify-payment-terms {
 }
 
 .Testimonial__Content p {
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 0 2rem;
   text-align: initial;
   color: #FFFFFF;
   font-size: 18px;
   font-weight: 400;
 }
 
-.Testimonial_Writer-Name {
+#Testimonial_Writer-Name {
+  text-align: initial;
   font-family: "Avenir";
   font-weight: 500;
   font-size: 10px;
   text-transform: uppercase;
   color: #FFFFFF;
+  padding-top: 0;
 }
 
 .quotation_mark {

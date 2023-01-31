@@ -38,7 +38,7 @@
               <img class="quotation_mark" src="{{ 'iocn.svg' | asset_url }}" alt="opening quotation mark">
               {{ block.settings.quote }}
               {%  if block.settings.name != blank %}
-              <p class="Testimonial_Writer-Name">{{ block.settings.name }}</p>
+              <p id="Testimonial_Writer-Name">{{ block.settings.name }}</p>
               {% endif %}
             </div>
           {%- endif -%}
