@@ -37,9 +37,10 @@
         "template--17486863892776__27daa94b-3f9a-43fe-8654-b348350472f9-16754695353e4b64d2-0": {
           "type": "look",
           "settings": {
-            "dot_style": "light",
-            "product_1": "",
-            "product_1_horizontal_position": 30,
+            "image": "shopify:\/\/shop_images\/87690d9b-ba2b-4dad-914b-82cc712db137.jpg",
+            "dot_style": "dark",
+            "product_1": "chair-replacement-sling-1pc",
+            "product_1_horizontal_position": 34,
             "product_1_vertical_position": 40,
             "product_2": "",
             "product_2_horizontal_position": 45,
@@ -93,12 +94,34 @@
         "grid_mobile_items_per_row": "2",
         "grid_desktop_items_per_row": 4
       }
+    },
+    "5f6e1337-c33a-48de-a4be-801c22bb86dc": {
+      "type": "blog-posts",
+      "blocks": {
+        "template--17486863892776__5f6e1337-c33a-48de-a4be-801c22bb86dc-1675469727396df978-0": {
+          "type": "blog",
+          "settings": {
+            "blog": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17486863892776__5f6e1337-c33a-48de-a4be-801c22bb86dc-1675469727396df978-0"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Blog posts",
+        "show_category": false,
+        "button_link": "",
+        "button_text": "explore"
+      }
     }
   },
   "order": [
     "main",
     "recently-viewed-products",
     "27daa94b-3f9a-43fe-8654-b348350472f9",
-    "77a304d4-894e-47ad-91a1-494ed592b838"
+    "77a304d4-894e-47ad-91a1-494ed592b838",
+    "5f6e1337-c33a-48de-a4be-801c22bb86dc"
   ]
 }
