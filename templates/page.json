@@ -6,10 +6,10 @@
         "show_large": false
       }
     },
-    "e8f38a9b-08ec-45c3-bc9a-fee23e0bd7aa": {
-      "type": "collection-list",
+    "fb3facf5-59a5-46dd-a4b9-3f6b442916de": {
+      "type": "collection-list_main-collections",
       "blocks": {
-        "template--17486864122152__e8f38a9b-08ec-45c3-bc9a-fee23e0bd7aa-16755198367d8249a0-0": {
+        "template--17486864122152__fb3facf5-59a5-46dd-a4b9-3f6b442916de-1675523639661858d5-0": {
           "type": "collection",
           "settings": {
             "collection": "deals-of-the-month-1",
@@ -19,23 +19,23 @@
             "title": "",
             "button_text": "View products",
             "button_link": "",
-            "apply_overlay": true
+            "apply_overlay": false
           }
         },
-        "template--17486864122152__e8f38a9b-08ec-45c3-bc9a-fee23e0bd7aa-16755198367d8249a0-1": {
+        "template--17486864122152__fb3facf5-59a5-46dd-a4b9-3f6b442916de-1675523639661858d5-1": {
           "type": "collection",
           "settings": {
             "collection": "patio-dinning-sets",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
-            "subheading": "Sub-heading",
-            "title": "Collection name",
+            "subheading": "",
+            "title": "",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": true
           }
         },
-        "template--17486864122152__e8f38a9b-08ec-45c3-bc9a-fee23e0bd7aa-16755198367d8249a0-2": {
+        "template--17486864122152__fb3facf5-59a5-46dd-a4b9-3f6b442916de-1675523639661858d5-2": {
           "type": "collection",
           "settings": {
             "collection": "conversation-sets",
@@ -50,9 +50,9 @@
         }
       },
       "block_order": [
-        "template--17486864122152__e8f38a9b-08ec-45c3-bc9a-fee23e0bd7aa-16755198367d8249a0-0",
-        "template--17486864122152__e8f38a9b-08ec-45c3-bc9a-fee23e0bd7aa-16755198367d8249a0-1",
-        "template--17486864122152__e8f38a9b-08ec-45c3-bc9a-fee23e0bd7aa-16755198367d8249a0-2"
+        "template--17486864122152__fb3facf5-59a5-46dd-a4b9-3f6b442916de-1675523639661858d5-0",
+        "template--17486864122152__fb3facf5-59a5-46dd-a4b9-3f6b442916de-1675523639661858d5-1",
+        "template--17486864122152__fb3facf5-59a5-46dd-a4b9-3f6b442916de-1675523639661858d5-2"
       ],
       "settings": {
         "title": "Collection List",
@@ -70,6 +70,6 @@
   },
   "order": [
     "main",
-    "e8f38a9b-08ec-45c3-bc9a-fee23e0bd7aa"
+    "fb3facf5-59a5-46dd-a4b9-3f6b442916de"
   ]
 }
