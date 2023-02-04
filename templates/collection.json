@@ -34,6 +34,7 @@
     },
     "27daa94b-3f9a-43fe-8654-b348350472f9": {
       "type": "shop-the-look",
+      "disabled": true,
       "blocks": {
         "template--17486863892776__27daa94b-3f9a-43fe-8654-b348350472f9-16754695353e4b64d2-0": {
           "type": "look",
@@ -68,7 +69,7 @@
           "type": "collection",
           "settings": {
             "collection": "bar-stools",
-            "title": "",
+            "title": "Frequently bought together",
             "grid_items_count": 8,
             "button_text": "Shop All"
           }
@@ -87,7 +88,7 @@
         "template--17486863892776__77a304d4-894e-47ad-91a1-494ed592b838-1675469604e12c2d00-1"
       ],
       "settings": {
-        "title": "Featured collection",
+        "title": "Our widely admired patio replacement slings",
         "layout_mode": "carousel",
         "show_product_info": true,
         "show_vendor": false,
