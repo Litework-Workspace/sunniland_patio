@@ -187,12 +187,53 @@
         "grid_mobile_items_per_row": "2",
         "grid_desktop_items_per_row": 4
       }
+    },
+    "825354a6-df15-4c92-aba2-3b921d5ffd1c": {
+      "type": "blog-posts",
+      "blocks": {
+        "template--17486864122152__825354a6-df15-4c92-aba2-3b921d5ffd1c-167552443103ce4182-0": {
+          "type": "blog",
+          "settings": {
+            "blog": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17486864122152__825354a6-df15-4c92-aba2-3b921d5ffd1c-167552443103ce4182-0"
+      ],
+      "settings": {
+        "subheading": "Read articles by our experts to answer all your patio questions!",
+        "title": "Sunniblog",
+        "show_category": false,
+        "button_link": "",
+        "button_text": "Explore"
+      }
+    },
+    "d89e36e0-4766-472a-8fc4-e7f8422b2760": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "large",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "subheading": "",
+        "title": "Tell your story",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "button_1_text": "",
+        "button_1_link": "",
+        "button_2_text": "",
+        "button_2_link": "",
+        "button_color": "#363636",
+        "button_background": "#ffffff"
+      }
     }
   },
   "order": [
     "main",
     "fb3facf5-59a5-46dd-a4b9-3f6b442916de",
     "ec8cbadd-b314-43f6-8b0c-3fa5a1e6e02b",
-    "c28f1d47-d4fb-4dc7-8276-0d825bbd4561"
+    "c28f1d47-d4fb-4dc7-8276-0d825bbd4561",
+    "825354a6-df15-4c92-aba2-3b921d5ffd1c",
+    "d89e36e0-4766-472a-8fc4-e7f8422b2760"
   ]
 }
