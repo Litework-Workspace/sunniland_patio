@@ -1,7 +1,83 @@
 {
   "sections": {
+    "dc4e52a1-e644-4bf1-9428-bfdaa39d71aa": {
+      "type": "collection-list",
+      "blocks": {
+        "template--17809359077672__dc4e52a1-e644-4bf1-9428-bfdaa39d71aa-16755198367d8249a0-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "deals-of-the-month-1",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "template--17809359077672__dc4e52a1-e644-4bf1-9428-bfdaa39d71aa-16755198367d8249a0-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "patio-dinning-sets",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "template--17809359077672__dc4e52a1-e644-4bf1-9428-bfdaa39d71aa-16755198367d8249a0-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "a2037547-f213-4292-be13-6d276ae83cbc": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        }
+      },
+      "block_order": [
+        "template--17809359077672__dc4e52a1-e644-4bf1-9428-bfdaa39d71aa-16755198367d8249a0-0",
+        "template--17809359077672__dc4e52a1-e644-4bf1-9428-bfdaa39d71aa-16755198367d8249a0-1",
+        "template--17809359077672__dc4e52a1-e644-4bf1-9428-bfdaa39d71aa-16755198367d8249a0-2",
+        "a2037547-f213-4292-be13-6d276ae83cbc"
+      ],
+      "settings": {
+        "title": "Collection List",
+        "sub-heading": "Collection List",
+        "image_size": "normal",
+        "add_spacing": true,
+        "expand_collection": false,
+        "stack_on_mobile": true,
+        "text_color": "#ffffff",
+        "button_color": "#363636",
+        "link_text": "Shop all",
+        "shop-all_link": ""
+      }
+    },
     "main": {
       "type": "main-collection",
+      "disabled": true,
       "settings": {
         "show_collection_info": true,
         "show_collection_image": false,
@@ -64,6 +140,7 @@
     },
     "77a304d4-894e-47ad-91a1-494ed592b838": {
       "type": "featured-collections",
+      "disabled": true,
       "blocks": {
         "template--17486863892776__77a304d4-894e-47ad-91a1-494ed592b838-1675469604e12c2d00-0": {
           "type": "collection",
@@ -140,6 +217,7 @@
     }
   },
   "order": [
+    "dc4e52a1-e644-4bf1-9428-bfdaa39d71aa",
     "main",
     "recently-viewed-products",
     "27daa94b-3f9a-43fe-8654-b348350472f9",
