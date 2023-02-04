@@ -9,11 +9,11 @@
             "collection": "deals-of-the-month-1",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
-            "subheading": "Sub-heading",
-            "title": "Collection name",
-            "button_text": "View products",
+            "subheading": "",
+            "title": "",
+            "button_text": "",
             "button_link": "",
-            "apply_overlay": true
+            "apply_overlay": false
           }
         },
         "template--17809359077672__dc4e52a1-e644-4bf1-9428-bfdaa39d71aa-16755198367d8249a0-1": {
@@ -22,9 +22,9 @@
             "collection": "patio-dinning-sets",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
-            "subheading": "Sub-heading",
-            "title": "Collection name",
-            "button_text": "View products",
+            "subheading": "",
+            "title": "",
+            "button_text": "",
             "button_link": "",
             "apply_overlay": true
           }
