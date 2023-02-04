@@ -3,10 +3,73 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "show_large": false
+      }
+    },
+    "e8f38a9b-08ec-45c3-bc9a-fee23e0bd7aa": {
+      "type": "collection-list",
+      "blocks": {
+        "template--17486864122152__e8f38a9b-08ec-45c3-bc9a-fee23e0bd7aa-16755198367d8249a0-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "deals-of-the-month-1",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "template--17486864122152__e8f38a9b-08ec-45c3-bc9a-fee23e0bd7aa-16755198367d8249a0-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "patio-dinning-sets",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "template--17486864122152__e8f38a9b-08ec-45c3-bc9a-fee23e0bd7aa-16755198367d8249a0-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "conversation-sets",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        }
+      },
+      "block_order": [
+        "template--17486864122152__e8f38a9b-08ec-45c3-bc9a-fee23e0bd7aa-16755198367d8249a0-0",
+        "template--17486864122152__e8f38a9b-08ec-45c3-bc9a-fee23e0bd7aa-16755198367d8249a0-1",
+        "template--17486864122152__e8f38a9b-08ec-45c3-bc9a-fee23e0bd7aa-16755198367d8249a0-2"
+      ],
+      "settings": {
+        "title": "Collection List",
+        "sub-heading": "Collection List",
+        "image_size": "small",
+        "add_spacing": true,
+        "expand_collection": false,
+        "stack_on_mobile": true,
+        "text_color": "#ffffff",
+        "button_color": "#363636",
+        "link_text": "",
+        "shop-all_link": ""
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "e8f38a9b-08ec-45c3-bc9a-fee23e0bd7aa"
   ]
 }
