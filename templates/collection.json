@@ -115,6 +115,25 @@
         "button_link": "",
         "button_text": "explore"
       }
+    },
+    "c6b863d6-437a-477e-88e7-827c004162c0": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "large",
+        "image": "shopify:\/\/shop_images\/Van_Dyke_Seating_1.png",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "subheading": "",
+        "title": "Find Sunniland on Youtube",
+        "content": "<p>Learn how to repair your patio furniture the easy way with our DIY video tutorials.<\/p>",
+        "button_1_text": "Watch Tutorials",
+        "button_1_link": "",
+        "button_2_text": "",
+        "button_2_link": "",
+        "button_color": "#363636",
+        "button_background": "#ffffff"
+      }
     }
   },
   "order": [
@@ -122,6 +141,7 @@
     "recently-viewed-products",
     "27daa94b-3f9a-43fe-8654-b348350472f9",
     "77a304d4-894e-47ad-91a1-494ed592b838",
-    "5f6e1337-c33a-48de-a4be-801c22bb86dc"
+    "5f6e1337-c33a-48de-a4be-801c22bb86dc",
+    "c6b863d6-437a-477e-88e7-827c004162c0"
   ]
 }
