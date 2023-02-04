@@ -91,15 +91,15 @@
         "a980fa25-101a-4505-9e05-6928cbf1bc7c"
       ],
       "settings": {
-        "title": "Collection List",
-        "sub-heading": "Collection List",
+        "title": "Patio Furniture",
+        "sub-heading": "Shop by Category",
         "image_size": "normal",
         "add_spacing": true,
         "expand_collection": false,
         "stack_on_mobile": true,
         "text_color": "#ffffff",
         "button_color": "#363636",
-        "link_text": "Shop all",
+        "link_text": "",
         "shop-all_link": ""
       }
     },
