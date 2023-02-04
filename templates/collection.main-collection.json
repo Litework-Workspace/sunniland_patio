@@ -32,7 +32,7 @@
         "template--17809359077672__dc4e52a1-e644-4bf1-9428-bfdaa39d71aa-16755198367d8249a0-2": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "conversation-sets",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Sub-heading",
