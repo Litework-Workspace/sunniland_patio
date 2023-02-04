@@ -45,7 +45,20 @@
         "a2037547-f213-4292-be13-6d276ae83cbc": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "elemental-tables",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "1d217625-16b5-4c71-9770-dfba4f663d17": {
+          "type": "collection",
+          "settings": {
+            "collection": "patio-umbrellas-bases",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Sub-heading",
@@ -60,7 +73,8 @@
         "template--17809359077672__dc4e52a1-e644-4bf1-9428-bfdaa39d71aa-16755198367d8249a0-0",
         "template--17809359077672__dc4e52a1-e644-4bf1-9428-bfdaa39d71aa-16755198367d8249a0-1",
         "template--17809359077672__dc4e52a1-e644-4bf1-9428-bfdaa39d71aa-16755198367d8249a0-2",
-        "a2037547-f213-4292-be13-6d276ae83cbc"
+        "a2037547-f213-4292-be13-6d276ae83cbc",
+        "1d217625-16b5-4c71-9770-dfba4f663d17"
       ],
       "settings": {
         "title": "Collection List",
