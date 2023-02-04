@@ -74,8 +74,8 @@
             "collection": "patio-furniture-covers",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
-            "subheading": "Sub-heading",
-            "title": "Collection name",
+            "subheading": "",
+            "title": "",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": true
