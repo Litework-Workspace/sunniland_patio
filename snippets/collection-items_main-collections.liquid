@@ -1,0 +1,45 @@
+{%- assign collection_image = block.settings.image | default: collection.image | default: collection.products.first.featured_image -%}
+
+<a href="{{ block.settings.button_link | default: collection.url }}" {{ block.shopify_attributes }} id="Main_CollectionItem">
+  {%- capture mobile_size -%}750x{% if collection_image.height >= 960 %}960{% else %}{{ collection_image.height }}{% endif %}{%- endcapture -%}
+  {%- assign image_crop = block.settings.image_alignment | split: ' ' | last -%}
+
+  <div id="Main_CollectionItem__Wrapper">
+    <div id="Main-CollectionItem__ImageWrapper" >
+      <div id="Main_CollectionItem__Image">
+        <img class="Main_CollectionItem__Image" src="{{ collection_image | img_url }}" alt="">
+        </div>
+        
+
+      {%- if collection_image -%}
+        <noscript>
+          <div class="CollectionItem__Image {% if apply_overlay %}Image--contrast{% endif %}" style="background-position: {{ block.settings.image_alignment }}; background-image: url({{ collection_image | img_url: '1000x' }})"></div>
+        </noscript>
+      {%- endif -%}
+    </div>
+    <div class="title_with_svg">
+            <span class="Main_CollectionTitle">{{ collection.title  }}</span>
+            <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.087 0L13.16 1.00406L17.0926 5.26387H0V5.26391V6.68385V6.6839H17.0925L13.16 10.9436L14.087 11.9476L19.602 5.97382L14.087 0Z" fill="#263238"/>
+</svg>
+    </div>
+
+    <div class="CollectionItem__Content CollectionItem__Content--{{ block.settings.content_position | default: 'bottomLeft' }}">
+      <header class="SectionHeader">
+        {%- if block.settings.subheading != blank -%}
+          <h3 class="SectionHeader__SubHeading Heading u-h6">{{ block.settings.subheading | escape }}</h3>
+        {%- endif -%}
+
+        {% comment %} <h2 class="SectionHeader__Heading SectionHeader__Heading--emphasize Heading u-h1">{{ block.settings.title | default: collection.title | escape }}</h2> {% endcomment %}
+
+        {% comment %} <div class="SectionHeader__ButtonWrapper Collection-List_ButtonWrapper">
+          {%- if block.settings.button_text != blank -%}
+            <span class="CollectionItem__Link Button">{{ block.settings.button_text | escape }}</span>
+          {%- else -%}
+            <span class="CollectionItem__Link Button">{{ 'collection.general.view_products' | t }}</span>
+          {%- endif -%}
+        </div> {% endcomment %}
+      </header>
+    </div>
+  </div>
+</a>

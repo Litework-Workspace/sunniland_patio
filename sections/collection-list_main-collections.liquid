@@ -27,12 +27,12 @@
       {%- capture collection_items -%}
         {%- for block in section.blocks -%}
           {%- assign collection = collections[block.settings.collection] -%}
-          {%- render 'collection-item', block: block, collection: collection, apply_overlay: block.settings.apply_overlay -%}
+          {%- render 'collection-items_main-collections', block: block, collection: collection, apply_overlay: block.settings.apply_overlay -%}
         {%- endfor -%}
       {%- endcapture -%}
     
       {%- if section.settings.stack_on_mobile -%}
-        <div class="CollectionList CollectionList--grid {% if section.settings.add_spacing %}CollectionList--spaced{% endif %}">
+        <div id="Main_CollectionList" class="CollectionList CollectionList--grid {% if section.settings.add_spacing %}CollectionList--spaced{% endif %}">
           {{ collection_items }}
         </div>
       {%- else -%}
