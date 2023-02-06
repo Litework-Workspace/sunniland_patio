@@ -31,7 +31,7 @@
   <div class="ProductList ProductList--carousel Carousel">
     {%- for block in section.blocks -%}
       {% assign remainder = forloop.index | modulo: 2  %}
-      <div class="Carousel__Cell Testimonial" {{ block.shopify_attributes }} data-slide-index="{{ forloop.index0 }}" style="margin-left: -1.05rem; margin-right: 1rem">
+      <div class="Carousel__Cell Testimonial" {{ block.shopify_attributes }} data-slide-index="{{ forloop.index0 }}" style="margin-left: -2.05rem; margin-right: 2rem">
 
           {%- if block.settings.quote != blank -%}
             <div class="Testimonial__Content" {% if remainder == 0 %}style="background: #00695C;"{% endif %}>

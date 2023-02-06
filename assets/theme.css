@@ -7566,6 +7566,10 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   }
 }
 
+.ProductList--carousel .Carousel__Cell:first-child {
+  padding-left: 24px;
+}
+
 @media screen and (min-width: 641px) and (max-width: 1007px) {
   .ProductList--carousel .Carousel__Cell {
     width: 48%;
@@ -7574,6 +7578,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
   .ProductList--carousel .Carousel__Cell:first-child {
     margin-left: 0%; /* This is (100% - 48%) / 2, where 48% is the width of a single cell */
+    padding-left: 50px;
   }
   .ProductList--carousel .Carousel__Cell:last-child {
     margin-right: 26%; /* This is (100% - 48%) / 2, where 48% is the width of a single cell */
@@ -11610,7 +11615,9 @@ shopify-payment-terms {
   bottom: 20px;
 }
 .CollectionItem__Link.Button{
-  padding: 12px 16px;
+  padding: 12px 10px;
+  line-height: 13px;
+  font-weight: 600;
 }
 .SectionHeader:not(:only-child){
   margin-bottom: 33.4px;
