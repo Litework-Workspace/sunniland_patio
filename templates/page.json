@@ -248,6 +248,17 @@
         "button_color": "#363636",
         "button_background": "#ffffff"
       }
+    },
+    "8ca26768-041f-40eb-b635-d33e84b5b2e0": {
+      "type": "custom-html",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<p>Free Shipping on all patio furniture orders above $500. No code needed.<\/p>"
+      }
     }
   },
   "order": [
@@ -257,6 +268,7 @@
     "c05c644c-3edc-4710-8f41-1b1feaab9fc7",
     "c28f1d47-d4fb-4dc7-8276-0d825bbd4561",
     "825354a6-df15-4c92-aba2-3b921d5ffd1c",
-    "d89e36e0-4766-472a-8fc4-e7f8422b2760"
+    "d89e36e0-4766-472a-8fc4-e7f8422b2760",
+    "8ca26768-041f-40eb-b635-d33e84b5b2e0"
   ]
 }
