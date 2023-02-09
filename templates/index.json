@@ -453,7 +453,7 @@
         "subheading": "",
         "title": "Find Sunniland on Youtube",
         "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-        "show_on_mobile": false,
+        "show_on_mobile": true,
         "button_1_text": "Watch Tutorials",
         "button_1_link": "",
         "button_2_text": "",
