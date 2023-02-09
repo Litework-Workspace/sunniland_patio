@@ -1,5 +1,13 @@
 {
   "sections": {
+    "b29135a1-6c78-430a-acba-32e7def3b702": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<p><b>Free Shipping<\/b> on all patio furniture orders above $500. No code needed.<\/p>"
+      }
+    },
     "main": {
       "type": "main-collection",
       "settings": {
@@ -130,6 +138,7 @@
         "subheading": "",
         "title": "Find Sunniland on Youtube",
         "content": "<p>Learn how to repair your patio furniture the easy way with our DIY video tutorials.<\/p>",
+        "show_on_mobile": false,
         "button_1_text": "Watch Tutorials",
         "button_1_link": "",
         "button_2_text": "",
@@ -140,6 +149,7 @@
     }
   },
   "order": [
+    "b29135a1-6c78-430a-acba-32e7def3b702",
     "main",
     "recently-viewed-products",
     "27daa94b-3f9a-43fe-8654-b348350472f9",
