@@ -293,14 +293,14 @@
         "template--17486864122152__9505ec32-437c-4609-9183-1d41f8a413e1-1675996961f0ecb451-2": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "conversation-sets",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Sub-heading",
             "title": "Collection name",
-            "button_text": "View products",
+            "button_text": "",
             "button_link": "",
-            "apply_overlay": true
+            "apply_overlay": false
           }
         }
       },
