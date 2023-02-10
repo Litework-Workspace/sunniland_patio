@@ -1,8 +1,8 @@
 {%- assign collection_image = block.settings.image | default: collection.image | default: collection.products.first.featured_image -%}
 
 <a href="{{ block.settings.button_link | default: collection.url }}" {{ block.shopify_attributes }} id="Main_CollectionItem">
-  {% comment %} {%- capture mobile_size -%}750x{% if collection_image.height >= 960 %}960{% else %}{{ collection_image.height }}{% endif %}{%- endcapture -%} {% endcomment %}
-  {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,300,400,600,800,900,1000,1200', image: product.media[1] -%}{%- endcapture -%}
+  {%- capture mobile_size -%}750x{% if collection_image.height >= 960 %}960{% else %}{{ collection_image.height }}{% endif %}{%- endcapture -%}
+
   {%- assign image_crop = block.settings.image_alignment | split: ' ' | last -%}
 
   <div id="Main_CollectionItem__Wrapper CollectionItem__Wrapper--{{ section.settings.image_size }}">
@@ -11,7 +11,7 @@
       data-optimumx="1.4"
       data-expand="-150"
       {% if collection_image %}data-bgset="{{ collection_image | img_url: mobile_size, crop: image_crop }} 750w, {{ collection_image | img_url: '1000x' }} 1000w, {{ collection_image | img_url: '1500x' }} 1500w"{% endif %}>
-        <img class="Main_CollectionItem__Image Image--lazyLoad Image--fadeIn" data-src="{{ collection_image | img_url }}" alt="" data-widths="[{{ supported_sizes }}]" data-sizes="auto">
+        {% comment %} <img class="Main_CollectionItem__Image Image--lazyLoad Image--fadeIn" data-src="{{ collection_image | img_url }}" alt="" data-widths="[{{ supported_sizes }}]" data-sizes="auto"> {% endcomment %}
         </div>
         
 
