@@ -25,7 +25,7 @@
           "type": "collection",
           "settings": {
             "collection": "deals-of-the-month-1",
-            "image": "shopify:\/\/shop_images\/2_4.png",
+            "image": "shopify:\/\/shop_images\/Mask_group.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Sub-heading",
@@ -39,6 +39,7 @@
           "type": "collection",
           "settings": {
             "collection": "patio-dinning-sets",
+            "image": "shopify:\/\/shop_images\/Mask_group_1.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Sub-heading",
@@ -52,9 +53,66 @@
           "type": "collection",
           "settings": {
             "collection": "conversation-sets",
+            "image": "shopify:\/\/shop_images\/Group_3028.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "8bdcb90e-f47e-4a0c-a9db-c54eaacfd330": {
+          "type": "collection",
+          "settings": {
+            "collection": "andover-cushion",
+            "image": "shopify:\/\/shop_images\/Mask_group.png",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "c068eee9-3dc1-46fe-af8d-f26bf8dd46c3": {
+          "type": "collection",
+          "settings": {
+            "collection": "lounge-and-deep-seating",
+            "image": "shopify:\/\/shop_images\/Mask_group_2.png",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "542c1ffb-299a-4c4d-9b55-f635862e808a": {
+          "type": "collection",
+          "settings": {
+            "collection": "bar-tables",
+            "image": "shopify:\/\/shop_images\/Mask_group_3.png",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "40a21edd-db53-47ec-a47c-6d8112b965ba": {
+          "type": "collection",
+          "settings": {
+            "collection": "patio-umbrellas-bases",
+            "image": "shopify:\/\/shop_images\/Mask_group_4.png",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
             "title": "Collection name",
             "button_text": "View products",
             "button_link": "",
@@ -65,7 +123,11 @@
       "block_order": [
         "b5c984f9-885e-41d1-a22b-f9ce484259b6",
         "ac497a03-93bd-4a18-8b0b-355e13f73591",
-        "d32286ee-8151-4530-81be-77ca42e218ba"
+        "d32286ee-8151-4530-81be-77ca42e218ba",
+        "8bdcb90e-f47e-4a0c-a9db-c54eaacfd330",
+        "c068eee9-3dc1-46fe-af8d-f26bf8dd46c3",
+        "542c1ffb-299a-4c4d-9b55-f635862e808a",
+        "40a21edd-db53-47ec-a47c-6d8112b965ba"
       ],
       "settings": {
         "title": "Patio Furniture",
