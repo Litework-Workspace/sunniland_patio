@@ -26,9 +26,9 @@
 
     <div class="CollectionItem__Content CollectionItem__Content--{{ block.settings.content_position | default: 'bottomLeft' }}">
       <header class="SectionHeader">
-        {%- if block.settings.subheading != blank -%}
+        {% comment %} {%- if block.settings.subheading != blank -%}
           <h3 class="SectionHeader__SubHeading Heading u-h6">{{ block.settings.subheading | escape }}</h3>
-        {%- endif -%}
+        {%- endif -%} {% endcomment %}
 
         {% comment %} <h2 class="SectionHeader__Heading SectionHeader__Heading--emphasize Heading u-h1">{{ block.settings.title | default: collection.title | escape }}</h2> {% endcomment %}
 
