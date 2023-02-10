@@ -25,6 +25,7 @@
           "type": "collection",
           "settings": {
             "collection": "deals-of-the-month-1",
+            "image": "shopify:\/\/shop_images\/87690d9b-ba2b-4dad-914b-82cc712db137.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -259,6 +260,67 @@
         "button_color": "#363636",
         "button_background": "#ffffff"
       }
+    },
+    "9505ec32-437c-4609-9183-1d41f8a413e1": {
+      "type": "collection-list",
+      "blocks": {
+        "template--17486864122152__9505ec32-437c-4609-9183-1d41f8a413e1-1675996961f0ecb451-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "patio-umbrellas-bases",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": false
+          }
+        },
+        "template--17486864122152__9505ec32-437c-4609-9183-1d41f8a413e1-1675996961f0ecb451-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "template--17486864122152__9505ec32-437c-4609-9183-1d41f8a413e1-1675996961f0ecb451-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        }
+      },
+      "block_order": [
+        "template--17486864122152__9505ec32-437c-4609-9183-1d41f8a413e1-1675996961f0ecb451-0",
+        "template--17486864122152__9505ec32-437c-4609-9183-1d41f8a413e1-1675996961f0ecb451-1",
+        "template--17486864122152__9505ec32-437c-4609-9183-1d41f8a413e1-1675996961f0ecb451-2"
+      ],
+      "settings": {
+        "title": "Collection List",
+        "sub-heading": "Collection List",
+        "image_size": "normal",
+        "add_spacing": true,
+        "expand_collection": false,
+        "stack_on_mobile": true,
+        "text_color": "#ffffff",
+        "button_color": "#363636",
+        "link_text": "Shop all",
+        "shop-all_link": ""
+      }
     }
   },
   "order": [
@@ -269,6 +331,7 @@
     "c05c644c-3edc-4710-8f41-1b1feaab9fc7",
     "c28f1d47-d4fb-4dc7-8276-0d825bbd4561",
     "825354a6-df15-4c92-aba2-3b921d5ffd1c",
-    "d89e36e0-4766-472a-8fc4-e7f8422b2760"
+    "d89e36e0-4766-472a-8fc4-e7f8422b2760",
+    "9505ec32-437c-4609-9183-1d41f8a413e1"
   ]
 }
