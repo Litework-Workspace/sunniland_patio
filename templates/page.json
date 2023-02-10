@@ -25,6 +25,7 @@
           "type": "collection",
           "settings": {
             "collection": "deals-of-the-month-1",
+            "image": "shopify:\/\/shop_images\/2_4.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Sub-heading",
