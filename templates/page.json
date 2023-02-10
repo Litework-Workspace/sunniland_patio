@@ -33,10 +33,38 @@
             "button_link": "",
             "apply_overlay": true
           }
+        },
+        "ac497a03-93bd-4a18-8b0b-355e13f73591": {
+          "type": "collection",
+          "settings": {
+            "collection": "patio-dinning-sets",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": false
+          }
+        },
+        "d32286ee-8151-4530-81be-77ca42e218ba": {
+          "type": "collection",
+          "settings": {
+            "collection": "conversation-sets",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
         }
       },
       "block_order": [
-        "b5c984f9-885e-41d1-a22b-f9ce484259b6"
+        "b5c984f9-885e-41d1-a22b-f9ce484259b6",
+        "ac497a03-93bd-4a18-8b0b-355e13f73591",
+        "d32286ee-8151-4530-81be-77ca42e218ba"
       ],
       "settings": {
         "title": "Patio Furniture",
