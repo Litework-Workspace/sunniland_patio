@@ -315,13 +315,27 @@
             "button_link": "",
             "apply_overlay": false
           }
+        },
+        "e7b997ff-e777-42a2-879e-6b6539456c51": {
+          "type": "collection",
+          "settings": {
+            "collection": "patio-furniture-covers",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": false
+          }
         }
       },
       "block_order": [
         "template--17486864122152__9505ec32-437c-4609-9183-1d41f8a413e1-1675996961f0ecb451-0",
         "template--17486864122152__9505ec32-437c-4609-9183-1d41f8a413e1-1675996961f0ecb451-1",
         "template--17486864122152__9505ec32-437c-4609-9183-1d41f8a413e1-1675996961f0ecb451-2",
-        "24c048b7-d5c7-4b7b-a799-e848f56e4124"
+        "24c048b7-d5c7-4b7b-a799-e848f56e4124",
+        "e7b997ff-e777-42a2-879e-6b6539456c51"
       ],
       "settings": {
         "title": "Collection List",
