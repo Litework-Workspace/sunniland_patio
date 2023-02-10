@@ -126,7 +126,7 @@
       "settings": {
         "title": "Patio Furniture",
         "sub-heading": "Shop By Category",
-        "image_size": "small",
+        "image_size": "large",
         "add_spacing": true,
         "expand_collection": false,
         "stack_on_mobile": true,
