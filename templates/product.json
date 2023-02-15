@@ -31,7 +31,7 @@
           "type": "buy_buttons",
           "settings": {
             "show_price_in_button": false,
-            "show_payment_button": true
+            "show_payment_button": false
           }
         },
         "description": {
