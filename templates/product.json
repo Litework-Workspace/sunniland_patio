@@ -6,6 +6,42 @@
         "product_meta": {
           "type": "product_meta",
           "settings": {
+            "show_vendor": true,
+            "show_sku": false,
+            "show_product_rating": false,
+            "show_taxes_included": false
+          }
+        },
+        "9bafb7f6-ab08-42f9-a846-d608a7c1e117": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+            "stars_fill_color": "#000000",
+            "star_size": 15,
+            "text_align": "center",
+            "product": "{{product}}",
+            "stars_text_empty": "No reviews"
+          }
+        },
+        "variant_selector": {
+          "type": "variant_selector",
+          "settings": {
+            "selector_mode": "dropdown",
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "size_chart": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_label": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": true
           }
         },
         "description": {
@@ -18,47 +54,112 @@
           "settings": {
           }
         },
-        "variant_selector": {
-          "type": "variant_selector",
-          "settings": {
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
+        "69b5edb8-6071-4233-956f-022465ab5414": {
+          "type": "reviews",
           "settings": {
           }
         }
       },
       "block_order": [
         "product_meta",
-        "description",
-        "share_buttons",
+        "9bafb7f6-ab08-42f9-a846-d608a7c1e117",
         "variant_selector",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "description",
+        "share_buttons",
+        "69b5edb8-6071-4233-956f-022465ab5414"
       ],
       "settings": {
+        "image_size": "large",
+        "stack_images": true,
+        "show_thumbnails": true,
+        "enable_image_zoom": true,
+        "enable_video_looping": false
+      }
+    },
+    "a3b8ac53-c548-48a5-9ee4-9cd222e76ca7": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--17486863630632__a3b8ac53-c548-48a5-9ee4-9cd222e76ca7-16764725920fbe9753-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "bar-stools",
+            "title": "More from Telescope",
+            "grid_items_count": 16,
+            "button_text": ""
+          }
+        },
+        "template--17486863630632__a3b8ac53-c548-48a5-9ee4-9cd222e76ca7-16764725920fbe9753-1": {
+          "type": "buy_buttons",
+          "disabled": true,
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": true
+          }
+        }
+      },
+      "block_order": [
+        "template--17486863630632__a3b8ac53-c548-48a5-9ee4-9cd222e76ca7-16764725920fbe9753-0",
+        "template--17486863630632__a3b8ac53-c548-48a5-9ee4-9cd222e76ca7-16764725920fbe9753-1"
+      ],
+      "settings": {
+        "title": "Featured collection",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
       }
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
+        "heading": "More from Telescope",
+        "recommendations_count": 4,
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false
       }
     },
     "recently-viewed-products": {
       "type": "recently-viewed-products",
+      "disabled": true,
       "settings": {
+        "title": "Recently viewed",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false
+      }
+    },
+    "febe0032-e415-45f8-b840-cd4ed71979b9": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "large",
+        "image": "shopify:\/\/shop_images\/Van_Dyke_Seating_1.png",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 10,
+        "subheading": "",
+        "title": "Find Sunniland on Youtube",
+        "content": "<p>Learn how to repair your patio furniture the easy way with our DIY video tutorials.<\/p>",
+        "show_on_mobile": false,
+        "button_1_text": "Checkout Tutorials",
+        "button_1_link": "",
+        "button_2_text": "",
+        "button_2_link": "",
+        "button_color": "#363636",
+        "button_background": "#ffffff"
       }
     }
   },
   "order": [
     "main",
+    "a3b8ac53-c548-48a5-9ee4-9cd222e76ca7",
     "product-recommendations",
-    "recently-viewed-products"
+    "recently-viewed-products",
+    "febe0032-e415-45f8-b840-cd4ed71979b9"
   ]
 }
