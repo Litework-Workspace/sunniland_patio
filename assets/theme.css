@@ -1547,6 +1547,7 @@ input.spr-button-primary[disabled],
 .spr-summary-actions-newreview::before,
 .spr-button-primary:not(input)::before {
   background-color: var(--button-background);
+  border-radius: 50px;
 }
 
 @media (-moz-touch-enabled: 0), (hover: hover) {
@@ -3938,7 +3939,9 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   display: inline-flex;
   align-items: center;
   border: 1px solid var(--border-color);
+  border-radius: 25px;
   white-space: nowrap;
+  height: 50px;
 }
 
 .QuantitySelector svg {
@@ -9680,9 +9683,9 @@ h2.SectionHeader__Heading {
  */
 .ProductMeta {
   text-align: center;
-  padding-bottom: 24px;
-  margin-bottom: 24px;
-  border-bottom: 1px solid var(--border-color);
+  /* padding-bottom: 24px;
+  margin-bottom: 24px; */
+  /* border-bottom: 1px solid var(--border-color); */
 }
 
 .ProductMeta__ImageWrapper {
@@ -9724,6 +9727,8 @@ shopify-payment-terms {
 .ProductMeta__Text {
   margin: 24px 0;
   text-align: left;
+  border-top: 1px solid var(--border-color);
+  padding-top: 20px;
 }
 
 .ProductMeta__Rating {
@@ -9836,15 +9841,18 @@ shopify-payment-terms {
 
 .ProductForm__Item {
   position: relative;
-  width: 100%;
+  width: 165px;
+  height: 35px;
   text-align: left;
-  padding: 10px 28px 10px 14px;
+  padding: 0px 0px 0px 14px;
   border: 1px solid var(--border-color);
+  border-radius: 25px;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  background: #ECEFF1;
 }
 
 .ProductForm__Item .Icon--select-arrow {
@@ -9887,8 +9895,9 @@ shopify-payment-terms {
 }
 
 .ProductForm__QuantitySelector {
-  margin-top: 24px;
-  margin-bottom: 24px;
+  /* margin-top: 24px;
+  margin-bottom: 24px; */
+  margin-right: 20px;
 }
 
 .ProductForm__Error {
@@ -9903,8 +9912,12 @@ shopify-payment-terms {
   background-color: #263238;
   border-radius: 50px;
   color: #ffffff;
-  height: 40px;
-  width: 150px;
+  height: 50px;
+  width: 240px;
+}
+
+.ProductForm__AddToCart::before {
+  background-color: #263238;
 }
 
 /**
