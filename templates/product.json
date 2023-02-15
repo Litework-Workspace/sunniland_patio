@@ -8,18 +8,8 @@
           "settings": {
             "show_vendor": true,
             "show_sku": false,
-            "show_product_rating": false,
+            "show_product_rating": true,
             "show_taxes_included": false
-          }
-        },
-        "9bafb7f6-ab08-42f9-a846-d608a7c1e117": {
-          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
-          "settings": {
-            "stars_fill_color": "#000000",
-            "star_size": 15,
-            "text_align": "center",
-            "product": "{{product}}",
-            "stars_text_empty": "No reviews"
           }
         },
         "variant_selector": {
@@ -62,7 +52,6 @@
       },
       "block_order": [
         "product_meta",
-        "9bafb7f6-ab08-42f9-a846-d608a7c1e117",
         "variant_selector",
         "quantity_selector",
         "buy_buttons",
