@@ -9682,7 +9682,7 @@ h2.SectionHeader__Heading {
  * ----------------------------------------------------------------------------
  */
 .ProductMeta {
-  text-align: center;
+  /* text-align: center; */
   /* padding-bottom: 24px;
   margin-bottom: 24px; */
   /* border-bottom: 1px solid var(--border-color); */
