@@ -105,9 +105,8 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
-      "disabled": true,
       "settings": {
-        "heading": "More from Telescope",
+        "heading": "Compare Similar Items",
         "recommendations_count": 4,
         "show_product_info": true,
         "show_vendor": false,
@@ -116,7 +115,6 @@
     },
     "recently-viewed-products": {
       "type": "recently-viewed-products",
-      "disabled": true,
       "settings": {
         "title": "Recently viewed",
         "show_product_info": true,
