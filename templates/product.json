@@ -106,7 +106,7 @@
       "type": "product-recommendations",
       "settings": {
         "heading": "Compare Similar Items",
-        "sub-heading": "Our widely admired.",
+        "sub-heading": "Product Recommendations",
         "recommendations_count": 4,
         "show_product_info": true,
         "show_vendor": false,
