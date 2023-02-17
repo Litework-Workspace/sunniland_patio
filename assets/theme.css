@@ -1539,7 +1539,7 @@ input.spr-button-primary[disabled],
 .spr-summary-actions-newreview,
 .spr-button-primary:not(input) {
   color: var(--button-text-color);
-  border-color: var(--button-background);
+  /* border-color: var(--button-background); */
 }
 
 .Button--primary::before,
