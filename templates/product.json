@@ -95,7 +95,6 @@
       "settings": {
         "title": "Featured collection",
         "layout_mode": "carousel",
-        "show-grid-desktop": true,
         "show_product_info": true,
         "show_vendor": false,
         "show_color_swatch": false,
@@ -107,6 +106,7 @@
       "type": "product-recommendations",
       "settings": {
         "heading": "Compare Similar Items",
+        "sub-heading": "Our widely admired.",
         "recommendations_count": 4,
         "show_product_info": true,
         "show_vendor": false,
@@ -117,6 +117,7 @@
       "type": "recently-viewed-products",
       "settings": {
         "title": "Recently viewed",
+        "sub-headong": "",
         "show_product_info": true,
         "show_vendor": false,
         "show_color_swatch": false
