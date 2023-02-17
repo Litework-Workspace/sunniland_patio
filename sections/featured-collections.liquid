@@ -20,7 +20,7 @@
 }
 {%- endcapture -%}
 
-<section class="Section Section--spacingNormal Display-Carousel-Mobile_Desktop" data-section-id="{{ section.id }}" data-section-type="featured-collections" data-settings='{{ section_settings }}'>
+<section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="featured-collections" data-settings='{{ section_settings }}'>
   <header class="SectionHeader SectionHeader--left">
     <div class="Container">
     {%- if section.blocks.size > 1 -%}
@@ -164,180 +164,6 @@
 {% if section.settings.layout_mode == 'grid' %}{{ settings.product_list_horizontal_spacing }},{{ settings.product_list_vertical_spacing }}{% endif %}
 {%- endcapture -%}
 
-
-
-{%- capture grid-on-desktop -%}
-  {
-    "layout": "grid"
-  }
-  {%- endcapture -%}
-{% if section.settings.show-grid-desktop and section.settings.layout_mode != 'grid' %}
-<section class="Section Section--spacingNormal Display-Grid-Desktop" data-section-id="{{ section.id }}" data-section-type="featured-collections" data-settings='{{ grid-on-desktop }}'>
-  <header class="SectionHeader SectionHeader--left">
-    <div class="Container">
-    {%- if section.blocks.size > 1 -%}
-      <div class="SectionHeader__TabList TabList" role="tablist">
-        {%- for block in section.blocks -%}
-          {%- assign collection = collections[block.settings.collection] -%}
-
-          <button class="Heading u-h1 TabList__Item {% if forloop.first %}is-active{% endif %}" data-action="toggle-tab" aria-controls="block-{{ block.id }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" role="tab">
-            {%- if collection != empty -%}
-              {{- block.settings.title | default: collection.title -}}
-            {%- else -%}
-              {{- 'home_page.onboarding.collection_title' | t -}}
-            {%- endif -%}
-          </button>
-        {%- endfor -%}
-      </div>
-    {%- else -%}
-      {%- assign collection = collections[section.blocks.first.settings.collection] -%}
-
-      {%- if collection != empty -%}
-        <h2 class="SectionHeader__Heading Heading u-h1">{{ section.blocks.first.settings.title | default: collection.title }}</h2>
-      {%- else -%}
-        <h2 class="SectionHeader__Heading Heading u-h1">{{ 'home_page.onboarding.collection_title' | t }}</h2>
-      {%- endif -%}
-    {%- endif -%}
-
-    {%- if section.settings.title != blank -%}
-      <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.title | escape }}</h3>
-    {%- endif -%}
-    </div>
-  </header>
-
-  {%- for block in section.blocks -%}
-    {%- assign collection = collections[block.settings.collection] -%}
-    
-    <div class="TabPanel" id="block-{{ block.id }}" aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}" role="tabpanel" {{ block.shopify_attributes }}>
-      <div class="ProductListWrapper">
-        {%- if collection != empty -%}
-          {%- assign item_count = block.settings.grid_items_count -%}
-
-          {%- if collection.products_count < block.settings.grid_items_count -%}
-            {%- assign item_count = collection.products_count -%}
-          {%- endif -%}
-
-          {%- if section.settings.layout_mode == 'grid' -%}
-            <div class="ProductList ProductList--grid ProductList--removeMargin Grid" data-mobile-count="{{ section.settings.grid_mobile_items_per_row }}" data-desktop-count="{{ section.settings.grid_desktop_items_per_row }}">
-              {%- for product in collection.products limit: block.settings.grid_items_count -%}
-                <div class="Grid__Cell 1/{{ section.settings.grid_mobile_items_per_row }}--phone 1/2--tablet 1/{{ section.settings.grid_desktop_items_per_row }}--lap-and-up">
-                  {%- render 'product-item', product: product, show_product_info: section.settings.show_product_info, show_vendor: section.settings.show_vendor, show_color_swatch: section.settings.show_color_swatch, show_labels: true -%}
-                </div>
-              {%- endfor -%}
-            </div>
-          {%- else -%}
-            <div class="ProductList ProductList--carousel Carousel" >
-              {%- for product in collection.products limit: block.settings.grid_items_count -%}
-                <div id="BestSeller-Carousel__Cell" class="Carousel__Cell">
-                  {%- render 'product-item', product: product, show_product_info: section.settings.show_product_info, show_vendor: section.settings.show_vendor, show_color_swatch: section.settings.show_color_swatch, show_labels: true -%}
-
-                  {% comment %} Start of Buy Button addition {% endcomment %}
-                  {%- form 'product', product, class: 'ProductForm' -%}
-                    {%- render 'product-data', product: product -%}
-                            {%- if block.settings.show_payment_button == false or product.selling_plan_groups.size > 0 -%}
-                              {%- assign use_primary_button = true -%}
-                            {%- else -%}
-                              {%- assign use_primary_button = false -%}
-                            {%- endif -%}
-
-                            <div class="ProductForm__BuyButtons" {{ block.shopify_attributes }}>
-                              {%- if block.settings.show_payment_button and product.selected_or_first_available_variant.available == false -%}
-                                <style>
-                                  #shopify-section-{{ section.id }} .shopify-payment-button {
-                                    display: none;
-                                  }
-                                </style>
-                              {%- endif -%}
-
-                              <button type="submit" data-use-primary-button="{% if use_primary_button %}true{% else %}false{% endif %}" class="ProductForm__AddToCart Button {% if product.selected_or_first_available_variant.available and use_primary_button %}Button--primary{% else %}Button--secondary{% endif %} Button--full" {% if product.selected_or_first_available_variant.available %}data-action="add-to-cart"{% else %}disabled="disabled"{% endif %}>
-                                {%- if product.selected_or_first_available_variant.available -%}
-                                  <span>{% if product.template_suffix == 'pre-order' %}{{ 'product.form.pre_order' | t }}{% else %}{{ 'product.form.add_to_cart' | t }}{% endif %}</span>
-
-                                  {%- if block.settings.show_price_in_button -%}
-                                    <span class="Button__SeparatorDot"></span>
-                                    <span>{{ product.selected_or_first_available_variant.price | money }}</span>
-                                  {%- endif -%}
-                                {%- else -%}
-                                  {{- 'product.form.sold_out' | t -}}
-                                {%- endif -%}
-                              </button>
-
-                              {%- if block.settings.show_payment_button and product.template_suffix != 'pre-order' -%}
-                                {{ form | payment_button }}
-                              {%- endif -%}
-                            </div>
-                    {%- unless has_ouputted_variant_selector -%}
-                      {%- comment -%}If for any reason the merchant has removed the variant selector block, we still output the ID here{%- endcomment -%}
-                      <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                    {%- endunless -%}
-                  {% endform %}
-                  {% comment %} End of Buy Button Addition {% endcomment %}
-                </div>
-              {%- endfor -%}
-            </div>
-          {%- endif -%}
-        {%- else -%}
-          {%- comment -%}If collection is not set, we use placeholder content for all three layout mode{%- endcomment -%}
-
-          {%- capture products_placeholder -%}
-            {%- for i in (1..block.settings.grid_items_count) -%}
-              <div class="{% if section.settings.layout_mode == 'grid' %}Grid__Cell 1/{{ section.settings.grid_mobile_items_per_row }}--phone 1/2--tablet-and-up 1/{{ section.settings.grid_desktop_items_per_row }}--lap-and-up{% else %}Carousel__Cell{% endif %}">
-                {% capture placeholder_index %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
-                {%- render 'product-item-placeholder', placeholder_index: placeholder_index -%}
-              </div>
-            {%- endfor -%}
-          {%- endcapture -%}
-
-          {%- if section.settings.layout_mode == 'grid' -%}
-            <div class="ProductList ProductList--grid ProductList--removeMargin Grid" data-mobile-count="{{ section.settings.grid_mobile_items_per_row }}" data-desktop-count="{{ section.settings.grid_desktop_items_per_row }}">
-              {{ products_placeholder }}
-            </div>
-          {%- else -%}
-            <div class="ProductList ProductList--carousel Carousel" data-flickity-config='{{ flickity_options }}'>
-              {{ products_placeholder }}
-            </div>
-          {%- endif -%}
-        {%- endif -%}
-      </div>
-
-      {%- if block.settings.button_text != blank -%}
-        <div class="Best_Seller-Container">
-          <div class="SectionFooter">
-            <a href="{{ collection.url }}" id="Shop-all_link" class="Button Button--primary Featured-Collection-Shop_All">{{ block.settings.button_text | escape }}<img class="shop-all_vector" src="{{'Vector.svg' | asset_url}}" alt=""></a>
-          </div>
-        </div>
-      {%- endif -%}
-    </div>
-  {%- endfor -%}
-</section>
-
-{%- capture hack -%}
-{%- comment -%}This is just an ugly hack to make those variables appear as part of the theme editor in the General Settings{%- endcomment -%}
-
-  {{ settings.product_list_horizontal_spacing }},{{ settings.product_list_vertical_spacing }}
-
-{%- endcapture -%}
-{% endif %}
-
-{% if section.settings.show-grid-desktop %}
-<style>
-  .Display-Grid-Desktop {
-    display: none;
-  }
-    @media and (min-width:1140px) {
-      .Display-Grid-Desktop {
-        display: block;
-      }
-
-      .Display-Carousel-Mobile_Desktop {
-        display: none !important;
-      }
-
-    }
-    </style>
-  {% endif %}
-
-
 {% schema %}
 {
   "name": "Featured collections",
@@ -365,12 +191,6 @@
         }
       ],
       "default": "grid"
-    },
-    {
-      "type": "checkbox",
-      "id": "show-grid-desktop",
-      "label": "Show grid on desktop",
-      "default": false
     },
     {
       "type": "checkbox",

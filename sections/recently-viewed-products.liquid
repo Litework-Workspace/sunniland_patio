@@ -22,7 +22,8 @@
   {%- if section.settings.title != blank -%}
     <header class="SectionHeader SectionHeader--center">
       <div class="Container">
-        <h3 class="SectionHeader__Heading Heading u-h3">{{ section.settings.title | escape }}</h3>
+        <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+        <h3 class="SectionHeader__Heading Heading u-h3"></h3>
       </div>
     </header>
   {%- endif -%}
@@ -59,6 +60,11 @@
       "id": "title",
       "label": "Heading",
       "default": "Recently viewed"
+    },
+    {
+      "type": "text",
+      "id": "sub-headong",
+      "label": "Sub-Heading"
     },
     {
       "type": "checkbox",
