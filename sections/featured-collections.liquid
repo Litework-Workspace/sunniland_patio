@@ -319,23 +319,23 @@
 {%- endcapture -%}
 {% endif %}
 
+{% if section.settings.show-grid-desktop %}
 <style>
   .Display-Grid-Desktop {
     display: none;
   }
-  {% if section.settings.show-grid-desktop %}
     @media and (min-width:1140px) {
       .Display-Grid-Desktop {
         display: block;
       }
 
       .Display-Carousel-Mobile_Desktop {
-        display: none;
+        display: none !important;
       }
 
     }
+    </style>
   {% endif %}
-</style>
 
 
 {% schema %}
