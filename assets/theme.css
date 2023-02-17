@@ -2042,13 +2042,13 @@ body:not(.is-tabbing) .flickity-enabled:focus {
 .flickity-page-dots .dot {
   position: relative;
   display: inline-block;
-  width: 9px;
-  height: 9px;
+  width: 71px;
+  height: 73px;
   margin: 0 6px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   cursor: pointer;
   background: transparent;
-  border: 1px solid var(--border-color);
+  /* border: 1px solid var(--border-color); */
   transition: color 0.2s ease-in-out, background 0.2s ease-in-out; /* This is used to increase the clickable area */
 }
 
@@ -9243,7 +9243,7 @@ h2.SectionHeader__Heading {
 .Product__SlideshowMobileNav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   margin: 20px 24px 0 24px;
 }
 .Product__SlideshowMobileNav .flickity-page-dots {

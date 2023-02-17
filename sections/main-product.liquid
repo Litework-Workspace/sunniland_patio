@@ -226,19 +226,19 @@
           {%- endcomment -%}
 
           <div class="Product__SlideshowMobileNav {% if section.settings.stack_images or section.settings.show_thumbnails %}hidden-lap-and-up{% endif %}">
-            <button class="Product__SlideshowNavArrow Product__SlideshowNavArrow--previous" type="button" data-direction="previous" aria-label="{{ 'general.accessibility.previous' | t }}">
+            {% comment %} <button class="Product__SlideshowNavArrow Product__SlideshowNavArrow--previous" type="button" data-direction="previous" aria-label="{{ 'general.accessibility.previous' | t }}">
               {% render 'icon' with 'media-arrow-left' %}
-            </button>
+            </button> {% endcomment %}
 
             <div class="flickity-page-dots">
-              {%- for i in (1..media_count) -%}
-                <button type="button" aria-label="{{ 'product.slideshow.go_to_image' | t: i: i | escape }}" class="dot {% if forloop.index0 == initial_media_index %}is-selected{% endif %}" data-index="{{ forloop.index0 }}"></button>
+              {%- for media in product.media -%}
+                <button type="button" aria-label="{{ 'product.slideshow.go_to_image' | t: i: i | escape }}" class="dot {% if forloop.index0 == initial_media_index %}is-selected{% endif %}" data-index="{{ forloop.index0 }}"><img src="{{ media | img_url: '160x' }}" alt="{{ media.alt | escape }}"></button>
               {%- endfor -%}
             </div>
 
-            <button class="Product__SlideshowNavArrow Product__SlideshowNavArrow--next" type="button" data-direction="next" aria-label="{{ 'general.accessibility.next' | t }}">
+            {% comment %} <button class="Product__SlideshowNavArrow Product__SlideshowNavArrow--next" type="button" data-direction="next" aria-label="{{ 'general.accessibility.next' | t }}">
               {% render 'icon' with 'media-arrow-right' %}
-            </button>
+            </button> {% endcomment %}
           </div>
         {%- endif -%}
 
