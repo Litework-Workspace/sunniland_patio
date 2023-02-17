@@ -7537,6 +7537,11 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   /* overflow: hidden; */
 }
 
+.ProductList--carousel::-webkit-scrollbar {
+  display: none;
+}
+
+
 
 
 @media screen and (max-width: 1007px) {
