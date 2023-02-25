@@ -7,6 +7,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Collection_Picture_Redondo_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/3_3.png",
             "apply_overlay": true,
             "content_position": "bottomLeft",
             "subheading": "",
