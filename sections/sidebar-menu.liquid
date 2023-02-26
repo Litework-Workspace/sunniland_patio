@@ -51,6 +51,14 @@
                 {%- endif -%}
               </div>
             {%- endfor -%}
+            {% if template == 'blog' %}
+              <h2 class="SectionHeader__Heading Heading u-h1 Phone-MenuHeading">Blog Topics</h2>
+              {% for link in linklists.blog-topics.links %}
+                <div class="Collapsible">
+                  <a href="{{ link.url }}" class="Collapsible__Button Heading Link Link--primary u-h6">{{ link.title | escape }}</a>
+                </div>
+              {% endfor %}
+            {% endif %}
           </nav>
 
           {%- assign secondary_menu = linklists[section.settings.secondary_menu] -%}
