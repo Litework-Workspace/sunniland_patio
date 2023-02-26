@@ -96,7 +96,46 @@
           </div>
 
         <div class="Blog_Menu">
+          <img class="sunniblogLogo" src="/assets/Sunniblog.png" alt="Sunniblog Logo">
+          
+          <h2 class="Heading u-h2">
+            Topics
+          </h2>
+
+          <div class="blog-links">
+            {% for link in linklists.blog-topics.links %}
+              <li class="Linklist__Item">
+                <a href="{{ link.url }}" class="Link Link--primary">{{ link.title | escape }}</a>
+              </li>
+            {% endfor %}
+          </div>
+          <div class="blogSubscribe-Form">
+            <h2 class="Heading u-h2">Subscribe to email updates</h2>
+            {%- form 'customer', id: 'footer-newsletter', class: 'Footer__Newsletter Form' -%}
+              {%- if form.posted_successfully? -%}
+                <p class="Form__Alert Alert Alert--success">{{ 'footer.newsletter.success' | t }}</p>
+              {%- else -%}
+                {%- if form.errors -%}
+                  <p class="Form__Alert Alert Alert--error">{{ form.errors.messages['email'] }}</p>
+                {%- endif -%}
   
+                <input type="hidden" name="contact[tags]" value="newsletter">
+                <input type="email" name="contact[email]" class="Form__Input Footer-Form_Input" aria-label="{{ 'footer.newsletter.input' | t }}" placeholder="{{ 'footer.newsletter.input' | t }}" required>
+                <button type="submit" class="Form__Submit Button Button--primary Footer_Form-Submit">{{ 'footer.newsletter.submit' | t }}</button>
+              {%- endif -%}
+            {%- endform -%}
+          </div>
+          {% if section.settings.link_1_text != blank or section.settings.link_2_text != blank %}
+            <div class="RecentPost">
+              <h2 class="Heading u-h2">Recent Posts</h2>
+              {% if section.settings.link_1 != blank %}
+                <a href="{{ section.settings.link_1 }}" class="Link Link--primary">{{ section.settings.link_1_text | escape }}</a>
+              {% endif %}
+              {% if section.settings.link_2 != blank %}
+                <a href="{{ section.settings.link_2 }}" class="Link Link--primary">{{ section.settings.link_2_text | escape }}</a>
+              {% endif %}
+            </div>
+          {% endif %}
         </div>
       </div>
     </div>
@@ -155,6 +194,34 @@
       "label": "Show article category",
       "info": "The first article's tag is used as the main category.",
       "default": false
+    },
+    {
+      "type": "header",
+      "content": "Link 1"
+    },
+    {
+      "type": "text",
+      "id": "link_1_text",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "link_1",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Link 2"
+    },
+    {
+      "type": "text",
+      "id": "link_2_text",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "link_2",
+      "label": "Link"
     }
   ]
 }
