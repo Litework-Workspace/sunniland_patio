@@ -6368,7 +6368,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 }
 
 .ArticleItem {
-  background-color: #8D795C;
+  background-color: #FFFFFF;
   padding-bottom: 30px;
 }
 
@@ -6378,7 +6378,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .ArticleItem__Title {
   display: block;
-  color: #ffffff
+  color: #263238
 }
 
 .ArticleItem__Category {
@@ -6388,11 +6388,13 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .ArticleItem__Excerpt {
   margin-bottom: 20px;
-  color: #ffffff
+  color: #263238
 }
 
 .ArticleItem__Link{
-  color: #ffffff;
+  color: #263238;
+  border: 1px solid #263238;
+  border-radius: 50px;
 }
 
 @media screen and (min-width: 641px) {
