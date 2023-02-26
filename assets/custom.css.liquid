@@ -335,6 +335,15 @@
 
 /* Start of Blog section */
 
+.Blog {
+  margin-top: 80px;
+}
+
+.FlexBlog {
+  display: flex;
+  justify-content: space-around;
+}
+
 #Blog_Cell {
   padding-left: 0;
 }
@@ -342,6 +351,21 @@
 #blog_wrapper {
   margin: 0;
 }
+
+@media screen and (min-width: 1008px) {
+  .Blog_Menu {
+    background:#E8E8E8;
+    width: 392px;
+    height: 1148px;
+  }
+}
+
+@media screen and (max-width: 1007px) {
+  .Blog_Menu {
+    display: none;
+  }
+}
+
 
 /* End of Blog section */
 

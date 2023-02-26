@@ -8,8 +8,8 @@
     </div>
   {%- else -%}
     <div class="Blog">
-      <div class="Container">
-        <header class="PageHeader">
+      <div class="Container FlexBlog">
+        {% comment %} <header class="PageHeader">
           <div class="SectionHeader SectionHeader--center">
             <h1 class="SectionHeader__Heading Heading u-h1">
               {{- blog.title -}}
@@ -33,7 +33,7 @@
               </ul>
             {%- endif -%}
           </div>
-        </header>
+        </header> {% endcomment %}
 
         {%- if section.settings.show_featured_article and current_tags == blank -%}
           {%- assign articles_per_page = 13 -%}
@@ -91,10 +91,13 @@
                 </div>
               {%- endfor -%}
             </div>
+            {%- render 'pagination', paginate: paginate -%}
+          {%- endpaginate -%}
           </div>
 
-          {%- render 'pagination', paginate: paginate -%}
-        {%- endpaginate -%}
+        <div class="Blog_Menu">
+  
+        </div>
       </div>
     </div>
   {%- endif -%}

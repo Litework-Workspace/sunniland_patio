@@ -683,7 +683,7 @@ th {
   }
 
   .\31\/3--lap-and-up, .\34\/12--lap-and-up {
-    width: 33.33333%;
+    width: 50%;
   }
 
   .\32\/3--lap-and-up, .\38\/12--lap-and-up {
@@ -5757,6 +5757,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
   .SectionHeader__Description {
     margin-top: 24px;
+    margin-bottom: 54px;
   }
 
   .SectionHeader__ButtonWrapper {
@@ -6319,7 +6320,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .ArticleListWrapper {
   /* max-width: 1260px; */
-  margin: 0 auto 60px auto;
+  margin: 0 0 60px 0;
 }
 
 .ArticleList {
@@ -6414,6 +6415,8 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
   .ArticleList {
     margin-bottom: -100px;
+    width: 824px;
+    /* height: 1723.48px; */
   }
 
   .ArticleList .Grid__Cell {
