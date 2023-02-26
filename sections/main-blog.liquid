@@ -129,10 +129,14 @@
             <div class="RecentPost">
               <h2 class="Heading u-h2">Recent Posts</h2>
               {% if section.settings.link_1 != blank %}
-                <a href="{{ section.settings.link_1 }}" class="Link Link--primary">{{ section.settings.link_1_text | escape }}</a>
+              <li class="Linklist__Item">
+                <a href="{{ section.settings.link_1 }}" id="recentPost-Link" class="Link Link--primary">{{ section.settings.link_1_text | escape }}</a>
+              </li>
               {% endif %}
               {% if section.settings.link_2 != blank %}
-                <a href="{{ section.settings.link_2 }}" class="Link Link--primary">{{ section.settings.link_2_text | escape }}</a>
+              <li class="Linklist__Item">
+                <a href="{{ section.settings.link_2 }}" id="recentPost-Link" class="Link Link--primary">{{ section.settings.link_2_text | escape }}</a>
+              </li>
               {% endif %}
             </div>
           {% endif %}
