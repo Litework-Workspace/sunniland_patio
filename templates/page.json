@@ -9,6 +9,7 @@
     },
     "8ca26768-041f-40eb-b635-d33e84b5b2e0": {
       "type": "custom-html",
+      "disabled": true,
       "custom_css": [
 
       ],
