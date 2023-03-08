@@ -55,10 +55,22 @@
         "button_color": "#363636",
         "button_background": "#ffffff"
       }
+    },
+    "f92eef79-8c9d-43e5-bcd6-28fedcbeb3b5": {
+      "type": "custom-html",
+      "custom_css": [
+        "li {list-style-type: none;}"
+      ],
+      "settings": {
+        "subheading": "We repair patio furniture for homeowners and commercial properties. Explore our refinishing services:",
+        "title": "Why replace your favorite garden furniture when you can just fix it?",
+        "html": "<ul>\n   <li>Specializing in true powder-coat paint refinishing<\/li>\n   <li>Commercial Grade Vinyl Strap Replacement<\/li>\n   <li>Commercial Grade Sling Replacement<\/li>\n   <li>Cushion and Pillow Replacements<\/li>\n   <li>Table Top Replacement<\/li>\n<\/ul>"
+      }
     }
   },
   "order": [
     "main",
-    "046a7b3d-8ce2-4008-bd60-e0a7eb4f2b41"
+    "046a7b3d-8ce2-4008-bd60-e0a7eb4f2b41",
+    "f92eef79-8c9d-43e5-bcd6-28fedcbeb3b5"
   ]
 }
