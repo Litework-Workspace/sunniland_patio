@@ -1,0 +1,160 @@
+{
+  "sections": {
+    "b29135a1-6c78-430a-acba-32e7def3b702": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<p><b>Free Shipping<\/b> on all patio furniture orders above $500. No code needed.<\/p>"
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_info": true,
+        "show_collection_image": false,
+        "apply_overlay": true,
+        "show_color_swatch": false,
+        "show_vendor": false,
+        "collection_image_size": "normal",
+        "show_sort_by": true,
+        "show_layout_switch": true,
+        "toolbar_position": "top",
+        "show_filters": true,
+        "show_filter_color_swatch": true,
+        "expand_filters": false,
+        "filter_position": "drawer",
+        "filter_menu": "",
+        "grid_items_per_page": 16,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "disabled": true,
+      "settings": {
+        "title": "Recently viewed",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false
+      }
+    },
+    "27daa94b-3f9a-43fe-8654-b348350472f9": {
+      "type": "shop-the-look",
+      "disabled": true,
+      "blocks": {
+        "template--17486863892776__27daa94b-3f9a-43fe-8654-b348350472f9-16754695353e4b64d2-0": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/87690d9b-ba2b-4dad-914b-82cc712db137.jpg",
+            "dot_style": "dark",
+            "product_1": "chair-replacement-sling-1pc",
+            "product_1_horizontal_position": 34,
+            "product_1_vertical_position": 40,
+            "product_2": "",
+            "product_2_horizontal_position": 45,
+            "product_2_vertical_position": 65,
+            "product_3": "",
+            "product_3_horizontal_position": 70,
+            "product_3_vertical_position": 50
+          }
+        }
+      },
+      "block_order": [
+        "template--17486863892776__27daa94b-3f9a-43fe-8654-b348350472f9-16754695353e4b64d2-0"
+      ],
+      "settings": {
+        "subheading": "Shop the latest patio furniture styles",
+        "title": "Get Inspired",
+        "show_mobile_product_info": false
+      }
+    },
+    "77a304d4-894e-47ad-91a1-494ed592b838": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--17486863892776__77a304d4-894e-47ad-91a1-494ed592b838-1675469604e12c2d00-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "replacement-slings",
+            "title": "Frequently bought together",
+            "grid_items_count": 8,
+            "button_text": "Shop All"
+          }
+        },
+        "template--17486863892776__77a304d4-894e-47ad-91a1-494ed592b838-1675469604e12c2d00-1": {
+          "type": "buy_buttons",
+          "disabled": true,
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": true
+          }
+        }
+      },
+      "block_order": [
+        "template--17486863892776__77a304d4-894e-47ad-91a1-494ed592b838-1675469604e12c2d00-0",
+        "template--17486863892776__77a304d4-894e-47ad-91a1-494ed592b838-1675469604e12c2d00-1"
+      ],
+      "settings": {
+        "title": "Our widely admired patio replacement slings",
+        "layout_mode": "carousel",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "5f6e1337-c33a-48de-a4be-801c22bb86dc": {
+      "type": "blog-posts",
+      "disabled": true,
+      "blocks": {
+        "template--17486863892776__5f6e1337-c33a-48de-a4be-801c22bb86dc-1675469727396df978-0": {
+          "type": "blog",
+          "settings": {
+            "blog": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17486863892776__5f6e1337-c33a-48de-a4be-801c22bb86dc-1675469727396df978-0"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Blog posts",
+        "show_category": false,
+        "button_link": "",
+        "button_text": "explore"
+      }
+    },
+    "c6b863d6-437a-477e-88e7-827c004162c0": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "large",
+        "image": "shopify:\/\/shop_images\/Van_Dyke_Seating_1.png",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "subheading": "",
+        "title": "Find Sunniland on Youtube",
+        "content": "<p>Learn how to repair your patio furniture the easy way with our DIY video tutorials.<\/p>",
+        "show_on_mobile": true,
+        "button_1_text": "Watch Tutorials",
+        "button_1_link": "",
+        "button_2_text": "",
+        "button_2_link": "",
+        "button_color": "#363636",
+        "button_background": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "b29135a1-6c78-430a-acba-32e7def3b702",
+    "main",
+    "recently-viewed-products",
+    "27daa94b-3f9a-43fe-8654-b348350472f9",
+    "77a304d4-894e-47ad-91a1-494ed592b838",
+    "5f6e1337-c33a-48de-a4be-801c22bb86dc",
+    "c6b863d6-437a-477e-88e7-827c004162c0"
+  ]
+}
