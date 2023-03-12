@@ -1,0 +1,696 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<style>
+  .lp-adrian * {
+    font-family: 'Open Sans',Helvetica,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    line-height: 1.5em;
+  }
+
+  .lp-header {
+    background-image: url(https://cdn.shopify.com/s/files/1/1687/4361/files/adirondack_mgp_sling_mahogany_copy-01.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 148px 48px;
+  }
+  .lp-header h1 {
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 920px;
+  }
+
+  .lp-interuption {
+    color:#000000;
+    background:#F2F3F4;
+    padding:48px;
+    text-align:center;
+  }
+  .lp-interuption h2 {  
+    font-size: 24px;
+    max-width: 920px;
+    margin: 0 auto;
+  }
+
+  .lp-half .container {
+    display: flex;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap:48px;
+    max-width: 1024px;
+  }
+
+  .lp-half {
+    padding:48px 0px;
+  }
+
+  .lp-half .text-area h2 {
+    font-size:32px;
+  }
+
+  .lp-half .text-area ul {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+  }
+
+  .lp-half .text-area ul li {
+    padding-left: 40px;
+    margin-bottom: 25px;
+    min-height: 30px;
+    position: relative;
+    list-style-type:none;
+  }
+
+  .lp-half .text-area ul li:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: FontAwesome;
+    font-size: 28px;
+    content: "\f05d";
+    color: #D04736;
+  }
+  .lp-half .text-area p strong {
+    font-weight: 700;
+
+  }
+
+  .the-form {
+    border: 1px solid lightgrey;
+    padding:48px;
+    min-width: 420px;
+  }
+
+  .the-form .hs-input {
+    width: 100%!important;
+
+    border-radius: 0px;
+  }
+
+
+  .the-form li {
+    list-style-type:none;
+  }
+
+  .the-form ul {
+    margin:0;
+    padding:0;
+  }
+
+  .the-form .hs-input[type="checkbox"] {
+    width: 20px!important;
+    height: 20px!important;
+
+    margin-right: 12px;
+  }
+
+  .the-form  input:focus,   .the-form textarea:focus {
+    -webkit-box-shadow: none;
+    -ms-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+}
+  
+  .the-form .hbspt-form {
+    margin-right: 0;
+  }
+
+  .the-form  .hs-button {
+    background-color: #D04736;
+    font-family: 'Open Sans',Helvetica,sans-serif;
+    color: #fff;
+    border: medium none;
+    cursor: pointer;
+    border-radius: 0px;
+    display: block;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    padding: 15px 12px;
+    text-transform: uppercase;
+    margin: 15px 0;
+    font-weight: 200;
+    white-space: normal;
+    text-align: center;
+    text-decoration: none;
+    -webkit-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    text-shadow: none;
+    background-image: none;
+    border:none;
+  }
+  .the-form  .hs-button:hover {
+    text-shadow: none;
+    -webkit-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: none;
+    border:none!important;
+    background-color: #db6f62;
+  }
+
+  .the-form input[type="text"], 
+  .the-form input[type="password"], 
+  .the-form input[type="datetime"], 
+  .the-form input[type="datetime-local"], 
+  .the-form input[type="date"], 
+  .the-form input[type="month"], 
+  .the-form input[type="time"], 
+  .the-form input[type="week"], 
+  .the-form input[type="number"], 
+  .the-form input[type="email"], 
+  .the-form input[type="url"], 
+  .the-form input[type="search"], 
+  .the-form input[type="tel"], 
+  .the-form input[type="color"], 
+  .the-form input[type="file"], 
+  .the-form textarea, 
+  .the-form select {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 10px;
+    font-family: 'Open Sans',Helvetica,sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    color: #000;
+    margin: 4px 0 20px;
+    letter-spacing: .5px;
+    line-height: 18px;
+    border-radius: 0px;
+  }
+
+  .the-form label {
+    display: block;
+    border: none;
+    list-style-type: none;
+  } 
+
+  .the-form input, .the-form textarea {
+
+    line-height: initial;
+
+  }
+  .flex-swatches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .flex-swatches > div {
+    width:25%;
+  }
+  .crop-img {
+    height: 260px;
+    overflow: hidden;
+  }
+  .flex-swatches > div img{
+    width:100%;
+    height:auto;
+  }
+  .flex-swatches > div p {
+    margin-top:0px;
+    text-align:center;
+  }
+  .flex-swatches > div > div {
+    height: 160px;
+    overflow: hidden;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .flex-swatches > div {
+      width: 33.33333333%;
+    }
+
+    .lp-header {
+      padding: 72px 24px;
+    }
+
+    .lp-header h1 {
+      font-size: 30px;
+    }
+    .lp-interuption h3 {
+      font-size: 24px;
+    }   
+
+
+    .lp-interuption {
+      padding: 24px;
+    }
+
+    .lp-half .container {
+      flex-direction:column;
+      grid-template-columns: 1fr;
+      padding: 0 24px;
+    }
+
+    .the-form {
+      padding:24px;
+      min-width:initial;
+    }
+
+  }
+
+  #content {
+    margin-bottom: 0;
+  }
+</style>
+
+<div class="lp-adrian">
+
+  <div class="lp-header container">
+    <div class="container">
+      <h1>Repair Your Patio Furniture Now. Easy Pick up &amp; Delivery, Great Quality Work!</h1>
+    </div>
+  </div>
+
+  <div class="lp-interuption container">
+    <div class="container">
+      <h2>We repair patio furniture for homeowners and commercial properties alike. Pickup and delivery is available for Palm Beach County.</h2>
+    </div>
+  </div>
+  <!--
+<img src="https://cdn.shopify.com/s/files/1/1687/4361/files/Aruba_2015_1.jpg" alt="Aruba Chair - 2015">
+-->
+
+  <div class="lp-half">
+    <div class="container">
+      <div class="text-area">
+        <h2>Some of our refinishing services include:</h2>
+        <ul>
+          <li>Specializing in true powdercoat paint refinishing</li>
+          <li>Commercial Grade Vinyl Strap Replacement</li>
+          <li>Commercial Grade Sling Replacement</li>
+          <li>Cushion and Pillow Replacements</li>
+          <li>Table Top Replacement</li>
+        </ul>
+        <p><strong>When you request a quote with us you are eligible for a 50% pick up and delivery discount!.</strong></p>
+        <p><strong>Regular price $99.00 but with discount you get it for $49.50</strong></p>
+
+        <img src="https://cdn.shopify.com/s/files/1/1687/4361/files/Aruba_2015_1.jpg" alt="Aruba_2015_1.jpg">
+        <p>Our Address:</p>
+        <p><strong>6101 N Federal Hwy. Boca Raton, Florida 33487</strong></p>
+      </div> 
+      <div class="the-form">
+        <h2 style="text-align:center;">Send Me A Quote</h2>
+
+        <!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+        <script>
+          hbspt.forms.create({
+            portalId: "2312149",
+            formId: "565ac665-208a-4b45-a6d6-f60ac6e2b1fe"
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding:48px 0px;background:#F2F3F4;text-align:center;">
+    <div class="container">
+
+      <h3 style="margin:24px 0px;" class="text-center">Powdercoat Frame Finishes</h3>
+      <div class="flex-swatches">
+        <div>
+          <div class="crop-img">
+            <img src="https://cdn.shopify.com/s/files/1/1687/4361/files/Gloss_White.png" alt="color swatch">
+          </div>
+          <p style="">Gloss White</p>
+        </div>
+        <div>
+          <div class="crop-img">
+            <img src="https://cdn.shopify.com/s/files/1/1687/4361/files/Off_white.png" alt="color swatch">
+          </div>
+          <p style="">Off White</p>
+        </div>
+        <div>
+          <div class="crop-img">
+            <img src="https://cdn.shopify.com/s/files/1/1687/4361/files/dove.png" alt="color swatch">
+          </div><p style="">Dove</p>
+        </div>
+        <div>
+          <div class="crop-img">
+            <img src="https://cdn.shopify.com/s/files/1/1687/4361/files/Speckled_pearl.png" alt="color swatch">
+          </div>
+          <p style="">Speckled Pearl</p>
+        </div>
+        <div>
+          <div class="crop-img">
+            <img src="https://cdn.shopify.com/s/files/1/1687/4361/files/Pewter-Crater.png" alt="color swatch">
+          </div>
+          <p style="">Pewter Crater</p>
+        </div>
+        <div>
+          <div class="crop-img">
+            <img src="https://cdn.shopify.com/s/files/1/1687/4361/files/Bronze_Age_3.png" alt="color swatch">
+          </div>
+          <p style="">Bronze Age 3</p>
+        </div>
+        <div>
+          <div class="crop-img">
+            <img src="https://cdn.shopify.com/s/files/1/1687/4361/files/Java_3.png" alt="color swatch">
+          </div>
+          <p style="">Java 3</p>
+        </div>
+        <div>
+          <div class="crop-img">
+            <img src="https://cdn.shopify.com/s/files/1/1687/4361/files/LesiureBrown.png" alt="color swatch">
+          </div>
+          <p style="">Leisure Brown</p>
+        </div>
+        <div>
+          <div class="crop-img">
+            <img src="https://cdn.shopify.com/s/files/1/1687/4361/files/Weathervein.png" alt="color swatch">
+          </div>
+          <p style="">Weathervein</p>
+        </div>
+        <div>
+          <div class="crop-img">
+            <img src="https://cdn.shopify.com/s/files/1/1687/4361/files/Pennyvein.png" alt="color swatch">
+          </div>
+          <p style="">Pennyvein</p>
+        </div>
+        <div>
+          <div class="crop-img">
+            <img src="https://cdn.shopify.com/s/files/1/1687/4361/files/Wrinkle_Black.png" alt="color swatch">
+          </div>
+          <p style="">Wrinkle Black</p>
+        </div>
+        <div>
+          <div class="crop-img">
+            <img src="https://cdn.shopify.com/s/files/1/1687/4361/files/Flat_Black.png" alt="color swatch">
+          </div>
+          <p style="">Flat Black</p>
+        </div>
+        <div>
+          <div class="crop-img">
+            <img src="https://cdn.shopify.com/s/files/1/1687/4361/files/Black-1.png" alt="color swatch">
+          </div>
+          <p style="">Black</p>
+        </div>
+        <div>
+          <div class="crop-img">
+            <img src="https://cdn.shopify.com/s/files/1/1687/4361/files/Weathergreen.png" alt="color swatch">
+          </div>
+          <p style="">Weathergreen</p>
+        </div>
+        <div>
+          <div class="crop-img">
+            <img src="https://cdn.shopify.com/s/files/1/1687/4361/files/Sherwood_Green.png" alt="color swatch">
+          </div>
+          <p style="">Sherwood Green</p>
+        </div>
+        <div>
+          <div class="crop-img">
+            <img src="https://cdn.shopify.com/s/files/1/1687/4361/files/Forrest-Green.png" alt="color swatch">
+          </div>
+          <p style="">Forrest Green</p>
+        </div>
+        <div>
+          <div class="crop-img">
+            <img src="https://cdn.shopify.com/s/files/1/1687/4361/files/Dark-Green.png" alt="color swatch">
+          </div>
+          <p style="">Dark Green</p>
+        </div>
+      </div>
+
+	  {% include 'replacement_sling_colors' %}
+
+      <h3 style="margin:24px 0px;" class="text-center">Replacement Strap Color</h3>
+
+      <p class=""><strong>Solids</strong></p> 
+      <div class="flex-swatches">
+        <div class="">
+
+          <img for="203_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/203_v2_pic.jpg" alt="203">
+          <p>Yellow 203 
+
+          </p>
+        </div>
+        <div class="">
+
+          <img for="222_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/222_v2_pic.jpg" alt="222">
+          <p>Safety Yellow 222 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="218_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/218_v2_pic.jpg" alt="218">
+          <p>Orange 218 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="225_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/225_v2_pic.jpg" alt="225">
+          <p>Red 225 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="228_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/228_v2_pic.jpg" alt="228">
+          <p>Twilight Rose 228 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="229_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/229_v2_pic.jpg" alt="229">
+          <p>Cappuccino 229 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="230_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/230_v2_pic.jpg" alt="230">
+          <p>Clover 230 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="213_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/213_v2_pic.jpg" alt="213">
+          <p>Baby Blue 213 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="214_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/214_v2_pic.jpg" alt="214">
+          <p>Turquoise 214 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="215_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/215_v2_pic.jpg" alt="215">
+          <p>French Blue 215 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="216_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/216_v2_pic.jpg" alt="216">
+          <p>Royal Blue 216 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="227_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/227_v2_pic.jpg" alt="227">
+          <p>Jade Green 227 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="233_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/233_v2_pic.jpg" alt="233">
+          <p>Nantucket Blue 233 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="234_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/234_v2_pic.jpg" alt="234">
+          <p>Dusty Blue 234 
+          </p>
+        </div>
+      </div>
+
+      <p class=""><strong>Neutrals</strong></p>
+      <div class="flex-swatches">
+        <div class="">
+
+          <img for="201_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/201_v2_pic.jpg" alt="201">
+          <p>White 201 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="202_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/202_v2_pic.jpg" alt="202">
+          <p>Vanilla 202 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="204_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/204_v2_pic.jpg" alt="204">
+          <p>Citron Yellow 204 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="205_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/205_v2_pic.jpg" alt="205">
+          <p>Khaki Green 205 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="224_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/224_v2_pic.jpg" alt="224">
+          <p>Off White 224 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="237_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/237_v2_pic.jpg" alt="237">
+          <p>Putty 237 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="242_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/242_v2_pic.jpg" alt="242">
+          <p>Papaya 242 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="206_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/206_v2_pic.jpg" alt="206">
+          <p>Camel 206 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="252_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/252_v2_pic.jpg" alt="252">
+          <p>Dove 252 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="219_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/219_v2_pic.jpg" alt="219">
+          <p>Stone Gray 219 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="239_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/239_v2_pic.jpg" alt="239">
+          <p>Sage 239 
+          </p>
+        </div>
+      </div>
+
+      <p class=""><strong>Darks</strong></p>  
+      <div class="flex-swatches">
+        <div class="">
+
+          <img for="207_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/207_v2_pic.jpg" alt="207">
+          <p>Saddle 207 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="208_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/208_v2_pic.jpg" alt="208">
+          <p>Dk Brown 208 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="209_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/209_v2_pic.jpg" alt="209">
+          <p>Terracota 209 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="212_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/212_v2_pic.jpg" alt="212">
+          <p>Dk Green 212 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="217_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/217_v2_pic.jpg" alt="217">
+          <p>Navy Blue 217 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="221_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/221_v2_pic.jpg" alt="221">
+          <p>Black 221 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="231_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/231_v2_pic.jpg" alt="231">
+          <p>Leisure Brown 231 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="232_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/232_v2_pic.jpg" alt="232">
+          <p>Adobe 232 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="236_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/236_v2_pic.jpg" alt="236">
+          <p>Burgundy 236 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="238_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/238_v2_pic.jpg" alt="238">
+          <p>Coffee 238 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="246_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/246_v2_pic.jpg" alt="246">
+          <p>Holly Green 246 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="247_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/247_v2_pic.jpg" alt="247">
+          <p>Slate Blue 247 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="248_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/248_v2_pic.jpg" alt="248">
+          <p>Sherwood Green 248 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="249_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/249_v2_pic.jpg" alt="249">
+          <p>Deepwater Blue 249 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="250_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/250_v2_pic.jpg" alt="250">
+          <p>Charcoal 250 
+          </p>
+        </div>
+        <div class="">
+
+          <img for="251_vs" src="https://cdn.shopify.com/s/files/1/1687/4361/files/251_v2_pic.jpg" alt="251">
+          <p>Forest Green 251 
+          </p>
+        </div>  
+      </div>
+
+    </div>
+  </div>
+</div>
