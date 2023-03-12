@@ -8,7 +8,7 @@
 {% endcapture %}
 
 <section class="Section Section--spacingNormal" id="section-{{ section.id }}" data-section-type="map" data-section-id="{{ section.id }}" data-section-settings='{{ section_settings | escape }}'>
-  <div class="Container">
+  <div class="">
     <div class="FeaturedMap">
       <div class="FeaturedMap__Info">
         {% if section.settings.title != blank %}
@@ -34,17 +34,20 @@
         {% endif %}
       </div>
 
-      <div class="FeaturedMap__MapContainer Image--lazyLoad Image--fadeIn" {% if section.settings.image %}data-bg="{{ section.settings.image | img_url: '1500x' }}"{% endif %}>
-        {% unless section.settings.image %}
-          <div class="PlaceholderBackground PlaceholderSvg--dark">
-            {{ 'lifestyle-1' | placeholder_svg_tag: 'PlaceholderBackground__Svg' }}
-          </div>
-        {% endunless %}
+      </div>
+      </div>
+    <div class="FeaturedMap__MapContainer Image--lazyLoad Image--fadeIn" {% if section.settings.image %}data-bg="{{ section.settings.image | img_url: '1500x' }}"{% endif %}>
+      {% unless section.settings.image %}
+        <div class="PlaceholderBackground PlaceholderSvg--dark">
+          {{ 'lifestyle-1' | placeholder_svg_tag: 'PlaceholderBackground__Svg' }}
+        </div>
+      {% endunless %}
 
-        <div class="FeaturedMap__GMap"></div>
+      <div class="FeaturedMap__GMap">{% if section.settings.image %}
+      <img src="{{ section.settings.image | img_url: "large" }}" alt="">
+    {% endif %}
       </div>
     </div>
-  </div>
 
   {%- if settings.light_background == settings.background -%}
     <style>
@@ -54,7 +57,7 @@
 
       @media screen and (min-width: 641px) {
         .FeaturedMap__Info {
-          padding-left: 40px;
+          padding-left: 0;
         }
       }
     </style>

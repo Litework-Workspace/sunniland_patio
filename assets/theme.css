@@ -3539,7 +3539,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .FeaturedMap__Info {
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto 0 0;
   background: var(--light-background);
   text-align: left;
   z-index: 1;
@@ -3568,7 +3568,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
     flex-direction: row-reverse;
     align-items: stretch;
     padding-top: 0;
-    height: 550px;
+    /* height: 550px; */
   }
 
   .FeaturedMap__MapContainer {
@@ -3578,9 +3578,9 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
   .FeaturedMap__Info {
     flex: none;
-    min-width: 370px;
-    width: 370px;
-    padding: 50px 60px;
+    /* min-width: 370px;
+    width: 370px; */
+    padding: 50px 0;
   }
 }
 /**
