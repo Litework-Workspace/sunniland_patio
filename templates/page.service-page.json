@@ -81,12 +81,42 @@
         "map_style": "silver",
         "image": "shopify:\/\/shop_images\/Basemap_image.png"
       }
+    },
+    "eece4408-ce3b-4b4c-af2a-415a201509c0": {
+      "type": "image-with-text-block",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/parts_1_1.png",
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "block_size": "small",
+        "title": "Your story",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "show_parallax": false
+      }
+    },
+    "9138cc40-76f4-48be-b1f6-fb4b7d9bea0c": {
+      "type": "image-with-text-block",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/AndoverCushion-002_ORtd_2.png",
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "block_size": "small",
+        "title": "Your story",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "show_parallax": false
+      }
     }
   },
   "order": [
     "main",
     "046a7b3d-8ce2-4008-bd60-e0a7eb4f2b41",
     "f92eef79-8c9d-43e5-bcd6-28fedcbeb3b5",
-    "bf060085-66ad-4468-9f2f-678116eb6814"
+    "bf060085-66ad-4468-9f2f-678116eb6814",
+    "eece4408-ce3b-4b4c-af2a-415a201509c0",
+    "9138cc40-76f4-48be-b1f6-fb4b7d9bea0c"
   ]
 }
