@@ -154,6 +154,20 @@
           "show_newsletter": true,
           "apparition_delay": 5
         }
+      },
+      "map": {
+        "type": "map",
+        "settings": {
+          "title": "Address",
+          "address": "<p>6101 N Federal Hwy. Boca Raton, Florida 33487<\/p>",
+          "hours": "",
+          "map_address": "6101 N Federal Hwy. Boca Raton, Florida 33487",
+          "map_link_label": "",
+          "api_key": "",
+          "zoom": 14,
+          "map_style": "silver",
+          "image": "shopify:\/\/shop_images\/Basemap_image.png"
+        }
       }
     },
     "content_for_index": [
