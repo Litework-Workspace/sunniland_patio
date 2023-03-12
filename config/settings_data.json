@@ -182,6 +182,20 @@
           "button_link": "",
           "show_parallax": false
         }
+      },
+      "image-with-text-block-alternative": {
+        "type": "image-with-text-block-alternative",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/AndoverCushion-002_ORtd_2.png",
+          "background": "#ffffff",
+          "text_color": "#1c1b1b",
+          "block_size": "large",
+          "title": "",
+          "content": "<p>Give your patio set a brand new look with our high-quality fabric cushions!<\/p>",
+          "button_label": "Shop Replacement Cushions",
+          "button_link": "#",
+          "show_parallax": false
+        }
       }
     },
     "content_for_index": [
