@@ -168,6 +168,20 @@
           "map_style": "silver",
           "image": "shopify:\/\/shop_images\/Basemap_image.png"
         }
+      },
+      "image-with-text-block": {
+        "type": "image-with-text-block",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/parts_1_1.png",
+          "background": "#ffffff",
+          "text_color": "#1c1b1b",
+          "block_size": "large",
+          "title": "",
+          "content": "<p>Explore our wide range of patio furniture replacement parts, everything you'll need for easy DIY repairs.<\/p>",
+          "button_label": "Shop Repair Parts",
+          "button_link": "",
+          "show_parallax": true
+        }
       }
     },
     "content_for_index": [
