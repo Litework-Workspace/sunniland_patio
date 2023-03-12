@@ -67,11 +67,26 @@
         "title": "Why replace your favorite garden furniture when you can just fix it?",
         "html": "<ul>\n   <li>Specializing in true powder-coat paint refinishing<\/li>\n   <li>Commercial Grade Vinyl Strap Replacement<\/li>\n   <li>Commercial Grade Sling Replacement<\/li>\n   <li>Cushion and Pillow Replacements<\/li>\n   <li>Table Top Replacement<\/li>\n<\/ul>"
       }
+    },
+    "bf060085-66ad-4468-9f2f-678116eb6814": {
+      "type": "map",
+      "settings": {
+        "title": "Address",
+        "address": "<p>6101 N Federal Hwy. Boca Raton, Florida 33487<\/p>",
+        "hours": "",
+        "map_address": "6101 N Federal Hwy. Boca Raton, Florida 33487",
+        "map_link_label": "",
+        "api_key": "",
+        "zoom": 14,
+        "map_style": "silver",
+        "image": "shopify:\/\/shop_images\/Basemap_image.png"
+      }
     }
   },
   "order": [
     "main",
     "046a7b3d-8ce2-4008-bd60-e0a7eb4f2b41",
-    "f92eef79-8c9d-43e5-bcd6-28fedcbeb3b5"
+    "f92eef79-8c9d-43e5-bcd6-28fedcbeb3b5",
+    "bf060085-66ad-4468-9f2f-678116eb6814"
   ]
 }
