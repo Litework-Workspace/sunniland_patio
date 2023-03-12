@@ -59,7 +59,8 @@
     "f92eef79-8c9d-43e5-bcd6-28fedcbeb3b5": {
       "type": "custom-html",
       "custom_css": [
-        "li {list-style-type: none;}"
+        "li {list-style-type: none; color: #000000;}",
+        "* {background: #ffffff;}"
       ],
       "settings": {
         "subheading": "We repair patio furniture for homeowners and commercial properties. Explore our refinishing services:",
