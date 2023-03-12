@@ -1,7 +1,56 @@
 {
   "sections": {
+    "6b2b3770-956d-4694-8bab-a5774a225393": {
+      "type": "slideshow",
+      "blocks": {
+        "template--18211993485608__6b2b3770-956d-4694-8bab-a5774a225393-167865078618496000-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/850_1242_MOD_1.png",
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Shop the sale today!",
+            "content": "<p>Browse our IN-STORE furniture deals of the month. Telescope furniture and Sunset West furniture as low as $2,000 OFF regular prices. Can't get better furniture sales!<\/p>",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
+        "template--18211993485608__6b2b3770-956d-4694-8bab-a5774a225393-167865078618496000-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "Slide title",
+            "title": "Tell your story",
+            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18211993485608__6b2b3770-956d-4694-8bab-a5774a225393-167865078618496000-0",
+        "template--18211993485608__6b2b3770-956d-4694-8bab-a5774a225393-167865078618496000-1"
+      ],
+      "settings": {
+        "show_fullscreen": false,
+        "show_arrow": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "text_color": "#ffffff",
+        "button_color": "#363636",
+        "button_background": "#ffffff"
+      }
+    },
     "b29135a1-6c78-430a-acba-32e7def3b702": {
       "type": "custom-html",
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "",
@@ -11,7 +60,7 @@
     "main": {
       "type": "main-collection",
       "settings": {
-        "show_collection_info": true,
+        "show_collection_info": false,
         "show_collection_image": false,
         "apply_overlay": true,
         "show_color_swatch": false,
@@ -35,6 +84,7 @@
       "disabled": true,
       "settings": {
         "title": "Recently viewed",
+        "sub-heading": "",
         "show_product_info": true,
         "show_vendor": false,
         "show_color_swatch": false
@@ -149,6 +199,7 @@
     }
   },
   "order": [
+    "6b2b3770-956d-4694-8bab-a5774a225393",
     "b29135a1-6c78-430a-acba-32e7def3b702",
     "main",
     "recently-viewed-products",
