@@ -35,13 +35,27 @@
     margin: 0 auto;
   }
 
-  .lp-half .Container {
-    display: flex;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    grid-gap:48px;
-    {% comment %} max-width: 1024px; {% endcomment %}
+  @media screen and (min-width: 641px){
+    .lp-half .Container {
+      display: flex;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      grid-gap:48px;
+      {% comment %} max-width: 1024px; {% endcomment %}
+    }
   }
+
+  @media screen and (max-width: 640px) {
+    #shopify-section-map {
+      display: none;
+    }
+
+    .ImageHero__Block {
+      width: 100%;
+    }
+  }
+
+  
 
   .lp-half {
     padding:48px 0px;
@@ -292,24 +306,26 @@
     <div class="Container">
       <div class="text-area">
         <h2>Why replace your favorite garden furniture when you can just fix it?</h2>
-        <p>We repair patio furniture for homeowners and commercial properties. Explore our refinishing services:</p>
-        <ul>
-          <li><svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <p style="font-family: 'Figtree';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;">We repair patio furniture for homeowners and commercial properties. Explore our refinishing services:</p>
+          <li class="services-list-item"><svg class="services-checkmark" width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M10.7085 22L0 11.4982L1.68243 9.62081L10.6533 18.4185L28.2605 0L30 1.81946L10.7085 22Z" fill="#00897B"/>
           </svg> Specializing in true powdercoat paint refinishing</li>
-          <li><svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <li class="services-list-item"><svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M10.7085 22L0 11.4982L1.68243 9.62081L10.6533 18.4185L28.2605 0L30 1.81946L10.7085 22Z" fill="#00897B"/>
           </svg> Commercial Grade Vinyl Strap Replacement</li>
-          <li><svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <li class="services-list-item"><svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M10.7085 22L0 11.4982L1.68243 9.62081L10.6533 18.4185L28.2605 0L30 1.81946L10.7085 22Z" fill="#00897B"/>
           </svg> Commercial Grade Sling Replacement</li>
-          <li><svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <li class="services-list-item"><svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M10.7085 22L0 11.4982L1.68243 9.62081L10.6533 18.4185L28.2605 0L30 1.81946L10.7085 22Z" fill="#00897B"/>
           </svg> Cushion and Pillow Replacements</li>
-          <li><svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <li class="services-list-item"><svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M10.7085 22L0 11.4982L1.68243 9.62081L10.6533 18.4185L28.2605 0L30 1.81946L10.7085 22Z" fill="#00897B"/>
           </svg> Table Top Replacement</li>
-        </ul>
         {% comment %} <p><strong>When you request a quote with us you are eligible for a 50% pick up and delivery discount!.</strong></p>
         <p><strong>Regular price $99.00 but with discount you get it for $49.50</strong></p> {% endcomment %}
         {% section "map"%}

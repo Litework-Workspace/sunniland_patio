@@ -8784,16 +8784,16 @@ h2.SectionHeader__Heading {
 .ImageHero__Block {
   margin: 40px auto;
   padding: 38px 20px;
-  max-width: 250px;
+  /* max-width: 250px; */
   box-shadow: 0 1px 20px rgba(54, 54, 54, 0.3);
 }
 
-.ImageHero__Block--small {
+--small {
   max-width: 165px;
 }
 
 .ImageHero__Block--large {
-  max-width: 320px;
+  /* max-width: 320px; */
 }
 
 .ImageHero__BlockHeading {
@@ -8834,15 +8834,15 @@ h2.SectionHeader__Heading {
 
   .ImageHero__Block {
     padding: 48px 15px;
-    max-width: 380px;
+    /* max-width: 380px; */
   }
 
   .ImageHero__Block--small {
-    max-width: 240px;
+    /* max-width: 240px; */
   }
 
   .ImageHero__Block--large {
-    max-width: 520px;
+    /* max-width: 520px; */
   }
 
   .ImageHero__TextContent {
