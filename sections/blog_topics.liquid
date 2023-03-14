@@ -1,9 +1,9 @@
 {%- assign main_menu_handle = section.settings.primary_menu | default: 'main-menu' -%}
 {%- assign main_menu = linklists[main_menu_handle] -%}
 
-<section id="blog-topics" class="SidebarMenu Drawer Drawer--small Drawer--fromRight" aria-hidden="true" data-section-id="{{ section.id }}" data-section-type="sidebar-menu">
+<section id="blog-topics" class="SidebarMenu Drawer Drawer--small Drawer--fromLeft" aria-hidden="true" data-section-id="{{ section.id }}" data-section-type="blog-topics">
     <header class="Drawer__Header" data-drawer-animated-left>
-      <button class="Drawer__Close Icon-Wrapper--clickable" data-action="close-drawer" data-drawer-id="sidebar-menu" aria-label="{{ 'header.navigation.close_sidebar' | t }}">
+      <button class="Drawer__Close Icon-Wrapper--clickable" data-action="close-drawer" data-drawer-id="blog-topics" aria-label="{{ 'header.navigation.close_sidebar' | t }}">
         {%- render 'icon' with 'close' -%}
       </button>
     </header>
@@ -51,14 +51,14 @@
                 {%- endif -%}
               </div>
             {%- endfor -%}
-            {% if template == 'blog' %}
+            {% comment %} {% if template == 'blog' %}
               <h2 class="SectionHeader__Heading Heading u-h1 Phone-MenuHeading">Blog Topics</h2>
               {% for link in linklists.blog-topics.links %}
                 <div class="Collapsible">
                   <a href="{{ link.url }}" class="Collapsible__Button Heading Link Link--primary u-h6">{{ link.title | escape }}</a>
                 </div>
               {% endfor %}
-            {% endif %}
+            {% endif %} {% endcomment %}
           </nav>
 
           {%- assign secondary_menu = linklists[section.settings.secondary_menu] -%}

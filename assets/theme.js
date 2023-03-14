@@ -6346,6 +6346,34 @@
     return SidebarMenuSection;
   }();
 
+  var BlogTopicsMenuSection = /*#__PURE__*/function () {
+    function BlogTopicsMenuSection(container) {
+      _classCallCheck(this, BlogTopicsMenuSection);
+
+      this.element = container;
+      this.sidebarDrawer = new Drawer(container);
+    }
+
+    _createClass(BlogTopicsMenuSection, [{
+      key: "onUnload",
+      value: function onUnload() {
+        this.sidebarDrawer.destroy();
+      }
+    }, {
+      key: "onSelect",
+      value: function onSelect() {
+        this.sidebarDrawer.open();
+      }
+    }, {
+      key: "onDeselect",
+      value: function onDeselect() {
+        this.sidebarDrawer.close();
+      }
+    }]);
+
+    return BlogTopicsMenuSection;
+  }();
+
   var SlideshowSection = /*#__PURE__*/function () {
     function SlideshowSection(container) {
       _classCallCheck(this, SlideshowSection);
@@ -6884,6 +6912,7 @@
     sections.register('header', HeaderSection);
     sections.register('footer', FooterSection);
     sections.register('sidebar-menu', SidebarMenuSection);
+    sections.register('blog-topics', BlogTopicsMenuSection);
     sections.register('cart', CartSection);
     sections.register('newsletter-popup', NewsletterPopupSection); // Sections used on index
 
