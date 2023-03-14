@@ -8,6 +8,10 @@
     </div>
   {%- else -%}
     <div class="Blog">
+    <button class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable {% unless use_blog_menu %}hidden-desk{% endunless %}" aria-expanded="false" data-action="open-drawer" data-drawer-id="blog-topics" aria-label="{{ 'header.navigation.open_sidebar' | t }}">
+      <span class="hidden-tablet-and-up">{%- render 'icon' with 'nav' -%}</span>
+      <span class="hidden-phone">{%- render 'icon' with 'nav-desktop' -%}</span>
+    </button>
       <div class="Container FlexBlog">
         {% comment %} <header class="PageHeader">
           <div class="SectionHeader SectionHeader--center">
@@ -197,6 +201,12 @@
       "id": "show_category",
       "label": "Show article category",
       "info": "The first article's tag is used as the main category.",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "use_blog_menu",
+      "label": "Show Blog Topics",
       "default": false
     },
     {
