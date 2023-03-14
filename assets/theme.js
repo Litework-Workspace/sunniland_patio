@@ -6912,7 +6912,7 @@
     sections.register('header', HeaderSection);
     sections.register('footer', FooterSection);
     sections.register('sidebar-menu', SidebarMenuSection);
-    sections.register('blog-topics', BlogTopicsMenuSection);
+    sections.register('blog_topics', BlogTopicsMenuSection);
     sections.register('cart', CartSection);
     sections.register('newsletter-popup', NewsletterPopupSection); // Sections used on index
 

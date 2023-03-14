@@ -8,7 +8,7 @@
     </div>
   {%- else -%}
     <div class="Blog">
-    <button class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable {% unless use_blog_menu %}hidden-desk{% endunless %}" aria-expanded="false" data-action="open-drawer" data-drawer-id="blog-topics" aria-label="{{ 'header.navigation.open_sidebar' | t }}">
+    <button class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable {% unless use_blog_menu %}hidden-desk{% endunless %}" aria-expanded="false" data-action="open-drawer" data-drawer-id="blog_topics" aria-label="{{ 'header.navigation.open_sidebar' | t }}">
       <span class="hidden-tablet-and-up" >B<br>l<br>o<br>g<br><br> T<br>o<br>p<br>i<br>c<br>s</span>
       <span class="hidden-phone">{%- render 'icon' with 'nav-desktop' -%}</span>
     </button>
