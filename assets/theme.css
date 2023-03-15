@@ -1423,7 +1423,11 @@ body {
 
   .features--heading-large .u-h6,
   .features--heading-large .Rte h6 {
-    font-size: 15px;
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
   }
 
   .features--heading-large .u-h7 {
@@ -1673,7 +1677,14 @@ input.spr-button-primary[disabled],
 }
 
 .Slideshow__Button {
-  margin: 4rem -8px 0 -8px;
+  /* margin: 4rem -8px 0 -8px; */
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 641px) {
+  .Slideshow__Button {
+    width: 100%;
+  }
 }
 
 .ButtonGroup--spacingSmall .ButtonGroup__Item {
@@ -2042,13 +2053,14 @@ body:not(.is-tabbing) .flickity-enabled:focus {
 .flickity-page-dots .dot {
   position: relative;
   display: inline-block;
-  width: 71px;
-  height: 73px;
+  width: 8px;
+  height: 8px;
   margin: 0 6px;
-  /* border-radius: 50%; */
+  border-radius: 50%;
   cursor: pointer;
   background: transparent;
-  /* border: 1px solid var(--border-color); */
+  border: 1px solid var(--border-color);
+  /* border-radius: 5px; */
   transition: color 0.2s ease-in-out, background 0.2s ease-in-out; /* This is used to increase the clickable area */
 }
 
@@ -2066,12 +2078,12 @@ body:not(.is-tabbing) .flickity-enabled:focus {
   border-color: currentColor;
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (max-width: 641px) {
   .flickity-page-dots .dot {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     margin: 0 7px;
-    border-width: 2px;
+    border-width: 1px;
   }
 }
 
@@ -3132,7 +3144,7 @@ select::-ms-expand {
 }
 .HorizontalList {
   list-style: none;
-  margin: -6px -8px;
+  /* margin: -6px -8px; */
 }
 
 .HorizontalList__Item {
@@ -3142,6 +3154,7 @@ select::-ms-expand {
 
 .HorizontalList__Item > .Link {
   display: inline-block;
+  padding-right: 8px;
 }
 
 .HorizontalList--spacingTight {
@@ -3155,8 +3168,9 @@ select::-ms-expand {
 }
 
 .HorizontalList--spacingLoose {
-  margin-left: -14px;
-  margin-right: -14px;
+  /* margin-left: -14px;
+  margin-right: -14px; */
+  padding: 50px 0 30px 0;
 }
 
 .HorizontalList--spacingLoose .HorizontalList__Item {
@@ -3192,8 +3206,8 @@ select::-ms-expand {
   }
 
   .HorizontalList--spacingExtraLoose .HorizontalList__Item {
-    margin-right: 21px;
-    margin-left: 21px;
+    margin-right: 30px;
+    margin-left: 30px;
   }
 }
 /**
@@ -5723,7 +5737,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 @media screen and (min-width: 641px) {
   .SectionHeader__Heading--emphasize {
-    font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 22px)) !important;
+    /* font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 22px)) !important; */
   }
 }
 @media screen and (min-width: 1008px) {
@@ -8152,6 +8166,8 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   align-items: center;
   justify-content: space-between;
   padding: 15px 18px;
+  background: #263238;
+
 }
 
 .Header__Logo {
@@ -8322,6 +8338,11 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   }
 }
 
+.Mobile-Header__MainNav {
+  height: 42px;
+  margin: 2px 20px 17px 20px;
+}
+
 @media screen and (min-width: 1140px) {
   .js .Header__Wrapper {
     opacity: 0;
@@ -8356,16 +8377,21 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   .Header--center .Header__Wrapper.Header__Wrapper {
     /* Ugly hack to increase CSS specificity */
     padding-bottom: 24px;
+    height: 100px;
   }
 
   .Header--center .Header__MainNav {
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
-    left: 0;
-    padding: 10px 0;
+    left: 0; */
+    /* padding: 10px 0; */
     width: 100%;
     text-align: center;
     background: #37474F;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .Header--center .Header__MainNav .HorizontalList {
@@ -8374,11 +8400,11 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   }
 
   .Header--center .Header__FlexItem {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
   }
 
   .Header--center .Header__FlexItem--increaseSpace {
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
   }
 
   .Header--center .Header__SecondaryNav .Header__LocalizationForm {
@@ -10533,7 +10559,7 @@ shopify-payment-terms {
 }
 
 .Search__Inner {
-  padding: 14px 18px;
+  /* padding: 14px 18px; */
   max-height: calc(100vh - 60px);
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -10567,11 +10593,12 @@ shopify-payment-terms {
 
 .Search__Inner-desktop {
   width: 50%;
-  padding: 0px 50px 28px 50px !important;
+  /* padding: 0px 50px 28px 50px !important; */
 }
 
 .SearchBar_desktop {
   width: 100%;
+  height: 40px;
 }
 
 .Search__Form {
@@ -10652,7 +10679,7 @@ shopify-payment-terms {
 }
 @media screen and (min-width: 641px) {
   .Search__Inner {
-    padding: 28px 50px;
+    padding: 40px 64px 20px 131px;
   }
 
   .Search__Input {
@@ -11131,7 +11158,7 @@ shopify-payment-terms {
 
 @media screen and (min-width: 1008px) {
   .Slideshow__Content {
-    padding: 0 70px;
+    padding: 0 92px;
   }
 }
 .store-availability-container {
