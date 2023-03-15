@@ -14,11 +14,11 @@
     <div class="Container">
 
       {%- if section.settings.title != blank -%}
-        <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+        <h2 class="SectionHeader__Heading Heading u-h1 Collection-List_Heading">{{ section.settings.title | escape }}</h2>
       {%- endif -%}
       
       {%- if section.settings.sub-heading != blank -%}
-        <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.sub-heading | escape }}</h3>
+        <h3 class="SectionHeader__SubHeading Heading u-h6 Collection-List_SubHeading">{{ section.settings.sub-heading | escape }}</h3>
       {%- endif -%}
     </div>
   </header>
