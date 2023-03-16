@@ -168,12 +168,19 @@ HEADER CONTENT
         {%- if section.settings.logo != blank -%}
           {%- capture image_size -%}{{ section.settings.logo_max_width }}x{%- endcapture -%}
 
-          <img class="Header__LogoImage Header__LogoImage--primary"
+          <img class="Header__LogoImage Header__LogoImage--primary desktop"
                src="{{ section.settings.logo | img_url: image_size }}"
                srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
                width="{{ section.settings.logo.width }}"
                height="{{ section.settings.logo.height }}"
                alt="{{ section.settings.logo.alt | default: shop.name | escape }}">
+          <img class="Header__LogoImage Header__LogoImage--primary mobile"
+               src="{{ section.settings.logo_mobile | img_url: image_size }}"
+               srcset="{{ section.settings.logo_mobile | img_url: image_size }} 1x, {{ section.settings.logo_mobile | img_url: image_size, scale: 2 }} 2x"
+               width="{{ section.settings.logo_mobile.width }}"
+               height="{{ section.settings.logo_mobile.height }}"
+               alt="{{ section.settings.logo_mobile.alt | default: shop.name | escape }}">
+
 
           {%- if use_transparent_header and section.settings.transparent_logo != blank -%}
             <img class="Header__LogoImage Header__LogoImage--transparent"
@@ -586,11 +593,22 @@ HEADER CONTENT
     .Header__LogoImage {
       max-width: {{ section.settings.logo_max_width }}px;
     }
+    .Header__LogoImage.mobile {
+      display: none;
+    }
 
     @media screen and (max-width: 640px) {
       .Header__LogoImage {
         max-width: {{ section.settings.mobile_logo_max_width }}px;
       }
+      {%- if section.settings.logo_mobile -%}
+        .Header__LogoImage.desktop {
+          display: none;
+        }
+        .Header__LogoImage.mobile {
+          display: block;
+        }
+      {%- endif -%}
     }
   {%- endif -%}
 
@@ -644,6 +662,12 @@ HEADER CONTENT
       "type": "image_picker",
       "id": "logo",
       "label": "Image",
+      "info": "200 x 60px .png recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_mobile",
+      "label": "Image for mobile",
       "info": "200 x 60px .png recommended"
     },
     {

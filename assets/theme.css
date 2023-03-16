@@ -7118,7 +7118,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   }
 
   .CollectionList--spaced .CollectionItem {
-    padding: 8px;
+    padding: 10px;
   }
 
   .CollectionItem {
@@ -7149,7 +7149,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 @media screen and (min-width: 1140px) {
   .CollectionItem {
     width: 20%;
-    padding: 0 40px 37px 0;
+    padding: 0 40px 40px 0;
   }
 
   .CollectionItem__Wrapper {
