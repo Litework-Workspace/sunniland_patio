@@ -11434,7 +11434,7 @@ shopify-payment-terms {
   margin: 0 auto;
   white-space: normal;
   background-color: #00897B;
-  height: 26rem;
+  /* height: 26rem; */
 }
 
 .Testimonial__Content p {
