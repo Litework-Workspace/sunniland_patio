@@ -124,7 +124,7 @@
             "type": "html",
             "settings": {
               "title": "",
-              "content": "<p>6101 N Federal Hwy.<\/p>\n<p>Boca Raton, Florida 33487<\/p>\n<br>\n<p>Call us: 1-561-997-7114<\/p>\n<br>\n<p>Email us: <a class=\"footer_email\" href=\"mailto:info@sunnilandpatio.com\">info@sunnilandpatio.com<\/a><\/p>",
+              "content": "<p class=\"Footer-Address\">6101 N Federal Hwy.<\/p>\n<p class=\"Footer-Address\">Boca Raton, Florida 33487<\/p>\n\n<p class=\"Footer-Phone\">Call us: 1-561-997-7114<\/p>\n\n<p>Email us: <a class=\"footer_email\" href=\"mailto:info@sunnilandpatio.com\">info@sunnilandpatio.com<\/a><\/p>",
               "show_social_media": true
             }
           }
@@ -195,6 +195,14 @@
           "button_label": "Shop Replacement Cushions",
           "button_link": "#",
           "show_parallax": false
+        }
+      },
+      "blog_topics": {
+        "type": "blog_topics",
+        "settings": {
+          "primary_menu": "main-menu",
+          "secondary_menu": "",
+          "show_social_media": false
         }
       }
     },
