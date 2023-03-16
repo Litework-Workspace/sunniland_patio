@@ -117,7 +117,7 @@
       "type": "recently-viewed-products",
       "settings": {
         "title": "Recently viewed",
-        "sub-headong": "",
+        "sub-heading": "",
         "show_product_info": true,
         "show_vendor": false,
         "show_color_swatch": false
@@ -127,7 +127,7 @@
       "type": "image-with-text-overlay",
       "settings": {
         "section_size": "large",
-        "image": "shopify:\/\/shop_images\/Van_Dyke_Seating_1.png",
+        "image": "shopify:\/\/shop_images\/Youtube-section-cover.jpg",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 10,
