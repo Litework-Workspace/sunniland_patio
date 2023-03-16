@@ -8048,6 +8048,14 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   margin-top: 18px;
 }
 
+.Footer__Content p {
+  margin-bottom: 0;
+}
+
+.Footer-Phone {
+  margin: 25px 0 !important;
+}
+
 .Footer__Aside {
   text-align: center;
 }
