@@ -4036,12 +4036,25 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 }
 
 .Price--highlight {
-  color: var(--product-sale-price-color);
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  color: #DD2C00;
 }
 
 .Price--compareAt {
   position: relative;
   margin-left: 10px;
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* text-decoration-line: line-through; */
+
+  color: #9E9E9E;
 }
 
 .Price--compareAt::before {
@@ -9849,12 +9862,24 @@ h3.SectionHeader__SubHeading {
   margin-bottom: 32px;
 }
 
-.ProductMeta__Vendor {
+#ProductMeta__Vendor {
   margin-bottom: 20px;
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
 }
 
-.ProductMeta__Title {
+#ProductMeta__Title {
   margin-bottom: 0;
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 35px;
+  color: #000000;
 }
 
 .ProductMeta__PriceList {
