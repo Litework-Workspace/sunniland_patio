@@ -30,11 +30,11 @@
               {%- endif -%}
 
               {%- if section.settings.title != blank -%}
-                <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+                <h2 id="Image-With-Overlay_Heading" class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
               {%- endif -%}
 
               {%- if section.settings.content != blank -%}
-                <div class="SectionHeader__Description">
+                <div id="Image-With-Overlay_SubHeading" class="SectionHeader__Description">
                   {{ section.settings.content }}
                 </div>
               {%- endif -%}
@@ -52,7 +52,7 @@
               <div class="SectionHeader__ButtonWrapper">
                 <div class="ButtonGroup ButtonGroup--spacingSmall {% if has_two_buttons %}ButtonGroup--sameSize{% endif %}">
                   {%- if section.settings.button_1_text != blank -%}
-                    <a href="{{ section.settings.button_1_link }}" class="ButtonGroup__Item Button">{{ section.settings.button_1_text | escape }}</a>
+                    <a href="{{ section.settings.button_1_link }}" id="Img-W-Overlay_Button1" class="ButtonGroup__Item Button">{{ section.settings.button_1_text | escape }}</a>
                   {%- endif -%}
 
                   {%- if section.settings.button_2_text != blank -%}

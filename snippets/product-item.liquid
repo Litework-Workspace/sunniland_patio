@@ -81,10 +81,20 @@
     {%- if show_product_info -%}
       <div class="ProductItem__Info {% unless use_horizontal %}ProductItem__Info--{{ settings.product_info_alignment }}{% endunless %}">
         {%- if show_vendor -%}
-          <p class="ProductItem__Vendor Heading">{{ product.vendor }}</p>
+          <p class="ProductItem__Vendor Heading" style="font-family: 'Figtree';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 28px;
+          color: #000000;">{{ product.vendor }}</p>
         {%- endif -%}
 
-        <h2 class="ProductItem__Title Heading">
+        <h2 class="ProductItem__Title Heading" style="font-family: 'Figtree';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        color: #000000;">
           <a href="{{ product.url }}">{{ product.title }}</a>
         </h2>
 

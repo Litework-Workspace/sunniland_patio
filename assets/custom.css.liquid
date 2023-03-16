@@ -31,6 +31,15 @@
 .Footer_Upper h2, .Footer_Upper p {
   color: #263238;
 }
+
+.Footer_Upper p {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
 .Upper_Footer-Features {
   display: flex;
   flex-wrap: wrap;
@@ -70,8 +79,12 @@
 }
 
 .Footer__Title {
-  color: #ffffff;
-  font-size: 1.5rem;
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 35px;
+  color: #FFFFFF;
 }
 
 .Footer__Block--text {
@@ -174,6 +187,8 @@
     flex-direction: column;
   }
 }
+
+
 /* End of Footer section editing */
 
 /* Start of Header section editing */
@@ -188,16 +203,7 @@
   }
 }
 
-.Slideshow_Buttons {
-  margin-bottom: 22px !important;
-  font-family: 'Figtree';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  text-transform: capitalize;
-  margin: 50px 0 0 10px !important;
-}
+
 
 .Search__Input {
   color: #CFD8DC !important;
@@ -213,14 +219,33 @@
 
 @media screen and (max-width: 1139px) {
   .Featured-Collection-Shop_All {
-    padding-left: 50px !important;
+    /* padding-left: 50px !important; */
   }
 }
 @media screen and (max-width: 640px) {
   .Featured-Collection-Shop_All {
-    padding-left: 25px !important;
+    /* padding-left: 25px !important; */
   }
 }
+
+#Featured-Collections_Heading {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #263238;
+}
+
+#Featured-Collections_SubHeading {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #263238;
+}
+
 /* End of Best Seller section editing */
 
 
@@ -237,13 +262,15 @@
   }
 }
 
-#Slideshow_Heading {
-  width: 350px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 38px;
-  line-height: 46px;
-  /* height: 50px; */
+@media screen and (max-width: 640px) {
+  #Slideshow_Heading {
+    width: 350px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 46px;
+    /* height: 50px; */
+  }
 }
 
 
@@ -253,6 +280,18 @@
   font-weight: 400;
   font-size: 25px;
   line-height: 35px;
+}
+
+.Slideshow_Buttons {
+  margin-bottom: 22px !important;
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: capitalize;
+  margin: 50px 0 0 10px !important;
+  letter-spacing: initial;
 }
 
 /* End of Slideshow section editing */
@@ -275,6 +314,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
+  /* letter-spacing: initial; */
 }
 
 @media screen and (max-width: 640px) {
@@ -359,6 +399,41 @@
 
 /* End of Main Collections List section editing */
 
+/* Start of Shop The Look section edits */
+
+@media screen and (max-width: 641px) {
+  #Shop-The-Look {
+    display: none;
+  }
+}
+
+#Shop-the-look_Container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#Shop-The-Look_Heading {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #263238;
+}
+
+#Shop-The-Look_SubHeading {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #263238;
+}
+
+/* End of Shop The Look section edits */
+
 
 /* Start of Testimonial section editing */
 
@@ -378,7 +453,7 @@
 } */
 @media screen and (max-width: 469px) {
   .ProductList--carousel .Carousel__Cell {
-    width: 95%;
+    width: 85%;
     padding: 0 5px 0 0;
   }
 
@@ -391,6 +466,24 @@
   }
 
   
+}
+
+#Testimonials_Heading {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #263238;
+}
+
+#Testimonials_SubHeading {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #263238;
 }
 
 /* .ProductList--carousel .Carousel__Cell:first-child {
@@ -422,6 +515,7 @@
 
 #blog_wrapper {
   margin: 0;
+  padding: 0;
 }
 
 @media screen and (min-width: 1008px) {
@@ -462,6 +556,26 @@
   position: sticky;
   top: 40%;
 }
+
+#Blog-Posts_Heading {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #263238;
+}
+
+#Blog-Posts_SubHeading {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #263238;
+}
+
+
 /* End of Blog section */
 
 /* Start Css for custom-html banner */
@@ -507,7 +621,8 @@
 
 @media screen and (max-width: 640px){
   .ProductForm__AddToCart {
-    width: 100%;
+    width: 119px;
+    height: 40px;
   }
 }
 /* End of Main Product editing */
@@ -528,3 +643,43 @@
   line-height: 22px;
 }
 /* End of Service Page editing */
+
+/* Start of Image With Overlay edits */
+
+#Image-With-Overlay_Heading {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+#Image-With-Overlay_SubHeading {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+#Img-W-Overlay_Button1 {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #263238 !important;
+  text-transform: capitalize;
+  letter-spacing: initial;
+}
+
+@media screen and (max-width: 641px) {
+  #Img-W-Overlay_Button1 {
+    width: 175px;
+    height: 50px;
+  }
+}
+
+/* End of Image With Overlay edits */

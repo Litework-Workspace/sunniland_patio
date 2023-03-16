@@ -3,11 +3,11 @@
     {%- if section.settings.subheading != blank or section.settings.title != blank -%}
       <header class="SectionHeader SectionHeader--center">
         {%- if section.settings.title != blank -%}
-          <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+          <h2 id="Blog-Posts_Heading" class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
         {%- endif -%}
         
         {%- if section.settings.subheading != blank -%}
-          <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
+          <h3 id="Blog-Posts_SubHeading" class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
         {%- endif -%}
       </header>
     {%- endif -%}
@@ -36,9 +36,12 @@
           {%- when 'blog' -%}
             {%- assign blog = blogs[block.settings.blog] -%}
 
-            {%- for article in blog.articles limit: 3 -%}
+            {%- for article in blog.articles limit: 4 -%}
+              {% assign remainder = forloop.index | modulo: 2  %}
               <div id="Blog_Cell" class="Carousel__Cell">
-                {%- render 'article-item', block: block, article: article -%}
+                <div class="ArticleItem_Wrapper" {% if remainder == 0 %} style="background: #6F5B3E;" {% else %} style="background: #8D795C;" {% endif %}>
+                  {%- render 'article-item', block: block, article: article -%}
+                </div>
               </div>
 
               {%- assign show_placeholders = false -%}
@@ -46,8 +49,8 @@
         {%- endcase -%}
 
         {%- if show_placeholders -%}
-          {%- for i in (1..3) -%}
-            <div class="Grid__Cell 1/2--tablet 1/3--lap-and-up {% if forloop.index == 3 %}hidden-tablet{% endif %}">
+          {%- for i in (1..4) -%}
+            <div class="Grid__Cell 1/2--tablet 1/3--lap-and-up {% if forloop.index == 4 %}hidden-tablet{% endif %}">
               <article class="ArticleItem">
                 {%- capture placeholder -%}{% cycle 'lifestyle-1', 'lifestyle-2' %}{%- endcapture -%}
 
@@ -77,7 +80,7 @@
 
     {%- if section.settings.button_text != blank -%}
       <div class="SectionFooter">
-        <a href="{{ section.settings.button_link }}" id="Shop-all_link" class="Button Button--primary">{{ section.settings.button_text | escape }}<img src="{{ 'Vector.svg' | asset_url }}" alt=""></a>
+        <a href="{{ section.settings.button_link }}" id="Shop-all_link" class="Button Button--primary">{{ section.settings.button_text | escape }}<img class="shop-all_vector" src="{{ 'Vector.svg' | asset_url }}" alt=""></a>
       </div>
     {%- endif -%}
   </div>

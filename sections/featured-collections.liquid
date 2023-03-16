@@ -41,20 +41,21 @@
       {%- assign collection = collections[section.blocks.first.settings.collection] -%}
 
       {%- if collection != empty -%}
-        <h2 class="SectionHeader__Heading Heading u-h1">{{ section.blocks.first.settings.title | default: collection.title }}</h2>
+        <h2 id="Featured-Collections_Heading" class="SectionHeader__Heading Heading u-h1">{{ section.blocks.first.settings.title | default: collection.title }}</h2>
       {%- else -%}
         <h2 class="SectionHeader__Heading Heading u-h1">{{ 'home_page.onboarding.collection_title' | t }}</h2>
       {%- endif -%}
     {%- endif -%}
 
     {%- if section.settings.title != blank -%}
-      <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.title | escape }}</h3>
+      <h3 id="Featured-Collections_SubHeading" class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.title | escape }}</h3>
     {%- endif -%}
     </div>
   </header>
 
   {%- for block in section.blocks -%}
     {%- assign collection = collections[block.settings.collection] -%}
+    <div class="Container">
     
     <div class="TabPanel" id="block-{{ block.id }}" aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}" role="tabpanel" {{ block.shopify_attributes }}>
       <div class="ProductListWrapper">
@@ -155,6 +156,7 @@
           </div>
         </div>
       {%- endif -%}
+    </div>
     </div>
   {%- endfor -%}
 </section>
