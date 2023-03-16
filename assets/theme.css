@@ -8111,8 +8111,8 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
     flex: 1 1 50%;
     margin-top: 0;
     margin-bottom: 50px;
-    padding-left: 25px;
-    padding-right: 25px;
+    /* padding-left: 25px; */
+    /* padding-right: 25px; */
   }
 
   .Footer__Social {
@@ -8181,7 +8181,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   }
 
   .Footer__Block--newsletter {
-    flex-basis: 22rem;
+    flex-basis: 350px;
   }
 }
 .GiftCard {
