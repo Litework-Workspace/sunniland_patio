@@ -8842,7 +8842,23 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 h2.SectionHeader__Heading {
   text-align: left;
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #263238;
 }
+
+h3.SectionHeader__SubHeading {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #263238;
+}
+
 .SectionHeader__SubHeading {
   text-align: left;
 }
