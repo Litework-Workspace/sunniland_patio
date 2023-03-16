@@ -9,14 +9,13 @@
     },
     "8ca26768-041f-40eb-b635-d33e84b5b2e0": {
       "type": "custom-html",
-      "disabled": true,
       "custom_css": [
 
       ],
       "settings": {
         "subheading": "",
         "title": "",
-        "html": "<p><b>Free Shipping<\/b> on all patio furniture orders above $500. No code needed.<\/p>"
+        "html": "<p class=\"Free-SHipping_Banner\"><b>Free Shipping<\/b> on all patio furniture orders above $500. No code needed.<\/p>"
       }
     },
     "fb3facf5-59a5-46dd-a4b9-3f6b442916de": {
