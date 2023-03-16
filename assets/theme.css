@@ -11880,4 +11880,6 @@ shopify-payment-terms {
 #dummy-chat-button-iframe {
   display: none;
 }
-
+.ju_Con {
+  display: none !important;
+}
