@@ -359,10 +359,10 @@
       "type": "image-with-text-overlay",
       "settings": {
         "section_size": "large",
-        "image": "shopify:\/\/shop_images\/46fc9616-a0b0-4843-86a5-efe68f1e35a3_1.png",
+        "image": "shopify:\/\/shop_images\/sustainability_cover_1.png",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 30,
+        "overlay_opacity": 20,
         "subheading": "",
         "title": "Sustainability Actions by SunnilandPatio Team",
         "content": "<p>Idea of planting trees towards planet conscious ecommerce brand<\/p>",
@@ -446,7 +446,7 @@
       "type": "image-with-text-overlay",
       "settings": {
         "section_size": "large",
-        "image": "shopify:\/\/shop_images\/067881ed-2117-41f9-9ddf-c37c47eb5af9_1.jpg",
+        "image": "shopify:\/\/shop_images\/Youtube-section-cover.jpg",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 30,
