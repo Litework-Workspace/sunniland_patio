@@ -161,14 +161,35 @@
 .links_container {
   display: none;
 }
-.Copyright_Footer {
-  background: #1E272C;
-  width: 100%;
-  height: 4.7rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
+
+@media screen and (min-width: 642px) {
+  .Copyright_Footer {
+    background: #1E272C;
+    width: 100%;
+    height: 4.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  .Copyright_Footer-Mobile{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 641px) {
+  .Copyright_Footer {
+    display: none !important;
+  }
+
+  .Copyright_Footer-Mobile{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background: #1E272C;
+    height: 100px;
+  }
 }
 
 

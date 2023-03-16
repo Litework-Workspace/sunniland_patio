@@ -8005,7 +8005,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 }
 
 .Footer {
-  padding: 34px 0;
+  padding: 34px 0 0 0;
   background: var(--footer-background);
   color: var(--footer-text-color);
 }
@@ -11836,5 +11836,7 @@ shopify-payment-terms {
 }
 /* END Edits to Collection List section */
 
-
+#dummy-chat-button-iframe {
+  display: none;
+}
 
