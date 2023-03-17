@@ -75,7 +75,7 @@
         "type": "header",
         "settings": {
           "use_sticky_header": false,
-          "logo": "shopify:\/\/shop_images\/Logo.png",
+          "logo": "shopify:\/\/shop_images\/Logo_3.svg",
           "logo_mobile": "shopify:\/\/shop_images\/Logo_mobile.png",
           "logo_max_width": 250,
           "mobile_logo_max_width": 145,
