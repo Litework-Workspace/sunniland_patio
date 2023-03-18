@@ -191,11 +191,12 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "image": "shopify:\/\/shop_images\/Image_6.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
-            "subheading": "Sub-heading",
-            "title": "Collection name",
-            "button_text": "View products",
+            "subheading": "",
+            "title": "",
+            "button_text": "Dining Tables",
             "button_link": "",
             "apply_overlay": true
           }
