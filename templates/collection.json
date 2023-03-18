@@ -128,6 +128,68 @@
         "button_text": "explore"
       }
     },
+    "5ba7b05d-d0e9-4bd4-9ec4-41701b3099b4": {
+      "type": "collection-list",
+      "blocks": {
+        "template--17486863892776__5ba7b05d-d0e9-4bd4-9ec4-41701b3099b4-16791570098fe8f52f-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "coffee-tables",
+            "image": "shopify:\/\/shop_images\/Image_2.png",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "",
+            "button_text": "Coffee Tables",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "template--17486863892776__5ba7b05d-d0e9-4bd4-9ec4-41701b3099b4-16791570098fe8f52f-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "template--17486863892776__5ba7b05d-d0e9-4bd4-9ec4-41701b3099b4-16791570098fe8f52f-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        }
+      },
+      "block_order": [
+        "template--17486863892776__5ba7b05d-d0e9-4bd4-9ec4-41701b3099b4-16791570098fe8f52f-0",
+        "template--17486863892776__5ba7b05d-d0e9-4bd4-9ec4-41701b3099b4-16791570098fe8f52f-1",
+        "template--17486863892776__5ba7b05d-d0e9-4bd4-9ec4-41701b3099b4-16791570098fe8f52f-2"
+      ],
+      "settings": {
+        "title": "Related Categories",
+        "sub-heading": "Shop by Category",
+        "image_size": "normal",
+        "add_spacing": true,
+        "expand_collection": false,
+        "stack_on_mobile": true,
+        "text_color": "#ffffff",
+        "button_color": "#363636",
+        "link_text": "Shop all",
+        "shop-all_link": ""
+      }
+    },
     "c6b863d6-437a-477e-88e7-827c004162c0": {
       "type": "image-with-text-overlay",
       "settings": {
@@ -156,6 +218,7 @@
     "27daa94b-3f9a-43fe-8654-b348350472f9",
     "77a304d4-894e-47ad-91a1-494ed592b838",
     "5f6e1337-c33a-48de-a4be-801c22bb86dc",
+    "5ba7b05d-d0e9-4bd4-9ec4-41701b3099b4",
     "c6b863d6-437a-477e-88e7-827c004162c0"
   ]
 }
