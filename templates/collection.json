@@ -172,12 +172,41 @@
             "button_link": "",
             "apply_overlay": true
           }
+        },
+        "bd801f18-5b4f-4027-a9c3-355f022ad2a7": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/Image_5.png",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "",
+            "button_text": "Fire Pit Tables",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "28eec07b-532e-4ad4-8863-754df530d14d": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
         }
       },
       "block_order": [
         "template--17486863892776__5ba7b05d-d0e9-4bd4-9ec4-41701b3099b4-16791570098fe8f52f-2",
         "template--17486863892776__5ba7b05d-d0e9-4bd4-9ec4-41701b3099b4-16791570098fe8f52f-0",
-        "template--17486863892776__5ba7b05d-d0e9-4bd4-9ec4-41701b3099b4-16791570098fe8f52f-1"
+        "template--17486863892776__5ba7b05d-d0e9-4bd4-9ec4-41701b3099b4-16791570098fe8f52f-1",
+        "bd801f18-5b4f-4027-a9c3-355f022ad2a7",
+        "28eec07b-532e-4ad4-8863-754df530d14d"
       ],
       "settings": {
         "title": "Related Categories",
