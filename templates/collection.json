@@ -212,7 +212,7 @@
       "settings": {
         "title": "Related Categories",
         "sub-heading": "Shop by Category",
-        "image_size": "normal",
+        "image_size": "small",
         "add_spacing": true,
         "expand_collection": true,
         "stack_on_mobile": true,
