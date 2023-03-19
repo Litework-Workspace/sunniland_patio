@@ -214,12 +214,12 @@
         "sub-heading": "Shop by Category",
         "image_size": "normal",
         "add_spacing": true,
-        "expand_collection": false,
+        "expand_collection": true,
         "stack_on_mobile": true,
         "text_color": "#ffffff",
         "button_color": "#363636",
         "link_text": "Shop all",
-        "shop-all_link": ""
+        "shop-all_link": "#"
       }
     },
     "c6b863d6-437a-477e-88e7-827c004162c0": {
