@@ -3996,6 +3996,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   letter-spacing: normal;
   background: transparent;
   border: none;
+  margin: auto;
 }
 
 .QuantitySelector--large .QuantitySelector__CurrentQuantity {
@@ -7359,11 +7360,12 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   /* width: 284px; */
 }
 
-.ProductItem__ImageWrapper {
+
+/* .ProductItem__ImageWrapper {
   display: block;
   width: 284px;
   height: 304px;
-}
+} */
 
 .ProductItem__Image--alternate {
   position: absolute;
@@ -7675,13 +7677,14 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
     margin-bottom: 20px; /* hack, would require some better code */
   }
 }
+
 .ProductList--carousel {
   white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   padding-bottom: 30px; /* This is a trick to hide the scrollbar on iOS */
-  margin-bottom: -30px;
+  /* margin-bottom: -30px; */
   /* overflow: hidden; */
 }
 
@@ -7705,7 +7708,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     padding-bottom: 30px; /* This is a trick to hide the scrollbar on iOS */
-    margin-bottom: -30px;
+    /* margin-bottom: -30px; */
   }
 
   .ProductList--carousel .Carousel__Cell {
@@ -7744,7 +7747,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 @media screen and (min-width: 1008px) {
   .ProductList--carousel {
-    margin: 0 -.75rem;
+    /* margin: 0 -.75rem; */
   }
 
   .ProductList--carousel::after {
