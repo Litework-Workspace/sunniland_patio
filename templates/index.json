@@ -304,7 +304,7 @@
         "title": "Our widely admired patio replacement slings",
         "layout_mode": "carousel",
         "show_product_info": true,
-        "show_vendor": true,
+        "show_vendor": false,
         "show_color_swatch": false,
         "grid_mobile_items_per_row": "2",
         "grid_desktop_items_per_row": 4
