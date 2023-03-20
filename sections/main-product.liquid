@@ -91,7 +91,7 @@
         {%- case media.media_type -%}
           {%- when 'image' -%}
             <div id="Media{{ media.id }}" tabindex="0" class="Product__SlideItem Product__SlideItem--image Carousel__Cell {% if initial_media_id == media.id %}is-selected{% endif %}" data-media-type="image" data-media-id="{{ media.id }}" data-media-position="{{ media.position }}" data-image-media-position="{% increment image_position %}">
-              <div class="AspectRatio AspectRatio--withFallback" style="padding-bottom: {{ 100.0 | divided_by: media.aspect_ratio }}%; --aspect-ratio: {{ media.aspect_ratio }};">
+              <div id="main-prod-img" class="AspectRatio AspectRatio--withFallback" style="padding-bottom: {{ 100.0 | divided_by: media.aspect_ratio }}%; --aspect-ratio: {{ media.aspect_ratio }};">
                 {% assign image_url = media | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
 
                 <img class="Image--lazyLoad Image--fadeIn" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" data-expand="-100" alt="{{ media.alt | escape }}" data-max-width="{{ media.width }}" data-max-height="{{ media.height }}" data-original-src="{{ media | img_url: 'master' }}">
@@ -361,7 +361,7 @@
                         </style>
                       {%- endif -%}
   
-                      <button type="submit" data-use-primary-button="{% if use_primary_button %}true{% else %}false{% endif %}" class="ProductForm__AddToCart Button {% if product.selected_or_first_available_variant.available and use_primary_button %}Button--primary{% else %}Button--secondary{% endif %} Button--full" {% if product.selected_or_first_available_variant.available %}data-action="add-to-cart"{% else %}disabled="disabled"{% endif %}>
+                      <button id="main-product_buy" type="submit" data-use-primary-button="{% if use_primary_button %}true{% else %}false{% endif %}" class="ProductForm__AddToCart Button {% if product.selected_or_first_available_variant.available and use_primary_button %}Button--primary{% else %}Button--secondary{% endif %} Button--full" {% if product.selected_or_first_available_variant.available %}data-action="add-to-cart"{% else %}disabled="disabled"{% endif %}>
                         {%- if product.selected_or_first_available_variant.available -%}
                           <span>{% if product.template_suffix == 'pre-order' %}{{ 'product.form.pre_order' | t }}{% else %}{{ 'product.form.add_to_cart' | t }}{% endif %}</span>
   

@@ -99,11 +99,11 @@
     {%- elsif section.settings.show_collection_info -%}
       <header class="PageHeader">
         <div class="Container">
-          <div class="SectionHeader SectionHeader--center">
+          <div class="SectionHeader">
             <h1 class="SectionHeader__Heading Heading u-h1">{{ collection.title }}</h1>
 
             {%- if collection.description != blank -%}
-              <div class="SectionHeader__Description Rte">
+              <div class="SectionHeader__Description">
                 {{- collection.description -}}
               </div>
             {%- endif -%}
@@ -346,7 +346,7 @@
     COLLECTION PRODUCTS
     --------------------------------------------------------------------------------------------------------------------
     {%- endcomment -%}
-
+  <div class="Container">
     <div class="CollectionMain">
       {%- if section.settings.toolbar_position == 'top' -%}
         {{- collection_toolbar -}}
@@ -376,6 +376,7 @@
         {{- collection_toolbar -}}
       {%- endif -%}
     </div>
+  </div>
   {%- else -%}
     <div class="EmptyState">
       <div class="Container">

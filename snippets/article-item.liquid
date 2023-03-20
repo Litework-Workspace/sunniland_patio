@@ -26,8 +26,55 @@
     </h2>
 
     {%- unless template.name == 'article' -%}
-      {% comment %} <p class="ArticleItem__Excerpt">{{ article.excerpt_or_content | strip_html | truncate: 150 }}</p> {% endcomment %}
+      {% unless template.name != 'article' %}
+        <span class="Article__MetaItem">{{ article.published_at | date: format: 'month_day_year' }}</span>
+        <p class="ArticleItem__Excerpt">{{ article.excerpt_or_content | strip_html | truncate: 150 }}</p>
+      {%  elsif template.name == 'blog' %}
+        <span class="Article__MetaItem">{{ article.published_at | date: format: 'month_day_year' }}</span>
+        <p class="ArticleItem__Excerpt">{{ article.excerpt_or_content | strip_html | truncate: 150 }}</p>
+      {% endunless %}
       <a href="{{ article.url }}" class="ArticleItem__Link Button">{{ 'blog.article.read_more' | t }}</a>
     {%- endunless -%}
   </div>
+  
+{% unless template.name == 'article' %}
+  {%  unless template.name == 'blog' %} 
+
+  <style>
+
+  .ArticleItem__Content {
+    margin: 0 25px;
+    height: 214px;
+    padding: 25px 0px;
+    width: 233px;
+  }
+  .ArticleItem__Link{
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 50px;
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: capitalize;
+  letter-spacing: initial;
+  position: absolute;
+  bottom: 25px;
+  }
+
+  .ArticleItem__Title {
+  display: block !important;
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px !important;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-bottom: 0px;
+  }
+
+  </style>
+  {% endunless %}
+  {% endunless %}
 </article>
