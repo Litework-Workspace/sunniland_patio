@@ -298,6 +298,58 @@
                 {%- when 'product_meta' -%}
                   {%- render 'product-meta', form: form, block: block, product: product -%}
 
+                {%- when 'hulkapps_options' -%}
+                  <div id="hulkapps-block-container"></div>
+                  <script>
+                    // START Kevin Edits - Move the hulkapps options
+                    function moveHulkOptions(){
+                      console.log('moveHulkOptions init');
+                      const hulk_container = document.querySelector('.hulkapps-container');
+                      const new_container = document.querySelector('#hulkapps-block-container');
+                      console.log('hulk_container',hulk_container);
+
+                      function callback(mutationList, observer) {
+                        mutationList.forEach((mutation) => {
+                          switch (mutation.type) {
+                            case "childList":
+                              /* One or more children have been added to and/or removed
+                              from the tree.
+                                (See mutation.addedNodes and mutation.removedNodes.) */
+                              const hulk_container = document.querySelector('.hulkapps-container');
+                              console.log('new hulk_container',hulk_container);
+                              if(hulk_container){
+                                console.log('found it');
+                                new_container.append(hulk_container);
+                                {% comment %} document.querySelector('form.ProductForm').append(new_container); {% endcomment %}
+                                observer.disconnect();
+                              }
+                              break;
+                            case "attributes":
+                              /* An attribute value changed on the element in
+                                mutation.target.
+                                The attribute name is in mutation.attributeName, and
+                              its previous value is in mutation.oldValue. */
+                                break;
+                          }
+                        });
+                      }
+                      const targetNode = document.querySelector("body");
+                      const observerOptions = {
+                        childList: true,
+                        attributes: true,
+
+                        // Omit (or set to false) to observe only changes to the parent node
+                        subtree: true,
+                      };
+                      const observer = new MutationObserver(callback);
+                      observer.observe(targetNode, observerOptions);
+                    }
+                    document.addEventListener('DOMContentLoaded',function(){
+                      moveHulkOptions();
+                    })
+                  </script>
+
+
                 {%- when 'description' -%}
                   {%- if product.description != blank -%}
                     <div class="ProductMeta__Description" {{ block.shopify_attributes }}>
@@ -556,6 +608,11 @@ This is the root container for the zoom functionality. Must not be removed, as o
           "default": false
         }
       ]
+    },
+    {
+      "type": "hulkapps_options",
+      "name": "Hulk Product Options",
+      "limit": 1
     },
     {
       "type": "variant_selector",
