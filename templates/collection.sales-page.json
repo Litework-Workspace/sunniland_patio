@@ -79,17 +79,6 @@
         "grid_desktop_items_per_row": 4
       }
     },
-    "recently-viewed-products": {
-      "type": "recently-viewed-products",
-      "disabled": true,
-      "settings": {
-        "title": "Recently viewed",
-        "sub-heading": "",
-        "show_product_info": true,
-        "show_vendor": false,
-        "show_color_swatch": false
-      }
-    },
     "27daa94b-3f9a-43fe-8654-b348350472f9": {
       "type": "shop-the-look",
       "disabled": true,
@@ -178,6 +167,16 @@
         "button_text": "explore"
       }
     },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "title": "Recently viewed",
+        "sub-heading": "",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false
+      }
+    },
     "c6b863d6-437a-477e-88e7-827c004162c0": {
       "type": "image-with-text-overlay",
       "settings": {
@@ -203,10 +202,10 @@
     "6b2b3770-956d-4694-8bab-a5774a225393",
     "b29135a1-6c78-430a-acba-32e7def3b702",
     "main",
-    "recently-viewed-products",
     "27daa94b-3f9a-43fe-8654-b348350472f9",
     "77a304d4-894e-47ad-91a1-494ed592b838",
     "5f6e1337-c33a-48de-a4be-801c22bb86dc",
+    "recently-viewed-products",
     "c6b863d6-437a-477e-88e7-827c004162c0"
   ]
 }
