@@ -15,7 +15,7 @@
 
         {%- if settings.cart_show_free_shipping_threshold -%}
           {%- assign threshold_in_cents = settings.cart_free_shipping_threshold | times: 100 -%}
-          {%- capture remaining_amount -%}<span data-hulkapps-cart-total >{{ cart.total_price | minus: threshold_in_cents | abs | money }}</span>{%- endcapture -%}
+          {%- capture remaining_amount -%}<span>{{ cart.total_price | minus: threshold_in_cents | abs | money }}</span>{%- endcapture -%}
 
           <p class="Text--subdued">{{- 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount -}}</p>
         {%- endif -%}
@@ -36,7 +36,7 @@
               {%- if cart.total_price >= threshold_in_cents -%}
                 {{- 'cart.general.free_shipping' | t -}}
               {%- else -%}
-                {%- capture remaining_amount -%}<span data-hulkapps-cart-total >{{ cart.total_price | minus: threshold_in_cents | abs | money }}</span>{%- endcapture -%}
+                {%- capture remaining_amount -%}<span>{{ cart.total_price | minus: threshold_in_cents | abs | money }}</span>{%- endcapture -%}
                 {{- 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount -}}
               {%- endif -%}
             </p>
@@ -68,7 +68,7 @@
                 {%- endfor -%}
               {%- endif -%}
 
-              <p  data-hulkapps-cart-total class="Cart__Total Heading u-h6">{{ 'cart.general.total' | t }}: <span>{{ cart.total_price | money_with_currency }}</span></p>
+              <p class="Cart__Total Heading u-h6">{{ 'cart.general.total' | t }}: <span>{{ cart.total_price | money_with_currency }}</span></p>
 
               {%- if shipping_and_taxes_notice != blank -%}
                 <p class="Cart__Taxes Text--subdued">{{ shipping_and_taxes_notice }}</p>

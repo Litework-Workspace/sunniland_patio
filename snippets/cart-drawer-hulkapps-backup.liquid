@@ -26,7 +26,7 @@
             {%- if cart.total_price >= threshold_in_cents -%}
               <p>{{- 'cart.general.free_shipping' | t -}}</p>
             {%- else -%}
-              {%- capture remaining_amount -%}<span data-hulkapps-cart-total >{{ cart.total_price | minus: threshold_in_cents | abs | money }}</span>{%- endcapture -%}
+              {%- capture remaining_amount -%}<span>{{ cart.total_price | minus: threshold_in_cents | abs | money }}</span>{%- endcapture -%}
               <p>{{- 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount -}}</p>
             {%- endif -%}
           </div>
@@ -72,7 +72,7 @@
         <button type="submit" name="checkout" class="Cart__Checkout Button Button--primary Button--full">
           <span>{{- 'cart.general.checkout' | t -}}</span>
           <span class="Button__SeparatorDot"></span>
-          <span data-hulkapps-cart-total >{{ cart.total_price | money_with_currency }}</span>
+          <span>{{ cart.total_price | money_with_currency }}</span>
         </button>
 
         {%- if settings.cart_enable_notes -%}
