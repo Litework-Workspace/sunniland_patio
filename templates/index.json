@@ -198,6 +198,7 @@
           "type": "collection",
           "settings": {
             "collection": "commercial-furniture",
+            "image": "shopify:\/\/shop_images\/Image_17.png",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
