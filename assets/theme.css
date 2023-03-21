@@ -6392,6 +6392,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .ArticleList .Grid__Cell {
   margin-bottom: 60px;
+  padding: 0;
 }
 
 .js .features--show-element-staggering .ArticleItem {
@@ -6505,19 +6506,19 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   }
 
   .ArticleItem__Content {
-    height: 233px;
-    padding: 26px;
+    /* height: 233px; */
+    /* padding: 26px; */
   }
 
-  .ArticleItem{
-    width: 257px;
-    height: 506px;
+  .ArticleItem {
+    width: 350px;
+    height: 498px;
   }
 
   .ArticleItem__ImageWrapper {
-    height: 273.03753662109375px;
-    width: 257px;
-    
+    height: 200px;
+    width: 350px;
+    margin-bottom: 10px;
   }
 
 }
