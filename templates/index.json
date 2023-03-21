@@ -170,6 +170,7 @@
           "type": "collection",
           "settings": {
             "collection": "pre-cut-vinyl-straps",
+            "image": "shopify:\/\/shop_images\/Image_15.png",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
