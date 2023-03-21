@@ -12,12 +12,18 @@
             "show_taxes_included": false
           }
         },
+        "cb196c07-9c2e-4e96-ad2d-b74ffa172298": {
+          "type": "hulkapps_options",
+          "settings": {
+          }
+        },
         "variant_selector": {
           "type": "variant_selector",
           "settings": {
             "selector_mode": "dropdown",
             "show_color_swatch": false,
             "show_color_carousel": false,
+            "hide_selector": true,
             "size_chart": ""
           }
         },
@@ -52,6 +58,7 @@
       },
       "block_order": [
         "product_meta",
+        "cb196c07-9c2e-4e96-ad2d-b74ffa172298",
         "variant_selector",
         "quantity_selector",
         "buy_buttons",

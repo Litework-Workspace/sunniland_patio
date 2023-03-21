@@ -136,10 +136,9 @@
     {% render 'microdata-schema' %}
 
     {{ 'font.css' | asset_url | stylesheet_tag }}
-    {% include 'hulk_po_vd.liquid' %}
 
     {% if template contains 'product' or template contains 'cart' %}
-      <script src='{{ "hulkcode2.js" | asset_url }}' defer='defer'></script>
+      <script src='{{ "hulkcode.js" | asset_url }}' defer='defer'></script>
     {% endif %}
 
   {% include 'hulk_po_vd' %}</head>

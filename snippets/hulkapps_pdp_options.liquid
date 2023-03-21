@@ -1,0 +1,44 @@
+
+<div id="hulkapps-block-container"></div>
+<script>
+  // START Kevin Edits - Move the hulkapps options
+  function moveHulkOptions(){
+    console.log('moveHulkOptions init');
+    const new_container = document.querySelector('#hulkapps-block-container');
+
+    function callback(mutationList, observer) {
+      mutationList.forEach((mutation) => {
+        switch (mutation.type) {
+          case "childList":
+            // need to make it dynamically work with the umbrellas 
+            // https://www.sunnilandpatio.com/products/6-5-ft-square-frankford-patio-umbrella-crank-lift-wood-grain-frame?variant=40928161366127
+            const hulk_container = document.querySelector('.hulkapps-container');
+            if(hulk_container){
+              const popOver = document.querySelector('.Popover__ValueList');
+              new_container.append(hulk_container);
+
+              hulk_container.querySelector('select').addEventListener('change',e => {
+                console.log('changed the option',e.target.value,popOver);
+                const popOverOption = popOver.querySelector(`[data-value="${e.target.value}"]`);
+                console.log('popOverOption',popOverOption);
+                if(!popOverOption){console.log('no option found');return};
+                popOverOption.click()
+              });
+              observer.disconnect();
+            }
+            break;
+        }
+      });
+    }
+    const targetNode = document.querySelector("body");
+    const observerOptions = {
+      childList: true,
+    };
+    const observer = new MutationObserver(callback);
+    observer.observe(targetNode, observerOptions);
+  }
+  document.addEventListener('DOMContentLoaded',function(){
+    moveHulkOptions();
+  })
+</script>
+
