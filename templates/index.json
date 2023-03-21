@@ -128,6 +128,7 @@
           "type": "collection",
           "settings": {
             "collection": "cayman-isle-cushion",
+            "image": "shopify:\/\/shop_images\/Image_12.png",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
@@ -141,6 +142,7 @@
           "type": "collection",
           "settings": {
             "collection": "andover-cushion",
+            "image": "shopify:\/\/shop_images\/Image_13.png",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
