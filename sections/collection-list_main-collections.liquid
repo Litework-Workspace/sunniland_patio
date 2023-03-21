@@ -27,7 +27,7 @@
       {%- capture collection_items -%}
         {%- for block in section.blocks -%}
           {%- assign collection = collections[block.settings.collection] -%}
-          {%- render 'collection-items_main-collections', block: block, collection: collection, apply_overlay: block.settings.apply_overlay -%}
+          {%- render 'collection-items_main-collections', block: block, collection: collection, apply_overlay: block.settings.apply_overlay, no_collection_title: block.settings.title -%}
         {%- endfor -%}
       {%- endcapture -%}
     
