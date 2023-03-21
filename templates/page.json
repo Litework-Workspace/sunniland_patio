@@ -28,8 +28,8 @@
             "image": "shopify:\/\/shop_images\/Image_18.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
-            "subheading": "Sub-heading",
-            "title": "Collection name",
+            "subheading": "Shop All",
+            "title": "Shop All",
             "button_text": "Shop All",
             "button_link": "#",
             "apply_overlay": true
