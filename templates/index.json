@@ -184,6 +184,7 @@
           "type": "collection",
           "settings": {
             "collection": "sling-rail-caps",
+            "image": "shopify:\/\/shop_images\/Image_16.png",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
