@@ -21,6 +21,20 @@
     "fb3facf5-59a5-46dd-a4b9-3f6b442916de": {
       "type": "collection-list_main-collections",
       "blocks": {
+        "6e40bf4f-7b17-4f34-98d1-0daace0be93d": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/Image_18.png",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "Shop All",
+            "button_link": "#",
+            "apply_overlay": true
+          }
+        },
         "b5c984f9-885e-41d1-a22b-f9ce484259b6": {
           "type": "collection",
           "settings": {
@@ -149,6 +163,7 @@
         }
       },
       "block_order": [
+        "6e40bf4f-7b17-4f34-98d1-0daace0be93d",
         "b5c984f9-885e-41d1-a22b-f9ce484259b6",
         "ac497a03-93bd-4a18-8b0b-355e13f73591",
         "d32286ee-8151-4530-81be-77ca42e218ba",
