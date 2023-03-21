@@ -138,7 +138,7 @@
           "8d237045-6a02-4a4f-a457-e6e853153718"
         ],
         "settings": {
-          "show_payment_methods": true,
+          "show_payment_methods": false,
           "show_country_selector": true,
           "show_locale_selector": true
         }
