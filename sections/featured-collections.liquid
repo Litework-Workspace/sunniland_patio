@@ -27,6 +27,9 @@
       <div class="SectionHeader__TabList TabList" role="tablist">
         {%- for block in section.blocks -%}
           {%- assign collection = collections[block.settings.collection] -%}
+          {% if block.settings.dynamic_collection %}
+            {% assign collection = product.collections.first %}
+          {% endif %}
 
           <button class="Heading u-h1 TabList__Item {% if forloop.first %}is-active{% endif %}" data-action="toggle-tab" aria-controls="block-{{ block.id }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" role="tab">
             {%- if collection != empty -%}
@@ -55,6 +58,9 @@
 
   {%- for block in section.blocks -%}
     {%- assign collection = collections[block.settings.collection] -%}
+    {% if block.settings.dynamic_collection %}
+      {% assign collection = product.collections.first %}
+    {% endif %}
     <div class="Container">
     
     <div class="TabPanel" id="block-{{ block.id }}" aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}" role="tabpanel" {{ block.shopify_attributes }}>
@@ -70,7 +76,7 @@
             <div class="ProductList ProductList--grid ProductList--removeMargin Grid" data-mobile-count="{{ section.settings.grid_mobile_items_per_row }}" data-desktop-count="{{ section.settings.grid_desktop_items_per_row }}">
               {%- for product in collection.products limit: block.settings.grid_items_count -%}
                 <div class="Grid__Cell 1/{{ section.settings.grid_mobile_items_per_row }}--phone 1/2--tablet 1/{{ section.settings.grid_desktop_items_per_row }}--lap-and-up">
-                  {%- render 'product-item', product: product, show_product_info: section.settings.show_product_info, show_vendor: section.settings.show_vendor, show_color_swatch: section.settings.show_color_swatch, show_labels: true -%}
+                  {%- render 'product-item', product: product, show_product_info: section.settings.show_product_info, show_vendor: section.settings.show_vendor, show_color_swatch: section.settings.show_color_swatch, show_labels: true, custom_class: 'featured-collections' -%}
                 </div>
               {%- endfor -%}
             </div>
@@ -78,7 +84,7 @@
             <div class="ProductList ProductList--carousel Carousel" >
               {%- for product in collection.products limit: block.settings.grid_items_count -%}
                 <div id="BestSeller-Carousel__Cell" class="Carousel__Cell">
-                  {%- render 'product-item', product: product, show_product_info: section.settings.show_product_info, show_vendor: section.settings.show_vendor, show_color_swatch: section.settings.show_color_swatch, show_labels: true -%}
+                  {%- render 'product-item', product: product, show_product_info: section.settings.show_product_info, show_vendor: section.settings.show_vendor, show_color_swatch: section.settings.show_color_swatch, show_labels: true, custom_class: 'featured-collections' -%}
 
                   {% comment %} Start of Buy Button addition {% endcomment %}
                   {%- form 'product', product, class: 'ProductForm' -%}
@@ -252,6 +258,13 @@
           "type": "collection",
           "id": "collection",
           "label": "Collection"
+        },
+        {
+          "type": "checkbox",
+          "id": "dynamic_collection",
+          "label": "Dynamically Populate",
+          "default": false,
+          "info": "Show the the first collection product is a part of."
         },
         {
           "type": "text",

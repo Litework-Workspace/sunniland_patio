@@ -101,7 +101,17 @@
   background: #37474F;
   color: #ffffff;
   padding-top: 4rem;
+}
 
+.Footer__Social {
+  display: flex;
+}
+.Footer__Social .Icon {
+  width: unset;
+  height: unset;
+}
+.Footer__Title, .Footer__Social .Link--primary:hover {
+  color: #fff;
 }
 
 @media screen and (min-width: 1441px) {
@@ -484,6 +494,10 @@
 .ProductItem__Image {
   width: 284px !important;
   height: 284px !important;
+  object-fit: cover;
+}
+.featured-collections {
+  aspect-ratio: 1 !important;
 }
 
 
@@ -780,15 +794,17 @@
   height: 50px;
 }
 
+/* removed these as it made the page unresponsive */
 #main-prod-img {
-  width: 608px;
-  height: 608px;
+  /* width: 608px; */
+  /* height: 608px; */
 }
 
 @media screen and (max-width: 641px) {
+/* removed these as it made the page unresponsive */
   #main-prod-img {
-    width: 350px;
-    height: 350px;
+    /* width: 350px; */
+    /* height: 350px; */
   }
 
   .Product__SlideshowMobileNav .dot {
@@ -800,15 +816,71 @@
   #main-product_buy {
     width: 165px;
   }
-
+}
+@media screen and (min-width: 1140px){
+  .Product__Gallery--stack.Product__Gallery--withThumbnails .Product__Slideshow {
+    /* padding-left: 0; */
+  }
 }
 
 /* End of Main Product editing */
 
 /* Start of Service Page editing */
 
-.ImageHero__BlockContent {
-  margin-bottom: 28px;
+.image-with-text-block .FlexboxIeFix {
+  width: 100%;
+  aspect-ratio: 1;
+}
+.image-with-text-block .FlexboxIeFix .ImageHero {
+  height: 100%;
+  min-height: unset;
+}
+.image-with-text-block .FlexboxIeFix .ImageHero .ImageHero__Image {
+  background-image: none !important;
+}
+.image-with-text-block .FlexboxIeFix .ImageHero .ImageHero__Image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-with-text-block .FlexboxIeFix .ImageHero .ImageHero__Wrapper .ImageHero__Block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+  padding: 26px !important;
+}
+.image-with-text-block .FlexboxIeFix .ImageHero__Wrapper .ImageHero__Block .ImageHero__BlockContent {
+  margin-bottom: 26px;
+  font-size: 18px;
+}
+.image-with-text-block .FlexboxIeFix .ImageHero__Wrapper .ImageHero__Block .ImageHero__BlockLink {
+  display: block;
+  width: max-content;
+  margin-top: 0 !important;
+  text-align: center;
+  font-size: 15px;
+  background-color: #fff;
+  color: #263239;
+}
+@media screen and (min-width:641px){
+  .image-with-text-block .FlexboxIeFix {
+    aspect-ratio: 1.3;
+  }
+  .image-with-text-block .FlexboxIeFix .ImageHero {
+    height: 100%;
+  }
+  .image-with-text-block .FlexboxIeFix .ImageHero .ImageHero__Wrapper {
+    height: unset;
+  }
+  .ImageHero__Block {
+    padding: 40px !important;
+  }
+  .image-with-text-block .FlexboxIeFix .ImageHero__Wrapper .ImageHero__Block .ImageHero__BlockLink {
+    background-color: transparent;
+    color: #FFF;
+  }
 }
 
 .services-list-item{
