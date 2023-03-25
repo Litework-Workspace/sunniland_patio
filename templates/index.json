@@ -21,9 +21,10 @@
         },
         "slide-1": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Collection_Picture_Redondo_1_1.png",
-            "apply_overlay": true,
+            "apply_overlay": false,
             "content_position": "bottomLeft",
             "subheading": "Renew Your Outdoor Oasis",
             "title": "The Easy Way",
@@ -36,6 +37,7 @@
         },
         "13146d5f-0747-408d-9799-78a2641cd41d": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/3_3_1.png",
             "apply_overlay": true,
