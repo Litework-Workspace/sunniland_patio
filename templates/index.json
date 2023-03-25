@@ -6,7 +6,7 @@
         "slide-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Van_Dyke_Seating_1.png",
+            "image": "shopify:\/\/shop_images\/sunnilandpatio-furniture-banner.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Image_1.png",
             "apply_overlay": false,
             "content_position": "bottomLeft",
@@ -289,6 +289,7 @@
           "type": "collection",
           "settings": {
             "collection": "replacement-slings",
+            "dynamic_collection": false,
             "title": "Best Sellers",
             "grid_items_count": 8,
             "button_text": "Shop All"
@@ -299,6 +300,7 @@
           "disabled": true,
           "settings": {
             "collection": "aluminum",
+            "dynamic_collection": false,
             "title": "",
             "grid_items_count": 8,
             "button_text": "shop all"
