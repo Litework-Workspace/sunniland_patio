@@ -44,7 +44,12 @@
   {%- if section.settings.link_text != blank -%}
     <div >
       <div class="SectionFooter">
-        <a href="{{ section.settings.shop-all_link }}" id="Shop-all_link" class="Button Button--primary">{{ section.settings.link_text | escape }}<img class="shop-all_vector" src="{{ 'Vector.svg' | asset_url }}" alt=""></a>
+        <a href="{{ section.settings.shop-all_link }}" id="Shop-all_link" class="shop-all_link-color Button Button--primary">{{ section.settings.link_text | escape }}
+          {% comment %} <img class="shop-all_vector" src="{{ 'Vector.svg' | asset_url }}" alt=""> {% endcomment %}
+          <svg class="shop-all_vector" width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.087 0L13.16 1.00406L17.0926 5.26387H0V5.26391V6.68385V6.6839H17.0925L13.16 10.9436L14.087 11.9476L19.602 5.97382L14.087 0Z" fill="#263238"/>
+          </svg>
+        </a>
         
       </div>
     </div>

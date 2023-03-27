@@ -36,9 +36,9 @@
 
         <div class="SectionHeader__ButtonWrapper Collection-List_ButtonWrapper">
           {%- if block.settings.button_text != blank -%}
-            <span class="CollectionItem__Link Button">{{ block.settings.button_text | escape }}</span>
+            <span class="CollectionItem__Link Button button-custom__small">{{ block.settings.button_text | escape }}</span>
           {%- else -%}
-            <span class="CollectionItem__Link Button">{{ 'collection.general.view_products' | t }}</span>
+            <span class="CollectionItem__Link Button button-custom__small">{{ 'collection.general.view_products' | t }}</span>
           {%- endif -%}
         </div>
       </header>
