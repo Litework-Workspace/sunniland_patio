@@ -14,6 +14,55 @@
 /* .shopify-section {
   margin: 40px 0px
 } */
+
+
+/* START Global Classes */
+.button-custom__large {
+  height: 50px !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 21.6px !important;
+  letter-spacing: initial !important;
+  text-align: center !important;
+  text-transform: capitalize !important;
+  color: #263238 !important;
+}
+.button-custom__small {
+  height: 40px !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
+  letter-spacing: initial !important;
+  text-align: center !important;
+  text-transform: capitalize !important;
+  color: #263238 !important;
+}
+.button-custom__extra-small {
+  height: 35px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  line-height: 18px !important;
+  letter-spacing: initial !important;
+  text-align: center !important;
+  text-transform: capitalize !important;
+  color: #455A64 !important;
+}
+@media screen and (min-width: 641px){
+  .button-custom__large {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+}
+/* END Global Classes */
+
+
+
 /* START 'Featured Collections' section editing */
 .is-draggable.ProductList--carousel .Carousel__Cell {
     display: flex !important;
@@ -281,8 +330,36 @@
 
 .Search__Input {
   color: #CFD8DC !important;
+  font-size: 16px;
 }
-
+.Search__Input::placeholder {
+  color: #CFD8DC !important;
+  opacity: 1;
+}
+.Search__InputIconWrapper .hidden-phone {
+  color: #CFD8DC !important;
+}
+.Header__Wrapper .HorizontalList--spacingLoose {
+  padding-top: 55px;
+}
+.Search__InputIconWrapper {
+  margin-right: 7px;
+}
+.Header__Wrapper .Icon {
+  width: 20px;
+  height: 20px;
+}
+@media screen and (min-width: 641px) {
+  .Search__Input {
+    font-size: 14px;
+  }
+  .Search__InputIconWrapper {
+    margin-right: 11px;
+  }
+  .features--heading-large .u-h8 {
+    font-size: 14px;
+  }
+}
 
 /* End of Header section editing */
 
@@ -325,53 +402,61 @@
 
 /* Start of Slideshow section editing */
 
-@media screen and (min-width: 641px) {
-  #Slideshow_Heading {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 68px;
-    line-height: 82px;
-    text-transform: capitalize;
-    margin-bottom: 20px !important
-  }
+
+
+.Image--contrast::after {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
 }
-
-@media screen and (max-width: 640px) {
-  #Slideshow_Heading {
-    width: 350px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 38px;
-    line-height: 46px;
-    /* height: 50px; */
-  }
+#Slideshow_Heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 46px;
 }
-
-
 #Slideshow_SubHeading {
+  margin-bottom: 15px;
+  text-align: center;
   font-family: 'Figtree';
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
   line-height: 35px;
 }
-
-.Slideshow_Buttons {
-  margin-bottom: 22px !important;
-  font-family: 'Figtree';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  text-transform: capitalize;
-  margin: 50px 0 0 10px !important;
-  letter-spacing: initial;
-  /* padding: 0; */
-  height: 50px;
+.SectionHeader__Description {
+  margin: 0 auto 40px;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 18px;
+  line-height: 28px;
+}
+.Slideshow .Slideshow__Button {
+  margin-right: auto;
+  margin-left: auto;
+}
+.Carousel--insideDots .flickity-page-dots {
+  left: 0 !important;
+  right: 0 !important;
+}
+
+@media screen and (min-width: 641px) {
+  #Slideshow_Heading {
+    font-size: 68px;
+    line-height: 82px;
+    text-transform: capitalize;
+    margin-bottom: 20px !important
+  }
+  .SectionHeader__Description {
+    margin-bottom: 54px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #Slideshow_Heading {
+    /* width: 350px; */
+    /* height: 50px; */
+  }
 }
 
 /* End of Slideshow section editing */
