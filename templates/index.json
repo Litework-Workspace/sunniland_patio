@@ -92,8 +92,8 @@
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
-            "title": "Conversation Sets",
-            "button_text": "Patio Sets",
+            "title": "Patio Conversation Sets",
+            "button_text": "Patio Conversation Sets",
             "button_link": "",
             "apply_overlay": false
           }
@@ -440,7 +440,10 @@
         "blog-0": {
           "type": "blog",
           "settings": {
-            "blog": "sunniblog"
+            "blog": "sunniblog",
+            "custom_color": false,
+            "color1": "",
+            "color2": ""
           }
         }
       },
@@ -537,7 +540,10 @@
         "background": "#f5f5f5",
         "text_color": "#1c1b1b",
         "button_link": "",
-        "button_text": "Explore"
+        "button_text": "Explore",
+        "custom_color": false,
+        "color1": "",
+        "color2": ""
       }
     }
   },
