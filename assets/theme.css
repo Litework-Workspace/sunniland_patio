@@ -7683,10 +7683,10 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 }
 
 .ProductList--carousel {
-  white-space: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
+  /* white-space: nowrap; */
+  /* overflow-x: auto; */
+  /* overflow-y: hidden; */
+  /* -webkit-overflow-scrolling: touch; */
   padding-bottom: 30px; /* This is a trick to hide the scrollbar on iOS */
   /* margin-bottom: -30px; */
   /* overflow: hidden; */
@@ -7707,10 +7707,10 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   }
 
   .ProductList--carousel {
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
+    /* white-space: nowrap; */
+    /* overflow-x: auto; */
+    /* overflow-y: hidden; */
+    /* -webkit-overflow-scrolling: touch; */
     padding-bottom: 30px; /* This is a trick to hide the scrollbar on iOS */
     /* margin-bottom: -30px; */
   }

@@ -1,0 +1,54 @@
+<!--
+This is the splide.js slider snippet to make it easy to apply to other sections.
+
+Attributes
+  - id: string = the identifier. Could be an id or a class
+  - slideType: string ='slide' || 'loop' || 'fade'
+  - perPage: integer = how many products per page
+  - dots: boolean = pagination dots below the carousel
+-->
+
+<style>
+  .{{ id }} .AspectRatio::before {
+    display: none;
+    content: none;
+  }
+  .{{ id }} .splide__arrow--prev {
+    left: -15px;
+  }
+  .{{ id }} .splide__arrow--next {
+    right: -15px;
+  }
+  @media screen and (min-width: 641px) {
+    .{{ id }} .splide__arrow--prev {
+      left: -40px;
+    }
+    .{{ id }} .splide__arrow--next {
+      right: -40px;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener( 'DOMContentLoaded', function() {
+    new Splide( '.{{ id }}', {
+      type   : '{{ slideType }}',
+      perPage: 1,
+      gap: '20px',
+      mediaQuery: 'min',
+      pagination: {{ dots }},
+      breakpoints: {
+        641: {
+          perPage: 2,
+          gap: '40px',
+        },
+        790: {
+          perPage: 3
+        },
+        990: {
+          perPage: {{ perPage }},
+        }
+      }
+    } ).mount();
+  });
+</script>

@@ -395,8 +395,45 @@ section {
 /* End of Header section editing */
 
 /* Start of Best Seller section editing */
+#Featured-Collections_Heading {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #263238;
+}
+
+#Featured-Collections_SubHeading {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #263238;
+}
+.ProductListWrapper {
+  margin: 0 0 35px;
+}
+.Best_Seller-Container #Shop-all_link {
+  padding: 0 !important;
+}
+.ProductListWrapper .ProductItem__Vendor, .ProductListWrapper .ProductItem__Title {
+  margin: 0 0 5px;
+}
+.ProductListWrapper .ProductItem__PriceList {
+  margin: 0 0 5px;
+}
+.ProductListWrapper .ProductItem__Rating {
+  margin: 0 0 15px;
+}
 .ProductItem__Label--soldOut {
   display: none;
+}
+.ProductList--carousel .Carousel__Cell {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 1139px) {
@@ -418,25 +455,6 @@ section {
     margin-bottom: 25px !important;
   }
 }
-
-#Featured-Collections_Heading {
-  font-family: 'Figtree';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 30px;
-  color: #263238;
-}
-
-#Featured-Collections_SubHeading {
-  font-family: 'Figtree';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  color: #263238;
-}
-
 /* End of Best Seller section editing */
 
 
@@ -632,8 +650,8 @@ section {
 }
 
 .ProductItem__Image {
-  width: 284px !important;
-  height: 284px !important;
+  /* width: 284px !important; */
+  /* height: 284px !important; */
   object-fit: cover;
 }
 .featured-collections {
@@ -919,7 +937,7 @@ section {
 
 @media screen and (max-width: 640px){
   .ProductForm__AddToCart {
-    width: 119px;
+    width: 125px;
     height: 40px;
     font-family: 'Figtree';
     font-style: normal;

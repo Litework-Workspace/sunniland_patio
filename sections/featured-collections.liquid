@@ -20,6 +20,8 @@
 }
 {%- endcapture -%}
 
+{% assign splide-id = 'splide' | append: section.id %}
+
 <section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="featured-collections" data-settings='{{ section_settings }}'>
   <header class="SectionHeader SectionHeader--left">
     <div class="Container">
@@ -63,8 +65,8 @@
     {% endif %}
     <div class="Container">
     
-    <div class="TabPanel" id="block-{{ block.id }}" aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}" role="tabpanel" {{ block.shopify_attributes }}>
-      <div class="ProductListWrapper">
+    <div class="TabPanel splide {{ splide-id }}" id="block-{{ block.id }}" aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}" role="tabpanel" {{ block.shopify_attributes }}>
+      <div class="ProductListWrapper splide__track">
         {%- if collection != empty -%}
           {%- assign item_count = block.settings.grid_items_count -%}
 
@@ -81,9 +83,9 @@
               {%- endfor -%}
             </div>
           {%- else -%}
-            <div class="ProductList ProductList--carousel Carousel" >
+            <div class="ProductList ProductList--carousel Carousel splide__list" >
               {%- for product in collection.products limit: block.settings.grid_items_count -%}
-                <div id="BestSeller-Carousel__Cell" class="Carousel__Cell">
+                <div id="BestSeller-Carousel__Cell" class="Carousel__Cell splide__slide">
                   {%- render 'product-item', product: product, show_product_info: section.settings.show_product_info, show_vendor: section.settings.show_vendor, show_color_swatch: section.settings.show_color_swatch, show_labels: true, custom_class: 'featured-collections' -%}
 
                   {% comment %} Start of Buy Button addition {% endcomment %}
@@ -136,7 +138,7 @@
 
           {%- capture products_placeholder -%}
             {%- for i in (1..block.settings.grid_items_count) -%}
-              <div class="{% if section.settings.layout_mode == 'grid' %}Grid__Cell 1/{{ section.settings.grid_mobile_items_per_row }}--phone 1/2--tablet-and-up 1/{{ section.settings.grid_desktop_items_per_row }}--lap-and-up{% else %}Carousel__Cell{% endif %}">
+              <div class="{% if section.settings.layout_mode == 'grid' %}Grid__Cell 1/{{ section.settings.grid_mobile_items_per_row }}--phone 1/2--tablet-and-up 1/{{ section.settings.grid_desktop_items_per_row }}--lap-and-up{% else %}Carousel__Cell{% endif %} splide__slide">
                 {% capture placeholder_index %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
                 {%- render 'product-item-placeholder', placeholder_index: placeholder_index -%}
               </div>
@@ -176,6 +178,8 @@
 {%- comment -%}This is just an ugly hack to make those variables appear as part of the theme editor in the General Settings{%- endcomment -%}
 {% if section.settings.layout_mode == 'grid' %}{{ settings.product_list_horizontal_spacing }},{{ settings.product_list_vertical_spacing }}{% endif %}
 {%- endcapture -%}
+
+{% render 'splide-init', id: splide-id, perPage: 4, slideType: 'slide', dots: false %}
 
 {% schema %}
 {
