@@ -23,7 +23,7 @@
 {% assign splide-id = 'splide' | append: section.id %}
 
 <section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="featured-collections" data-settings='{{ section_settings }}'>
-  <header class="SectionHeader SectionHeader--left">
+  <header id="BestSeller_Section" class="SectionHeader SectionHeader--left">
     <div class="Container">
     {%- if section.blocks.size > 1 -%}
       <div class="SectionHeader__TabList TabList" role="tablist">
