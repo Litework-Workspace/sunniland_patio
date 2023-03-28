@@ -80,12 +80,12 @@
         "c068eee9-3dc1-46fe-af8d-f26bf8dd46c3": {
           "type": "collection",
           "settings": {
-            "collection": "lounge-and-deep-seating",
+            "collection": "",
             "image": "shopify:\/\/shop_images\/Mask_group_2.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Collection name",
+            "title": "Outdoor Lounge",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": true
@@ -94,12 +94,12 @@
         "542c1ffb-299a-4c4d-9b55-f635862e808a": {
           "type": "collection",
           "settings": {
-            "collection": "bar-tables",
+            "collection": "",
             "image": "shopify:\/\/shop_images\/Mask_group_3.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Collection name",
+            "title": "Patio Tables",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": true
