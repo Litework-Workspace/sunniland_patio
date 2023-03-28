@@ -10,35 +10,46 @@
 
 {%- assign should_show_nav = false -%}
 
+{%- assign splide-id = 'splide' | append: section.id -%}
+
 {%- for block in section.blocks -%}
   {%- if block.settings.logo -%}
     {%- assign should_show_nav = true -%}
     {%- break -%}
   {%- endif -%}
 {%- endfor -%}
+{% if section.settings.custom_color %}
+  {% assign color1 = section.settings.color1 %}
+  {% assign color2 = section.settings.color2 %}
+{% else %}
+  {% assign color1 = '#00897B' %}
+  {% assign color2 = '#00695C' %}
+{% endif %}
 
 <section class="Section Section--spacingNormal" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="testimonials">
-  <div class="Container">
-  <header class="SectionHeader SectionHeader--center">
-    {%- if section.settings.title != blank -%}
-      <h2 id="Testimonials_Heading" class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
-    {%- endif -%}
-    
-    {%- if section.settings.subheading != blank -%}
-      <h3 id="Testimonials_SubHeading" class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
-    {%- endif -%}
-  </header>
-  <div id="blog_wrapper" class="ProductList ProductList--carousel Carousel" style="margin-bottom: 25px;">
-    {%- for block in section.blocks -%}
-      {% assign remainder = forloop.index | modulo: 2  %}
-      <div class="Carousel__Cell Testimonial" {{ block.shopify_attributes }} data-slide-index="{{ forloop.index0 }}" >
+  <div class="Container splide {{ splide-id }}">
+    <div class="splide__track">
+      <header class="SectionHeader SectionHeader--center">
+        {%- if section.settings.title != blank -%}
+          <h2 id="Testimonials_Heading" class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+        {%- endif -%}
 
-          {%- if block.settings.quote != blank -%}
-            <div class="Testimonial__Content" {% if remainder == 0 %}style="background: #00695C;"{% endif %}>
+        {%- if section.settings.subheading != blank -%}
+          <h3 id="Testimonials_SubHeading" class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
+        {%- endif -%}
+      </header>
+      <div id="blog_wrapper" class="splide__list ProductList ProductList--carousel Carousel" style="margin-bottom: 25px;">
+        {%- for block in section.blocks -%}
+          {% assign remainder = forloop.index | modulo: 2  %}
+
+          <div class="splide__slide Carousel__Cell Testimonial" {{ block.shopify_attributes }} data-slide-index="{{ forloop.index0 }}" >
+
+            {%- if block.settings.quote != blank -%}
+            <div class="Testimonial__Content" {% if remainder == 0 %}style="background: {{ color1 }};"{% else %}style="background: {{ color2 }};"{% endif %}>
               <img class="quotation_mark" src="{{ 'iocn.svg' | asset_url }}" alt="opening quotation mark">
               {{ block.settings.quote }}
               {%  if block.settings.name != blank %}
-              <p id="Testimonial_Writer-Name">{{ block.settings.name }}</p>
+                <p id="Testimonial_Writer-Name">{{ block.settings.name }}</p>
               {% endif %}
             </div>
           {%- endif -%}
@@ -47,30 +58,31 @@
             <img class="Testimonial__Logo hidden-lap-and-up" src="{{ block.settings.logo | img_url: '300x' }}" alt="{{ block.settings.logo.alt | escape }}">
           {%- endif -%}
 
+          </div>
+        {%- endfor -%}
       </div>
-    {%- endfor -%}
-  </div>
 
-  {%- if should_show_nav -%}
-    <div class="TestimonialNav hidden-pocket">
-      {%- for block in section.blocks -%}
-        {%- if block.settings.logo != blank -%}
-          <img class="TestimonialNav__Item {% if forloop.first %}is-selected{% endif %}" src="{{ block.settings.logo | img_url: '300x' }}" alt="{{ block.settings.logo.alt | escape }}" data-index="{{ forloop.index0 }}">
-        {%- endif -%}
-      {%- endfor -%}
-    </div>
-  {%- endif -%}
+      {%- if should_show_nav -%}
+        <div class="TestimonialNav hidden-pocket">
+          {%- for block in section.blocks -%}
+            {%- if block.settings.logo != blank -%}
+              <img class="TestimonialNav__Item {% if forloop.first %}is-selected{% endif %}" src="{{ block.settings.logo | img_url: '300x' }}" alt="{{ block.settings.logo.alt | escape }}" data-index="{{ forloop.index0 }}">
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
 
-  {%- if section.settings.button_text != blank -%}
-    <div class="SectionFooter">
-      <a href="{{ section.settings.button_link }}" id="Shop-all_link" class="Button Button--primary">{{ section.settings.button_text | escape }}
-        {% comment %} <img class="shop-all_vector" src="{{ 'Vector.svg' | asset_url }}" alt=""> {% endcomment %}
-        <svg class="shop-all_vector" width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14.087 0L13.16 1.00406L17.0926 5.26387H0V5.26391V6.68385V6.6839H17.0925L13.16 10.9436L14.087 11.9476L19.602 5.97382L14.087 0Z" fill="#263238"/>
-        </svg>
-      </a>
+      {%- if section.settings.button_text != blank -%}
+        <div class="SectionFooter">
+          <a href="{{ section.settings.button_link }}" id="Shop-all_link" class="Button Button--primary">{{ section.settings.button_text | escape }}
+            {% comment %} <img class="shop-all_vector" src="{{ 'Vector.svg' | asset_url }}" alt=""> {% endcomment %}
+            <svg class="shop-all_vector" width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.087 0L13.16 1.00406L17.0926 5.26387H0V5.26391V6.68385V6.6839H17.0925L13.16 10.9436L14.087 11.9476L19.602 5.97382L14.087 0Z" fill="#263238"/>
+            </svg>
+          </a>
+        </div>
+      {%- endif -%}
     </div>
-  {%- endif -%}
   </div>
 </section>
 
@@ -78,6 +90,9 @@
   #section-{{ section.id }} {
     color: {{ section.settings.text_color }};
     background: {{ section.settings.background }};
+    padding: 80px 0 !important;
+    margin-top: -80px !important;
+    margin-bottom: 0 !important;
   }
 
   #section-{{ section.id }} .flickity-page-dots .dot:not(.is-selected) {
@@ -85,6 +100,8 @@
   }
 
 </style>
+
+{% render 'splide-init', id: splide-id, perPage: 4, slideType: 'slide', dots: false %}
 
 {% schema %}
 {
@@ -141,6 +158,22 @@
       "id": "button_text",
       "label": "Button text",
       "default": "Explore"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_color",
+      "label": "Enable using custom colors",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "color1",
+      "label": "Color 1"
+    },
+    {
+      "type": "color",
+      "id": "color2",
+      "label": "Color 1"
     }
   ],
   "blocks": [

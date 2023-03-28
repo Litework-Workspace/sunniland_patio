@@ -27,6 +27,14 @@ Attributes
       right: -40px;
     }
   }
+  @media screen and (min-width: 1140px) {
+    .{{ id }} .splide__arrow--prev {
+      left: -60px;
+    }
+    .{{ id }} .splide__arrow--next {
+      right: -60px;
+    }
+  }
 </style>
 
 <script>
@@ -34,18 +42,21 @@ Attributes
     new Splide( '.{{ id }}', {
       type   : '{{ slideType }}',
       perPage: 1,
+      padding: {left: 0, right: '20%'},
       gap: '20px',
+      arrows: false,
       mediaQuery: 'min',
       pagination: {{ dots }},
       breakpoints: {
         641: {
           perPage: 2,
+          padding: 0,
           gap: '40px',
         },
-        790: {
+        890: {
           perPage: 3
         },
-        990: {
+        1090: {
           perPage: {{ perPage }},
         }
       }

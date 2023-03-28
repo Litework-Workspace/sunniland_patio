@@ -1,5 +1,7 @@
+{% assign splide-id = 'splide' | append: section.id %}
+
 <section class="Section Section--spacingNormal" id="section-{{ section.id }}" data-section-type="article-list" data-section-id="{{ section.id }}">
-  <div class="Container">
+  <div class="Container splide {{ splide-id }}">
     {%- if section.settings.subheading != blank or section.settings.title != blank -%}
       <header class="SectionHeader SectionHeader--center">
         {%- if section.settings.title != blank -%}
@@ -14,8 +16,8 @@
 
     {%- assign show_placeholders = true -%}
 
-    <div class="ArticleListWrapper">
-      <div id="blog_wrapper" class="ProductList ProductList--carousel Carousel" data-flickity-config='{{ flickity_options }}'>
+    <div class="ArticleListWrapper splide__track">
+      <div id="blog_wrapper" class="ProductList ProductList--carousel Carousel splide__list" data-flickity-config='{{ flickity_options }}'>
         {%- assign block = section.blocks.first -%}
 
         {%- case block.type -%}
@@ -25,7 +27,7 @@
               {%- assign article = articles[block.settings[article_option]] -%}
 
               {%- unless article == empty -%}
-                <div id="Blog_Cell" class="Carousel__Cell">
+                <div id="Blog_Cell" class="Carousel__Cell splide__slide">
                   {%- render 'article-item', block: block, article: article -%}
                 </div>
 
@@ -38,8 +40,15 @@
 
             {%- for article in blog.articles limit: 4 -%}
               {% assign remainder = forloop.index | modulo: 2  %}
-              <div id="Blog_Cell" class="Carousel__Cell">
-                <div class="ArticleItem_Wrapper" {% if remainder == 0 %} style="background: #6F5B3E;" {% else %} style="background: #8D795C;" {% endif %}>
+              {% if block.settings.custom_color %}
+                {% assign color1 = block.settings.color1 %}
+                {% assign color2 = block.settings.color2 %}
+              {% else %}
+                {% assign color1 = '#6F5B3E' %}
+                {% assign color2 = '#8D795C' %}
+              {% endif %}
+              <div id="Blog_Cell" class="Carousel__Cell splide__slide">
+              <div class="ArticleItem_Wrapper" {% if remainder == 0 %} style="background: {{ color1 }};" {% else %} style="background: {{ color2 }};" {% endif %}>
                   {%- render 'article-item', block: block, article: article -%}
                 </div>
               </div>
@@ -90,6 +99,8 @@
     {%- endif -%}
   </div>
 </section>
+
+{% render 'splide-init', id: splide-id, perPage: 4, slideType: 'slide', dots: false %}
 
 {% schema %}
 {
@@ -157,6 +168,22 @@
           "type": "blog",
           "id": "blog",
           "label": "Blog"
+        },
+        {
+          "type": "checkbox",
+          "id": "custom_color",
+          "label": "Enable using custom colors",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "color1",
+          "label": "Color 1"
+        },
+        {
+          "type": "color",
+          "id": "color2",
+          "label": "Color 1"
         }
       ]
     }

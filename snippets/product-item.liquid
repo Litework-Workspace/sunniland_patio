@@ -198,9 +198,11 @@
 
           {%- if settings.show_product_rating -%}
           {%- unless use_horizontal -%}
-            <div class="ProductItem__Rating Heading Text--subdued u-h7">
-              {%- render 'product-rating', product: product -%}
-            </div>
+            {%- unless hide_rating_isolated -%}
+              <div class="ProductItem__Rating Heading Text--subdued u-h7">
+                {%- render 'product-rating', product: product -%}
+              </div>
+            {%- endunless -%}
           {%- endunless -%}
         {%- endif -%}
 

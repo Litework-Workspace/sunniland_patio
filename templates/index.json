@@ -534,7 +534,7 @@
         "subheading": "It's why we do, what we do.",
         "autoplay": true,
         "cycle_speed": 5,
-        "background": "#eaeaea",
+        "background": "#f5f5f5",
         "text_color": "#1c1b1b",
         "button_link": "",
         "button_text": "Explore"
