@@ -39,7 +39,7 @@
   
 {% unless template.name == 'article' %}
   {%  unless template.name == 'blog' %} 
-
+    {%- comment -%}
   <style>
 
     @media screen and (max-width: 641px) {
@@ -86,6 +86,7 @@
   }
 
   </style>
+    {%- endcomment -%}
   {% endunless %}
   {% endunless %}
 </article>
