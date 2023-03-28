@@ -66,12 +66,12 @@
         "8bdcb90e-f47e-4a0c-a9db-c54eaacfd330": {
           "type": "collection",
           "settings": {
-            "collection": "andover-cushion",
+            "collection": "",
             "image": "shopify:\/\/shop_images\/Mask_group.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Collection name",
+            "title": "Outdoor Seating",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": true
