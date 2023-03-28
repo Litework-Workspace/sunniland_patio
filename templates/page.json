@@ -38,7 +38,7 @@
         "ac497a03-93bd-4a18-8b0b-355e13f73591": {
           "type": "collection",
           "settings": {
-            "collection": "patio-dinning-sets",
+            "collection": "",
             "image": "shopify:\/\/shop_images\/Mask_group_1.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
@@ -52,12 +52,12 @@
         "d32286ee-8151-4530-81be-77ca42e218ba": {
           "type": "collection",
           "settings": {
-            "collection": "conversation-sets",
+            "collection": "",
             "image": "shopify:\/\/shop_images\/Group_3028.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Collection name",
+            "title": "Outdoor Patio Sets",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": true
