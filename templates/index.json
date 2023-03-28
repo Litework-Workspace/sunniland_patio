@@ -79,7 +79,7 @@
             "content_position": "bottomCenter",
             "subheading": "",
             "title": "",
-            "button_text": "Dining Sets",
+            "button_text": "Outdoor Dining Sets",
             "button_link": "",
             "apply_overlay": false
           }
@@ -177,7 +177,7 @@
             "content_position": "bottomCenter",
             "subheading": "",
             "title": "",
-            "button_text": "Repair Parts",
+            "button_text": "Patio Repair Parts",
             "button_link": "",
             "apply_overlay": true
           }
@@ -191,7 +191,7 @@
             "content_position": "bottomCenter",
             "subheading": "",
             "title": "",
-            "button_text": "Repair Services",
+            "button_text": "Patio Repair Services",
             "button_link": "",
             "apply_overlay": true
           }
