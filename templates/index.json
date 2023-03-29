@@ -80,7 +80,7 @@
             "subheading": "",
             "title": "",
             "button_text": "Outdoor Dining Sets",
-            "button_link": "",
+            "button_link": "shopify:\/\/collections\/outdoor-dining-sets",
             "apply_overlay": false
           }
         },
@@ -380,6 +380,7 @@
         "title": "Sustainability Actions by SunnilandPatio Team",
         "content": "<p>Idea of planting trees towards planet conscious ecommerce brand<\/p>",
         "show_on_mobile": true,
+        "no_bottom_margin": false,
         "button_1_text": "Learn More",
         "button_1_link": "",
         "button_2_text": "",
@@ -470,6 +471,7 @@
         "title": "Find Sunniland on Youtube",
         "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
         "show_on_mobile": true,
+        "no_bottom_margin": false,
         "button_1_text": "Watch Tutorials",
         "button_1_link": "",
         "button_2_text": "",
