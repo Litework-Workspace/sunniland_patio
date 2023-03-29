@@ -25,7 +25,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Image_19.png",
+            "image": "shopify:\/\/shop_images\/1_4.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Shop All",
@@ -39,7 +39,7 @@
           "type": "collection",
           "settings": {
             "collection": "deals-of-the-month-1",
-            "image": "shopify:\/\/shop_images\/Mask_group.jpg",
+            "image": "shopify:\/\/shop_images\/2.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -53,7 +53,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Mask_group_1.jpg",
+            "image": "shopify:\/\/shop_images\/3.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -67,7 +67,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Group_3028.png",
+            "image": "shopify:\/\/shop_images\/4.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -81,7 +81,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Mask_group.png",
+            "image": "shopify:\/\/shop_images\/5_4811a8a7-d19d-4598-8fdc-da399dda32e2.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -95,7 +95,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Mask_group_2.png",
+            "image": "shopify:\/\/shop_images\/6_1d82fab8-fc7a-4c4e-8d09-6bf030526fe7.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -107,6 +107,7 @@
         },
         "542c1ffb-299a-4c4d-9b55-f635862e808a": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/Mask_group_3.png",
@@ -121,6 +122,7 @@
         },
         "40a21edd-db53-47ec-a47c-6d8112b965ba": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "patio-umbrellas-bases",
             "image": "shopify:\/\/shop_images\/Mask_group_4.png",
@@ -135,6 +137,7 @@
         },
         "966dd87c-fdbb-4ec2-8005-bbbc6292ebf6": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "patio-furniture-covers",
             "image": "shopify:\/\/shop_images\/Mask_group_5.png",
@@ -149,6 +152,7 @@
         },
         "7d195c04-039a-4b7f-ae7c-bda12ed9ebb0": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "commercial-furniture",
             "image": "shopify:\/\/shop_images\/Mask_group_6.png",
