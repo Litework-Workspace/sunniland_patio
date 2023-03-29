@@ -332,7 +332,7 @@
         "77abd7d8-c7fb-4743-b62f-f27fc4d839bf": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "umbrella-rib-clips",
             "image": "shopify:\/\/shop_images\/23.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
