@@ -220,7 +220,7 @@
         "031f2ba3-83b8-49da-91a2-77d0f1b40ad7": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "sled-runner",
             "image": "shopify:\/\/shop_images\/15.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
@@ -234,7 +234,7 @@
         "85a3c11b-1d36-4a00-bb42-30ad39186cae": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "saddle-glides-sled-glides",
             "image": "shopify:\/\/shop_images\/16.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
@@ -248,7 +248,7 @@
         "aedf24f9-2e8f-447d-a35e-aa8d0aa6da4d": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "adjustment-brackets",
             "image": "shopify:\/\/shop_images\/17.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
@@ -262,7 +262,7 @@
         "dd1ef555-2481-4515-a096-dae738f188f7": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "swivel-seat-post",
             "image": "shopify:\/\/shop_images\/18.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
@@ -276,7 +276,7 @@
         "52cc396d-8ed3-4cf0-ade1-df1681d6f8c0": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "spring-plates",
             "image": "shopify:\/\/shop_images\/19.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
