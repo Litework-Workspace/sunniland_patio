@@ -52,14 +52,14 @@
         "d32286ee-8151-4530-81be-77ca42e218ba": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "outdoor-patio-sets",
             "image": "shopify:\/\/shop_images\/Group_3028.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "Outdoor Patio Sets",
             "button_text": "View products",
-            "button_link": "shopify:\/\/collections\/outdoor-patio-sets",
+            "button_link": "",
             "apply_overlay": true
           }
         },
