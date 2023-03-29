@@ -160,6 +160,34 @@
             "button_link": "",
             "apply_overlay": true
           }
+        },
+        "54dc446c-c344-46fd-8ddc-22a8d964fe8a": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/11.png",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "8d60f275-6134-4d6e-ba58-f4e418e47d50": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/12.jpg",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
         }
       },
       "block_order": [
@@ -172,7 +200,9 @@
         "40a21edd-db53-47ec-a47c-6d8112b965ba",
         "966dd87c-fdbb-4ec2-8005-bbbc6292ebf6",
         "7d195c04-039a-4b7f-ae7c-bda12ed9ebb0",
-        "b5c984f9-885e-41d1-a22b-f9ce484259b6"
+        "b5c984f9-885e-41d1-a22b-f9ce484259b6",
+        "54dc446c-c344-46fd-8ddc-22a8d964fe8a",
+        "8d60f275-6134-4d6e-ba58-f4e418e47d50"
       ],
       "settings": {
         "title": "Patio Furniture",
