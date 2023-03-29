@@ -904,7 +904,7 @@ section[data-section-type='testimonials'] .Testimonial__Content {
 
 
 /* Start of Blog section */
-.ArticleItem__Link{
+.blog-posts .ArticleItem__Link{
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
   border-radius: 50px;
@@ -918,7 +918,7 @@ section[data-section-type='testimonials'] .Testimonial__Content {
   /* position: relative; */
   /* bottom: 25px; */
 }
-.ArticleItem__Title {
+.blog-posts .ArticleItem__Title {
   display: block !important;
   font-family: 'Figtree';
   font-style: normal;
@@ -928,7 +928,7 @@ section[data-section-type='testimonials'] .Testimonial__Content {
   color: #FFFFFF;
   margin: 0 0 30px;
 }
-.ArticleItem__Content {
+.blog-posts .ArticleItem__Content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -939,7 +939,7 @@ section[data-section-type='testimonials'] .Testimonial__Content {
   margin: 0;
   padding: 25px;
 }
-.ArticleItem__Link{
+.blog-posts .ArticleItem__Link{
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
   border-radius: 50px;
@@ -957,7 +957,7 @@ section[data-section-type='testimonials'] .Testimonial__Content {
   padding: 15px 25px !important;
 }
 
-.ArticleItem__Title {
+.blog-posts .ArticleItem__Title {
   display: block !important;
   font-family: 'Figtree';
   font-style: normal;
@@ -966,12 +966,12 @@ section[data-section-type='testimonials'] .Testimonial__Content {
   line-height: 28px;
   color: #FFFFFF;
 }
-.ArticleItem {
+.blog-posts .ArticleItem {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-.ArticleItem__Image {
+.blog-posts .ArticleItem__Image {
   position: relative !important;
 }
 .Blog {
@@ -994,12 +994,12 @@ section[data-section-type='testimonials'] .Testimonial__Content {
   margin: 0;
   padding: 0;
 }
-section[data-section-type="article-list"] .ArticleItem_Wrapper {
+section[data-section-type="article-list"].blog-posts .ArticleItem_Wrapper {
   width: unset;
   height: 100%;
 }
-section[data-section-type="article-list"] .ProductList--carousel .Carousel__Cell:first-child,
-section[data-section-type="article-list"] .ProductList--carousel .Carousel__Cell {
+section[data-section-type="article-list"].blog-posts .ProductList--carousel .Carousel__Cell:first-child,
+section[data-section-type="article-list"].blog-posts .ProductList--carousel .Carousel__Cell {
   padding: 0 !important;
 }
 .blogSubscribe-Form {
@@ -1040,17 +1040,17 @@ section[data-section-type="article-list"] .ProductList--carousel .Carousel__Cell
 }
 
 @media screen and (min-width: 641px) {
-  .ArticleItem__Link {
+  .blog-posts .ArticleItem__Link {
     font-size: 15px;
     line-height: 18px;
   }
 }
 @media screen and (max-width: 640px) {
-  .ArticleItem {
+  .blog-posts .ArticleItem {
     width: 100%;
     height: unset;
   }
-  .ArticleItem__ImageWrapper {
+  .blog-posts .ArticleItem__ImageWrapper {
     width: 100%;
     height: 100%;
     margin: 0;
