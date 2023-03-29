@@ -487,9 +487,9 @@
       ],
       "settings": {
         "subheading": "Read articles by our experts to answer all your patio questions!",
-        "title": "Sunniblog",
+        "title": "Fresh from the SunniBlog",
         "show_category": false,
-        "button_link": "",
+        "button_link": "shopify:\/\/blogs\/sunniblog",
         "button_text": "Explore"
       }
     },
