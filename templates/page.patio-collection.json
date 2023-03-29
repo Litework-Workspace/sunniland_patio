@@ -35,6 +35,20 @@
             "apply_overlay": true
           }
         },
+        "b5c984f9-885e-41d1-a22b-f9ce484259b6": {
+          "type": "collection",
+          "settings": {
+            "collection": "deals-of-the-month-1",
+            "image": "shopify:\/\/shop_images\/Mask_group.jpg",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
         "ac497a03-93bd-4a18-8b0b-355e13f73591": {
           "type": "collection",
           "settings": {
@@ -43,7 +57,7 @@
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Outdoor Dining Sets",
+            "title": "Patio Dining Sets",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": false
@@ -146,24 +160,11 @@
             "button_link": "",
             "apply_overlay": true
           }
-        },
-        "b5c984f9-885e-41d1-a22b-f9ce484259b6": {
-          "type": "collection",
-          "settings": {
-            "collection": "deals-of-the-month-1",
-            "image": "shopify:\/\/shop_images\/Mask_group.jpg",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "Collection name",
-            "button_text": "View products",
-            "button_link": "",
-            "apply_overlay": true
-          }
         }
       },
       "block_order": [
         "6e40bf4f-7b17-4f34-98d1-0daace0be93d",
+        "b5c984f9-885e-41d1-a22b-f9ce484259b6",
         "ac497a03-93bd-4a18-8b0b-355e13f73591",
         "d32286ee-8151-4530-81be-77ca42e218ba",
         "8bdcb90e-f47e-4a0c-a9db-c54eaacfd330",
@@ -171,8 +172,7 @@
         "542c1ffb-299a-4c4d-9b55-f635862e808a",
         "40a21edd-db53-47ec-a47c-6d8112b965ba",
         "966dd87c-fdbb-4ec2-8005-bbbc6292ebf6",
-        "7d195c04-039a-4b7f-ae7c-bda12ed9ebb0",
-        "b5c984f9-885e-41d1-a22b-f9ce484259b6"
+        "7d195c04-039a-4b7f-ae7c-bda12ed9ebb0"
       ],
       "settings": {
         "title": "Patio Furniture",
