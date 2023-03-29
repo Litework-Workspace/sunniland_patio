@@ -188,6 +188,84 @@
             "button_link": "",
             "apply_overlay": true
           }
+        },
+        "5f811ed4-c275-465b-bfa9-20aee49346b7": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "12be27f2-e686-4ec5-aa28-03dfd89aa779": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "031f2ba3-83b8-49da-91a2-77d0f1b40ad7": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "85a3c11b-1d36-4a00-bb42-30ad39186cae": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "aedf24f9-2e8f-447d-a35e-aa8d0aa6da4d": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "dd1ef555-2481-4515-a096-dae738f188f7": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
         }
       },
       "block_order": [
@@ -202,7 +280,13 @@
         "7d195c04-039a-4b7f-ae7c-bda12ed9ebb0",
         "b5c984f9-885e-41d1-a22b-f9ce484259b6",
         "54dc446c-c344-46fd-8ddc-22a8d964fe8a",
-        "8d60f275-6134-4d6e-ba58-f4e418e47d50"
+        "8d60f275-6134-4d6e-ba58-f4e418e47d50",
+        "5f811ed4-c275-465b-bfa9-20aee49346b7",
+        "12be27f2-e686-4ec5-aa28-03dfd89aa779",
+        "031f2ba3-83b8-49da-91a2-77d0f1b40ad7",
+        "85a3c11b-1d36-4a00-bb42-30ad39186cae",
+        "aedf24f9-2e8f-447d-a35e-aa8d0aa6da4d",
+        "dd1ef555-2481-4515-a096-dae738f188f7"
       ],
       "settings": {
         "title": "Replacement Parts",
