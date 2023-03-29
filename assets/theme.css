@@ -11048,7 +11048,7 @@ shopify-payment-terms {
 }
 @media screen and (min-width: 1008px) {
   .ShopTheLook {
-    max-width: 1480px;
+    max-width: 1650px;
     margin: 0 auto;
     padding: 0 130px;
   }
@@ -11296,7 +11296,7 @@ shopify-payment-terms {
   position: absolute;
   padding: 0 20px;
   width: 100%;
-  max-width: 1420px;
+  max-width: 1650px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -11363,7 +11363,7 @@ shopify-payment-terms {
   }
   .ImageHero__ContentOverlay {
     margin-left: calc((100vw - 1440px) / 2);
-    max-width: 1440px;
+    max-width: 1650px;
     padding: 0 86px !important;
   }
 }
