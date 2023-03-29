@@ -66,14 +66,14 @@
         "8bdcb90e-f47e-4a0c-a9db-c54eaacfd330": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "outdoor-seating",
             "image": "shopify:\/\/shop_images\/Mask_group.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "Outdoor Seating",
             "button_text": "View products",
-            "button_link": "shopify:\/\/pages\/outdoor-seating",
+            "button_link": "",
             "apply_overlay": true
           }
         },
