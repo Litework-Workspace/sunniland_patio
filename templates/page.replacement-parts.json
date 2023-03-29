@@ -290,7 +290,7 @@
         "34e825f5-846d-4a67-be1f-380d9f0bd6ce": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "glider-bearing-arm",
             "image": "shopify:\/\/shop_images\/20.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
@@ -304,7 +304,7 @@
         "96febe5f-322b-4f71-8b6d-3aa114e1584f": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "table-parts",
             "image": "shopify:\/\/shop_images\/21.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
