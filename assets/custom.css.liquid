@@ -904,7 +904,7 @@ section[data-section-type='testimonials'] .Testimonial__Content {
 
 
 /* Start of Blog section */
-.ArticleItem__Link{
+.blog-posts .ArticleItem__Link{
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
   border-radius: 50px;
@@ -918,7 +918,7 @@ section[data-section-type='testimonials'] .Testimonial__Content {
   /* position: relative; */
   /* bottom: 25px; */
 }
-.ArticleItem__Title {
+.blog-posts .ArticleItem__Title {
   display: block !important;
   font-family: 'Figtree';
   font-style: normal;
@@ -928,7 +928,7 @@ section[data-section-type='testimonials'] .Testimonial__Content {
   color: #FFFFFF;
   margin: 0 0 30px;
 }
-.ArticleItem__Content {
+.blog-posts .ArticleItem__Content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -939,7 +939,7 @@ section[data-section-type='testimonials'] .Testimonial__Content {
   margin: 0;
   padding: 25px;
 }
-.ArticleItem__Link{
+.blog-posts .ArticleItem__Link{
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
   border-radius: 50px;
@@ -957,7 +957,7 @@ section[data-section-type='testimonials'] .Testimonial__Content {
   padding: 15px 25px !important;
 }
 
-.ArticleItem__Title {
+.blog-posts .ArticleItem__Title {
   display: block !important;
   font-family: 'Figtree';
   font-style: normal;
@@ -966,55 +966,55 @@ section[data-section-type='testimonials'] .Testimonial__Content {
   line-height: 28px;
   color: #FFFFFF;
 }
-.ArticleItem {
+.blog-posts .ArticleItem {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-.ArticleItem__Image {
+.blog-posts .ArticleItem__Image {
   position: relative !important;
 }
-.Blog {
+.blog-posts .Blog {
   margin-top: 80px;
   display: grid;
 }
 
-.FlexBlog {
+.blog-posts .FlexBlog {
   display: flex;
   justify-content: space-between;
   /* margin-top: 80px; */
 }
 
 
-#Blog_Cell {
+.blog-posts #Blog_Cell {
   padding-left: 0;
 }
 
-#blog_wrapper {
+.blog-posts #blog_wrapper {
   margin: 0;
   padding: 0;
 }
-section[data-section-type="article-list"] .ArticleItem_Wrapper {
+section[data-section-type="article-list"].blog-posts  .ArticleItem_Wrapper {
   width: unset;
   height: 100%;
 }
-section[data-section-type="article-list"] .ProductList--carousel .Carousel__Cell:first-child,
-section[data-section-type="article-list"] .ProductList--carousel .Carousel__Cell {
+section[data-section-type="article-list"].blog-posts  .ProductList--carousel .Carousel__Cell:first-child,
+section[data-section-type="article-list"].blog-posts  .ProductList--carousel .Carousel__Cell {
   padding: 0 !important;
 }
-.blogSubscribe-Form {
+.blog-posts .blogSubscribe-Form {
   margin-top: 30px;
 }
-.RecentPost {
+.blog-posts .RecentPost {
   margin-top: 40px;
 }
-#recentPost-Link {
+.blog-posts #recentPost-Link {
   text-decoration: underline;
 }
-.Phone-MenuHeading {
+.blog-posts .Phone-MenuHeading {
   padding-top: 20px;
 }
-.blog-topics-menu {
+.blog-posts .blog-topics-menu {
   display: flex;
   justify-content: end;
   margin-right: 5px;
@@ -1022,7 +1022,7 @@ section[data-section-type="article-list"] .ProductList--carousel .Carousel__Cell
   top: 40%;
   margin-left: auto;
 }
-#Blog-Posts_Heading {
+.blog-posts #Blog-Posts_Heading {
   font-family: 'Figtree';
   font-style: normal;
   font-weight: 500;
@@ -1030,7 +1030,7 @@ section[data-section-type="article-list"] .ProductList--carousel .Carousel__Cell
   line-height: 30px;
   color: #263238;
 }
-#Blog-Posts_SubHeading {
+.blog-posts #Blog-Posts_SubHeading {
   font-family: 'Figtree';
   font-style: normal;
   font-weight: 400;
@@ -1040,24 +1040,24 @@ section[data-section-type="article-list"] .ProductList--carousel .Carousel__Cell
 }
 
 @media screen and (min-width: 641px) {
-  .ArticleItem__Link {
+  .blog-posts .ArticleItem__Link {
     font-size: 15px;
     line-height: 18px;
   }
 }
 @media screen and (max-width: 640px) {
-  .ArticleItem {
+  .blog-posts .ArticleItem {
     width: 100%;
     height: unset;
   }
-  .ArticleItem__ImageWrapper {
+  .blog-posts .ArticleItem__ImageWrapper {
     width: 100%;
     height: 100%;
     margin: 0;
   }
 }
 @media screen and (min-width: 1008px) {
-  .Blog_Menu {
+  .blog-posts .Blog_Menu {
     background:#E8E8E8;
     width: 392px;
     height: 1148px;
@@ -1065,13 +1065,13 @@ section[data-section-type="article-list"] .ProductList--carousel .Carousel__Cell
     margin-left: 40px;
   }
 
-  .FlexBlog {
+  .blog-posts .FlexBlog {
     margin-top: 80px;
   }
 }
 
 @media screen and (max-width: 1007px) {
-  .Blog_Menu {
+  .blog-posts .Blog_Menu {
     display: none;
   }
 }
