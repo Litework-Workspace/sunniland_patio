@@ -13,9 +13,9 @@
             "subheading": "Build Your Perfect",
             "title": "Staycation Space",
             "content": "<p>Choose from the best quality patio furniture to transform your home into a cherished warm homestay.<\/p>",
-            "button_1_text": "Shop Patio",
+            "button_1_text": "Shop Patio Furniture",
             "button_1_link": "shopify:\/\/pages\/all-furniture-sectioned",
-            "button_2_text": "Shop Repairs",
+            "button_2_text": "Shop Repair Parts",
             "button_2_link": "shopify:\/\/pages\/replacement-parts"
           }
         },
@@ -29,9 +29,9 @@
             "subheading": "Renew Your Outdoor Oasis",
             "title": "The Easy Way",
             "content": "<p>Learn how to renew your patio furniture with our easy tutorials and repair parts or send it to our service center.<\/p>",
-            "button_1_text": "Patio",
+            "button_1_text": "Shop Repairs",
             "button_1_link": "#",
-            "button_2_text": "Services",
+            "button_2_text": "Hire Repair Services",
             "button_2_link": "#"
           }
         },
