@@ -7633,7 +7633,8 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   }
 
   .CollectionInner .Pagination {
-    margin-bottom: 80px;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 
   .ProductList--grid {
@@ -8897,6 +8898,15 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   display: flex;
   flex-direction: column;
   justify-content: end;
+}
+
+h1.SectionHeader__Heading {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #263238;
 }
 
 h2.SectionHeader__Heading {
