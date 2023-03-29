@@ -8111,7 +8111,9 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 }
 
 .Footer__Inner + .Footer__Aside {
+  {% comment %}
   margin-top: 65px;
+  {% endcomment %}
 }
 
 .Footer__LocalizationForm {
