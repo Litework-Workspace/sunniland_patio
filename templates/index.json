@@ -115,7 +115,7 @@
         "1c863ae9-bc07-4caf-bd0a-b158b2388e8c": {
           "type": "collection",
           "settings": {
-            "collection": "ledge-lounger-pool-furniture",
+            "collection": "outdoor-lounge",
             "image": "shopify:\/\/shop_images\/Image_11.png",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
@@ -129,12 +129,12 @@
         "30e05b38-a5f8-46b5-a504-caab5dfa4fe3": {
           "type": "collection",
           "settings": {
-            "collection": "cayman-isle-cushion",
+            "collection": "patio-tables",
             "image": "shopify:\/\/shop_images\/Image_12.png",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
-            "title": "Collection name",
+            "title": "",
             "button_text": "Patio Tables",
             "button_link": "",
             "apply_overlay": true
