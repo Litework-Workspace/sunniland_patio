@@ -1,0 +1,360 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_large": false
+      }
+    },
+    "8ca26768-041f-40eb-b635-d33e84b5b2e0": {
+      "type": "custom-html",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<p class=\"Free-SHipping_Banner\"><b>Free Shipping<\/b> on all patio furniture orders above $500. No code needed.<\/p>"
+      }
+    },
+    "fb3facf5-59a5-46dd-a4b9-3f6b442916de": {
+      "type": "collection-list_main-collections",
+      "blocks": {
+        "6e40bf4f-7b17-4f34-98d1-0daace0be93d": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/1.png",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Shop All",
+            "title": "Shop All",
+            "button_text": "Shop All",
+            "button_link": "#",
+            "apply_overlay": true
+          }
+        },
+        "ac497a03-93bd-4a18-8b0b-355e13f73591": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/2_9a916256-1e7c-4400-87a9-a9c06e3b39c5.png",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Brown Jordan Cushions",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": false
+          }
+        },
+        "d32286ee-8151-4530-81be-77ca42e218ba": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/3_f36683fa-1940-45c9-9a76-f8e0fad6aac0.png",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Cast Classics\/Landgrave",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "8bdcb90e-f47e-4a0c-a9db-c54eaacfd330": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/4_9148e73a-bdb8-4f7d-aa66-467f1388919f.png",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Cebu",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "c068eee9-3dc1-46fe-af8d-f26bf8dd46c3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/5_493215ce-d7be-43f4-914f-52a14a0f1953.png",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Ebel",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "542c1ffb-299a-4c4d-9b55-f635862e808a": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/6_a41b3760-b820-4969-b322-97eaf6a6ae15.png",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Evolutif Resin",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "40a21edd-db53-47ec-a47c-6d8112b965ba": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/7_a7181e75-b60d-4358-a7fd-85abbc57feec.png",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Grosfillex Resin",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "966dd87c-fdbb-4ec2-8005-bbbc6292ebf6": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/8_fbfaaf72-3a92-42bd-bd8c-67c9587b7744.png",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Hanamint",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "7d195c04-039a-4b7f-ae7c-bda12ed9ebb0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/9_92c74330-4bf5-4b24-a113-0d564fecc15e.png",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Kettles Resin",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "b5c984f9-885e-41d1-a22b-f9ce484259b6": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/10_ec91a905-e859-4ba0-9334-cd05e6975afa.png",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Lloyd Flanders",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "54dc446c-c344-46fd-8ddc-22a8d964fe8a": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/11_a3ce752f-641b-4314-a903-c2eacd3d925e.png",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Universal Cushions",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "8d60f275-6134-4d6e-ba58-f4e418e47d50": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/12.png",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Throw Pillows",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        }
+      },
+      "block_order": [
+        "6e40bf4f-7b17-4f34-98d1-0daace0be93d",
+        "ac497a03-93bd-4a18-8b0b-355e13f73591",
+        "d32286ee-8151-4530-81be-77ca42e218ba",
+        "8bdcb90e-f47e-4a0c-a9db-c54eaacfd330",
+        "c068eee9-3dc1-46fe-af8d-f26bf8dd46c3",
+        "542c1ffb-299a-4c4d-9b55-f635862e808a",
+        "40a21edd-db53-47ec-a47c-6d8112b965ba",
+        "966dd87c-fdbb-4ec2-8005-bbbc6292ebf6",
+        "7d195c04-039a-4b7f-ae7c-bda12ed9ebb0",
+        "b5c984f9-885e-41d1-a22b-f9ce484259b6",
+        "54dc446c-c344-46fd-8ddc-22a8d964fe8a",
+        "8d60f275-6134-4d6e-ba58-f4e418e47d50"
+      ],
+      "settings": {
+        "title": "Replacement Cushions",
+        "sub-heading": "Shop By Category",
+        "image_size": "large",
+        "add_spacing": true,
+        "expand_collection": false,
+        "stack_on_mobile": true,
+        "text_color": "#ffffff",
+        "button_color": "#363636",
+        "link_text": "",
+        "shop-all_link": ""
+      }
+    },
+    "ec8cbadd-b314-43f6-8b0c-3fa5a1e6e02b": {
+      "type": "shop-the-look",
+      "blocks": {
+        "template--17486864122152__ec8cbadd-b314-43f6-8b0c-3fa5a1e6e02b-16755240059697acff-0": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/87690d9b-ba2b-4dad-914b-82cc712db137.jpg",
+            "dot_style": "light",
+            "product_1": "chair-replacement-sling-1pc",
+            "product_1_horizontal_position": 18,
+            "product_1_vertical_position": 78,
+            "product_2": "ebel-replacement-cushions-sofa-n8430",
+            "product_2_horizontal_position": 45,
+            "product_2_vertical_position": 64,
+            "product_3": "outdoor-throw-pillows-decorative-pillows-p1",
+            "product_3_horizontal_position": 61,
+            "product_3_vertical_position": 62
+          }
+        }
+      },
+      "block_order": [
+        "template--17486864122152__ec8cbadd-b314-43f6-8b0c-3fa5a1e6e02b-16755240059697acff-0"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "show_mobile_product_info": true
+      }
+    },
+    "c05c644c-3edc-4710-8f41-1b1feaab9fc7": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "large",
+        "image": "shopify:\/\/shop_images\/LF-AtlShowhouse2016-0018-Gen-Nova-SthBch_1_1.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 40,
+        "subheading": "",
+        "title": "Spend more time outdoors",
+        "content": "<p>Discover our wide range of patio & outdoor furniture – we have everything from smaller, lightweight aluminum furniture for the balcony, to a variety of sizes and materials, like rattan and solid wood furniture, for your spacious patio. Find the ones that suit your style and space and enjoy outdoor living!<\/p>",
+        "show_on_mobile": false,
+        "button_1_text": "",
+        "button_1_link": "",
+        "button_2_text": "",
+        "button_2_link": "",
+        "button_color": "#363636",
+        "button_background": "#ffffff"
+      }
+    },
+    "c28f1d47-d4fb-4dc7-8276-0d825bbd4561": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--17486864122152__c28f1d47-d4fb-4dc7-8276-0d825bbd4561-1675524276aae637c6-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "bar-stools",
+            "dynamic_collection": false,
+            "title": "Best Sellers",
+            "grid_items_count": 8,
+            "button_text": "Shop All"
+          }
+        },
+        "template--17486864122152__c28f1d47-d4fb-4dc7-8276-0d825bbd4561-1675524276aae637c6-1": {
+          "type": "buy_buttons",
+          "disabled": true,
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": true
+          }
+        }
+      },
+      "block_order": [
+        "template--17486864122152__c28f1d47-d4fb-4dc7-8276-0d825bbd4561-1675524276aae637c6-0",
+        "template--17486864122152__c28f1d47-d4fb-4dc7-8276-0d825bbd4561-1675524276aae637c6-1"
+      ],
+      "settings": {
+        "title": "Our widely admired patio replacement slings",
+        "layout_mode": "carousel",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "825354a6-df15-4c92-aba2-3b921d5ffd1c": {
+      "type": "blog-posts",
+      "blocks": {
+        "template--17486864122152__825354a6-df15-4c92-aba2-3b921d5ffd1c-167552443103ce4182-0": {
+          "type": "blog",
+          "settings": {
+            "blog": "sunniblog",
+            "custom_color": false,
+            "color1": "",
+            "color2": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17486864122152__825354a6-df15-4c92-aba2-3b921d5ffd1c-167552443103ce4182-0"
+      ],
+      "settings": {
+        "subheading": "Read articles by our experts to answer all your patio questions!",
+        "title": "Sunniblog",
+        "show_category": false,
+        "button_link": "",
+        "button_text": "Explore"
+      }
+    },
+    "d89e36e0-4766-472a-8fc4-e7f8422b2760": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "large",
+        "image": "shopify:\/\/shop_images\/Youtube-section-cover.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "subheading": "",
+        "title": "Find Sunniland on Youtube",
+        "content": "<p>Learn how to repair your patio furniture the easy way with our DIY video tutorials.<\/p>",
+        "show_on_mobile": true,
+        "button_1_text": "Visit Our Channel",
+        "button_1_link": "",
+        "button_2_text": "",
+        "button_2_link": "",
+        "button_color": "#363636",
+        "button_background": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "8ca26768-041f-40eb-b635-d33e84b5b2e0",
+    "fb3facf5-59a5-46dd-a4b9-3f6b442916de",
+    "ec8cbadd-b314-43f6-8b0c-3fa5a1e6e02b",
+    "c05c644c-3edc-4710-8f41-1b1feaab9fc7",
+    "c28f1d47-d4fb-4dc7-8276-0d825bbd4561",
+    "825354a6-df15-4c92-aba2-3b921d5ffd1c",
+    "d89e36e0-4766-472a-8fc4-e7f8422b2760"
+  ]
+}
