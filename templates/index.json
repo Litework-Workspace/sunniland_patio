@@ -143,7 +143,7 @@
         "a23bfc27-f6b0-4106-872b-8541ba27f482": {
           "type": "collection",
           "settings": {
-            "collection": "andover-cushion",
+            "collection": "patio-umbrellas-bases",
             "image": "shopify:\/\/shop_images\/Image_13.png",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
@@ -157,14 +157,14 @@
         "3555c8cd-acb7-4905-a2e0-15a01bf6ab18": {
           "type": "collection",
           "settings": {
-            "collection": "reunion-collection",
+            "collection": "",
             "image": "shopify:\/\/shop_images\/Image_14.png",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
-            "title": "",
+            "title": "Replacement Cushions",
             "button_text": "Replacement Cushions",
-            "button_link": "",
+            "button_link": "shopify:\/\/pages\/list-collections",
             "apply_overlay": true
           }
         },
