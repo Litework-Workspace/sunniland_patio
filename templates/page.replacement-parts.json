@@ -318,7 +318,7 @@
         "1cdde5ae-dbb2-4290-b461-8d7052b2b967": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "tires",
             "image": "shopify:\/\/shop_images\/22.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
