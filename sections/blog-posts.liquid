@@ -1,6 +1,6 @@
 {% assign splide-id = 'splide' | append: section.id %}
 
-<section class="Section Section--spacingNormal" id="section-{{ section.id }}" data-section-type="article-list" data-section-id="{{ section.id }}">
+<section class="Section Section--spacingNormal blog-posts" id="section-{{ section.id }}" data-section-type="article-list" data-section-id="{{ section.id }}">
   <div class="Container splide {{ splide-id }}">
     {%- if section.settings.subheading != blank or section.settings.title != blank -%}
       <header class="SectionHeader SectionHeader--center">
