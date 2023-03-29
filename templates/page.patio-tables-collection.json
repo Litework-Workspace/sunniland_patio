@@ -38,12 +38,12 @@
         "b5c984f9-885e-41d1-a22b-f9ce484259b6": {
           "type": "collection",
           "settings": {
-            "collection": "deals-of-the-month-1",
+            "collection": "",
             "image": "shopify:\/\/shop_images\/2.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Collection name",
+            "title": "Coffee Tables",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": true
@@ -57,7 +57,7 @@
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Patio Dining Sets",
+            "title": "End Tables",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": false
@@ -71,7 +71,7 @@
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Patio Conversation Sets",
+            "title": "Fire Pit Tables",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": true
@@ -85,7 +85,7 @@
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Outdoor Seating",
+            "title": "Dining Tables",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": true
@@ -99,7 +99,7 @@
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Outdoor Lounge",
+            "title": "Bar & Balcony Tables",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": true
