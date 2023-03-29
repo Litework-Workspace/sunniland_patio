@@ -5,7 +5,6 @@
       "blocks": {
         "slide-0": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/image_1_79b398eb-adcf-4aeb-aafe-fb6be2d9bd06.png",
             "mobile_image": "shopify:\/\/shop_images\/image_1_mobile.png",
@@ -22,7 +21,6 @@
         },
         "slide-1": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/image_2_95653b0d-07ac-44f2-b919-f9dfe9645421.png",
             "mobile_image": "shopify:\/\/shop_images\/image_2_mobile.png",
@@ -316,7 +314,7 @@
         "f0b7f981-e2ec-498c-b85b-c3c569267ae2"
       ],
       "settings": {
-        "title": "Our widely admired patio replacement slings",
+        "title": "Shop our best seller custom sling replacement items.",
         "layout_mode": "carousel",
         "show_product_info": true,
         "show_vendor": false,
