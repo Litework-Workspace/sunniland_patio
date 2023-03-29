@@ -164,7 +164,7 @@
         "54dc446c-c344-46fd-8ddc-22a8d964fe8a": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "stem-bumpers",
             "image": "shopify:\/\/shop_images\/11_14bac9d9-f243-442c-93b2-8df445342219.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
@@ -178,7 +178,7 @@
         "8d60f275-6134-4d6e-ba58-f4e418e47d50": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "end-caps",
             "image": "shopify:\/\/shop_images\/12_c4c5f319-e394-49f6-b59e-f1c779f85cc7.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
@@ -192,7 +192,7 @@
         "5f811ed4-c275-465b-bfa9-20aee49346b7": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "rectangle",
             "image": "shopify:\/\/shop_images\/13.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
@@ -206,7 +206,7 @@
         "12be27f2-e686-4ec5-aa28-03dfd89aa779": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "oval-inserts",
             "image": "shopify:\/\/shop_images\/14.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
