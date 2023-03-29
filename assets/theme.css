@@ -11365,7 +11365,8 @@ shopify-payment-terms {
   }
   .ImageHero__ContentOverlay {
     margin-left: calc((100vw - 1440px) / 2);
-    max-width: 1650px;
+    /* max-width: 1650px; */
+    max-width: none;
     padding: 0 86px !important;
   }
 }
@@ -11589,7 +11590,7 @@ shopify-payment-terms {
     /* margin: 0 auto; */
     white-space: normal;
     background-color: #00897B;
-    width: 284px;
+    /* width: 284px; */
     height: 450px;
   }
 

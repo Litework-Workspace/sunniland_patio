@@ -143,6 +143,9 @@ section {
   flex-wrap: wrap;
   margin-top: 40px;
 }
+.Upper_Footer-Features img {
+  width: 100%;
+}
 
 @media screen and (max-width: 641px) {
   .Upper_Footer-Features {
@@ -156,6 +159,12 @@ section {
 @media screen and (min-width: 642px) {
   .Upper_Footer-Features-Mobile {
     display: none;
+  }
+  .Footer__Inner > .Footer__Block:not(:last-of-type) {
+    margin-top: 33px;
+  }
+  .Footer__Block.Footer__Block--html {
+    margin-top: 0 !important;
   }
 }
 
@@ -308,6 +317,14 @@ section {
   line-height: 25px;
   color: #FFFFFF;
 }
+@media screen and (min-width: 641px) and (max-width: 1139px) {
+  .Footer__Block {
+    flex: 0 1 auto;
+  }
+  .Footer__Block--newsletter {
+    flex-basis: 250px;
+  }
+}
 @media screen and (max-width: 640px) {
   .Footer_Logos {
     height: 18rem;
@@ -335,7 +352,11 @@ section {
 
   .links_container {
     display: flex;
+    justify-content: space-between;
     order: 2;
+  }
+  .links_container > .Footer__Block--newsletter:first-child {
+    display: none;
   }
 
   .Footer__Block--newsletter {
@@ -739,10 +760,17 @@ section {
 } */
 section[data-section-type='testimonials'] .ProductList--carousel .Carousel__Cell {
   flex-direction: unset !important;
+  padding: 0 !important;
 }
 section[data-section-type='testimonials'] #Shop-all_link {
   margin: 40px 0 0 !important;
   padding: 0 !important;
+}
+section[data-section-type='testimonials'] .Testimonial__Content {
+  width: unset !important;
+  height: unset;
+  min-height: 450px;
+  padding-bottom: 2rem;
 }
 #Testimonials_Heading {
   margin: 0 0 10px;
@@ -856,7 +884,7 @@ section[data-section-type='testimonials'] #Shop-all_link {
   font-size: 18px !important;
   line-height: 28px;
   color: #FFFFFF;
-  margin: 0 0 15px;
+  margin: 0 0 30px;
 }
 .ArticleItem__Content {
   display: flex;
@@ -927,6 +955,10 @@ section[data-section-type='testimonials'] #Shop-all_link {
 section[data-section-type="article-list"] .ArticleItem_Wrapper {
   width: unset;
   height: 100%;
+}
+section[data-section-type="article-list"] .ProductList--carousel .Carousel__Cell:first-child,
+section[data-section-type="article-list"] .ProductList--carousel .Carousel__Cell {
+  padding: 0 !important;
 }
 .blogSubscribe-Form {
   margin-top: 30px;
