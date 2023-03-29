@@ -171,28 +171,28 @@
         "9694911a-0ceb-4cc2-9369-ba7042d4d59b": {
           "type": "collection",
           "settings": {
-            "collection": "pre-cut-vinyl-straps",
+            "collection": "",
             "image": "shopify:\/\/shop_images\/Image_15.png",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
             "title": "",
             "button_text": "Patio Repair Parts",
-            "button_link": "",
+            "button_link": "shopify:\/\/pages\/replacement-parts",
             "apply_overlay": true
           }
         },
         "0184f0bb-5a7a-4017-8955-cf30b2827ddb": {
           "type": "collection",
           "settings": {
-            "collection": "sling-rail-caps",
+            "collection": "",
             "image": "shopify:\/\/shop_images\/Image_16.png",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
             "title": "",
             "button_text": "Patio Repair Services",
-            "button_link": "",
+            "button_link": "shopify:\/\/pages\/patio-furniture-repair-services",
             "apply_overlay": true
           }
         },
