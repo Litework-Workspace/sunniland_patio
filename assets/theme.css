@@ -5251,12 +5251,19 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 .Pagination__Nav {
   display: inline-block;
   list-style: none;
+  
 }
 
 .Pagination__NavItem {
   display: inline-block;
   padding: 16px 20px;
   border-bottom: 1px solid var(--border-color);
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #37474F;
 }
 .Pagination__NavItem svg {
   width: 6px;
