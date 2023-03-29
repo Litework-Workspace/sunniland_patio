@@ -266,6 +266,71 @@
             "button_link": "",
             "apply_overlay": true
           }
+        },
+        "52cc396d-8ed3-4cf0-ade1-df1681d6f8c0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Rocker Spring Plates",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "34e825f5-846d-4a67-be1f-380d9f0bd6ce": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Glider Bearing Arms",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "96febe5f-322b-4f71-8b6d-3aa114e1584f": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Table Parts",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "1cdde5ae-dbb2-4290-b461-8d7052b2b967": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Tires",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "77abd7d8-c7fb-4743-b62f-f27fc4d839bf": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Umbrella Parts",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
         }
       },
       "block_order": [
@@ -286,7 +351,12 @@
         "031f2ba3-83b8-49da-91a2-77d0f1b40ad7",
         "85a3c11b-1d36-4a00-bb42-30ad39186cae",
         "aedf24f9-2e8f-447d-a35e-aa8d0aa6da4d",
-        "dd1ef555-2481-4515-a096-dae738f188f7"
+        "dd1ef555-2481-4515-a096-dae738f188f7",
+        "52cc396d-8ed3-4cf0-ade1-df1681d6f8c0",
+        "34e825f5-846d-4a67-be1f-380d9f0bd6ce",
+        "96febe5f-322b-4f71-8b6d-3aa114e1584f",
+        "1cdde5ae-dbb2-4290-b461-8d7052b2b967",
+        "77abd7d8-c7fb-4743-b62f-f27fc4d839bf"
       ],
       "settings": {
         "title": "Replacement Parts",
