@@ -14,7 +14,7 @@
         "show_collection_info": true,
         "show_collection_image": false,
         "apply_overlay": true,
-        "show_color_swatch": false,
+        "show_color_swatch": true,
         "show_vendor": false,
         "collection_image_size": "normal",
         "show_sort_by": true,
@@ -78,6 +78,7 @@
           "type": "collection",
           "settings": {
             "collection": "replacement-slings",
+            "dynamic_collection": false,
             "title": "Frequently bought together",
             "grid_items_count": 8,
             "button_text": "Shop All"
@@ -113,7 +114,10 @@
         "template--17486863892776__5f6e1337-c33a-48de-a4be-801c22bb86dc-1675469727396df978-0": {
           "type": "blog",
           "settings": {
-            "blog": ""
+            "blog": "",
+            "custom_color": false,
+            "color1": "",
+            "color2": ""
           }
         }
       },
