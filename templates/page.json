@@ -38,14 +38,14 @@
         "ac497a03-93bd-4a18-8b0b-355e13f73591": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "outdoor-dining-sets",
             "image": "shopify:\/\/shop_images\/Mask_group_1.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "Outdoor Dining Sets",
             "button_text": "View products",
-            "button_link": "shopify:\/\/collections\/outdoor-dining-sets",
+            "button_link": "",
             "apply_overlay": false
           }
         },
