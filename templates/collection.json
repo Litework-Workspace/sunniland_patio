@@ -144,7 +144,7 @@
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "",
-            "button_text": "Shop All",
+            "button_text": "Show All",
             "button_link": "",
             "apply_overlay": true
           }
@@ -219,10 +219,11 @@
         "image_size": "small",
         "add_spacing": true,
         "expand_collection": true,
-        "stack_on_mobile": true,
+        "stack_on_mobile": false,
+        "enable_carousel": true,
         "text_color": "#ffffff",
         "button_color": "#363636",
-        "link_text": "Shop all",
+        "link_text": "Show All Categories",
         "shop-all_link": "#"
       }
     },
@@ -238,6 +239,7 @@
         "title": "Find Sunniland on Youtube",
         "content": "<p>Learn how to repair your patio furniture the easy way with our DIY video tutorials.<\/p>",
         "show_on_mobile": true,
+        "no_bottom_margin": false,
         "button_1_text": "Watch Tutorials",
         "button_1_link": "",
         "button_2_text": "",

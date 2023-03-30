@@ -9,9 +9,11 @@
 }
 {%- endcapture -%}
 
-<section class="Section Section--spacingNormal" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="collection-list" >
+{%- assign splide-id = 'splide' | append: section.id -%}
+
+<section class="Section Section--spacingNormal {% if section.settings.enable_carousel %}splide {{ splide-id }} Container{% endif %}" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="collection-list" >
   <header class="SectionHeader SectionHeader--center">
-    <div class="Container">
+    <div class="{% unless section.settings.enable_carousel %}Container{% endunless %}">
 
       {%- if section.settings.title != blank -%}
         <h2 id="Collection-List_Heading" class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
@@ -23,16 +25,25 @@
     </div>
   </header>
 
-  <div id="Mobile-Collection-List_Container" class="Container">
+  <div id="Mobile-Collection-List_Container" class="Container {% if section.settings.enable_carousel %}splide__track{% endif %}">
+    {% if section.settings.enable_carousel %}
+      {% assign splide__slide = 'splide__slide' %}
+    {% else %} 
+      {% assign splide__slide = '' %}
+    {% endif %}
   {%- capture collection_items -%}
     {%- for block in section.blocks -%}
       {%- assign collection = collections[block.settings.collection] -%}
-      {%- render 'collection-item', block: block, collection: collection, apply_overlay: block.settings.apply_overlay -%}
+      {%- render 'collection-item', block: block, collection: collection, apply_overlay: block.settings.apply_overlay, custom_class: splide__slide -%}
     {%- endfor -%}
   {%- endcapture -%}
 
   {%- if section.settings.stack_on_mobile -%}
     <div class="CollectionList CollectionList--grid {% if section.settings.add_spacing %}CollectionList--spaced{% endif %}">
+      {{ collection_items }}
+    </div>
+  {%- elsif section.settings.enable_carousel -%}
+    <div class="splide__list Carousel Carousel--insideDots CollectionList {% if section.settings.add_spacing %}CollectionList--spaced{% endif %}" >
       {{ collection_items }}
     </div>
   {%- else -%}
@@ -81,6 +92,8 @@
     }
   {%- endif -%}
 </style>
+
+{% render 'splide-init', id: splide-id, perPage: 5, slideType: 'slide', dots: false %}
 
 {% schema %}
 {
@@ -136,6 +149,13 @@
       "id": "stack_on_mobile",
       "label": "Stack on mobile",
       "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_carousel",
+      "label": "Enable Carousel",
+      "default": false,
+      "info": "This will place all cards in one row"
     },
     {
       "type": "color",

@@ -70,15 +70,15 @@
 .SectionHeader:not(:only-child) {
   margin-bottom: 25px;
 }
-.SectionHeader__Heading.SectionHeader__Heading {
-  margin-bottom: 10px;
-}
 section {
   margin: 0 0 80px !important;
   padding: 0 !important;
 }
 .SectionHeader__Heading.SectionHeader__Heading, .SectionHeader__SubHeading.SectionHeader__SubHeading {
   margin: 0;
+}
+.SectionHeader__Heading.SectionHeader__Heading {
+  margin-bottom: 10px;
 }
 .flickity-page-dots .dot {
   background: #CFD8DC;
@@ -639,7 +639,45 @@ section {
 #Mobile-Collection-List_Container #Shop-all_link {
   padding: 0;
 }
-
+section.Container.splide[data-section-type="collection-list"] {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 0 20px !important;
+  max-width: 1650px !important;
+}
+section.Container.splide[data-section-type="collection-list"] .splide__track {
+}
+section.Container.splide[data-section-type="collection-list"] .CollectionList {
+  margin-bottom: 35px !important;
+  flex-wrap: nowrap;
+}
+section.Container.splide[data-section-type="collection-list"] .CollectionList .CollectionItem, 
+section.Container.splide[data-section-type="collection-list"] .CollectionList--spaced .CollectionItem {
+  padding: 0 !important;
+  flex: 0 0 auto;
+  min-width: unset;
+}
+section.Container.splide[data-section-type="collection-list"] .CollectionList .CollectionItem .CollectionItem__Wrapper {
+  aspect-ratio: .88 !important;
+}
+section.Container.splide[data-section-type="collection-list"] .CollectionList .CollectionItem .CollectionItem__Wrapper .CollectionItem__Content--bottomLeft,
+section.Container.splide[data-section-type="collection-list"] .CollectionList .CollectionItem .CollectionItem__Wrapper .CollectionItem__Content--bottomRight,
+section.Container.splide[data-section-type="collection-list"] .CollectionList .CollectionItem .CollectionItem__Wrapper .CollectionItem__Content--bottomCenter {
+  bottom: 13% !important;
+}
+@media screen and (min-width: 641px) {
+  section.Container.splide[data-section-type="collection-list"] {
+    padding: 0 50px !important;
+  }
+  section.Container.splide[data-section-type="collection-list"] .CollectionList {
+    margin-bottom: 40px !important;
+  }
+}
+@media screen and (min-width: 1140px) {
+  section.Container.splide[data-section-type="collection-list"] {
+    padding: 0 92px !important;
+  }
+}
 
 @media screen and (max-width: 640px) {
   #Mobile-Collection-List_Container {
@@ -657,6 +695,14 @@ section {
 /* End of Collection List editing */
 
 /* Start of Main Collections List section editing */
+section.Section.main-collections-list {
+  padding-top: 20px !important;
+}
+@media screen and (min-width: 641px) {
+  section.Section.main-collections-list {
+    padding-top: 80px !important;
+  }
+}
 @media screen and (max-width: 1139px) {
   #Main_CollectionList {
     display: flex;
@@ -760,6 +806,18 @@ section[data-section-type="collection"] .SectionHeader__Description {
 section[data-section-type="collection"] .SectionHeader__Description p {
   text-align: start;
 }
+.CollectionMain .Price--highlight {
+  font-size: 18px;
+  line-height: 22px;
+}
+.CollectionMain #collection-products {
+  aspect-ratio: 1;
+}
+.CollectionMain .Grid__Cell {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
 
 /* #collection-products {
   width: 284px;
@@ -776,6 +834,15 @@ section[data-section-type="collection"] .SectionHeader__Description p {
   color: #FFFFFF;
 }
 
+@media screen and (max-width:641px){
+  section.Section.Announcement_Banner .Rte p {
+    padding: 20px 0;
+  }
+  .CollectionMain .Pagination {
+    display: flex;
+    justify-content: center;
+  }
+}
 /* End of subcollection section editing */
 
 /* Start of Shop The Look section edits */
@@ -1129,6 +1196,9 @@ section[data-section-type="article-list"].blog-posts .ProductList--carousel .Car
   background: linear-gradient(96.96deg, #DD4C4C 17.49%, #D14343 75.3%);
   padding: 1.25rem !important;
   color: #FFFFFF;
+}
+section.Section.Announcement_Banner {
+  margin: 0 !important;
 }
 
 @media screen and (min-width: 1140px) {
