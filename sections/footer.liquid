@@ -233,11 +233,11 @@
     <div>
       <div class="Container Copyright_Footer">
         <span class="Sunniland_Copyright">Copyright © 2022 SunnilandPatio Furniture.</span>
-        <span class="Powered_Era">Powered by <b>Era of Purpose</b></span>
+        <a href="{{ section.settings.era_link }}" class="Powered_Era">Powered by <b>Era of Purpose</b></a>
       </div>
       <div class="Container Copyright_Footer-Mobile">
         <span class="Sunniland_Copyright">Copyright © 2022 SunnilandPatio Furniture.</span>
-        <span class="Powered_Era">Powered by <b>Era of Purpose</b></span>
+        <a href="{{ section.settings.era_link }}" class="Powered_Era">Powered by <b>Era of Purpose</b></a>
       </div>
     </div>
 </footer>
@@ -291,6 +291,15 @@
       "id": "show_locale_selector",
       "label": "Show language selector",
       "default": true
+    },
+    {
+      "type": "header",
+      "content": "Era of Purpose"
+    },
+    {
+      "type": "url",
+      "id": "era_link",
+      "label": "URL for the Era of Purpose text"
     }
   ],
   "blocks": [

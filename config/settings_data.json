@@ -142,7 +142,8 @@
         "settings": {
           "show_payment_methods": false,
           "show_country_selector": true,
-          "show_locale_selector": true
+          "show_locale_selector": true,
+          "era_link": "https:\/\/www.figma.com\/file\/au7A8vn1L9VLgaVCgMa2uD\/SunnilandPatio-Website?node-id=1255-18096&t=YmpnhrTEQ0u9lyD4-0"
         }
       },
       "popup": {
