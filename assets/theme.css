@@ -3585,13 +3585,22 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 .FeaturedMap__Store {
   display: block;
   margin-bottom: 1.2em;
-  font-family: var(--heading-font-family);
-  font-weight: var(--heading-font-weight);
-  font-style: var(--heading-font-style);
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 35px;
+  color: #263238;
 }
 
 .FeaturedMap__Address {
   margin-bottom: 1.2em;
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000000;
 }
 
 .FeaturedMap__Location {
