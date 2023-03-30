@@ -209,10 +209,27 @@
             "product_3_horizontal_position": 48,
             "product_3_vertical_position": 62
           }
+        },
+        "f1c97e2e-3c7a-4df1-b39a-e271428102d7": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_133208ad-b20d-4d3b-9fa9-2c18220a8778.jpg",
+            "dot_style": "light",
+            "product_1": "telescope-casual-mgp-sling-patio-arm-chair-9530",
+            "product_1_horizontal_position": 79,
+            "product_1_vertical_position": 73,
+            "product_2": "telescope-casual-round-dining-table-t020",
+            "product_2_horizontal_position": 62,
+            "product_2_vertical_position": 62,
+            "product_3": "",
+            "product_3_horizontal_position": 85,
+            "product_3_vertical_position": 85
+          }
         }
       },
       "block_order": [
-        "template--17486864122152__ec8cbadd-b314-43f6-8b0c-3fa5a1e6e02b-16755240059697acff-0"
+        "template--17486864122152__ec8cbadd-b314-43f6-8b0c-3fa5a1e6e02b-16755240059697acff-0",
+        "f1c97e2e-3c7a-4df1-b39a-e271428102d7"
       ],
       "settings": {
         "subheading": "",
