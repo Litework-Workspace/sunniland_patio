@@ -358,11 +358,45 @@
             "product_3_horizontal_position": 65,
             "product_3_vertical_position": 60
           }
+        },
+        "fd94f54b-08d8-4e71-b0a3-5c1ef5dc329a": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_bbd2d8a8-1e01-447c-b146-54579a4d29a9.jpg",
+            "dot_style": "light",
+            "product_1": "lloyd-flanders-elements-collection",
+            "product_1_horizontal_position": 56,
+            "product_1_vertical_position": 68,
+            "product_2": "",
+            "product_2_horizontal_position": 50,
+            "product_2_vertical_position": 50,
+            "product_3": "",
+            "product_3_horizontal_position": 85,
+            "product_3_vertical_position": 85
+          }
+        },
+        "cd532d4f-752f-46f7-a06f-f601e99d522d": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_01d87083-28e1-40f3-b67b-4b1dc85f1c90.jpg",
+            "dot_style": "light",
+            "product_1": "lloyd-flanders-hamptons-collection",
+            "product_1_horizontal_position": 58,
+            "product_1_vertical_position": 52,
+            "product_2": "",
+            "product_2_horizontal_position": 50,
+            "product_2_vertical_position": 50,
+            "product_3": "",
+            "product_3_horizontal_position": 85,
+            "product_3_vertical_position": 85
+          }
         }
       },
       "block_order": [
         "look-0",
-        "look-1"
+        "look-1",
+        "fd94f54b-08d8-4e71-b0a3-5c1ef5dc329a",
+        "cd532d4f-752f-46f7-a06f-f601e99d522d"
       ],
       "settings": {
         "subheading": "",
