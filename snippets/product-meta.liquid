@@ -5,7 +5,7 @@
       {%- assign collection_for_vendor = collections[vendor_handle] -%}
 
       {%- unless collection_for_vendor.empty? -%}
-        <a href="{{ collection_for_vendor.url }}">{{ product.vendor }}</a>
+        <a href="{{ collection_for_vendor.url }}">{{ product.vendor }} | {{ product.type }}</a>
       {%- else -%}
         {{- product.vendor -}}
       {%- endunless -%}
@@ -36,6 +36,10 @@
         {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
           <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_with_currency }}</span>
           <span class="ProductMeta__Price Price Price--compareAt Text--subdued u-h4">{{ product.selected_or_first_available_variant.compare_at_price | money_with_currency }}</span>
+          <span class="ProductMeta__Price Price Price--compareAt--PercentOff Text--subdued u-h4">
+            {{ product.compare_at_price_max | minus: product.price | times: 100.0 | divided_by: product.compare_at_price_max | money_without_currency | times: 100 | remove: '.0'}}% off
+          </span>
+
         {%- else -%}
           <span class="ProductMeta__Price Price Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_with_currency }}</span>
         {%- endif -%}
@@ -43,6 +47,10 @@
         {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
           <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money }}</span>
           <span class="ProductMeta__Price Price Price--compareAt Text--subdued u-h4">{{ product.selected_or_first_available_variant.compare_at_price | money }}</span>
+          <span class="ProductMeta__Price Price Price--compareAt--PercentOff Text--subdued u-h4">
+            {{ product.compare_at_price_max | minus: product.price | times: 100.0 | divided_by: product.compare_at_price_max | money_without_currency | times: 100 | remove: '.0'}}% off
+          </span>
+
         {%- else -%}
           <span class="ProductMeta__Price Price Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money }}</span>
         {%- endif -%}

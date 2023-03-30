@@ -2198,12 +2198,23 @@ body:not(.is-tabbing) .flickity-enabled:focus {
   cursor: pointer;
 }
 
+/* .Collapsible__Button-Title {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #263238;
+} */
+
+
 .Collapsible__Plus {
   position: absolute;
   right: 0;
   top: calc(50% - (11px / 2));
   width: 11px;
   height: 11px;
+  /* color: #263238; */
 }
 
 .Collapsible__Plus::before,
@@ -3963,7 +3974,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 .QuantitySelector {
   display: inline-flex;
   align-items: center;
-  border: 1px solid var(--border-color);
+  border: 1px solid #263238;
   border-radius: 25px;
   white-space: nowrap;
   height: 50px;
@@ -4005,7 +4016,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 }
 
 .QuantitySelector--large .QuantitySelector__Button {
-  padding: 10px 20px;
+  padding: 12px 20px;
 }
 
 .QuantitySelector--large svg {
@@ -4057,6 +4068,18 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   line-height: 22px;
   /* text-decoration-line: line-through; */
 
+  color: #9E9E9E;
+}
+
+.Price--compareAt--PercentOff {
+  position: relative;
+  margin-left: 10px;
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* text-decoration-line: line-through; */
   color: #9E9E9E;
 }
 
@@ -9389,7 +9412,7 @@ h3.SectionHeader__SubHeading {
 }
 @media screen and (min-width: 1500px) {
   .Product__Wrapper {
-    max-width: calc(100% - 500px);
+    max-width: calc(100% - 600px);
   }
 }
 /**
@@ -9939,7 +9962,7 @@ h3.SectionHeader__SubHeading {
 }
 
 .ProductMeta__PriceList {
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .ProductMeta__Price.Price--compareAt {
@@ -10015,6 +10038,7 @@ shopify-payment-terms {
   margin-top: 40px;
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
+  display: none;
 }
 .Product__QuickNav a {
   display: block;

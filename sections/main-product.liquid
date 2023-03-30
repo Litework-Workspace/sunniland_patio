@@ -349,10 +349,10 @@
                     <div class="QuantitySelector QuantitySelector--large">
                       {%- assign quantity_minus_one = line_item.quantity | minus: 1 -%}
 
-                      <button type="button" class="QuantitySelector__Button Link Link--secondary" data-action="decrease-quantity">{% render 'icon' with 'minus' %}</button>
+                      <button type="button" class="QuantitySelector__Button Link Link--secondary" style="border-right: 1px solid #000000;" data-action="decrease-quantity">{% render 'icon' with 'minus' %}</button>
                       {% comment %} <span>|</span> {% endcomment %}
                       <input type="text" class="QuantitySelector__CurrentQuantity" pattern="[0-9]*" name="quantity" value="1" aria-label="{{ 'product.form.quantity' | t }}">
-                      <button type="button" class="QuantitySelector__Button Link Link--secondary" data-action="increase-quantity">{% render 'icon' with 'plus' %}</button>
+                      <button type="button" class="QuantitySelector__Button Link Link--secondary" style="border-left: 1px solid #000000;" data-action="increase-quantity">{% render 'icon' with 'plus' %}</button>
                     </div>
                   </div>
 
