@@ -205,10 +205,27 @@
             "product_3_horizontal_position": 85,
             "product_3_vertical_position": 62
           }
+        },
+        "5cf0a172-efbe-483c-a1c2-1e9dbcad24f4": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_e120c87e-ada7-41dd-9da4-6fdbcab2a73a.jpg",
+            "dot_style": "light",
+            "product_1": "patio-furniture-telescope-casual-aluminum-sling-dining-chair-z510",
+            "product_1_horizontal_position": 16,
+            "product_1_vertical_position": 57,
+            "product_2": "telescope-casual-42-inch-square-mgp-top-conversation-table",
+            "product_2_horizontal_position": 50,
+            "product_2_vertical_position": 50,
+            "product_3": "",
+            "product_3_horizontal_position": 85,
+            "product_3_vertical_position": 85
+          }
         }
       },
       "block_order": [
-        "template--17486864122152__ec8cbadd-b314-43f6-8b0c-3fa5a1e6e02b-16755240059697acff-0"
+        "template--17486864122152__ec8cbadd-b314-43f6-8b0c-3fa5a1e6e02b-16755240059697acff-0",
+        "5cf0a172-efbe-483c-a1c2-1e9dbcad24f4"
       ],
       "settings": {
         "subheading": "",
