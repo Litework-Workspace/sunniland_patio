@@ -267,12 +267,29 @@
             "product_3_horizontal_position": 85,
             "product_3_vertical_position": 85
           }
+        },
+        "a07198c7-1618-43d4-820a-a67428897db2": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_8f7e9e66-02fb-4fbf-b94b-d677e6873c25.jpg",
+            "dot_style": "light",
+            "product_1": "telescope-casual-mgp-sling-patio-swivel-rocker-9450",
+            "product_1_horizontal_position": 75,
+            "product_1_vertical_position": 71,
+            "product_2": "telescope-casual-42-by-84-rectangle-mgp-top-dining-table",
+            "product_2_horizontal_position": 52,
+            "product_2_vertical_position": 59,
+            "product_3": "telescope-casual-mgp-sling-patio-arm-chair-9530",
+            "product_3_horizontal_position": 34,
+            "product_3_vertical_position": 69
+          }
         }
       },
       "block_order": [
         "template--17486864122152__ec8cbadd-b314-43f6-8b0c-3fa5a1e6e02b-16755240059697acff-0",
         "f567ea18-4cc7-4a85-aec8-451544adb07b",
-        "27acfbe9-8791-404d-bb50-c614a55081f1"
+        "27acfbe9-8791-404d-bb50-c614a55081f1",
+        "a07198c7-1618-43d4-820a-a67428897db2"
       ],
       "settings": {
         "subheading": "",
