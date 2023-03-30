@@ -235,10 +235,27 @@
             "product_3_horizontal_position": 41,
             "product_3_vertical_position": 51
           }
+        },
+        "f567ea18-4cc7-4a85-aec8-451544adb07b": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_64377996-0cc7-48c4-9790-693ab3120a91.jpg",
+            "dot_style": "light",
+            "product_1": "patio-furniture-telescope-casual-mgp-sling-chaise-lounge-9n30",
+            "product_1_horizontal_position": 51,
+            "product_1_vertical_position": 74,
+            "product_2": "",
+            "product_2_horizontal_position": 50,
+            "product_2_vertical_position": 50,
+            "product_3": "",
+            "product_3_horizontal_position": 85,
+            "product_3_vertical_position": 85
+          }
         }
       },
       "block_order": [
-        "template--17486864122152__ec8cbadd-b314-43f6-8b0c-3fa5a1e6e02b-16755240059697acff-0"
+        "template--17486864122152__ec8cbadd-b314-43f6-8b0c-3fa5a1e6e02b-16755240059697acff-0",
+        "f567ea18-4cc7-4a85-aec8-451544adb07b"
       ],
       "settings": {
         "subheading": "",
