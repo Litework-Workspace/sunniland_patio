@@ -193,16 +193,16 @@
         "template--17486864122152__ec8cbadd-b314-43f6-8b0c-3fa5a1e6e02b-16755240059697acff-0": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/87690d9b-ba2b-4dad-914b-82cc712db137.jpg",
+            "image": "shopify:\/\/shop_images\/1.1.jpg",
             "dot_style": "light",
-            "product_1": "chair-replacement-sling-1pc",
+            "product_1": "andover-recliner-item-510452",
             "product_1_horizontal_position": 18,
-            "product_1_vertical_position": 78,
-            "product_2": "ebel-replacement-cushions-sofa-n8430",
-            "product_2_horizontal_position": 45,
-            "product_2_vertical_position": 64,
-            "product_3": "outdoor-throw-pillows-decorative-pillows-p1",
-            "product_3_horizontal_position": 61,
+            "product_1_vertical_position": 66,
+            "product_2": "andover-crescent-loveseat-item-510463",
+            "product_2_horizontal_position": 53,
+            "product_2_vertical_position": 51,
+            "product_3": "copy-of-andover-swivel-rocker-item-510472",
+            "product_3_horizontal_position": 85,
             "product_3_vertical_position": 62
           }
         }
