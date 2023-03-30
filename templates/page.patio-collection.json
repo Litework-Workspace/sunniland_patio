@@ -31,7 +31,7 @@
             "subheading": "Shop All",
             "title": "Shop All",
             "button_text": "Shop All",
-            "button_link": "#",
+            "button_link": "shopify:\/\/collections\/patio-furniture",
             "apply_overlay": true
           }
         },
@@ -52,12 +52,12 @@
         "ac497a03-93bd-4a18-8b0b-355e13f73591": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "outdoor-dining-sets",
             "image": "shopify:\/\/shop_images\/Mask_group_1.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Patio Dining Sets",
+            "title": "Outdoor Dining Sets",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": false
@@ -66,7 +66,7 @@
         "d32286ee-8151-4530-81be-77ca42e218ba": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "outdoor-patio-sets",
             "image": "shopify:\/\/shop_images\/Group_3028.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
@@ -87,7 +87,7 @@
             "subheading": "",
             "title": "Outdoor Seating",
             "button_text": "View products",
-            "button_link": "",
+            "button_link": "shopify:\/\/collections\/outdoor-seating",
             "apply_overlay": true
           }
         },
