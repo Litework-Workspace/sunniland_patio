@@ -330,26 +330,27 @@
         "look-0": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/87690d9b-ba2b-4dad-914b-82cc712db137.jpg",
+            "image": "shopify:\/\/shop_images\/1_02a474b1-306a-4dbf-aee5-866de7c85436.jpg",
             "dot_style": "light",
-            "product_1": "chair-replacement-sling-1pc",
-            "product_1_horizontal_position": 22,
-            "product_1_vertical_position": 71,
-            "product_2": "aruba-ii-tangerine-dining-set",
-            "product_2_horizontal_position": 49,
-            "product_2_vertical_position": 84,
+            "product_1": "patio-furniture-telescope-casual-aluminum-sling-dining-chair-z510",
+            "product_1_horizontal_position": 12,
+            "product_1_vertical_position": 60,
+            "product_2": "telescope-casual-42-inch-square-mgp-top-dining-height-table",
+            "product_2_horizontal_position": 43,
+            "product_2_vertical_position": 63,
             "product_3": "st-catherine-mgp-cushion-sofa",
-            "product_3_horizontal_position": 54,
-            "product_3_vertical_position": 64
+            "product_3_horizontal_position": 50,
+            "product_3_vertical_position": 49
           }
         },
         "look-1": {
           "type": "look",
           "settings": {
+            "image": "shopify:\/\/shop_images\/2_54c95f66-5198-491c-8713-097b91de854c.jpg",
             "dot_style": "light",
-            "product_1": "",
-            "product_1_horizontal_position": 25,
-            "product_1_vertical_position": 45,
+            "product_1": "lloyd-flanders-elements-collection",
+            "product_1_horizontal_position": 41,
+            "product_1_vertical_position": 72,
             "product_2": "",
             "product_2_horizontal_position": 55,
             "product_2_vertical_position": 30,
