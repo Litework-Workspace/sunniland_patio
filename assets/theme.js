@@ -3482,23 +3482,23 @@
             navBottom = _this2.articleNavElement.offsetTop + _this2.articleNavElement.clientHeight - headerHeight;
           }
         });
-        fastdom.mutate(function () {
-          _this2.toolbarElement.style.top = isFixedHeader ? headerHeight + 'px' : null;
+        // fastdom.mutate(function () {
+        //   _this2.toolbarElement.style.top = isFixedHeader ? headerHeight + 'px' : null;
 
-          if (_this2.articleNavElement) {
-            if (lastYPosition > 150 && _this2.articleNavElement && lastYPosition < navBottom) {
-              _this2.toolbarElement.classList.add('is-visible');
-            } else {
-              _this2.toolbarElement.classList.remove('is-visible');
-            }
-          } else {
-            if (lastYPosition > 150) {
-              _this2.toolbarElement.classList.add('is-visible');
-            } else {
-              _this2.toolbarElement.classList.remove('is-visible');
-            }
-          }
-        });
+        //   if (_this2.articleNavElement) {
+        //     if (lastYPosition > 150 && _this2.articleNavElement && lastYPosition < navBottom) {
+        //       _this2.toolbarElement.classList.add('is-visible');
+        //     } else {
+        //       _this2.toolbarElement.classList.remove('is-visible');
+        //     }
+        //   } else {
+        //     if (lastYPosition > 150) {
+        //       _this2.toolbarElement.classList.add('is-visible');
+        //     } else {
+        //       _this2.toolbarElement.classList.remove('is-visible');
+        //     }
+        //   }
+        // });
       }
     }, {
       key: "_reveal",

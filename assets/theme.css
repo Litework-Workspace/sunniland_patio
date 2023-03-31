@@ -6266,9 +6266,9 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
  */
 
 .ArticleToolbar {
-  position: fixed;
+  position: sticky;
   display: flex;
-  top: 0;
+  top: 165px;
   width: 100%;
   align-items: center;
   justify-content: space-between;
@@ -6277,16 +6277,16 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   color: var(--secondary-elements-text-color);
   z-index: 2;
   pointer-events: none;
-  transform: translateY(-100%);
+  /* transform: translateY(-100%); */
   opacity: 0;
-  will-change: transform, opacity;
-  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  /* will-change: transform, opacity;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out; */
 }
 
 @supports (--css: variables) {
   .ArticleToolbar {
-    top: calc(0 * var(--header-height));
-    top: calc(var(--use-sticky-header, 0) * var(--header-height));
+    /* top: calc(0 * var(--header-height));
+    top: calc(var(--use-sticky-header, 0) * var(--header-height)); */
   }
 }
 
@@ -8329,7 +8329,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 }
 
 .shopify-section--header {
-  position: relative;
+  position: sticky;
   width: 100%;
   top: 0;
   left: 0;
