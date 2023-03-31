@@ -408,7 +408,7 @@
       "type": "image-with-text-overlay",
       "settings": {
         "section_size": "large",
-        "image": "shopify:\/\/shop_images\/sustainability_cover_1.png",
+        "image": "shopify:\/\/shop_images\/sustainability-cover-2.jpg",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 20,
