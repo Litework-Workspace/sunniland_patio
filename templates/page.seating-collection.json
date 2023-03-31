@@ -150,7 +150,7 @@
         "b5c984f9-885e-41d1-a22b-f9ce484259b6": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "sofas",
             "image": "shopify:\/\/shop_images\/10.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
@@ -164,7 +164,7 @@
         "54dc446c-c344-46fd-8ddc-22a8d964fe8a": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "daybeds",
             "image": "shopify:\/\/shop_images\/11.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
