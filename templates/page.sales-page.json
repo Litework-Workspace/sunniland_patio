@@ -26,6 +26,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/850_1242_MOD_1_1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/850_1242_MOD_1_1.jpg",
             "apply_overlay": true,
             "content_position": "bottomLeft",
             "subheading": "",
