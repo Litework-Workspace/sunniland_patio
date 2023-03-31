@@ -74,7 +74,7 @@
           "type": "collection",
           "settings": {
             "collection": "outdoor-dining-sets",
-            "image": "shopify:\/\/shop_images\/Image_7.png",
+            "image": "shopify:\/\/shop_images\/bazza_7_2014v_1.jpg",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
@@ -88,7 +88,7 @@
           "type": "collection",
           "settings": {
             "collection": "outdoor-patio-sets",
-            "image": "shopify:\/\/shop_images\/Image_9.png",
+            "image": "shopify:\/\/shop_images\/Weekend_Retreat2008_002_1.jpg",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
@@ -102,112 +102,112 @@
           "type": "collection",
           "settings": {
             "collection": "outdoor-seating",
-            "image": "shopify:\/\/shop_images\/Image_10.png",
+            "image": "shopify:\/\/shop_images\/La_vie_Wicker_01_2012_1.jpg",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
             "title": "",
             "button_text": "Outdoor Seating",
             "button_link": "",
-            "apply_overlay": true
+            "apply_overlay": false
           }
         },
         "1c863ae9-bc07-4caf-bd0a-b158b2388e8c": {
           "type": "collection",
           "settings": {
             "collection": "outdoor-lounge",
-            "image": "shopify:\/\/shop_images\/Image_11.png",
+            "image": "shopify:\/\/shop_images\/Collection_Picture_Redondo_2.jpg",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
             "title": "",
             "button_text": "Outdoor Lounge",
             "button_link": "",
-            "apply_overlay": true
+            "apply_overlay": false
           }
         },
         "30e05b38-a5f8-46b5-a504-caab5dfa4fe3": {
           "type": "collection",
           "settings": {
             "collection": "patio-tables",
-            "image": "shopify:\/\/shop_images\/Image_12.png",
+            "image": "shopify:\/\/shop_images\/adirondack_mgp_sling_mahogany_1.jpg",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
             "title": "",
             "button_text": "Patio Tables",
             "button_link": "",
-            "apply_overlay": true
+            "apply_overlay": false
           }
         },
         "a23bfc27-f6b0-4106-872b-8541ba27f482": {
           "type": "collection",
           "settings": {
             "collection": "patio-umbrellas-bases",
-            "image": "shopify:\/\/shop_images\/Image_13.png",
+            "image": "shopify:\/\/shop_images\/454FM_WH_PTA_1.jpg",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
             "title": "",
             "button_text": "Patio Umbrellas",
             "button_link": "",
-            "apply_overlay": true
+            "apply_overlay": false
           }
         },
         "3555c8cd-acb7-4905-a2e0-15a01bf6ab18": {
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Image_14.png",
+            "image": "shopify:\/\/shop_images\/Nantucket-swivel-AntiqueWhite-H_1.jpg",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
             "title": "Replacement Cushions",
             "button_text": "Replacement Cushions",
             "button_link": "shopify:\/\/pages\/list-collections",
-            "apply_overlay": true
+            "apply_overlay": false
           }
         },
         "9694911a-0ceb-4cc2-9369-ba7042d4d59b": {
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Image_15.png",
+            "image": "shopify:\/\/shop_images\/parts_1.jpg",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
             "title": "Patio Repair Parts",
             "button_text": "Patio Repair Parts",
             "button_link": "shopify:\/\/pages\/replacement-parts",
-            "apply_overlay": true
+            "apply_overlay": false
           }
         },
         "0184f0bb-5a7a-4017-8955-cf30b2827ddb": {
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Image_16.png",
+            "image": "shopify:\/\/shop_images\/2_3.jpg",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
             "title": "Patio Repair Services",
             "button_text": "Patio Repair Services",
             "button_link": "shopify:\/\/pages\/patio-furniture-repair-services",
-            "apply_overlay": true
+            "apply_overlay": false
           }
         },
         "9ac41b38-45a1-4cd4-aa92-b037b29edc77": {
           "type": "collection",
           "settings": {
             "collection": "commercial-furniture",
-            "image": "shopify:\/\/shop_images\/Image_17.png",
+            "image": "shopify:\/\/shop_images\/reliance_sling_gloss_white_stacked_chairs_1.jpg",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
             "title": "",
             "button_text": "Commercial Patio Furniture",
             "button_link": "",
-            "apply_overlay": true
+            "apply_overlay": false
           }
         }
       },
