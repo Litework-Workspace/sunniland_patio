@@ -80,7 +80,7 @@
         "b5c984f9-885e-41d1-a22b-f9ce484259b6": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "coffee-tables",
             "image": "shopify:\/\/shop_images\/2.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
@@ -94,7 +94,7 @@
         "d32286ee-8151-4530-81be-77ca42e218ba": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "fire-pit-tables",
             "image": "shopify:\/\/shop_images\/4.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
