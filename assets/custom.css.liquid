@@ -1126,14 +1126,59 @@ section[data-section-type="article-list"].blog-posts .ProductList--carousel .Car
 .Phone-MenuHeading {
   padding-top: 20px;
 }
-.blog-topics-menu {
+/* .blog-topics-menu {
   display: flex;
   justify-content: end;
   margin-right: 5px;
   position: sticky;
   top: 40%;
   margin-left: auto;
+} */
+
+.blog-topics-menu {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transform: rotate(-90deg);
+  background: #263238;
+  position: fixed;
+  width: 164px;
+  height: 35.08px;
+  top: 358px;
+  left: 75%;
 }
+
+.topics-text {
+  display: flex !important;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: #263238;
+  width: 128.92px;
+  height: 35.08px;
+}
+
+.blog-topic_button {
+  transform: rotate(90deg);
+}
+
+.topic-button_container {
+  width: 35.08px;
+  height: 35.08px;
+  background: #DD2C00;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
 #Blog-Posts_Heading {
   font-family: 'Figtree';
   font-style: normal;
@@ -1180,6 +1225,24 @@ section[data-section-type="article-list"].blog-posts .ProductList--carousel .Car
   .FlexBlog {
     margin-top: 80px;
   }
+}
+
+.Blog_Menu .Heading {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 35px;
+  color: #263238;
+}
+
+.blog-links {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+  color: #000000;
 }
 
 @media screen and (max-width: 1007px) {
@@ -1344,10 +1407,20 @@ section.Section.Announcement_Banner {
     background-color: transparent;
     color: #FFF;
   }
+
+}
+
+@media screen and (max-width: 641px) {
+  .services-list-item {
+    
+  }
+  .services-checkmark {
+    display: none;
+  }
 }
 
 .services-list-item{
-  list-style: none;
+  /* list-style: none; */
   margin-bottom: 40px;
   font-family: 'Figtree';
   font-style: normal;

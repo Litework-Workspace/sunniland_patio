@@ -9,7 +9,12 @@
   {%- else -%}
     <div class="Blog">
     <button class=" blog-topics-menu Header__Icon Icon-Wrapper Icon-Wrapper--clickable {% unless use_blog_menu %}hidden-desk{% endunless %}" aria-expanded="false" data-action="open-drawer" data-drawer-id="blog_topics" aria-label="{{ 'header.navigation.open_sidebar' | t }}">
-      <span class="hidden-tablet-and-up" >B<br>l<br>o<br>g<br><br> T<br>o<br>p<br>i<br>c<br>s</span>
+      <span class="hidden-tablet-and-up topics-text" >Blog Topics</span>
+      <span class="topic-button_container">
+        <svg class="blog-topic_button" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.83136 21.0642L11.5989 19.2136L3.73326 10.9786L11.5989 2.74358L9.83136 0.893036L0.19787 10.9786L9.83136 21.0642Z" fill="white"/>
+        </svg>
+      </span>
       <span class="hidden-phone">{%- render 'icon' with 'nav-desktop' -%}</span>
     </button>
       <div class="Container FlexBlog">
