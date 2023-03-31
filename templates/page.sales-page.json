@@ -69,6 +69,7 @@
     },
     "c05c644c-3edc-4710-8f41-1b1feaab9fc7": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "settings": {
         "section_size": "large",
         "image": "shopify:\/\/shop_images\/LF-AtlShowhouse2016-0018-Gen-Nova-SthBch_1_1.jpg",
@@ -79,6 +80,7 @@
         "title": "Spend more time outdoors",
         "content": "<p>Discover our wide range of patio & outdoor furniture – we have everything from smaller, lightweight aluminum furniture for the balcony, to a variety of sizes and materials, like rattan and solid wood furniture, for your spacious patio. Find the ones that suit your style and space and enjoy outdoor living!<\/p>",
         "show_on_mobile": false,
+        "no_bottom_margin": false,
         "button_1_text": "",
         "button_1_link": "",
         "button_2_text": "",
@@ -94,6 +96,7 @@
           "type": "collection",
           "settings": {
             "collection": "bar-stools",
+            "dynamic_collection": false,
             "title": "Best Sellers",
             "grid_items_count": 8,
             "button_text": "Shop All"
@@ -128,7 +131,10 @@
         "template--17486864122152__825354a6-df15-4c92-aba2-3b921d5ffd1c-167552443103ce4182-0": {
           "type": "blog",
           "settings": {
-            "blog": ""
+            "blog": "",
+            "custom_color": false,
+            "color1": "",
+            "color2": ""
           }
         }
       },
@@ -155,6 +161,7 @@
         "title": "Find Sunniland on Youtube",
         "content": "<p>Learn how to repair your patio furniture the easy way with our DIY video tutorials.<\/p>",
         "show_on_mobile": true,
+        "no_bottom_margin": false,
         "button_1_text": "Watch Tutorials",
         "button_1_link": "",
         "button_2_text": "",
