@@ -122,7 +122,7 @@
         "966dd87c-fdbb-4ec2-8005-bbbc6292ebf6": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "balcony-chairs",
             "image": "shopify:\/\/shop_images\/8.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
@@ -136,7 +136,7 @@
         "7d195c04-039a-4b7f-ae7c-bda12ed9ebb0": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "sofas-loveseats",
             "image": "shopify:\/\/shop_images\/9.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
