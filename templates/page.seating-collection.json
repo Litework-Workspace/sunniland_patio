@@ -108,7 +108,7 @@
         "40a21edd-db53-47ec-a47c-6d8112b965ba": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "bar-stools",
             "image": "shopify:\/\/shop_images\/7.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
