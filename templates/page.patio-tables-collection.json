@@ -38,7 +38,7 @@
         "8bdcb90e-f47e-4a0c-a9db-c54eaacfd330": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "dinning-tables",
             "image": "shopify:\/\/shop_images\/5_4811a8a7-d19d-4598-8fdc-da399dda32e2.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
@@ -52,7 +52,7 @@
         "c068eee9-3dc1-46fe-af8d-f26bf8dd46c3": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "bar-tables",
             "image": "shopify:\/\/shop_images\/6_1d82fab8-fc7a-4c4e-8d09-6bf030526fe7.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
@@ -66,7 +66,7 @@
         "ac497a03-93bd-4a18-8b0b-355e13f73591": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "end-tables",
             "image": "shopify:\/\/shop_images\/3.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
