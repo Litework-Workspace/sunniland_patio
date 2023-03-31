@@ -31,14 +31,14 @@
             "subheading": "Shop All",
             "title": "Shop All",
             "button_text": "Shop All",
-            "button_link": "shopify:\/\/collections\/patio-tables",
+            "button_link": "#",
             "apply_overlay": true
           }
         },
         "8bdcb90e-f47e-4a0c-a9db-c54eaacfd330": {
           "type": "collection",
           "settings": {
-            "collection": "dinning-tables",
+            "collection": "",
             "image": "shopify:\/\/shop_images\/5_4811a8a7-d19d-4598-8fdc-da399dda32e2.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
@@ -52,7 +52,7 @@
         "c068eee9-3dc1-46fe-af8d-f26bf8dd46c3": {
           "type": "collection",
           "settings": {
-            "collection": "bar-tables",
+            "collection": "",
             "image": "shopify:\/\/shop_images\/6_1d82fab8-fc7a-4c4e-8d09-6bf030526fe7.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
@@ -66,7 +66,7 @@
         "ac497a03-93bd-4a18-8b0b-355e13f73591": {
           "type": "collection",
           "settings": {
-            "collection": "end-tables",
+            "collection": "",
             "image": "shopify:\/\/shop_images\/3.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
@@ -80,7 +80,7 @@
         "b5c984f9-885e-41d1-a22b-f9ce484259b6": {
           "type": "collection",
           "settings": {
-            "collection": "coffee-tables",
+            "collection": "",
             "image": "shopify:\/\/shop_images\/2.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
@@ -94,7 +94,7 @@
         "d32286ee-8151-4530-81be-77ca42e218ba": {
           "type": "collection",
           "settings": {
-            "collection": "fire-pit-tables",
+            "collection": "",
             "image": "shopify:\/\/shop_images\/4.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
@@ -199,15 +199,15 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/1_dd28ff3b-843e-406a-a54c-837c22f226f0.jpg",
             "dot_style": "light",
-            "product_1": "patio-furniture-telescope-casual-aluminum-sling-swivel-rocker-7a50",
-            "product_1_horizontal_position": 18,
-            "product_1_vertical_position": 78,
+            "product_1": "glass-top-patio-dining-table-2770",
+            "product_1_horizontal_position": 51,
+            "product_1_vertical_position": 57,
             "product_2": "patio-furniture-telescope-casual-aluminum-sling-stacking-arm-chair-7a00",
             "product_2_horizontal_position": 80,
             "product_2_vertical_position": 64,
-            "product_3": "glass-top-patio-dining-table-2770",
-            "product_3_horizontal_position": 48,
-            "product_3_vertical_position": 62
+            "product_3": "patio-furniture-telescope-casual-aluminum-sling-swivel-rocker-7a50",
+            "product_3_horizontal_position": 20,
+            "product_3_vertical_position": 74
           }
         },
         "f1c97e2e-3c7a-4df1-b39a-e271428102d7": {
