@@ -52,7 +52,7 @@
         "c068eee9-3dc1-46fe-af8d-f26bf8dd46c3": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "bar-tables",
             "image": "shopify:\/\/shop_images\/6_1d82fab8-fc7a-4c4e-8d09-6bf030526fe7.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
@@ -66,7 +66,7 @@
         "ac497a03-93bd-4a18-8b0b-355e13f73591": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "end-tables",
             "image": "shopify:\/\/shop_images\/3.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
