@@ -225,15 +225,15 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/i95abj_traditional_elegant_outdoor_furniture_set_0b4189ba-2dcd-43cf-a32c-f11d59b85715.png",
             "dot_style": "light",
-            "product_1": "chair-replacement-sling-1pc",
-            "product_1_horizontal_position": 69,
-            "product_1_vertical_position": 38,
-            "product_2": "ebel-replacement-cushions-sofa-n8430",
-            "product_2_horizontal_position": 28,
-            "product_2_vertical_position": 67,
+            "product_1": "brown-jordan-replacement-cushions-florentine-item-c-b1105",
+            "product_1_horizontal_position": 16,
+            "product_1_vertical_position": 62,
+            "product_2": "brown-jordan-replacement-cushions-florentine-arm-chair-item-c-b1102",
+            "product_2_horizontal_position": 66,
+            "product_2_vertical_position": 64,
             "product_3": "outdoor-throw-pillows-decorative-pillows-p1",
-            "product_3_horizontal_position": 75,
-            "product_3_vertical_position": 62
+            "product_3_horizontal_position": 63,
+            "product_3_vertical_position": 45
           }
         }
       },
