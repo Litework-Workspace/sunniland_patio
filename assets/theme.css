@@ -6272,8 +6272,8 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 30px 16px 30px;
-  background: var(--secondary-elements-background);
+  padding: 5px 30px 6px 30px;
+  background: #455A64;
   color: var(--secondary-elements-text-color);
   z-index: 2;
   pointer-events: none;
