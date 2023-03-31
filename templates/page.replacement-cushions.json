@@ -31,7 +31,7 @@
             "subheading": "Shop All",
             "title": "Shop All",
             "button_text": "Shop All",
-            "button_link": "#",
+            "button_link": "shopify:\/\/collections\/replacement-cushions",
             "apply_overlay": true
           }
         },
