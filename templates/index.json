@@ -7,7 +7,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/image_1_79b398eb-adcf-4aeb-aafe-fb6be2d9bd06.png",
-            "mobile_image": "shopify:\/\/shop_images\/image_1_mobile.png",
+            "mobile_image": "shopify:\/\/shop_images\/Image-1.jpg",
             "apply_overlay": true,
             "content_position": "bottomLeft",
             "subheading": "Build Your Perfect",
@@ -22,8 +22,8 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_2_95653b0d-07ac-44f2-b919-f9dfe9645421.png",
-            "mobile_image": "shopify:\/\/shop_images\/image_2_mobile.png",
+            "image": "shopify:\/\/shop_images\/Collection-Picture-Redondo-1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Image-2.jpg",
             "apply_overlay": true,
             "content_position": "bottomLeft",
             "subheading": "Renew Your Outdoor Oasis",
@@ -38,8 +38,8 @@
         "13146d5f-0747-408d-9799-78a2641cd41d": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_3_598d7ac4-0cdb-4b52-97c5-cf9693977837.png",
-            "mobile_image": "shopify:\/\/shop_images\/image_3_mobile.png",
+            "image": "shopify:\/\/shop_images\/doityourself.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Image-3.jpg",
             "apply_overlay": true,
             "content_position": "bottomLeft",
             "subheading": "Reuse Sustainably with",
