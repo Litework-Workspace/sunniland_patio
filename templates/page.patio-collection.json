@@ -57,7 +57,7 @@
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Patio Conversation Sets",
+            "title": "",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": true
@@ -73,7 +73,7 @@
             "subheading": "",
             "title": "Outdoor Seating",
             "button_text": "View products",
-            "button_link": "shopify:\/\/collections\/outdoor-seating",
+            "button_link": "shopify:\/\/pages\/outdoor-seating",
             "apply_overlay": true
           }
         },
