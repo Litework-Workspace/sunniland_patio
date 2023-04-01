@@ -65,11 +65,11 @@
       "announcement": {
         "type": "announcement",
         "settings": {
-          "enable_bar": false,
+          "enable_bar": true,
           "home_page_only": false,
           "background": "#1e272c",
           "text_color": "#ffffff",
-          "content": "",
+          "content": "test",
           "link": ""
         }
       },
