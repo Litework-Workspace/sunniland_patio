@@ -22,12 +22,20 @@
             "title": "What are your shipping details?",
             "answer": "<p>All shipping fees are based on the contiguous United States standard shipping rates by package weight.<\/p><p>Free Shipping Applied on: <\/p><p>Furniture orders over $500<\/p><p>Non-Furniture orders over $150<\/p><p>All Replacement Cushion orders<\/p><p>Normal delivery time once shipped 3-10 days via USPS, UPS, or FedEx.<\/p>"
           }
+        },
+        "36e0693f-7e48-41f5-95c3-221cfc3d726a": {
+          "type": "question",
+          "settings": {
+            "title": "Do you ship to Canada?",
+            "answer": "<p>Unfortunately, we only ship to the Continental US<\/p>"
+          }
         }
       },
       "block_order": [
         "761d5258-b42b-4cd9-b49c-4b13b9ba7cb2",
         "607850b5-67d3-4e2a-adf8-8d5ecc0a7b1e",
-        "6c5a9679-710b-4a11-a8b3-1a8585e734c8"
+        "6c5a9679-710b-4a11-a8b3-1a8585e734c8",
+        "36e0693f-7e48-41f5-95c3-221cfc3d726a"
       ],
       "settings": {
       }
