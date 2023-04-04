@@ -25,6 +25,21 @@ Attributes
   .{{ id }} .splide__arrows {
     <!-- position: relative; -->
   }
+  .ProductRecommendations.{{ id }} .AspectRatio::before, 
+  .RecentlyViewedProducts.{{ id }} .AspectRatio::before {
+    display: block;
+    content: '';
+    aspect-ratio: 1;
+  }
+  .ProductRecommendations.{{ id }} .AspectRatio, 
+  .RecentlyViewedProducts.{{ id }} .AspectRatio {
+    max-height: 236px;
+  }
+  .ProductRecommendations.{{ id }} .AspectRatio img, 
+  .RecentlyViewedProducts.{{ id }} .AspectRatio img {
+    max-height: 236px;
+    object-fit: cover;
+  }
   @media screen and (min-width: 641px) {
     .{{ id }} .splide__arrow--prev {
       left: -40px;
@@ -60,6 +75,11 @@ Attributes
   {% assign newId =  id | split: '-' | join: '_' %}
 <script>
   document.addEventListener( 'DOMContentLoaded', function() {
+
+    {% if timeout > 0 %}
+      setTimeout(function(){
+        console.log('firing hte soplide');
+    {% endif %}
 
     let splide_{{newId}} = new Splide( '.{{ id }}', {
       type   : '{{ slideType }}',
@@ -106,5 +126,9 @@ Attributes
     });
 
     splide_{{newId}}.mount();
+
+    {% if timeout > 0 %}
+        },{{ timeout }})
+    {% endif %}
   });
 </script>

@@ -19,6 +19,8 @@
 }
 {%- endcapture -%}
 
+{%- assign splide-id = 'splide' | append: section.id -%}
+
 <section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="product-recommendations" data-section-settings='{{ section_settings }}'>
   {%- if section.settings.heading != blank -%}
     <header class="SectionHeader SectionHeader--center">
@@ -30,12 +32,13 @@
   {%- endif -%}
 
   <div class="Container">
-    <div class="ProductRecommendations">
+    <div class="ProductRecommendations splide {{ splide-id }}">
       {%- if recommendations.performed and recommendations.products.size > 0 -%}
-        <div class="ProductListWrapper">
-          <div class="ProductList ProductList--carousel Carousel" data-flickity-config='{{ flickity_options }}'>
+        <div class="ProductListWrapper splide__track">
+          {% comment %} <div class="ProductList ProductList--carousel Carousel splide__list" data-flickity-config='{{ flickity_options }}'> {% endcomment %}
+          <div class="ProductList ProductList--carousel Carousel splide__list">
             {%- for product in recommendations.products -%}
-              <div class="Carousel__Cell">
+              <div class="Carousel__Cell splide__slide">
                 {% render 'product-item', product: product, show_product_info: section.settings.show_product_info, show_vendor: section.settings.show_vendor, show_color_swatch: section.settings.show_color_swatch, show_labels: true %}
                 
                 {% comment %} Start of Buy Button addition {% endcomment %}
@@ -94,6 +97,8 @@
     </div>
   </div>
 </section>
+
+{% render 'splide-init', id: splide-id, perPage: 4, slideType: 'slide', dots: false, timeout: 2000 %}
 
 {% schema %}
 {

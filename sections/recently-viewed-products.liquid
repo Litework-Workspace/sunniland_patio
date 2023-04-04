@@ -18,6 +18,8 @@
 }
 {%- endcapture -%}
 
+{%- assign splide-id = 'splide' | append: section.id -%}
+
 <section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="recently-viewed-products" data-section-settings='{{ section_settings }}'>
   {%- if section.settings.title != blank -%}
     <header class="SectionHeader SectionHeader--center">
@@ -29,9 +31,10 @@
   {%- endif -%}
 
   {%- if template.name == 'search' -%}
-  <div class="Container">
-    <div class="ProductListWrapper">
+  <div class="Container splide {{ splide-id }} RecentlyViewedProducts">
+    <div class="ProductListWrapper splide__track">
       <div class="ProductList ProductList--carousel Carousel" data-flickity-config='{{ flickity_options }}'>
+      <div class="ProductList ProductList--carousel Carousel splide__list">
         {%- assign parsed_terms = search.terms | split: ' OR ' -%}
 
         {%- for parsed_term in parsed_terms -%}
@@ -39,7 +42,7 @@
 
           {%- for product in search.results -%}
             {%- if product.id == id -%}
-              <div class="Carousel__Cell">
+              <div class="Carousel__Cell splide__slide">
                 {% render 'product-item', product: product, show_product_info: section.settings.show_product_info, show_vendor: section.settings.show_vendor, show_color_swatch: section.settings.show_color_swatch, show_labels: true, collection_handle: collection_handle, show_form: true %}
                 
                 {% comment %} Start of Buy Button addition {% endcomment %}
@@ -93,6 +96,8 @@
   </div>
   {%- endif -%}
 </section>
+
+{% render 'splide-init', id: splide-id, perPage: 4, slideType: 'slide', dots: false, timeout: 2000 %}
 
 {% schema %}
 {

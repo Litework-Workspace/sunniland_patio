@@ -10,6 +10,108 @@
           {%- assign content = block.settings.content -%}
         {%- endif -%}
 
+        {%- if block.settings.dynamic_content -%}
+          {% if block.settings.content_1 != blank and block.settings.content_1_collections != blank %}
+            {% assign handles = block.settings.content_1_collections | split: ',' %}
+            {% for handle in handles %}
+              {% assign collection_handle = handle %}
+              {% assign collection = collections[collection_handle] %}
+              {% assign product_in_collection = false %}
+
+              {% for collection_product in collection.products %}
+                {% if collection_product.handle == product.handle %}
+                  {% assign product_in_collection = true %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+              {% if product_in_collection %}
+                {% assign content = block.settings.content_1 %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+          
+          {% if block.settings.content_2 != blank and block.settings.content_2_collections != blank %}
+            {% assign handles = block.settings.content_2_collections | split: ',' %}
+            {% for handle in handles %}
+              {% assign collection_handle = handle %}
+              {% assign collection = collections[collection_handle] %}
+              {% assign product_in_collection = false %}
+
+              {% for collection_product in collection.products %}
+                {% if collection_product.handle == product.handle %}
+                  {% assign product_in_collection = true %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+              {% if product_in_collection %}
+                {% assign content = block.settings.content_2 %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+          
+          {% if block.settings.content_3 != blank and block.settings.content_3_collections != blank %}
+            {% assign handles = block.settings.content_3_collections | split: ',' %}
+            {% for handle in handles %}
+              {% assign collection_handle = handle %}
+              {% assign collection = collections[collection_handle] %}
+              {% assign product_in_collection = false %}
+
+              {% for collection_product in collection.products %}
+                {% if collection_product.handle == product.handle %}
+                  {% assign product_in_collection = true %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+              {% if product_in_collection %}
+                {% assign content = block.settings.content_3 %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+          
+          {% if block.settings.content_4 != blank and block.settings.content_4_collections != blank %}
+            {% assign handles = block.settings.content_4_collections | split: ',' %}
+            {% for handle in handles %}
+              {% assign collection_handle = handle %}
+              {% assign collection = collections[collection_handle] %}
+              {% assign product_in_collection = false %}
+
+              {% for collection_product in collection.products %}
+                {% if collection_product.handle == product.handle %}
+                  {% assign product_in_collection = true %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+              {% if product_in_collection %}
+                {% assign content = block.settings.content_4 %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+          
+          {% if block.settings.content_5 != blank and block.settings.content_5_collections != blank %}
+            {% assign handles = block.settings.content_5_collections | split: ',' %}
+            {% for handle in handles %}
+              {% assign collection_handle = handle %}
+              {% assign collection = collections[collection_handle] %}
+              {% assign product_in_collection = false %}
+
+              {% for collection_product in collection.products %}
+                {% if collection_product.handle == product.handle %}
+                  {% assign product_in_collection = true %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+              {% if product_in_collection %}
+                {% assign content = block.settings.content_5 %}
+                {% break %}
+              {% endif %}
+ value           {% endfor %}
+          {% endif %}
+        {%- endif -%}
+
         {%- if title != blank and content != blank -%}
           <div class="Collapsible Collapsible--large" {{ block.shopify_attributes }}>
             <button class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
