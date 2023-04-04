@@ -93,7 +93,9 @@
   {%- endif -%}
 </style>
 
-{% render 'splide-init', id: splide-id, perPage: 5, slideType: 'slide', dots: false %}
+{% if section.settings.enable_carousel %}
+  {% render 'splide-init', id: splide-id, perPage: 5, slideType: 'slide', dots: false %}
+{% endif %}
 
 {% schema %}
 {

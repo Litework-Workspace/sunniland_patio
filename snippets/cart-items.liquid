@@ -93,10 +93,10 @@
         {%- capture item_actions -%}
           <div class="CartItem__Actions Heading Text--subdued" style="text-align: center">
             <div class="CartItem__QuantitySelector">
-              <div class="QuantitySelector">
+              <div class="QuantitySelector QuantitySelector--large">
                 {%- assign quantity_minus_one = line_item.quantity | minus: 1 -%}
 
-                <a class="QuantitySelector__Button Link Link--primary" title="{{ 'cart.items.set_quantity' | t: new_quantity: quantity_minus_one }}" href="{{ routes.cart_change_url }}?quantity={{ quantity_minus_one }}&line={{ forloop.index }}" data-quantity="{{ quantity_minus_one }}" data-line="{{ forloop.index }}" data-action="update-item-quantity">
+                <a class="QuantitySelector__Button Link Link--primary" style="border-right: 1px solid #000000;" title="{{ 'cart.items.set_quantity' | t: new_quantity: quantity_minus_one }}" href="{{ routes.cart_change_url }}?quantity={{ quantity_minus_one }}&line={{ forloop.index }}" data-quantity="{{ quantity_minus_one }}" data-line="{{ forloop.index }}" data-action="update-item-quantity">
                   {%- render 'icon' with 'minus' -%}
                 </a>
 
@@ -104,7 +104,7 @@
 
                 {%- assign quantity_plus_one = line_item.quantity | plus: 1 -%}
 
-                <a class="QuantitySelector__Button Link Link--primary" title="{{ 'cart.items.set_quantity' | t: new_quantity: quantity_plus_one }}" href="{{ routes.cart_change_url }}?quantity={{ quantity_plus_one }}&line={{ forloop.index }}" data-quantity="{{ quantity_plus_one }}" data-line="{{ forloop.index }}" data-action="update-item-quantity">
+                <a class="QuantitySelector__Button Link Link--primary" style="border-left: 1px solid #000000;" title="{{ 'cart.items.set_quantity' | t: new_quantity: quantity_plus_one }}" href="{{ routes.cart_change_url }}?quantity={{ quantity_plus_one }}&line={{ forloop.index }}" data-quantity="{{ quantity_plus_one }}" data-line="{{ forloop.index }}" data-action="update-item-quantity">
                   {%- render 'icon' with 'plus' -%}
                 </a>
               </div>
