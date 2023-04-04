@@ -6,7 +6,7 @@
         "761d5258-b42b-4cd9-b49c-4b13b9ba7cb2": {
           "type": "separator",
           "settings": {
-            "title": "What is your return policy?"
+            "title": "Shipping & Returns Questions"
           }
         },
         "607850b5-67d3-4e2a-adf8-8d5ecc0a7b1e": {
@@ -27,7 +27,7 @@
           "type": "question",
           "settings": {
             "title": "Do you ship to Canada?",
-            "answer": "<p>Unfortunately, we only ship to the Continental US<\/p>"
+            "answer": "<p>Unfortunately, we only ship to the Continental US.<\/p>"
           }
         }
       },
