@@ -65,9 +65,9 @@
       "announcement": {
         "type": "announcement",
         "settings": {
-          "enable_bar": false,
+          "enable_bar": true,
           "home_page_only": false,
-          "background": "#1e272c",
+          "background": "#00897b",
           "text_color": "#ffffff",
           "content": "Hey! We just rebranded, read the full story here!",
           "link": ""
