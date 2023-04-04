@@ -56,6 +56,12 @@
             "title": "What is the thickness of the vinyl strapping?",
             "answer": "<p>It is .115\"<\/p>"
           }
+        },
+        "6b72e191-3f6c-4aad-9cb4-1a9ca599af2b": {
+          "type": "separator",
+          "settings": {
+            "title": "Warranty Related Questions"
+          }
         }
       },
       "block_order": [
@@ -66,7 +72,8 @@
         "e662cf46-c59b-4d1e-a418-6c5745be154b",
         "55a933b5-8768-42dd-b942-1015dac5126f",
         "4b7a40f5-8bb6-4a09-8217-93786d47347b",
-        "58786611-adae-4173-b80f-b5bd17602047"
+        "58786611-adae-4173-b80f-b5bd17602047",
+        "6b72e191-3f6c-4aad-9cb4-1a9ca599af2b"
       ],
       "settings": {
       }
