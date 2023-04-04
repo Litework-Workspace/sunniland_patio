@@ -31,7 +31,7 @@
             "subheading": "Shop All",
             "title": "Shop All",
             "button_text": "Shop All",
-            "button_link": "#",
+            "button_link": "shopify:\/\/collections\/all-parts",
             "apply_overlay": true
           }
         },
@@ -462,7 +462,7 @@
         "show_on_mobile": false,
         "no_bottom_margin": false,
         "button_1_text": "Read Tutorials",
-        "button_1_link": "",
+        "button_1_link": "shopify:\/\/blogs\/sunniblog",
         "button_2_text": "",
         "button_2_link": "",
         "button_color": "#363636",
@@ -507,7 +507,7 @@
         "show_on_mobile": true,
         "no_bottom_margin": true,
         "button_1_text": "Visit Our Channel",
-        "button_1_link": "",
+        "button_1_link": "https:\/\/www.youtube.com\/@sunnilandpatio2441",
         "button_2_text": "",
         "button_2_link": "",
         "button_color": "#363636",
