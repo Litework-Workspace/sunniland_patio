@@ -29,13 +29,20 @@
             "title": "Do you ship to Canada?",
             "answer": "<p>Unfortunately, we only ship to the Continental US.<\/p>"
           }
+        },
+        "e662cf46-c59b-4d1e-a418-6c5745be154b": {
+          "type": "separator",
+          "settings": {
+            "title": "Fabric Related Questions"
+          }
         }
       },
       "block_order": [
         "761d5258-b42b-4cd9-b49c-4b13b9ba7cb2",
         "607850b5-67d3-4e2a-adf8-8d5ecc0a7b1e",
         "6c5a9679-710b-4a11-a8b3-1a8585e734c8",
-        "36e0693f-7e48-41f5-95c3-221cfc3d726a"
+        "36e0693f-7e48-41f5-95c3-221cfc3d726a",
+        "e662cf46-c59b-4d1e-a418-6c5745be154b"
       ],
       "settings": {
       }
