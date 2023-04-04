@@ -62,6 +62,13 @@
           "settings": {
             "title": "Warranty Related Questions"
           }
+        },
+        "6bd3e987-78b6-48bb-aed7-5570750e83b9": {
+          "type": "question",
+          "settings": {
+            "title": "Is there a warranty on replacement slings?",
+            "answer": "<p>We offer a 1 year warranty on workmanship.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -73,7 +80,8 @@
         "55a933b5-8768-42dd-b942-1015dac5126f",
         "4b7a40f5-8bb6-4a09-8217-93786d47347b",
         "58786611-adae-4173-b80f-b5bd17602047",
-        "6b72e191-3f6c-4aad-9cb4-1a9ca599af2b"
+        "6b72e191-3f6c-4aad-9cb4-1a9ca599af2b",
+        "6bd3e987-78b6-48bb-aed7-5570750e83b9"
       ],
       "settings": {
       }
