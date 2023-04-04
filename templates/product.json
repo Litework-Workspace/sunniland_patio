@@ -54,6 +54,22 @@
           "type": "reviews",
           "settings": {
           }
+        },
+        "7d9a9524-f2e9-42f1-9e7f-1d36b38e11f4": {
+          "type": "content",
+          "settings": {
+            "title": "Shipping",
+            "content": "<p>Shiping times are 6-8 weeks<\/p>",
+            "page": ""
+          }
+        },
+        "338c321b-e54c-4fe5-8667-bc595493dd2b": {
+          "type": "content",
+          "settings": {
+            "title": "FAQs",
+            "content": "<p>rkj.nwkjrntjkert<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -64,7 +80,9 @@
         "buy_buttons",
         "description",
         "share_buttons",
-        "69b5edb8-6071-4233-956f-022465ab5414"
+        "69b5edb8-6071-4233-956f-022465ab5414",
+        "7d9a9524-f2e9-42f1-9e7f-1d36b38e11f4",
+        "338c321b-e54c-4fe5-8667-bc595493dd2b"
       ],
       "settings": {
         "image_size": "large",
@@ -81,6 +99,7 @@
           "type": "collection",
           "settings": {
             "collection": "bar-stools",
+            "dynamic_collection": false,
             "title": "More from Telescope",
             "grid_items_count": 16,
             "button_text": ""
@@ -142,6 +161,7 @@
         "title": "Find Sunniland on Youtube",
         "content": "<p>Learn how to repair your patio furniture the easy way with our DIY video tutorials.<\/p>",
         "show_on_mobile": true,
+        "no_bottom_margin": true,
         "button_1_text": "Checkout Tutorials",
         "button_1_link": "",
         "button_2_text": "",
