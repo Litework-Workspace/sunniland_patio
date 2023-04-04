@@ -49,6 +49,13 @@
             "title": "I am clicking on a fabric choice and it will not add to the choice.",
             "answer": "<p>Please click on the fabric choice and add the product to your shopping cart and you will be able to see your fabric choice. <\/p>"
           }
+        },
+        "58786611-adae-4173-b80f-b5bd17602047": {
+          "type": "question",
+          "settings": {
+            "title": "What is the thickness of your vinyl strapping?",
+            "answer": "<p>It is .115\"<\/p>"
+          }
         }
       },
       "block_order": [
@@ -58,7 +65,8 @@
         "36e0693f-7e48-41f5-95c3-221cfc3d726a",
         "e662cf46-c59b-4d1e-a418-6c5745be154b",
         "55a933b5-8768-42dd-b942-1015dac5126f",
-        "4b7a40f5-8bb6-4a09-8217-93786d47347b"
+        "4b7a40f5-8bb6-4a09-8217-93786d47347b",
+        "58786611-adae-4173-b80f-b5bd17602047"
       ],
       "settings": {
       }
