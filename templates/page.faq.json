@@ -35,6 +35,13 @@
           "settings": {
             "title": "Fabric Related Questions"
           }
+        },
+        "55a933b5-8768-42dd-b942-1015dac5126f": {
+          "type": "question",
+          "settings": {
+            "title": "Is it possible to get samples of the different color vinyl straps?",
+            "answer": "<p>We can ship up to 3 samples to you for free, please email us at <strong>sales@sunnilandpatio.com<\/strong> your full address, and the colors that you would like us to ship to you.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -42,7 +49,8 @@
         "607850b5-67d3-4e2a-adf8-8d5ecc0a7b1e",
         "6c5a9679-710b-4a11-a8b3-1a8585e734c8",
         "36e0693f-7e48-41f5-95c3-221cfc3d726a",
-        "e662cf46-c59b-4d1e-a418-6c5745be154b"
+        "e662cf46-c59b-4d1e-a418-6c5745be154b",
+        "55a933b5-8768-42dd-b942-1015dac5126f"
       ],
       "settings": {
       }
