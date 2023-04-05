@@ -30,7 +30,7 @@
             "title": "The Easy Way",
             "content": "<p>Learn how to renew your patio furniture with our easy tutorials and repair parts or send it to our service center.<\/p>",
             "button_1_text": "Shop Parts",
-            "button_1_link": "#",
+            "button_1_link": "shopify:\/\/pages\/replacement-parts-sections",
             "button_2_text": "Service",
             "button_2_link": "#"
           }
