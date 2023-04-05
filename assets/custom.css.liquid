@@ -132,6 +132,9 @@ section#section-announcement {
   /* height: 10rem; */
   padding-bottom: 80px;
 }
+.Footer {
+  padding-top: 75px;
+}
 
 @media screen and (max-width: 641px) {
   .Footer_Upper{
@@ -550,7 +553,7 @@ section#section-announcement {
 
 
 .Image--contrast::after {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.50) 100%);
 }
 #Slideshow_Heading {
   margin-top: 0;
@@ -823,6 +826,7 @@ section.Section.main-collections-list {
 
 section[data-section-type="collection"] .SectionHeader__Description {
   margin-left: 0;
+  max-width: 90%;
 }
 section[data-section-type="collection"] .SectionHeader__Description p {
   text-align: start;
@@ -1175,6 +1179,7 @@ section[data-section-type="article-list"].blog-posts .ProductList--carousel .Car
   height: 35.08px;
   top: 358px;
   left: 75%;
+  z-index: 9;
 }
 
 .topics-text {
@@ -1568,6 +1573,18 @@ section.Section.Announcement_Banner {
 
 
 /* START Cart and Cart Drawer edits */
+.Cart .edit_cart_option.btn.btn--primary.button {
+  display: none !important;
+}
+.CartItem__Title {
+  font-size: 14px;
+}
+.CartItem__Meta, .CartItem__LinePriceList {
+  font-size: 13px;
+}
+.CartItem__Remove {
+  font-size: 12px;
+}
 @media screen and (max-width: 640px) {
   .Cart.Drawer__Content .QuantitySelector {
     width: 150px;
@@ -1595,4 +1612,11 @@ section.Section.Announcement_Banner {
 }
 /* END Page section edits */
 
+/* START Page section edits */
+@media screen and (min-width: 641px){
+  .AnnouncementBar {
+    font-size: 14px;
+  }
+}
+/* END Page section edits */
 

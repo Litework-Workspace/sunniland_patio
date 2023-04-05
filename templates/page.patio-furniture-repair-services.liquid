@@ -9,12 +9,27 @@
   }
 
   .lp-header {
-    background-image: url(https://cdn.shopify.com/s/files/1/1687/4361/files/Cover.png?v=1678312736);
+    {% comment %} background-image: url('https://cdn.shopify.com/s/files/1/1687/4361/files/Andover_Location_2019_3_1mobile_x800.jpg?v=1680227461'); {% endcomment %}
+    background-image: url('https://cdn.shopify.com/s/files/1/1687/4361/files/Andover_Location_2019_3_1800x.jpg?v=1680227250 1800w');
     background-size: cover;
     background-position: center;
     padding: 629px 169px 92px 169px;
     text-align: center;
-}
+  }
+  .lp-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Change the rgba values to set the overlay color and opacity */
+    z-index: 1;
+  }
+
+  .lp-header * {
+    position: relative;
+    z-index: 2;
   }
   .lp-header h1 {
     color: #ffffff;
@@ -35,6 +50,9 @@
     margin-bottom: 32px;
   }
   @media screen and (min-width: 641px){
+    .lp-header {
+      background-image: url('https://cdn.shopify.com/s/files/1/1687/4361/files/Andover_Location_2019_3_1800x.jpg?v=1680227250 1800w');
+    }
     .lp-header h2 {
       font-family: 'Figtree';
       font-style: normal;
@@ -65,6 +83,18 @@
       grid-gap:48px;
       {% comment %} max-width: 1024px; {% endcomment %}
     }
+    .FeaturedMap__Info {
+      flex: auto;
+    }
+    .FeaturedMap__MapContainer {
+      height: 300px;
+    }
+  }
+
+  @media screen and (min-width: 1441px){
+    .lp-adrian .Slideshow__Content {
+      margin: 0;
+    }
   }
 
   @media screen and (max-width: 640px) {
@@ -80,7 +110,7 @@
   
 
   .lp-half {
-    padding-top:80px;
+    {% comment %} padding-top:80px; {% endcomment %}
   }
 
   .lp-half .text-area h2 {
@@ -311,14 +341,16 @@
 
 <div class="lp-adrian">
 
-  <div class="lp-header container">
-    <div class="container" style="color: #ffffff;">
-      <h2 class="u-h1">Give your outdoor oasis a makeover with our patio furniture repair services.</h2>
-    </div>
-    <div class="SectionHeader__Description" style="color: #ffffff;">
-      <p>Easy pickup and delivery for Palm Beach County, Florida.</p>
-    </div>
-  </div>
+  {% comment %} <div class="lp-header container"> {% endcomment %}
+  {% comment %}   <div class="container" style="color: #ffffff;"> {% endcomment %}
+  {% comment %}     <h2 class="u-h1">Give your outdoor oasis a makeover with our patio furniture repair services.</h2> {% endcomment %}
+  {% comment %}   </div> {% endcomment %}
+  {% comment %}   <div class="SectionHeader__Description" style="color: #ffffff;"> {% endcomment %}
+  {% comment %}     <p>Easy pickup and delivery for Palm Beach County, Florida.</p> {% endcomment %}
+  {% comment %}   </div> {% endcomment %}
+  {% comment %} </div> {% endcomment %}
+
+  {% section 'slideshow' %}
 
   {% comment %} <div class="lp-interuption container">
     <div class="container">
@@ -333,7 +365,7 @@
     <div class="Container">
       <div class="text-area">
         <h2>Why replace your favorite garden furniture when you can just fix it?</h2>
-        <p style="font-family: 'Figtree';
+        <p style="font-family: 'Figtree';center
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
