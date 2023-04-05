@@ -339,6 +339,14 @@
                   {%- render 'product-form', block: block, product: product -%}
 
 
+                  {% assign min_q = 1 %}
+
+                  {% for collection in product.collections %}
+                    {% if collection.metafields.custom.min_order_quantity %}
+                    {% assign min_q = collection.metafields.custom.min_order_quantity %}
+                    {% endif %}
+                  {% endfor %}
+
                 <div class="Quantity_BuyButton-Container">
                 {%- when 'quantity_selector' -%}
                   <div class="ProductForm__QuantitySelector" {{ block.shopify_attributes }}>
@@ -349,9 +357,9 @@
                     <div class="QuantitySelector QuantitySelector--large">
                       {%- assign quantity_minus_one = line_item.quantity | minus: 1 -%}
 
-                      <button type="button" class="QuantitySelector__Button Link Link--secondary" style="border-right: 1px solid #000000;" data-action="decrease-quantity">{% render 'icon' with 'minus' %}</button>
+                      <button type="button" class="QuantitySelector__Button Link Link--secondary" style="border-right: 1px solid #000000;" {% if min_q == 25 %} data-action="decrease-quantity-unless-25" {% elsif min_q == 16 %} data-action="decrease-quantity-unless-16" {% else %} data-action="decrease-quantity" {% endif %} >{% render 'icon' with 'minus' %}</button>
                       {% comment %} <span>|</span> {% endcomment %}
-                      <input type="text" class="QuantitySelector__CurrentQuantity" pattern="[0-9]*" name="quantity" value="1" aria-label="{{ 'product.form.quantity' | t }}">
+                      <input type="text" class="QuantitySelector__CurrentQuantity" pattern="[0-9]*" name="quantity" {% if min_q > 1 %} value="{{ min_q }}" {% else %} value="1" {% endif %}  aria-label="{{ 'product.form.quantity' | t }}">
                       <button type="button" class="QuantitySelector__Button Link Link--secondary" style="border-left: 1px solid #000000;" data-action="increase-quantity">{% render 'icon' with 'plus' %}</button>
                     </div>
                   </div>

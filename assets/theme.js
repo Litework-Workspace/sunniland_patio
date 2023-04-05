@@ -2312,6 +2312,8 @@
       value: function _attachListeners() {
         this.delegateElement.on('click', '[data-action="add-to-cart"]', this._addToCart.bind(this));
         this.delegateElement.on('click', '[data-action="decrease-quantity"]', this._decreaseQuantity.bind(this));
+        this.delegateElement.on('click', '[data-action="decrease-quantity-unless-25"]', this._decreaseQuantityUnless25.bind(this));
+        this.delegateElement.on('click', '[data-action="decrease-quantity-unless-16"]', this._decreaseQuantityUnless16.bind(this));
         this.delegateElement.on('click', '[data-action="increase-quantity"]', this._increaseQuantity.bind(this));
         this.delegateElement.on('change', '[name="quantity"]', this._validateQuantity.bind(this)); // Hook when a radio button change
 
@@ -2687,6 +2689,24 @@
       key: "_decreaseQuantity",
       value: function _decreaseQuantity(event, target) {
         target.nextElementSibling.value = Math.max(parseInt(target.nextElementSibling.value) - 1, 1);
+      }
+      /**
+       * When using the quantity selector, this can be used to decrease the quantity (ensuring it won't be lower than 25)
+       */
+
+    }, {
+      key: "_decreaseQuantityUnless25",
+      value: function _decreaseQuantityUnless25(event, target) {
+        target.nextElementSibling.value = Math.max(parseInt(target.nextElementSibling.value) - 1, 25);
+      }
+      /**
+       * When using the quantity selector, this can be used to increase the quantity
+       */
+
+    }, {
+      key: "_decreaseQuantityUnless16",
+      value: function _decreaseQuantityUnless16(event, target) {
+        target.nextElementSibling.value = Math.max(parseInt(target.nextElementSibling.value) - 1, 16);
       }
       /**
        * When using the quantity selector, this can be used to increase the quantity
