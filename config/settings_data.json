@@ -208,6 +208,39 @@
           "button_link": "",
           "show_parallax": true
         }
+      },
+      "slideshow": {
+        "type": "slideshow",
+        "blocks": {
+          "093505c8-0851-49ab-b32e-ae60bdb74dcc": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Andover_Location_2019_3.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/Andover_Location_2019_3_1mobile.jpg",
+              "apply_overlay": true,
+              "content_position": "middleCenter",
+              "subheading": "",
+              "title": "Give your outdoor oasis a makeover with our patio furniture repair services.",
+              "content": "<p>Easy pickup and delivery for Palm Beach County, Florida.<\/p>",
+              "button_1_text": "",
+              "button_1_link": "",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "093505c8-0851-49ab-b32e-ae60bdb74dcc"
+        ],
+        "settings": {
+          "show_fullscreen": true,
+          "show_arrow": false,
+          "autoplay": true,
+          "cycle_speed": 5,
+          "text_color": "#ffffff",
+          "button_color": "#363636",
+          "button_background": "#ffffff"
+        }
       }
     },
     "content_for_index": [

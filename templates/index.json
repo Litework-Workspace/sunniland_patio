@@ -101,14 +101,14 @@
         "collection-2": {
           "type": "collection",
           "settings": {
-            "collection": "outdoor-seating",
+            "collection": "",
             "image": "shopify:\/\/shop_images\/La_vie_Wicker_01_2012_1.jpg",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
             "title": "",
             "button_text": "Outdoor Seating",
-            "button_link": "",
+            "button_link": "shopify:\/\/pages\/outdoor-seating",
             "apply_overlay": false
           }
         },
