@@ -129,14 +129,14 @@
         "30e05b38-a5f8-46b5-a504-caab5dfa4fe3": {
           "type": "collection",
           "settings": {
-            "collection": "patio-tables",
+            "collection": "",
             "image": "shopify:\/\/shop_images\/adirondack_mgp_sling_mahogany_1.jpg",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
             "title": "",
             "button_text": "Patio Tables",
-            "button_link": "",
+            "button_link": "shopify:\/\/pages\/patio-tables",
             "apply_overlay": false
           }
         },
