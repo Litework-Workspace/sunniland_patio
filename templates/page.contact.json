@@ -8,14 +8,14 @@
     "949d7309-4070-4914-94c9-8bc3d1354bcb": {
       "type": "map",
       "settings": {
-        "title": "Store name",
-        "address": "<p>123 Fake St. Toronto, Canada<\/p>",
-        "hours": "<p>Mon - Fri, 10am - 9pm<br>Saturday, 11am - 9pm<br>Sunday, 11am - 5pm<\/p>",
-        "map_address": "80 Spadina Ave, Toronto",
+        "title": "We are located at:",
+        "address": "<p>6101 N Federal Hwy. Boca Raton, Florida 33487<\/p>",
+        "hours": "<p>Our hours of working:<br\/>Monday-Saturday: 9:30 am–5:30 pm<br\/>Sunday: 12 pm–5:00 pm<\/p>",
+        "map_address": "6101 N Federal Hwy. Boca Raton, Florida 33487",
         "map_link_label": "Get directions",
-        "api_key": "",
+        "api_key": "AIzaSyAy84eJJGnNQySrJgpwEzin3k_Q5NavV9Y",
         "zoom": 14,
-        "map_style": "silver"
+        "map_style": "standard"
       }
     }
   },
