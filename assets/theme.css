@@ -11985,8 +11985,8 @@ shopify-payment-terms {
 /* END Edits to Collection List section */
 
 #dummy-chat-button-iframe {
-  display: none;
+  /* display: none; */
 }
 .ju_Con {
-  display: none !important;
+  /* display: none !important; */
 }
