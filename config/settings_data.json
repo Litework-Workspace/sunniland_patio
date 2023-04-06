@@ -162,8 +162,8 @@
       "map": {
         "type": "map",
         "settings": {
-          "title": "Address",
-          "address": "<p>We are located at:<br\/>6101 N Federal Hwy. Boca Raton, Florida 33487<\/p>",
+          "title": "We are located at:",
+          "address": "<p>6101 N Federal Hwy. Boca Raton, Florida 33487<\/p>",
           "hours": "<p>Our hours of working:<br\/>Monday-Saturday: 9:30 am–5:30 pm<br\/>Sunday: 12 pm–5:00 pm<\/p>",
           "map_address": "6101 N Federal Hwy. Boca Raton, Florida 33487",
           "map_link_label": "",
