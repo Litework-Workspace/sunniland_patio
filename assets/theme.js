@@ -2624,7 +2624,11 @@
       key: "_addToCart",
       value: function _addToCart(event) {
         var _this4 = this;
-
+const validateObjectData = validate_options(window.hulkapps.product_id);
+            const validateObjectValue = async () => {
+              const v = await validateObjectData;
+              if (v == true) {
+                
         if (!this.options['useAjaxCart']) {
           return; // When using a cart type of page, we just simply redirect to the cart page
         }
@@ -2674,6 +2678,11 @@
           }
         });
         event.preventDefault();
+
+        }
+            };
+            validateObjectValue();
+        
       }
       /**
        * ---------------------------------------------------------------------------------------------------

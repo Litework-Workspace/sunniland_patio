@@ -22,3 +22,45 @@
  *   bubbles: true
  * }));
  */
+
+// START Hulk options tweak to work with the variant options
+// function to match the selected hulk dropdown to the invisible shopify variant selector
+function syncHulkOptionWithVariant(){
+  const ogSelect = document.querySelector('.no-js.ProductForm__Option select');
+  if(!ogSelect){console.log('no select found'); return};
+
+  function callback(mutationList, observer) {
+    mutationList.forEach((mutation) => {
+      switch (mutation.type) {
+        case "childList":
+          // need to make it dynamically work with the umbrellas 
+          // https://www.sunnilandpatio.com/products/6-5-ft-square-frankford-patio-umbrella-crank-lift-wood-grain-frame?variant=40928161366127
+          const hulkSelect = document.querySelector('.hulkapps_option.dd_render select.hulkapps_option_child');
+          if(hulkSelect){
+            hulkSelect.addEventListener('change',e => {
+              const selectedValue = e.target.value;
+
+              for (const option of ogSelect.options) {
+                if (option.innerHTML.includes(selectedValue)) {
+                  ogSelect.value = option.value;
+                  break;
+                }
+              }
+            });
+            observer.disconnect();
+          }
+          break;
+      }
+    });
+  }
+  const targetNode = document.querySelector("body");
+  const observerOptions = {
+    childList: true,
+  };
+  const observer = new MutationObserver(callback);
+  observer.observe(targetNode, observerOptions);
+}
+document.addEventListener('DOMContentLoaded',e => {
+  syncHulkOptionWithVariant()
+})
+// END Hulk options tweak to work with the variant options
