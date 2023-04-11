@@ -25,9 +25,63 @@
 
 // START Hulk options tweak to work with the variant options
 // function to match the selected hulk dropdown to the invisible shopify variant selector
+function selectedHulkOptionVisualAid(hulkDropdownContainer,hulkSwatchContainer){
+  // console.log('selectedHulkOptionVisualAid init',hulkDropdownContainer,hulkSwatchContainer);
+  function addOptionName(container,optionString){
+    const optionContainer = container.querySelector('.selected-option-custom');
+    if(optionContainer){
+      optionContainer.innerHTML = optionString;
+    } else {
+      const optionHeader = container.querySelector('.hulkapps_option_name');
+      const newOptionContainer = document.createElement('span');
+      newOptionContainer.classList.add('selected-option-custom');
+      newOptionContainer.innerHTML = optionString;
+
+      optionHeader.insertAdjacentElement('afterend',newOptionContainer);
+    }
+  }
+
+  if(hulkDropdownContainer.length > 0){
+    hulkDropdownContainer.forEach(container => {
+      const hulkSelect = container.querySelector('select.hulkapps_option_child');
+      if(!hulkSelect){return};
+
+      hulkSelect.addEventListener('change',event => {
+        addOptionName(container,hulkSelect.value);
+      })
+      
+    })
+  }
+
+  if(hulkSwatchContainer.length > 0){
+    hulkSwatchContainer.forEach(container => {
+      const radioContainer = container.querySelectorAll('.hulk_po_radio.hulkapps_option_child');
+      if(radioContainer.length == 0){return};
+
+      radioContainer.forEach(radio => {
+        function radioCallback(mutationList, radioObserver) {
+          mutationList.forEach((mutation) => {
+            switch (mutation.type) {
+              case "attributes":
+                if(radio.classList.contains('swatch_selected')){
+                  addOptionName(container,radio.getAttribute('value'));
+                }
+                break
+            }
+          })
+        };
+        const radioObserverOptions = {
+          attributes: true
+        };
+        const radioObserver = new MutationObserver(radioCallback);
+        radioObserver.observe(radio, radioObserverOptions);
+      });
+    })
+  }
+}
 function syncHulkOptionWithVariant(){
   const ogSelect = document.querySelector('.no-js.ProductForm__Option select');
-  if(!ogSelect){console.log('no select found'); return};
+  // if(!ogSelect){console.log('no select found'); return};
 
   function callback(mutationList, observer) {
     mutationList.forEach((mutation) => {
@@ -36,7 +90,12 @@ function syncHulkOptionWithVariant(){
           // need to make it dynamically work with the umbrellas 
           // https://www.sunnilandpatio.com/products/6-5-ft-square-frankford-patio-umbrella-crank-lift-wood-grain-frame?variant=40928161366127
           const hulkSelect = document.querySelector('.hulkapps_option.dd_render select.hulkapps_option_child');
-          if(hulkSelect){
+          const hulkDropdownContainer = document.querySelectorAll('.hulkapps_option.dd_render');
+          const hulkSwatchContainer = document.querySelectorAll('.hulkapps_option.swatch_render');
+          if(hulkDropdownContainer.length > 0 || hulkSwatchContainer.length > 0){
+            selectedHulkOptionVisualAid(hulkDropdownContainer,hulkSwatchContainer);
+          };
+          if(hulkSelect && ogSelect){
             hulkSelect.addEventListener('change',e => {
               const selectedValue = e.target.value;
 
@@ -47,7 +106,6 @@ function syncHulkOptionWithVariant(){
                 }
               }
             });
-            observer.disconnect();
           }
           break;
       }
@@ -60,8 +118,10 @@ function syncHulkOptionWithVariant(){
   const observer = new MutationObserver(callback);
   observer.observe(targetNode, observerOptions);
 }
-document.addEventListener('DOMContentLoaded',e => {
-  syncHulkOptionWithVariant()
+document.addEventListener('DOMContentLoaded',function(){
+  if(location.href.includes(`/products/`)){
+    syncHulkOptionWithVariant()
+  }
 })
 // END Hulk options tweak to work with the variant options
 

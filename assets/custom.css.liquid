@@ -1610,7 +1610,15 @@ section.Section.Announcement_Banner {
 
 
 /* START PDP edits */
-
+.selected-option-custom {
+  display: block;
+  color: #78909C;
+  margin-bottom: 10px;
+}
+body .hulkapps_product_options .hulkapps_option_set .hulkapps_option .hulkapps_option_value .hulkapps_mswatch_option .swatch_selected::after, body .hulkapps_product_options .hulkapps_option_set .hulkapps_option .hulkapps_option_value .hulkapps_swatch_option .swatch_selected::after {
+  border-color: #DD2C00 !important;
+  border-width: 2px !important;
+}
 @media screen and (min-width: 1400px) {
   .Product {
     max-width: 1650px;
