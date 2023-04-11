@@ -25,44 +25,77 @@
 
 // START Hulk options tweak to work with the variant options
 // function to match the selected hulk dropdown to the invisible shopify variant selector
-function syncHulkOptionWithVariant(){
-  const ogSelect = document.querySelector('.no-js.ProductForm__Option select');
-  if(!ogSelect){console.log('no select found'); return};
+function createOrReplaceOptionName(container, optionString) {
+  let optionContainer = container.querySelector('.selected-option-custom');
+  if (!optionContainer) {
+    const optionHeader = container.querySelector('.hulkapps_option_name');
+    optionContainer = document.createElement('span');
+    optionContainer.classList.add('selected-option-custom');
+    optionHeader.insertAdjacentElement('afterend', optionContainer);
+  }
+  optionContainer.innerHTML = optionString;
+}
 
-  function callback(mutationList, observer) {
-    mutationList.forEach((mutation) => {
-      switch (mutation.type) {
-        case "childList":
-          // need to make it dynamically work with the umbrellas 
-          // https://www.sunnilandpatio.com/products/6-5-ft-square-frankford-patio-umbrella-crank-lift-wood-grain-frame?variant=40928161366127
-          const hulkSelect = document.querySelector('.hulkapps_option.dd_render select.hulkapps_option_child');
-          if(hulkSelect){
-            hulkSelect.addEventListener('change',e => {
-              const selectedValue = e.target.value;
+function attachEventListeners(container) {
+  const hulkSelect = container.querySelector('select.hulkapps_option_child');
+  const radioContainer = container.querySelectorAll('.hulk_po_radio.hulkapps_option_child');
 
-              for (const option of ogSelect.options) {
-                if (option.innerHTML.includes(selectedValue)) {
-                  ogSelect.value = option.value;
-                  break;
-                }
-              }
-            });
-            observer.disconnect();
+  if (hulkSelect) {
+    hulkSelect.addEventListener('change', event => {
+      createOrReplaceOptionName(container, hulkSelect.value);
+    });
+  } else if (radioContainer.length > 0) {
+    radioContainer.forEach(radio => {
+      const radioObserver = new MutationObserver(mutationList => {
+        mutationList.forEach(mutation => {
+          if (mutation.type === "attributes" && radio.classList.contains('swatch_selected')) {
+            createOrReplaceOptionName(container, radio.getAttribute('value'));
           }
-          break;
-      }
+        });
+      });
+      radioObserver.observe(radio, { attributes: true });
     });
   }
-  const targetNode = document.querySelector("body");
-  const observerOptions = {
-    childList: true,
-  };
-  const observer = new MutationObserver(callback);
-  observer.observe(targetNode, observerOptions);
 }
-document.addEventListener('DOMContentLoaded',e => {
-  syncHulkOptionWithVariant()
-})
+
+function syncHulkOptionWithVariant() {
+  const ogSelect = document.querySelector('.no-js.ProductForm__Option select');
+
+  const callback = mutationList => {
+    mutationList.forEach(mutation => {
+      if (mutation.type === "childList") {
+        const hulkContainers = [
+          ...document.querySelectorAll('.hulkapps_option.dd_render'),
+          ...document.querySelectorAll('.hulkapps_option.swatch_render')
+        ];
+        hulkContainers.forEach(attachEventListeners);
+
+        const hulkSelect = document.querySelector('.hulkapps_option.dd_render select.hulkapps_option_child');
+        if (hulkSelect && ogSelect) {
+          hulkSelect.addEventListener('change', e => {
+            const selectedValue = e.target.value;
+            for (const option of ogSelect.options) {
+              if (option.innerHTML.includes(selectedValue)) {
+                ogSelect.value = option.value;
+                break;
+              }
+            }
+          });
+        }
+      }
+    });
+  };
+
+  const targetNode = document.querySelector("body");
+  const observer = new MutationObserver(callback);
+  observer.observe(targetNode, { childList: true });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (location.href.includes(`/products/`)) {
+    syncHulkOptionWithVariant();
+  }
+});
 // END Hulk options tweak to work with the variant options
 
 // START Predictive Search Fix
