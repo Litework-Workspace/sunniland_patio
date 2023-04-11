@@ -441,8 +441,6 @@ section#section-announcement {
   }
 }
 
-
-
 .Search__Input {
   color: #CFD8DC !important;
   font-size: 16px;
@@ -482,6 +480,23 @@ section#section-announcement {
 }
 
 /* End of Header section editing */
+
+/* START Predictive Search edits */
+#Search .Search__SearchBar {
+  display: none;
+}
+#Search .Search__Inner {
+  padding: 0px;
+}
+#Search .Search__Results {
+  padding: 14px 18px;
+}
+@media screen and (min-width: 641px){
+  #Search .Search__Results {
+    padding: 20px 64px;
+  }
+}
+/* END Predictive Search edits */
 
 /* Start of Best Seller section editing */
 #Featured-Collections_Heading {

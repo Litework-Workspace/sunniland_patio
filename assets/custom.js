@@ -64,3 +64,49 @@ document.addEventListener('DOMContentLoaded',e => {
   syncHulkOptionWithVariant()
 })
 // END Hulk options tweak to work with the variant options
+
+// START Predictive Search Fix
+function linkAllSearchToMainSearch(){
+  const searchBars = document.querySelectorAll('.custom-search');
+  const mainSearchBar = document.querySelector('#Search');
+  const mainSearchBarInput = document.querySelector('#Search input.Search__Input');
+  if(!mainSearchBar || searchBars.length < 1){
+    console.log('No search bars'); return;
+  }
+
+  // trigger event listeners to the mainSearchBarInput to preserve all functionality
+  function dispatchKeydownEvent(event) {
+    mainSearchBarInput.value = event.target.value;
+    const changeEvent = new Event('change');
+    const keydownEvent = new KeyboardEvent('keydown', {
+      key: event.key,
+      code: event.code,
+      shiftKey: event.shiftKey,
+      altKey: event.altKey,
+      ctrlKey: event.ctrlKey,
+      metaKey: event.metaKey
+    });
+    const inputEvent = new Event("input", {
+      bubbles: true,
+      cancelable: true,
+    });
+    mainSearchBarInput.dispatchEvent(keydownEvent);
+    mainSearchBarInput.dispatchEvent(changeEvent);
+    mainSearchBarInput.dispatchEvent(inputEvent);
+  }
+
+  searchBars.forEach(el => {
+    el.querySelector('input.Search__Input').addEventListener('input',e => {
+      if(e.target.value){
+        mainSearchBar.setAttribute('aria-hidden','false');
+      } else {
+        mainSearchBar.setAttribute('aria-hidden','true');
+      };
+      dispatchKeydownEvent(e);
+    })
+  })
+}
+document.addEventListener('DOMContentLoaded',function(){
+  linkAllSearchToMainSearch();
+})
+// END Predictive Search Fix
