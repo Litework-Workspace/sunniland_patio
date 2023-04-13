@@ -1,0 +1,17 @@
+{%- comment -%}
+Variables:
+- product
+- show_price_in_button
+{%- endcomment -%}
+<button  type="submit" name="add" aria-label="Add to cart" class="ad_to_cart_coll ProductForm__AddToCart Button Button--secondary Button--full" id="ad_to_cart" aria-haspopup="dialog" data-add-to-cart="{{ product.variants.first.id }}" data-var_id="{{ product.variants.first.id }}">
+  {%- if product.selected_or_first_available_variant.available -%}
+    <span>{% if product.template_suffix == 'pre-order' %}{{ 'product.form.pre_order' | t }}{% else %}{{ 'product.form.add_to_cart' | t }}{% endif %}</span>
+
+    {%- if show_price_in_button -%}
+      <span class="Button__SeparatorDot"></span>
+      <span>{{ product.selected_or_first_available_variant.price | money }}</span>
+    {%- endif -%}
+  {%- else -%}
+    {{- 'product.form.sold_out' | t -}}
+  {%- endif -%}
+</button>

@@ -99,11 +99,11 @@ document.addEventListener('DOMContentLoaded', () => {
 // END Hulk options tweak to work with the variant options
 
 // START Predictive Search Fix
-function linkAllSearchToMainSearch(){
+function linkAllSearchToMainSearch() {
   const searchBars = document.querySelectorAll('.custom-search');
   const mainSearchBar = document.querySelector('#Search');
   const mainSearchBarInput = document.querySelector('#Search input.Search__Input');
-  if(!mainSearchBar || searchBars.length < 1){
+  if (!mainSearchBar || searchBars.length < 1) {
     console.log('No search bars'); return;
   }
 
@@ -129,17 +129,46 @@ function linkAllSearchToMainSearch(){
   }
 
   searchBars.forEach(el => {
-    el.querySelector('input.Search__Input').addEventListener('input',e => {
-      if(e.target.value){
-        mainSearchBar.setAttribute('aria-hidden','false');
+    el.querySelector('input.Search__Input').addEventListener('input', e => {
+      if (e.target.value) {
+        mainSearchBar.setAttribute('aria-hidden', 'false');
       } else {
-        mainSearchBar.setAttribute('aria-hidden','true');
+        mainSearchBar.setAttribute('aria-hidden', 'true');
       };
       dispatchKeydownEvent(e);
     })
   })
 }
-document.addEventListener('DOMContentLoaded',function(){
+document.addEventListener('DOMContentLoaded', function() {
   linkAllSearchToMainSearch();
 })
 // END Predictive Search Fix
+
+// START Cart Drawer fix
+$('.ad_to_cart_coll').click(function() {
+  var ID = $(this).attr("data-var_id");
+  addItemToCart(ID, 1);    // paste your id product number
+  $('.cart_dr').trigger("click");
+});
+function addItemToCart(variant_id, qty) {
+  data = {
+    "id": variant_id,
+    "quantity": qty
+  }
+  jQuery.ajax({
+    type: 'POST',
+    url: '/cart/add.js',
+    data: data,
+    dataType: 'json',
+    success: function() {
+      document.documentElement.dispatchEvent(new CustomEvent('cart:refresh', {
+        bubbles: true  //this code is for prestige theme, is to refresh the cart
+      }));
+      const cartIcon = document.querySelector('.Header__Cart-Icon');
+      if(cartIcon){
+        cartIcon.click();
+      }
+    }
+  });
+}
+// END Cart Drawer fix
