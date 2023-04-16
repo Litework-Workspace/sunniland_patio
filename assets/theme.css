@@ -3198,6 +3198,9 @@ select::-ms-expand {
     /* margin-right: 15.88px; */
     margin-left: 15.88px;
   }
+  .HorizontalList--spacingLoose .HorizontalList__Item:first-of-type {
+    margin-left: 0;
+  }
 }
 
 .HorizontalList--spacingExtraLoose {
@@ -10924,7 +10927,8 @@ shopify-payment-terms {
 }
 @media screen and (min-width: 641px) {
   .Search__Inner {
-    padding: 40px 64px 20px 131px;
+    margin: 0 auto;
+    padding: 40px 64px 20px 64px;
   }
 
   .Search__Input {

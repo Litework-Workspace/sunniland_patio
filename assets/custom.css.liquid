@@ -463,6 +463,20 @@ section#section-announcement {
   width: 20px;
   height: 20px;
 }
+.Header__Wrapper .Icon circle {
+  stroke-width: 1px;
+}
+.Header__Wrapper .Icon path {
+  stroke-width: 1px;
+}
+
+.Icon-Wrapper--clickable.social_media_icon svg {
+  width: 30px;
+  height: 30px;
+}
+.Icon-Wrapper--clickable.social_media_icon svg path {
+  fill: #000;
+}
 @media screen and (min-width: 641px) {
   .Search__Input {
     font-size: 14px;
@@ -475,6 +489,9 @@ section#section-announcement {
   }
 }
 @media screen and (max-width: 640px) {
+  .Header__Wrapper {
+    padding: 15px 18px 10px;
+  }
   .Header__FlexItem--fill:last-child {
     margin-top: 15px;
   }
@@ -609,8 +626,17 @@ section#section-announcement {
   line-height: 8px;
   bottom: 30px;
 }
+.js .Slideshow__Content .SectionHeader {
+  /* Turn on if you want the slide text to show before the lazyloaded image */
+  /* opacity: 1 !important; */
+  /* visibility: visible !important; */
+  /* transform: matrix(1, 0, 0, 1, 0, 0) !important; */
+}
 
 @media screen and (min-width: 641px) {
+  .Slideshow__Content {
+    margin-bottom: 120px;
+  }
   #Slideshow_Heading {
     font-size: 68px;
     line-height: 82px;
