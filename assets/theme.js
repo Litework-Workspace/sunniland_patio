@@ -5897,7 +5897,7 @@ const validateObjectData = validate_options(window.hulkapps.product_id);
 
             _this.element.parentNode.style.display = 'block'; // And finally let's create the carousel !
 
-            _this.carousel = new Carousel(_this.element.querySelector('[data-flickity-config]'));
+            // _this.carousel = new Carousel(_this.element.querySelector('[data-flickity-config]'));
           });
         });
       }
