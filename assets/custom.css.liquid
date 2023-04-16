@@ -255,6 +255,7 @@ section#section-announcement {
 }
 .links_container .Footer__Title, .Footer__Block.Footer__Block--links .Footer__Title {
   margin-bottom: 20px;
+  font-size: 23px;
 }
 .Footer__Inner .linklist_container .Linklist__Item,.Footer__Inner .Linklist .Linklist__Item {
   margin-bottom: 20px;
@@ -462,6 +463,20 @@ section#section-announcement {
   width: 20px;
   height: 20px;
 }
+.Header__Wrapper .Icon circle {
+  stroke-width: 1px;
+}
+.Header__Wrapper .Icon path {
+  stroke-width: 1px;
+}
+
+.Icon-Wrapper--clickable.social_media_icon svg {
+  width: 30px;
+  height: 30px;
+}
+.Icon-Wrapper--clickable.social_media_icon svg path {
+  fill: #000;
+}
 @media screen and (min-width: 641px) {
   .Search__Input {
     font-size: 14px;
@@ -474,6 +489,9 @@ section#section-announcement {
   }
 }
 @media screen and (max-width: 640px) {
+  .Header__Wrapper {
+    padding: 15px 18px 10px;
+  }
   .Header__FlexItem--fill:last-child {
     margin-top: 15px;
   }
@@ -608,8 +626,17 @@ section#section-announcement {
   line-height: 8px;
   bottom: 30px;
 }
+.js .Slideshow__Content .SectionHeader {
+  /* Turn on if you want the slide text to show before the lazyloaded image */
+  /* opacity: 1 !important; */
+  /* visibility: visible !important; */
+  /* transform: matrix(1, 0, 0, 1, 0, 0) !important; */
+}
 
 @media screen and (min-width: 641px) {
+  .Slideshow__Content {
+    margin-bottom: 120px;
+  }
   #Slideshow_Heading {
     font-size: 68px;
     line-height: 82px;
@@ -874,13 +901,13 @@ section[data-section-type="collection"] .SectionHeader__Description p {
   color: #FFFFFF;
 }
 
+.CollectionMain .Pagination {
+  display: flex;
+  justify-content: center;
+}
 @media screen and (max-width:641px){
   section.Section.Announcement_Banner .Rte p {
     padding: 20px 0;
-  }
-  .CollectionMain .Pagination {
-    display: flex;
-    justify-content: center;
   }
 }
 /* End of subcollection section editing */
@@ -1193,8 +1220,12 @@ section[data-section-type="article-list"].blog-posts .ProductList--carousel .Car
   width: 164px;
   height: 35.08px;
   top: 358px;
-  left: 75%;
+  left: unset;
+  right: -65px;
   z-index: 9;
+}
+.blog-topics-menu .hidden-phone {
+  display: none !important;
 }
 
 .topics-text {
@@ -1237,6 +1268,13 @@ section[data-section-type="article-list"].blog-posts .ProductList--carousel .Car
   color: #263238;
 }
 
+.Blog .ArticleItem__Excerpt {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 @media screen and (min-width: 641px) {
   .blog-posts .ArticleItem__Link {
     font-size: 15px;
@@ -1308,6 +1346,21 @@ section[data-section-type="article-list"].blog-posts .ProductList--carousel .Car
   font-size: 18px;
   line-height: 28px;
   color: #263238;
+}
+.Article__Body .video-container {
+  height: 350px;
+}
+.Article__Body .video-container iframe {
+  width: 100%;
+  height: 100%;
+}
+.Article__Footer svg path {
+  fill: #000 !important;
+}
+@media screen and (max-width:640px){
+  .Article__Body .video-container {
+    height: 250px;
+  }
 }
 
 /* End of Blog section */
@@ -1644,3 +1697,11 @@ body .hulkapps_product_options .hulkapps_option_set .hulkapps_option .hulkapps_o
 }
 /* END Page section edits */
 
+/* START RecentlyViewedProducts edits */
+.RecentlyViewedProducts .splide__arrow--prev {
+  left: 10px !important;
+}
+.RecentlyViewedProducts .splide__arrow--next {
+  right: 10px !important;
+}
+/* END RecentlyViewedProducts edits */
