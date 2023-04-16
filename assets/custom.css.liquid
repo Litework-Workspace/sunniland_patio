@@ -1220,8 +1220,12 @@ section[data-section-type="article-list"].blog-posts .ProductList--carousel .Car
   width: 164px;
   height: 35.08px;
   top: 358px;
-  left: 75%;
+  left: unset;
+  right: -65px;
   z-index: 9;
+}
+.blog-topics-menu .hidden-phone {
+  display: none !important;
 }
 
 .topics-text {
@@ -1264,6 +1268,13 @@ section[data-section-type="article-list"].blog-posts .ProductList--carousel .Car
   color: #263238;
 }
 
+.Blog .ArticleItem__Excerpt {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 @media screen and (min-width: 641px) {
   .blog-posts .ArticleItem__Link {
     font-size: 15px;
