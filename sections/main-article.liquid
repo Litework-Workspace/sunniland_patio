@@ -218,6 +218,38 @@
   {%- endif -%}
 </article>
 
+{% if section.settings.video_autoplay_mute %}
+  <script>
+    function addParamsToIframes() {
+      const iframes = document.querySelectorAll('.Article iframe');
+      console.log('addParamsToIframes init', iframes);
+
+      if (iframes.length == 0) {
+        console.log('no iframes');
+        return;
+      }
+
+      iframes.forEach(iframe => {
+        let src = iframe.getAttribute('src');
+        let hasQuestionMark = src.includes('?');
+
+        if (!src.includes('autoplay=1')) {
+          src += (hasQuestionMark ? '&' : '?') + 'autoplay=1';
+          hasQuestionMark = true;
+        }
+        if (!src.includes('mute=1')) {
+          src += (hasQuestionMark ? '&' : '?') + 'mute=1';
+        }
+
+        iframe.setAttribute('src', src);
+      });
+    }
+    document.addEventListener('DOMContentLoaded',function(){
+      addParamsToIframes();
+    })
+  </script>
+{% endif %}
+
 {% schema %}
 {
   "name": "Blog post page",
@@ -258,6 +290,13 @@
       "id": "show_prev_next",
       "label": "Show prev/next articles",
       "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "video_autoplay_mute",
+      "label": "Video iframes autoplay on mute",
+      "default": true,
+      "info": "This will add '?autoplay=1&amp;mute=1' to the end of any iframe source"
     }
   ]
 }
