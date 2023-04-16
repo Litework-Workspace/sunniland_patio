@@ -8464,15 +8464,20 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .Header__CartDot {
   position: absolute;
-  top: 2px;
+  top: 0px;
   right: -6px;
-  width: 8px;
-  height: 8px;
+  width: 12px;
+  height: 12px;
   border-radius: 100%;
   background-color: var(--header-heading-color);
   box-shadow: 0 0 0 2px var(--header-background);
   transform: scale(0);
   transition: all 0.3s ease-in-out;
+  color: #263238;
+  font-size: 10px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
 }
 
 .Header__CartDot.is-visible {
