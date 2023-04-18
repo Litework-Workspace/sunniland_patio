@@ -125,6 +125,8 @@
         </div>
       {%- endif -%}
 
+      {% if section.settings.show_comment_section %}
+        
       <div class="Article__CommentFormWrapper">
         {% if article.comments_count == 0 %}
           <span class="Anchor" id="comments"></span>
@@ -186,7 +188,8 @@
           <button type="submit" class="Form__Submit Button Button--primary">{{ 'blog.comments.submit' | t }}</button>
         {%- endform -%}
       </div>
-    
+    {% endif %}
+
   </div>
 
   {%- if section.settings.show_prev_next and blog.next_article or blog.previous_article -%}
@@ -257,6 +260,12 @@
       "type": "checkbox",
       "id": "show_prev_next",
       "label": "Show prev/next articles",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_comment_section",
+      "label": "Show comment section",
       "default": true
     }
   ]
