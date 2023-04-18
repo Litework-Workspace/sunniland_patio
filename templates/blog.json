@@ -57,7 +57,7 @@
         "show_tags": false,
         "show_featured_article": false,
         "show_category": false,
-        "use_blog_menu": false,
+        "use_blog_menu": true,
         "link_1_text": "A Guide To Patio Furniture Materials",
         "link_1": "#",
         "link_2_text": "The Guide to Patio Chair Repair",
