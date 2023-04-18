@@ -75,9 +75,11 @@
       <div id="DIY_Content" class="Article__Body" style="display: block;">
         {{ article.content }}
       </div>
-      <div id="DIY_Excerpt" class="Article__Body" style="display: none;">
-        {{ article.excerpt }}
-      </div>
+      {% if article.tags contains "DIY" %}
+        <div id="DIY_Excerpt" class="Article__Body" style="display: none;">
+          {{ article.excerpt }}
+        </div>
+      {% endif %}
 
       {%- capture article_footer -%}
         {%- if section.settings.show_author -%}
@@ -193,9 +195,11 @@
       </div>
     {% endif %}
 
-    {% unless article.excerpt == '' %}
-      <button onclick="content_or_excerpt()" class="DIY_Read-More" style="text-decoration: underline;">Read full article</button>
-    {% endunless %}
+    {% if article.tags contains "DIY" %}
+        {% unless article.excerpt == '' %}
+          <button onclick="content_or_excerpt()" class="DIY_Read-More" style="text-decoration: underline;">Read full article</button>
+        {% endunless %}
+    {% endif %}
 
   </div>
 
