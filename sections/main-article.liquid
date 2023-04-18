@@ -72,8 +72,11 @@
         <h1 class="Article__Title Heading u-h1">{{ article.title }}</h1>
       </header>
 
-      <div class="Article__Body">
+      <div id="DIY_Content" class="Article__Body" style="display: block;">
         {{ article.content }}
+      </div>
+      <div id="DIY_Excerpt" class="Article__Body" style="display: none;">
+        {{ article.excerpt }}
       </div>
 
       {%- capture article_footer -%}
@@ -190,6 +193,10 @@
       </div>
     {% endif %}
 
+    {% unless article.excerpt == '' %}
+      <button onclick="content_or_excerpt()" class="DIY_Read-More" style="text-decoration: underline;">Read full article</button>
+    {% endunless %}
+
   </div>
 
   {%- if section.settings.show_prev_next and blog.next_article or blog.previous_article -%}
@@ -220,6 +227,24 @@
     </aside>
   {%- endif -%}
 </article>
+
+<script type="text/javascript">
+  function content_or_excerpt() {
+    var content = document.getElementById('DIY_Content')
+    var excerpt = document.getElementById('DIY_Excerpt')
+    if (content.style.display == "block") {
+      content.style.display = 'none'
+      console.log("hide")
+      excerpt.style.display = 'block'
+    }
+    else if (content.style.display == 'none') {
+      content.style.display = "block"
+      console.log("show")
+      excerpt.style.display = "none"
+    }
+  }
+</script>
+
 
 {% schema %}
 {
