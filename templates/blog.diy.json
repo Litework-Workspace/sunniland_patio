@@ -6,14 +6,14 @@
         "template--17486863434024__ff851b78-819c-400c-b57c-6a1728170480-16766370017e5d33d8-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/850_2780_MOD_1.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/850_2780_MOD_1_1.jpg",
+            "image": "shopify:\/\/shop_images\/doityourself.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Image-3.jpg",
             "apply_overlay": true,
             "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "The Future Of Patio Furniture",
-            "content": "<p>With function and design in mind, here's 3 ways in which the patio furniture industry is going to change in the near future.<\/p>",
-            "button_1_text": "Read More",
+            "subheading": "Reuse, give a second life.",
+            "title": "Do It Yourself Patio Tutorials",
+            "content": "<p>Easy tutorials for at home patio furniture repairs<\/p>",
+            "button_1_text": "",
             "button_1_link": "",
             "button_2_text": "",
             "button_2_link": ""
