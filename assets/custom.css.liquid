@@ -1645,6 +1645,13 @@ body .hulkapps_product_options .hulkapps_option_set .hulkapps_option .hulkapps_o
 /* END Page section edits */
 
 /* Start DIY section edits */
+.Blog.DIY .FlexBlog {
+  padding: 0;
+}
+
+.Blog.DIY .blog-topics-menu {
+  display: none;
+}
 
 #DIY__Link {
   background: #263238;
@@ -1659,17 +1666,19 @@ body .hulkapps_product_options .hulkapps_option_set .hulkapps_option .hulkapps_o
   padding: 10px 20px;
 }
 
-#DIY_Post {
+.DIY_Post {
   background: #E1E4E6;
   width: 350px;
-  height: 435px;
+  height: unset;
 }
 
-#DIY_Post .ArticleItem__Content {
-  padding: 30px;
+.DIY_Post .ArticleItem__Content {
+  padding: 30px 30px 40px;
+  margin: 0;
+  height: unset;
 }
 
-#DIY_Post .ArticleItem__Content .ArticleItem__Title {
+.DIY_Post .ArticleItem__Content .ArticleItem__Title {
   font-family: 'Figtree';
   font-style: normal;
   font-weight: 400;
@@ -1677,10 +1686,24 @@ body .hulkapps_product_options .hulkapps_option_set .hulkapps_option .hulkapps_o
   line-height: 28px;
 }
 
-#DIY_Post .ArticleItem__Image {
+.DIY_Post .ArticleItem__Image {
   height: 250px;
 }
 
+.Grid__Cell .DIY_Post .ArticleItem__ImageWrapper {
+  width: unset;
+  margin: 0;
+}
+
+.DIY_Article .go-back-link {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.DIY_Article .go-back-link span {
+  margin-left: 10px;
+  text-decoration: underline;
+}
 
 /* End DIY section edits */
 
