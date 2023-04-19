@@ -58,16 +58,16 @@
     },
     "main": {
       "type": "main-contact",
+      "disabled": true,
       "settings": {
       }
     },
     "1ddf2a8b-0421-41fe-b9bf-fd09ffe57f58": {
       "type": "custom-liquid",
-      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "",
-        "liquid": ""
+        "liquid": "<div class=\"About-Us-Page\">\n  <div class=\"history_container\">\n    <div class=\"history_left\">\n      <h2 class=\"history_title\">History of Sunniland - The beginnings<\/h2>\n      <p class=\"history_content\">Founded in 1972, SunnilandPatio has been providing a superior level of service in patio retail for more than 50 years. \n      <br>\n      <br>\n      We have been helping homeowners just like you enjoy better outdoor living. Our reputation for integrity, quality, and reliability sets the standard for the rest of the retail patio industry.\n      <br>\n      <br>\n      Founded in 1972, SunnilandPatio has been providing a superior level of service in patio retail for more than 50 years. \n      <br>\n      <br>\n      We have been helping homeowners just like you enjoy better outdoor living. Our reputation for integrity, quality, and reliability sets the standard for the rest of the retail patio industry.<\/p>\n      <img src=\"{{ 'Frame-58.png' | asset_url }}\" alt=\"\">\n    <\/div>\n    <div class=\"history_right\">\n      <img src=\"{{ 'Group-3239.png' | asset_url }}\" alt=\"\">\n    <\/div>\n  <\/div>\n<\/div>"
       }
     }
   },
