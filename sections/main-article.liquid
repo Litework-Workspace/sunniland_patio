@@ -2,8 +2,14 @@
 {%- assign twitter_text = article.title -%}
 {%- assign pinterest_description = article.description | strip_html | truncatewords: 15 | url_param_escape -%}
 {%- assign pinterest_image = article.image | img_url: '750x' | prepend: 'https:' -%}
+{%- assign diy = false -%}
+{%- if article.tags contains 'DIY' -%}
+  {%- assign diy = true -%}
+  {%- assign diy_tag = 'DIY_Article' -%}
+{%- endif -%}
 
-<article class="Article" data-section-id="{{ section.id }}" data-section-type="article">
+
+<article class="Article {{ diy_tag }}" data-section-id="{{ section.id }}" data-section-type="article">
   <aside class="ArticleToolbar hidden-phone is-visible">
     <div class="ArticleToolbar__Left">
       <span class="Heading Text--subdued u-h8 hidden-tablet">{{ 'blog.article.now_reading' | t }}</span>
@@ -51,6 +57,14 @@
   {%- endif -%}
 
   <div class="Article__Wrapper">
+    {% if diy %}
+      <a class="go-back-link" href="javascript:history.go(-1)">
+        <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.62698 0L6.57273 1.00846L2.5603 5.28694H20V5.28699V6.71315V6.71319H2.56043L6.57273 10.9915L5.62698 12L-4.78394e-09 6L5.62698 0Z" fill="#263238"/>
+        </svg>
+        <span>Go Back</span>
+      </a>
+    {% endif %}
     <div class="Article__Content">
       <header class="Article__Header">
         {%- capture article_meta -%}
@@ -72,11 +86,11 @@
         <h1 class="Article__Title Heading u-h1">{{ article.title }}</h1>
       </header>
 
-      <div id="DIY_Content" class="Article__Body" style="display: block;">
+      <div {% if diy %}id="DIY_Content"{% endif %} class="Article__Body" {% if diy %}style="display: none;"{% endif %}>
         {{ article.content }}
       </div>
-      {% if article.tags contains "DIY" %}
-        <div id="DIY_Excerpt" class="Article__Body" style="display: none;">
+      {% if diy %}
+        <div id="DIY_Excerpt" class="Article__Body" style="display: block;">
           {{ article.excerpt }}
         </div>
       {% endif %}
@@ -245,6 +259,7 @@
       content.style.display = "block"
       console.log("show")
       excerpt.style.display = "none"
+      document.querySelector('.DIY_Read-More').style.display='none';
     }
   }
 </script>
