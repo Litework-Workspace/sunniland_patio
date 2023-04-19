@@ -48,14 +48,6 @@
         "button_background": "#ffffff"
       }
     },
-    "21142382-2973-4598-aa40-7716de1d85d0": {
-      "type": "custom-liquid",
-      "settings": {
-        "subheading": "",
-        "title": "Values We Believe",
-        "liquid": "<p>For the last 50 years we have been serving generations of families to build their dream patios. Inheriting the craft from his mother & father, Jeff Bender and his team of experts is here to help you find all your patio furniture and fixtures in one place!<\/p>"
-      }
-    },
     "main": {
       "type": "main-contact",
       "settings": {
@@ -64,7 +56,6 @@
   },
   "order": [
     "0fa506b9-dd53-4820-9bd4-5ba6acfaf728",
-    "21142382-2973-4598-aa40-7716de1d85d0",
     "main"
   ]
 }
