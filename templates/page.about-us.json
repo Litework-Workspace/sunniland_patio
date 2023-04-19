@@ -48,12 +48,6 @@
         "button_background": "#ffffff"
       }
     },
-    "main": {
-      "type": "main-contact",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "5ae26285-a365-4b5d-a251-df945c7dec62": {
       "type": "custom-liquid",
       "settings": {
@@ -61,11 +55,26 @@
         "title": "",
         "liquid": "<img src=\"{{ 'Group-3236.png' | asset_url }}\" alt=\"\">"
       }
+    },
+    "main": {
+      "type": "main-contact",
+      "settings": {
+      }
+    },
+    "1ddf2a8b-0421-41fe-b9bf-fd09ffe57f58": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": ""
+      }
     }
   },
   "order": [
     "0fa506b9-dd53-4820-9bd4-5ba6acfaf728",
+    "5ae26285-a365-4b5d-a251-df945c7dec62",
     "main",
-    "5ae26285-a365-4b5d-a251-df945c7dec62"
+    "1ddf2a8b-0421-41fe-b9bf-fd09ffe57f58"
   ]
 }
