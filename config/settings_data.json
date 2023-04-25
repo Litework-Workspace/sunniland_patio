@@ -591,5 +591,10 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".Form__Input {color: #546E7A;}"
+    ]
   }
 }
