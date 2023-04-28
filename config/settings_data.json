@@ -184,7 +184,7 @@
           "title": "",
           "content": "<p>Explore our wide range of patio furniture replacement parts, everything you'll need for easy DIY repairs.<\/p>",
           "button_label": "Shop Repair Parts",
-          "button_link": "",
+          "button_link": "shopify:\/\/collections\/all-parts",
           "show_parallax": false
         }
       },
@@ -206,7 +206,7 @@
           "title": "",
           "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
           "button_label": "Shop Replacement Cushions",
-          "button_link": "",
+          "button_link": "shopify:\/\/collections\/replacement-cushions",
           "show_parallax": true
         }
       },

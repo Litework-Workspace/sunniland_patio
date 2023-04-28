@@ -291,6 +291,7 @@ section#section-announcement {
 .Footer-Form_Input {
   border-radius: 5px;
   background: #ffffff;
+  color: var(--text-color);
 }
 
 /* .social_media_icon{
@@ -469,12 +470,16 @@ section#section-announcement {
 .Header__Wrapper .Icon path {
   stroke-width: 1px;
 }
+.Header__Wrapper .Icon.Icon--account path {
+  fill: none;
+  stroke-width: 1.5px;
+}
 
 .Icon-Wrapper--clickable.social_media_icon svg {
   width: 30px;
   height: 30px;
 }
-.Icon-Wrapper--clickable.social_media_icon svg path {
+#sidebar-menu .Icon-Wrapper--clickable.social_media_icon svg path {
   fill: #000;
 }
 @media screen and (min-width: 641px) {
@@ -644,6 +649,7 @@ section#section-announcement {
     margin-bottom: 20px !important
   }
   .SectionHeader__Description {
+    max-width: 672px;
     margin-bottom: 54px;
     .Carousel--insideDots .flickity-page-dots {
       bottom: 40px;
@@ -1275,6 +1281,10 @@ section[data-section-type="article-list"].blog-posts .ProductList--carousel .Car
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.Article__Wrapper .Form__Input, .Article__Wrapper .Form__Textarea {
+  border-color: #000 !important;
+}
 @media screen and (min-width: 641px) {
   .blog-posts .ArticleItem__Link {
     font-size: 15px;
@@ -1282,6 +1292,9 @@ section[data-section-type="article-list"].blog-posts .ProductList--carousel .Car
   }
 }
 @media screen and (max-width: 640px) {
+  .ArticleItem {
+    height: unset;
+  }
   .blog-posts .ArticleItem {
     width: 100%;
     height: unset;
@@ -1296,7 +1309,7 @@ section[data-section-type="article-list"].blog-posts .ProductList--carousel .Car
   .Blog_Menu {
     background:#E8E8E8;
     width: 392px;
-    height: 1148px;
+    height: min-content;
     padding: 40px 40px;
     margin-left: 40px;
   }
@@ -1427,8 +1440,11 @@ section.Section.Announcement_Banner {
   }
 }
 
+.ProductForm__BuyButtons {
+  width: 100%;
+}
 #main-product_buy {
-  width: 315px;
+  width: 100%;
   height: 50px;
 }
 
@@ -1436,6 +1452,22 @@ section.Section.Announcement_Banner {
 #main-prod-img {
   /* width: 608px; */
   /* height: 608px; */
+}
+
+@media screen and (min-width: 1008px) and (max-width: 1139px) {
+  .Product__Info {
+    padding-right: 25px;
+  } 
+}
+@media screen and (min-width: 1140px) {
+  .Product__Info {
+    margin-right: 25px;
+  } 
+}
+@media screen and (min-width: 1500px) {
+  .Product__Info {
+    margin-right: 50px;
+  } 
 }
 
 @media screen and (max-width: 641px) {
