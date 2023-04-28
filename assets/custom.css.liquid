@@ -474,7 +474,7 @@ section#section-announcement {
   width: 30px;
   height: 30px;
 }
-.Icon-Wrapper--clickable.social_media_icon svg path {
+#sidebar-menu .Icon-Wrapper--clickable.social_media_icon svg path {
   fill: #000;
 }
 @media screen and (min-width: 641px) {
@@ -1275,6 +1275,10 @@ section[data-section-type="article-list"].blog-posts .ProductList--carousel .Car
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.Article__Wrapper .Form__Input, .Article__Wrapper .Form__Textarea {
+  border-color: #000 !important;
+}
 @media screen and (min-width: 641px) {
   .blog-posts .ArticleItem__Link {
     font-size: 15px;
@@ -1296,7 +1300,7 @@ section[data-section-type="article-list"].blog-posts .ProductList--carousel .Car
   .Blog_Menu {
     background:#E8E8E8;
     width: 392px;
-    height: 1148px;
+    height: min-content;
     padding: 40px 40px;
     margin-left: 40px;
   }
