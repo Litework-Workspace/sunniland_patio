@@ -1291,6 +1291,9 @@ section[data-section-type="article-list"].blog-posts .ProductList--carousel .Car
   }
 }
 @media screen and (max-width: 640px) {
+  .ArticleItem {
+    height: unset;
+  }
   .blog-posts .ArticleItem {
     width: 100%;
     height: unset;
@@ -1436,8 +1439,11 @@ section.Section.Announcement_Banner {
   }
 }
 
+.ProductForm__BuyButtons {
+  width: 100%;
+}
 #main-product_buy {
-  width: 315px;
+  width: 100%;
   height: 50px;
 }
 
@@ -1445,6 +1451,22 @@ section.Section.Announcement_Banner {
 #main-prod-img {
   /* width: 608px; */
   /* height: 608px; */
+}
+
+@media screen and (min-width: 1008px) and (max-width: 1139px) {
+  .Product__Info {
+    padding-right: 25px;
+  } 
+}
+@media screen and (min-width: 1140px) {
+  .Product__Info {
+    margin-right: 25px;
+  } 
+}
+@media screen and (min-width: 1500px) {
+  .Product__Info {
+    margin-right: 50px;
+  } 
 }
 
 @media screen and (max-width: 641px) {
