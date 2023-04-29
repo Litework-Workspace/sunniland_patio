@@ -17,7 +17,7 @@
   <div class="Container history_container">
     <div class="history_left">
         <h2 class="history_title">{{ title }}</h2>
-        <p class="history_content">{{ content }}</p>
+        <div class="history_content">{{ content }}</div>
         <img src="{{ image | img_url: '608x270' }}" alt="">
     </div>
     <div class="history_right">
@@ -43,10 +43,10 @@
             "default": "Title"
           },
           {
-            "type": "textarea",
+            "type": "richtext",
             "id": "content",
             "label": "Text",
-            "default": "Add your own custom content to give more information about your store, availability details..."
+            "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
           },
           {
             "type": "image_picker",
