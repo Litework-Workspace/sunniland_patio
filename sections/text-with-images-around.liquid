@@ -19,7 +19,7 @@
       <div class="history_left">
           <h2 class="about-us-titles">{{ title }}</h2>
           <div class="history_content">{{ content }}</div>
-          <img src="{{ image | img_url: '608x270' }}" alt="">
+          <img class="img-under-text" src="{{ image | img_url: '608x270' }}" alt="">
       </div>
       <div class="history_right">
           <img src="{{ side_image | img_url: '608x864' }}" alt="">
@@ -31,7 +31,7 @@
       <div class="history_right">
           <h2 class="history_title">{{ title }}</h2>
           <div class="history_content">{{ content }}</div>
-          <img src="{{ image | img_url: '608x270' }}" alt="">
+          <img class="img-under-text" src="{{ image | img_url: '608x270' }}" alt="">
       </div>
     {% endunless %}
   </div>
