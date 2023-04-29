@@ -1,7 +1,34 @@
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Image(No text)",
+    "settings": [
+      {
+      "type": "select",
+      "id": "section_size",
+      "label": "Section size",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "large"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "1500 x 800px .jpg recommended"
+    }
+    ]
   }
 {% endschema %}
 
