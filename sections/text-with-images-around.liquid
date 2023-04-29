@@ -1,11 +1,11 @@
 <section class="Section text-with-images-around" id="section-{{ section.id }}">
   <div class="Container history_container">
-    <div class="history_left">
+    <div class="history_text-w-image">
       <h2 class="history_title">{{ section.settings.title }}</h2>
       <p class="history_content">{{ section.settings.content }}</p>
       <img src="{{ section.settings.image | img_url: 'medium' }}" alt="">
     </div>
-    <div class="history_right">
+    <div class="history_image-only">
       <img src="{{ section.settings.side_image }}" alt="">
     </div>
   </div>
