@@ -50,6 +50,7 @@
     },
     "5ae26285-a365-4b5d-a251-df945c7dec62": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "",
@@ -64,10 +65,45 @@
     },
     "1ddf2a8b-0421-41fe-b9bf-fd09ffe57f58": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "",
         "liquid": "<div class=\"About-Us-Page\">\n  <div class=\"history_container\">\n    <div class=\"history_left\">\n      <h2 class=\"history_title\">History of Sunniland - The beginnings<\/h2>\n      <p class=\"history_content\">Founded in 1972, SunnilandPatio has been providing a superior level of service in patio retail for more than 50 years. \n      <br>\n      <br>\n      We have been helping homeowners just like you enjoy better outdoor living. Our reputation for integrity, quality, and reliability sets the standard for the rest of the retail patio industry.\n      <br>\n      <br>\n      Founded in 1972, SunnilandPatio has been providing a superior level of service in patio retail for more than 50 years. \n      <br>\n      <br>\n      We have been helping homeowners just like you enjoy better outdoor living. Our reputation for integrity, quality, and reliability sets the standard for the rest of the retail patio industry.<\/p>\n      <img src=\"{{ 'Frame-58.png' | asset_url }}\" alt=\"\">\n    <\/div>\n    <div class=\"history_right\">\n      <img src=\"{{ 'Group-3239.png' | asset_url }}\" alt=\"\">\n    <\/div>\n  <\/div>\n<\/div>"
+      }
+    },
+    "a6a48eb5-1dfc-435e-87da-0731a305ec4a": {
+      "type": "image-with-text-ontop",
+      "settings": {
+        "title": "Values We Believe",
+        "content": "<p>For the last 50 years we have been serving generations of families to build their dream patios. Inheriting the craft from his mother & father, Jeff Bender and his team of experts is here to help you find all your patio furniture and fixtures in one place!<\/p>",
+        "image": "shopify:\/\/shop_images\/Frame_55.png"
+      }
+    },
+    "86a452f9-cefb-4d72-a1a7-c5faca8c7a7c": {
+      "type": "text-with-images-around",
+      "blocks": {
+        "template--18678088139048__86a452f9-cefb-4d72-a1a7-c5faca8c7a7c-1682793290834f274a-0": {
+          "type": "richtext",
+          "settings": {
+            "title": "History of Sunniland - The beginnings",
+            "content": "<p>Founded in 1972, SunnilandPatio has been providing a superior level of service in patio retail for more than 50 years. <br\/><br\/>We have been helping homeowners just like you enjoy better outdoor living. Our reputation for integrity, quality, and reliability sets the standard for the rest of the retail patio industry.<br\/><br\/>Founded in 1972, SunnilandPatio has been providing a superior level of service in patio retail for more than 50 years. <br\/><br\/>We have been helping homeowners just like you enjoy better outdoor living. Our reputation for integrity, quality, and reliability sets the standard for the rest of the retail patio industry.<\/p>",
+            "image": "shopify:\/\/shop_images\/Frame-58_2f7a7a61-dfcb-4fe6-9a33-c944d30346d3.png"
+          }
+        },
+        "template--18678088139048__86a452f9-cefb-4d72-a1a7-c5faca8c7a7c-1682793290834f274a-1": {
+          "type": "image",
+          "settings": {
+            "side_image": "shopify:\/\/shop_images\/Group_3239.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--18678088139048__86a452f9-cefb-4d72-a1a7-c5faca8c7a7c-1682793290834f274a-0",
+        "template--18678088139048__86a452f9-cefb-4d72-a1a7-c5faca8c7a7c-1682793290834f274a-1"
+      ],
+      "settings": {
+        "flip": false
       }
     }
   },
@@ -75,6 +111,8 @@
     "0fa506b9-dd53-4820-9bd4-5ba6acfaf728",
     "5ae26285-a365-4b5d-a251-df945c7dec62",
     "main",
-    "1ddf2a8b-0421-41fe-b9bf-fd09ffe57f58"
+    "1ddf2a8b-0421-41fe-b9bf-fd09ffe57f58",
+    "a6a48eb5-1dfc-435e-87da-0731a305ec4a",
+    "86a452f9-cefb-4d72-a1a7-c5faca8c7a7c"
   ]
 }
