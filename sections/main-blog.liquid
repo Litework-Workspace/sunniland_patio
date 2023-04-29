@@ -46,12 +46,7 @@
                       {{ 'collection.sorting.title' | t }} {% render 'icon' with 'select-arrow' %}
                   </button>
                 </div>
-                <div class="CollectionToolbar__Item CollectionToolbar__Item--layout">
-                  <div class="CollectionToolbar__LayoutSwitch hidden-tablet-and-up">
-                    <button aria-label="{{ 'collection.layout.show_one_per_row' | t }}" class="CollectionToolbar__LayoutType {% if mobile_items_per_row == 1 %}is-active{% endif %}" data-action="change-layout-mode" data-grid-type="mobile" data-count="1">{% render 'icon' with 'wall-1' %}</button>
-                    <button aria-label="{{ 'collection.layout.show_two_per_row' | t }}" class="CollectionToolbar__LayoutType {% if mobile_items_per_row == 2 %}is-active{% endif %}" data-action="change-layout-mode" data-grid-type="mobile" data-count="2">{% render 'icon' with 'wall-2' %}</button>
-                  </div>
-
+                <div class="CollectionToolbar__Item CollectionToolbar__Item--layout hidden-phone">
                   <div class="CollectionToolbar__LayoutSwitch hidden-phone">
                     <button aria-label="{{ 'collection.layout.show_two_per_row' | t }}" class="CollectionToolbar__LayoutType {% if desktop_items_per_row == 2 %}is-active{% endif %}" data-action="change-layout-mode" data-grid-type="desktop" data-count="2">{% render 'icon' with 'wall-2' %}</button>
                     <button aria-label="{{ 'collection.layout.show_four_per_row' | t }}" class="CollectionToolbar__LayoutType {% if desktop_items_per_row >= 3 %}is-active{% endif %}" data-action="change-layout-mode" data-grid-type="desktop" data-count="{{ section.settings.grid_desktop_items_per_row }}">{% render 'icon' with 'wall-4' %}</button>
