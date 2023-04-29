@@ -90,14 +90,6 @@
     border-radius: 50px
   }
   
-  {% unless section.settings.show_on_mobile %}
-    @media screen and (max-width:640px){
-      #section-{{ section.id }} {
-        display: none !important;
-        margin-bottom: 0 !important;
-      }
-    }
-  {% endunless %}
   {% if section.settings.no_bottom_margin == true %}
     section#section-{{ section.id }} {
       margin-bottom: 0 !important;

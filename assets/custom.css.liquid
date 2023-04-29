@@ -255,7 +255,6 @@ section#section-announcement {
 }
 .links_container .Footer__Title, .Footer__Block.Footer__Block--links .Footer__Title {
   margin-bottom: 20px;
-  font-size: 23px;
 }
 .Footer__Inner .linklist_container .Linklist__Item,.Footer__Inner .Linklist .Linklist__Item {
   margin-bottom: 20px;
@@ -291,7 +290,6 @@ section#section-announcement {
 .Footer-Form_Input {
   border-radius: 5px;
   background: #ffffff;
-  color: var(--text-color);
 }
 
 /* .social_media_icon{
@@ -464,24 +462,6 @@ section#section-announcement {
   width: 20px;
   height: 20px;
 }
-.Header__Wrapper .Icon circle {
-  stroke-width: 1px;
-}
-.Header__Wrapper .Icon path {
-  stroke-width: 1px;
-}
-.Header__Wrapper .Icon.Icon--account path {
-  fill: none;
-  stroke-width: 1.5px;
-}
-
-.Icon-Wrapper--clickable.social_media_icon svg {
-  width: 30px;
-  height: 30px;
-}
-#sidebar-menu .Icon-Wrapper--clickable.social_media_icon svg path {
-  fill: #000;
-}
 @media screen and (min-width: 641px) {
   .Search__Input {
     font-size: 14px;
@@ -494,9 +474,6 @@ section#section-announcement {
   }
 }
 @media screen and (max-width: 640px) {
-  .Header__Wrapper {
-    padding: 15px 18px 10px;
-  }
   .Header__FlexItem--fill:last-child {
     margin-top: 15px;
   }
@@ -631,17 +608,8 @@ section#section-announcement {
   line-height: 8px;
   bottom: 30px;
 }
-.js .Slideshow__Content .SectionHeader {
-  /* Turn on if you want the slide text to show before the lazyloaded image */
-  /* opacity: 1 !important; */
-  /* visibility: visible !important; */
-  /* transform: matrix(1, 0, 0, 1, 0, 0) !important; */
-}
 
 @media screen and (min-width: 641px) {
-  .Slideshow__Content {
-    margin-bottom: 120px;
-  }
   #Slideshow_Heading {
     font-size: 68px;
     line-height: 82px;
@@ -649,7 +617,6 @@ section#section-announcement {
     margin-bottom: 20px !important
   }
   .SectionHeader__Description {
-    max-width: 672px;
     margin-bottom: 54px;
     .Carousel--insideDots .flickity-page-dots {
       bottom: 40px;
@@ -907,13 +874,13 @@ section[data-section-type="collection"] .SectionHeader__Description p {
   color: #FFFFFF;
 }
 
-.CollectionMain .Pagination {
-  display: flex;
-  justify-content: center;
-}
 @media screen and (max-width:641px){
   section.Section.Announcement_Banner .Rte p {
     padding: 20px 0;
+  }
+  .CollectionMain .Pagination {
+    display: flex;
+    justify-content: center;
   }
 }
 /* End of subcollection section editing */
@@ -1226,12 +1193,8 @@ section[data-section-type="article-list"].blog-posts .ProductList--carousel .Car
   width: 164px;
   height: 35.08px;
   top: 358px;
-  left: unset;
-  right: -65px;
+  left: 75%;
   z-index: 9;
-}
-.blog-topics-menu .hidden-phone {
-  display: none !important;
 }
 
 .topics-text {
@@ -1274,17 +1237,6 @@ section[data-section-type="article-list"].blog-posts .ProductList--carousel .Car
   color: #263238;
 }
 
-.Blog .ArticleItem__Excerpt {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.Article__Wrapper .Form__Input, .Article__Wrapper .Form__Textarea {
-  border-color: #000 !important;
-}
 @media screen and (min-width: 641px) {
   .blog-posts .ArticleItem__Link {
     font-size: 15px;
@@ -1292,9 +1244,6 @@ section[data-section-type="article-list"].blog-posts .ProductList--carousel .Car
   }
 }
 @media screen and (max-width: 640px) {
-  .ArticleItem {
-    height: unset;
-  }
   .blog-posts .ArticleItem {
     width: 100%;
     height: unset;
@@ -1309,7 +1258,7 @@ section[data-section-type="article-list"].blog-posts .ProductList--carousel .Car
   .Blog_Menu {
     background:#E8E8E8;
     width: 392px;
-    height: min-content;
+    height: 1148px;
     padding: 40px 40px;
     margin-left: 40px;
   }
@@ -1347,7 +1296,7 @@ section[data-section-type="article-list"].blog-posts .ProductList--carousel .Car
   font-family: 'Figtree';
   font-style: normal;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 25px !important;
   line-height: 35px;
   color: #263238;
 }
@@ -1355,25 +1304,10 @@ section[data-section-type="article-list"].blog-posts .ProductList--carousel .Car
 .Article__Body {
   font-family: 'Figtree';
   font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 400 !important;
+  font-size: 18px !important;
   line-height: 28px;
   color: #263238;
-}
-.Article__Body .video-container {
-  height: 350px;
-}
-.Article__Body .video-container iframe {
-  width: 100%;
-  height: 100%;
-}
-.Article__Footer svg path {
-  fill: #000 !important;
-}
-@media screen and (max-width:640px){
-  .Article__Body .video-container {
-    height: 250px;
-  }
 }
 
 /* End of Blog section */
@@ -1440,11 +1374,8 @@ section.Section.Announcement_Banner {
   }
 }
 
-.ProductForm__BuyButtons {
-  width: 100%;
-}
 #main-product_buy {
-  width: 100%;
+  width: 315px;
   height: 50px;
 }
 
@@ -1452,22 +1383,6 @@ section.Section.Announcement_Banner {
 #main-prod-img {
   /* width: 608px; */
   /* height: 608px; */
-}
-
-@media screen and (min-width: 1008px) and (max-width: 1139px) {
-  .Product__Info {
-    padding-right: 25px;
-  } 
-}
-@media screen and (min-width: 1140px) {
-  .Product__Info {
-    margin-right: 25px;
-  } 
-}
-@media screen and (min-width: 1500px) {
-  .Product__Info {
-    margin-right: 50px;
-  } 
 }
 
 @media screen and (max-width: 641px) {
@@ -1729,11 +1644,114 @@ body .hulkapps_product_options .hulkapps_option_set .hulkapps_option .hulkapps_o
 }
 /* END Page section edits */
 
-/* START RecentlyViewedProducts edits */
-.RecentlyViewedProducts .splide__arrow--prev {
-  left: 10px !important;
+/* Start DIY section edits */
+.Blog.DIY .FlexBlog {
+  padding: 0;
 }
-.RecentlyViewedProducts .splide__arrow--next {
-  right: 10px !important;
+
+.Blog.DIY .blog-topics-menu {
+  display: none;
 }
-/* END RecentlyViewedProducts edits */
+
+#DIY__Link {
+  background: #263238;
+  color: #FFFFFF;
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  width: 113px;
+  height: 40px;
+  padding: 10px 20px;
+}
+
+.DIY_Post {
+  background: #E1E4E6;
+  width: 350px;
+  height: unset;
+}
+
+.DIY_Post .ArticleItem__Content {
+  padding: 30px 30px 40px;
+  margin: 0;
+  height: unset;
+}
+
+.DIY_Post .ArticleItem__Content .ArticleItem__Title {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.DIY_Post .ArticleItem__Image {
+  height: 250px;
+}
+
+.Grid__Cell .DIY_Post .ArticleItem__ImageWrapper {
+  width: unset;
+  margin: 0;
+}
+
+.DIY_Article .go-back-link {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.DIY_Article .go-back-link span {
+  margin-left: 10px;
+  text-decoration: underline;
+}
+
+/* End DIY section edits */
+
+/* Start About Us section edits */
+
+.history_container {
+  display: flex;
+  padding: 100px;
+  background: #F1F1F1;
+}
+
+.history_right {
+  margin-left: 30px;
+}
+
+.history_right img {
+  width: 608px;
+  height: 100%;
+}
+
+.history_content {
+  margin-bottom: 180px;
+  width: 608px;
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.history_title {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 35px;
+  color: #263238;
+}
+
+
+
+/* End About Us section edits */
+
+
+
+
+
+
+
+

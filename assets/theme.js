@@ -1888,8 +1888,10 @@
           }
 
           if (formElement.name && !formElement.disabled && (formElement.checked || /select|textarea/i.test(formElement.nodeName) || /hidden|text|search|tel|url|email|password|datetime|date|month|week|time|datetime-local|number|range|color/i.test(formElement.type))) {
-            var stringKeys = stringKey(formElement.name, formElement.value);
-            hash = Form.extend(hash, stringKeys);
+              if(formElement.value != ''){
+                var stringKeys = stringKey(formElement.name, formElement.value);
+                hash = Form.extend(hash, stringKeys);
+              }
           }
         }
 
@@ -5897,7 +5899,7 @@ const validateObjectData = validate_options(window.hulkapps.product_id);
 
             _this.element.parentNode.style.display = 'block'; // And finally let's create the carousel !
 
-            // _this.carousel = new Carousel(_this.element.querySelector('[data-flickity-config]'));
+            _this.carousel = new Carousel(_this.element.querySelector('[data-flickity-config]'));
           });
         });
       }
@@ -6413,9 +6415,7 @@ const validateObjectData = validate_options(window.hulkapps.product_id);
         onSelect: this._onSlideChanged.bind(this)
       });
       this.selectedSlide = null;
-      // turned off slideshow animation per client request
-      // this.shouldAnimate = true;
-      this.shouldAnimate = false;
+      this.shouldAnimate = true;
       this.timeline = new TimelineLite({
         delay: window.theme.showPageTransition ? 0.5 : 0
       });
