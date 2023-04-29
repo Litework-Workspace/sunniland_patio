@@ -25,19 +25,19 @@
       <div class="history_left">
           <h2 class="about-us-titles">{{ title }}</h2>
           <div class="history_content">{{ content }}</div>
-          <img class="img-under-text" src="{{ image | img_url: '608x270' }}" alt="">
+          <img class="img-under-text" src="{{ image | img_url: 'master' }}" alt="">
       </div>
       <div class="history_right">
-          <img src="{{ side_image | img_url: '608x864' }}" alt="">
+          <img src="{{ side_image | img_url: 'master' }}" alt="">
       </div>
       {% else %}
       <div class="history_left">
-          <img src="{{ side_image | img_url: '608x864' }}" alt="">
+          <img src="{{ side_image | img_url: 'master' }}" alt="">
       </div>
       <div class="history_right">
           <h2 class="about-us-titles">{{ title }}</h2>
           <div class="history_content">{{ content }}</div>
-          <img class="img-under-text" src="{{ image | img_url: '608x270' }}" alt="">
+          <img class="img-under-text" src="{{ image | img_url: 'master' }}" alt="">
       </div>
     {% endunless %}
   </div>
