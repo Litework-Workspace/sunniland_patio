@@ -1708,73 +1708,108 @@ body .hulkapps_product_options .hulkapps_option_set .hulkapps_option .hulkapps_o
 /* End DIY section edits */
 
 /* Start About Us section edits */
-
-.history_container {
-  display: flex;
-  padding: 100px;
-  background: #F1F1F1;
-}
-
-.history_right {
-  margin-left: 30px;
-  position: relative;
-}
-
-.history_right img {
-  width: 608px;
-  /* height: 100%; */
-}
-
-.history_content {
-  /* margin-bottom: 180px; */
-  width: 608px;
-  font-family: 'Figtree';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
-  color: #000000;
-}
-
-.about-us-titles {
-  font-family: 'Figtree';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 35px;
-  color: #263238;
-}
-
-.about-us_content {
-  width: 768px;
-  height: 84px;
-
-  font-family: 'Figtree';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
+@media screen and (min-width: 642px;) {
   
-  text-align: center;
+  .history_container {
+    display: flex;
+    padding: 100px;
+    background: #F1F1F1;
+  }
   
-  color: #263238;
+  .history_right {
+    margin-left: 30px;
+    position: relative;
+  }
+  
+  .history_right img {
+    width: 608px;
+    /* height: 100%; */
+  }
+  
+  .history_content {
+    /* margin-bottom: 180px; */
+    width: 608px;
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+  }
+  
+  .about-us-titles {
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 35px;
+    color: #263238;
+  }
+  
+  .about-us_content {
+    width: 768px;
+    height: 84px;
+  
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    
+    text-align: center;
+    
+    color: #263238;
+  }
+  
+  .Values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 55px;
+  }
+  
+  .img-under-text {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .history_left {
+    position: relative;
+  }
 }
 
-.Values {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 55px;
+
+@media screen and (max-width: 641px ) {
+  .history_container {
+    background: #F1F1F1;
+  }
+
+  .about-us-titles {
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 35px;
+    color: #263238;
+    margin-top: 21px;
+  }
+
+  .history_content {
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 31px;
+  }
+
+  .top-mobile-image {
+    margin-bottom: 25px;
+  }
+
 }
 
-.img-under-text {
-  position: absolute;
-  bottom: 0;
-}
-
-.history_left {
-  position: relative;
-}
 
 /* End About Us section edits */
 

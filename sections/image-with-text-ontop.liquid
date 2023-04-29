@@ -1,12 +1,13 @@
 <section class="image-with-text-on-top" id="section-{{ section.id }}">
   <div class="Container values-container">
-    <div class="Values">
+    <div class="Values hidden-phone">
       <h2 class="about-us-titles">{{ section.settings.title }}</h2>
       <div class="about-us_content">{{ section.settings.content }}</div>
     </div>
-    <div class="image-wrapper">
-      <img src="{{ section.settings.image | img_url: "master" }}" alt="">
+    <div class="image-wrapper hidden-phone">
+      <img class="hidden-phone" src="{{ section.settings.image | img_url: "master" }}" alt="">
     </div>
+      <img class="hidden-tablet-and-up" src="{{ section.settings.image_mobile | img_url: 'master' }}" alt="">
   </div>
 </section>
 
@@ -35,6 +36,11 @@
       "id": "image",
       "label": "Image",
       "info": "1500 x 800px .jpg recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Mobile Image"
     }
     ],
     "presets": [
