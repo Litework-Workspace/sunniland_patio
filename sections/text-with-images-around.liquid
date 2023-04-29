@@ -1,12 +1,12 @@
 <section class="Section text-with-images-around" id="section-{{ section.id }}">
   <div class="Container history_container">
     <div class="history_text-w-image">
-      <h2 class="history_title">{{ section.settings.title }}</h2>
-      <p class="history_content">{{ section.settings.content }}</p>
-      <img src="{{ section.settings.image | img_url: 'medium' }}" alt="">
+      <h2 class="history_title">{{ block.settings.title }}</h2>
+      <p class="history_content">{{ block.settings.content }}</p>
+      <img src="{{ block.settings.image | img_url: 'medium' }}" alt="">
     </div>
     <div class="history_image-only">
-      <img src="{{ section.settings.side_image }}" alt="">
+      <img src="{{ block.settings.side_image }}" alt="">
     </div>
   </div>
 </section>
@@ -60,7 +60,7 @@
               "type": "richtext"
             },
             {
-              "type": "text"
+              "type": "image"
             }
           ]
         }
