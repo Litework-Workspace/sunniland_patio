@@ -15,14 +15,25 @@
 
 <section class="Section text-with-images-around" id="section-{{ section.id }}">
   <div class="Container history_container">
-    <div class="history_left">
-        <h2 class="history_title">{{ title }}</h2>
-        <div class="history_content">{{ content }}</div>
-        <img src="{{ image | img_url: '608x270' }}" alt="">
-    </div>
-    <div class="history_right">
-        <img src="{{ side_image | img_url: '608x864' }}" alt="">
-    </div>
+    {% unless section.settings.flip %}
+      <div class="history_left">
+          <h2 class="history_title">{{ title }}</h2>
+          <div class="history_content">{{ content }}</div>
+          <img src="{{ image | img_url: '608x270' }}" alt="">
+      </div>
+      <div class="history_right">
+          <img src="{{ side_image | img_url: '608x864' }}" alt="">
+      </div>
+      {% else %}
+      <div class="history_left">
+          <img src="{{ side_image | img_url: '608x864' }}" alt="">
+      </div>
+      <div class="history_right">
+          <h2 class="history_title">{{ title }}</h2>
+          <div class="history_content">{{ content }}</div>
+          <img src="{{ image | img_url: '608x270' }}" alt="">
+      </div>
+    {% endunless %}
   </div>
 </section>
 
@@ -31,6 +42,14 @@
   {
     "name": "Text w/ imgs custom",
     "max_blocks": 2,
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "flip",
+        "label": "Flip Content",
+        "info": "Flip positioin of text with image underneath and side image"
+      }
+    ],
     "blocks": [
       {
         "type": "richtext",
