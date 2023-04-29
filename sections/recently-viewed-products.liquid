@@ -33,7 +33,7 @@
   {%- if template.name == 'search' -%}
   <div class="Container splide {{ splide-id }} RecentlyViewedProducts">
     <div class="ProductListWrapper splide__track">
-      <div class="ProductList ProductList--carousel Carousel" data-flickity-config='{{ flickity_options }}'>
+      {% comment %} <div class="ProductList ProductList--carousel Carousel" data-flickity-config='{{ flickity_options }}'> {% endcomment %}
       <div class="ProductList ProductList--carousel Carousel splide__list">
         {%- assign parsed_terms = search.terms | split: ' OR ' -%}
 

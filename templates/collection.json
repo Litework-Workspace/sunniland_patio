@@ -139,7 +139,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/show_all_9579f639-5fa1-4da8-9e3b-6396352fedea.png",
+            "image": "shopify:\/\/shop_images\/show_all.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -153,7 +153,7 @@
           "type": "collection",
           "settings": {
             "collection": "coffee-tables",
-            "image": "shopify:\/\/shop_images\/coffee_tables_d637000f-575f-4762-867c-26c263bf0dac.png",
+            "image": "shopify:\/\/shop_images\/coffee_tables.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -167,7 +167,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/end_tables_fa348790-13b5-4d1f-a4f8-3a452ad41aa0.png",
+            "image": "shopify:\/\/shop_images\/end_tables_78b2b164-0c7c-42ad-b742-d2f1ee40abd2.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -181,7 +181,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/fire_pit_tables_de2f4617-9833-4e9b-9e3d-a9d39dfff710.png",
+            "image": "shopify:\/\/shop_images\/fire_pit_tables.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -195,7 +195,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/dining_tables_f91752db-399b-46ae-9476-e1d2ff0c1443.png",
+            "image": "shopify:\/\/shop_images\/dining_tables.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",

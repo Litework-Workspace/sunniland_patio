@@ -207,7 +207,7 @@
           "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
           "button_label": "Shop Replacement Cushions",
           "button_link": "shopify:\/\/collections\/replacement-cushions",
-          "show_parallax": false
+          "show_parallax": true
         }
       },
       "slideshow": {
@@ -216,13 +216,13 @@
           "093505c8-0851-49ab-b32e-ae60bdb74dcc": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/doityourself.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/Image-3.jpg",
+              "image": "shopify:\/\/shop_images\/Andover_Location_2019_3.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/Andover_Location_2019_3_1mobile.jpg",
               "apply_overlay": true,
               "content_position": "middleCenter",
-              "subheading": "Reuse, give a second life.",
-              "title": "Do It Yourself Patio Tutorials",
-              "content": "<p>Easy tutorials for at home patio furniture repairs<\/p>",
+              "subheading": "",
+              "title": "Give your outdoor oasis a makeover with our patio furniture repair services.",
+              "content": "<p>Easy pickup and delivery for Palm Beach County, Florida.<\/p>",
               "button_1_text": "",
               "button_1_link": "",
               "button_2_text": "",
@@ -591,10 +591,5 @@
         }
       }
     }
-  },
-  "platform_customizations": {
-    "custom_css": [
-      ".Form__Input {color: #546e7a;}"
-    ]
   }
 }

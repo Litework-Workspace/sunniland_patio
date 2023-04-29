@@ -7,7 +7,7 @@
       </div>
     </div>
   {%- else -%}
-    <div class="Blog {% if template contains 'diy' %}DIY{% endif %}">
+    <div class="Blog">
     <button class=" blog-topics-menu Header__Icon Icon-Wrapper Icon-Wrapper--clickable {% unless use_blog_menu %}hidden-desk{% endunless %}" aria-expanded="false" data-action="open-drawer" data-drawer-id="blog_topics" aria-label="{{ 'header.navigation.open_sidebar' | t }}">
       <span class="hidden-tablet-and-up topics-text" >Blog Topics</span>
       <span class="topic-button_container">
@@ -104,12 +104,11 @@
           {%- endpaginate -%}
           </div>
 
-      {% if section.settings.use_blog_menu %}
         <div class="Blog_Menu">
           {% comment %}
           <img class="sunniblogLogo" src="/assets/Sunniblog.png" alt="Sunniblog Logo">
           {% endcomment %}
-          
+    
           <img class="sunniblogLogo" src="{{ section.settings.logo | img_url: 'medium' }}" alt="Sunniblog Logo">
           
           <h2 class="Heading u-h2">
@@ -155,7 +154,6 @@
             </div>
           {% endif %}
         </div>
-      {% endif %}
       </div>
     </div>
   {%- endif -%}
