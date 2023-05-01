@@ -145,11 +145,39 @@ document.addEventListener('DOMContentLoaded', function() {
 // END Predictive Search Fix
 
 // START Cart Drawer fix
-$('.ad_to_cart_coll').click(function() {
-  var ID = $(this).attr("data-var_id");
-  addItemToCart(ID, 1);    // paste your id product number
-  $('.cart_dr').trigger("click");
-});
+document.addEventListener('DOMContentLoaded',function(){
+  ajaxAddToCart();
+})
+function ajaxAddToCart(){
+  $('.ad_to_cart_coll').click(async function() {
+    console.log('clicked this');
+    var variant_id = $(this).attr("data-var_id");
+    var product_id = $(this).attr("data-prod-id");
+    var tags = $(this).attr("data-prod-tags");
+    var vendor = $(this).attr("data-prod-vendor");
+    var type = $(this).attr("data-prod-type");
+    var collections = $(this).attr("data-prod-collections");
+    var url = $(this).attr("data-prod-url");
+    var product = {
+      variant_id: variant_id,
+      id: product_id,
+      tags: tags,
+      vendor: vendor,
+      type: type,
+      collections: collections,
+      url: url
+    };
+    const hulk = await getHulkOptions(product);
+    //
+    // redirect to the pdp if hulk options exist. Otherwise, add to cart.
+    if(hulk){
+      window.location = url;
+    } else {
+      addItemToCart(variant_id, 1);    // paste your id product number
+      $('.cart_dr').trigger("click");
+    }
+  });
+}
 function addItemToCart(variant_id, qty) {
   data = {
     "id": variant_id,
@@ -170,5 +198,34 @@ function addItemToCart(variant_id, qty) {
       }
     }
   });
+}
+async function getHulkOptions(product){
+  const url = window.hulkapps.po_url + "/api/v2/store/get_all_relationships";
+
+  const postData = {
+    pid: product.id,
+    store_id: window.hulkapps.store_id,
+    tags: product.tags,
+    vendor: product.vendor,
+    ptype: product.type,
+    customer_tags: null != window.hulkapps.customer ? window.hulkapps.customer.tags.split(",") : "",
+    product_collections: product.collections
+  };
+
+  return fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(postData)
+  })
+    .then(response => response.json())
+    .then(data => {
+      return data
+    })
+    .catch(error => {
+      console.error("Error:", error);
+      return false
+    });
 }
 // END Cart Drawer fix
