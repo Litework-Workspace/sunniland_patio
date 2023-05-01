@@ -146,8 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // START Cart Drawer fix
 function ajaxAddToCart(){
-  $('.ad_to_cart_coll').click(async function() {
-    console.log('clicked this');
+  $('.ad_to_cart_coll').each(async function(index){
     var variant_id = $(this).attr("data-var_id");
     var product_id = $(this).attr("data-prod-id");
     var tags = $(this).attr("data-prod-tags");
@@ -165,14 +164,18 @@ function ajaxAddToCart(){
       url: url
     };
     const hulk = await getHulkOptions(product);
-    //
+    
     // redirect to the pdp if hulk options exist. Otherwise, add to cart.
     if(hulk){
-      window.location = url;
+      $(this).html('<span>View Product</span>');
+      $(this).click(function(){
+        window.location = url
+      });
     } else {
-      addItemToCart(variant_id, 1);    // paste your id product number
-      $('.cart_dr').trigger("click");
-    }
+      $(this).click(function(){
+        addItemToCart(variant_id, 1);    // paste your id product number
+      })
+    };
   });
 }
 function addItemToCart(variant_id, qty) {
@@ -221,7 +224,6 @@ async function getHulkOptions(product){
       return data
     })
     .catch(error => {
-      console.error("Error:", error);
       return false
     });
 }
