@@ -224,7 +224,6 @@ async function getHulkOptions(product){
       return data
     })
     .catch(error => {
-      console.error("Error:", error);
       return false
     });
 }
