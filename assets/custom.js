@@ -146,34 +146,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // START Cart Drawer fix
 function ajaxAddToCart(){
-  $('.ad_to_cart_coll').each(async function(index){
-    var variant_id = $(this).attr("data-var_id");
-    var product_id = $(this).attr("data-prod-id");
-    var tags = $(this).attr("data-prod-tags");
-    var vendor = $(this).attr("data-prod-vendor");
-    var type = $(this).attr("data-prod-type");
-    var collections = $(this).attr("data-prod-collections");
-    var url = $(this).attr("data-prod-url");
-    var product = {
-      variant_id: variant_id,
-      id: product_id,
-      tags: tags,
-      vendor: vendor,
-      type: type,
-      collections: collections,
-      url: url
+  $('.ad_to_cart_coll:not(.hulk-checked)').each(async function(index){
+    // added the class so that if this function is called again on the same page
+    // for newly rendered elements, the click event doesn't get added twice.
+    const $this = $(this);
+    $this.addClass('hulk-checked');
+    const product = {
+      variant_id: String($this.data('var_id')),
+      id: String($this.data('prod-id')),
+      tags: String($this.data('prod-tags')),
+      vendor: String($this.data('prod-vendor')),
+      type: String($this.data('prod-type')),
+      collections: String($this.data('prod-collections')),
+      url: String($this.data('prod-url')),
     };
     const hulk = await getHulkOptions(product);
     
     // redirect to the pdp if hulk options exist. Otherwise, add to cart.
     if(hulk){
-      $(this).html('<span>View Product</span>');
-      $(this).click(function(){
-        window.location = url
+      $this.html('<span>View Product</span>').on('click', () => {
+        window.location = product.url
       });
     } else {
-      $(this).click(function(){
-        addItemToCart(variant_id, 1);    // paste your id product number
+      $this.click( () => {
+        addItemToCart(product.variant_id, 1);    // paste your id product number
       })
     };
   });
