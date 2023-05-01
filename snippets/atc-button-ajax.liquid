@@ -1,9 +1,30 @@
 {%- comment -%}
+The button includes many data-prod attributes to assist the getHulkOptions code in the custom.js 
+pull hulk data for the product, even outside of the PDP.
+
 Variables:
 - product
 - show_price_in_button
 {%- endcomment -%}
-<button  type="submit" name="add" aria-label="Add to cart" class="ad_to_cart_coll ProductForm__AddToCart Button Button--secondary Button--full" id="ad_to_cart" aria-haspopup="dialog" data-add-to-cart="{{ product.variants.first.id }}" data-var_id="{{ product.variants.first.id }}">
+{% assign prod_tags = '' %}
+{% for tag in product.tags %}
+  {% if prod_tags == blank %}
+    {% assign prod_tags = tag %}
+  {% else %}
+    {% assign prod_tags = prod_tags | append: ',' | append: tag %}
+  {% endif %}
+{% endfor %}
+
+{% assign prod_collections = '' %}
+{% for collection in product.collections %}
+  {% if prod_collections == blank %}
+    {% assign prod_collections = collection.id %}
+  {% else %}
+    {% assign prod_collections = prod_collections | append: ',' | append: collection.id %}
+  {% endif %}
+{% endfor %}
+
+<button data-prod-url="{{ product.url }}" data-prod-collections="{{ prod_collections }}" data-prod-type="{{ product.type }}" data-prod-vendor="{{ product.vendor }}" data-prod-tags="{{ prod_tags }}" data-prod-id="{{ product.id }}" type="submit" name="add" aria-label="Add to cart" class="ad_to_cart_coll ProductForm__AddToCart Button Button--secondary Button--full" id="ad_to_cart" aria-haspopup="dialog" data-add-to-cart="{{ product.variants.first.id }}" data-var_id="{{ product.variants.first.id }}">
   {%- if product.selected_or_first_available_variant.available -%}
     <span>{% if product.template_suffix == 'pre-order' %}{{ 'product.form.pre_order' | t }}{% else %}{{ 'product.form.add_to_cart' | t }}{% endif %}</span>
 
