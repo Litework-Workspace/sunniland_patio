@@ -126,6 +126,12 @@ Attributes
 
     splide_{{newId}}.mount();
 
+    // call the Ajax atc function after this loads. 
+    // This was implemented mainly for the ProductRecommendations section that loads after the ajaxAddToCart is called.
+    if(typeof ajaxAddToCart === 'function') {
+      ajaxAddToCart(); 
+    }
+
     {% if timeout > 0 %}
         },{{ timeout }})
     {% endif %}

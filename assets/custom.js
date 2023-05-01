@@ -99,11 +99,11 @@ document.addEventListener('DOMContentLoaded', () => {
 // END Hulk options tweak to work with the variant options
 
 // START Predictive Search Fix
-function linkAllSearchToMainSearch(){
+function linkAllSearchToMainSearch() {
   const searchBars = document.querySelectorAll('.custom-search');
   const mainSearchBar = document.querySelector('#Search');
   const mainSearchBarInput = document.querySelector('#Search input.Search__Input');
-  if(!mainSearchBar || searchBars.length < 1){
+  if (!mainSearchBar || searchBars.length < 1) {
     console.log('No search bars'); return;
   }
 
@@ -129,17 +129,103 @@ function linkAllSearchToMainSearch(){
   }
 
   searchBars.forEach(el => {
-    el.querySelector('input.Search__Input').addEventListener('input',e => {
-      if(e.target.value){
-        mainSearchBar.setAttribute('aria-hidden','false');
+    el.querySelector('input.Search__Input').addEventListener('input', e => {
+      if (e.target.value) {
+        mainSearchBar.setAttribute('aria-hidden', 'false');
       } else {
-        mainSearchBar.setAttribute('aria-hidden','true');
+        mainSearchBar.setAttribute('aria-hidden', 'true');
       };
       dispatchKeydownEvent(e);
     })
   })
 }
-document.addEventListener('DOMContentLoaded',function(){
+document.addEventListener('DOMContentLoaded', function() {
   linkAllSearchToMainSearch();
 })
 // END Predictive Search Fix
+
+// START Cart Drawer fix
+function ajaxAddToCart(){
+  $('.ad_to_cart_coll').click(async function() {
+    console.log('clicked this');
+    var variant_id = $(this).attr("data-var_id");
+    var product_id = $(this).attr("data-prod-id");
+    var tags = $(this).attr("data-prod-tags");
+    var vendor = $(this).attr("data-prod-vendor");
+    var type = $(this).attr("data-prod-type");
+    var collections = $(this).attr("data-prod-collections");
+    var url = $(this).attr("data-prod-url");
+    var product = {
+      variant_id: variant_id,
+      id: product_id,
+      tags: tags,
+      vendor: vendor,
+      type: type,
+      collections: collections,
+      url: url
+    };
+    const hulk = await getHulkOptions(product);
+    //
+    // redirect to the pdp if hulk options exist. Otherwise, add to cart.
+    if(hulk){
+      window.location = url;
+    } else {
+      addItemToCart(variant_id, 1);    // paste your id product number
+      $('.cart_dr').trigger("click");
+    }
+  });
+}
+function addItemToCart(variant_id, qty) {
+  data = {
+    "id": variant_id,
+    "quantity": qty
+  }
+  jQuery.ajax({
+    type: 'POST',
+    url: '/cart/add.js',
+    data: data,
+    dataType: 'json',
+    success: function() {
+      document.documentElement.dispatchEvent(new CustomEvent('cart:refresh', {
+        bubbles: true  //this code is for prestige theme, is to refresh the cart
+      }));
+      const cartIcon = document.querySelector('.Header__Cart-Icon');
+      if(cartIcon){
+        cartIcon.click();
+      }
+    }
+  });
+}
+async function getHulkOptions(product){
+  const url = window.hulkapps.po_url + "/api/v2/store/get_all_relationships";
+
+  const postData = {
+    pid: product.id,
+    store_id: window.hulkapps.store_id,
+    tags: product.tags,
+    vendor: product.vendor,
+    ptype: product.type,
+    customer_tags: null != window.hulkapps.customer ? window.hulkapps.customer.tags.split(",") : "",
+    product_collections: product.collections
+  };
+
+  return fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(postData)
+  })
+    .then(response => response.json())
+    .then(data => {
+      return data
+    })
+    .catch(error => {
+      console.error("Error:", error);
+      return false
+    });
+}
+document.addEventListener('DOMContentLoaded',function(){
+  ajaxAddToCart();
+})
+// END Cart Drawer fix
