@@ -145,9 +145,6 @@ document.addEventListener('DOMContentLoaded', function() {
 // END Predictive Search Fix
 
 // START Cart Drawer fix
-document.addEventListener('DOMContentLoaded',function(){
-  ajaxAddToCart();
-})
 function ajaxAddToCart(){
   $('.ad_to_cart_coll').click(async function() {
     console.log('clicked this');
@@ -228,4 +225,7 @@ async function getHulkOptions(product){
       return false
     });
 }
+document.addEventListener('DOMContentLoaded',function(){
+  ajaxAddToCart();
+})
 // END Cart Drawer fix
