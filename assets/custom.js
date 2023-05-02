@@ -103,9 +103,15 @@ function linkAllSearchToMainSearch() {
   const searchBars = document.querySelectorAll('.custom-search');
   const mainSearchBar = document.querySelector('#Search');
   const mainSearchBarInput = document.querySelector('#Search input.Search__Input');
+  const mainSearchBarInputClose = document.querySelector('#Search .Search__Close');
   if (!mainSearchBar || searchBars.length < 1) {
     console.log('No search bars'); return;
   }
+
+  // close the search results by clicking outside of the results
+  document.querySelector('#main').addEventListener('click',() => {
+    mainSearchBarInputClose.click()
+  })
 
   // trigger event listeners to the mainSearchBarInput to preserve all functionality
   function dispatchKeydownEvent(event) {
