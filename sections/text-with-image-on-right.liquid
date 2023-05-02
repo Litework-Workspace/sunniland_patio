@@ -1,7 +1,47 @@
+<section class="text-with-image-on-left">
+  <div class="Container FlexContainer">
+    <img src="{{ section.settings.image | img_url: 'master' }}" alt="">
+    <div class="text-w-img_content">
+      <h2 class="text-w-img_title">{{ section.settings.title }}</h2>
+      <h3 class="text-w-img_subheading">{{ section.settings.subheading }}</h3>
+    </div>
+  </div>
+</section>
+
+
+
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Text with image on left",
+    "settings": [
+      {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Title"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Sub-heading",
+      "default": "Sub-heading"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "1200 x 1200px .png recommended"
+    }
+    ],
+    "presets": [
+    {
+      "category": "Text",
+      "name": "Text with image on left",
+      "settings": {}
+    }
+  ]
   }
 {% endschema %}
 
