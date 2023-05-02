@@ -116,6 +116,7 @@ Implementation note: make sure that the Search div is always just before the Hea
 
 <div id="Search" class="Search" aria-hidden="true">
   <div class="Search__Inner">
+    <button class="Search__Close custom Link Link--primary" data-action="close-search" aria-label="{{ 'header.navigation.close_search' | t }}">{% render 'icon' with 'close' %}</button>
     <div class="Search__SearchBar">
       <form action="{{ routes.search_url }}" name="GET" role="search" class="Search__Form">
         <div class="Search__InputIconWrapper">
