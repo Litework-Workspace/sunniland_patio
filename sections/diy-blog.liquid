@@ -1,0 +1,367 @@
+<div id="section-{{ section.id }}" class="Section" data-section-id="{{ section.id }}" data-section-type="article-list">
+  {%- if blog.articles_count == 0 -%}
+    <div class="EmptyState">
+      <div class="Container">
+        <h1 class="EmptyState__Title Heading u-h5">{{ 'blog.general.no_articles' | t: blog_title: blog.title }}</h1>
+        <a href="{{ routes.root_url }}" class="EmptyState__Action Button Button--primary">{{ 'blog.general.empty_button' | t }}</a>
+      </div>
+    </div>
+  {%- else -%}
+    <div class="Blog {% if template contains 'diy' %}DIY{% endif %}">
+    <button class=" blog-topics-menu Header__Icon Icon-Wrapper Icon-Wrapper--clickable {% unless use_blog_menu %}hidden-desk{% endunless %}" aria-expanded="false" data-action="open-drawer" data-drawer-id="blog_topics" aria-label="{{ 'header.navigation.open_sidebar' | t }}">
+      <span class="hidden-tablet-and-up topics-text" >Blog Topics</span>
+      <span class="topic-button_container">
+        <svg class="blog-topic_button" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.83136 21.0642L11.5989 19.2136L3.73326 10.9786L11.5989 2.74358L9.83136 0.893036L0.19787 10.9786L9.83136 21.0642Z" fill="white"/>
+        </svg>
+      </span>
+      <span class="hidden-phone">{%- render 'icon' with 'nav-desktop' -%}</span>
+    </button>
+    <div class="Container {% unless template contains 'diy' %} FlexBlog {% endunless %}" 
+        data-section-type="diy-blog" 
+        data-section-settings='{
+        "sectionId": "{{ section.id }}",
+          "filterPosition": "drawer"
+        }'>
+
+        <header class="PageHeader">
+          <div class="SectionHeader SectionHeader--center">
+            {% comment %} <h1 class="SectionHeader__Heading Heading u-h1">
+              {{- blog.title -}}
+
+              {%- if section.settings.show_rss -%}
+                <a href="{{ blog.url }}.atom" target="_blank" class="Blog__RssLink Link Link--secondary">{% render 'icon' with 'rss' %}</a>
+              {%- endif -%}
+            </h1> {% endcomment %}
+
+            {%- if section.settings.show_tags and blog.all_tags.size > 0 -%}
+              <div class="CollectionToolbar CollectionToolbar--top CollectionToolbar--reverse">
+                <div class="CollectionToolbar__Group">
+                  <button class="CollectionToolbar__Item CollectionToolbar__Item--filter Heading Text--subdued u-h6"
+                    data-action="open-drawer"
+                    data-drawer-id="collection-filter-drawer"
+                    aria-label="">
+                    {{ 'collection.filter.title' | t }}
+                  </button>
+                  <button style="display:none;" class="CollectionToolbar__Item CollectionToolbar__Item--sort Heading Text--subdued u-h6"
+                        aria-label="{{ 'collection.sorting.show_sort' | t }}"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        aria-controls="collection-sort-popover">
+                      {{ 'collection.sorting.title' | t }} {% render 'icon' with 'select-arrow' %}
+                  </button>
+                </div>
+                <div class="CollectionToolbar__Item CollectionToolbar__Item--layout hidden-phone">
+                  <div class="CollectionToolbar__LayoutSwitch hidden-phone">
+                    <button aria-label="{{ 'collection.layout.show_two_per_row' | t }}" class="CollectionToolbar__LayoutType is-active {% if desktop_items_per_row == 2 %}is-active{% endif %}" data-action="change-layout-mode" data-grid-type="desktop" data-count="2">{% render 'icon' with 'wall-2' %}</button>
+                    <button aria-label="{{ 'collection.layout.show_four_per_row' | t }}" class="CollectionToolbar__LayoutType {% if desktop_items_per_row >= 3 %}is-active{% endif %}" data-action="change-layout-mode" data-grid-type="desktop" data-count="4">{% render 'icon' with 'wall-4' %}</button>
+                  </div>
+                </div>
+              </div>
+              {% assign tags = '' %}
+              {% for article in blog.articles %}
+                {% for tag in article.tags %}
+                  {% if tags == blank %}
+                    {% assign tags = tag %}
+                  {% else %}
+                    {% assign tags = tags | append: ',' | append: tag %}
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+              {% assign tags = tags | split: ',' | uniq %}
+
+              <div id="collection-filter-drawer" class="CollectionFilters Drawer Drawer--secondary Drawer--fromRight" aria-hidden="true">
+                <header class="Drawer__Header Drawer__Header--bordered Drawer__Header--center Drawer__Container">
+                  <span class="Drawer__Title Heading u-h4">{{ 'collection.filter.all' | t }}</span>
+
+                  <button class="Drawer__Close Icon-Wrapper--clickable" data-action="close-drawer" data-drawer-id="collection-filter-drawer" aria-label="{{ 'header.navigation.close_sidebar' | t }}">
+                    {%- render 'icon' with 'close' -%}
+                  </button>
+                </header>
+
+                <div class="Drawer__Content">
+                  <div class="Drawer__Main" data-scrollable>
+                    <div id="collection-filters-drawer-form" class="collection-filters-form">
+                      {% for tag in tags %}
+                        <div class="Collapsible Collapsible--padded">
+                          <button class="article-filter Collapsible__Button Heading u-h6">{{ tag }}</button>
+                        </div>
+                      {% endfor %}
+                    </div>
+                  </div>
+
+                  <div class="Drawer__Footer Drawer__Footer--padded" data-drawer-animated-bottom>
+                    <div class="ButtonGroup">
+                      <button id="clear-filters-btn" type="button" class="ButtonGroup__Item ButtonGroup__Item--expand Button Button--primary" data-action="close-drawer" data-drawer-id="collection-filter-drawer">Clear All</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {% comment %} <ul class="Blog__TagList HorizontalList HorizontalList--spacingExtraLoose">
+                <li class="HorizontalList__Item">
+                  <a href="/blogs/{{ blog.handle }}" class="Heading Link Link--primary Text--subdued u-h8 {% if current_tags == blank %}is-active{% endif %}">{{ 'blog.general.all_tag' | t }}</a>
+                </li>
+
+                {%- for tag in blog.all_tags -%}
+                  <li class="HorizontalList__Item">
+                    <a href="/blogs/{{ blog.handle }}/tagged/{{ tag | handle }}" class="Heading Link Link--primary Text--subdued u-h8 {% if current_tags contains tag %}is-active{% endif %}">{{ tag }}</a>
+                  </li>
+                {%- endfor -%}
+              </ul> {% endcomment %}
+            {%- endif -%}
+          </div>
+        </header>
+
+        {%- if section.settings.show_featured_article and current_tags == blank -%}
+          {%- assign articles_per_page = 13 -%}
+        {%- else -%}
+          {%- assign articles_per_page = 12 -%}
+        {%- endif -%}
+
+        {%- paginate blog.articles by articles_per_page -%}
+        {% assign is_first_article_featured = false %}
+
+        {%- if section.settings.show_featured_article and current_tags == blank and blog.articles.first.image -%}
+          {%- assign is_first_article_featured = true -%}
+        {%- endif -%}
+
+          <div data-tag-filter="" class="ArticleListWrapper">
+            <div class="ArticleList {% if is_first_article_featured %}ArticleList--withFeatured{% endif %} Grid Grid--m">
+              {%- for article in blog.articles -%}
+                {%- if is_first_article_featured and forloop.first -%}
+                  <div class="Grid__Cell hidden-phone">
+                    <div class="FlexboxIeFix">
+                      <div class="ImageHero ImageHero--small" style="background: url({{ article.image | img_url: '1x1', format: 'jpg' }})">
+                        <div class="ImageHero__ImageWrapper">
+                          <div class="ImageHero__Image Image--lazyLoad Image--zoomOut"
+                               data-optimumx="1.4"
+                               data-bgset="{{ article.image | img_url: mobile_size, crop: 'center' }} 750w, {{ article.image | img_url: '1000x' }} 1000w, {{ article.image | img_url: '1500x' }} 1500w">
+                          </div>
+
+                          <noscript>
+                            <div class="ImageHero__Image" style="background-image: url({{ article.image | img_url: '1000x' }})"></div>
+                          </noscript>
+                        </div>
+
+                        <div class="ImageHero__TextContent">
+                          <header class="SectionHeader">
+                            {%- if section.settings.show_category and article.tags != empty -%}
+                              <span class="SectionHeader__SubHeading Heading u-h6">{{ article.tags.first }}</span>
+                            {%- endif -%}
+
+                            <h2 class="SectionHeader__Heading Heading u-h1">
+                              <a href="{{ article.url }}">{{ article.title }}</a>
+                            </h2>
+
+                            <div class="SectionHeader__ButtonWrapper">
+                              <a href="{{ article.url }}" class="Button Button--primary">{{ 'blog.article.read_more' | t }}</a>
+                            </div>
+                          </header>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                {%- endif -%}
+
+                <div data-tags="{{ article.tags | join: ',' }}" class="Grid__Cell {% if is_first_article_featured and forloop.first %}hidden-tablet-and-up{% else %}1/2--tablet 1/3--lap-and-up{% endif %}">
+                  {%- render 'article-item', article: article -%}
+                </div>
+              {%- endfor -%}
+            </div>
+            {%- render 'pagination', paginate: paginate -%}
+          {%- endpaginate -%}
+          </div>
+
+      {% if section.settings.use_blog_menu %}
+        <div class="Blog_Menu">
+          {% comment %}
+          <img class="sunniblogLogo" src="/assets/Sunniblog.png" alt="Sunniblog Logo">
+          {% endcomment %}
+          
+          <img class="sunniblogLogo" src="{{ section.settings.logo | img_url: 'medium' }}" alt="Sunniblog Logo">
+          
+          <h2 class="Heading u-h2">
+            Topics
+          </h2>
+
+          <div class="blog-links">
+            {% for link in linklists.blog-topics.links %}
+              <li class="Linklist__Item">
+                <a href="{{ link.url }}" class="Link Link--primary">{{ link.title | escape }}</a>
+              </li>
+            {% endfor %}
+          </div>
+          <div class="blogSubscribe-Form">
+            <h2 class="Heading u-h2">Subscribe to email updates</h2>
+            {%- form 'customer', id: 'footer-newsletter', class: 'Footer__Newsletter Form' -%}
+              {%- if form.posted_successfully? -%}
+                <p class="Form__Alert Alert Alert--success">{{ 'footer.newsletter.success' | t }}</p>
+              {%- else -%}
+                {%- if form.errors -%}
+                  <p class="Form__Alert Alert Alert--error">{{ form.errors.messages['email'] }}</p>
+                {%- endif -%}
+  
+                <input type="hidden" name="contact[tags]" value="newsletter">
+                <input type="email" name="contact[email]" class="Form__Input Footer-Form_Input" aria-label="{{ 'footer.newsletter.input' | t }}" placeholder="{{ 'footer.newsletter.input' | t }}" required>
+                <button type="submit" class="Form__Submit Button Button--primary Footer_Form-Submit">{{ 'footer.newsletter.submit' | t }}</button>
+              {%- endif -%}
+            {%- endform -%}
+          </div>
+          {% if section.settings.link_1_text != blank or section.settings.link_2_text != blank %}
+            <div class="RecentPost">
+              <h2 class="Heading u-h2">Recent Posts</h2>
+              {% if section.settings.link_1 != blank %}
+              <li class="Linklist__Item">
+                <a href="{{ section.settings.link_1 }}" id="recentPost-Link" class="Link Link--primary">{{ section.settings.link_1_text | escape }}</a>
+              </li>
+              {% endif %}
+              {% if section.settings.link_2 != blank %}
+              <li class="Linklist__Item">
+                <a href="{{ section.settings.link_2 }}" id="recentPost-Link" class="Link Link--primary">{{ section.settings.link_2_text | escape }}</a>
+              </li>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+      </div>
+    </div>
+  {%- endif -%}
+</div>
+
+<script>
+  const articles = document.querySelectorAll('[data-tags]');
+  const articleContainer = document.querySelector('[data-tag-filter]');
+  const filters = document.querySelectorAll('.article-filter');
+  const clearFiltersBtn = document.querySelector('#clear-filters-btn');
+  const layoutBtns = document.querySelectorAll('.CollectionToolbar__LayoutType');
+
+  layoutBtns.forEach(layoutBtn => {
+    layoutBtn.addEventListener('click',() => {
+      document.querySelector('.CollectionToolbar__LayoutType.is-active').classList.remove('is-active');
+      layoutBtn.classList.add('is-active');
+
+      articleContainer.setAttribute('data-count',layoutBtn.getAttribute('data-count'));
+    })
+  })
+
+  clearFiltersBtn.addEventListener('click',() => {
+    articles.forEach(article => {
+      article.style.display = 'block';
+    })
+  })
+
+  filters.forEach(filter => {
+    filter.addEventListener('click',() => {
+      console.log('filter',filter);
+      articleContainer.setAttribute('data-tag-filter',filter.innerHTML);
+
+      articles.forEach(article => {
+        const tags = article.getAttribute('data-tags').split(',');
+
+        if(tags.includes(filter.innerHTML)){
+          article.style.display='block';
+        } else {
+          article.style.display='none';
+        }
+      })
+    })
+  })
+</script>
+
+<style>
+  #section-{{ section.id }} .ImageHero,
+  #section-{{ section.id }} .ImageHero .Heading {
+    color: #ffffff;
+  }
+
+  #section-{{ section.id }} .ImageHero .Button {
+    color: #1c1c1c;
+    border-color: #ffffff;
+  }
+
+  #section-{{ section.id }} .ImageHero .Button::before {
+    background-color: #ffffff;
+  }
+
+  {%- if settings.show_button_transition -%}
+    @media (-moz-touch-enabled: 0), (hover: hover) {
+      #section-{{ section.id }} .ImageHero .Button:hover {
+        color: #ffffff;
+      }
+    }
+  {%- endif -%}
+</style>
+
+{% schema %}
+{
+  "name": "Blog DIY page",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_rss",
+      "label": "Show RSS",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_tags",
+      "label": "Show filters",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_featured_article",
+      "label": "Show featured article",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_category",
+      "label": "Show article category",
+      "info": "The first article's tag is used as the main category.",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "use_blog_menu",
+      "label": "Show Blog Topics",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Recent Posts Link 1"
+    },
+    {
+      "type": "text",
+      "id": "link_1_text",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "link_1",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Recent Posts Link 2"
+    },
+    {
+      "type": "text",
+      "id": "link_2_text",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "link_2",
+      "label": "Link"
+    }
+  ]
+}
+{% endschema %}

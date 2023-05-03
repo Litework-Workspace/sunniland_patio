@@ -50,11 +50,11 @@
       }
     },
     "main": {
-      "type": "main-blog",
+      "type": "diy-blog",
       "settings": {
         "logo": "shopify:\/\/shop_images\/Sunniblog.png",
         "show_rss": false,
-        "show_tags": false,
+        "show_tags": true,
         "show_featured_article": false,
         "show_category": false,
         "use_blog_menu": false,
