@@ -252,18 +252,47 @@
     var excerpt = document.getElementById('DIY_Excerpt')
     if (content.style.display == "block") {
       content.style.display = 'none'
-      console.log("hide")
       excerpt.style.display = 'block'
     }
     else if (content.style.display == 'none') {
       content.style.display = "block"
-      console.log("show")
       excerpt.style.display = "none"
       document.querySelector('.DIY_Read-More').style.display='none';
     }
   }
 </script>
 
+{% if section.settings.video_autoplay_mute %}
+  <script>
+    function addParamsToIframes() {
+      const iframes = document.querySelectorAll('.Article iframe');
+      console.log('addParamsToIframes init', iframes);
+
+      if (iframes.length == 0) {
+        console.log('no iframes');
+        return;
+      }
+
+      iframes.forEach(iframe => {
+        let src = iframe.getAttribute('src');
+        let hasQuestionMark = src.includes('?');
+
+        if (!src.includes('autoplay=1')) {
+          src += (hasQuestionMark ? '&' : '?') + 'autoplay=1';
+          hasQuestionMark = true;
+        }
+        if (!src.includes('mute=1')) {
+          src += (hasQuestionMark ? '&' : '?') + 'mute=1';
+        }
+
+        iframe.setAttribute('src', src);
+      });
+    }
+    document.addEventListener('DOMContentLoaded',function(){
+      addParamsToIframes();
+    })
+  </script>
+{% endif %}
 
 {% schema %}
 {
@@ -311,6 +340,13 @@
       "id": "show_comment_section",
       "label": "Show comment section",
       "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "video_autoplay_mute",
+      "label": "Video iframes autoplay on mute",
+      "default": true,
+      "info": "This will add '?autoplay=1&amp;mute=1' to the end of any iframe source"
     }
   ]
 }
