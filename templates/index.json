@@ -50,12 +50,29 @@
             "button_2_text": "",
             "button_2_link": ""
           }
+        },
+        "59d518a6-1a11-4d7f-87df-b38f2aa208b0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mother_s_Day_Campaign_2023_-_Banner.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Mother_s_Day_Campaign_2023_-_Mobile_Banner_d70c0d72-6d71-480a-a277-001534de4569.jpg",
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "Light Up Her Day",
+            "title": "Win a beautiful Lantern for Mom!",
+            "content": "<p>Enter our Mother's Day Giveaway for a chance to win a gorgeous lantern for Mom. Offer valid May 1-14.<\/p>",
+            "button_1_text": "Enter to Win",
+            "button_1_link": "https:\/\/gleam.io\/IDIcc\/mothers-day-giveaway",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
         }
       },
       "block_order": [
         "slide-0",
         "slide-1",
-        "13146d5f-0747-408d-9799-78a2641cd41d"
+        "13146d5f-0747-408d-9799-78a2641cd41d",
+        "59d518a6-1a11-4d7f-87df-b38f2aa208b0"
       ],
       "settings": {
         "show_fullscreen": true,
@@ -348,7 +365,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/2_54c95f66-5198-491c-8713-097b91de854c.jpg",
             "dot_style": "light",
-            "product_1": "lloyd-flanders-elements-collection",
+            "product_1": "elements-chaise",
             "product_1_horizontal_position": 41,
             "product_1_vertical_position": 72,
             "product_2": "",
@@ -364,7 +381,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/3_bbd2d8a8-1e01-447c-b146-54579a4d29a9.jpg",
             "dot_style": "light",
-            "product_1": "lloyd-flanders-elements-collection",
+            "product_1": "elements-lounge-chair-with-loom-arms-and-back",
             "product_1_horizontal_position": 56,
             "product_1_vertical_position": 68,
             "product_2": "",
@@ -380,7 +397,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/4_01d87083-28e1-40f3-b67b-4b1dc85f1c90.jpg",
             "dot_style": "light",
-            "product_1": "lloyd-flanders-hamptons-collection",
+            "product_1": "copy-of-lloyd-flanders-hamptons-sofa-item-15056",
             "product_1_horizontal_position": 58,
             "product_1_vertical_position": 52,
             "product_2": "",

@@ -1347,7 +1347,7 @@ section[data-section-type="article-list"].blog-posts .ProductList--carousel .Car
   font-family: 'Figtree';
   font-style: normal;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 25px !important;
   line-height: 35px;
   color: #263238;
 }
@@ -1355,8 +1355,8 @@ section[data-section-type="article-list"].blog-posts .ProductList--carousel .Car
 .Article__Body {
   font-family: 'Figtree';
   font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 400 !important;
+  font-size: 18px !important;
   line-height: 28px;
   color: #263238;
 }
@@ -1729,6 +1729,126 @@ body .hulkapps_product_options .hulkapps_option_set .hulkapps_option .hulkapps_o
 }
 /* END Page section edits */
 
+/* Start DIY section edits */
+.Blog.DIY .Drawer[aria-hidden="false"]::before {
+  opacity: 0 !important;
+}
+
+.Blog.DIY .FlexBlog {
+  padding: 0;
+}
+
+.Blog.DIY .blog-topics-menu {
+  display: none;
+}
+
+#DIY__Link {
+  background: #263238;
+  color: #FFFFFF;
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  width: 113px;
+  height: 40px;
+  padding: 10px 20px;
+}
+
+.DIY_Post {
+  background: #E1E4E6;
+  {% comment %} width: 350px; {% endcomment %}
+  height: unset;
+  width: 100%;
+}
+
+.DIY_Post .ArticleItem__Content {
+  padding: 30px 30px 40px;
+  margin: 0;
+  height: unset;
+}
+
+.DIY_Post .ArticleItem__Content .ArticleItem__Title {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.DIY_Post .ArticleItem__Image {
+  height: 250px;
+}
+
+.Grid__Cell .DIY_Post .ArticleItem__ImageWrapper {
+  width: unset;
+  margin: 0;
+}
+
+.DIY_Article .go-back-link {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.DIY_Article .go-back-link span {
+  margin-left: 10px;
+  text-decoration: underline;
+}
+
+@media screen and (min-width:1208px){
+  .Blog.DIY .ArticleListWrapper .ArticleList .Grid__Cell {
+    width: calc(33% - 15px);
+  }
+}
+@media screen and (min-width:1008px){
+  .Blog.DIY .ArticleListWrapper[data-count="4"] .ArticleList .Grid__Cell {
+    width: calc(25% - 15px);
+  }
+}
+/* End DIY section edits */
+
+/* Start About Us section edits */
+
+.history_container {
+  display: flex;
+  padding: 100px;
+  background: #F1F1F1;
+}
+
+.history_right {
+  margin-left: 30px;
+}
+
+.history_right img {
+  width: 608px;
+  height: 100%;
+}
+
+.history_content {
+  margin-bottom: 180px;
+  width: 608px;
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.history_title {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 35px;
+  color: #263238;
+}
+
+
+
+/* End About Us section edits */
+
+
 /* START RecentlyViewedProducts edits */
 .RecentlyViewedProducts .splide__arrow--prev {
   left: 10px !important;
@@ -1737,3 +1857,4 @@ body .hulkapps_product_options .hulkapps_option_set .hulkapps_option .hulkapps_o
   right: 10px !important;
 }
 /* END RecentlyViewedProducts edits */
+
