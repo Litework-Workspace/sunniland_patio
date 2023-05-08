@@ -3198,6 +3198,9 @@ select::-ms-expand {
     /* margin-right: 15.88px; */
     margin-left: 15.88px;
   }
+  .HorizontalList--spacingLoose .HorizontalList__Item:first-of-type {
+    margin-left: 0;
+  }
 }
 
 .HorizontalList--spacingExtraLoose {
@@ -6554,13 +6557,14 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   }
 
   .ArticleItem {
-    width: 350px;
-    height: 498px;
+    /* width: 350px; */
+    /* height: 498px; */
   }
 
   .ArticleItem__ImageWrapper {
     height: 200px;
-    width: 350px;
+    /* width: 350px; */
+    width: 100%;
     margin-bottom: 10px;
   }
 
@@ -6574,7 +6578,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   .ArticleItem__Content {
     /* margin: 0 25px; */
     height: 302px;
-    width: 392px;
+    /* width: 392px; */
     padding: 25px 0px;
   }
 }
@@ -6585,20 +6589,22 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   }
 
   .ArticleList {
-    margin-bottom: -100px;
-    width: 824px;
+    /* margin-bottom: -100px; */
+    /* width: 824px; */
     /* height: 1723.48px; */
   }
 
   .ArticleList .Grid__Cell {
     /* margin-bottom: 100px; */
-    width: 392px;
-    height: 542px;
+    /* width: 392px; */
+    /* height: 542px; */
     padding: 0;
+    width: calc(50% - 25px);
+    display: flex;
   }
 
   .Grid__Cell .ArticleItem__ImageWrapper {
-    width: 392px;
+    /* width: 392px; */
     height: 224px;
   }
 
@@ -8464,15 +8470,20 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .Header__CartDot {
   position: absolute;
-  top: 2px;
+  top: 0px;
   right: -6px;
-  width: 8px;
-  height: 8px;
+  width: 12px;
+  height: 12px;
   border-radius: 100%;
   background-color: var(--header-heading-color);
   box-shadow: 0 0 0 2px var(--header-background);
   transform: scale(0);
   transition: all 0.3s ease-in-out;
+  color: #263238;
+  font-size: 10px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
 }
 
 .Header__CartDot.is-visible {
@@ -10919,7 +10930,8 @@ shopify-payment-terms {
 }
 @media screen and (min-width: 641px) {
   .Search__Inner {
-    padding: 40px 64px 20px 131px;
+    margin: 0 auto;
+    padding: 40px 64px 20px 64px;
   }
 
   .Search__Input {

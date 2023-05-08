@@ -23,10 +23,10 @@
   {% endif %}
     <div class="Footer_Logos hidden-phone">
       <div class="Logo_Container">
-        <img src="{{'SW-Logow.svg' | asset_url }}" alt="SW Logo" class="logos">
-        <img src="{{ 'Lloyd-Flanders-logo-vector.svg' | asset_url }}" alt="" class="logos">
-        <img src="{{ 'Woodard_Logo_BW.svg' | asset_url }}" alt="" class="logos">
-        <img src="{{ 'Telescope-Casual-2018.svg' | asset_url }}" alt="" class="logos">
+        <img src="{{'SW-Logow.png' | asset_url }}" alt="SW Logo" class="logos" style="width: 161px;">
+        <img src="{{ 'Lloyd-Flanders-logo-vector.png' | asset_url }}" alt="" class="logos" style="width: 174px;">
+        <img src="{{ 'Woodard_Logo_BW.png' | asset_url }}" alt="" class="logos" style="width: 129px;">
+        <img src="{{ 'Telescope-Casual-2018.png' | asset_url }}" alt="" class="logos" style="width: 107px;">
       </div>
     </div>
     
@@ -232,11 +232,11 @@
     </div>
     <div>
       <div class="Container Copyright_Footer">
-        <span class="Sunniland_Copyright">Copyright © 2023 SunnilandPatio Furniture.</span>
+        <span class="Sunniland_Copyright">Copyright © {{ 'now' | date: '%Y' }} SunnilandPatio Furniture.</span>
         <a href="{{ section.settings.era_link }}" class="Powered_Era">Powered by <b>Era of Purpose</b></a>
       </div>
       <div class="Container Copyright_Footer-Mobile">
-        <span class="Sunniland_Copyright">Copyright © 2023 SunnilandPatio Furniture.</span>
+        <span class="Sunniland_Copyright">Copyright © {{ 'now' | date: '%Y' }} SunnilandPatio Furniture.</span>
         <a href="{{ section.settings.era_link }}" class="Powered_Era">Powered by <b>Era of Purpose</b></a>
       </div>
     </div>

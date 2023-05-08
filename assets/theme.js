@@ -5899,7 +5899,7 @@ const validateObjectData = validate_options(window.hulkapps.product_id);
 
             _this.element.parentNode.style.display = 'block'; // And finally let's create the carousel !
 
-            _this.carousel = new Carousel(_this.element.querySelector('[data-flickity-config]'));
+            // _this.carousel = new Carousel(_this.element.querySelector('[data-flickity-config]'));
           });
         });
       }
@@ -6405,6 +6405,34 @@ const validateObjectData = validate_options(window.hulkapps.product_id);
     return BlogTopicsMenuSection;
   }();
 
+  var BlogFiltersMenuSection = /*#__PURE__*/function () {
+    function BlogFiltersMenuSection(container) {
+      _classCallCheck(this, BlogFiltersMenuSection);
+
+      this.element = container;
+      this.sidebarDrawer = new Drawer(container);
+    }
+
+    _createClass(BlogFiltersMenuSection, [{
+      key: "onUnload",
+      value: function onUnload() {
+        this.sidebarDrawer.destroy();
+      }
+    }, {
+      key: "onSelect",
+      value: function onSelect() {
+        this.sidebarDrawer.open();
+      }
+    }, {
+      key: "onDeselect",
+      value: function onDeselect() {
+        this.sidebarDrawer.close();
+      }
+    }]);
+
+    return BlogFiltersMenuSection;
+  }();
+
   var SlideshowSection = /*#__PURE__*/function () {
     function SlideshowSection(container) {
       _classCallCheck(this, SlideshowSection);
@@ -6415,7 +6443,9 @@ const validateObjectData = validate_options(window.hulkapps.product_id);
         onSelect: this._onSlideChanged.bind(this)
       });
       this.selectedSlide = null;
-      this.shouldAnimate = true;
+      // turned off slideshow animation per client request
+      // this.shouldAnimate = true;
+      this.shouldAnimate = false;
       this.timeline = new TimelineLite({
         delay: window.theme.showPageTransition ? 0.5 : 0
       });
@@ -6944,6 +6974,8 @@ const validateObjectData = validate_options(window.hulkapps.product_id);
     sections.register('footer', FooterSection);
     sections.register('sidebar-menu', SidebarMenuSection);
     sections.register('blog_topics', BlogTopicsMenuSection);
+    sections.register('diy-blog', BlogFiltersMenuSection);
+    sections.register('diy-blog', CollectionSection);
     sections.register('cart', CartSection);
     sections.register('newsletter-popup', NewsletterPopupSection); // Sections used on index
 
