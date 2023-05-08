@@ -1,0 +1,133 @@
+{% for block in section.blocks %}
+  {% assign side_image = block.settings.side_image %}
+{% endfor %}
+{% for block in section.blocks %}
+  {% if block.settings.title %}
+    {% assign title = block.settings.title %}
+  {% endif %}
+  {% if block.settings.content %}
+    {% assign content = block.settings.content %}
+  {% endif %}
+  {% if block.settings.image %}
+    {% assign image = block.settings.image %}
+  {% endif %}
+  {% if block.settings.mobile-top-img %}
+    {% assign mobile-top-img = block.settings.mobile-top-img %}
+  {% endif %}
+  {% if block.settings.mobile-bottom-img %}
+    {% assign mobile-bottom-img = block.settings.mobile-bottom-img %}
+  {% endif %}
+{% endfor %}
+
+<section class="Section text-with-images-around" id="section-{{ section.id }}">
+  <div class="Container history_container hidden-phone">
+    {% unless section.settings.flip %}
+      <div class="history_left">
+          <h2 class="about-us-titles">{{ title }}</h2>
+          <div class="history_content">{{ content }}</div>
+          <img class="img-under-text" src="{{ image | img_url: 'master' }}" alt="">
+      </div>
+      <div class="history_right">
+          <img src="{{ side_image | img_url: 'master' }}" alt="">
+      </div>
+      {% else %}
+      <div class="history_left">
+          <img src="{{ side_image | img_url: 'master' }}" alt="">
+      </div>
+      <div class="history_right">
+          <h2 class="about-us-titles">{{ title }}</h2>
+          <div class="history_content">{{ content }}</div>
+          <img class="img-under-text" src="{{ image | img_url: 'master' }}" alt="">
+      </div>
+    {% endunless %}
+  </div>
+  <div class="Container history_container_mobile hidden-tablet-and-up">
+    <img src="{{ side_image | img_url: 'master' }}" alt="">
+    <h2 class="about-us-titles">{{ title }}</h2>
+    <div class="history_content">{{ content }}</div>
+    <img class="top-mobile-image" src="{{ mobile-top-img | img_url: 'master' }}" alt="">
+    <img src="{{ mobile-bottom-img | img_url: 'master' }}" alt="">
+  </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Text w/ imgs custom",
+    "max_blocks": 2,
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "flip",
+        "label": "Flip Content",
+        "info": "Flip positioin of text with image underneath and side image"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "richtext",
+        "name": "Text w image underneath",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Title"
+          },
+          {
+            "type": "richtext",
+            "id": "content",
+            "label": "Text",
+            "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image",
+            "info": "1500 x 800px .jpg recommended"
+          },
+          {
+            "type": "image_picker",
+            "id": "mobile-top-img",
+            "label": "Top of bottom images"
+          },
+          {
+            "type": "image_picker",
+            "id": "mobile-bottom-img",
+            "label": "Bottom of bottom images"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "name": "Side Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "side_image",
+            "label": "Side Image"
+          }
+        ]
+      }
+    ],
+      "presets": [
+        {
+          "name": "Text w/ imgs custom",
+          "blocks": [
+            {
+              "type": "richtext"
+            },
+            {
+              "type": "image"
+            }
+          ]
+        }
+      ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

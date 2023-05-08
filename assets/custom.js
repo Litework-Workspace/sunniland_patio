@@ -99,13 +99,19 @@ document.addEventListener('DOMContentLoaded', () => {
 // END Hulk options tweak to work with the variant options
 
 // START Predictive Search Fix
-function linkAllSearchToMainSearch(){
+function linkAllSearchToMainSearch() {
   const searchBars = document.querySelectorAll('.custom-search');
   const mainSearchBar = document.querySelector('#Search');
   const mainSearchBarInput = document.querySelector('#Search input.Search__Input');
-  if(!mainSearchBar || searchBars.length < 1){
+  const mainSearchBarInputClose = document.querySelector('#Search .Search__Close');
+  if (!mainSearchBar || searchBars.length < 1) {
     console.log('No search bars'); return;
   }
+
+  // close the search results by clicking outside of the results
+  document.querySelector('#main').addEventListener('click',() => {
+    mainSearchBarInputClose.click()
+  })
 
   // trigger event listeners to the mainSearchBarInput to preserve all functionality
   function dispatchKeydownEvent(event) {
@@ -129,17 +135,101 @@ function linkAllSearchToMainSearch(){
   }
 
   searchBars.forEach(el => {
-    el.querySelector('input.Search__Input').addEventListener('input',e => {
-      if(e.target.value){
-        mainSearchBar.setAttribute('aria-hidden','false');
+    el.querySelector('input.Search__Input').addEventListener('input', e => {
+      if (e.target.value) {
+        mainSearchBar.setAttribute('aria-hidden', 'false');
       } else {
-        mainSearchBar.setAttribute('aria-hidden','true');
+        mainSearchBar.setAttribute('aria-hidden', 'true');
       };
       dispatchKeydownEvent(e);
     })
   })
 }
-document.addEventListener('DOMContentLoaded',function(){
+document.addEventListener('DOMContentLoaded', function() {
   linkAllSearchToMainSearch();
 })
 // END Predictive Search Fix
+
+// START Cart Drawer fix
+function ajaxAddToCart(){
+  $('.ad_to_cart_coll:not(.hulk-checked)').each(async function(index){
+    // added the class so that if this function is called again on the same page
+    // for newly rendered elements, the click event doesn't get added twice.
+    const $this = $(this);
+    $this.addClass('hulk-checked');
+    const product = {
+      variant_id: String($this.data('var_id')),
+      id: String($this.data('prod-id')),
+      tags: String($this.data('prod-tags')),
+      vendor: String($this.data('prod-vendor')),
+      type: String($this.data('prod-type')),
+      collections: String($this.data('prod-collections')),
+      url: String($this.data('prod-url')),
+    };
+    const hulk = await getHulkOptions(product);
+    
+    // redirect to the pdp if hulk options exist. Otherwise, add to cart.
+    if(hulk){
+      $this.html('<span>View Product</span>').on('click', () => {
+        window.location = product.url
+      });
+    } else {
+      $this.click( () => {
+        addItemToCart(product.variant_id, 1);    // paste your id product number
+      })
+    };
+  });
+}
+function addItemToCart(variant_id, qty) {
+  data = {
+    "id": variant_id,
+    "quantity": qty
+  }
+  jQuery.ajax({
+    type: 'POST',
+    url: '/cart/add.js',
+    data: data,
+    dataType: 'json',
+    success: function() {
+      document.documentElement.dispatchEvent(new CustomEvent('cart:refresh', {
+        bubbles: true  //this code is for prestige theme, is to refresh the cart
+      }));
+      const cartIcon = document.querySelector('.Header__Cart-Icon');
+      if(cartIcon){
+        cartIcon.click();
+      }
+    }
+  });
+}
+async function getHulkOptions(product){
+  const url = window.hulkapps.po_url + "/api/v2/store/get_all_relationships";
+
+  const postData = {
+    pid: product.id,
+    store_id: window.hulkapps.store_id,
+    tags: product.tags,
+    vendor: product.vendor,
+    ptype: product.type,
+    customer_tags: null != window.hulkapps.customer ? window.hulkapps.customer.tags.split(",") : "",
+    product_collections: product.collections
+  };
+
+  return fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(postData)
+  })
+    .then(response => response.json())
+    .then(data => {
+      return data
+    })
+    .catch(error => {
+      return false
+    });
+}
+document.addEventListener('DOMContentLoaded',function(){
+  ajaxAddToCart();
+})
+// END Cart Drawer fix

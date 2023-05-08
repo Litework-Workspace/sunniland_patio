@@ -1888,8 +1888,10 @@
           }
 
           if (formElement.name && !formElement.disabled && (formElement.checked || /select|textarea/i.test(formElement.nodeName) || /hidden|text|search|tel|url|email|password|datetime|date|month|week|time|datetime-local|number|range|color/i.test(formElement.type))) {
-            var stringKeys = stringKey(formElement.name, formElement.value);
-            hash = Form.extend(hash, stringKeys);
+              if(formElement.value != ''){
+                var stringKeys = stringKey(formElement.name, formElement.value);
+                hash = Form.extend(hash, stringKeys);
+              }
           }
         }
 

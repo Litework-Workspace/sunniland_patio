@@ -1,0 +1,59 @@
+<section class="image-with-text-on-top" id="section-{{ section.id }}">
+  <div class="Container values-container">
+    <div class="Values hidden-phone">
+      <h2 class="about-us-titles">{{ section.settings.title }}</h2>
+      <div class="about-us_content">{{ section.settings.content }}</div>
+    </div>
+    <div class="image-wrapper hidden-phone">
+      <img class="hidden-phone" src="{{ section.settings.image | img_url: "master" }}" alt="">
+    </div>
+      <img class="hidden-tablet-and-up" src="{{ section.settings.image_mobile | img_url: 'master' }}" alt="">
+  </div>
+</section>
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Image w/ text on top",
+    "settings": [
+      {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "text",
+      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "1500 x 800px .jpg recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Mobile Image"
+    }
+    ],
+    "presets": [
+      {
+        "name": "Image w/ text on top",
+        "settings": {}
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

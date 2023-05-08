@@ -28,45 +28,7 @@
               {%- render 'product-item', product: product, show_product_info: true, show_vendor: section.settings.show_vendor, show_color_swatch: section.settings.show_color_swatch, show_labels: true -%}
 
               {% comment %} Start of Buy Button addition {% endcomment %}
-              {%- form 'product', product, class: 'ProductForm' -%}
-                {%- render 'product-data', product: product -%}
-                        {%- if block.settings.show_payment_button == false or product.selling_plan_groups.size > 0 -%}
-                          {%- assign use_primary_button = true -%}
-                        {%- else -%}
-                          {%- assign use_primary_button = false -%}
-                        {%- endif -%}
-
-                        <div class="ProductForm__BuyButtons" {{ block.shopify_attributes }}>
-                          {%- if block.settings.show_payment_button and product.selected_or_first_available_variant.available == false -%}
-                            <style>
-                              #shopify-section-{{ section.id }} .shopify-payment-button {
-                                display: none;
-                              }
-                            </style>
-                          {%- endif -%}
-
-                          <button type="submit" data-use-primary-button="{% if use_primary_button %}true{% else %}false{% endif %}" class="ProductForm__AddToCart Button {% if product.selected_or_first_available_variant.available and use_primary_button %}Button--primary{% else %}Button--secondary{% endif %} Button--full" {% if product.selected_or_first_available_variant.available %}data-action="add-to-cart"{% else %}disabled="disabled"{% endif %}>
-                            {%- if product.selected_or_first_available_variant.available -%}
-                              <span>{% if product.template_suffix == 'pre-order' %}{{ 'product.form.pre_order' | t }}{% else %}{{ 'product.form.add_to_cart' | t }}{% endif %}</span>
-
-                              {%- if block.settings.show_price_in_button -%}
-                                <span class="Button__SeparatorDot"></span>
-                                <span>{{ product.selected_or_first_available_variant.price | money }}</span>
-                              {%- endif -%}
-                            {%- else -%}
-                              {{- 'product.form.sold_out' | t -}}
-                            {%- endif -%}
-                          </button>
-
-                          {%- if block.settings.show_payment_button and product.template_suffix != 'pre-order' -%}
-                            {{ form | payment_button }}
-                          {%- endif -%}
-                        </div>
-                {%- unless has_ouputted_variant_selector -%}
-                  {%- comment -%}If for any reason the merchant has removed the variant selector block, we still output the ID here{%- endcomment -%}
-                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                {%- endunless -%}
-              {% endform %}
+                  {% render 'atc-button-ajax', product: product %}
               {% comment %} End of Buy Button Addition {% endcomment %}
             </div>
           {%- endfor -%}

@@ -100,7 +100,7 @@
             "type": "newsletter",
             "settings": {
               "title": "Join The Sunniland Family!",
-              "content": "<p>Get discounts, rewards and more surprises each month straight to your inbox! Join now and get Free Shipping on your first order.<\/p>"
+              "content": "<p>Get discounts, rewards and more surprises each month straight to your inbox! Join our list.<\/p>"
             }
           },
           "0ef39866-42e6-47bd-8276-3056f67842e9": {
@@ -170,8 +170,7 @@
           "map_link_label": "Get directions",
           "api_key": "AIzaSyAy84eJJGnNQySrJgpwEzin3k_Q5NavV9Y",
           "zoom": 16,
-          "map_style": "standard",
-          "image": "shopify:\/\/shop_images\/Basemap_image.png"
+          "map_style": "standard"
         }
       },
       "image-with-text-block": {
@@ -207,7 +206,7 @@
           "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
           "button_label": "Shop Replacement Cushions",
           "button_link": "shopify:\/\/collections\/replacement-cushions",
-          "show_parallax": true
+          "show_parallax": false
         }
       },
       "slideshow": {
@@ -216,13 +215,13 @@
           "093505c8-0851-49ab-b32e-ae60bdb74dcc": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Andover_Location_2019_3.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/Andover_Location_2019_3_1mobile.jpg",
+              "image": "shopify:\/\/shop_images\/doityourself.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/Image-3.jpg",
               "apply_overlay": true,
               "content_position": "middleCenter",
-              "subheading": "",
-              "title": "Give your outdoor oasis a makeover with our patio furniture repair services.",
-              "content": "<p>Easy pickup and delivery for Palm Beach County, Florida.<\/p>",
+              "subheading": "Reuse, give a second life.",
+              "title": "Do It Yourself Patio Tutorials",
+              "content": "<p>Easy tutorials for at home patio furniture repairs<\/p>",
               "button_1_text": "",
               "button_1_link": "",
               "button_2_text": "",
@@ -591,5 +590,10 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".Form__Input {color: #546e7a;}"
+    ]
   }
 }
