@@ -32,24 +32,28 @@
 {% endfor %}
 
 <section class="Section text-with-images-around" id="section-{{ section.id }}">
-  <div class="Container history_section hidden-phone">
+  <div class="history_section hidden-phone">
     <div class="history_container">
       {% unless section.settings.flip %}
-        <div class="history_left">
-            <h2 class="about-us-titles">{{ title }}</h2>
-            <div class="history_content">{{ content }}</div>
+        <div class="history_left history">
+            <div class="text-content">
+              <h2 class="about-us-titles">{{ title }}</h2>
+              <div class="history_content">{{ content }}</div>
+            </div>
             <img class="img-under-text" src="{{ image | img_url: 'master' }}" alt="">
         </div>
-        <div class="history_right">
+        <div class="history_right media-container">
             <img src="{{ side_image | img_url: 'master' }}" alt="">
         </div>
         {% else %}
-        <div class="history_left">
+        <div class="history_left media-container">
             <img src="{{ side_image | img_url: 'master' }}" alt="">
         </div>
-        <div class="history_right">
-            <h2 class="about-us-titles">{{ title }}</h2>
-            <div class="history_content">{{ content }}</div>
+        <div class="history_right history">
+            <div class="text-content">
+              <h2 class="about-us-titles">{{ title }}</h2>
+              <div class="history_content">{{ content }}</div>
+            </div>
             <img class="img-under-text" src="{{ image | img_url: 'master' }}" alt="">
         </div>
       {% endunless %}
@@ -80,6 +84,13 @@
   </div>
 </section>
 
+<style>
+  {% if section.settings.no_bottom_margin == true %}
+    section#section-{{ section.id }} {
+      margin-bottom: 0 !important;
+    }
+  {% endif %}
+</style>
 
 {% schema %}
   {
@@ -91,6 +102,12 @@
         "id": "flip",
         "label": "Flip Content",
         "info": "Flip positioin of text with image underneath and side image"
+      },
+      {
+        "type": "checkbox",
+        "id": "no_bottom_margin",
+        "label": "Remove bottom margin",
+        "default": false
       }
     ],
     "blocks": [
