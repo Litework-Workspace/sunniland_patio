@@ -23,10 +23,34 @@
   {% endif %}
     <div class="Footer_Logos hidden-phone">
       <div class="Logo_Container">
-        <img src="{{'SW-Logow.png' | asset_url }}" alt="SW Logo" class="logos" style="width: 161px;">
-        <img src="{{ 'Lloyd-Flanders-logo-vector.png' | asset_url }}" alt="" class="logos" style="width: 174px;">
-        <img src="{{ 'Woodard_Logo_BW.png' | asset_url }}" alt="" class="logos" style="width: 129px;">
-        <img src="{{ 'Telescope-Casual-2018.png' | asset_url }}" alt="" class="logos" style="width: 107px;">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'logos' %}
+              <style>
+                .Footer_Logos .Logo_Container .logos {
+                  width: 150px;
+                }
+                {% if block.settings.enable_logos == false %}
+                  .Footer_Logos {
+                    display: none !important;
+                  }
+                {% endif %}
+              </style>
+
+              {% if block.settings.logo_1 != blank %}
+                <img src="{{ block.settings.logo_1 | img_url: 'master' }}" alt="" class="logos" style="">
+              {% endif %}
+              {% if block.settings.logo_2 != blank %}
+                <img src="{{ block.settings.logo_2 | img_url: 'master' }}" alt="" class="logos" style="">
+              {% endif %}
+              {% if block.settings.logo_3 != blank %}
+                <img src="{{ block.settings.logo_3 | img_url: 'master' }}" alt="" class="logos" style="">
+              {% endif %}
+              {% if block.settings.logo_4 != blank %}
+                <img src="{{ block.settings.logo_4 | img_url: 'master' }}" alt="" class="logos" style="">
+              {% endif %}
+          {% endcase %}
+        {% endfor %}
       </div>
     </div>
     
@@ -303,6 +327,38 @@
     }
   ],
   "blocks": [
+    {
+      "type": "logos",
+      "name": "Partner Logos",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "enable_logos",
+          "label": "Enable Partner Labels",
+          "default": false
+        },
+        {
+          "type": "image_picker",
+          "id": "logo_1",
+          "label": "Logo 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo_2",
+          "label": "Logo 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo_3",
+          "label": "Logo 3"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo_4",
+          "label": "Logo 4"
+        }
+      ]
+    },
     {
       "type": "text",
       "name": "Text / social media",

@@ -443,6 +443,11 @@ section#section-announcement {
   }
 }
 
+.Search__Close.custom {
+  position: absolute;
+  top: 25px;
+  right: 65px;
+}
 .Search__Input {
   color: #CFD8DC !important;
   font-size: 16px;
@@ -499,6 +504,11 @@ section#section-announcement {
   }
   .Header__FlexItem--fill:last-child {
     margin-top: 15px;
+  }
+  .Search__Close.custom {
+    position: absolute;
+    top: 13px;
+    right: 19px;
   }
 }
 
@@ -1700,6 +1710,9 @@ section.Section.Announcement_Banner {
   color: #78909C;
   margin-bottom: 10px;
 }
+.hulkapps_option_value {
+  position: relative;
+}
 body .hulkapps_product_options .hulkapps_option_set .hulkapps_option .hulkapps_option_value .hulkapps_mswatch_option .swatch_selected::after, body .hulkapps_product_options .hulkapps_option_set .hulkapps_option .hulkapps_option_value .hulkapps_swatch_option .swatch_selected::after {
   border-color: #DD2C00 !important;
   border-width: 2px !important;
@@ -1729,7 +1742,26 @@ body .hulkapps_product_options .hulkapps_option_set .hulkapps_option .hulkapps_o
 }
 /* END Page section edits */
 
+/* START RecentlyViewedProducts edits */
+.RecentlyViewedProducts .splide__arrow--prev {
+  left: 10px !important;
+}
+.RecentlyViewedProducts .splide__arrow--next {
+  right: 10px !important;
+}
+/* END RecentlyViewedProducts edits */
+
 /* Start DIY section edits */
+.Article__Body iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+}
+@media screen and (max-width:640px){
+  .Article__Body iframe {
+    height: 250px;
+  }
+}
 .Blog.DIY .Drawer[aria-hidden="false"]::before {
   opacity: 0 !important;
 }
@@ -2002,3 +2034,6 @@ body .hulkapps_product_options .hulkapps_option_set .hulkapps_option .hulkapps_o
 }
 /* END RecentlyViewedProducts edits */
 
+#contact_form .Form__Item {
+  border: 1px solid #000;
+}

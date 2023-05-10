@@ -100,7 +100,7 @@
             "type": "newsletter",
             "settings": {
               "title": "Join The Sunniland Family!",
-              "content": "<p>Get discounts, rewards and more surprises each month straight to your inbox! Join now and get Free Shipping on your first order.<\/p>"
+              "content": "<p>Get discounts, rewards and more surprises each month straight to your inbox! Join our list.<\/p>"
             }
           },
           "0ef39866-42e6-47bd-8276-3056f67842e9": {
@@ -131,6 +131,16 @@
               "content": "<p>6101 N Federal Hwy.<\/p>\n<p>Boca Raton, Florida 33487<\/p>\n<br>\n<p>Call us: 1-561-997-7114<\/p>\n<br>\n<p>Email us: <a class=\"footer_email\" href=\"mailto:info@sunnilandpatio.com\">info@sunnilandpatio.com<\/a><\/p>",
               "show_social_media": true
             }
+          },
+          "1157b2b2-3414-4df9-a9a8-57d682e01300": {
+            "type": "logos",
+            "settings": {
+              "enable_logos": true,
+              "logo_1": "shopify:\/\/shop_images\/SW-Logow.png",
+              "logo_2": "shopify:\/\/shop_images\/Lloyd-Flanders-logo-vector.svg",
+              "logo_3": "shopify:\/\/shop_images\/Woodard_Logo_BW.png",
+              "logo_4": "shopify:\/\/shop_images\/Telescope-Casual-2018.svg"
+            }
           }
         },
         "block_order": [
@@ -138,7 +148,8 @@
           "0ef39866-42e6-47bd-8276-3056f67842e9",
           "footer-1",
           "footer-0",
-          "8d237045-6a02-4a4f-a457-e6e853153718"
+          "8d237045-6a02-4a4f-a457-e6e853153718",
+          "1157b2b2-3414-4df9-a9a8-57d682e01300"
         ],
         "settings": {
           "show_payment_methods": false,
@@ -170,8 +181,7 @@
           "map_link_label": "Get directions",
           "api_key": "AIzaSyAy84eJJGnNQySrJgpwEzin3k_Q5NavV9Y",
           "zoom": 16,
-          "map_style": "standard",
-          "image": "shopify:\/\/shop_images\/Basemap_image.png"
+          "map_style": "standard"
         }
       },
       "image-with-text-block": {
