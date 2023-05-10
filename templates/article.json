@@ -8,9 +8,9 @@
         "show_category": false,
         "show_author": false,
         "show_share_buttons": false,
-        "show_prev_next": true,
-        "show_comment_section": false,
-        "video_autoplay_mute": true
+        "show_prev_next": false,
+        "video_autoplay_mute": true,
+        "show_comment_section": false
       }
     },
     "shop-now": {
