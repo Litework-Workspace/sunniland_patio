@@ -59,15 +59,13 @@
                 </div>
               </div>
               {% assign tags = '' %}
-              {% for article in blog.articles %}
-                {% for tag in article.tags %}
+                {% for tag in blog.all_tags %}
                   {% if tags == blank %}
                     {% assign tags = tag %}
                   {% else %}
                     {% assign tags = tags | append: ',' | append: tag %}
                   {% endif %}
                 {% endfor %}
-              {% endfor %}
               {% assign tags = tags | split: ',' | uniq %}
 
               <div id="collection-filter-drawer" class="CollectionFilters Drawer Drawer--secondary Drawer--fromRight" aria-hidden="true">
@@ -82,6 +80,9 @@
                 <div class="Drawer__Content">
                   <div class="Drawer__Main" data-scrollable>
                     <div id="collection-filters-drawer-form" class="collection-filters-form">
+                      <div class="Collapsible Collapsible--padded">
+                        <button class="article-filter filter-reset Collapsible__Button Heading u-h6">All Articles</button>
+                      </div>
                       {% for tag in tags %}
                         <div class="Collapsible Collapsible--padded">
                           <button class="article-filter Collapsible__Button Heading u-h6">{{ tag }}</button>
@@ -90,11 +91,13 @@
                     </div>
                   </div>
 
+                  {%- comment -%}
                   <div class="Drawer__Footer Drawer__Footer--padded" data-drawer-animated-bottom>
                     <div class="ButtonGroup">
                       <button id="clear-filters-btn" type="button" class="ButtonGroup__Item ButtonGroup__Item--expand Button Button--primary" data-action="close-drawer" data-drawer-id="collection-filter-drawer">Clear All</button>
                     </div>
                   </div>
+                  {%- endcomment -%}
                 </div>
               </div>
 
@@ -231,43 +234,20 @@
 </div>
 
 <script>
-  const articles = document.querySelectorAll('[data-tags]');
-  const articleContainer = document.querySelector('[data-tag-filter]');
-  const filters = document.querySelectorAll('.article-filter');
-  const clearFiltersBtn = document.querySelector('#clear-filters-btn');
-  const layoutBtns = document.querySelectorAll('.CollectionToolbar__LayoutType');
+  function layoutHandle(){
+    const articleContainer = document.querySelector('[data-tag-filter]');
+    const layoutBtns = document.querySelectorAll('.CollectionToolbar__LayoutType');
 
-  layoutBtns.forEach(layoutBtn => {
-    layoutBtn.addEventListener('click',() => {
-      document.querySelector('.CollectionToolbar__LayoutType.is-active').classList.remove('is-active');
-      layoutBtn.classList.add('is-active');
+    layoutBtns.forEach(layoutBtn => {
+      layoutBtn.addEventListener('click',() => {
+        document.querySelector('.CollectionToolbar__LayoutType.is-active').classList.remove('is-active');
+        layoutBtn.classList.add('is-active');
 
-      articleContainer.setAttribute('data-count',layoutBtn.getAttribute('data-count'));
-    })
-  })
-
-  clearFiltersBtn.addEventListener('click',() => {
-    articles.forEach(article => {
-      article.style.display = 'block';
-    })
-  })
-
-  filters.forEach(filter => {
-    filter.addEventListener('click',() => {
-      console.log('filter',filter);
-      articleContainer.setAttribute('data-tag-filter',filter.innerHTML);
-
-      articles.forEach(article => {
-        const tags = article.getAttribute('data-tags').split(',');
-
-        if(tags.includes(filter.innerHTML)){
-          article.style.display='block';
-        } else {
-          article.style.display='none';
-        }
+        articleContainer.setAttribute('data-count',layoutBtn.getAttribute('data-count'));
       })
     })
-  })
+  }
+  document.addEventListener('DOMContentLoaded',layoutHandle);
 </script>
 
 <style>
