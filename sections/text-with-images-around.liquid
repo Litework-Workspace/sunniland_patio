@@ -17,50 +17,97 @@
   {% if block.settings.mobile-bottom-img %}
     {% assign mobile-bottom-img = block.settings.mobile-bottom-img %}
   {% endif %}
+  {% if block.settings.bottom_banner %}
+    {% assign bottom_banner = block.settings.bottom_banner %}
+  {% endif %}
+  {% if block.settings.bottom_banner-mobile %}
+    {% assign bottom_banner-mobile = block.settings.bottom_banner-mobile %}
+  {% endif %}
+  {% if block.settings.banner_title %}
+    {% assign banner_title = block.settings.banner_title %}
+  {% endif %}
+  {% if block.settings.banner_subheading %}
+    {% assign banner_subheading = block.settings.banner_subheading %}
+  {% endif %}
 {% endfor %}
 
 <section class="Section text-with-images-around" id="section-{{ section.id }}">
-  <div class="Container history_container hidden-phone">
-    {% unless section.settings.flip %}
-      <div class="history_left">
-          <h2 class="about-us-titles">{{ title }}</h2>
-          <div class="history_content">{{ content }}</div>
-          <img class="img-under-text" src="{{ image | img_url: 'master' }}" alt="">
+  <div class="history_section hidden-phone">
+    <div class="history_container">
+      {% unless section.settings.flip %}
+        <div class="history_left history">
+            <div class="text-content">
+              <h2 class="about-us-titles">{{ title }}</h2>
+              <div class="history_content">{{ content }}</div>
+            </div>
+            <img class="img-under-text" src="{{ image | img_url: 'master' }}" alt="">
+        </div>
+        <div class="history_right media-container">
+            <img src="{{ side_image | img_url: 'master' }}" alt="">
+        </div>
+        {% else %}
+        <div class="history_left media-container">
+            <img src="{{ side_image | img_url: 'master' }}" alt="">
+        </div>
+        <div class="history_right history">
+            <div class="text-content">
+              <h2 class="about-us-titles">{{ title }}</h2>
+              <div class="history_content">{{ content }}</div>
+            </div>
+            <img class="img-under-text" src="{{ image | img_url: 'master' }}" alt="">
+        </div>
+      {% endunless %}
+    </div>
+    {% if bottom_banner %}
+      <div class="history_banner">
+        <img src="{{ bottom_banner | img_url: 'master' }}" alt="">
       </div>
-      <div class="history_right">
-          <img src="{{ side_image | img_url: 'master' }}" alt="">
-      </div>
-      {% else %}
-      <div class="history_left">
-          <img src="{{ side_image | img_url: 'master' }}" alt="">
-      </div>
-      <div class="history_right">
-          <h2 class="about-us-titles">{{ title }}</h2>
-          <div class="history_content">{{ content }}</div>
-          <img class="img-under-text" src="{{ image | img_url: 'master' }}" alt="">
-      </div>
-    {% endunless %}
+    {% endif %}
   </div>
-  <div class="Container history_container_mobile hidden-tablet-and-up">
-    <img src="{{ side_image | img_url: 'master' }}" alt="">
-    <h2 class="about-us-titles">{{ title }}</h2>
-    <div class="history_content">{{ content }}</div>
-    <img class="top-mobile-image" src="{{ mobile-top-img | img_url: 'master' }}" alt="">
-    <img src="{{ mobile-bottom-img | img_url: 'master' }}" alt="">
+  <div class="Container history_section hidden-tablet-and-up">
+    <div class="history_container_mobile">
+      <img src="{{ side_image | img_url: 'master' }}" alt="">
+      <h2 class="about-us-titles">{{ title }}</h2>
+      <div class="history_content">{{ content }}</div>
+      <img class="top-mobile-image" src="{{ mobile-top-img | img_url: 'master' }}" alt="">
+      <img src="{{ mobile-bottom-img | img_url: 'master' }}" alt="">
+    </div>
+    {% if bottom_banner-mobile %}
+      <div class="history_banner-mobile">
+        <img src="{{ bottom_banner-mobile | img_url: 'master' }}" alt="">
+        <div class="history_banner_mobile_text">
+          <h2 class="text-w-img_title">{{ banner_title }}</h2>
+          <h3 class="text-w-img_subheading">{{ banner_subheading }}</h3>
+        </div>
+      </div>
+    {% endif %}
   </div>
 </section>
 
+<style>
+  {% if section.settings.no_bottom_margin == true %}
+    section#section-{{ section.id }} {
+      margin-bottom: 0 !important;
+    }
+  {% endif %}
+</style>
 
 {% schema %}
   {
     "name": "Text w/ imgs custom",
-    "max_blocks": 2,
+    "max_blocks": 4,
     "settings": [
       {
         "type": "checkbox",
         "id": "flip",
         "label": "Flip Content",
         "info": "Flip positioin of text with image underneath and side image"
+      },
+      {
+        "type": "checkbox",
+        "id": "no_bottom_margin",
+        "label": "Remove bottom margin",
+        "default": false
       }
     ],
     "blocks": [
@@ -87,6 +134,10 @@
             "info": "1500 x 800px .jpg recommended"
           },
           {
+            "type":"header",
+            "content": "Mobile Settings"
+          },
+          {
             "type": "image_picker",
             "id": "mobile-top-img",
             "label": "Top of bottom images"
@@ -95,6 +146,32 @@
             "type": "image_picker",
             "id": "mobile-bottom-img",
             "label": "Bottom of bottom images"
+          },
+          {
+            "type": "header",
+            "content": "Settings For Bottom Banner"
+          },
+          {
+            "type": "image_picker",
+            "id": "bottom_banner",
+            "label": "Bottom Banner"
+          },
+          {
+            "type": "image_picker",
+            "id": "bottom_banner-mobile",
+            "label": "Bottom Banner Mobile"
+          },
+            {
+            "type": "text",
+            "id": "banner_title",
+            "label": "Heading",
+            "default": "Banner Title Mobile"
+          },
+          {
+            "type": "text",
+            "id": "banner_subheading",
+            "label": "SubHeading",
+            "default": "Banner Subheading Mobile"
           }
         ]
       },

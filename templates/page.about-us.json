@@ -72,26 +72,31 @@
         "liquid": "<div class=\"About-Us-Page\">\n  <div class=\"history_container\">\n    <div class=\"history_left\">\n      <h2 class=\"history_title\">History of Sunniland - The beginnings<\/h2>\n      <p class=\"history_content\">Founded in 1972, SunnilandPatio has been providing a superior level of service in patio retail for more than 50 years. \n      <br>\n      <br>\n      We have been helping homeowners just like you enjoy better outdoor living. Our reputation for integrity, quality, and reliability sets the standard for the rest of the retail patio industry.\n      <br>\n      <br>\n      Founded in 1972, SunnilandPatio has been providing a superior level of service in patio retail for more than 50 years. \n      <br>\n      <br>\n      We have been helping homeowners just like you enjoy better outdoor living. Our reputation for integrity, quality, and reliability sets the standard for the rest of the retail patio industry.<\/p>\n      <img src=\"{{ 'Frame-58.png' | asset_url }}\" alt=\"\">\n    <\/div>\n    <div class=\"history_right\">\n      <img src=\"{{ 'Group-3239.png' | asset_url }}\" alt=\"\">\n    <\/div>\n  <\/div>\n<\/div>"
       }
     },
-    "a6a48eb5-1dfc-435e-87da-0731a305ec4a": {
+    "f6be4951-2d1a-4da4-9b2f-78eb71c14b05": {
       "type": "image-with-text-ontop",
       "settings": {
         "title": "Values We Believe",
         "content": "<p>For the last 50 years we have been serving generations of families to build their dream patios. Inheriting the craft from his mother & father, Jeff Bender and his team of experts is here to help you find all your patio furniture and fixtures in one place!<\/p>",
-        "image": "shopify:\/\/shop_images\/Frame_55.png"
+        "image": "shopify:\/\/shop_images\/Frame_55_f68a0d91-00ef-4ccb-ba86-47d060c32c38.png",
+        "image_mobile": "shopify:\/\/shop_images\/Group_3241_212c9a40-16c6-4375-8423-3ee53eb7f3b6.png"
       }
     },
-    "86a452f9-cefb-4d72-a1a7-c5faca8c7a7c": {
+    "e222108a-67ce-48ff-87b8-accb7f5fac72": {
       "type": "text-with-images-around",
       "blocks": {
-        "template--18678088139048__86a452f9-cefb-4d72-a1a7-c5faca8c7a7c-1682793290834f274a-0": {
+        "template--18832775053608__e222108a-67ce-48ff-87b8-accb7f5fac72-168351692035ef99db-0": {
           "type": "richtext",
           "settings": {
             "title": "History of Sunniland - The beginnings",
             "content": "<p>Founded in 1972, SunnilandPatio has been providing a superior level of service in patio retail for more than 50 years. <br\/><br\/>We have been helping homeowners just like you enjoy better outdoor living. Our reputation for integrity, quality, and reliability sets the standard for the rest of the retail patio industry.<br\/><br\/>Founded in 1972, SunnilandPatio has been providing a superior level of service in patio retail for more than 50 years. <br\/><br\/>We have been helping homeowners just like you enjoy better outdoor living. Our reputation for integrity, quality, and reliability sets the standard for the rest of the retail patio industry.<\/p>",
-            "image": "shopify:\/\/shop_images\/Frame-58_2f7a7a61-dfcb-4fe6-9a33-c944d30346d3.png"
+            "image": "shopify:\/\/shop_images\/Frame-58_2f7a7a61-dfcb-4fe6-9a33-c944d30346d3.png",
+            "mobile-top-img": "shopify:\/\/shop_images\/Group_3229.png",
+            "mobile-bottom-img": "shopify:\/\/shop_images\/Group_3232.png",
+            "banner_title": "Banner Title Mobile",
+            "banner_subheading": "Banner Subheading Mobile"
           }
         },
-        "template--18678088139048__86a452f9-cefb-4d72-a1a7-c5faca8c7a7c-1682793290834f274a-1": {
+        "template--18832775053608__e222108a-67ce-48ff-87b8-accb7f5fac72-168351692035ef99db-1": {
           "type": "image",
           "settings": {
             "side_image": "shopify:\/\/shop_images\/Group_3239.png"
@@ -99,14 +104,15 @@
         }
       },
       "block_order": [
-        "template--18678088139048__86a452f9-cefb-4d72-a1a7-c5faca8c7a7c-1682793290834f274a-0",
-        "template--18678088139048__86a452f9-cefb-4d72-a1a7-c5faca8c7a7c-1682793290834f274a-1"
+        "template--18832775053608__e222108a-67ce-48ff-87b8-accb7f5fac72-168351692035ef99db-0",
+        "template--18832775053608__e222108a-67ce-48ff-87b8-accb7f5fac72-168351692035ef99db-1"
       ],
       "settings": {
-        "flip": false
+        "flip": false,
+        "no_bottom_margin": true
       }
     },
-    "0c8ce3d8-e8b6-4945-9417-7b1242bcdd9b": {
+    "abd8150a-0ceb-414f-a8e5-49967bb1c74d": {
       "type": "image-with-text-overlay",
       "settings": {
         "section_size": "large",
@@ -117,8 +123,8 @@
         "subheading": "",
         "title": "Through The Years",
         "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.<\/p>",
-        "show_on_mobile": false,
-        "no_bottom_margin": false,
+        "show_on_mobile": true,
+        "no_bottom_margin": true,
         "button_1_text": "",
         "button_1_link": "",
         "button_2_text": "",
@@ -127,18 +133,24 @@
         "button_background": "#ffffff"
       }
     },
-    "a5040c90-e9e5-460a-9195-3f948020e4fe": {
+    "358fe575-1d69-4eea-822b-c7e6fa8b6c56": {
       "type": "text-with-images-around",
       "blocks": {
-        "template--18678088139048__a5040c90-e9e5-460a-9195-3f948020e4fe-1682793290834f274a-0": {
+        "template--18832775053608__358fe575-1d69-4eea-822b-c7e6fa8b6c56-168351692035ef99db-0": {
           "type": "richtext",
           "settings": {
             "title": "End of Family Legacy",
             "content": "<p>Founded in 1972, SunnilandPatio has been providing a superior level of service in patio retail for more than 50 years. <br\/><br\/>We have been helping homeowners just like you enjoy better outdoor living. Our reputation for integrity, quality, and reliability sets the standard for the rest of the retail patio industry.<\/p>",
-            "image": "shopify:\/\/shop_images\/Frame_60.png"
+            "image": "shopify:\/\/shop_images\/Frame_60.png",
+            "mobile-top-img": "shopify:\/\/shop_images\/IMG_9224_2.png",
+            "mobile-bottom-img": "shopify:\/\/shop_images\/IMG_9226_2.png",
+            "bottom_banner": "shopify:\/\/shop_images\/Frame_64.png",
+            "bottom_banner-mobile": "shopify:\/\/shop_images\/IMG_9238_1_1.png",
+            "banner_title": "\"Renew your outdoor oasis with SunnilandPatio - where quality and style meet for the perfect patio experience.\"",
+            "banner_subheading": "Jeff B."
           }
         },
-        "template--18678088139048__a5040c90-e9e5-460a-9195-3f948020e4fe-1682793290834f274a-1": {
+        "template--18832775053608__358fe575-1d69-4eea-822b-c7e6fa8b6c56-168351692035ef99db-1": {
           "type": "image",
           "settings": {
             "side_image": "shopify:\/\/shop_images\/Mask_group_8.png"
@@ -146,11 +158,12 @@
         }
       },
       "block_order": [
-        "template--18678088139048__a5040c90-e9e5-460a-9195-3f948020e4fe-1682793290834f274a-0",
-        "template--18678088139048__a5040c90-e9e5-460a-9195-3f948020e4fe-1682793290834f274a-1"
+        "template--18832775053608__358fe575-1d69-4eea-822b-c7e6fa8b6c56-168351692035ef99db-0",
+        "template--18832775053608__358fe575-1d69-4eea-822b-c7e6fa8b6c56-168351692035ef99db-1"
       ],
       "settings": {
-        "flip": true
+        "flip": true,
+        "no_bottom_margin": true
       }
     }
   },
@@ -159,9 +172,9 @@
     "5ae26285-a365-4b5d-a251-df945c7dec62",
     "main",
     "1ddf2a8b-0421-41fe-b9bf-fd09ffe57f58",
-    "a6a48eb5-1dfc-435e-87da-0731a305ec4a",
-    "86a452f9-cefb-4d72-a1a7-c5faca8c7a7c",
-    "0c8ce3d8-e8b6-4945-9417-7b1242bcdd9b",
-    "a5040c90-e9e5-460a-9195-3f948020e4fe"
+    "f6be4951-2d1a-4da4-9b2f-78eb71c14b05",
+    "e222108a-67ce-48ff-87b8-accb7f5fac72",
+    "abd8150a-0ceb-414f-a8e5-49967bb1c74d",
+    "358fe575-1d69-4eea-822b-c7e6fa8b6c56"
   ]
 }
