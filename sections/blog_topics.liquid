@@ -7,50 +7,28 @@
         {%- render 'icon' with 'close' -%}
       </button>
     </header>
+    {% assign tags = '' %}
+      {% for tag in blog.all_tags %}
+        {% if tags == blank %}
+          {% assign tags = tag %}
+        {% else %}
+          {% assign tags = tags | append: ',' | append: tag %}
+        {% endif %}
+      {% endfor %}
+    {% assign tags = tags | split: ',' | uniq %}
 
     <div class="Drawer__Content">
       <div class="Drawer__Main" data-drawer-animated-left data-scrollable>
         <div class="Drawer__Container">
           <nav class="SidebarMenu__Nav SidebarMenu__Nav--primary" aria-label="{{ 'header.navigation.sidebar_title' | t }}">
-            {%- for link in main_menu.links -%}
-              <div class="Collapsible">
-                {%- if link.links != blank -%}
-                  <button class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" {% if link.links != blank %}aria-expanded="false"{% endif %}>
-                    {{- link.title | escape -}} <span class="Collapsible__Plus"></span>
-                  </button>
-
-                  <div class="Collapsible__Inner">
-                    <div class="Collapsible__Content">
-                      {%- for sub_link in link.links -%}
                         <div class="Collapsible">
-                          {%- if sub_link.links != blank -%}
-                            <button class="Collapsible__Button Heading Text--subdued Link--primary u-h7" data-action="toggle-collapsible" {% if sub_link.links != blank %}aria-expanded="false"{% endif %}>
-                              {{- sub_link.title | escape -}} <span class="Collapsible__Plus"></span>
-                            </button>
-
-                            <div class="Collapsible__Inner">
-                              <div class="Collapsible__Content">
-                                <ul class="Linklist Linklist--bordered Linklist--spacingLoose">
-                                  {%- for sub_sub_link in sub_link.links -%}
-                                    <li class="Linklist__Item">
-                                      <a href="{{ sub_sub_link.url }}" class="Text--subdued Link Link--primary">{{ sub_sub_link.title | escape }}</a>
-                                    </li>
-                                  {%- endfor -%}
-                                </ul>
-                              </div>
-                            </div>
-                          {%- else -%}
-                            <a href="{{ sub_link.url }}" class="Collapsible__Button Heading Text--subdued Link Link--primary u-h7">{{ sub_link.title | escape }}</a>
-                          {%- endif -%}
+                          <button class="article-filter filter-reset Collapsible__Button Heading u-h6">All Articles</button>
                         </div>
-                      {%- endfor -%}
-                    </div>
-                  </div>
-                {%- else -%}
-                  <a href="{{ link.url }}" class="Collapsible__Button Heading Link Link--primary u-h6">{{ link.title | escape }}</a>
-                {%- endif -%}
-              </div>
-            {%- endfor -%}
+                      {% for tag in tags %}
+                        <div class="Collapsible">
+                          <button class="article-filter Collapsible__Button Heading u-h6">{{ tag }}</button>
+                        </div>
+                      {% endfor %}
             {% comment %} {% if template == 'blog' %}
               <h2 class="SectionHeader__Heading Heading u-h1 Phone-MenuHeading">Blog Topics</h2>
               {% for link in linklists.blog-topics.links %}
@@ -98,6 +76,39 @@
       {%- endif -%}
     </div>
 </section>
+
+<script>
+  function handleize(string) {
+    return string
+      .toLowerCase()
+      .replace(/\s+/g, '-') // Replace spaces with -
+      .replace(/[^a-z0-9-]/g, ''); // Remove all non-alphanumeric characters
+  }
+
+  function tagFilters(){
+    const articles = document.querySelectorAll('[data-tags]');
+    const articleContainer = document.querySelector('[data-tag-filter]');
+    const filters = document.querySelectorAll('.article-filter:not(.filter-reset)');
+    const filtersReset = document.querySelectorAll('.article-filter.filter-reset');
+    const clearFiltersBtn = document.querySelector('#clear-filters-btn');
+
+    filtersReset.forEach(filterReset => {
+      filterReset.addEventListener('click',() => {
+        window.location.href = `/blogs/{{ blog.handle }}`
+      })
+    })
+
+    filters.forEach(filter => {
+      filter.addEventListener('click',() => {
+        const tagHandle = handleize(filter.innerHTML);
+        console.log('filter',filter,'{{ blog.handle}}',tagHandle);
+        articleContainer.setAttribute('data-tag-filter',filter.innerHTML);
+        window.location.href = `/blogs/{{ blog.handle }}/tagged/${tagHandle}`
+      })
+    })
+  }
+  document.addEventListener('DOMContentLoaded',tagFilters);
+</script>
 
 {% schema %}
 {

@@ -58,6 +58,23 @@ function attachEventListeners(container) {
   }
 }
 
+function addChevron(element){
+  const chevronAdded = element.querySelector('svg.hulk-chevron');
+  if(chevronAdded){
+    console.log('chevron added',element,chevronAdded)
+    return
+  }
+
+  const select = element.querySelector('select.hulkapps_option_child');
+  if(select){
+    select.parentElement.innerHTML += `
+        <svg class="hulk-chevron" role="presentation" viewBox="0 0 19 12" style="position: absolute;height: 100%;width: 15px;top: 0;right: 10px;">
+          <polyline fill="none" stroke="currentColor" points="17 2 9.5 10 2 2" fill-rule="evenodd" stroke-width="2" stroke-linecap="square"></polyline>
+        </svg>
+      `
+  }
+}
+
 function syncHulkOptionWithVariant() {
   const ogSelect = document.querySelector('.no-js.ProductForm__Option select');
 
@@ -69,6 +86,7 @@ function syncHulkOptionWithVariant() {
           ...document.querySelectorAll('.hulkapps_option.swatch_render')
         ];
         hulkContainers.forEach(attachEventListeners);
+        hulkContainers.forEach(addChevron);
 
         const hulkSelect = document.querySelector('.hulkapps_option.dd_render select.hulkapps_option_child');
         if (hulkSelect && ogSelect) {

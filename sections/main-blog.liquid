@@ -81,7 +81,7 @@
             {%- assign is_first_article_featured = true -%}
           {%- endif -%}
 
-          <div class="ArticleListWrapper">
+          <div data-tag-filter="" class="ArticleListWrapper">
             <div class="ArticleList {% if is_first_article_featured %}ArticleList--withFeatured{% endif %} Grid Grid--m">
               {%- for article in blog.articles -%}
                 {%- if is_first_article_featured and forloop.first -%}
@@ -119,7 +119,7 @@
                   </div>
                 {%- endif -%}
 
-                <div class="Grid__Cell {% if is_first_article_featured and forloop.first %}hidden-tablet-and-up{% else %}1/2--tablet 1/3--lap-and-up{% endif %}">
+                <div data-tags="{{ article.tags | join: ',' }}" class="Grid__Cell {% if is_first_article_featured and forloop.first %}hidden-tablet-and-up{% else %}1/2--tablet 1/3--lap-and-up{% endif %}">
                   {%- render 'article-item', article: article -%}
                 </div>
               {%- endfor -%}
@@ -140,12 +140,24 @@
             Topics
           </h2>
 
+    {% assign tags = '' %}
+      {% for tag in blog.all_tags %}
+        {% if tags == blank %}
+          {% assign tags = tag %}
+        {% else %}
+          {% assign tags = tags | append: ',' | append: tag %}
+        {% endif %}
+      {% endfor %}
+    {% assign tags = tags | split: ',' | uniq %}
           <div class="blog-links">
-            {% for link in linklists.blog-topics.links %}
-              <li class="Linklist__Item">
-                <a href="{{ link.url }}" class="Link Link--primary">{{ link.title | escape }}</a>
-              </li>
-            {% endfor %}
+          <li class="Linklist__Item">
+            <button class="article-filter filter-reset Link Link--primary">All Articles</button>
+          </li>
+          {% for tag in tags %}
+            <li class="Linklist__Item">
+              <button class="article-filter Link Link--primary">{{ tag }}</button>
+            </li>
+          {% endfor %}
           </div>
           <div class="blogSubscribe-Form">
             <h2 class="Heading u-h2">Subscribe to email updates</h2>
