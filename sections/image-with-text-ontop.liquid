@@ -1,13 +1,18 @@
 <section class="image-with-text-on-top" id="section-{{ section.id }}">
   <div class="Container values-container">
-    <div class="Values hidden-phone">
+    <div class="Values">
       <h2 class="about-us-titles">{{ section.settings.title }}</h2>
       <div class="about-us_content">{{ section.settings.content }}</div>
     </div>
-    <div class="image-wrapper hidden-phone">
-      <img class="hidden-phone" src="{{ section.settings.image | img_url: "master" }}" alt="">
+    <div class="image-container">
+      {% for block in section.blocks %}
+        <div class="inner-wrapper">
+          <img src="{{ block.settings.image | img_url: 'master' }}" alt="Image - {{ block.settings.image.alt }}">
+          <p class="subheading">{{ block.settings.heading }}</p>
+          {{ block.settings.content }}
+        </div>
+      {% endfor %}
     </div>
-      <img class="hidden-tablet-and-up" src="{{ section.settings.image_mobile | img_url: 'master' }}" alt="">
   </div>
 </section>
 
@@ -24,24 +29,39 @@
       "id": "title",
       "label": "Heading",
       "default": "Title"
-    },
-    {
-      "type": "richtext",
-      "id": "content",
-      "label": "text",
-      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
-    },
-    {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Image",
-      "info": "1500 x 800px .jpg recommended"
-    },
-    {
-      "type": "image_picker",
-      "id": "image_mobile",
-      "label": "Mobile Image"
-    }
+      },
+      {
+        "type": "richtext",
+        "id": "content",
+        "label": "text",
+        "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image_text",
+        "name": "Image With Text",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Subheading",
+            "default": "USA Quality Build"
+          },
+          {
+            "type": "richtext",
+            "id": "content",
+            "label": "Text Content",
+            "default": "<p>A curated selection of the best quality USA-made furniture that lasts decades.</p>"
+          }
+        ]
+      }
     ],
     "presets": [
       {
@@ -51,9 +71,3 @@
     ]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
