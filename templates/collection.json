@@ -146,7 +146,7 @@
             "title": "",
             "button_text": "Show All",
             "button_link": "",
-            "apply_overlay": true
+            "apply_overlay": false
           }
         },
         "template--17486863892776__5ba7b05d-d0e9-4bd4-9ec4-41701b3099b4-16791570098fe8f52f-0": {
@@ -160,7 +160,7 @@
             "title": "",
             "button_text": "Coffee Tables",
             "button_link": "",
-            "apply_overlay": true
+            "apply_overlay": false
           }
         },
         "template--17486863892776__5ba7b05d-d0e9-4bd4-9ec4-41701b3099b4-16791570098fe8f52f-1": {
@@ -174,7 +174,7 @@
             "title": "",
             "button_text": "End Tables",
             "button_link": "",
-            "apply_overlay": true
+            "apply_overlay": false
           }
         },
         "bd801f18-5b4f-4027-a9c3-355f022ad2a7": {
@@ -188,7 +188,7 @@
             "title": "",
             "button_text": "Fire Pit Tables",
             "button_link": "",
-            "apply_overlay": true
+            "apply_overlay": false
           }
         },
         "28eec07b-532e-4ad4-8863-754df530d14d": {
@@ -202,7 +202,7 @@
             "title": "",
             "button_text": "Dining Tables",
             "button_link": "",
-            "apply_overlay": true
+            "apply_overlay": false
           }
         }
       },
