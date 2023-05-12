@@ -1938,13 +1938,75 @@ body .hulkapps_product_options .hulkapps_option_set .hulkapps_option .hulkapps_o
   width: 100%;
 }
 
+.img-under-text-container {
+  display: flex;
+  gap: 40px;
+}
+
+.image-with-text-on-top .image-container {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+}
+
+.image-with-text-on-top .image-container .inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+}
+
+.image-with-text-on-top .image-container .inner-wrapper img {
+  margin: 0 auto 25px;
+  max-height: 70px;
+} 
+
+.image-with-text-on-top .image-container .inner-wrapper p.subheading {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #263238;
+}
+
+.image-with-text-on-top .image-container .inner-wrapper p:not(.subheading) {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #000000;
+} 
 
 @media screen and (max-width: 641px ) {
+  .image-with-text-on-top .image-container {
+    flex-direction: column;
+  }
+  .image-with-text-on-top .image-container .inner-wrapper {
+    width: 100%;
+  }
   .history_section {
     padding: 40px 0;
   }
   .history_container {
     background: #F1F1F1;
+  }
+  .Values {
+    align-items: start;
+  }
+  .about-us_content {
+    text-align: left;
+  }
+  .values-container .about-us-titles {
+    margin-top: 0;
+  }
+  .image-with-text-on-top .image-container .inner-wrapper p:not(.subheading) {
+    padding: 0 25px;
   }
 
   .about-us-titles {

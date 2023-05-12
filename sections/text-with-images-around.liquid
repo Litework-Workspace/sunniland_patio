@@ -8,8 +8,11 @@
   {% if block.settings.content %}
     {% assign content = block.settings.content %}
   {% endif %}
-  {% if block.settings.image %}
-    {% assign image = block.settings.image %}
+  {% if block.settings.image_1 %}
+    {% assign image_1 = block.settings.image_1 %}
+  {% endif %}
+  {% if block.settings.image_2 %}
+    {% assign image_2 = block.settings.image_2 %}
   {% endif %}
   {% if block.settings.mobile-top-img %}
     {% assign mobile-top-img = block.settings.mobile-top-img %}
@@ -40,12 +43,19 @@
               <h2 class="about-us-titles">{{ title }}</h2>
               <div class="history_content">{{ content }}</div>
             </div>
-            <img class="img-under-text" src="{{ image | img_url: 'master' }}" alt="">
+            <div class="img-under-text-container">
+              {% if image_1 %}
+                <img class="img-under-text" src="{{ image_1 | img_url: 'master' }}" alt="">
+              {% endif %}
+              {% if image_2 %}
+                <img class="img-under-text" src="{{ image_2 | img_url: 'master' }}" alt="">
+              {% endif %}
+            </div>
         </div>
         <div class="history_right media-container">
             <img src="{{ side_image | img_url: 'master' }}" alt="">
         </div>
-        {% else %}
+      {% else %}
         <div class="history_left media-container">
             <img src="{{ side_image | img_url: 'master' }}" alt="">
         </div>
@@ -54,7 +64,14 @@
               <h2 class="about-us-titles">{{ title }}</h2>
               <div class="history_content">{{ content }}</div>
             </div>
-            <img class="img-under-text" src="{{ image | img_url: 'master' }}" alt="">
+            <div class="img-under-text-container">
+              {% if image_1 %}
+                <img class="img-under-text" src="{{ image_1 | img_url: 'master' }}" alt="">
+              {% endif %}
+              {% if image_2 %}
+                <img class="img-under-text" src="{{ image_2 | img_url: 'master' }}" alt="">
+              {% endif %}
+            </div>
         </div>
       {% endunless %}
     </div>
@@ -129,8 +146,14 @@
           },
           {
             "type": "image_picker",
-            "id": "image",
-            "label": "Image",
+            "id": "image_1",
+            "label": "Image 1",
+            "info": "1500 x 800px .jpg recommended"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_2",
+            "label": "Image 2",
             "info": "1500 x 800px .jpg recommended"
           },
           {

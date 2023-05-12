@@ -74,11 +74,40 @@
     },
     "f6be4951-2d1a-4da4-9b2f-78eb71c14b05": {
       "type": "image-with-text-ontop",
+      "blocks": {
+        "75329ea7-494e-41d2-8695-6b9d9192160e": {
+          "type": "image_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/badge.png",
+            "heading": "USA Quality Build",
+            "content": "<p>A curated selection of the best quality USA-made furniture that lasts decades.<\/p>"
+          }
+        },
+        "1640afbf-5180-4faa-a163-3bd89b52886d": {
+          "type": "image_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/truck.png",
+            "heading": "USA Quality Build",
+            "content": "<p>A curated selection of the best quality USA-made furniture that lasts decades.<\/p>"
+          }
+        },
+        "6baf6eb8-cd12-4ff8-bc51-a2fcd43be105": {
+          "type": "image_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/couch.png",
+            "heading": "USA Quality Build",
+            "content": "<p>A curated selection of the best quality USA-made furniture that lasts decades.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "75329ea7-494e-41d2-8695-6b9d9192160e",
+        "1640afbf-5180-4faa-a163-3bd89b52886d",
+        "6baf6eb8-cd12-4ff8-bc51-a2fcd43be105"
+      ],
       "settings": {
         "title": "Values We Believe",
-        "content": "<p>For the last 50 years we have been serving generations of families to build their dream patios. Inheriting the craft from his mother & father, Jeff Bender and his team of experts is here to help you find all your patio furniture and fixtures in one place!<\/p>",
-        "image": "shopify:\/\/shop_images\/Frame_55_f68a0d91-00ef-4ccb-ba86-47d060c32c38.png",
-        "image_mobile": "shopify:\/\/shop_images\/Group_3241_212c9a40-16c6-4375-8423-3ee53eb7f3b6.png"
+        "content": "<p>For the last 50 years we have been serving generations of families to build their dream patios. Inheriting the craft from his mother & father, Jeff Bender and his team of experts is here to help you find all your patio furniture and fixtures in one place!<\/p>"
       }
     },
     "e222108a-67ce-48ff-87b8-accb7f5fac72": {
@@ -89,7 +118,8 @@
           "settings": {
             "title": "History of Sunniland - The beginnings",
             "content": "<p>Founded in 1972, SunnilandPatio has been providing a superior level of service in patio retail for more than 50 years. <br\/><br\/>We have been helping homeowners just like you enjoy better outdoor living. Our reputation for integrity, quality, and reliability sets the standard for the rest of the retail patio industry.<br\/><br\/>Founded in 1972, SunnilandPatio has been providing a superior level of service in patio retail for more than 50 years. <br\/><br\/>We have been helping homeowners just like you enjoy better outdoor living. Our reputation for integrity, quality, and reliability sets the standard for the rest of the retail patio industry.<\/p>",
-            "image": "shopify:\/\/shop_images\/Frame-58_2f7a7a61-dfcb-4fe6-9a33-c944d30346d3.png",
+            "image_1": "shopify:\/\/shop_images\/Group_3229.png",
+            "image_2": "shopify:\/\/shop_images\/Group_3232.png",
             "mobile-top-img": "shopify:\/\/shop_images\/Group_3229.png",
             "mobile-bottom-img": "shopify:\/\/shop_images\/Group_3232.png",
             "banner_title": "Banner Title Mobile",
@@ -141,7 +171,8 @@
           "settings": {
             "title": "End of Family Legacy",
             "content": "<p>Founded in 1972, SunnilandPatio has been providing a superior level of service in patio retail for more than 50 years. <br\/><br\/>We have been helping homeowners just like you enjoy better outdoor living. Our reputation for integrity, quality, and reliability sets the standard for the rest of the retail patio industry.<\/p>",
-            "image": "shopify:\/\/shop_images\/Frame_60.png",
+            "image_1": "shopify:\/\/shop_images\/IMG_9224_2.png",
+            "image_2": "shopify:\/\/shop_images\/IMG_9226_2.png",
             "mobile-top-img": "shopify:\/\/shop_images\/IMG_9224_2.png",
             "mobile-bottom-img": "shopify:\/\/shop_images\/IMG_9226_2.png",
             "bottom_banner": "shopify:\/\/shop_images\/Frame_64.png",
