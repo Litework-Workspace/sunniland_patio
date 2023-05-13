@@ -136,10 +136,10 @@
             "type": "logos",
             "settings": {
               "enable_logos": true,
-              "logo_1": "shopify:\/\/shop_images\/SW-Logow.png",
-              "logo_2": "shopify:\/\/shop_images\/Lloyd-Flanders-logo-vector.svg",
-              "logo_3": "shopify:\/\/shop_images\/Woodard_Logo_BW.png",
-              "logo_4": "shopify:\/\/shop_images\/Telescope-Casual-2018.svg"
+              "logo_1": "shopify:\/\/shop_images\/South_West.svg",
+              "logo_2": "shopify:\/\/shop_images\/Lloyd_Flanders.svg",
+              "logo_3": "shopify:\/\/shop_images\/Woodard.svg",
+              "logo_4": "shopify:\/\/shop_images\/Telescope.svg"
             }
           }
         },
