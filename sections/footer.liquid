@@ -27,9 +27,6 @@
           {% case block.type %}
             {% when 'logos' %}
               <style>
-                .Footer_Logos .Logo_Container .logos {
-                  width: 150px;
-                }
                 {% if block.settings.enable_logos == false %}
                   .Footer_Logos {
                     display: none !important;
@@ -38,16 +35,16 @@
               </style>
 
               {% if block.settings.logo_1 != blank %}
-                <img src="{{ block.settings.logo_1 | img_url: 'master' }}" alt="" class="logos" style="">
+                <img src="{{ block.settings.logo_1 | img_url: 'master' }}" alt="" class="logos" style="width: {{ block.settings.logo_width_1 }}px">
               {% endif %}
               {% if block.settings.logo_2 != blank %}
-                <img src="{{ block.settings.logo_2 | img_url: 'master' }}" alt="" class="logos" style="">
+                <img src="{{ block.settings.logo_2 | img_url: 'master' }}" alt="" class="logos" style="width: {{ block.settings.logo_width_2 }}px">
               {% endif %}
               {% if block.settings.logo_3 != blank %}
-                <img src="{{ block.settings.logo_3 | img_url: 'master' }}" alt="" class="logos" style="">
+                <img src="{{ block.settings.logo_3 | img_url: 'master' }}" alt="" class="logos" style="width: {{ block.settings.logo_width_3 }}px">
               {% endif %}
               {% if block.settings.logo_4 != blank %}
-                <img src="{{ block.settings.logo_4 | img_url: 'master' }}" alt="" class="logos" style="">
+                <img src="{{ block.settings.logo_4 | img_url: 'master' }}" alt="" class="logos" style="width: {{ block.settings.logo_width_4 }}px">
               {% endif %}
           {% endcase %}
         {% endfor %}
@@ -343,9 +340,29 @@
           "label": "Logo 1"
         },
         {
+          "type": "range",
+          "id": "logo_width_1",
+          "min": 100,
+          "max": 200,
+          "step": 1,
+          "unit": "px",
+          "label": "Logo 1 Width",
+          "default": 150
+        },
+        {
           "type": "image_picker",
           "id": "logo_2",
           "label": "Logo 2"
+        },
+        {
+          "type": "range",
+          "id": "logo_width_2",
+          "min": 100,
+          "max": 200,
+          "step": 1,
+          "unit": "px",
+          "label": "Logo 2 Width",
+          "default": 150
         },
         {
           "type": "image_picker",
@@ -353,9 +370,29 @@
           "label": "Logo 3"
         },
         {
+          "type": "range",
+          "id": "logo_width_3",
+          "min": 100,
+          "max": 200,
+          "step": 1,
+          "unit": "px",
+          "label": "Logo 3 Width",
+          "default": 150
+        },
+        {
           "type": "image_picker",
           "id": "logo_4",
           "label": "Logo 4"
+        },
+        {
+          "type": "range",
+          "id": "logo_width_4",
+          "min": 100,
+          "max": 200,
+          "step": 1,
+          "unit": "px",
+          "label": "Logo 4 Width",
+          "default": 150
         }
       ]
     },
