@@ -137,9 +137,13 @@
             "settings": {
               "enable_logos": true,
               "logo_1": "shopify:\/\/shop_images\/South_West.svg",
+              "logo_width_1": 150,
               "logo_2": "shopify:\/\/shop_images\/Lloyd_Flanders.svg",
+              "logo_width_2": 150,
               "logo_3": "shopify:\/\/shop_images\/Woodard.svg",
-              "logo_4": "shopify:\/\/shop_images\/Telescope.svg"
+              "logo_width_3": 150,
+              "logo_4": "shopify:\/\/shop_images\/Telescope.svg",
+              "logo_width_4": 120
             }
           }
         },
