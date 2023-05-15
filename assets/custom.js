@@ -68,10 +68,10 @@ function addChevron(element){
   const select = element.querySelector('select.hulkapps_option_child');
   if(select){
     select.parentElement.innerHTML += `
-        <svg class="hulk-chevron" role="presentation" viewBox="0 0 19 12" style="position: absolute;height: 100%;width: 15px;top: 0;right: 10px;">
+        <svg class="hulk-chevron" role="presentation" viewBox="0 0 19 12" style="position: absolute;height: 100%;width: 15px;top: 0;right: 10px;pointer-events: none;">
           <polyline fill="none" stroke="currentColor" points="17 2 9.5 10 2 2" fill-rule="evenodd" stroke-width="2" stroke-linecap="square"></polyline>
         </svg>
-      `
+      `;
   }
 }
 
