@@ -1377,6 +1377,27 @@ section[data-section-type="article-list"].blog-posts .ProductList--carousel .Car
 .Article__Footer svg path {
   fill: #000 !important;
 }
+.Article__CommentFormWrapper button.Form__Submit::before {
+  background-color: unset;
+}
+.Article__CommentFormWrapper button.Form__Submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #263238;
+  border-radius: 50px;
+  color: #ffffff;
+  height: 40px;
+  width: 165px;
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+  letter-spacing: initial;
+  text-transform: capitalize;
+}
 @media screen and (max-width:640px){
   .Article__Body .video-container {
     height: 250px;
@@ -1692,6 +1713,27 @@ section.Section.Announcement_Banner {
 }
 .CartItem__Remove {
   font-size: 12px;
+}
+button.Cart__Checkout::before {
+  background-color: unset;
+}
+button.Cart__Checkout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #263238;
+  border-radius: 50px;
+  color: #ffffff;
+  height: 40px;
+  {% comment %} width: 165px; {% endcomment %}
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+  letter-spacing: initial;
+  text-transform: capitalize;
 }
 @media screen and (max-width: 640px) {
   .Cart.Drawer__Content .QuantitySelector {
@@ -2093,6 +2135,29 @@ body .hulkapps_product_options .hulkapps_option_set .hulkapps_option .hulkapps_o
 }
 /* END RecentlyViewedProducts edits */
 
+/* START Contact Form Edits */
+#contact_form button.Form__Submit::before {
+  background-color: unset;
+}
+#contact_form button.Form__Submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #263238;
+  border-radius: 50px;
+  color: #ffffff;
+  height: 40px;
+  {% comment %} width: 165px; {% endcomment %}
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
+  letter-spacing: initial;
+  text-transform: capitalize;
+}
 #contact_form .Form__Item {
   border: 1px solid #000;
 }
+/* END Contact Form Edits */
