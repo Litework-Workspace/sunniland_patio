@@ -1847,10 +1847,6 @@ body .hulkapps_product_options .hulkapps_option_set .hulkapps_option .hulkapps_o
   line-height: 28px;
 }
 
-.DIY_Post .ArticleItem__Image {
-  height: 250px;
-}
-
 .Grid__Cell .DIY_Post .ArticleItem__ImageWrapper {
   width: unset;
   margin: 0;
@@ -1871,14 +1867,29 @@ body .hulkapps_product_options .hulkapps_option_set .hulkapps_option .hulkapps_o
   margin-bottom: 107px;
 }
 
-@media screen and (min-width:1208px){
-  .Blog.DIY .ArticleListWrapper .ArticleList .Grid__Cell {
-    width: calc(33% - 15px);
+.Blog.DIY .ArticleListWrapper .ArticleList {
+  display: grid;
+  grid-template-columns: repeat(1,1fr); 
+  gap: 15px;
+}
+
+.Blog.DIY .ArticleListWrapper .ArticleList .Grid__Cell {
+  width: 100%;
+}
+
+@media screen and (min-width:850px){
+  .Blog.DIY .ArticleListWrapper .ArticleList {
+    grid-template-columns: repeat(2,1fr); 
   }
 }
 @media screen and (min-width:1008px){
-  .Blog.DIY .ArticleListWrapper[data-count="4"] .ArticleList .Grid__Cell {
-    width: calc(25% - 15px);
+  .Blog.DIY .ArticleListWrapper[data-count="4"] .ArticleList {
+    grid-template-columns: repeat(4,1fr); 
+  }
+}
+@media screen and (min-width:1208px){
+  .Blog.DIY .ArticleListWrapper .ArticleList {
+    grid-template-columns: repeat(3,1fr); 
   }
 }
 /* End DIY section edits */
