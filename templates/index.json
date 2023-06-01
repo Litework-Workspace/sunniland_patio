@@ -7,6 +7,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Father_s_Day_Campaign_2023_-_Banner_1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Father_s_Day_Campaign_2023_-_Mobile_Banner_1.jpg",
             "apply_overlay": false,
             "content_position": "middleCenter",
             "subheading": "",
