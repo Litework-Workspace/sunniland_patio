@@ -3,6 +3,21 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "62206214-2094-4ef8-bbd4-e92f3a9cb4b9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Father_s_Day_Campaign_2023_-_Banner_1.jpg",
+            "apply_overlay": false,
+            "content_position": "middleCenter",
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
         "slide-0": {
           "type": "image",
           "settings": {
@@ -53,6 +68,7 @@
         }
       },
       "block_order": [
+        "62206214-2094-4ef8-bbd4-e92f3a9cb4b9",
         "slide-0",
         "slide-1",
         "13146d5f-0747-408d-9799-78a2641cd41d"
