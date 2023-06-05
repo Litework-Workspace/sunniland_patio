@@ -882,9 +882,13 @@ section.Section.main-collections-list {
 
 /* Start of subcollection section editing */
 
-section[data-section-type="collection"] .SectionHeader__Description {
+body:not(.template-search) section[data-section-type="collection"] .SectionHeader__Description {
   margin-left: 0;
   max-width: 90%;
+}
+body.template-search section[data-section-type="collection"] .SectionHeader__Description,
+body.template-search section[data-section-type="collection"] .Pagination {
+  text-align: center;
 }
 section[data-section-type="collection"] .SectionHeader__Description p {
   text-align: start;
