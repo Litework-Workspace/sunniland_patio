@@ -128,6 +128,9 @@ section#section-announcement {
 /* END 'Featured Collections' section editing */
 
 /* Start of Footer section editing */
+.HorizontalList__Item:last-child > .Link {
+  padding-right: 0;
+}
 .Footer_Upper {
   /* height: 10rem; */
   padding-bottom: 80px;
@@ -879,9 +882,13 @@ section.Section.main-collections-list {
 
 /* Start of subcollection section editing */
 
-section[data-section-type="collection"] .SectionHeader__Description {
+body:not(.template-search) section[data-section-type="collection"] .SectionHeader__Description {
   margin-left: 0;
   max-width: 90%;
+}
+body.template-search section[data-section-type="collection"] .SectionHeader__Description,
+body.template-search section[data-section-type="collection"] .Pagination {
+  text-align: center;
 }
 section[data-section-type="collection"] .SectionHeader__Description p {
   text-align: start;
