@@ -50,29 +50,12 @@
             "button_2_text": "",
             "button_2_link": ""
           }
-        },
-        "a70f093e-acdb-45e7-852b-3d394fdff698": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/4th_of_July_Campaign_2023_-_Banner-2.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/4th_of_July_Campaign_2023_-_Mobile_Banner_-_2.jpg",
-            "apply_overlay": true,
-            "content_position": "bottomLeft",
-            "subheading": "4th of July In-Store Promotion",
-            "title": "Sizzling Hot 4th of July Deals",
-            "content": "<p>Enjoy in-store and online savings this 4th of July! We pay your sales tax on in-store orders over $1000. Plus get $10 off all online orders over $100.<\/p>",
-            "button_1_text": "Shop Now",
-            "button_1_link": "shopify:\/\/pages\/all-furniture-sectioned",
-            "button_2_text": "",
-            "button_2_link": ""
-          }
         }
       },
       "block_order": [
         "slide-0",
         "slide-1",
-        "13146d5f-0747-408d-9799-78a2641cd41d",
-        "a70f093e-acdb-45e7-852b-3d394fdff698"
+        "13146d5f-0747-408d-9799-78a2641cd41d"
       ],
       "settings": {
         "show_fullscreen": true,
