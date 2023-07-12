@@ -10,8 +10,8 @@
             "apply_overlay": true,
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Mission Statement",
-            "content": "<p>At Sunniland Patio Furniture, our mission is to enhance your outdoor living experience by providing top-quality patio furniture and exceptional customer service. <\/p>",
+            "title": "Our Mission",
+            "content": "<p>At Sunniland Patio Furniture, our mission is to enhance your outdoor living experience by providing top-quality patio furniture and exceptional customer service. Plus we seek to keep furniture out of landfills by empowering our customers to renew it and reuse it!<\/p>",
             "button_1_text": "",
             "button_1_link": "",
             "button_2_text": "",
@@ -107,7 +107,7 @@
       ],
       "settings": {
         "title": "Values We Believe",
-        "content": "<p>Guided by our values of honesty, fairness, and approachability, we are dedicated to providing exceptional customer service, personalized recommendations, and a friendly atmosphere. <br\/><br\/>For the last 50 years we have been serving generations of families to build their dream patios. Inheriting the craft from his mother & father, Jeff Bender and his team of experts is here to help you find all your patio furniture and fixtures in one place!<\/p>"
+        "content": "<p>Guided by our values of service, honesty, fairness, and positive impact we are dedicated to providing exceptional customer service, personalized recommendations, and a friendly atmosphere. <br\/><br\/>For the last 50 years we have been serving generations of families to build their dream patios. Inheriting the craft from his mother & father, Jeff Bender and his team of experts is here to help you find all your patio furniture and fixtures in one place!<\/p>"
       }
     },
     "e222108a-67ce-48ff-87b8-accb7f5fac72": {
@@ -117,7 +117,7 @@
           "type": "richtext",
           "settings": {
             "title": "History of Sunniland - The beginnings",
-            "content": "<p>Founded in 1972, SunnilandPatio has been providing a superior level of service in patio retail for more than 50 years. <br\/><br\/>We have been helping homeowners just like you enjoy better outdoor living. Our reputation for integrity, quality, and reliability sets the standard for the rest of the retail patio industry.<br\/><br\/>Founded in 1972, SunnilandPatio has been providing a superior level of service in patio retail for more than 50 years. <br\/><br\/>We have been helping homeowners just like you enjoy better outdoor living. Our reputation for integrity, quality, and reliability sets the standard for the rest of the retail patio industry.<\/p>",
+            "content": "<p>Founded in 1972 by John, a visionary entrepreneur who started the business by purchasing a furniture distribution route. Traveling up and down the coast of Florida, he introduced gold anodized furniture to local stores and condominiums. John's dedication and passion for the industry laid the foundation for its success.<\/p><p>John involved his family from the very beginning and his sons grew up immersed in the business. From early childhood memories of weaving straps onto furniture at less than 10 years old, to working in the back room as teenagers, they have experienced the growth and evolution of Sunniland Patio firsthand. <br\/><br\/>John instilled a motto that guides  every business action: \"Be honest and fair. Always return calls.\" <\/p>",
             "image_1": "shopify:\/\/shop_images\/Group_3229.png",
             "image_2": "shopify:\/\/shop_images\/Group_3232.png",
             "mobile-top-img": "shopify:\/\/shop_images\/Group_3229.png",
@@ -152,7 +152,7 @@
         "overlay_opacity": 30,
         "subheading": "",
         "title": "Through The Years",
-        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.<\/p>",
+        "content": "<p>Since the 1970s, Sunniland Patio Furniture has undergone gradual growth and expansion. Our store has expanded in size, allowing us to showcase an extensive collection of patio furniture to meet the evolving needs and preferences of our customers. Over the years, we have witnessed remarkable changes in furniture styles and types, and we take pride in offering a diverse range of options to suit various outdoor aesthetics.<\/p>",
         "show_on_mobile": true,
         "no_bottom_margin": true,
         "button_1_text": "",
@@ -169,15 +169,15 @@
         "template--18832775053608__358fe575-1d69-4eea-822b-c7e6fa8b6c56-168351692035ef99db-0": {
           "type": "richtext",
           "settings": {
-            "title": "End of Family Legacy",
-            "content": "<p>Founded in 1972, SunnilandPatio has been providing a superior level of service in patio retail for more than 50 years. <br\/><br\/>We have been helping homeowners just like you enjoy better outdoor living. Our reputation for integrity, quality, and reliability sets the standard for the rest of the retail patio industry.<\/p>",
+            "title": "A Family Legacy",
+            "content": "<p>John's legacy in the business was defined by his honesty, fairness, and approachability. He always strived to do his best so that after a day's hard work he could sleep soundly at night. <\/p><p>Being passed down from father to son, Sunniland Patio Furniture carries forth John's principles by maintaining the same high standards he set. <\/p><p>Sunniland's commitment to honesty, fairness, and approachability remains at the core of the operations and it's something customers can sense as they walk through the door!<\/p>",
             "image_1": "shopify:\/\/shop_images\/IMG_9224_2.png",
             "image_2": "shopify:\/\/shop_images\/IMG_9226_2.png",
             "mobile-top-img": "shopify:\/\/shop_images\/IMG_9224_2.png",
             "mobile-bottom-img": "shopify:\/\/shop_images\/IMG_9226_2.png",
             "bottom_banner": "shopify:\/\/shop_images\/Frame_64.png",
             "bottom_banner-mobile": "shopify:\/\/shop_images\/IMG_9238_1_1.png",
-            "banner_title": "\"Renew your outdoor oasis with SunnilandPatio - where quality and style meet for the perfect patio experience.\"",
+            "banner_title": "\"Our biggest accomplishment is carrying on a successful family business that serves the community for over 50 years!\"",
             "banner_subheading": "Jeff B."
           }
         },
