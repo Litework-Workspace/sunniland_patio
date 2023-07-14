@@ -86,13 +86,14 @@
         <h1 class="Article__Title Heading u-h1">{{ article.title }}</h1>
       </header>
 
-      <div {% if diy %}id="DIY_Content"{% endif %} class="Article__Body" {% if diy %}style="display: none;"{% endif %}>
+      <div {% if diy %}id="DIY_Content"{% endif %} class="Article__Body diy-content" {% if diy and article.excerpt != blank %}style="display: none;"{% endif %}>
         {{ article.content }}
       </div>
-      {% if diy %}
-        <div id="DIY_Excerpt" class="Article__Body" style="display: block;">
+      {% if diy and article.excerpt != blank %}
+        <div id="DIY_Excerpt" class="Article__Body diy-excerpt" style="display: block;">
           {{ article.excerpt }}
         </div>
+        <button onclick="content_or_excerpt()" class="DIY_Read-More" style="text-decoration: underline;">Read full article</button>
       {% endif %}
 
       {%- capture article_footer -%}
@@ -207,12 +208,6 @@
           <button type="submit" class="Form__Submit Button Button--primary">{{ 'blog.comments.submit' | t }}</button>
         {%- endform -%}
       </div>
-    {% endif %}
-
-    {% if article.tags contains "DIY" %}
-        {% unless article.excerpt == '' %}
-          <button onclick="content_or_excerpt()" class="DIY_Read-More" style="text-decoration: underline;">Read full article</button>
-        {% endunless %}
     {% endif %}
 
   </div>
@@ -378,13 +373,6 @@
       "id": "show_comment_section",
       "label": "Show comment section",
       "default": true
-    },
-    {
-      "type": "checkbox",
-      "id": "video_autoplay_mute",
-      "label": "Video iframes autoplay on mute",
-      "default": true,
-      "info": "This will add '?autoplay=1&amp;mute=1' to the end of any iframe source"
     }
   ]
 }
