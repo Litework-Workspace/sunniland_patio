@@ -174,6 +174,11 @@ function ajaxAddToCart(){
     // added the class so that if this function is called again on the same page
     // for newly rendered elements, the click event doesn't get added twice.
     const $this = $(this);
+
+    // if the prod is not available, dont do anything
+    if(!$this.data('prod-available')){
+      return
+    };
     $this.addClass('hulk-checked');
     const product = {
       variant_id: String($this.data('var_id')),
