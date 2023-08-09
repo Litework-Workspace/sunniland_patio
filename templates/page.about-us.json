@@ -7,6 +7,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/IMG_9235_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/IMG_9235_1_copy.jpg",
             "apply_overlay": true,
             "content_position": "bottomLeft",
             "subheading": "",
@@ -17,31 +18,18 @@
             "button_2_text": "",
             "button_2_link": ""
           }
-        },
-        "template--17486863565096__0fa506b9-dd53-4820-9bd4-5ba6acfaf728-1681865118fb48cdc3-1": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "apply_overlay": true,
-            "content_position": "bottomLeft",
-            "subheading": "Slide title",
-            "title": "Tell your story",
-            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": ""
-          }
         }
       },
       "block_order": [
-        "template--17486863565096__0fa506b9-dd53-4820-9bd4-5ba6acfaf728-1681865118fb48cdc3-0",
-        "template--17486863565096__0fa506b9-dd53-4820-9bd4-5ba6acfaf728-1681865118fb48cdc3-1"
+        "template--17486863565096__0fa506b9-dd53-4820-9bd4-5ba6acfaf728-1681865118fb48cdc3-0"
+      ],
+      "custom_css": [
+        "@media only screen and (max-width: 600px) {div {}}"
       ],
       "settings": {
         "show_fullscreen": false,
         "show_arrow": false,
-        "autoplay": true,
+        "autoplay": false,
         "cycle_speed": 5,
         "text_color": "#ffffff",
         "button_color": "#363636",
@@ -144,6 +132,9 @@
     },
     "abd8150a-0ceb-414f-a8e5-49967bb1c74d": {
       "type": "image-with-text-overlay",
+      "custom_css": [
+        "@media only screen and (max-width: 600px) {.ImageHero__ContentOverlay .SectionHeader {padding-top: 80px !important;}.ImageHero--large {min-height: 600px !important;}}"
+      ],
       "settings": {
         "section_size": "large",
         "image": "shopify:\/\/shop_images\/Sustainability_Banner.png",
