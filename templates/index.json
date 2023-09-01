@@ -10,6 +10,22 @@
             "mobile_image": "shopify:\/\/shop_images\/Image-1.jpg",
             "apply_overlay": true,
             "content_position": "bottomLeft",
+            "subheading": "This Weekend Only",
+            "title": "Labor Day Sale",
+            "content": "<p>Visit our store from September 1st to 4th and enjoy exclusive in-store <br\/>discounts of 15% off floor models and in-stock items, plus an extra 10% <br\/>off clearance signs. For online shoppers, we're offering a special Labor<br\/> Day deal with 10% off online purchases using code LABORDAY10. Don't <br\/>miss out on these limited-time savings!\"<\/p>",
+            "button_1_text": "Shop the Deal",
+            "button_1_link": "shopify:\/\/collections",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
+        "91d843a9-b500-4e11-95c7-cacb79d31486": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_1_79b398eb-adcf-4aeb-aafe-fb6be2d9bd06.png",
+            "mobile_image": "shopify:\/\/shop_images\/Image-1.jpg",
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
             "subheading": "Build Your Perfect",
             "title": "Staycation Space",
             "content": "<p>Choose from the best quality patio furniture to transform your home into a cherished warm homestay.<\/p>",
@@ -54,6 +70,7 @@
       },
       "block_order": [
         "slide-0",
+        "91d843a9-b500-4e11-95c7-cacb79d31486",
         "slide-1",
         "13146d5f-0747-408d-9799-78a2641cd41d"
       ],
@@ -239,7 +256,6 @@
     },
     "featured-product": {
       "type": "featured-product",
-      "disabled": true,
       "blocks": {
         "product-meta": {
           "type": "product_meta",
@@ -278,6 +294,7 @@
         "variant-selector",
         "buy-buttons"
       ],
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "Featured product",
@@ -427,7 +444,6 @@
     },
     "timeline": {
       "type": "timeline",
-      "disabled": true,
       "blocks": {
         "item-0": {
           "type": "item",
@@ -467,6 +483,7 @@
         "item-1",
         "item-2"
       ],
+      "disabled": true,
       "settings": {
         "text_color": "#ffffff"
       }
