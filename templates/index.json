@@ -7,7 +7,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Copy_of_4th_of_July_Campaign_2023_-_Banner.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Image-1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Copy_of_4th_of_July_Campaign_2023_-_Mobile_Banner.jpg",
             "apply_overlay": true,
             "content_position": "bottomLeft",
             "subheading": "This Weekend Only",
