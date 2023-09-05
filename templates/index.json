@@ -13,10 +13,10 @@
             "subheading": "This Weekend Only",
             "title": "Labor Day Sale",
             "content": "<p>From September 1st to 4th, visit our store for 15% off floor models and <br\/>in-stock items, plus an extra 10% off clearance signs. Online shoppers, <br\/>use code LABORDAY10 for 10% off. Don't miss these exclusive savings!<\/p>",
-            "button_1_text": "Shop the Deal",
+            "button_1_text": "Shop Online",
             "button_1_link": "shopify:\/\/pages\/replacement-parts",
-            "button_2_text": "",
-            "button_2_link": ""
+            "button_2_text": "Directions to Store",
+            "button_2_link": "https:\/\/goo.gl\/maps\/UTm5FzKmGpp5hMRw6"
           }
         },
         "91d843a9-b500-4e11-95c7-cacb79d31486": {
@@ -66,13 +66,28 @@
             "button_2_text": "",
             "button_2_link": ""
           }
+        },
+        "76323ee3-d920-4a1a-a3d4-0c9de9fe175a": {
+          "type": "image",
+          "settings": {
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "Slide title",
+            "title": "Tell your story",
+            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
         }
       },
       "block_order": [
         "slide-0",
         "91d843a9-b500-4e11-95c7-cacb79d31486",
         "slide-1",
-        "13146d5f-0747-408d-9799-78a2641cd41d"
+        "13146d5f-0747-408d-9799-78a2641cd41d",
+        "76323ee3-d920-4a1a-a3d4-0c9de9fe175a"
       ],
       "settings": {
         "show_fullscreen": true,
