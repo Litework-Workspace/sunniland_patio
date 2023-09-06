@@ -3,22 +3,6 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "slide-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Copy_of_4th_of_July_Campaign_2023_-_Banner.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Copy_of_4th_of_July_Campaign_2023_-_Mobile_Banner.jpg",
-            "apply_overlay": true,
-            "content_position": "bottomLeft",
-            "subheading": "This Weekend Only",
-            "title": "Labor Day Sale",
-            "content": "<p>From September 1st to 4th, visit our store for 15% off floor models and <br\/>in-stock items, plus an extra 10% off clearance signs. Online shoppers, <br\/>use code LABORDAY10 for 10% off. Don't miss these exclusive savings!<\/p>",
-            "button_1_text": "Shop Online",
-            "button_1_link": "shopify:\/\/pages\/replacement-parts",
-            "button_2_text": "Directions to Store",
-            "button_2_link": "https:\/\/goo.gl\/maps\/UTm5FzKmGpp5hMRw6"
-          }
-        },
         "91d843a9-b500-4e11-95c7-cacb79d31486": {
           "type": "image",
           "settings": {
@@ -69,7 +53,6 @@
         }
       },
       "block_order": [
-        "slide-0",
         "91d843a9-b500-4e11-95c7-cacb79d31486",
         "slide-1",
         "13146d5f-0747-408d-9799-78a2641cd41d"
