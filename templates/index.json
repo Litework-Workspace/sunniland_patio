@@ -50,12 +50,29 @@
             "button_2_text": "",
             "button_2_link": ""
           }
+        },
+        "e7974782-81ff-40c3-891d-c6bab807b003": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/savona_cushion_2_2011.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/savona_cushion_2_2011.jpg",
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "Fall Patio Furniture Sale",
+            "title": "Embrace the autumn charm",
+            "content": "<p>Elevate your patio's ambiance with our exclusive deals! <\/p>",
+            "button_1_text": "Shop Online",
+            "button_1_link": "",
+            "button_2_text": "Visit the showroom",
+            "button_2_link": "https:\/\/maps.app.goo.gl\/9PPfoaPotUSaBrvv8"
+          }
         }
       },
       "block_order": [
         "91d843a9-b500-4e11-95c7-cacb79d31486",
         "slide-1",
-        "13146d5f-0747-408d-9799-78a2641cd41d"
+        "13146d5f-0747-408d-9799-78a2641cd41d",
+        "e7974782-81ff-40c3-891d-c6bab807b003"
       ],
       "settings": {
         "show_fullscreen": true,
