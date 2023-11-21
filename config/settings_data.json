@@ -185,7 +185,8 @@
           "map_link_label": "Get directions",
           "api_key": "AIzaSyAy84eJJGnNQySrJgpwEzin3k_Q5NavV9Y",
           "zoom": 16,
-          "map_style": "standard"
+          "map_style": "standard",
+          "image": "shopify:\/\/shop_images\/Screenshot_2023-11-21_at_4.43.03_PM.png"
         }
       },
       "image-with-text-block": {
