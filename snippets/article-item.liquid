@@ -38,7 +38,7 @@
     {% if article.tags contains 'DIY' %}
       <a href="{{ article.url }}" id="DIY__Link" class="ArticleItem__Link Button">Watch</a>
     {% else %}
-      <a href="{{ article.url }}" class="ArticleItem__Link Button">Watch</a>
+      <a href="{{ article.url }}" class="ArticleItem__Link Button">{{ 'blog.article.read_more' | t }}</a>
     {% endif %}
     {%- endunless -%}
   </div>
