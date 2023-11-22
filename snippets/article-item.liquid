@@ -35,7 +35,7 @@
         <p class="ArticleItem__Excerpt">{{ article.excerpt_or_content | strip_html | truncate: 150 }}</p>
         {% endunless %}
       {% endunless %}
-    {% if article.tags contains 'Caps and Glides, Patio Furniture, Rocker Spring Plates, Slings, Vinyl Straps' %}
+    {% if article.tags contains 'Caps and Glides or Patio Furniture or Rocker Spring Plates or Slings or Vinyl Straps' %}
       <a href="{{ article.url }}" id="DIY__Link" class="ArticleItem__Link Button">Watch</a>
     {% else %}
       <a href="{{ article.url }}" class="ArticleItem__Link Button">{{ 'blog.article.read_more' | t }}</a>
