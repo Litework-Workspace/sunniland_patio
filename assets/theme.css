@@ -8159,7 +8159,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .Footer__Inner + .Footer__Aside {
   {% comment %}
-  margin-top: 65px;
+  margin-top: 0px;
   {% endcomment %}
 }
 
