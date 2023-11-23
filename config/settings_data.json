@@ -66,14 +66,14 @@
       "announcement": {
         "type": "announcement",
         "custom_css": [
-          "p{font-size: 18px;}"
+          "p {font-size: 18px;}"
         ],
         "settings": {
           "enable_bar": true,
           "home_page_only": false,
           "background": "#000000",
           "text_color": "#ffffff",
-          "content": "10% Off Storewide Black Friday Sale",
+          "content": "10% Off Storewide Black Friday Sale. Limited Period Sale. Shop Now!",
           "link": "shopify:\/\/collections"
         }
       },
