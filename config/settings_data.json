@@ -66,7 +66,7 @@
       "announcement": {
         "type": "announcement",
         "custom_css": [
-          "p {font-size: 18px;}"
+          "p {font-size: 16px;}"
         ],
         "settings": {
           "enable_bar": true,
