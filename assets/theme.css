@@ -8227,7 +8227,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   }
 
   .Footer__Inner + .Footer__Aside {
-    margin-top: 40px;
+    margin-top: 0px;
   }
 
   .Footer__Localization {
