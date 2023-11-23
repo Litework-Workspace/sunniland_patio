@@ -65,13 +65,16 @@
       },
       "announcement": {
         "type": "announcement",
+        "custom_css": [
+          "p{font-size: 18px;}"
+        ],
         "settings": {
-          "enable_bar": false,
+          "enable_bar": true,
           "home_page_only": false,
-          "background": "#00897b",
+          "background": "#000000",
           "text_color": "#ffffff",
-          "content": "Big news! SunnilandPatio has rebranded to better serve our customers. Explore our new look today!",
-          "link": "shopify:\/\/blogs\/sunniblog\/big-news-sunnilandpatio-has-rebranded-to-enhance-your-customer-experience-and-make-shopping-for-patio-furniture-even-easier-in-2023-explore-our-fresh-new-look-today"
+          "content": "10% Off Storewide Black Friday Sale",
+          "link": "shopify:\/\/collections"
         }
       },
       "header": {
