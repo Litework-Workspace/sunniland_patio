@@ -67,30 +67,13 @@
             "button_2_text": "",
             "button_2_link": ""
           }
-        },
-        "c207b65c-d88a-4e1a-9cf4-b31cbeade3d4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/capemay_cushion_2011.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/capemay_cushion_2011.jpg",
-            "apply_overlay": true,
-            "content_position": "bottomLeft",
-            "subheading": "Cyber Monday Sale",
-            "title": "10% Off Online Store",
-            "content": "<p>Gift yourself your dream patio.<\/p>",
-            "button_1_text": "",
-            "button_1_link": "https:\/\/www.google.com\/maps\/dir\/28.5212672,77.2538368\/SUNNILAND+PATIO\/@1.9950652,-87.5684028,3z\/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x88d8e1cab2d8ec0b:0x21346da13b35c18c!2m2!1d-80.0766898!2d26.4040497?entry=ttu",
-            "button_2_text": "",
-            "button_2_link": ""
-          }
         }
       },
       "block_order": [
         "e7974782-81ff-40c3-891d-c6bab807b003",
         "91d843a9-b500-4e11-95c7-cacb79d31486",
         "slide-1",
-        "13146d5f-0747-408d-9799-78a2641cd41d",
-        "c207b65c-d88a-4e1a-9cf4-b31cbeade3d4"
+        "13146d5f-0747-408d-9799-78a2641cd41d"
       ],
       "settings": {
         "show_fullscreen": true,
