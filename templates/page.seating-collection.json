@@ -94,7 +94,6 @@
           "type": "collection",
           "settings": {
             "collection": "gliding-chairs",
-            "image": "shopify:\/\/shop_images\/6.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
