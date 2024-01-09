@@ -6,11 +6,13 @@
         "template--21849609470248__d015102a-3b90-42d4-b6f0-786c474c15cc-image-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/doityourself.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Image-3.jpg",
             "apply_overlay": true,
-            "content_position": "bottomLeft",
-            "subheading": "Slide title",
-            "title": "Tell your story",
-            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+            "content_position": "middleCenter",
+            "subheading": "Reuse, give a second life.",
+            "title": "Do It Yourself Patio Tutorials",
+            "content": "<p>Easy tutorials for at home patio furniture repairs<\/p>",
             "button_1_text": "",
             "button_1_link": "",
             "button_2_text": "",
@@ -22,7 +24,7 @@
         "template--21849609470248__d015102a-3b90-42d4-b6f0-786c474c15cc-image-1"
       ],
       "settings": {
-        "show_fullscreen": false,
+        "show_fullscreen": true,
         "show_arrow": false,
         "autoplay": true,
         "cycle_speed": 5,
