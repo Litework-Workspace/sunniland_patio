@@ -25,6 +25,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "image": "shopify:\/\/shop_images\/Reflections-Sofa-white-detail-H_3.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Shop All",
