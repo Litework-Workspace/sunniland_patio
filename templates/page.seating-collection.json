@@ -81,7 +81,6 @@
           "type": "collection",
           "settings": {
             "collection": "rocking-chairs-and-gliders",
-            "image": "shopify:\/\/shop_images\/5.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
