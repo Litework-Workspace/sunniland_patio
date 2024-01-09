@@ -67,7 +67,6 @@
           "type": "collection",
           "settings": {
             "collection": "end-tables",
-            "image": "shopify:\/\/shop_images\/3.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -81,7 +80,6 @@
           "type": "collection",
           "settings": {
             "collection": "coffee-tables",
-            "image": "shopify:\/\/shop_images\/2.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -95,7 +93,6 @@
           "type": "collection",
           "settings": {
             "collection": "fire-pit-tables",
-            "image": "shopify:\/\/shop_images\/4.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
