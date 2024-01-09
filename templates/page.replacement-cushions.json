@@ -25,7 +25,6 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/1.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Shop All",
