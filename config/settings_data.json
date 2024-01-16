@@ -131,7 +131,7 @@
             "type": "html",
             "settings": {
               "title": "",
-              "content": "<p>6101 N Federal Hwy.<\/p>\n<p>Boca Raton, Florida 33487<\/p>\n<br>\n<p>Call us: 1-561-997-7114<\/p>\n<br>\n<p>Email us: <a class=\"footer_email\" href=\"mailto:sales@sunnilandpatio.com\">sales@sunnilandpatio.com<\/a><\/p>",
+              "content": "<p>6101 N Federal Hwy.<\/p>\n<p>Boca Raton, Florida 33487<\/p>\n<br>\n<p>Call us: 1-561-997-7114<\/p>\n<br>\n<p>Email us: <a class=\"footer_email\" href=\"mailto:sales@sunnilandpatio.com\">sales@sunnilandpatio.com<\/a><\/p>\n<br>\n<p>Hours of operation:<br>\nMon-Sat 9:30am - 5:30pm<br>\nSun 12:00pm - 5:00pm<br>\nParts and service departments open\nMon-Fri only.<\/p>",
               "show_social_media": true
             }
           },
