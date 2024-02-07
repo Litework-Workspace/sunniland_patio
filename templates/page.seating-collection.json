@@ -184,6 +184,19 @@
             "button_link": "",
             "apply_overlay": true
           }
+        },
+        "collection_WzbJT4": {
+          "type": "collection",
+          "settings": {
+            "collection": "polywood-1",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Polywood",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
         }
       },
       "block_order": [
@@ -198,7 +211,8 @@
         "7d195c04-039a-4b7f-ae7c-bda12ed9ebb0",
         "b5c984f9-885e-41d1-a22b-f9ce484259b6",
         "54dc446c-c344-46fd-8ddc-22a8d964fe8a",
-        "8d60f275-6134-4d6e-ba58-f4e418e47d50"
+        "8d60f275-6134-4d6e-ba58-f4e418e47d50",
+        "collection_WzbJT4"
       ],
       "settings": {
         "title": "Outdoor Seating",
