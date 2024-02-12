@@ -228,7 +228,7 @@ for size, we use it to display a size chart (if applicable)
 
         <select id="product-select-{{ product.id }}" name="id" title="Variant">
           {%- for variant in product.variants -%}
-            <option {% if variant == selected_variant %}selected="selected"{% endif %} {% unless variant.available %}disabled="disabled"{% endunless %} value="{{ variant.id }}" data-sku="{{ variant.sku }}">{{ variant.title }} - {{ variant.price | money }}</option>
+              <option {% if variant == selected_variant %}selected="selected"{% endif %} {% unless variant.available %}disabled="disabled"{% endunless %} value="{{ variant.id }}" data-variant-price={{ variant.price | money_without_currency }} data-sku="{{ variant.sku }}">{{ variant.title }} - {{ variant.price | money }}</option>
           {%- endfor -%}
         </select>
       </div>
