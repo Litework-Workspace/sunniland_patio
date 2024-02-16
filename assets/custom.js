@@ -61,7 +61,6 @@ function attachEventListeners(container) {
 function addChevron(element){
   const chevronAdded = element.querySelector('svg.hulk-chevron');
   if(chevronAdded){
-    console.log('chevron added',element,chevronAdded)
     return
   }
 
@@ -90,11 +89,15 @@ function syncHulkOptionWithVariant() {
 
         const hulkSelect = document.querySelector('.hulkapps_option.dd_render select.hulkapps_option_child');
         if (hulkSelect && ogSelect) {
+          const priceContainer = document.querySelector('.ProductMeta__Price.Price');
           hulkSelect.addEventListener('change', e => {
             const selectedValue = e.target.value;
             for (const option of ogSelect.options) {
               if (option.innerHTML.includes(selectedValue)) {
                 ogSelect.value = option.value;
+                if (priceContainer && ogSelect.options[ogSelect.selectedIndex]) {
+                  priceContainer.innerHTML = "$" + ogSelect.options[ogSelect.selectedIndex].getAttribute('data-variant-price');
+                }
                 break;
               }
             }
