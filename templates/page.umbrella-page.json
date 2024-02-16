@@ -131,12 +131,28 @@
             "product_3_vertical_position": 62
           }
         },
+        "9fdc57dc-f0cb-42ed-84cd-5542ddcd79f0": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7.5oct_1.png",
+            "dot_style": "light",
+            "product_1": "7-5-ft-octagonal-frankford-patio-umbrella-crank-lift-mechanism",
+            "product_1_horizontal_position": 36,
+            "product_1_vertical_position": 23,
+            "product_2": "newport-club-chair-with-cushions-in-cast-silver",
+            "product_2_horizontal_position": 32,
+            "product_2_vertical_position": 62,
+            "product_3": "",
+            "product_3_horizontal_position": 85,
+            "product_3_vertical_position": 85
+          }
+        },
         "5cf0a172-efbe-483c-a1c2-1e9dbcad24f4": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_ae7de5f2-3bf9-4b1d-bafc-03694e4eb2a8.png",
+            "image": "shopify:\/\/shop_images\/9oct_1.png",
             "dot_style": "light",
-            "product_1": "7-5-ft-square-frankford-patio-umbrella-pulley-lift-mechanism",
+            "product_1": "copy-of-9-ft-octagonal-frankford-patio-umbrella-crank-auto-tilt-matte-silver-frame",
             "product_1_horizontal_position": 16,
             "product_1_vertical_position": 57,
             "product_2": "",
@@ -150,9 +166,9 @@
         "7729b54e-9684-4ed8-baf2-7d385cee91bf": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3_c7b4d35e-5570-47e6-81f5-a41af11b47ef.png",
+            "image": "shopify:\/\/shop_images\/11oct_1.png",
             "dot_style": "light",
-            "product_1": "7-5-ft-octagonal-frankford-patio-umbrella-pulley-lift-mechanism",
+            "product_1": "copy-of-11-ft-octagonal-frankford-patio-umbrella-crank-auto-tilt-matte-silver-frame",
             "product_1_horizontal_position": 49,
             "product_1_vertical_position": 29,
             "product_2": "",
@@ -162,29 +178,13 @@
             "product_3_horizontal_position": 12,
             "product_3_vertical_position": 58
           }
-        },
-        "9fdc57dc-f0cb-42ed-84cd-5542ddcd79f0": {
-          "type": "look",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/4_e7ef6f7d-8cca-47c7-a5d3-23c686011089.jpg",
-            "dot_style": "light",
-            "product_1": "newport-club-chair-with-cushions-in-cast-silver",
-            "product_1_horizontal_position": 36,
-            "product_1_vertical_position": 23,
-            "product_2": "newport-club-chair-with-cushions-in-cast-silver",
-            "product_2_horizontal_position": 32,
-            "product_2_vertical_position": 62,
-            "product_3": "",
-            "product_3_horizontal_position": 85,
-            "product_3_vertical_position": 85
-          }
         }
       },
       "block_order": [
         "template--17486864122152__ec8cbadd-b314-43f6-8b0c-3fa5a1e6e02b-16755240059697acff-0",
+        "9fdc57dc-f0cb-42ed-84cd-5542ddcd79f0",
         "5cf0a172-efbe-483c-a1c2-1e9dbcad24f4",
-        "7729b54e-9684-4ed8-baf2-7d385cee91bf",
-        "9fdc57dc-f0cb-42ed-84cd-5542ddcd79f0"
+        "7729b54e-9684-4ed8-baf2-7d385cee91bf"
       ],
       "settings": {
         "subheading": "",
