@@ -21,45 +21,31 @@
     "fb3facf5-59a5-46dd-a4b9-3f6b442916de": {
       "type": "collection-list_main-collections",
       "blocks": {
-        "6e40bf4f-7b17-4f34-98d1-0daace0be93d": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/Image_19.png",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "Shop All",
-            "title": "Shop All",
-            "button_text": "Shop All",
-            "button_link": "shopify:\/\/collections\/patio-furniture",
-            "apply_overlay": true
-          }
-        },
         "ac497a03-93bd-4a18-8b0b-355e13f73591": {
           "type": "collection",
           "settings": {
-            "collection": "outdoor-dining-sets",
-            "image": "shopify:\/\/shop_images\/Mask_group_1.jpg",
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/4-454FM_SR_TQA_07c945a7-47f8-45e7-a63c-9cdb8d7e102a.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Outdoor Dining Sets",
+            "title": "6.5 Foot Square Top",
             "button_text": "View products",
-            "button_link": "",
+            "button_link": "shopify:\/\/collections\/6-5-ft-square-patio-umbrellas",
             "apply_overlay": false
           }
         },
         "d32286ee-8151-4530-81be-77ca42e218ba": {
           "type": "collection",
           "settings": {
-            "collection": "outdoor-patio-sets",
-            "image": "shopify:\/\/shop_images\/Group_3028.png",
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/5-464FM_SR_PTA.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "",
+            "title": "7.5 Foot Square Top",
             "button_text": "View products",
-            "button_link": "",
+            "button_link": "shopify:\/\/collections\/7-5-ft-square-patio-umbrellas",
             "apply_overlay": true
           }
         },
@@ -67,27 +53,41 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Mask_group.png",
+            "image": "shopify:\/\/shop_images\/6-845FM_SR_FGA_2cfc8d18-1272-4be7-8693-6c731989e137.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Outdoor Seating",
+            "title": "7.5 Foot Octagonal Top",
             "button_text": "View products",
-            "button_link": "shopify:\/\/pages\/outdoor-seating",
+            "button_link": "shopify:\/\/collections\/7-5-ft-octagon-patio-umbrellas",
+            "apply_overlay": true
+          }
+        },
+        "40a21edd-db53-47ec-a47c-6d8112b965ba": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/2-845FM_SR_PBA_18f89d1a-4d82-4bc7-97ce-77fd7b66389a.jpg",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "9 Foot Octagonal Top",
+            "button_text": "View products",
+            "button_link": "shopify:\/\/collections\/9-ft-octagon-patio-umbrellas",
             "apply_overlay": true
           }
         },
         "c068eee9-3dc1-46fe-af8d-f26bf8dd46c3": {
           "type": "collection",
           "settings": {
-            "collection": "outdoor-lounge",
-            "image": "shopify:\/\/shop_images\/Mask_group_2.png",
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/12-864FM_SR_YLA_c94e5d9a-e994-4f69-8988-778b0b77eb18.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Outdoor Lounge",
+            "title": "11 Ft Octagonal Top",
             "button_text": "View products",
-            "button_link": "",
+            "button_link": "shopify:\/\/collections\/11-ft-octagon-patio-umbrellas",
             "apply_overlay": true
           }
         },
@@ -105,17 +105,17 @@
             "apply_overlay": true
           }
         },
-        "40a21edd-db53-47ec-a47c-6d8112b965ba": {
+        "6e40bf4f-7b17-4f34-98d1-0daace0be93d": {
           "type": "collection",
           "settings": {
-            "collection": "patio-umbrellas-bases",
-            "image": "shopify:\/\/shop_images\/Mask_group_4.png",
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/Image_19.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "Patio Umbrellas",
-            "button_text": "View products",
-            "button_link": "",
+            "subheading": "Shop All",
+            "title": "Shop All",
+            "button_text": "Shop All",
+            "button_link": "shopify:\/\/collections\/patio-furniture",
             "apply_overlay": true
           }
         },
@@ -163,20 +163,20 @@
         }
       },
       "block_order": [
-        "6e40bf4f-7b17-4f34-98d1-0daace0be93d",
         "ac497a03-93bd-4a18-8b0b-355e13f73591",
         "d32286ee-8151-4530-81be-77ca42e218ba",
         "8bdcb90e-f47e-4a0c-a9db-c54eaacfd330",
+        "40a21edd-db53-47ec-a47c-6d8112b965ba",
         "c068eee9-3dc1-46fe-af8d-f26bf8dd46c3",
         "542c1ffb-299a-4c4d-9b55-f635862e808a",
-        "40a21edd-db53-47ec-a47c-6d8112b965ba",
+        "6e40bf4f-7b17-4f34-98d1-0daace0be93d",
         "966dd87c-fdbb-4ec2-8005-bbbc6292ebf6",
         "7d195c04-039a-4b7f-ae7c-bda12ed9ebb0",
         "b5c984f9-885e-41d1-a22b-f9ce484259b6"
       ],
       "settings": {
-        "title": "Patio Furniture",
-        "sub-heading": "Shop By Category",
+        "title": "Outdoor Patio Umbrellas",
+        "sub-heading": "Shop By Size",
         "image_size": "large",
         "add_spacing": true,
         "expand_collection": false,
