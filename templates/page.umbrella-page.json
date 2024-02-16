@@ -90,76 +90,6 @@
             "button_link": "shopify:\/\/collections\/11-ft-octagon-patio-umbrellas",
             "apply_overlay": true
           }
-        },
-        "542c1ffb-299a-4c4d-9b55-f635862e808a": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/Mask_group_3.png",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "Patio Tables",
-            "button_text": "View products",
-            "button_link": "shopify:\/\/pages\/patio-tables",
-            "apply_overlay": true
-          }
-        },
-        "6e40bf4f-7b17-4f34-98d1-0daace0be93d": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/Image_19.png",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "Shop All",
-            "title": "Shop All",
-            "button_text": "Shop All",
-            "button_link": "shopify:\/\/collections\/patio-furniture",
-            "apply_overlay": true
-          }
-        },
-        "966dd87c-fdbb-4ec2-8005-bbbc6292ebf6": {
-          "type": "collection",
-          "settings": {
-            "collection": "patio-furniture-covers",
-            "image": "shopify:\/\/shop_images\/Mask_group_5.png",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "Patio Covers",
-            "button_text": "View products",
-            "button_link": "",
-            "apply_overlay": true
-          }
-        },
-        "7d195c04-039a-4b7f-ae7c-bda12ed9ebb0": {
-          "type": "collection",
-          "settings": {
-            "collection": "commercial-furniture",
-            "image": "shopify:\/\/shop_images\/Mask_group_6.png",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "",
-            "button_text": "View products",
-            "button_link": "",
-            "apply_overlay": true
-          }
-        },
-        "b5c984f9-885e-41d1-a22b-f9ce484259b6": {
-          "type": "collection",
-          "settings": {
-            "collection": "deals-of-the-month-1",
-            "image": "shopify:\/\/shop_images\/Mask_group.jpg",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "",
-            "button_text": "View products",
-            "button_link": "",
-            "apply_overlay": true
-          }
         }
       },
       "block_order": [
@@ -167,12 +97,7 @@
         "d32286ee-8151-4530-81be-77ca42e218ba",
         "8bdcb90e-f47e-4a0c-a9db-c54eaacfd330",
         "40a21edd-db53-47ec-a47c-6d8112b965ba",
-        "c068eee9-3dc1-46fe-af8d-f26bf8dd46c3",
-        "542c1ffb-299a-4c4d-9b55-f635862e808a",
-        "6e40bf4f-7b17-4f34-98d1-0daace0be93d",
-        "966dd87c-fdbb-4ec2-8005-bbbc6292ebf6",
-        "7d195c04-039a-4b7f-ae7c-bda12ed9ebb0",
-        "b5c984f9-885e-41d1-a22b-f9ce484259b6"
+        "c068eee9-3dc1-46fe-af8d-f26bf8dd46c3"
       ],
       "settings": {
         "title": "Outdoor Patio Umbrellas",
@@ -193,15 +118,15 @@
         "template--17486864122152__ec8cbadd-b314-43f6-8b0c-3fa5a1e6e02b-16755240059697acff-0": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1.1.jpg",
+            "image": "shopify:\/\/shop_images\/1_415c34e7-c0b0-4468-b93c-7c58db9019a2.png",
             "dot_style": "light",
-            "product_1": "andover-recliner-item-510452",
-            "product_1_horizontal_position": 18,
-            "product_1_vertical_position": 66,
-            "product_2": "andover-crescent-loveseat-item-510463",
+            "product_1": "6-5-ft-square-frankford-patio-umbrella-pulley-lift-matte-silver-frame-1",
+            "product_1_horizontal_position": 51,
+            "product_1_vertical_position": 15,
+            "product_2": "",
             "product_2_horizontal_position": 53,
             "product_2_vertical_position": 51,
-            "product_3": "copy-of-andover-swivel-rocker-item-510472",
+            "product_3": "",
             "product_3_horizontal_position": 85,
             "product_3_vertical_position": 62
           }
