@@ -45,7 +45,7 @@
             "subheading": "",
             "title": "Brown Jordan Cushions",
             "button_text": "View products",
-            "button_link": "",
+            "button_link": "shopify:\/\/pages\/about-us",
             "apply_overlay": false
           }
         },
@@ -179,7 +179,6 @@
           "type": "collection",
           "settings": {
             "collection": "throw-pillows",
-            "image": "shopify:\/\/shop_images\/12.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Sub-heading",
