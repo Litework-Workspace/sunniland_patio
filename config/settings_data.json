@@ -69,12 +69,12 @@
           "p {font-size: 16px;}"
         ],
         "settings": {
-          "enable_bar": false,
+          "enable_bar": true,
           "home_page_only": false,
           "background": "#000000",
           "text_color": "#ffffff",
-          "content": "10% Off Storewide Black Friday Sale. Limited Period Sale. Shop Now!",
-          "link": "https:\/\/www.sunnilandpatio.com\/collections\/patio-furniture"
+          "content": "10% Off Chaise Lounges & Replacement Slings . Shop Now!",
+          "link": "shopify:\/\/collections\/outdoor-lounge"
         }
       },
       "header": {
