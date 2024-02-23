@@ -123,7 +123,7 @@
         <div class="CartItem__LinePriceList Heading Text--subdued" style="text-align: right">
           {%- if line_item.original_line_price != line_item.final_line_price -%}
             <span  data-hulkapps-line-price data-key='{{line_item.key}}' class="CartItem__Price Price Price--highlight">{{ line_item.final_line_price | money }}</span>
-            <span  data-hulkapps-line-price data-key='{{line_item.key}}' class="CartItem__Price Price Price--compareAt">{{ line_item.original_price | money }}</span>
+            <span  data-hulkapps-line-price data-key='{{line_item.key}}' class="CartItem__Price Price Price--compareAt">{{ line_item.original_line_price | money }}</span>
           {%- else -%}
             <span  data-hulkapps-line-price data-key='{{line_item.key}}' class="CartItem__Price Price">{{ line_item.final_line_price | money }}</span>
           {%- endif -%}
