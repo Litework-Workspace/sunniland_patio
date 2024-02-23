@@ -234,8 +234,8 @@
           "093505c8-0851-49ab-b32e-ae60bdb74dcc": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/doityourself.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/Image-3.jpg",
+              "image": "shopify:\/\/shop_images\/Image-cover.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/Image-cover-3sdssddd3.jpg",
               "apply_overlay": true,
               "content_position": "middleCenter",
               "subheading": "Reuse, give a second life.",
