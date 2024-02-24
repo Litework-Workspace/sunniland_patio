@@ -45,11 +45,43 @@ function attachEventListeners(container) {
       createOrReplaceOptionName(container, hulkSelect.value);
     });
   } else if (radioContainer.length > 0) {
+    // get all images to loop through them. Need to ensure this DOM search only happens once.
+    const mainImages = document.querySelectorAll('.Product__Slideshow img');
     radioContainer.forEach(radio => {
       const radioObserver = new MutationObserver(mutationList => {
         mutationList.forEach(mutation => {
           if (mutation.type === "attributes" && radio.classList.contains('swatch_selected')) {
             createOrReplaceOptionName(container, radio.getAttribute('value'));
+
+            // find all selected items
+            // TODO: Loop through these and export the values into an array
+            const selectedItems = document.querySelectorAll('.swatch_selected');
+            console.log('selectedItems',selectedItems);
+
+
+            // TODO: Only search through the images when all swatches are selected
+            mainImages.forEach(img => {
+              // console.log('main img',img.dataset.originalSrc.toLowerCase());
+              // TODO: Get the hide feature working and include a hide the nav items feature
+              if (
+                img.dataset.originalSrc.toLowerCase().includes(selectedItems[0].getAttribute('value').replaceAll(' ','').toLowerCase()) &&
+                img.dataset.originalSrc.toLowerCase().includes(selectedItems[1].getAttribute('value').replaceAll(' ','').toLowerCase())
+              ) {
+                img.closest('.Product__SlideItem').style.display = 'block';
+                mainImages.forEach(image => {
+                  if (image != img) {
+                    console.log('not the same - image is noned , image, img',image,img);
+                    image.closest('.Product__SlideItem').style.display = 'none !important';
+                  }
+                })
+                console.log('The Image img',img); 
+              } else {
+                console.log('showing all images');
+                mainImages.forEach(image => {
+                  image.closest('.Product__SlideItem').style.display = 'block';
+                })
+              }
+            })
           }
         });
       });
@@ -57,6 +89,10 @@ function attachEventListeners(container) {
     });
   }
 }
+
+function handleSwatchSelection(){
+  // const 
+} 
 
 function addChevron(element){
   const chevronAdded = element.querySelector('svg.hulk-chevron');
