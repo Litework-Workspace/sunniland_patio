@@ -45,43 +45,11 @@ function attachEventListeners(container) {
       createOrReplaceOptionName(container, hulkSelect.value);
     });
   } else if (radioContainer.length > 0) {
-    // get all images to loop through them. Need to ensure this DOM search only happens once.
-    const mainImages = document.querySelectorAll('.Product__Slideshow img');
     radioContainer.forEach(radio => {
       const radioObserver = new MutationObserver(mutationList => {
         mutationList.forEach(mutation => {
           if (mutation.type === "attributes" && radio.classList.contains('swatch_selected')) {
             createOrReplaceOptionName(container, radio.getAttribute('value'));
-
-            // find all selected items
-            // TODO: Loop through these and export the values into an array
-            const selectedItems = document.querySelectorAll('.swatch_selected');
-            console.log('selectedItems',selectedItems);
-
-
-            // TODO: Only search through the images when all swatches are selected
-            mainImages.forEach(img => {
-              // console.log('main img',img.dataset.originalSrc.toLowerCase());
-              // TODO: Get the hide feature working and include a hide the nav items feature
-              if (
-                img.dataset.originalSrc.toLowerCase().includes(selectedItems[0].getAttribute('value').replaceAll(' ','').toLowerCase()) &&
-                img.dataset.originalSrc.toLowerCase().includes(selectedItems[1].getAttribute('value').replaceAll(' ','').toLowerCase())
-              ) {
-                img.closest('.Product__SlideItem').style.display = 'block';
-                mainImages.forEach(image => {
-                  if (image != img) {
-                    console.log('not the same - image is noned , image, img',image,img);
-                    image.closest('.Product__SlideItem').style.display = 'none !important';
-                  }
-                })
-                console.log('The Image img',img); 
-              } else {
-                console.log('showing all images');
-                mainImages.forEach(image => {
-                  image.closest('.Product__SlideItem').style.display = 'block';
-                })
-              }
-            })
           }
         });
       });
@@ -90,8 +58,78 @@ function attachEventListeners(container) {
   }
 }
 
-function handleSwatchSelection(){
-  // const 
+function linkHulkOptionsToImages() {
+  const radioContainer = document.querySelectorAll('.hulk_po_radio.hulkapps_option_child');
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+  const navSelector = isMobile ? ".dot" : ".Product__SlideshowNavImage";
+  const mainImages = document.querySelectorAll('.Product__Slideshow img');
+  const navImages = document.querySelectorAll(`${navSelector} img`);
+
+  radioContainer.forEach(radio => {
+    radio.addEventListener('click',(event) => {
+      // find all selected items
+      const selectedItems = document.querySelectorAll('.swatch_selected');
+      let altText = "";
+
+      if (selectedItems.length == 2) {
+        for (const img of mainImages) {
+          if (
+            img.alt.toLowerCase().includes(selectedItems[0].getAttribute('value').replaceAll(' ','').toLowerCase()) &&
+              img.alt.toLowerCase().includes(selectedItems[1].getAttribute('value').replaceAll(' ','').toLowerCase())
+          ) {
+            altText = img.alt;
+            break
+          }
+        }
+
+        if (altText) {
+          const mainImage = document.querySelector(`.Product__SlideItem img[alt="${altText}"]`);
+          const navImage = document.querySelector(`${navSelector} img[alt="${altText}"]`);
+
+          if (navImage) {
+            navImage.closest(navSelector).click();
+
+            mainImages.forEach(img => {
+              if (img == mainImage) {
+                img.closest('.Product__SlideItem').classList.remove('hidden');
+              } else {
+                img.closest('.Product__SlideItem').classList.add('hidden');
+              }
+            });
+
+            navImages.forEach(img => {
+              if (img == navImage) {
+                img.closest(navSelector).classList.remove('hidden');
+              } else {
+                img.closest(navSelector).classList.add('hidden');
+              }
+            });
+          }
+        } else {
+          mainImages.forEach(img => {
+            img.closest('.Product__SlideItem').classList.remove('hidden');
+          });
+
+          navImages.forEach(img => {
+            img.closest(navSelector).classList.remove('hidden');
+          });
+        }
+
+        /* 
+           * dispatch this event to trigger `this._setupDeviceFeatures()` in 
+           * theme.js. That function re-calibrates the height of the right side 
+           * of the pdp.
+          */
+        document.dispatchEvent(new Event('pdpImagesRefreshed'));
+
+        window.scrollTo({
+          behavior: "smooth",
+          top: 0,
+          left: 0
+        })
+      }
+    })
+  });
 } 
 
 function addChevron(element){
@@ -110,8 +148,21 @@ function addChevron(element){
   }
 }
 
-function syncHulkOptionWithVariant() {
+async function syncHulkOptionWithVariant() {
   const ogSelect = document.querySelector('.no-js.ProductForm__Option select');
+  const productForm = document.querySelector('form[data-product-id]');
+  const linkImages = document.querySelector('[data-link-hulk-options-to-images]');
+
+  const prodReq = await fetch(`https://productoption.hulkapps.com/v1/products/?product_id=${productForm.dataset.productId}&shop_domain=sunniland-patio-patio-furniture-and-spas-in-boca-raton.myshopify.com`,{
+    method: 'GET',
+    headers: {
+      accept: 'application/json',
+      authorization: 'eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJpc3N1ZXJfbmFtZSIsImF1ZCI6ImNsaWVudCIsInRva2VuX25hbWUiOiJUb2tlbiIsInNob3BfaWQiOjEzMDIwMCwiY3JlYXRlX3RpbWUiOiIyMDI0LTAzLTA0IDA4OjM0OjEwICswMDAwIn0.GJ8U7aLJJcmhWigVK3uD1Tml_BSl5rr8DZ4cyzcxM8g'
+    }
+  });
+  const prod = await prodReq.json();
+  let eventListenersAttached = false;
+  let hulkSelectSynced = false;
 
   const callback = mutationList => {
     mutationList.forEach(mutation => {
@@ -120,11 +171,20 @@ function syncHulkOptionWithVariant() {
           ...document.querySelectorAll('.hulkapps_option.dd_render'),
           ...document.querySelectorAll('.hulkapps_option.swatch_render')
         ];
-        hulkContainers.forEach(attachEventListeners);
-        hulkContainers.forEach(addChevron);
+
+        if (prod && prod.relationship.options.length == hulkContainers.length && !eventListenersAttached) {
+          hulkContainers.forEach(attachEventListeners);
+          hulkContainers.forEach(addChevron);
+
+          if (linkImages) {
+            linkHulkOptionsToImages();
+          }
+
+          eventListenersAttached = true;
+        }
 
         const hulkSelect = document.querySelector('.hulkapps_option.dd_render select.hulkapps_option_child');
-        if (hulkSelect && ogSelect) {
+        if (hulkSelect && ogSelect && !hulkSelectSynced) {
           const priceContainer = document.querySelector('.ProductMeta__Price.Price');
           hulkSelect.addEventListener('change', e => {
             const selectedValue = e.target.value;
@@ -138,6 +198,12 @@ function syncHulkOptionWithVariant() {
               }
             }
           });
+
+          hulkSelectSynced = true;
+        }
+
+        if (hulkSelectSynced && eventListenersAttached) {
+          observer.disconnect();
         }
       }
     });
@@ -162,7 +228,7 @@ function linkAllSearchToMainSearch() {
   const mainSearchBarInput = document.querySelector('#Search input.Search__Input');
   const mainSearchBarInputClose = document.querySelector('#Search .Search__Close');
   if (!mainSearchBar || searchBars.length < 1) {
-    console.log('No search bars'); return;
+    console.error('No search bars'); return;
   }
 
   // close the search results by clicking outside of the results

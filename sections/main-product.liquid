@@ -39,7 +39,7 @@
   })();
 </script>
 
-<section class="Product Product--{{ section.settings.image_size }}" data-section-id="{{ section.id }}" data-section-type="product" data-section-settings='{{ section_settings }}'>
+<section {% if product.metafields.custom.link_hulk_options_to_images %}data-link-hulk-options-to-images{% endif %} class="Product Product--{{ section.settings.image_size }}" data-section-id="{{ section.id }}" data-section-type="product" data-section-settings='{{ section_settings }}'>
   <div class="Product__Wrapper">
     {%- capture action_list_items -%}
       {%- if section.settings.enable_image_zoom -%}
@@ -287,7 +287,7 @@
         <div class="Container">
           {%- assign has_ouputted_variant_selector = false -%}
 
-          {%- form 'product', product, class: 'ProductForm' -%}
+          {%- form 'product', product, class: 'ProductForm', data-product-id: product.id -%}
             {%- render 'product-data', product: product -%}
 
             {%- for block in section.blocks -%}
