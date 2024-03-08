@@ -5432,6 +5432,12 @@ const validateObjectData = validate_options(window.hulkapps.product_id);
 
       this._setupDeviceFeatures();
 
+      /*
+       * This event is dispatched in custom.js every time the pdp images get 
+       * the class .hidden cycled
+       */ 
+      document.addEventListener('pdpImagesRefreshed', () => {this._setupDeviceFeatures()});
+
       this._attachListeners();
     }
 
