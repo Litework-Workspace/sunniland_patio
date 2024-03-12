@@ -1770,8 +1770,19 @@ body .hulkapps_product_options .hulkapps_option_set .hulkapps_option .hulkapps_o
     margin: 0 auto !important;
   }
 }
+.Product__SlideshowMobileNav .dot {
+  overflow: hidden;
+}
+.Product__SlideshowMobileNav .dot img{
+  object-fit: cover;
+  height: 100%;
+  object-position: center center;
+  width: 100%;
+}
+.Product__Slideshow.flickity-enabled.options-selected {
+  pointer-events: none;
+}
 /* END PDP edits */
-
 
 /* START Page section edits */
 .PageHeader.custom .SectionHeader {
@@ -2184,16 +2195,14 @@ body .hulkapps_product_options .hulkapps_option_set .hulkapps_option .hulkapps_o
 }
 /* END Contact Form Edits */
 
+/* START Misc Edits */
 .hidden { 
   display: none !important;
 }
+@media only screen and (max-width:767px) {
+  [data-hide-on-mobile] {
+    display: none !important;
+  }
+}
+/* END Misc Edits */
 
-.Product__SlideshowMobileNav .dot {
-  overflow: hidden;
-}
-.Product__SlideshowMobileNav .dot img{
-  object-fit: cover;
-  height: 100%;
-  object-position: center center;
-  width: 100%;
-}

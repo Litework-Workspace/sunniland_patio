@@ -58,12 +58,15 @@ function attachEventListeners(container) {
   }
 }
 
-function linkHulkOptionsToImages() {
+function linkHulkOptionsToImages(hulkProd) {
   const radioContainer = document.querySelectorAll('.hulk_po_radio.hulkapps_option_child');
   const isMobile = window.matchMedia("(max-width: 768px)").matches;
   const navSelector = isMobile ? ".dot" : ".Product__SlideshowNavImage";
   const mainImages = document.querySelectorAll('.Product__Slideshow img');
   const navImages = document.querySelectorAll(`${navSelector} img`);
+  const flickityContainer = document.querySelector('.Product__Slideshow');
+
+  const optionsCount = hulkProd.relationship.options.length;
 
   radioContainer.forEach(radio => {
     radio.addEventListener('click',(event) => {
@@ -71,12 +74,15 @@ function linkHulkOptionsToImages() {
       const selectedItems = document.querySelectorAll('.swatch_selected');
       let altText = "";
 
-      if (selectedItems.length == 2) {
+      if (selectedItems.length == optionsCount) {
         for (const img of mainImages) {
-          if (
-            img.alt.toLowerCase().includes(selectedItems[0].getAttribute('value').replaceAll(' ','').toLowerCase()) &&
-              img.alt.toLowerCase().includes(selectedItems[1].getAttribute('value').replaceAll(' ','').toLowerCase())
-          ) {
+          // check if the img matches the selectedItems
+          const matches = Array.from(selectedItems).every(item => {
+            const altString = item.getAttribute('value').replaceAll(' ','').toLowerCase();
+            return img.alt.toLowerCase().includes(altString);
+          })
+
+          if (matches) {
             altText = img.alt;
             break
           }
@@ -85,6 +91,10 @@ function linkHulkOptionsToImages() {
         if (altText) {
           const mainImage = document.querySelector(`.Product__SlideItem img[alt="${altText}"]`);
           const navImage = document.querySelector(`${navSelector} img[alt="${altText}"]`);
+          
+          if (flickityContainer) {
+            flickityContainer.classList.add('options-selected');
+          }
 
           if (navImage) {
             navImage.closest(navSelector).click();
@@ -106,6 +116,10 @@ function linkHulkOptionsToImages() {
             });
           }
         } else {
+          if (flickityContainer) {
+            flickityContainer.classList.add('options-selected');
+          }
+
           mainImages.forEach(img => {
             img.closest('.Product__SlideItem').classList.remove('hidden');
           });
@@ -177,7 +191,7 @@ async function syncHulkOptionWithVariant() {
           hulkContainers.forEach(addChevron);
 
           if (linkImages) {
-            linkHulkOptionsToImages();
+            linkHulkOptionsToImages(prod);
           }
 
           eventListenersAttached = true;
