@@ -79,7 +79,8 @@ function linkHulkOptionsToImages(hulkProd) {
           // check if the img matches the selectedItems
           const matches = Array.from(selectedItems).every(item => {
             const altString = item.getAttribute('value').replaceAll(' ','').toLowerCase();
-            return img.alt.toLowerCase().includes(altString);
+            const pattern = new RegExp(`(^|[-_ .])${altString}([-_ .]|$)`, 'i');
+            return pattern.test(img.alt)
           })
 
           if (matches) {
