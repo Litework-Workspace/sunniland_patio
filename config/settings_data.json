@@ -69,12 +69,12 @@
           "p {font-size: 16px;}"
         ],
         "settings": {
-          "enable_bar": false,
+          "enable_bar": true,
           "home_page_only": false,
           "background": "#000000",
           "text_color": "#ffffff",
-          "content": "10% Off All Woodard Furniture. Shop Now!",
-          "link": "shopify:\/\/collections\/woodard"
+          "content": "$10 Off Replacement Part Orders Over $100. Shop Now!",
+          "link": "shopify:\/\/collections\/all-parts"
         }
       },
       "header": {
