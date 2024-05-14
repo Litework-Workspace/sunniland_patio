@@ -158,6 +158,10 @@
           "8d237045-6a02-4a4f-a457-e6e853153718",
           "1157b2b2-3414-4df9-a9a8-57d682e01300"
         ],
+        "custom_css": [
+          ".Footer-Form_Input {display: none;}",
+          ".Footer_Form-Submit{display: none;}"
+        ],
         "settings": {
           "show_payment_methods": false,
           "show_country_selector": true,
