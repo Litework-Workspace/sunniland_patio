@@ -321,7 +321,7 @@
           "secColor": "#FFCC4D",
           "howToJoinOrderValueMessage": "Place an order of $200 or more to enter!",
           "orderNoTicket": "left to join the raffle.",
-          "orderGotTicket": "This purchase will grant you a ticket to the raffle 😎",
+          "orderGotTicket": "CONGRATULATIONS! Your purchase automatically enters your in our raffle 😎",
           "howToJoinProductMessage": "To enter the raffle, purchase any of the [participatingProductsLink]",
           "participatingProductsWording": "eligible products",
           "productNoTicket": "Based on your cart items, you won't get a raffle ticket.",
@@ -334,7 +334,7 @@
           "raffleEndTextColor": "#000000",
           "prizeInfoPopTitle": "Join for a chance to win [prizeDetail]",
           "showPrizeInfoAdditionalPage": false,
-          "prizeInfoAdditionalPageInfoLink": "http:\/\/www.shopify.com",
+          "prizeInfoAdditionalPageInfoLink": "",
           "prizeInfoAdditionalPageInfoTitle": "Learn more"
         }
       }
