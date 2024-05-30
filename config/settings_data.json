@@ -307,6 +307,36 @@
           "button_vertical_position": "lowest",
           "greeting_message": "👋 Hello! Please message us if you have questions, or give an idea of what you’re looking for. We’re happy to make recommendations."
         }
+      },
+      "14447995696390441228": {
+        "type": "shopify:\/\/apps\/pineraffle\/blocks\/app-embed\/a7355a0d-da3a-4b47-bff6-8f75b9cc8805",
+        "disabled": false,
+        "settings": {
+          "buttonTitle": "We're Having A Raffle! 🏆",
+          "showPrizeName": true,
+          "coverImageHeight": 100,
+          "prizeNameMessage": "Shop to Win a Duracord Hammock For Father's Day",
+          "Body": "Enter to win a Duracord Hammock valued at $250 with your order of $200+. Winner will be announced June 17.",
+          "mainColor": "#ce4737",
+          "secColor": "#FFCC4D",
+          "howToJoinOrderValueMessage": "Place an order of $200 or more to enter!",
+          "orderNoTicket": "left to join the raffle.",
+          "orderGotTicket": "This purchase will grant you a ticket to the raffle 😎",
+          "howToJoinProductMessage": "To enter the raffle, purchase any of the [participatingProductsLink]",
+          "participatingProductsWording": "eligible products",
+          "productNoTicket": "Based on your cart items, you won't get a raffle ticket.",
+          "productGotTicket": "This purchase will grant you a ticket to the raffle 😎",
+          "howToJoinEmailTypeRaffle": "Click 'ENTER NOW' below and enter your name and email for your chance to win.",
+          "showRaffleEndInfo": true,
+          "raffleEndDateMessage": "Raffle ends on [endDate]",
+          "raffleEndDateFormat": "%B %e, %Y",
+          "raffleEndTicketsMessage": "Raffle ends after the first [ticketsLimit] participants",
+          "raffleEndTextColor": "#000000",
+          "prizeInfoPopTitle": "Join for a chance to win [prizeDetail]",
+          "showPrizeInfoAdditionalPage": false,
+          "prizeInfoAdditionalPageInfoLink": "http:\/\/www.shopify.com",
+          "prizeInfoAdditionalPageInfoTitle": "Learn more"
+        }
       }
     }
   },
