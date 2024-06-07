@@ -25,7 +25,24 @@ Variables:
 {% endfor %}
 
 {% assign available_prod_grid_item = product.selected_or_first_available_variant.available %}
-<button data-prod-url="{{ product.url }}" data-prod-collections="{{ prod_collections }}" data-prod-type="{{ product.type }}" data-prod-vendor="{{ product.vendor }}" data-prod-tags="{{ prod_tags }}" data-prod-id="{{ product.id }}" type="submit" name="add" aria-label="Add to cart" class="ad_to_cart_coll ProductForm__AddToCart Button Button--secondary Button--full" id="ad_to_cart" aria-haspopup="dialog" data-add-to-cart="{{ product.variants.first.id }}" data-var_id="{{ product.variants.first.id }}" data-prod-available="{{ available_prod_grid_item }}">
+<a 
+  data-prod-url="{{ product.url }}" 
+  data-prod-collections="{{ prod_collections }}" 
+  data-prod-type="{{ product.type }}" 
+  data-prod-vendor="{{ product.vendor }}" 
+  data-prod-tags="{{ prod_tags }}" 
+  data-prod-id="{{ product.id }}" 
+  {% comment %} type="submit"  {% endcomment %}
+  name="add" 
+  aria-label="Add to cart" 
+  class="ad_to_cart_coll ProductForm__AddToCart Button Button--secondary Button--full" 
+  style="cursor:pointer;"
+  id="ad_to_cart" 
+  aria-haspopup="dialog" 
+  data-add-to-cart="{{ product.variants.first.id }}" 
+  data-var_id="{{ product.variants.first.id }}" 
+  data-prod-available="{{ available_prod_grid_item }}"
+>
   {%- if available_prod_grid_item -%}
     <span>{% if product.template_suffix == 'pre-order' %}{{ 'product.form.pre_order' | t }}{% else %}{{ 'product.form.add_to_cart' | t }}{% endif %}</span>
 
@@ -36,4 +53,4 @@ Variables:
   {%- else -%}
     {{- 'product.form.sold_out' | t -}}
   {%- endif -%}
-</button>
+</a>

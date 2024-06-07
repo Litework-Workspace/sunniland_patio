@@ -317,7 +317,7 @@ function ajaxAddToCart(){
         window.location = product.url
       });
     } else {
-      $this.click( () => {
+      $this.on('click', () => {
         addItemToCart(product.variant_id, 1);    // paste your id product number
       })
     };
