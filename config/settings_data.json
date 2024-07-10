@@ -78,11 +78,11 @@
           "p {font-size: 16px;}"
         ],
         "settings": {
-          "enable_bar": false,
+          "enable_bar": true,
           "home_page_only": false,
           "background": "#000000",
           "text_color": "#ffffff",
-          "content": "WIN a relaxing Hammock- Sign Up For The Father's Day Giveaway!",
+          "content": "SUMMER SALE ALERT- $10 off online orders over $100 +  On In-store orders over $1000, we pay the tax",
           "link": "https:\/\/gleam.io\/obAzZ\/mothers-day-giveaway-2024"
         }
       },
