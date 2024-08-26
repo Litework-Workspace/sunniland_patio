@@ -182,6 +182,7 @@
     {% render 'microdata-schema' %}
 
     {{ 'font.css' | asset_url | stylesheet_tag }}
+    {{ 'tailwindDist.css' | asset_url | stylesheet_tag }}
 
   {% render 'GTM-product-datalayer.liquid' %}
   {% include 'hulk_po_vd' %}

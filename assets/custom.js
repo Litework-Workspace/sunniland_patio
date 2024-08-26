@@ -102,17 +102,17 @@ function linkHulkOptionsToImages(hulkProd) {
 
             mainImages.forEach(img => {
               if (img == mainImage) {
-                img.closest('.Product__SlideItem').classList.remove('hidden');
+                img.closest('.Product__SlideItem').classList.remove('hidden-imp');
               } else {
-                img.closest('.Product__SlideItem').classList.add('hidden');
+                img.closest('.Product__SlideItem').classList.add('hidden-imp');
               }
             });
 
             navImages.forEach(img => {
               if (img == navImage) {
-                img.closest(navSelector).classList.remove('hidden');
+                img.closest(navSelector).classList.remove('hidden-imp');
               } else {
-                img.closest(navSelector).classList.add('hidden');
+                img.closest(navSelector).classList.add('hidden-imp');
               }
             });
           }
@@ -122,11 +122,11 @@ function linkHulkOptionsToImages(hulkProd) {
           }
 
           mainImages.forEach(img => {
-            img.closest('.Product__SlideItem').classList.remove('hidden');
+            img.closest('.Product__SlideItem').classList.remove('hidden-imp');
           });
 
           navImages.forEach(img => {
-            img.closest(navSelector).classList.remove('hidden');
+            img.closest(navSelector).classList.remove('hidden-imp');
           });
         }
 

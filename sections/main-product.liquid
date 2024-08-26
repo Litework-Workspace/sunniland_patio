@@ -39,8 +39,50 @@
   })();
 </script>
 
-<section {% if product.metafields.custom.link_hulk_options_to_images %}data-link-hulk-options-to-images{% endif %} class="Product Product--{{ section.settings.image_size }}" data-section-id="{{ section.id }}" data-section-type="product" data-section-settings='{{ section_settings }}'>
-  <div class="Product__Wrapper">
+{%- capture product_aside -%}
+  {%- comment -%}
+  --------------------------------------------------------------------------------------------------------------------
+  PRODUCT TABS
+  --------------------------------------------------------------------------------------------------------------------
+  {%- endcomment -%}
+
+  {%- render 'product-tabs' -%}
+
+  {%- comment -%}
+  --------------------------------------------------------------------------------------------------------------------
+  COMPLEMENTARY PRODUCTS
+  --------------------------------------------------------------------------------------------------------------------
+  {%- endcomment -%}
+
+  {%- assign complementary_products_block = section.blocks | where: 'type', 'complementary_products' | first -%}
+
+  {%- if complementary_products_block != blank -%}
+    <product-recommendations class="ComplementaryProducts Section Section--spacingNormal" intent="complementary" product="{{ product.id }}" limit="{{ block.settings.products_count }}" section-id="{{ section.id }}">
+      {%- if recommendations.performed and recommendations.products_count > 0 -%}
+        <header class="SectionHeader SectionHeader--center">
+          <h3 class="SectionHeader__Heading Heading u-h4">{{ complementary_products_block.settings.title | escape }}</h3>
+        </header>
+
+        <div class="ComplementaryProducts__List">
+          {%- for product in recommendations.products -%}
+            {% render 'product-item', product: product, use_horizontal: true, show_labels: false, show_product_info: true, show_vendor: false, show_price_on_hover: false %}
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </product-recommendations>
+  {%- endif -%}
+{%- endcapture -%}
+
+<section
+  {% if product.metafields.custom.link_hulk_options_to_images %}
+    data-link-hulk-options-to-images
+  {% endif %}
+  class="Product Product--{{ section.settings.image_size }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="product"
+  data-section-settings="{{ section_settings }}"
+>
+  <div class="Product__Wrapper lg:grid lg:grid-cols-2 lg:w-full lg:max-w-full">
     {%- capture action_list_items -%}
       {%- if section.settings.enable_image_zoom -%}
         <div class="Product__ActionItem hidden-lap-and-up">
@@ -70,9 +112,9 @@
     {%- endcapture -%}
 
     {%- comment -%}
-    --------------------------------------------------------------------------------------------------------------------
-    PRODUCT GALLERY
-    --------------------------------------------------------------------------------------------------------------------
+      --------------------------------------------------------------------------------------------------------------------
+      PRODUCT GALLERY
+      --------------------------------------------------------------------------------------------------------------------
     {%- endcomment -%}
 
     {%- assign initial_media_id = product.featured_media.id -%}
@@ -136,19 +178,21 @@
     {%- endcapture -%}
 
     {%- if product.media.size > 0 -%}
-      <div class="Product__Gallery {% if section.settings.stack_images %}Product__Gallery--stack{% endif %} {% if section.settings.show_thumbnails and media_count > 1 %}Product__Gallery--withThumbnails{% else %}Product__Gallery--withDots{% endif %}">
-        <span id="ProductGallery" class="Anchor"></span>
+      <div class="Product__Gallery {% if section.settings.stack_images %}Product__Gallery--stack{% endif %} {% if section.settings.show_thumbnails and media_count > 1 %}Product__Gallery--withThumbnails{% else %}Product__Gallery--withDots{% endif %} lg:col-span-1 lg:w-full lg:flex-col lg:mb-0">
+        <div class="lg:sticky lg:top-[180px]">
+          <div class="lg:flex">
+            <span id="ProductGallery" class="Anchor"></span>
 
-        {%- if action_list_items != blank -%}
-          <div class="Product__ActionList hidden-lap-and-up {% if product.media[initial_media_index].media_type != 'image' %}is-hidden{% endif %}">
-            {{ action_list_items }}
-          </div>
-        {%- endif -%}
+            {%- if action_list_items != blank -%}
+              <div class="Product__ActionList hidden-lap-and-up {% if product.media[initial_media_index].media_type != 'image' %}is-hidden{% endif %}">
+                {{ action_list_items }}
+              </div>
+            {%- endif -%}
 
-        {%- capture slideshow_nav -%}
+            {%- capture slideshow_nav -%}
           {%- if media_count > 1 -%}
             {%- if section.settings.show_thumbnails -%}
-              <div class="Product__SlideshowNav Product__SlideshowNav--thumbnails">
+              <div class="Product__SlideshowNav Product__SlideshowNav--thumbnails lg:max-h-[534px] lg:overflow-scroll lg:relative">
                 <div class="Product__SlideshowNavScroller">
                   {%- for media in product.media -%}
                     {%- capture nav_item_badge -%}
@@ -189,11 +233,11 @@
           {%- endif -%}
         {%- endcapture -%}
 
-        {%- if section.settings.stack_images -%}
-          {{- slideshow_nav -}}
-        {%- endif -%}
+            {%- if section.settings.stack_images -%}
+              {{- slideshow_nav -}}
+            {%- endif -%}
 
-        {%- capture flickity_options -%}
+            {%- capture flickity_options -%}
         {
           "prevNextButtons": false,
           "pageDots": false,
@@ -205,85 +249,87 @@
         }
         {%- endcapture -%}
 
-        <div class="Product__Slideshow {% if section.settings.enable_image_zoom %}Product__Slideshow--zoomable{% endif %} Carousel" data-flickity-config='{{ flickity_options }}'>
-          {{ slideshow_media }}
-        </div>
-
-        {%- comment -%}Add the "view in your space" button, which allows to show the product in customer's environment (if the device supports it){%- endcomment -%}
-        {%- assign first_3d_model = product.media | where: 'media_type', 'model' | first -%}
-
-        {%- if first_3d_model -%}
-          <button class="Product__ViewInSpace Button Button--full" data-shopify-xr data-shopify-model3d-id="{{ first_3d_model.id }}" data-shopify-model3d-default-id="{{ first_3d_model.id }}" data-shopify-title="{{ product.title | escape }}" data-shopify-xr-hidden>
-            {%- render 'icon', icon: 'media-view-in-space' -%} {{- 'product.general.view_in_space' | t -}}
-          </button>
-        {%- endif -%}
-
-        {%- if media_count > 1 -%}
-          {%- comment -%}
-            IMPLEMENTATION NOTE: The reason we create ourselves our own UI instead of relying of the built-in feature of Flickity is that,
-            since the media API, Shopify requires to add arrows next to the dot. Unfortunately this layout is not
-            achievable easily using Flickity options only, so we have to run our own
-          {%- endcomment -%}
-
-          <div class="Product__SlideshowMobileNav {% if section.settings.stack_images or section.settings.show_thumbnails %}hidden-lap-and-up{% endif %}">
-            {% comment %} <button class="Product__SlideshowNavArrow Product__SlideshowNavArrow--previous" type="button" data-direction="previous" aria-label="{{ 'general.accessibility.previous' | t }}">
-              {% render 'icon' with 'media-arrow-left' %}
-            </button> {% endcomment %}
-
-            <div class="flickity-page-dots" {% if product.metafields.custom.hide_thumbnails_on_mobile %}data-hide-on-mobile{% endif %}>
-              {%- for media in product.media -%}
-                <button type="button" aria-label="{{ 'product.slideshow.go_to_image' | t: i: i | escape }}" class="dot {% if forloop.index0 == initial_media_index %}is-selected{% endif %}" data-index="{{ forloop.index0 }}"><img src="{{ media | img_url: '160x' }}" alt="{{ media.alt | escape }}"></button>
-              {%- endfor -%}
+            <div
+              class="Product__Slideshow {% if section.settings.enable_image_zoom %}Product__Slideshow--zoomable{% endif %} Carousel lg:max-h-[534px] lg:overflow-scroll"
+              data-flickity-config="{{ flickity_options }}"
+            >
+              {{ slideshow_media }}
             </div>
 
-            {% comment %} <button class="Product__SlideshowNavArrow Product__SlideshowNavArrow--next" type="button" data-direction="next" aria-label="{{ 'general.accessibility.next' | t }}">
-              {% render 'icon' with 'media-arrow-right' %}
-            </button> {% endcomment %}
-          </div>
-        {%- endif -%}
+            {%- comment -%}Add the "view in your space" button, which allows to show the product in customer's environment (if the device supports it){%- endcomment -%}
+            {%- assign first_3d_model = product.media | where: 'media_type', 'model' | first -%}
 
-        {%- unless section.settings.stack_images -%}
-          {{- slideshow_nav -}}
-        {%- endunless -%}
+            {%- if first_3d_model -%}
+              <button
+                class="Product__ViewInSpace Button Button--full"
+                data-shopify-xr
+                data-shopify-model3d-id="{{ first_3d_model.id }}"
+                data-shopify-model3d-default-id="{{ first_3d_model.id }}"
+                data-shopify-title="{{ product.title | escape }}"
+                data-shopify-xr-hidden
+              >
+                {%- render 'icon', icon: 'media-view-in-space' -%}
+                {{- 'product.general.view_in_space' | t -}}
+              </button>
+            {%- endif -%}
+
+            {%- if media_count > 1 -%}
+              {%- comment -%}
+                IMPLEMENTATION NOTE: The reason we create ourselves our own UI instead of relying of the built-in feature of Flickity is that,
+                since the media API, Shopify requires to add arrows next to the dot. Unfortunately this layout is not
+                achievable easily using Flickity options only, so we have to run our own
+              {%- endcomment -%}
+
+              <div class="Product__SlideshowMobileNav {% if section.settings.stack_images or section.settings.show_thumbnails %}hidden-lap-and-up{% endif %}">
+                {% comment %}
+                  <button class="Product__SlideshowNavArrow Product__SlideshowNavArrow--previous" type="button" data-direction="previous" aria-label="{{ 'general.accessibility.previous' | t }}">
+                    {% render 'icon' with 'media-arrow-left' %}
+                  </button>
+                {% endcomment %}
+
+                <div
+                  class="flickity-page-dots"
+                  {% if product.metafields.custom.hide_thumbnails_on_mobile %}
+                    data-hide-on-mobile
+                  {% endif %}
+                >
+                  {%- for media in product.media -%}
+                    <button
+                      type="button"
+                      aria-label="{{ 'product.slideshow.go_to_image' | t: i: i | escape }}"
+                      class="dot {% if forloop.index0 == initial_media_index %}is-selected{% endif %}"
+                      data-index="{{ forloop.index0 }}"
+                    >
+                      <img src="{{ media | img_url: '160x' }}" alt="{{ media.alt | escape }}">
+                    </button>
+                  {%- endfor -%}
+                </div>
+
+                {% comment %}
+                  <button class="Product__SlideshowNavArrow Product__SlideshowNavArrow--next" type="button" data-direction="next" aria-label="{{ 'general.accessibility.next' | t }}">
+                    {% render 'icon' with 'media-arrow-right' %}
+                  </button>
+                {% endcomment %}
+              </div>
+            {%- endif -%}
+
+            {%- unless section.settings.stack_images -%}
+              {{- slideshow_nav -}}
+            {%- endunless -%}
+          </div>
+
+          {%- if product_aside != blank -%}
+            <div class="Product__Aside hidden lg:block lg:!min-h-min">
+              <span id="ProductAside" class="Anchor"></span>
+              {{- product_aside -}}
+            </div>
+          {%- endif -%}
+        </div>
       </div>
     {%- endif -%}
 
-    {%- capture product_aside -%}
-      {%- comment -%}
-      --------------------------------------------------------------------------------------------------------------------
-      PRODUCT TABS
-      --------------------------------------------------------------------------------------------------------------------
-      {%- endcomment -%}
-
-      {%- render 'product-tabs' -%}
-
-      {%- comment -%}
-      --------------------------------------------------------------------------------------------------------------------
-      COMPLEMENTARY PRODUCTS
-      --------------------------------------------------------------------------------------------------------------------
-      {%- endcomment -%}
-
-      {%- assign complementary_products_block = section.blocks | where: 'type', 'complementary_products' | first -%}
-
-      {%- if complementary_products_block != blank -%}
-        <product-recommendations class="ComplementaryProducts Section Section--spacingNormal" intent="complementary" product="{{ product.id }}" limit="{{ block.settings.products_count }}" section-id="{{ section.id }}">
-          {%- if recommendations.performed and recommendations.products_count > 0 -%}
-            <header class="SectionHeader SectionHeader--center">
-              <h3 class="SectionHeader__Heading Heading u-h4">{{ complementary_products_block.settings.title | escape }}</h3>
-            </header>
-
-            <div class="ComplementaryProducts__List">
-              {%- for product in recommendations.products -%}
-                {% render 'product-item', product: product, use_horizontal: true, show_labels: false, show_product_info: true, show_vendor: false, show_price_on_hover: false %}
-              {%- endfor -%}
-            </div>
-          {%- endif -%}
-        </product-recommendations>
-      {%- endif -%}
-    {%- endcapture -%}
-
     <div class="Product__InfoWrapper">
-      <div class="Product__Info {% if media_count == 0 %}Product__Info--noGallery{% endif %}">
+      <div class="Product__Info {% if media_count == 0 %}Product__Info--noGallery{% endif %} lg:relative lg:!top-[50px]">
         <div class="Container">
           {%- assign has_ouputted_variant_selector = false -%}
 
@@ -312,17 +358,47 @@
 
                 {%- when 'share_buttons' -%}
                   <div class="ProductMeta__ShareButtons hidden-pocket" {{ block.shopify_attributes }}>
-                    <span class="ProductMeta__ShareTitle Heading Text--subdued u-h7">{{ 'product.form.share' | t }}</span>
+                    <span class="ProductMeta__ShareTitle Heading Text--subdued u-h7">
+                      {{- 'product.form.share' | t -}}
+                    </span>
 
                     {%- assign share_url = shop.url | append: product.url -%}
                     {%- assign twitter_text = product.title -%}
-                    {%- assign pinterest_description = product.description | strip_html | truncatewords: 15 | url_param_escape -%}
+                    {%- assign pinterest_description = product.description
+                      | strip_html
+                      | truncatewords: 15
+                      | url_param_escape
+                    -%}
                     {%- assign pinterest_image = product.featured_image | img_url: 'large' | prepend: 'https:' -%}
 
                     <div class="ProductMeta__ShareList Text--subdued">
-                      <a class="ProductMeta__ShareItem" href="https://www.facebook.com/sharer.php?u={{ share_url }}" target="_blank" rel="noopener" aria-label="Facebook">{%- render 'icon' with 'facebook' -%}</a>
-                      <a class="ProductMeta__ShareItem" href="https://twitter.com/share?{% if twitter_text != blank %}text={{twitter_text}}&{% endif %}url={{ share_url }}" target="_blank" rel="noopener" aria-label="Twitter">{%- render 'icon' with 'twitter' -%}</a>
-                      <a class="ProductMeta__ShareItem" href="https://pinterest.com/pin/create/button/?url={{ share_url }}{% if pinterest_image != blank %}&media={{ pinterest_image }}{% endif %}&description={{ pinterest_description }}" target="_blank" rel="noopener" aria-label="Pinterest">{%- render 'icon' with 'pinterest' -%}</a>
+                      <a
+                        class="ProductMeta__ShareItem"
+                        href="https://www.facebook.com/sharer.php?u={{ share_url }}"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Facebook"
+                      >
+                        {%- render 'icon' with 'facebook' -%}
+                      </a>
+                      <a
+                        class="ProductMeta__ShareItem"
+                        href="https://twitter.com/share?{% if twitter_text != blank %}text={{twitter_text}}&{% endif %}url={{ share_url }}"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Twitter"
+                      >
+                        {%- render 'icon' with 'twitter' -%}
+                      </a>
+                      <a
+                        class="ProductMeta__ShareItem"
+                        href="https://pinterest.com/pin/create/button/?url={{ share_url }}{% if pinterest_image != blank %}&media={{ pinterest_image }}{% endif %}&description={{ pinterest_description }}"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Pinterest"
+                      >
+                        {%- render 'icon' with 'pinterest' -%}
+                      </a>
                     </div>
                   </div>
 
@@ -338,16 +414,15 @@
                   {%- assign has_ouputted_variant_selector = true -%}
                   {%- render 'product-form', block: block, product: product -%}
 
-
                   {% assign min_q = 1 %}
 
                   {% for collection in product.collections %}
                     {% if collection.metafields.custom.min_order_quantity %}
-                    {% assign min_q = collection.metafields.custom.min_order_quantity %}
+                      {% assign min_q = collection.metafields.custom.min_order_quantity %}
                     {% endif %}
                   {% endfor %}
 
-                <div class="Quantity_BuyButton-Container">
+                  <div class="Quantity_BuyButton-Container">
                 {%- when 'quantity_selector' -%}
                   <div class="ProductForm__QuantitySelector" {{ block.shopify_attributes }}>
                     {%- if block.settings.show_label -%}
@@ -357,73 +432,45 @@
                     <div class="QuantitySelector QuantitySelector--large">
                       {%- assign quantity_minus_one = line_item.quantity | minus: 1 -%}
 
-                      <button type="button" class="QuantitySelector__Button Link Link--secondary" style="border-right: 1px solid #000000;" {% if min_q == 25 %} data-action="decrease-quantity-unless-25" {% elsif min_q == 16 %} data-action="decrease-quantity-unless-16" {% else %} data-action="decrease-quantity" {% endif %} >{% render 'icon' with 'minus' %}</button>
+                      <button
+                        type="button"
+                        class="QuantitySelector__Button Link Link--secondary"
+                        style="border-right: 1px solid #000000;"
+                        {% if min_q == 25 %}
+                          data-action="decrease-quantity-unless-25"
+                        {% elsif min_q == 16 %}
+                          data-action="decrease-quantity-unless-16"
+                        {% else %}
+                          data-action="decrease-quantity"
+                        {% endif %}
+                      >
+                        {% render 'icon' with 'minus' %}
+                      </button>
                       {% comment %} <span>|</span> {% endcomment %}
-                      <input type="text" class="QuantitySelector__CurrentQuantity" pattern="[0-9]*" name="quantity" {% if min_q > 1 %} value="{{ min_q }}" {% else %} value="1" {% endif %}  aria-label="{{ 'product.form.quantity' | t }}">
-                      <button type="button" class="QuantitySelector__Button Link Link--secondary" style="border-left: 1px solid #000000;" data-action="increase-quantity">{% render 'icon' with 'plus' %}</button>
+                      <input
+                        type="text"
+                        class="QuantitySelector__CurrentQuantity"
+                        pattern="[0-9]*"
+                        name="quantity"
+                        {% if min_q > 1 %}
+                          value="{{ min_q }}"
+                        {% else %}
+                          value="1"
+                        {% endif %}
+                        aria-label="{{ 'product.form.quantity' | t }}"
+                      >
+                      <button
+                        type="button"
+                        class="QuantitySelector__Button Link Link--secondary"
+                        style="border-left: 1px solid #000000;"
+                        data-action="increase-quantity"
+                      >
+                        {% render 'icon' with 'plus' %}
+                      </button>
                     </div>
                   </div>
 
-                  {%- when 'buy_buttons' -%}
-                    {%- if block.settings.show_payment_button == false or product.selling_plan_groups.size > 0 -%}
-                      {%- assign use_primary_button = true -%}
-                    {%- else -%}
-                      {%- assign use_primary_button = false -%}
-                    {%- endif -%}
-  
-                    <div class="ProductForm__BuyButtons" {{ block.shopify_attributes }}>
-                      {%- if block.settings.show_payment_button and product.selected_or_first_available_variant.available == false -%}
-                        <style>
-                          #shopify-section-{{ section.id }} .shopify-payment-button {
-                            display: none;
-                          }
-                        </style>
-                      {%- endif -%}
-  
-                      <button 
-                        id="main-product_buy" 
-                        type="submit" 
-                        data-use-primary-button="{% if use_primary_button %}true{% else %}false{% endif %}" 
-                        class="ProductForm__AddToCart Button {% if product.selected_or_first_available_variant.available and use_primary_button %}Button--primary{% else %}Button--secondary{% endif %} Button--full" {% if product.selected_or_first_available_variant.available %}data-action="add-to-cart"{% else %}disabled="disabled"{% endif %}
-                      >
-                        {%- if product.selected_or_first_available_variant.available -%}
-                          <span>{% if product.template_suffix == 'pre-order' %}{{ 'product.form.pre_order' | t }}{% else %}{{ 'product.form.add_to_cart' | t }}{% endif %}</span>
-  
-                          {%- if block.settings.show_price_in_button -%}
-                            <span class="Button__SeparatorDot"></span>
-                            <span>{{ product.selected_or_first_available_variant.price | money }}</span>
-                          {%- endif -%}
-                        {%- else -%}
-                          {{- 'product.form.sold_out' | t -}}
-                        {%- endif -%}
-                      </button>
-  
-                      {%- if block.settings.show_payment_button and product.template_suffix != 'pre-order' -%}
-                        {{ form | payment_button }}
-                      {%- endif -%}
-                    </div>
-                </div>
-
-                {%- when 'inventory' -%}
-                  {%- assign hide_inventory_quantity_by_default = false -%}
-
-                  {%- if product.selected_or_first_available_variant.inventory_management == blank or product.selected_or_first_available_variant.inventory_quantity <= 0 -%}
-                    {%- assign hide_inventory_quantity_by_default = true -%}
-                  {%- endif -%}
-
-                  {%- if block.settings.inventory_quantity_threshold != 0 and product.selected_or_first_available_variant.inventory_quantity > block.settings.inventory_quantity_threshold -%}
-                    {%- assign hide_inventory_quantity_by_default = true -%}
-                  {%- endif -%}
-
-                  <p class="ProductForm__Inventory Text--subdued" {% if hide_inventory_quantity_by_default %}style="display: none"{% endif %} {{ block.shopify_attributes }}>
-                    {%- if block.settings.inventory_quantity_threshold == 0 -%}
-                      {{- 'product.form.inventory_quantity_count' | t: count: product.selected_or_first_available_variant.inventory_quantity -}}
-                    {%- else -%}
-                      {{- 'product.form.low_inventory_quantity_count' | t: count: product.selected_or_first_available_variant.inventory_quantity -}}
-                    {%- endif -%}
-                  </p>
-
-                {% comment %} {%- when 'buy_buttons' -%}
+                {%- when 'buy_buttons' -%}
                   {%- if block.settings.show_payment_button == false or product.selling_plan_groups.size > 0 -%}
                     {%- assign use_primary_button = true -%}
                   {%- else -%}
@@ -431,7 +478,9 @@
                   {%- endif -%}
 
                   <div class="ProductForm__BuyButtons" {{ block.shopify_attributes }}>
-                    {%- if block.settings.show_payment_button and product.selected_or_first_available_variant.available == false -%}
+                    {%- if block.settings.show_payment_button
+                      and product.selected_or_first_available_variant.available == false
+                    -%}
                       <style>
                         #shopify-section-{{ section.id }} .shopify-payment-button {
                           display: none;
@@ -439,9 +488,25 @@
                       </style>
                     {%- endif -%}
 
-                    <button type="submit" data-use-primary-button="{% if use_primary_button %}true{% else %}false{% endif %}" class="ProductForm__AddToCart Button {% if product.selected_or_first_available_variant.available and use_primary_button %}Button--primary{% else %}Button--secondary{% endif %} Button--full" {% if product.selected_or_first_available_variant.available %}data-action="add-to-cart"{% else %}disabled="disabled"{% endif %}>
+                    <button
+                      id="main-product_buy"
+                      type="submit"
+                      data-use-primary-button="{% if use_primary_button %}true{% else %}false{% endif %}"
+                      class="ProductForm__AddToCart Button {% if product.selected_or_first_available_variant.available and use_primary_button %}Button--primary{% else %}Button--secondary{% endif %} Button--full"
+                      {% if product.selected_or_first_available_variant.available %}
+                        data-action="add-to-cart"
+                      {% else %}
+                        disabled="disabled"
+                      {% endif %}
+                    >
                       {%- if product.selected_or_first_available_variant.available -%}
-                        <span>{% if product.template_suffix == 'pre-order' %}{{ 'product.form.pre_order' | t }}{% else %}{{ 'product.form.add_to_cart' | t }}{% endif %}</span>
+                        <span>
+                          {%- if product.template_suffix == 'pre-order' -%}
+                            {{- 'product.form.pre_order' | t -}}
+                          {%- else -%}
+                            {{- 'product.form.add_to_cart' | t -}}
+                          {%- endif -%}
+                        </span>
 
                         {%- if block.settings.show_price_in_button -%}
                           <span class="Button__SeparatorDot"></span>
@@ -455,8 +520,80 @@
                     {%- if block.settings.show_payment_button and product.template_suffix != 'pre-order' -%}
                       {{ form | payment_button }}
                     {%- endif -%}
-                  </div> {% endcomment %}
-                
+                  </div>
+                  </div>
+
+                {%- when 'inventory' -%}
+                  {%- assign hide_inventory_quantity_by_default = false -%}
+
+                  {%- if product.selected_or_first_available_variant.inventory_management == blank
+                    or product.selected_or_first_available_variant.inventory_quantity <= 0
+                  -%}
+                    {%- assign hide_inventory_quantity_by_default = true -%}
+                  {%- endif -%}
+
+                  {%- if block.settings.inventory_quantity_threshold != 0
+                    and product.selected_or_first_available_variant.inventory_quantity
+                      > block.settings.inventory_quantity_threshold
+                  -%}
+                    {%- assign hide_inventory_quantity_by_default = true -%}
+                  {%- endif -%}
+
+                  <p
+                    class="ProductForm__Inventory Text--subdued"
+                    {% if hide_inventory_quantity_by_default %}
+                      style="display: none"
+                    {% endif %}
+                    {{ block.shopify_attributes }}
+                  >
+                    {%- if block.settings.inventory_quantity_threshold == 0 -%}
+                      {{-
+                        'product.form.inventory_quantity_count'
+                        | t: count: product.selected_or_first_available_variant.inventory_quantity
+                      -}}
+                    {%- else -%}
+                      {{-
+                        'product.form.low_inventory_quantity_count'
+                        | t: count: product.selected_or_first_available_variant.inventory_quantity
+                      -}}
+                    {%- endif -%}
+                  </p>
+
+                  {% comment %}
+                    {%- when 'buy_buttons' -%}
+                    {%- if block.settings.show_payment_button == false or product.selling_plan_groups.size > 0 -%}
+                      {%- assign use_primary_button = true -%}
+                    {%- else -%}
+                      {%- assign use_primary_button = false -%}
+                    {%- endif -%}
+
+                    <div class="ProductForm__BuyButtons" {{ block.shopify_attributes }}>
+                      {%- if block.settings.show_payment_button and product.selected_or_first_available_variant.available == false -%}
+                        <style>
+                          #shopify-section-{{ section.id }} .shopify-payment-button {
+                            display: none;
+                          }
+                        </style>
+                      {%- endif -%}
+
+                      <button type="submit" data-use-primary-button="{% if use_primary_button %}true{% else %}false{% endif %}" class="ProductForm__AddToCart Button {% if product.selected_or_first_available_variant.available and use_primary_button %}Button--primary{% else %}Button--secondary{% endif %} Button--full" {% if product.selected_or_first_available_variant.available %}data-action="add-to-cart"{% else %}disabled="disabled"{% endif %}>
+                        {%- if product.selected_or_first_available_variant.available -%}
+                          <span>{% if product.template_suffix == 'pre-order' %}{{ 'product.form.pre_order' | t }}{% else %}{{ 'product.form.add_to_cart' | t }}{% endif %}</span>
+
+                          {%- if block.settings.show_price_in_button -%}
+                            <span class="Button__SeparatorDot"></span>
+                            <span>{{ product.selected_or_first_available_variant.price | money }}</span>
+                          {%- endif -%}
+                        {%- else -%}
+                          {{- 'product.form.sold_out' | t -}}
+                        {%- endif -%}
+                      </button>
+
+                      {%- if block.settings.show_payment_button and product.template_suffix != 'pre-order' -%}
+                        {{ form | payment_button }}
+                      {%- endif -%}
+                    </div>
+                  {% endcomment %}
 
                 {%- when 'store_pickup' -%}
                   {%- comment -%}The availability container will be added automatically if there is store pickup available{%- endcomment -%}
@@ -475,7 +612,6 @@
                       {{ block.settings.liquid }}
                     </div>
                   {%- endif -%}
-
               {%- endcase -%}
             {%- endfor -%}
 
@@ -488,8 +624,14 @@
           {%- if section.settings.stack_images and product_aside != blank and media_count > 0 -%}
             <div class="Product__QuickNav hidden-pocket">
               <div class="Product__QuickNavWrapper">
-                <a href="#ProductAside" class="Heading Link Link--secondary u-h7">{{ 'product.form.view_info' | t }} {% render 'icon' with 'select-arrow-right' %}</a>
-                <a href="#ProductGallery" class="Heading Link Link--secondary u-h7">{{ 'product.form.view_images' | t }} {% render 'icon' with 'select-arrow-right' %}</a>
+                <a href="#ProductAside" class="Heading Link Link--secondary u-h7">
+                  {{- 'product.form.view_info' | t }}
+                  {% render 'icon' with 'select-arrow-right' -%}
+                </a>
+                <a href="#ProductGallery" class="Heading Link Link--secondary u-h7">
+                  {{- 'product.form.view_images' | t }}
+                  {% render 'icon' with 'select-arrow-right' -%}
+                </a>
               </div>
             </div>
           {%- endif -%}
@@ -498,7 +640,7 @@
     </div>
 
     {%- if product_aside != blank -%}
-      <div class="Product__Aside">
+      <div class="Product__Aside lg:hidden">
         <span id="ProductAside" class="Anchor"></span>
         {{- product_aside -}}
       </div>
@@ -507,11 +649,11 @@
 </section>
 
 {%- comment -%}
---------------------------------------------------------------------------------------------------------------------
-PHOTO SWIPE
+  --------------------------------------------------------------------------------------------------------------------
+  PHOTO SWIPE
 
-This is the root container for the zoom functionality. Must not be removed, as order element is important.
---------------------------------------------------------------------------------------------------------------------
+  This is the root container for the zoom functionality. Must not be removed, as order element is important.
+  --------------------------------------------------------------------------------------------------------------------
 {%- endcomment -%}
 
 {%- if section.settings.enable_image_zoom -%}
@@ -521,7 +663,6 @@ This is the root container for the zoom functionality. Must not be removed, as o
 
     <!-- Slides wrapper with overflow:hidden. -->
     <div class="pswp__scroll-wrap">
-
       <!-- Container that holds slides. Do not remove as content is dynamically added -->
       <div class="pswp__container">
         <div class="pswp__item"></div>
@@ -531,9 +672,27 @@ This is the root container for the zoom functionality. Must not be removed, as o
 
       <!-- Main UI bar -->
       <div class="pswp__ui pswp__ui--hidden">
-        <button class="pswp__button pswp__button--prev RoundButton" data-animate-left title="{{ 'product.slideshow.previous' | t }}">{% render 'icon' with 'arrow-left' %}</button>
-        <button class="pswp__button pswp__button--close RoundButton RoundButton--large" data-animate-bottom title="{{ 'product.slideshow.close' | t }}">{% render 'icon' with 'close' %}</button>
-        <button class="pswp__button pswp__button--next RoundButton" data-animate-right title="{{ 'product.slideshow.next' | t }}">{% render 'icon' with 'arrow-right' %}</button>
+        <button
+          class="pswp__button pswp__button--prev RoundButton"
+          data-animate-left
+          title="{{ 'product.slideshow.previous' | t }}"
+        >
+          {% render 'icon' with 'arrow-left' %}
+        </button>
+        <button
+          class="pswp__button pswp__button--close RoundButton RoundButton--large"
+          data-animate-bottom
+          title="{{ 'product.slideshow.close' | t }}"
+        >
+          {% render 'icon' with 'close' %}
+        </button>
+        <button
+          class="pswp__button pswp__button--next RoundButton"
+          data-animate-right
+          title="{{ 'product.slideshow.next' | t }}"
+        >
+          {% render 'icon' with 'arrow-right' %}
+        </button>
       </div>
     </div>
   </div>
@@ -544,7 +703,7 @@ This is the root container for the zoom functionality. Must not be removed, as o
     const input = document.querySelector('.ProductForm__QuantitySelector .QuantitySelector__CurrentQuantity');
     const minNumber = {{ min_q }};
     if(!input){return};
-      
+
     function validateNumber(inputField) {
       const inputValue = inputField.value;
       const inputNumber = parseInt(inputValue, 10);
@@ -576,7 +735,6 @@ This is the root container for the zoom functionality. Must not be removed, as o
   window.ShopifyXR=window.ShopifyXR||function(){(ShopifyXR.q=ShopifyXR.q||[]).push(arguments)};
   ShopifyXR('addModels', {{ product.media | where: 'media_type', 'model' | json }});
 </script>
-
 
 {% schema %}
 {
