@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "run-p tailwind:compile shopify:dev",
     "tailwind:compile": "npx tailwindcss -i ./assets/tailwindEntry.css -o ./assets/tailwindDist.css --watch",
-    "shopify:dev": "shopify theme dev --live-reload=full-page --store sunniland-patio-patio-furniture-and-spas-in-boca-raton.myshopify.com",
+    "shopify:dev": "shopify theme dev --live-reload=full-page --store sunniland-patio-patio-furniture-and-spas-in-boca-raton.myshopify.com --port=9090",
     "shopify:share": "shopify theme share --store sunniland-patio-patio-furniture-and-spas-in-boca-raton.myshopify.com",
     "shopify:push": "shopify theme push --store sunniland-patio-patio-furniture-and-spas-in-boca-raton.myshopify.com",
     "shopify:pull": "shopify theme pull --store sunniland-patio-patio-furniture-and-spas-in-boca-raton.myshopify.com --only **/*.json"
