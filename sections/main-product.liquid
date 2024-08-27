@@ -73,6 +73,7 @@
   {%- endif -%}
 {%- endcapture -%}
 
+{% # prettier-ignore-attribute %}
 <section
   {% if product.metafields.custom.link_hulk_options_to_images %}
     data-link-hulk-options-to-images
@@ -80,7 +81,7 @@
   class="Product Product--{{ section.settings.image_size }}"
   data-section-id="{{ section.id }}"
   data-section-type="product"
-  data-section-settings="{{ section_settings }}"
+  data-section-settings='{{ section_settings }}'
 >
   <div class="Product__Wrapper lg:grid lg:grid-cols-2 lg:w-full lg:max-w-full">
     {%- capture action_list_items -%}
@@ -192,7 +193,7 @@
             {%- capture slideshow_nav -%}
           {%- if media_count > 1 -%}
             {%- if section.settings.show_thumbnails -%}
-              <div class="Product__SlideshowNav Product__SlideshowNav--thumbnails lg:max-h-[534px] lg:overflow-scroll lg:relative">
+              <div class="Product__SlideshowNav Product__SlideshowNav--thumbnails w-full lg:max-h-[534px] lg:overflow-scroll lg:relative">
                 <div class="Product__SlideshowNavScroller">
                   {%- for media in product.media -%}
                     {%- capture nav_item_badge -%}
@@ -249,9 +250,10 @@
         }
         {%- endcapture -%}
 
+            {% # prettier-ignore-attribute %}
             <div
-              class="Product__Slideshow {% if section.settings.enable_image_zoom %}Product__Slideshow--zoomable{% endif %} Carousel lg:max-h-[534px] lg:overflow-scroll"
-              data-flickity-config="{{ flickity_options }}"
+              class="Product__Slideshow {% if section.settings.enable_image_zoom %}Product__Slideshow--zoomable{% endif %} Carousel w-full lg:max-h-[534px] lg:overflow-scroll"
+              data-flickity-config='{{ flickity_options }}'
             >
               {{ slideshow_media }}
             </div>
