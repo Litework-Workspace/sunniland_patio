@@ -78,11 +78,11 @@
           "p {font-size: 16px;}"
         ],
         "settings": {
-          "enable_bar": false,
+          "enable_bar": true,
           "home_page_only": false,
           "background": "#000000",
           "text_color": "#ffffff",
-          "content": "END OF SUMMER SALE ALERT- 10% off Ledge Lounger, Polywood online orders.",
+          "content": "DEAL OF THE MONTH- $100 off on orders over $1000!",
           "link": "https:\/\/www.sunnilandpatio.com\/pages\/all-furniture-sectioned"
         }
       },
