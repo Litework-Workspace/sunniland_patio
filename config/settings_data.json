@@ -50,12 +50,12 @@
     "cart_enable_notes": true,
     "cart_show_free_shipping_threshold": false,
     "cart_free_shipping_threshold": "50",
-    "social_facebook": "https:\/\/www.facebook.com\/SunnilandPatio",
-    "social_twitter": "https:\/\/twitter.com\/sunnilandpatio",
-    "social_pinterest": "https:\/\/www.pinterest.com\/sunnilandpatio\/",
-    "social_instagram": "https:\/\/www.instagram.com\/sunnilandpatio\/",
-    "social_youtube": "https:\/\/www.youtube.com\/@sunnilandpatio2441",
-    "favicon": "shopify:\/\/shop_images\/sunniland-favicon_4x_22ef2ea6-6e41-4212-ae02-9ce1c467e334.png",
+    "social_facebook": "https://www.facebook.com/SunnilandPatio",
+    "social_twitter": "https://twitter.com/sunnilandpatio",
+    "social_pinterest": "https://www.pinterest.com/sunnilandpatio/",
+    "social_instagram": "https://www.instagram.com/sunnilandpatio/",
+    "social_youtube": "https://www.youtube.com/@sunnilandpatio2441",
+    "favicon": "shopify://shop_images/sunniland-favicon_4x_22ef2ea6-6e41-4212-ae02-9ce1c467e334.png",
     "checkout_logo_position": "center",
     "checkout_logo_size": "small",
     "checkout_body_background_color": "#ffffff",
@@ -78,20 +78,20 @@
           "p {font-size: 16px;}"
         ],
         "settings": {
-          "enable_bar": true,
+          "enable_bar": false,
           "home_page_only": false,
           "background": "#000000",
           "text_color": "#ffffff",
           "content": "DEAL OF THE MONTH- $100 off on orders over $1000!",
-          "link": "https:\/\/www.sunnilandpatio.com\/pages\/all-furniture-sectioned"
+          "link": "https://www.sunnilandpatio.com/pages/all-furniture-sectioned"
         }
       },
       "header": {
         "type": "header",
         "settings": {
           "use_sticky_header": false,
-          "logo": "shopify:\/\/shop_images\/Logo_3.svg",
-          "logo_mobile": "shopify:\/\/shop_images\/Original_logo.png",
+          "logo": "shopify://shop_images/Logo_3.svg",
+          "logo_mobile": "shopify://shop_images/Original_logo.png",
           "logo_max_width": 250,
           "mobile_logo_max_width": 145,
           "show_country_selector": false,
@@ -112,7 +112,7 @@
             "type": "newsletter",
             "settings": {
               "title": "Join The Sunniland Family!",
-              "content": "<p>Get discounts, rewards and more surprises each month straight to your inbox! Join our list.<\/p>"
+              "content": "<p>Get discounts, rewards and more surprises each month straight to your inbox! Join our list.</p>"
             }
           },
           "0ef39866-42e6-47bd-8276-3056f67842e9": {
@@ -132,7 +132,7 @@
             "disabled": true,
             "settings": {
               "title": "About the shop",
-              "content": "<p>6101 N Federal Hwy.<\/p><p>Boca Raton, Florida 33487<\/p><p>Call us: 1-561-997-7114<\/p><p>Email us: info@sunnilandpatio.com<\/p>",
+              "content": "<p>6101 N Federal Hwy.</p><p>Boca Raton, Florida 33487</p><p>Call us: 1-561-997-7114</p><p>Email us: info@sunnilandpatio.com</p>",
               "show_social_media": true
             }
           },
@@ -140,7 +140,7 @@
             "type": "html",
             "settings": {
               "title": "",
-              "content": "<p>6101 N Federal Hwy.<\/p>\n<p>Boca Raton, Florida 33487<\/p>\n<br>\n<p>Call us: 1-561-997-7114<\/p>\n<br>\n<p>Email us: <a class=\"footer_email\" href=\"mailto:sales@sunnilandpatio.com\">sales@sunnilandpatio.com<\/a><\/p>\n<br>\n<p>Hours of operation:<br>\nMon-Sat 9:30am - 5:30pm<br>\nSun 12:00pm - 5:00pm<br>\nParts and service departments open\nMon-Fri only.<\/p>",
+              "content": "<p>6101 N Federal Hwy.</p>\n<p>Boca Raton, Florida 33487</p>\n<br>\n<p>Call us: 1-561-997-7114</p>\n<br>\n<p>Email us: <a class=\"footer_email\" href=\"mailto:sales@sunnilandpatio.com\">sales@sunnilandpatio.com</a></p>\n<br>\n<p>Hours of operation:<br>\nMon-Sat 9:30am - 5:30pm<br>\nSun 12:00pm - 5:00pm<br>\nParts and service departments open\nMon-Fri only.</p>",
               "show_social_media": true
             }
           },
@@ -148,13 +148,13 @@
             "type": "logos",
             "settings": {
               "enable_logos": true,
-              "logo_1": "shopify:\/\/shop_images\/South_West.svg",
+              "logo_1": "shopify://shop_images/South_West.svg",
               "logo_width_1": 150,
-              "logo_2": "shopify:\/\/shop_images\/Lloyd_Flanders.svg",
+              "logo_2": "shopify://shop_images/Lloyd_Flanders.svg",
               "logo_width_2": 150,
-              "logo_3": "shopify:\/\/shop_images\/Woodard.svg",
+              "logo_3": "shopify://shop_images/Woodard.svg",
               "logo_width_3": 150,
-              "logo_4": "shopify:\/\/shop_images\/Telescope.svg",
+              "logo_4": "shopify://shop_images/Telescope.svg",
               "logo_width_4": 120
             }
           }
@@ -186,7 +186,7 @@
           "show_only_for_visitors": true,
           "show_only_once": true,
           "title": "Popup",
-          "content": "<p>You can use this popup to display some useful information to your customers.<\/p>",
+          "content": "<p>You can use this popup to display some useful information to your customers.</p>",
           "show_newsletter": true,
           "apparition_delay": 5
         }
@@ -195,27 +195,27 @@
         "type": "map",
         "settings": {
           "title": "We are located at:",
-          "address": "<p>6101 N Federal Hwy. Boca Raton, Florida 33487<\/p>",
-          "hours": "<p>Our hours of working:<br\/>Monday-Saturday: 9:30 am–5:30 pm<br\/>Sunday: 12 pm–5:00 pm<\/p>",
+          "address": "<p>6101 N Federal Hwy. Boca Raton, Florida 33487</p>",
+          "hours": "<p>Our hours of working:<br/>Monday-Saturday: 9:30 am–5:30 pm<br/>Sunday: 12 pm–5:00 pm</p>",
           "map_address": "6101 N Federal Hwy. Boca Raton, Florida 33487",
           "map_link_label": "Get directions",
           "api_key": "AIzaSyAy84eJJGnNQySrJgpwEzin3k_Q5NavV9Y",
           "zoom": 16,
           "map_style": "standard",
-          "image": "shopify:\/\/shop_images\/Screenshot_2023-11-21_at_4.43.03_PM.png"
+          "image": "shopify://shop_images/Screenshot_2023-11-21_at_4.43.03_PM.png"
         }
       },
       "image-with-text-block": {
         "type": "image-with-text-block",
         "settings": {
-          "image": "shopify:\/\/shop_images\/parts_1_1.png",
+          "image": "shopify://shop_images/parts_1_1.png",
           "background": "#ffffff",
           "text_color": "#1c1b1b",
           "block_size": "large",
           "title": "",
-          "content": "<p>Explore our wide range of patio furniture replacement parts, everything you'll need for easy DIY repairs.<\/p>",
+          "content": "<p>Explore our wide range of patio furniture replacement parts, everything you'll need for easy DIY repairs.</p>",
           "button_label": "Shop Repair Parts",
-          "button_link": "shopify:\/\/collections\/all-parts",
+          "button_link": "shopify://collections/all-parts",
           "show_parallax": false
         }
       },
@@ -230,14 +230,14 @@
       "image-with-text-block-alternative": {
         "type": "image-with-text-block-alternative",
         "settings": {
-          "image": "shopify:\/\/shop_images\/AndoverCushion-002_ORtd_2.png",
+          "image": "shopify://shop_images/AndoverCushion-002_ORtd_2.png",
           "background": "#ffffff",
           "text_color": "#1c1b1b",
           "block_size": "small",
           "title": "",
-          "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+          "content": "<p>Add your own custom content to give more information about your store, availability details...</p>",
           "button_label": "Shop Replacement Cushions",
-          "button_link": "shopify:\/\/collections\/replacement-cushions",
+          "button_link": "shopify://collections/replacement-cushions",
           "show_parallax": false
         }
       },
@@ -247,13 +247,13 @@
           "093505c8-0851-49ab-b32e-ae60bdb74dcc": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Image-cover.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/Image-cover-3sdssddd3.jpg",
+              "image": "shopify://shop_images/Image-cover.jpg",
+              "mobile_image": "shopify://shop_images/Image-cover-3sdssddd3.jpg",
               "apply_overlay": true,
               "content_position": "middleCenter",
               "subheading": "Reuse, give a second life.",
               "title": "Give your outdoor oasis a makeover with our patio furniture repair services.",
-              "content": "<p>Easy pickup and delivery for Palm Beach County, Florida.<\/p>",
+              "content": "<p>Easy pickup and delivery for Palm Beach County, Florida.</p>",
               "button_1_text": "",
               "button_1_link": "",
               "button_2_text": "",
@@ -280,31 +280,31 @@
     ],
     "blocks": {
       "10042746950867549768": {
-        "type": "shopify:\/\/apps\/hulk-product-options\/blocks\/app-embed\/380168ef-9475-4244-a291-f66b189208b5",
+        "type": "shopify://apps/hulk-product-options/blocks/app-embed/380168ef-9475-4244-a291-f66b189208b5",
         "disabled": false,
         "settings": {
         }
       },
       "10384935893930344104": {
-        "type": "shopify:\/\/apps\/seoant-broken-link-redirect\/blocks\/brokenlink-404\/cc7b1996-e567-42d0-8862-356092041863",
+        "type": "shopify://apps/seoant-broken-link-redirect/blocks/brokenlink-404/cc7b1996-e567-42d0-8862-356092041863",
         "disabled": false,
         "settings": {
         }
       },
       "16278478101612877664": {
-        "type": "shopify:\/\/apps\/pagefly-page-builder\/blocks\/app-embed\/83e179f7-59a0-4589-8c66-c0dddf959200",
+        "type": "shopify://apps/pagefly-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
         "disabled": false,
         "settings": {
         }
       },
       "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {
         }
       },
       "15683396631634586217": {
-        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": false,
         "settings": {
           "button_color": "#ce4737",
@@ -318,7 +318,7 @@
         }
       },
       "14447995696390441228": {
-        "type": "shopify:\/\/apps\/pineraffle\/blocks\/app-embed\/a7355a0d-da3a-4b47-bff6-8f75b9cc8805",
+        "type": "shopify://apps/pineraffle/blocks/app-embed/a7355a0d-da3a-4b47-bff6-8f75b9cc8805",
         "disabled": false,
         "settings": {
           "buttonTitle": "We're Having A Raffle! 🏆",
@@ -430,7 +430,7 @@
               "type": "text",
               "settings": {
                 "title": "About the shop",
-                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.</p>",
                 "show_social_media": true
               }
             },
@@ -444,7 +444,7 @@
               "type": "newsletter",
               "settings": {
                 "title": "Newsletter",
-                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.</p>"
               }
             }
           },
@@ -539,7 +539,7 @@
               "type": "text",
               "settings": {
                 "title": "About the shop",
-                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.</p>",
                 "show_social_media": true
               }
             },
@@ -553,7 +553,7 @@
               "type": "newsletter",
               "settings": {
                 "title": "Newsletter",
-                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.</p>"
               }
             }
           },
@@ -649,7 +649,7 @@
               "type": "text",
               "settings": {
                 "title": "About the shop",
-                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.</p>",
                 "show_social_media": true
               }
             },
@@ -663,7 +663,7 @@
               "type": "newsletter",
               "settings": {
                 "title": "Newsletter",
-                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.</p>"
               }
             }
           },
