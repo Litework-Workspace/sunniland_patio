@@ -78,11 +78,11 @@
           "p {font-size: 16px;}"
         ],
         "settings": {
-          "enable_bar": false,
+          "enable_bar": true,
           "home_page_only": false,
           "background": "#000000",
           "text_color": "#ffffff",
-          "content": "FALL SALE🍂- $10 off on orders over $100!",
+          "content": "BLACK FRIDAY SALE! $100 off on orders over $1000!",
           "link": "https://www.sunnilandpatio.com/pages/all-furniture-sectioned"
         }
       },
@@ -275,33 +275,27 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "10042746950867549768": {
         "type": "shopify://apps/hulk-product-options/blocks/app-embed/380168ef-9475-4244-a291-f66b189208b5",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "10384935893930344104": {
         "type": "shopify://apps/seoant-broken-link-redirect/blocks/brokenlink-404/cc7b1996-e567-42d0-8862-356092041863",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "16278478101612877664": {
         "type": "shopify://apps/pagefly-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "855628211100114053": {
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "15683396631634586217": {
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
