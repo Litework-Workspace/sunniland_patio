@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -9,13 +18,11 @@
     },
     "8ca26768-041f-40eb-b635-d33e84b5b2e0": {
       "type": "custom-html",
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "subheading": "",
         "title": "",
-        "html": "<p class=\"Free-SHipping_Banner\"><b>Free Shipping<\/b> on all patio furniture orders above $500. No code needed.<\/p>"
+        "html": "<p class=\"Free-SHipping_Banner\"><b>Free Shipping</b> on all patio furniture orders above $500. No code needed.</p>"
       }
     },
     "fb3facf5-59a5-46dd-a4b9-3f6b442916de": {
@@ -25,13 +32,13 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Reflections-Sofa-white-detail-H_3.jpg",
+            "image": "shopify://shop_images/Reflections-Sofa-white-detail-H_3.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Shop All",
             "title": "Shop All",
             "button_text": "Shop All",
-            "button_link": "shopify:\/\/collections\/replacement-cushions",
+            "button_link": "shopify://collections/replacement-cushions",
             "apply_overlay": true
           }
         },
@@ -39,7 +46,7 @@
           "type": "collection",
           "settings": {
             "collection": "brown-jordan-replacement-cushions",
-            "image": "shopify:\/\/shop_images\/2_9a916256-1e7c-4400-87a9-a9c06e3b39c5.png",
+            "image": "shopify://shop_images/2_9a916256-1e7c-4400-87a9-a9c06e3b39c5.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -53,11 +60,11 @@
           "type": "collection",
           "settings": {
             "collection": "cast-classics-landgrave-replacement-cushions",
-            "image": "shopify:\/\/shop_images\/3_f36683fa-1940-45c9-9a76-f8e0fad6aac0.png",
+            "image": "shopify://shop_images/3_f36683fa-1940-45c9-9a76-f8e0fad6aac0.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Cast Classics\/Landgrave",
+            "title": "Cast Classics/Landgrave",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": true
@@ -67,7 +74,7 @@
           "type": "collection",
           "settings": {
             "collection": "cebu-whitecraft-replacement-cushions",
-            "image": "shopify:\/\/shop_images\/4_9148e73a-bdb8-4f7d-aa66-467f1388919f.png",
+            "image": "shopify://shop_images/4_9148e73a-bdb8-4f7d-aa66-467f1388919f.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -81,7 +88,7 @@
           "type": "collection",
           "settings": {
             "collection": "ebel",
-            "image": "shopify:\/\/shop_images\/5_493215ce-d7be-43f4-914f-52a14a0f1953.png",
+            "image": "shopify://shop_images/5_493215ce-d7be-43f4-914f-52a14a0f1953.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -95,7 +102,7 @@
           "type": "collection",
           "settings": {
             "collection": "evolutif-resin-replacement-cushions",
-            "image": "shopify:\/\/shop_images\/6_a41b3760-b820-4969-b322-97eaf6a6ae15.png",
+            "image": "shopify://shop_images/6_a41b3760-b820-4969-b322-97eaf6a6ae15.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -109,7 +116,7 @@
           "type": "collection",
           "settings": {
             "collection": "grosfillex-resin-replacement-cushions",
-            "image": "shopify:\/\/shop_images\/7_a7181e75-b60d-4358-a7fd-85abbc57feec.png",
+            "image": "shopify://shop_images/7_a7181e75-b60d-4358-a7fd-85abbc57feec.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -123,7 +130,7 @@
           "type": "collection",
           "settings": {
             "collection": "hanamint-replacement-cushions",
-            "image": "shopify:\/\/shop_images\/8_fbfaaf72-3a92-42bd-bd8c-67c9587b7744.png",
+            "image": "shopify://shop_images/8_fbfaaf72-3a92-42bd-bd8c-67c9587b7744.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -137,7 +144,7 @@
           "type": "collection",
           "settings": {
             "collection": "kettler-resin-replacement-cushions",
-            "image": "shopify:\/\/shop_images\/9_92c74330-4bf5-4b24-a113-0d564fecc15e.png",
+            "image": "shopify://shop_images/9_92c74330-4bf5-4b24-a113-0d564fecc15e.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -151,7 +158,7 @@
           "type": "collection",
           "settings": {
             "collection": "lloyd-flanders-replacement-cushions",
-            "image": "shopify:\/\/shop_images\/10_ec91a905-e859-4ba0-9334-cd05e6975afa.png",
+            "image": "shopify://shop_images/10_ec91a905-e859-4ba0-9334-cd05e6975afa.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -161,11 +168,25 @@
             "apply_overlay": true
           }
         },
+        "collection_njUdgp": {
+          "type": "collection",
+          "settings": {
+            "collection": "lloyd-flanders-contempo-replacement-cushions",
+            "image": "shopify://shop_images/Screenshot_2024-12-18_at_9.22.14_AM.png",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
         "54dc446c-c344-46fd-8ddc-22a8d964fe8a": {
           "type": "collection",
           "settings": {
             "collection": "universal-cushions",
-            "image": "shopify:\/\/shop_images\/11_a3ce752f-641b-4314-a903-c2eacd3d925e.png",
+            "image": "shopify://shop_images/11_a3ce752f-641b-4314-a903-c2eacd3d925e.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Sub-heading",
@@ -200,6 +221,7 @@
         "966dd87c-fdbb-4ec2-8005-bbbc6292ebf6",
         "7d195c04-039a-4b7f-ae7c-bda12ed9ebb0",
         "b5c984f9-885e-41d1-a22b-f9ce484259b6",
+        "collection_njUdgp",
         "54dc446c-c344-46fd-8ddc-22a8d964fe8a",
         "8d60f275-6134-4d6e-ba58-f4e418e47d50"
       ],
@@ -222,7 +244,7 @@
         "template--17486864122152__ec8cbadd-b314-43f6-8b0c-3fa5a1e6e02b-16755240059697acff-0": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/i95abj_traditional_elegant_outdoor_furniture_set_0b4189ba-2dcd-43cf-a32c-f11d59b85715.png",
+            "image": "shopify://shop_images/i95abj_traditional_elegant_outdoor_furniture_set_0b4189ba-2dcd-43cf-a32c-f11d59b85715.png",
             "dot_style": "light",
             "product_1": "brown-jordan-replacement-cushions-florentine-item-c-b1105",
             "product_1_horizontal_position": 16,
@@ -249,13 +271,13 @@
       "type": "image-with-text-overlay",
       "settings": {
         "section_size": "large",
-        "image": "shopify:\/\/shop_images\/Cascade-Seating-2_1.jpg",
+        "image": "shopify://shop_images/Cascade-Seating-2_1.jpg",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 35,
         "subheading": "",
         "title": "Spend more time outdoors",
-        "content": "<p>Discover our wide range of patio & outdoor furniture – we have everything from smaller, lightweight aluminum furniture for the balcony, to a variety of sizes and materials, like rattan and solid wood furniture, for your spacious patio. Find the ones that suit your style and space and enjoy outdoor living!<\/p>",
+        "content": "<p>Discover our wide range of patio & outdoor furniture – we have everything from smaller, lightweight aluminum furniture for the balcony, to a variety of sizes and materials, like rattan and solid wood furniture, for your spacious patio. Find the ones that suit your style and space and enjoy outdoor living!</p>",
         "show_on_mobile": false,
         "no_bottom_margin": false,
         "button_1_text": "",
@@ -322,7 +344,7 @@
         "subheading": "Read articles by our experts to answer all your patio questions!",
         "title": "Sunniblog",
         "show_category": false,
-        "button_link": "shopify:\/\/blogs\/sunniblog",
+        "button_link": "shopify://blogs/sunniblog",
         "button_text": "Explore"
       }
     },
@@ -330,17 +352,17 @@
       "type": "image-with-text-overlay",
       "settings": {
         "section_size": "large",
-        "image": "shopify:\/\/shop_images\/Youtube-section-cover.jpg",
+        "image": "shopify://shop_images/Youtube-section-cover.jpg",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 30,
         "subheading": "",
         "title": "Find Sunniland on Youtube",
-        "content": "<p>Learn how to repair your patio furniture the easy way with our DIY video tutorials.<\/p>",
+        "content": "<p>Learn how to repair your patio furniture the easy way with our DIY video tutorials.</p>",
         "show_on_mobile": true,
         "no_bottom_margin": true,
         "button_1_text": "Visit Our Channel",
-        "button_1_link": "https:\/\/www.youtube.com\/@sunnilandpatio2441",
+        "button_1_link": "https://www.youtube.com/@sunnilandpatio2441",
         "button_2_text": "",
         "button_2_link": "",
         "button_color": "#363636",
