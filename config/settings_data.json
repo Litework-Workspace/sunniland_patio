@@ -83,7 +83,7 @@
           "background": "#000000",
           "text_color": "#ffffff",
           "content": "Spring Sale Alert: Get 10% OFF on all Repair Parts on orders over  $100+!",
-          "link": "https://www.sunnilandpatio.com/search?sort_by=relevance&q=woodard&type=product&filter.v.price.gte=&filter.v.price.lte=&filter.p.m.filter.brand=Woodard&sort_by=relevance"
+          "link": "shopify://pages/replacement-parts"
         }
       },
       "header": {
