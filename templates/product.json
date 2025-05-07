@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -23,8 +23,7 @@
         },
         "cb196c07-9c2e-4e96-ad2d-b74ffa172298": {
           "type": "hulkapps_options",
-          "settings": {
-          }
+          "settings": {}
         },
         "variant_selector": {
           "type": "variant_selector",
@@ -51,37 +50,34 @@
         },
         "description": {
           "type": "description",
-          "settings": {
-          }
+          "settings": {}
         },
         "share_buttons": {
           "type": "share_buttons",
-          "settings": {
-          }
+          "settings": {}
         },
         "7d9a9524-f2e9-42f1-9e7f-1d36b38e11f4": {
           "type": "content",
           "settings": {
             "title": "Shipping",
-            "content": "<p>Shipping times 1-2 days.<\/p>",
+            "content": "<p>Shipping times 1-2 days.</p>",
             "page": "",
             "dynamic_content": true,
-            "content_1": "<p>Free Shipping for all Cushions.<br\/>Please allow 4-6 weeks for delivery.<\/p>",
+            "content_1": "<p>Free Shipping for all Cushions.<br/>Please allow 4-6 weeks for delivery.</p>",
             "content_1_collections": "replacement-cushions",
-            "content_2": "<p>Free Shipping with your order of $500+<br\/>Please allow 6-8 weeks for shipping and delivery.<\/p>",
-            "content_2_collections": "patio-furniture",
-            "content_3": "<p>Free Shipping with your order of $500+<br\/>Please allow 2-3 weeks for cutting\/sewing\/shipping of slings.<\/p>",
+            "content_2": "<p>Free Shipping with your order of $500+<br/>Please allow 6-8 weeks for shipping and delivery. <br/><br/>For Polywood furniture please allow 3-4 weeks.</p>",
+            "content_2_collections": "patio-furniture, polywood-1",
+            "content_3": "<p>Free Shipping with your order of $500+<br/>Please allow 2-3 weeks for cutting/sewing/shipping of slings.</p>",
             "content_3_collections": "replacement-slings",
-            "content_4": "<p>Free Shipping with your order of $250+<br\/>IN STOCK AND AVAILABLE FOR IMMEDIATE SHIPPING!<\/p>",
+            "content_4": "<p>Free Shipping with your order of $250+<br/>IN STOCK AND AVAILABLE FOR IMMEDIATE SHIPPING!</p>",
             "content_4_collections": "pre-cut-vinyl-straps",
-            "content_5": "<p>The shipping time for umbrellas and bases is 4 weeks.<\/p>",
+            "content_5": "<p>The shipping time for umbrellas and bases is 4 weeks.</p>",
             "content_5_collections": "patio-umbrellas-bases"
           }
         },
         "69b5edb8-6071-4233-956f-022465ab5414": {
           "type": "reviews",
-          "settings": {
-          }
+          "settings": {}
         },
         "338c321b-e54c-4fe5-8667-bc595493dd2b": {
           "type": "content",
@@ -184,17 +180,17 @@
       "type": "image-with-text-overlay",
       "settings": {
         "section_size": "large",
-        "image": "shopify:\/\/shop_images\/Youtube-section-cover.jpg",
+        "image": "shopify://shop_images/Youtube-section-cover.jpg",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 10,
         "subheading": "",
         "title": "Find Sunniland on Youtube",
-        "content": "<p>Learn how to repair your patio furniture the easy way with our do-it-yourself video tutorials on our Youtube channel.<\/p>",
+        "content": "<p>Learn how to repair your patio furniture the easy way with our do-it-yourself video tutorials on our Youtube channel.</p>",
         "show_on_mobile": true,
         "no_bottom_margin": true,
         "button_1_text": "Subscribe",
-        "button_1_link": "https:\/\/www.youtube.com\/@sunnilandpatio2441",
+        "button_1_link": "https://www.youtube.com/@sunnilandpatio2441",
         "button_2_text": "",
         "button_2_link": "",
         "button_color": "#363636",
