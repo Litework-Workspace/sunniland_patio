@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "slideshow": {
@@ -7,63 +16,63 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/savona_cushion_2_2011.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/savona_cushion_2_2011.jpg",
+            "image": "shopify://shop_images/savona_cushion_2_2011.jpg",
+            "mobile_image": "shopify://shop_images/savona_cushion_2_2011.jpg",
             "apply_overlay": true,
             "content_position": "bottomCenter",
             "subheading": "Fall Patio Furniture Sale",
             "title": "Embrace the autumn charm",
-            "content": "<p>No tax on in-store orders over $1000 or $10 off online orders over $100 (no code needed, just add to cart)<\/p>",
+            "content": "<p>No tax on in-store orders over $1000 or $10 off online orders over $100 (no code needed, just add to cart)</p>",
             "button_1_text": "Shop Online",
-            "button_1_link": "https:\/\/www.sunnilandpatio.com\/",
+            "button_1_link": "https://www.sunnilandpatio.com/",
             "button_2_text": "Visit Store",
-            "button_2_link": "https:\/\/maps.app.goo.gl\/9PPfoaPotUSaBrvv8"
+            "button_2_link": "https://maps.app.goo.gl/9PPfoaPotUSaBrvv8"
           }
         },
         "91d843a9-b500-4e11-95c7-cacb79d31486": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_1_79b398eb-adcf-4aeb-aafe-fb6be2d9bd06.png",
-            "mobile_image": "shopify:\/\/shop_images\/Image-1.jpg",
+            "image": "shopify://shop_images/image_1_79b398eb-adcf-4aeb-aafe-fb6be2d9bd06.png",
+            "mobile_image": "shopify://shop_images/Image-1.jpg",
             "apply_overlay": true,
             "content_position": "bottomLeft",
             "subheading": "Build Your Perfect",
             "title": "Staycation Space",
-            "content": "<p>Choose from the best quality patio furniture to transform your home into a cherished warm homestay.<\/p>",
+            "content": "<p>Choose from the best quality patio furniture to transform your home into a cherished warm homestay.</p>",
             "button_1_text": "Shop Patio",
-            "button_1_link": "shopify:\/\/pages\/all-furniture-sectioned",
+            "button_1_link": "shopify://pages/all-furniture-sectioned",
             "button_2_text": "Shop Parts",
-            "button_2_link": "shopify:\/\/pages\/replacement-parts"
+            "button_2_link": "shopify://pages/replacement-parts"
           }
         },
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Collection-Picture-Redondo-1.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Image-2.jpg",
+            "image": "shopify://shop_images/Collection-Picture-Redondo-1.jpg",
+            "mobile_image": "shopify://shop_images/Image-2.jpg",
             "apply_overlay": true,
             "content_position": "bottomLeft",
             "subheading": "Renew Your Outdoor Oasis",
             "title": "The Easy Way",
-            "content": "<p>Learn how to renew your patio furniture with our easy tutorials and repair parts or send it to our service center.<\/p>",
+            "content": "<p>Learn how to renew your patio furniture with our easy tutorials and repair parts or send it to our service center.</p>",
             "button_1_text": "Shop Parts",
-            "button_1_link": "shopify:\/\/pages\/replacement-parts",
+            "button_1_link": "shopify://pages/replacement-parts",
             "button_2_text": "Service",
-            "button_2_link": "shopify:\/\/pages\/patio-furniture-repair-services"
+            "button_2_link": "shopify://pages/patio-furniture-repair-services"
           }
         },
         "13146d5f-0747-408d-9799-78a2641cd41d": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/doityourself.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Image-3.jpg",
+            "image": "shopify://shop_images/doityourself.jpg",
+            "mobile_image": "shopify://shop_images/Image-3.jpg",
             "apply_overlay": true,
             "content_position": "bottomLeft",
             "subheading": "Reuse Sustainably with",
             "title": "Do it Yourself Patio Tutorials",
-            "content": "<p>Learn how to renew your patio furniture with our easy tutorials.<\/p>",
+            "content": "<p>Learn how to renew your patio furniture with our easy tutorials.</p>",
             "button_1_text": "Explore",
-            "button_1_link": "shopify:\/\/blogs\/sunniblog",
+            "button_1_link": "shopify://blogs/sunniblog",
             "button_2_text": "",
             "button_2_link": ""
           }
@@ -92,7 +101,7 @@
           "type": "collection",
           "settings": {
             "collection": "outdoor-dining-sets",
-            "image": "shopify:\/\/shop_images\/bazza_7_2014v_1.jpg",
+            "image": "shopify://shop_images/bazza_7_2014v_1.jpg",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
@@ -106,7 +115,7 @@
           "type": "collection",
           "settings": {
             "collection": "outdoor-patio-sets",
-            "image": "shopify:\/\/shop_images\/Weekend_Retreat2008_002_1.jpg",
+            "image": "shopify://shop_images/Weekend_Retreat2008_002_1.jpg",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
@@ -120,13 +129,13 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/La_vie_Wicker_01_2012_1.jpg",
+            "image": "shopify://shop_images/La_vie_Wicker_01_2012_1.jpg",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
             "title": "",
             "button_text": "Outdoor Seating",
-            "button_link": "shopify:\/\/pages\/outdoor-seating",
+            "button_link": "shopify://pages/outdoor-seating",
             "apply_overlay": false
           }
         },
@@ -134,7 +143,7 @@
           "type": "collection",
           "settings": {
             "collection": "outdoor-lounge",
-            "image": "shopify:\/\/shop_images\/Collection_Picture_Redondo_2.jpg",
+            "image": "shopify://shop_images/Collection_Picture_Redondo_2.jpg",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
@@ -148,13 +157,13 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/adirondack_mgp_sling_mahogany_1.jpg",
+            "image": "shopify://shop_images/adirondack_mgp_sling_mahogany_1.jpg",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
             "title": "",
             "button_text": "Patio Tables",
-            "button_link": "shopify:\/\/pages\/patio-tables",
+            "button_link": "shopify://pages/patio-tables",
             "apply_overlay": false
           }
         },
@@ -162,7 +171,7 @@
           "type": "collection",
           "settings": {
             "collection": "patio-umbrellas-bases",
-            "image": "shopify:\/\/shop_images\/454FM_WH_PTA_1.jpg",
+            "image": "shopify://shop_images/454FM_WH_PTA_1.jpg",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
@@ -176,13 +185,13 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Nantucket-swivel-AntiqueWhite-H_1.jpg",
+            "image": "shopify://shop_images/Nantucket-swivel-AntiqueWhite-H_1.jpg",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
             "title": "Replacement Cushions",
             "button_text": "Replacement Cushions",
-            "button_link": "shopify:\/\/pages\/list-collections",
+            "button_link": "shopify://pages/list-collections",
             "apply_overlay": false
           }
         },
@@ -190,13 +199,13 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/parts_1.jpg",
+            "image": "shopify://shop_images/parts_1.jpg",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
             "title": "Patio Repair Parts",
             "button_text": "Patio Repair Parts",
-            "button_link": "shopify:\/\/pages\/replacement-parts",
+            "button_link": "shopify://pages/replacement-parts",
             "apply_overlay": false
           }
         },
@@ -204,13 +213,13 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/2_3.jpg",
+            "image": "shopify://shop_images/2_3.jpg",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
             "title": "Patio Repair Services",
             "button_text": "Patio Repair Services",
-            "button_link": "shopify:\/\/pages\/patio-furniture-repair-services",
+            "button_link": "shopify://pages/patio-furniture-repair-services",
             "apply_overlay": false
           }
         },
@@ -218,7 +227,7 @@
           "type": "collection",
           "settings": {
             "collection": "commercial-furniture",
-            "image": "shopify:\/\/shop_images\/reliance_sling_gloss_white_stacked_chairs_1.jpg",
+            "image": "shopify://shop_images/reliance_sling_gloss_white_stacked_chairs_1.jpg",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
@@ -252,7 +261,7 @@
         "text_color": "#ffffff",
         "button_color": "#363636",
         "link_text": "Shop all",
-        "shop-all_link": "shopify:\/\/collections\/shop-all"
+        "shop-all_link": "shopify://collections/shop-all"
       }
     },
     "featured-product": {
@@ -269,8 +278,7 @@
         },
         "share-buttons": {
           "type": "share_buttons",
-          "settings": {
-          }
+          "settings": {}
         },
         "variant-selector": {
           "type": "variant_selector",
@@ -348,7 +356,7 @@
         "look-0": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_02a474b1-306a-4dbf-aee5-866de7c85436.jpg",
+            "image": "shopify://shop_images/1_02a474b1-306a-4dbf-aee5-866de7c85436.jpg",
             "dot_style": "light",
             "product_1": "telescope-casual-bazza-sling-cafe-chair",
             "product_1_horizontal_position": 12,
@@ -364,7 +372,7 @@
         "look-1": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_54c95f66-5198-491c-8713-097b91de854c.jpg",
+            "image": "shopify://shop_images/2_54c95f66-5198-491c-8713-097b91de854c.jpg",
             "dot_style": "light",
             "product_1": "elements-chaise",
             "product_1_horizontal_position": 41,
@@ -380,7 +388,7 @@
         "fd94f54b-08d8-4e71-b0a3-5c1ef5dc329a": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3_bbd2d8a8-1e01-447c-b146-54579a4d29a9.jpg",
+            "image": "shopify://shop_images/3_bbd2d8a8-1e01-447c-b146-54579a4d29a9.jpg",
             "dot_style": "light",
             "product_1": "elements-lounge-chair-with-loom-arms-and-back",
             "product_1_horizontal_position": 56,
@@ -396,7 +404,7 @@
         "cd532d4f-752f-46f7-a06f-f601e99d522d": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4_01d87083-28e1-40f3-b67b-4b1dc85f1c90.jpg",
+            "image": "shopify://shop_images/4_01d87083-28e1-40f3-b67b-4b1dc85f1c90.jpg",
             "dot_style": "light",
             "product_1": "copy-of-lloyd-flanders-hamptons-sofa-item-15056",
             "product_1_horizontal_position": 58,
@@ -426,13 +434,13 @@
       "type": "image-with-text-overlay",
       "settings": {
         "section_size": "large",
-        "image": "shopify:\/\/shop_images\/sustainability-cover-2.jpg",
+        "image": "shopify://shop_images/sustainability-cover-2.jpg",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 30,
         "subheading": "",
         "title": "Renew Patio Furniture & Reduce Waste",
-        "content": "<p>When you renew your old patio furniture and give it a second life, you are reducing landfill waste and contributing to a greener world.<\/p>",
+        "content": "<p>When you renew your old patio furniture and give it a second life, you are reducing landfill waste and contributing to a greener world.</p>",
         "show_on_mobile": true,
         "no_bottom_margin": false,
         "button_1_text": "",
@@ -453,7 +461,7 @@
             "title": "2000",
             "subheading": "Sub-heading",
             "heading": "Heading",
-            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+            "content": "<p>Add your own custom content to give more information about your store, availability details...</p>"
           }
         },
         "item-1": {
@@ -464,7 +472,7 @@
             "title": "2001",
             "subheading": "Sub-heading",
             "heading": "Heading",
-            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+            "content": "<p>Add your own custom content to give more information about your store, availability details...</p>"
           }
         },
         "item-2": {
@@ -475,7 +483,7 @@
             "title": "2002",
             "subheading": "Sub-heading",
             "heading": "Heading",
-            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+            "content": "<p>Add your own custom content to give more information about your store, availability details...</p>"
           }
         }
       },
@@ -517,17 +525,17 @@
       "type": "image-with-text-overlay",
       "settings": {
         "section_size": "large",
-        "image": "shopify:\/\/shop_images\/Youtube-section-cover.jpg",
+        "image": "shopify://shop_images/Youtube-section-cover.jpg",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 30,
         "subheading": "",
         "title": "Find Sunniland on Youtube",
-        "content": "<p>Learn how to repair your patio furniture the easy way with our do-it-yourself video tutorials on our Youtube channel.<\/p>",
+        "content": "<p>Learn how to repair your patio furniture the easy way with our do-it-yourself video tutorials on our Youtube channel.</p>",
         "show_on_mobile": true,
         "no_bottom_margin": false,
         "button_1_text": "Subscribe",
-        "button_1_link": "https:\/\/www.youtube.com\/@sunnilandpatio2441",
+        "button_1_link": "https://www.youtube.com/@sunnilandpatio2441",
         "button_2_text": "",
         "button_2_link": "",
         "button_color": "#363636",
@@ -540,43 +548,43 @@
         "template--17486863663400__654c65c4-1510-4fc8-8c6c-4733e02e3b62-1673056524ee598275-0": {
           "type": "testimonial",
           "settings": {
-            "quote": "<p>Always a great experience at Sunniland. We have been there multiple times to help furnish our patio. Very knowledgeable and a beautiful selection to choose from. So nice to have a local spot to see everything in person.<\/p>",
+            "quote": "<p>Always a great experience at Sunniland. We have been there multiple times to help furnish our patio. Very knowledgeable and a beautiful selection to choose from. So nice to have a local spot to see everything in person.</p>",
             "name": "Jill Fox"
           }
         },
         "template--17486863663400__654c65c4-1510-4fc8-8c6c-4733e02e3b62-1673056524ee598275-1": {
           "type": "testimonial",
           "settings": {
-            "quote": "<p>Great business to deal with - great price and no hassles.  Love it - thank you!<\/p>",
+            "quote": "<p>Great business to deal with - great price and no hassles.  Love it - thank you!</p>",
             "name": "Kathy Robison"
           }
         },
         "template--17486863663400__654c65c4-1510-4fc8-8c6c-4733e02e3b62-1673056524ee598275-2": {
           "type": "testimonial",
           "settings": {
-            "quote": "<p>Great place with a beautiful variety of quality outdoor furniture. Friendly customer service and very helpful with any questions.<\/p>",
+            "quote": "<p>Great place with a beautiful variety of quality outdoor furniture. Friendly customer service and very helpful with any questions.</p>",
             "name": "Joshua Berman"
           }
         },
         "2d2fc9eb-0a63-47b7-8aae-12c685fa2b46": {
           "type": "testimonial",
           "settings": {
-            "quote": "<p>Marcello and Tom have been so helpful, honest and friendly in our process of picking out ledge loungers, table and a firepit!  Recommend this place to anyone looking for outdoor pieces!<\/p>",
+            "quote": "<p>Marcello and Tom have been so helpful, honest and friendly in our process of picking out ledge loungers, table and a firepit!  Recommend this place to anyone looking for outdoor pieces!</p>",
             "name": "Mary-Kate Ertugrul"
           }
         },
         "b8f1590c-b24a-48ae-bd9a-db9ade371854": {
           "type": "testimonial",
           "settings": {
-            "quote": "<p>Share what your customers are saying about your products, your company...<\/p>",
-            "name": "<p>John Doe<\/p>"
+            "quote": "<p>Ordered slings and vinyl strap online to rejuvenate an old patio set. With the repainting and the materials from Sunniland they now look spectacular. Sunniland delivered a superb product promptly and economically, as well as quick excellent responses to my queries about fit and fabrics. Ecstatically satisfied!!</p>",
+            "name": "Paul D."
           }
         },
         "16cd714a-93ad-4ab2-8e72-685a703ebc08": {
           "type": "testimonial",
           "settings": {
-            "quote": "<p>Share what your customers are saying about your products, your company...<\/p>",
-            "name": "<p>John Doe<\/p>"
+            "quote": "<p>Share what your customers are saying about your products, your company...</p>",
+            "name": "<p>John Doe</p>"
           }
         }
       },
