@@ -78,11 +78,11 @@
           "p {font-size: 16px;}"
         ],
         "settings": {
-          "enable_bar": false,
+          "enable_bar": true,
           "home_page_only": false,
           "background": "#000000",
           "text_color": "#ffffff",
-          "content": "Spring Sale Alert: Get 10% OFF on all Repair Parts on orders over  $100+!",
+          "content": "Father's Day Special: Get 10% OFF on all Repair Parts with code DIYDAD .",
           "link": "shopify://pages/replacement-parts"
         }
       },
