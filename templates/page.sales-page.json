@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -10,13 +19,11 @@
     "8ca26768-041f-40eb-b635-d33e84b5b2e0": {
       "type": "custom-html",
       "disabled": true,
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "subheading": "",
         "title": "",
-        "html": "<p><b>Free Shipping<\/b> on all patio furniture orders above $500. No code needed.<\/p>"
+        "html": "<p><b>Free Shipping</b> on all patio furniture orders above $500. No code needed.</p>"
       }
     },
     "d30ea7b9-b0d5-4d07-a10b-d5ce23ab18d0": {
@@ -25,13 +32,13 @@
         "template--18211905732904__d30ea7b9-b0d5-4d07-a10b-d5ce23ab18d0-167865078618496000-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/850_1242_MOD_1_1.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/850_1242_MOD_1_1.jpg",
+            "image": "shopify://shop_images/850_1242_MOD_1_1.jpg",
+            "mobile_image": "shopify://shop_images/850_1242_MOD_1_1.jpg",
             "apply_overlay": true,
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "Shop the sale today!",
-            "content": "<p>Browse our IN-STORE furniture deals of the month. Telescope furniture and Sunset West furniture as low as $2,000 OFF regular prices. Can't get better furniture sales!<\/p>",
+            "content": "<p>Browse our IN-STORE furniture deals of the month. Telescope furniture and Sunset West furniture as low as $2,000 OFF regular prices. Can't get better furniture sales!</p>",
             "button_1_text": "",
             "button_1_link": "",
             "button_2_text": "",
@@ -46,7 +53,7 @@
             "content_position": "bottomLeft",
             "subheading": "Slide title",
             "title": "Tell your story",
-            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+            "content": "<p>Add your own custom content to give more information about your store, availability details...</p>",
             "button_1_text": "",
             "button_1_link": "",
             "button_2_text": "",
@@ -73,13 +80,13 @@
       "disabled": true,
       "settings": {
         "section_size": "large",
-        "image": "shopify:\/\/shop_images\/LF-AtlShowhouse2016-0018-Gen-Nova-SthBch_1_1.jpg",
+        "image": "shopify://shop_images/LF-AtlShowhouse2016-0018-Gen-Nova-SthBch_1_1.jpg",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 15,
         "subheading": "",
         "title": "Spend more time outdoors",
-        "content": "<p>Discover our wide range of patio & outdoor furniture – we have everything from smaller, lightweight aluminum furniture for the balcony, to a variety of sizes and materials, like rattan and solid wood furniture, for your spacious patio. Find the ones that suit your style and space and enjoy outdoor living!<\/p>",
+        "content": "<p>Discover our wide range of patio & outdoor furniture – we have everything from smaller, lightweight aluminum furniture for the balcony, to a variety of sizes and materials, like rattan and solid wood furniture, for your spacious patio. Find the ones that suit your style and space and enjoy outdoor living!</p>",
         "show_on_mobile": false,
         "no_bottom_margin": false,
         "button_1_text": "",
@@ -154,13 +161,13 @@
       "type": "image-with-text-overlay",
       "settings": {
         "section_size": "large",
-        "image": "shopify:\/\/shop_images\/067881ed-2117-41f9-9ddf-c37c47eb5af9_1.jpg",
+        "image": "shopify://shop_images/067881ed-2117-41f9-9ddf-c37c47eb5af9_1.jpg",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 30,
         "subheading": "",
         "title": "Find Sunniland on Youtube",
-        "content": "<p>Learn how to repair your patio furniture the easy way with our DIY video tutorials.<\/p>",
+        "content": "<p>Learn how to repair your patio furniture the easy way with our DIY video tutorials.</p>",
         "show_on_mobile": true,
         "no_bottom_margin": false,
         "button_1_text": "Watch Tutorials",

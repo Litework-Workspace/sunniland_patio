@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "0fa506b9-dd53-4820-9bd4-5ba6acfaf728": {
@@ -7,12 +16,12 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_9235_1.png",
+            "image": "shopify://shop_images/IMG_9235_1.png",
             "apply_overlay": true,
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "Mission Statement",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.<\/p>",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>",
             "button_1_text": "",
             "button_1_link": "",
             "button_2_text": "",
@@ -27,7 +36,7 @@
             "content_position": "bottomLeft",
             "subheading": "Slide title",
             "title": "Tell your story",
-            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+            "content": "<p>Add your own custom content to give more information about your store, availability details...</p>",
             "button_1_text": "",
             "button_1_link": "",
             "button_2_text": "",
@@ -51,8 +60,7 @@
     },
     "main": {
       "type": "main-contact",
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [

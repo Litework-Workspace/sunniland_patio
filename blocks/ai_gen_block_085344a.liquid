@@ -1,0 +1,341 @@
+{% doc %}
+  @prompt
+    Add a denomination selector to the gift card product template. The store has a gift card product with denomination variants ($250.00, $500.00, $1,000.00) set up as product options called "Denominations". Currently the gift card page only shows the first variant price without a selector. Add a variant/denomination picker dropdown or button group that allows customers to select their desired gift card amount, and updates the price displayed on the page when a denomination is selected. The selector should match the existing theme styling of the Prestige theme.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-gift-card-selector-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .ai-gift-card-selector__label-{{ ai_gen_id }} {
+    display: block;
+    font-family: {{ settings.heading_font.family }}, {{ settings.heading_font.fallback_families }};
+    font-weight: {{ settings.heading_font.weight }};
+    font-style: {{ settings.heading_font.style }};
+    color: {{ settings.heading_color }};
+    font-size: {{ block.settings.label_size }}px;
+    margin-bottom: 12px;
+    {% if settings.uppercase_heading %}
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    {% endif %}
+  }
+
+  .ai-gift-card-selector__options-{{ ai_gen_id }} {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .ai-gift-card-selector__option-{{ ai_gen_id }} {
+    flex: 1;
+    min-width: 100px;
+  }
+
+  .ai-gift-card-selector__button-{{ ai_gen_id }} {
+    width: 100%;
+    padding: 14px 20px;
+    background-color: {{ settings.light_background }};
+    color: {{ settings.text_color }};
+    border: 2px solid {{ settings.text_light_color }};
+    font-family: {{ settings.text_font.family }}, {{ settings.text_font.fallback_families }};
+    font-weight: {{ settings.text_font.weight }};
+    font-size: {{ settings.base_text_font_size }}px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+  }
+
+  .ai-gift-card-selector__button-{{ ai_gen_id }}:hover {
+    border-color: {{ settings.button_background }};
+    background-color: {{ settings.background }};
+  }
+
+  .ai-gift-card-selector__button-{{ ai_gen_id }}.active {
+    background-color: {{ settings.button_background }};
+    color: {{ settings.button_text_color }};
+    border-color: {{ settings.button_background }};
+  }
+
+  .ai-gift-card-selector__dropdown-wrapper-{{ ai_gen_id }} {
+    position: relative;
+  }
+
+  .ai-gift-card-selector__select-{{ ai_gen_id }} {
+    width: 100%;
+    padding: 14px 40px 14px 16px;
+    background-color: {{ settings.light_background }};
+    color: {{ settings.text_color }};
+    border: 2px solid {{ settings.text_light_color }};
+    font-family: {{ settings.text_font.family }}, {{ settings.text_font.fallback_families }};
+    font-weight: {{ settings.text_font.weight }};
+    font-size: {{ settings.base_text_font_size }}px;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23{{ settings.text_color | remove: '#' }}' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 12px;
+  }
+
+  .ai-gift-card-selector__select-{{ ai_gen_id }}:hover {
+    border-color: {{ settings.button_background }};
+  }
+
+  .ai-gift-card-selector__select-{{ ai_gen_id }}:focus {
+    outline: 2px solid {{ settings.button_background }};
+    outline-offset: 2px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-gift-card-selector__options-{{ ai_gen_id }} {
+      flex-direction: column;
+    }
+
+    .ai-gift-card-selector__option-{{ ai_gen_id }} {
+      min-width: 100%;
+    }
+  }
+{% endstyle %}
+
+<gift-card-selector-{{ ai_gen_id }}
+  class="ai-gift-card-selector-{{ ai_gen_id }}"
+  data-product-id="{{ product.id }}"
+  {{ block.shopify_attributes }}
+>
+  {% if block.settings.show_label %}
+    <label class="ai-gift-card-selector__label-{{ ai_gen_id }}">
+      {{ block.settings.label_text }}
+    </label>
+  {% endif %}
+
+  {% if block.settings.selector_style == 'buttons' %}
+    <div class="ai-gift-card-selector__options-{{ ai_gen_id }}">
+      {% for variant in product.variants %}
+        <div class="ai-gift-card-selector__option-{{ ai_gen_id }}">
+          <button
+            type="button"
+            class="ai-gift-card-selector__button-{{ ai_gen_id }} {% if variant == product.selected_or_first_available_variant %}active{% endif %}"
+            data-variant-id="{{ variant.id }}"
+            data-variant-price="{{ variant.price | money }}"
+            {% unless variant.available %}disabled{% endunless %}
+          >
+            {{ variant.price | money }}
+            {% unless variant.available %}
+              <span style="display: block; font-size: 0.85em; margin-top: 4px;">{{ block.settings.sold_out_text }}</span>
+            {% endunless %}
+          </button>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="ai-gift-card-selector__dropdown-wrapper-{{ ai_gen_id }}">
+      <select
+        class="ai-gift-card-selector__select-{{ ai_gen_id }}"
+        name="id"
+        id="ai-gift-card-variant-{{ ai_gen_id }}"
+      >
+        {% for variant in product.variants %}
+          <option
+            value="{{ variant.id }}"
+            data-variant-price="{{ variant.price | money }}"
+            {% if variant == product.selected_or_first_available_variant %}selected{% endif %}
+            {% unless variant.available %}disabled{% endunless %}
+          >
+            {{ variant.price | money }}
+            {% unless variant.available %}
+              - {{ block.settings.sold_out_text }}
+            {% endunless %}
+          </option>
+        {% endfor %}
+      </select>
+    </div>
+  {% endif %}
+</gift-card-selector-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class GiftCardSelector{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.productId = this.dataset.productId;
+        this.selectorStyle = '{{ block.settings.selector_style }}';
+      }
+
+      connectedCallback() {
+        if (this.selectorStyle === 'buttons') {
+          this.setupButtons();
+        } else {
+          this.setupDropdown();
+        }
+      }
+
+      setupButtons() {
+        this.buttons = this.querySelectorAll('.ai-gift-card-selector__button-{{ ai_gen_id }}');
+        
+        this.buttons.forEach((button) => {
+          button.addEventListener('click', (e) => {
+            if (button.disabled) return;
+            
+            this.buttons.forEach((btn) => btn.classList.remove('active'));
+            button.classList.add('active');
+            
+            const variantId = button.dataset.variantId;
+            const variantPrice = button.dataset.variantPrice;
+            
+            this.updateProduct(variantId, variantPrice);
+          });
+        });
+      }
+
+      setupDropdown() {
+        this.select = this.querySelector('.ai-gift-card-selector__select-{{ ai_gen_id }}');
+        
+        this.select.addEventListener('change', (e) => {
+          const selectedOption = e.target.options[e.target.selectedIndex];
+          const variantId = selectedOption.value;
+          const variantPrice = selectedOption.dataset.variantPrice;
+          
+          this.updateProduct(variantId, variantPrice);
+        });
+      }
+
+      updateProduct(variantId, variantPrice) {
+        const url = new URL(window.location.href);
+        url.searchParams.set('variant', variantId);
+        window.history.replaceState({}, '', url);
+
+        this.updatePrice(variantPrice);
+        this.updateAddToCartForm(variantId);
+        
+        this.dispatchEvent(new CustomEvent('variant:change', {
+          bubbles: true,
+          detail: { variantId, variantPrice }
+        }));
+      }
+
+      updatePrice(price) {
+        const priceElements = document.querySelectorAll('[data-product-price]');
+        priceElements.forEach((el) => {
+          if (el.dataset.productId === this.productId || !el.dataset.productId) {
+            el.textContent = price;
+          }
+        });
+
+        const priceSelectors = [
+          '.product-meta__price',
+          '.price',
+          '[itemprop="price"]',
+          '.product__price'
+        ];
+
+        priceSelectors.forEach((selector) => {
+          const elements = document.querySelectorAll(selector);
+          elements.forEach((el) => {
+            if (el.closest('[data-product-id]')?.dataset.productId === this.productId || 
+                !el.closest('[data-product-id]')) {
+              el.textContent = price;
+            }
+          });
+        });
+      }
+
+      updateAddToCartForm(variantId) {
+        const forms = document.querySelectorAll('form[action*="/cart/add"]');
+        forms.forEach((form) => {
+          const variantInput = form.querySelector('input[name="id"], select[name="id"]');
+          if (variantInput) {
+            if (variantInput.tagName === 'SELECT') {
+              variantInput.value = variantId;
+            } else {
+              variantInput.value = variantId;
+            }
+          }
+        });
+      }
+    }
+
+    customElements.define('gift-card-selector-{{ ai_gen_id }}', GiftCardSelector{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Gift card selector",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_label",
+      "label": "Show label",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "label_text",
+      "label": "Label text",
+      "default": "Select amount"
+    },
+    {
+      "type": "range",
+      "id": "label_size",
+      "label": "Label size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Selector style"
+    },
+    {
+      "type": "select",
+      "id": "selector_style",
+      "label": "Style",
+      "options": [
+        {
+          "value": "buttons",
+          "label": "Button group"
+        },
+        {
+          "value": "dropdown",
+          "label": "Dropdown"
+        }
+      ],
+      "default": "buttons"
+    },
+    {
+      "type": "text",
+      "id": "sold_out_text",
+      "label": "Sold out text",
+      "default": "Sold out"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Gift card selector"
+    }
+  ]
+}
+{% endschema %}

@@ -1,10 +1,10 @@
 <!doctype html>
 
 <html class="no-js" lang="{{ request.locale.iso_code }}">
-  <head>{% render 'pagefly-head' %}
+  <head>
     <meta charset="utf-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
     <meta name="theme-color" content="{{ settings.accent_color }}">
     
    
@@ -41,15 +41,7 @@
 
         gtag('config', 'AW-1027262049');
       </script>
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-QRVT20JZC9"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-QRVT20JZC9');
-      </script>
+     
 
     <title>
       {{ page_title }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
@@ -196,7 +188,7 @@
     })(window, document, "clarity", "script", "hgrs5bwzjt");
 </script>
   
-  </head>
+  {% include 'pagefly-app-header' %}</head>
 
 
 
@@ -266,6 +258,24 @@
 
       {% section 'footer' %}
     </div>
-
+    <script>
+ var $$ = (selector, attribute, value) => {
+    const interval = setInterval(() => {
+        const elems = document.querySelectorAll(selector)
+        elems.forEach((elem) => {
+            if (value) {
+                if(!elem.hasAttribute(attribute)) {
+                    elem.setAttribute(attribute, value)
+                    clearInterval(interval)
+                }
+            } else {
+                elem.removeAttribute(attribute)
+                clearInterval(interval)
+            }
+        })
+    }, 100)
+}
+$$(".person_JDSFBKSDJ12222", "alt", "Google User")
+    </script>
   </body>
 </html>

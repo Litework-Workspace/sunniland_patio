@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -9,13 +18,11 @@
     },
     "8ca26768-041f-40eb-b635-d33e84b5b2e0": {
       "type": "custom-html",
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "subheading": "",
         "title": "",
-        "html": "<p class=\"Free-SHipping_Banner\"><b>Free Shipping<\/b> on all patio furniture orders above $500. No code needed.<\/p>"
+        "html": "<p class=\"Free-SHipping_Banner\"><b>Free Shipping</b> on all patio furniture orders above $500. No code needed.</p>"
       }
     },
     "fb3facf5-59a5-46dd-a4b9-3f6b442916de": {
@@ -25,13 +32,13 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/4-454FM_SR_TQA_07c945a7-47f8-45e7-a63c-9cdb8d7e102a.jpg",
+            "image": "shopify://shop_images/4-454FM_SR_TQA_07c945a7-47f8-45e7-a63c-9cdb8d7e102a.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "6.5 Ft Square Top",
             "button_text": "View products",
-            "button_link": "shopify:\/\/collections\/6-5-ft-square-patio-umbrellas",
+            "button_link": "shopify://collections/6-5-ft-square-patio-umbrellas",
             "apply_overlay": false
           }
         },
@@ -39,13 +46,13 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/5-464FM_SR_PTA.jpg",
+            "image": "shopify://shop_images/5-464FM_SR_PTA.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "7.5 Ft Square Top",
             "button_text": "View products",
-            "button_link": "shopify:\/\/collections\/7-5-ft-square-patio-umbrellas",
+            "button_link": "shopify://collections/7-5-ft-square-patio-umbrellas",
             "apply_overlay": true
           }
         },
@@ -53,13 +60,13 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/6-845FM_SR_FGA_2cfc8d18-1272-4be7-8693-6c731989e137.jpg",
+            "image": "shopify://shop_images/6-845FM_SR_FGA_2cfc8d18-1272-4be7-8693-6c731989e137.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "7.5 Ft Octagonal Top",
             "button_text": "View products",
-            "button_link": "shopify:\/\/collections\/7-5-ft-octagon-patio-umbrellas",
+            "button_link": "shopify://collections/7-5-ft-octagon-patio-umbrellas",
             "apply_overlay": true
           }
         },
@@ -67,13 +74,13 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/2-845FM_SR_PBA_18f89d1a-4d82-4bc7-97ce-77fd7b66389a.jpg",
+            "image": "shopify://shop_images/2-845FM_SR_PBA_18f89d1a-4d82-4bc7-97ce-77fd7b66389a.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "9 Ft Octagonal Top",
             "button_text": "View products",
-            "button_link": "shopify:\/\/collections\/9-ft-octagon-patio-umbrellas",
+            "button_link": "shopify://collections/9-ft-octagon-patio-umbrellas",
             "apply_overlay": true
           }
         },
@@ -81,13 +88,13 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/12-864FM_SR_YLA_c94e5d9a-e994-4f69-8988-778b0b77eb18.jpg",
+            "image": "shopify://shop_images/12-864FM_SR_YLA_c94e5d9a-e994-4f69-8988-778b0b77eb18.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "11 Ft Octagonal Top",
             "button_text": "View products",
-            "button_link": "shopify:\/\/collections\/11-ft-octagon-patio-umbrellas",
+            "button_link": "shopify://collections/11-ft-octagon-patio-umbrellas",
             "apply_overlay": true
           }
         }
@@ -118,7 +125,7 @@
         "template--17486864122152__ec8cbadd-b314-43f6-8b0c-3fa5a1e6e02b-16755240059697acff-0": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_415c34e7-c0b0-4468-b93c-7c58db9019a2.png",
+            "image": "shopify://shop_images/1_415c34e7-c0b0-4468-b93c-7c58db9019a2.png",
             "dot_style": "light",
             "product_1": "6-5-ft-square-frankford-patio-umbrella-pulley-lift-matte-silver-frame-1",
             "product_1_horizontal_position": 51,
@@ -134,7 +141,7 @@
         "9fdc57dc-f0cb-42ed-84cd-5542ddcd79f0": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/7.5oct_1.png",
+            "image": "shopify://shop_images/7.5oct_1.png",
             "dot_style": "light",
             "product_1": "7-5-ft-octagonal-frankford-patio-umbrella-crank-lift-mechanism",
             "product_1_horizontal_position": 51,
@@ -150,7 +157,7 @@
         "5cf0a172-efbe-483c-a1c2-1e9dbcad24f4": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/9oct_1.png",
+            "image": "shopify://shop_images/9oct_1.png",
             "dot_style": "light",
             "product_1": "copy-of-9-ft-octagonal-frankford-patio-umbrella-crank-auto-tilt-matte-silver-frame",
             "product_1_horizontal_position": 54,
@@ -166,7 +173,7 @@
         "7729b54e-9684-4ed8-baf2-7d385cee91bf": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/11oct_1.png",
+            "image": "shopify://shop_images/11oct_1.png",
             "dot_style": "light",
             "product_1": "copy-of-11-ft-octagonal-frankford-patio-umbrella-crank-auto-tilt-matte-silver-frame",
             "product_1_horizontal_position": 46,
@@ -196,13 +203,13 @@
       "type": "image-with-text-overlay",
       "settings": {
         "section_size": "large",
-        "image": "shopify:\/\/shop_images\/umbrelalifestyle_1.png",
+        "image": "shopify://shop_images/umbrelalifestyle_1.png",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 35,
         "subheading": "",
         "title": "Frankford High-End Umbrellas",
-        "content": "<p>Elevate your patio relaxation experience with Frankford Market Monterrey umbrellas. Our outdoor patio umbrellas are durable and elegant, with wide range of sizes and styles to suit any outdoor space!<\/p>",
+        "content": "<p>Elevate your patio relaxation experience with Frankford Market Monterrey umbrellas. Our outdoor patio umbrellas are durable and elegant, with wide range of sizes and styles to suit any outdoor space!</p>",
         "show_on_mobile": false,
         "no_bottom_margin": false,
         "button_1_text": "",
@@ -277,17 +284,17 @@
       "type": "image-with-text-overlay",
       "settings": {
         "section_size": "large",
-        "image": "shopify:\/\/shop_images\/Youtube-section-cover.jpg",
+        "image": "shopify://shop_images/Youtube-section-cover.jpg",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 30,
         "subheading": "",
         "title": "Find Sunniland on Youtube",
-        "content": "<p>Learn how to repair your patio furniture the easy way with our DIY video tutorials.<\/p>",
+        "content": "<p>Learn how to repair your patio furniture the easy way with our DIY video tutorials.</p>",
         "show_on_mobile": true,
         "no_bottom_margin": true,
         "button_1_text": "Visit Our Channel",
-        "button_1_link": "https:\/\/www.youtube.com\/@sunnilandpatio2441",
+        "button_1_link": "https://www.youtube.com/@sunnilandpatio2441",
         "button_2_text": "",
         "button_2_link": "",
         "button_color": "#363636",

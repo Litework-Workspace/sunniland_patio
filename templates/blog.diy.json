@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "ff851b78-819c-400c-b57c-6a1728170480": {
@@ -6,13 +15,13 @@
         "template--17486863434024__ff851b78-819c-400c-b57c-6a1728170480-16766370017e5d33d8-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/doityourself.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Image-3.jpg",
+            "image": "shopify://shop_images/doityourself.jpg",
+            "mobile_image": "shopify://shop_images/Image-3.jpg",
             "apply_overlay": true,
             "content_position": "bottomLeft",
             "subheading": "Reuse your patio furniture, give a second life.",
             "title": "Do It Yourself Patio Tutorials",
-            "content": "<p>Easy tutorials for at home patio furniture repairs<\/p>",
+            "content": "<p>Easy tutorials for at home patio furniture repairs</p>",
             "button_1_text": "",
             "button_1_link": "",
             "button_2_text": "",
@@ -27,7 +36,7 @@
             "content_position": "bottomLeft",
             "subheading": "Slide title",
             "title": "Tell your story",
-            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+            "content": "<p>Add your own custom content to give more information about your store, availability details...</p>",
             "button_1_text": "",
             "button_1_link": "",
             "button_2_text": "",

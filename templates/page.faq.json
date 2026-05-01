@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -13,21 +22,21 @@
           "type": "question",
           "settings": {
             "title": "What is your return policy?",
-            "answer": "<p>Returns are accepted for most items, except for Replacement Cushions, Umbrellas, Patio Furniture, Pre-Cut Straps and Replacement Slings (because they are custom made to your dimensions).<br\/><br\/>Read about which items are returnable, and how to return them here:<br\/>https:\/\/www.sunnilandpatio.com\/pages\/shipping-terms<\/p>"
+            "answer": "<p>Returns are accepted for most items, except for Replacement Cushions, Umbrellas, Patio Furniture, Pre-Cut Straps and Replacement Slings (because they are custom made to your dimensions).<br/><br/>Read about which items are returnable, and how to return them here:<br/>https://www.sunnilandpatio.com/pages/shipping-terms</p>"
           }
         },
         "6c5a9679-710b-4a11-a8b3-1a8585e734c8": {
           "type": "question",
           "settings": {
             "title": "What are your shipping details?",
-            "answer": "<p>All shipping fees are based on the contiguous United States standard shipping rates by package weight.<\/p><p>Free Shipping Applied on: <\/p><p>Furniture orders over $500<\/p><p>Non-Furniture orders over $150<\/p><p>All Replacement Cushion orders<\/p><p>Normal delivery time once shipped 3-10 days via USPS, UPS, or FedEx.<\/p>"
+            "answer": "<p>All shipping fees are based on the contiguous United States standard shipping rates by package weight.</p><p>Free Shipping Applied on: </p><p>Furniture orders over $500</p><p>Non-Furniture orders over $150</p><p>All Replacement Cushion orders</p><p>Normal delivery time once shipped 3-10 days via USPS, UPS, or FedEx.</p>"
           }
         },
         "36e0693f-7e48-41f5-95c3-221cfc3d726a": {
           "type": "question",
           "settings": {
             "title": "Do you ship to Canada?",
-            "answer": "<p>Unfortunately, we only ship to the Continental US.<\/p>"
+            "answer": "<p>Unfortunately, we only ship to the Continental US.</p>"
           }
         },
         "e662cf46-c59b-4d1e-a418-6c5745be154b": {
@@ -40,21 +49,21 @@
           "type": "question",
           "settings": {
             "title": "Is it possible to get samples of the different color vinyl straps?",
-            "answer": "<p>We can ship up to 3 samples to you for free, please email us at <strong>sales@sunnilandpatio.com<\/strong> your full address, and the colors that you would like us to ship to you.<\/p>"
+            "answer": "<p>We can ship up to 3 samples to you for free, please email us at <strong>sales@sunnilandpatio.com</strong> your full address, and the colors that you would like us to ship to you.</p>"
           }
         },
         "4b7a40f5-8bb6-4a09-8217-93786d47347b": {
           "type": "question",
           "settings": {
             "title": "I am clicking on a fabric choice and it will not add to the choice.",
-            "answer": "<p>Please click on the fabric choice and add the product to your shopping cart and you will be able to see your fabric choice. <\/p>"
+            "answer": "<p>Please click on the fabric choice and add the product to your shopping cart and you will be able to see your fabric choice. </p>"
           }
         },
         "58786611-adae-4173-b80f-b5bd17602047": {
           "type": "question",
           "settings": {
             "title": "What is the thickness of the vinyl strapping?",
-            "answer": "<p>It is .115\"<\/p>"
+            "answer": "<p>It is .115\"</p>"
           }
         },
         "6b72e191-3f6c-4aad-9cb4-1a9ca599af2b": {
@@ -67,7 +76,7 @@
           "type": "question",
           "settings": {
             "title": "Is there a warranty on replacement slings?",
-            "answer": "<p>We offer a 1 year warranty on workmanship.<\/p>"
+            "answer": "<p>We offer a 1 year warranty on workmanship.</p>"
           }
         }
       },
@@ -83,8 +92,7 @@
         "6b72e191-3f6c-4aad-9cb4-1a9ca599af2b",
         "6bd3e987-78b6-48bb-aed7-5570750e83b9"
       ],
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [

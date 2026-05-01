@@ -332,7 +332,7 @@ HEADER CONTENT
             </li> {% endcomment %}
 
             <li class="HorizontalList__Item">
-              <a href="{{ routes.cart_url }}" class="Heading u-h6" {% unless template == 'cart' or settings.cart_type == 'page' %}data-action="open-drawer" data-drawer-id="sidebar-cart" aria-label="{{ 'header.navigation.open_cart' | t }}"{% endunless %}>{{ 'header.navigation.cart' | t }} | <span class="Header__CartCount">{{ cart.item_count }}</span> Item(s)
+              <a href="{{ routes.cart_url }}" class="Heading u-h6" {% unless template == 'cart' or settings.cart_type == 'page' %}data-action="open-drawer" data-drawer-id="sidebar-cart" {% endunless %}>{{ 'header.navigation.cart' | t }} | <span class="Header__CartCount">{{ cart.item_count }}</span> Item(s)
               {%- render 'icon' with 'cart' -%}</a>
             </li>
           </ul>
@@ -348,14 +348,14 @@ HEADER CONTENT
       {%- endunless -%}
 
       {%- if shop.customer_accounts_enabled and section.settings.show_icons or use_sidebar_menu -%}
-        <a href="{{ routes.account_url }}" class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable hidden-phone">
+        <a aria-label="Login" href="{{ routes.account_url }}" class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable hidden-phone">
           {%- render 'icon' with 'account' -%}
         </a>
       {%- endif -%}
 
       {%- if shop.customer_accounts_enabled -%}
         {% unless section.settings.show_icons or use_sidebar_menu %}
-          <a href="{{ routes.account_url }}" class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable hidden-phone-desktop">
+          <a aria-label="Account" href="{{ routes.account_url }}" class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable hidden-phone-desktop">
             {%- render 'icon' with 'account' -%}
           </a>
         {% endunless %}

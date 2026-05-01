@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "404": {
     "general": {
@@ -49,7 +58,7 @@
   "header": {
     "general": {
       "locale": "言語",
-      "country": "国\/地域"
+      "country": "国/地域"
     },
     "navigation": {
       "title": "メインメニュー",
@@ -69,7 +78,7 @@
   "footer": {
     "general": {
       "locale": "言語",
-      "country": "国\/地域"
+      "country": "国/地域"
     },
     "newsletter": {
       "success": "ニュースレターのご購読ありがとうございます。",
@@ -202,8 +211,8 @@
       "back_to_account": "アカウントに戻る",
       "cancelled_at": "注文がキャンセルされた日付 {{ date }}",
       "placed_at": "{{date}}の注文",
-      "fulfillment_html": "注文が送信されました。 番号{{tracking_number}}で荷物を追跡するか、ここをクリックしてください： <a href=\"{{tracking_url}}\" class=\"Link Link--underlineNative\" target=\"_blank\">{{tracking_url}}<\/a>",
-      "line_fulfillment_html": "製品 \"{{product_title}}\" が送信されました。番号　{{tracking_number}}で貨物を追跡するか、ここをクリックしてください： <a href=\"{{tracking_url}}\" class=\"Link Link--underlineNative\" target=\"_blank\">{{tracking_url}}<\/a>",
+      "fulfillment_html": "注文が送信されました。 番号{{tracking_number}}で荷物を追跡するか、ここをクリックしてください： <a href=\"{{tracking_url}}\" class=\"Link Link--underlineNative\" target=\"_blank\">{{tracking_url}}</a>",
+      "line_fulfillment_html": "製品 \"{{product_title}}\" が送信されました。番号　{{tracking_number}}で貨物を追跡するか、ここをクリックしてください： <a href=\"{{tracking_url}}\" class=\"Link Link--underlineNative\" target=\"_blank\">{{tracking_url}}</a>",
       "product": "商品",
       "quantity": "量",
       "line_price": "合計",
@@ -310,7 +319,7 @@
     "general": {
       "view_in_space": "あなたの空間で見る",
       "include_taxes": "税込み",
-      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link link--accented\">送料計算済み<\/a> チェックアウト時",
+      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link link--accented\">送料計算済み</a> チェックアウト時",
       "reviews_count": {
         "zero": "{{ count }}件",
         "one": "{{ count }}件",
@@ -363,8 +372,8 @@
       "check_other_stores": "別のストアでの出品状況を確認する",
       "pick_up_available": "受取が可能です",
       "pick_up_currently_unavailable": "受取は現在できません",
-      "pick_up_available_at_html": "<strong>{{ location_name }}<\/strong>での受取が可能です",
-      "pick_up_unavailable_at_html": "<strong>{{ location_name }}<\/strong>での受取は現在できません"
+      "pick_up_available_at_html": "<strong>{{ location_name }}</strong>での受取が可能です",
+      "pick_up_unavailable_at_html": "<strong>{{ location_name }}</strong>での受取は現在できません"
     }
   },
   "gift_card": {
@@ -423,7 +432,7 @@
   },
   "date_formats": {
     "month_day_year": "%Y年 %B %d日",
-    "month_day_year_short": "%Y\/%m\/%d",
+    "month_day_year_short": "%Y/%m/%d",
     "month_day_year_time": "%Y年 %B %d日 at %I:%M%p"
   },
   "pagefly": {

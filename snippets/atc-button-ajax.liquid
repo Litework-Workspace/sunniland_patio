@@ -26,6 +26,8 @@ Variables:
 
 {% assign available_prod_grid_item = product.selected_or_first_available_variant.available %}
 <a 
+  tabindex="0"
+  role="link"
   data-prod-url="{{ product.url }}" 
   data-prod-collections="{{ prod_collections }}" 
   data-prod-type="{{ product.type }}" 
@@ -34,7 +36,6 @@ Variables:
   data-prod-id="{{ product.id }}" 
   {% comment %} type="submit"  {% endcomment %}
   name="add" 
-  aria-label="Add to cart" 
   class="ad_to_cart_coll ProductForm__AddToCart Button Button--secondary Button--full" 
   style="cursor:pointer;"
   id="ad_to_cart" 

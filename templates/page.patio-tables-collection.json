@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -9,13 +18,11 @@
     },
     "8ca26768-041f-40eb-b635-d33e84b5b2e0": {
       "type": "custom-html",
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "subheading": "",
         "title": "",
-        "html": "<p class=\"Free-SHipping_Banner\"><b>Free Shipping<\/b> on all patio furniture orders above $500. No code needed.<\/p>"
+        "html": "<p class=\"Free-SHipping_Banner\"><b>Free Shipping</b> on all patio furniture orders above $500. No code needed.</p>"
       }
     },
     "fb3facf5-59a5-46dd-a4b9-3f6b442916de": {
@@ -25,13 +32,13 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/1_4.png",
+            "image": "shopify://shop_images/1_4.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Shop All",
             "title": "Shop All",
             "button_text": "Shop All",
-            "button_link": "shopify:\/\/collections\/patio-tables",
+            "button_link": "shopify://collections/patio-tables",
             "apply_overlay": true
           }
         },
@@ -39,7 +46,7 @@
           "type": "collection",
           "settings": {
             "collection": "dinning-tables",
-            "image": "shopify:\/\/shop_images\/5_4811a8a7-d19d-4598-8fdc-da399dda32e2.png",
+            "image": "shopify://shop_images/5_4811a8a7-d19d-4598-8fdc-da399dda32e2.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -53,7 +60,7 @@
           "type": "collection",
           "settings": {
             "collection": "bar-tables",
-            "image": "shopify:\/\/shop_images\/6_1d82fab8-fc7a-4c4e-8d09-6bf030526fe7.png",
+            "image": "shopify://shop_images/6_1d82fab8-fc7a-4c4e-8d09-6bf030526fe7.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -107,7 +114,7 @@
           "disabled": true,
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Mask_group_3.png",
+            "image": "shopify://shop_images/Mask_group_3.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -122,7 +129,7 @@
           "disabled": true,
           "settings": {
             "collection": "patio-umbrellas-bases",
-            "image": "shopify:\/\/shop_images\/Mask_group_4.png",
+            "image": "shopify://shop_images/Mask_group_4.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -137,7 +144,7 @@
           "disabled": true,
           "settings": {
             "collection": "patio-furniture-covers",
-            "image": "shopify:\/\/shop_images\/Mask_group_5.png",
+            "image": "shopify://shop_images/Mask_group_5.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -152,7 +159,7 @@
           "disabled": true,
           "settings": {
             "collection": "commercial-furniture",
-            "image": "shopify:\/\/shop_images\/Mask_group_6.png",
+            "image": "shopify://shop_images/Mask_group_6.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -194,7 +201,7 @@
         "template--17486864122152__ec8cbadd-b314-43f6-8b0c-3fa5a1e6e02b-16755240059697acff-0": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_dd28ff3b-843e-406a-a54c-837c22f226f0.jpg",
+            "image": "shopify://shop_images/1_dd28ff3b-843e-406a-a54c-837c22f226f0.jpg",
             "dot_style": "light",
             "product_1": "glass-top-patio-dining-table-2770",
             "product_1_horizontal_position": 51,
@@ -210,7 +217,7 @@
         "f1c97e2e-3c7a-4df1-b39a-e271428102d7": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_133208ad-b20d-4d3b-9fa9-2c18220a8778.jpg",
+            "image": "shopify://shop_images/2_133208ad-b20d-4d3b-9fa9-2c18220a8778.jpg",
             "dot_style": "light",
             "product_1": "telescope-casual-mgp-sling-patio-arm-chair-9530",
             "product_1_horizontal_position": 79,
@@ -226,7 +233,7 @@
         "07de0997-5edd-4b1d-92ea-b2c338f9ce41": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4_e756a7e1-769f-4a45-94c1-387084e19cd0.jpg",
+            "image": "shopify://shop_images/4_e756a7e1-769f-4a45-94c1-387084e19cd0.jpg",
             "dot_style": "light",
             "product_1": "telescope-casual-patio-furniture-swivel-rocker-9540",
             "product_1_horizontal_position": 75,
@@ -255,13 +262,13 @@
       "type": "image-with-text-overlay",
       "settings": {
         "section_size": "large",
-        "image": "shopify:\/\/shop_images\/Bazza-MGP-Aluminum_Bench2_1.jpg",
+        "image": "shopify://shop_images/Bazza-MGP-Aluminum_Bench2_1.jpg",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 35,
         "subheading": "",
         "title": "Get Inspired With Our Dining Style Book",
-        "content": "<p>Your patio is the heart of your summer patio experience, a place to dine & relax in style. Check out Sunniland's Dining Style Book to find out top rated dining set collections.<\/p>",
+        "content": "<p>Your patio is the heart of your summer patio experience, a place to dine & relax in style. Check out Sunniland's Dining Style Book to find out top rated dining set collections.</p>",
         "show_on_mobile": false,
         "no_bottom_margin": false,
         "button_1_text": "Read More",
@@ -336,17 +343,17 @@
       "type": "image-with-text-overlay",
       "settings": {
         "section_size": "large",
-        "image": "shopify:\/\/shop_images\/Youtube-section-cover.jpg",
+        "image": "shopify://shop_images/Youtube-section-cover.jpg",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 30,
         "subheading": "",
         "title": "Find Sunniland on Youtube",
-        "content": "<p>Learn how to repair your patio furniture the easy way with our DIY video tutorials.<\/p>",
+        "content": "<p>Learn how to repair your patio furniture the easy way with our DIY video tutorials.</p>",
         "show_on_mobile": true,
         "no_bottom_margin": true,
         "button_1_text": "Visit Our Channel",
-        "button_1_link": "https:\/\/www.youtube.com\/@sunnilandpatio2441",
+        "button_1_link": "https://www.youtube.com/@sunnilandpatio2441",
         "button_2_text": "",
         "button_2_link": "",
         "button_color": "#363636",

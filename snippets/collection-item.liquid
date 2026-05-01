@@ -1,6 +1,6 @@
 {%- assign collection_image = block.settings.image | default: collection.image | default: collection.products.first.featured_image -%}
 
-<a href="{{ block.settings.button_link | default: collection.url }}" {{ block.shopify_attributes }} class="CollectionItem {{ custom_class }} {% if section.settings.expand_collection %}CollectionItem--expand{% endif %}{% if forloop.first %}is-selected{% endif %}" data-slide-index="{{ forloop.index0 }}">
+<a aria-label="{{ 'collection.general.view_products' | t }}&nbsp; for {{ block.settings.button_text | escape }}&nbsp;{{ collection.title }}" href="{{ block.settings.button_link | default: collection.url }}" {{ block.shopify_attributes }} class="CollectionItem {{ custom_class }} {% if section.settings.expand_collection %}CollectionItem--expand{% endif %}{% if forloop.first %}is-selected{% endif %}" data-slide-index="{{ forloop.index0 }}">
   {%- capture mobile_size -%}750x{% if collection_image.height >= 960 %}960{% else %}{{ collection_image.height }}{% endif %}{%- endcapture -%}
   {%- assign image_crop = block.settings.image_alignment | split: ' ' | last -%}
 
@@ -38,7 +38,7 @@
           {%- if block.settings.button_text != blank -%}
             <span class="CollectionItem__Link Button button-custom__small">{{ block.settings.button_text | escape }}</span>
           {%- else -%}
-            <span class="CollectionItem__Link Button button-custom__small">{{ 'collection.general.view_products' | t }}</span>
+            <span class="CollectionItem__Link Button button-custom__small">{{ 'collection.general.view_products' | t }}<span class="u-visually-hidden">&nbsp;for {{ collection.title }}</span></span>
           {%- endif -%}
         </div>
       </header>

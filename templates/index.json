@@ -12,6 +12,23 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "image_z4P7Pw": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/chaise-lifestyle-2-a_1.jpg",
+            "mobile_image": "shopify://shop_images/chaise-lifestyle-2-a_1.jpg",
+            "apply_overlay": true,
+            "content_position": "middleCenter",
+            "subheading": "",
+            "title": "Splash into Spring Sale",
+            "content": "<p><strong>Prep for some poolside fun with 15% off loungers and patio umbrellas! </strong></p>",
+            "button_1_text": "Shop Lounges",
+            "button_1_link": "shopify://collections/lounge-and-deep-seating",
+            "button_2_text": "Shop Patio Umbrellas",
+            "button_2_link": "shopify://collections/patio-umbrellas-bases"
+          }
+        },
         "e7974782-81ff-40c3-891d-c6bab807b003": {
           "type": "image",
           "disabled": true,
@@ -79,6 +96,7 @@
         }
       },
       "block_order": [
+        "image_z4P7Pw",
         "e7974782-81ff-40c3-891d-c6bab807b003",
         "91d843a9-b500-4e11-95c7-cacb79d31486",
         "slide-1",
@@ -105,7 +123,7 @@
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
-            "title": "",
+            "title": "Outdoor Dining Sets",
             "button_text": "Outdoor Dining Sets",
             "button_link": "",
             "apply_overlay": false
@@ -133,7 +151,7 @@
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
-            "title": "",
+            "title": "Outdoor Seating",
             "button_text": "Outdoor Seating",
             "button_link": "shopify://pages/outdoor-seating",
             "apply_overlay": false
@@ -147,7 +165,7 @@
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
-            "title": "",
+            "title": "Outdoor Lounge",
             "button_text": "Outdoor Lounge",
             "button_link": "",
             "apply_overlay": false
@@ -161,7 +179,7 @@
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
-            "title": "",
+            "title": "Patio Tables",
             "button_text": "Patio Tables",
             "button_link": "shopify://pages/patio-tables",
             "apply_overlay": false
@@ -175,7 +193,7 @@
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
-            "title": "",
+            "title": "Patio Umbrellas",
             "button_text": "Patio Umbrellas",
             "button_link": "",
             "apply_overlay": false
@@ -231,7 +249,7 @@
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "",
-            "title": "",
+            "title": "Commercial Patio Furniture",
             "button_text": "Commercial Patio Furniture",
             "button_link": "",
             "apply_overlay": false
@@ -609,6 +627,10 @@
         "color1": "",
         "color2": ""
       }
+    },
+    "1776418201805fce40": {
+      "type": "_blocks",
+      "settings": {}
     }
   },
   "order": [
@@ -621,6 +643,7 @@
     "timeline",
     "blog-posts",
     "a99db379-c319-41ad-9aac-158785cb0f55",
-    "654c65c4-1510-4fc8-8c6c-4733e02e3b62"
+    "654c65c4-1510-4fc8-8c6c-4733e02e3b62",
+    "1776418201805fce40"
   ]
 }

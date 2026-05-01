@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "d015102a-3b90-42d4-b6f0-786c474c15cc": {
@@ -6,13 +15,13 @@
         "template--21849609470248__d015102a-3b90-42d4-b6f0-786c474c15cc-image-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/doityourself.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Image-3.jpg",
+            "image": "shopify://shop_images/doityourself.jpg",
+            "mobile_image": "shopify://shop_images/Image-3.jpg",
             "apply_overlay": true,
             "content_position": "bottomLeft",
             "subheading": "Reuse, give a second life.",
             "title": "Do It Yourself Patio Tutorials",
-            "content": "<p>Easy tutorials for at home patio furniture repairs<\/p>",
+            "content": "<p>Easy tutorials for at home patio furniture repairs</p>",
             "button_1_text": "",
             "button_1_link": "",
             "button_2_text": "",
@@ -35,8 +44,7 @@
     },
     "pf-81bbeea6": {
       "type": "pf-81bbeea6",
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [
