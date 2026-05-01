@@ -9,46 +9,60 @@
  */
 {
   "sections": {
-    "d015102a-3b90-42d4-b6f0-786c474c15cc": {
-      "type": "slideshow",
-      "blocks": {
-        "template--21849609470248__d015102a-3b90-42d4-b6f0-786c474c15cc-image-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/doityourself.jpg",
-            "mobile_image": "shopify://shop_images/Image-3.jpg",
-            "apply_overlay": true,
-            "content_position": "bottomLeft",
-            "subheading": "Reuse, give a second life.",
-            "title": "Do It Yourself Patio Tutorials",
-            "content": "<p>Easy tutorials for at home patio furniture repairs</p>",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--21849609470248__d015102a-3b90-42d4-b6f0-786c474c15cc-image-1"
-      ],
-      "settings": {
-        "show_fullscreen": true,
-        "show_arrow": false,
-        "autoplay": true,
-        "cycle_speed": 5,
-        "text_color": "#ffffff",
-        "button_color": "#363636",
-        "button_background": "#ffffff"
-      }
-    },
     "pf-81bbeea6": {
       "type": "pf-81bbeea6",
-      "settings": {}
+      "settings": {
+        "pf_24867272_value": " Why Sunbrella Fabrics are the Best Choice for Your Patio Furniture ",
+        "pf_670c5b3b_value": "How To Replace Plastic Adjustment Brackets On Chaise Lounges",
+        "pf_9e51183c_value": " Top 4 Reasons To Replace Your Patio Furniture Cushions ",
+        "pf_31409659_value": "How To Replace Glider Bearing Arms On Glider Chairs",
+        "pf_46de34c5_value": "How to Pick the Correct Strap Roll for Your Project",
+        "pf_ebf323ed_value": "How To Replace Glider Bearing Arms On Glider Chairs",
+        "pf_24ec6ad1_value": "How To Pick The Right Rivet For Your Strap Project",
+        "pf_ad3f285d_value": "How To Measure &amp; Install Rectangular Inserts",
+        "pf_ad6d851f_value": "How To Measure And Install Chair Leg Protectors",
+        "pf_67696d9d_value": "How to Replace Swivel Rocker Spring Plates",
+        "pf_8d38a28b_value": "How To Measure &amp; Install Oval Inserts ",
+        "pf_2f1179e4_value": "How To Install Wrought Iron Chair Glides ",
+        "pf_79e14df9_value": "How To Measure &amp; Install a Stud Glide",
+        "pf_d21bba90_value": "How To Install A Single Wrap Vinyl Strap ",
+        "pf_fa0e2d2a_value": "How To Measure A Wrought Iron Chair Glide",
+        "pf_d197addd_value": "How to Install a Double Wrap Vinyl Strap",
+        "pf_e163c31a_value": "How To Repair Glass Patio Table Problems",
+        "pf_c5c51b56_value": "Tips For Shopping Replacement Cushions",
+        "pf_2a969d26_value": "How To Measure Straps For Replacement",
+        "pf_833874d4_value": "How To Install a 2 Piece Sling Chair ",
+        "pf_a13f8b5f_value": "How To Measure For Replacement Slings",
+        "pf_2567e118_value": "How To Make Straps From A Strap Roll",
+        "pf_66f05163_value": "How to Measure a 2 Piece Sling Chair",
+        "pf_78fd7619_value": "Rocker-Glider Chair Repair Tutorials",
+        "pf_d1cc84c7_value": "How to Replace a Chaise Lounge Sling",
+        "pf_6df3d8e7_value": " Brown Jordan Replacement Cushions ",
+        "pf_0cbeb75c_value": "Cleaning Patio Furniture Tutorials",
+        "pf_ab61a0fa_value": "Sling Replacement Troubleshooting ",
+        "pf_5b39418b_value": "How To Measure Universal Cushions",
+        "pf_6e5acbfc_value": "Vinyl Strap Replacement Tutorials",
+        "pf_84bc571e_value": "How To Install A Chair Leg Insert",
+        "pf_f56a94db_value": "How To Install Sling Rail EndCaps",
+        "pf_1d7adfcb_value": " How To Clean Sunbrella Cushion ",
+        "pf_4dcd4a78_value": "How To Measure Chair Leg Inserts",
+        "pf_530a0ee2_value": "How to Replace an Ottoman Sling",
+        "pf_6e2323b1_value": " Hanamint Replacement Cushions ",
+        "pf_12d4d994_value": " Types of Wrought Iron Glides ",
+        "pf_26439a61_value": "Replacement Cushions Tutorials",
+        "pf_c284df9f_value": "How To Clean Sling Furniture",
+        "pf_f1c415af_value": "How To Replace A Chair Sling",
+        "pf_5031e05a_value": "Sling Replacement Tutorials",
+        "pf_6452e8f0_value": "How to Replace Cross Straps",
+        "pf_e906211e_value": " Ebel Replacement Cushions ",
+        "pf_4e5507dd_value": "How To Install Stem Glides",
+        "pf_5630d880_value": " Cast Classics Cushions ",
+        "pf_f38ab1f9_value": "Cap and Glide Tutorials",
+        "pf_db25f1dc_value": "Table Repair Tutorials"
+      }
     }
   },
   "order": [
-    "d015102a-3b90-42d4-b6f0-786c474c15cc",
     "pf-81bbeea6"
   ]
 }
