@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "b29135a1-6c78-430a-acba-32e7def3b702": {
@@ -5,7 +14,7 @@
       "settings": {
         "subheading": "",
         "title": "",
-        "html": "<p><b>Free Shipping<\/b> on all patio furniture orders above $500. No code needed.<\/p>"
+        "html": "<p><b>Free Shipping</b> on all patio furniture orders above $500. No code needed.</p>"
       }
     },
     "main": {
@@ -48,7 +57,7 @@
         "template--17486863892776__27daa94b-3f9a-43fe-8654-b348350472f9-16754695353e4b64d2-0": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/87690d9b-ba2b-4dad-914b-82cc712db137.jpg",
+            "image": "shopify://shop_images/87690d9b-ba2b-4dad-914b-82cc712db137.jpg",
             "dot_style": "dark",
             "product_1": "chair-replacement-sling-1pc",
             "product_1_horizontal_position": 34,
@@ -139,13 +148,13 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/show_all.png",
+            "image": "shopify://shop_images/show_all.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "",
             "button_text": "Show All",
-            "button_link": "https:\/\/www.sunnilandpatio.com\/pages\/all-furniture-sectioned",
+            "button_link": "https://www.sunnilandpatio.com/pages/all-furniture-sectioned",
             "apply_overlay": false
           }
         },
@@ -153,7 +162,7 @@
           "type": "collection",
           "settings": {
             "collection": "coffee-tables",
-            "image": "shopify:\/\/shop_images\/coffee_tables_d637000f-575f-4762-867c-26c263bf0dac.png",
+            "image": "shopify://shop_images/coffee_tables_d637000f-575f-4762-867c-26c263bf0dac.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -167,7 +176,7 @@
           "type": "collection",
           "settings": {
             "collection": "end-tables",
-            "image": "shopify:\/\/shop_images\/end_tables_fa348790-13b5-4d1f-a4f8-3a452ad41aa0.png",
+            "image": "shopify://shop_images/end_tables_fa348790-13b5-4d1f-a4f8-3a452ad41aa0.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -181,7 +190,7 @@
           "type": "collection",
           "settings": {
             "collection": "fire-pit-tables",
-            "image": "shopify:\/\/shop_images\/fire_pit_tables_de2f4617-9833-4e9b-9e3d-a9d39dfff710.png",
+            "image": "shopify://shop_images/fire_pit_tables_de2f4617-9833-4e9b-9e3d-a9d39dfff710.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -195,7 +204,7 @@
           "type": "collection",
           "settings": {
             "collection": "dinning-tables",
-            "image": "shopify:\/\/shop_images\/dining_tables_f91752db-399b-46ae-9476-e1d2ff0c1443.png",
+            "image": "shopify://shop_images/dining_tables_f91752db-399b-46ae-9476-e1d2ff0c1443.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -231,13 +240,13 @@
       "type": "image-with-text-overlay",
       "settings": {
         "section_size": "large",
-        "image": "shopify:\/\/shop_images\/Van_Dyke_Seating_1.png",
+        "image": "shopify://shop_images/Van_Dyke_Seating_1.png",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 30,
         "subheading": "",
         "title": "Find Sunniland on Youtube",
-        "content": "<p>Learn how to repair your patio furniture the easy way with our DIY video tutorials.<\/p>",
+        "content": "<p>Learn how to repair your patio furniture the easy way with our DIY video tutorials.</p>",
         "show_on_mobile": true,
         "no_bottom_margin": true,
         "button_1_text": "Watch Tutorials",

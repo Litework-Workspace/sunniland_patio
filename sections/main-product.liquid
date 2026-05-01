@@ -207,12 +207,12 @@
                     {%- endcapture -%}
 
                     {%- if section.settings.stack_images -%}
-                      <a href="#Media{{ media.id }}" data-offset="-25" data-focus-on-click data-media-id="{{ media.id }}" class="Product__SlideshowNavImage AspectRatio {% if forloop.first %}is-selected{% endif %}" style="--aspect-ratio: {{ media.preview_image.aspect_ratio }}">
+                      <a aria-label="{{ media.alt | escape }}" href="#Media{{ media.id }}" data-offset="-25" data-focus-on-click data-media-id="{{ media.id }}" class="Product__SlideshowNavImage AspectRatio {% if forloop.first %}is-selected{% endif %}" style="--aspect-ratio: {{ media.preview_image.aspect_ratio }}">
                         <img src="{{ media | img_url: '160x' }}" alt="{{ media.alt | escape }}">
                         {{- nav_item_badge -}}
                       </a>
                     {%- else -%}
-                      <a href="{{ media | img_url: '1024x' }}" data-media-id="{{ media.id }}" class="Product__SlideshowNavImage AspectRatio {% if media.id == initial_media_id %}is-selected{% endif %}" style="--aspect-ratio: {{ media.preview_image.aspect_ratio }}">
+                      <a aria-label="{{ media.alt | escape }}" href="{{ media | img_url: '1024x' }}" data-media-id="{{ media.id }}" class="Product__SlideshowNavImage AspectRatio {% if media.id == initial_media_id %}is-selected{% endif %}" style="--aspect-ratio: {{ media.preview_image.aspect_ratio }}">
                         <img src="{{ media | img_url: '160x' }}" alt="{{ media.alt | escape }}">
                         {{- nav_item_badge -}}
                       </a>
@@ -435,6 +435,7 @@
                       {%- assign quantity_minus_one = line_item.quantity | minus: 1 -%}
 
                       <button
+                        title="Decrease Quantity for {{ product.title }}"
                         type="button"
                         class="QuantitySelector__Button Link Link--secondary"
                         style="border-right: 1px solid #000000;"
@@ -462,6 +463,7 @@
                         aria-label="{{ 'product.form.quantity' | t }}"
                       >
                       <button
+                        title="Increase Quantity for {{ product.title }}"
                         type="button"
                         class="QuantitySelector__Button Link Link--secondary"
                         style="border-left: 1px solid #000000;"

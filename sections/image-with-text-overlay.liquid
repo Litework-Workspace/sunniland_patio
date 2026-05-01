@@ -52,7 +52,7 @@
               <div class="SectionHeader__ButtonWrapper">
                 <div class="ButtonGroup ButtonGroup--spacingSmall {% if has_two_buttons %}ButtonGroup--sameSize{% endif %}">
                   {%- if section.settings.button_1_text != blank -%}
-                    <a href="{{ section.settings.button_1_link }}" id="Img-W-Overlay_Button1" class="ButtonGroup__Item Button">{{ section.settings.button_1_text | escape }}</a>
+                    <a href="{{ section.settings.button_1_link }}" id="Img-W-Overlay_Button1" class="ButtonGroup__Item Button">{{ section.settings.button_1_text | escape }}<span class="u-visually-hidden">&nbsp;about {{ section.settings.title | escape }}</span></a>
                   {%- endif -%}
 
                   {%- if section.settings.button_2_text != blank -%}

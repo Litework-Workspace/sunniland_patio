@@ -35,6 +35,7 @@
     "uppercase_heading": false,
     "text_font": "century_gothic_n4",
     "base_text_font_size": 15,
+    "currency_code_enabled": true,
     "show_page_transition": false,
     "show_button_transition": false,
     "show_image_zooming": false,
@@ -82,8 +83,8 @@
           "home_page_only": false,
           "background": "#000000",
           "text_color": "#ffffff",
-          "content": "End of Summer Sale: 10% OFF Ledge Lounger and POLLYWOOD online orders",
-          "link": "https://www.sunnilandpatio.com/search?q=pollywood+and+ledge+lounger&type=product&options%5Bprefix%5D=last"
+          "content": "Mothers Day Special: Gift mom the patio of her dreams with Sunniland Gift Cards! + 10% OFF Dining & Conversation Sets",
+          "link": "https://www.sunnilandpatio.com/products/sunniland-patio-gift-card?variant=51451172421928"
         }
       },
       "header": {
@@ -140,7 +141,7 @@
             "type": "html",
             "settings": {
               "title": "",
-              "content": "<p>6101 N Federal Hwy.</p>\n<p>Boca Raton, Florida 33487</p>\n<br>\n<p>Call us: 1-561-997-7114</p>\n<br>\n<p>Email us: <a class=\"footer_email\" href=\"mailto:sales@sunnilandpatio.com\">sales@sunnilandpatio.com</a></p>\n<br>\n<p>Hours of operation:<br>\nMon-Sat 9:30am - 5:30pm<br>\nSun 12:00pm - 5:00pm<br>\nParts and service departments open\nMon-Fri only.</p>",
+              "content": "<p>6101 N Federal Hwy.</p>\n<p>Boca Raton, Florida 33487</p>\n<br>\n<p>Call us: <a href=\"tel:15619977114\">1-561-997-7114</a></p>\n<br>\n<p>Email us: <a class=\"footer_email\" href=\"mailto:sales@sunnilandpatio.com\">sales@sunnilandpatio.com</a></p>\n<br>\n<p>Hours of operation:<br>\nMon-Sat 9:30am - 5:30pm<br>\nSun 12:00pm - 5:00pm<br>\nParts and service departments open\nMon-Fri only.</p>",
               "show_social_media": true
             }
           },
@@ -311,35 +312,15 @@
           "greeting_message": "👋 Hello! Please message us if you have questions, or give an idea of what you’re looking for. We’re happy to make recommendations."
         }
       },
-      "14447995696390441228": {
-        "type": "shopify://apps/pineraffle/blocks/app-embed/a7355a0d-da3a-4b47-bff6-8f75b9cc8805",
+      "3970240402172086410": {
+        "type": "shopify://apps/air-reviews-1/blocks/app-embed/c4e1e9ca-4d46-4e76-bc39-7e42417cb327",
         "disabled": false,
-        "settings": {
-          "buttonTitle": "We're Having A Raffle! 🏆",
-          "showPrizeName": true,
-          "coverImageHeight": 100,
-          "prizeNameMessage": "Shop to Win a Duracord Hammock For Father's Day",
-          "Body": "Enter to win a Duracord Hammock valued at $250 with your order of $200+. Winner will be announced June 17.",
-          "mainColor": "#ce4737",
-          "secColor": "#FFCC4D",
-          "howToJoinOrderValueMessage": "Place an order of $200 or more to enter!",
-          "orderNoTicket": "left to join the raffle.",
-          "orderGotTicket": "CONGRATULATIONS! Your purchase automatically enters your in our raffle 😎",
-          "howToJoinProductMessage": "To enter the raffle, purchase any of the [participatingProductsLink]",
-          "participatingProductsWording": "eligible products",
-          "productNoTicket": "Based on your cart items, you won't get a raffle ticket.",
-          "productGotTicket": "This purchase will grant you a ticket to the raffle 😎",
-          "howToJoinEmailTypeRaffle": "Click 'ENTER NOW' below and enter your name and email for your chance to win.",
-          "showRaffleEndInfo": true,
-          "raffleEndDateMessage": "Raffle ends on [endDate]",
-          "raffleEndDateFormat": "%B %e, %Y",
-          "raffleEndTicketsMessage": "Raffle ends after the first [ticketsLimit] participants",
-          "raffleEndTextColor": "#000000",
-          "prizeInfoPopTitle": "Join for a chance to win [prizeDetail]",
-          "showPrizeInfoAdditionalPage": false,
-          "prizeInfoAdditionalPageInfoLink": "",
-          "prizeInfoAdditionalPageInfoTitle": "Learn more"
-        }
+        "settings": {}
+      },
+      "5368581398600051233": {
+        "type": "shopify://apps/bloy-loyalty-rewards/blocks/bloy-popup/97e8894d-00f0-41a9-b986-49828146257c",
+        "disabled": true,
+        "settings": {}
       }
     }
   },
@@ -675,7 +656,8 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".Form__Input {color: #546e7a;}"
+      ".Form__Input {color: #546e7a;}",
+      ".is-sr0nly {position: absolute; left: -10000px;}"
     ]
   }
 }

@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -13,13 +22,13 @@
         "template--18171883487528__046a7b3d-8ce2-4008-bd60-e0a7eb4f2b41-1678312656f1083701-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Andover_Location_2019_3.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Andover_Location_2019_3_1mobile.jpg",
+            "image": "shopify://shop_images/Andover_Location_2019_3.jpg",
+            "mobile_image": "shopify://shop_images/Andover_Location_2019_3_1mobile.jpg",
             "apply_overlay": true,
             "content_position": "middleCenter",
             "subheading": "",
             "title": "Give your outdoor oasis a makeover with our patio furniture repair services.",
-            "content": "<p>Easy pickup and delivery for Palm Beach County, Florida.<\/p>",
+            "content": "<p>Easy pickup and delivery for Palm Beach County, Florida.</p>",
             "button_1_text": "",
             "button_1_link": "",
             "button_2_text": "",
@@ -34,7 +43,7 @@
             "content_position": "bottomLeft",
             "subheading": "Slide title",
             "title": "Tell your story",
-            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+            "content": "<p>Add your own custom content to give more information about your store, availability details...</p>",
             "button_1_text": "",
             "button_1_link": "",
             "button_2_text": "",
@@ -65,33 +74,33 @@
       "settings": {
         "subheading": "We repair patio furniture for homeowners and commercial properties. Explore our refinishing services:",
         "title": "Why replace your favorite garden furniture when you can just fix it?",
-        "html": "<ul>\n   <li>Specializing in true powder-coat paint refinishing<\/li>\n   <li>Commercial Grade Vinyl Strap Replacement<\/li>\n   <li>Commercial Grade Sling Replacement<\/li>\n   <li>Cushion and Pillow Replacements<\/li>\n   <li>Table Top Replacement<\/li>\n<\/ul>"
+        "html": "<ul>\n   <li>Specializing in true powder-coat paint refinishing</li>\n   <li>Commercial Grade Vinyl Strap Replacement</li>\n   <li>Commercial Grade Sling Replacement</li>\n   <li>Cushion and Pillow Replacements</li>\n   <li>Table Top Replacement</li>\n</ul>"
       }
     },
     "bf060085-66ad-4468-9f2f-678116eb6814": {
       "type": "map",
       "settings": {
         "title": "Address",
-        "address": "<p>6101 N Federal Hwy. Boca Raton, Florida 33487<\/p>",
+        "address": "<p>6101 N Federal Hwy. Boca Raton, Florida 33487</p>",
         "hours": "",
         "map_address": "6101 N Federal Hwy. Boca Raton, Florida 33487",
         "map_link_label": "",
         "api_key": "",
         "zoom": 14,
         "map_style": "silver",
-        "image": "shopify:\/\/shop_images\/Basemap_image.png"
+        "image": "shopify://shop_images/Basemap_image.png"
       }
     },
     "eece4408-ce3b-4b4c-af2a-415a201509c0": {
       "type": "image-with-text-block",
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/parts_1_1.png",
+        "image": "shopify://shop_images/parts_1_1.png",
         "background": "#ffffff",
         "text_color": "#1c1b1b",
         "block_size": "large",
         "title": "",
-        "content": "<p>Explore our wide range of patio furniture replacement parts, everything you'll need for easy DIY repairs.<\/p>",
+        "content": "<p>Explore our wide range of patio furniture replacement parts, everything you'll need for easy DIY repairs.</p>",
         "button_label": "Shop Repair Parts",
         "button_link": "",
         "show_parallax": false
@@ -101,12 +110,12 @@
       "type": "image-with-text-block",
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/AndoverCushion-002_ORtd_2.png",
+        "image": "shopify://shop_images/AndoverCushion-002_ORtd_2.png",
         "background": "#ffffff",
         "text_color": "#1c1b1b",
         "block_size": "large",
         "title": "",
-        "content": "<p>Give your patio set a brand new look with our high-quality fabric cushions!<\/p>",
+        "content": "<p>Give your patio set a brand new look with our high-quality fabric cushions!</p>",
         "button_label": "Shop Replacement Cushions",
         "button_link": "#",
         "show_parallax": false
@@ -117,7 +126,7 @@
       "settings": {
         "subheading": "Sub-heading",
         "title": "Your HTML",
-        "html": "<script charset=\"utf-8\" type=\"text\/javascript\" src=\"\/\/js.hsforms.net\/forms\/v2.js\"><\/script>\n        <script>\n          hbspt.forms.create({\n            portalId: \"2312149\",\n            formId: \"565ac665-208a-4b45-a6d6-f60ac6e2b1fe\"\n          });\n        <\/script>"
+        "html": "<script charset=\"utf-8\" type=\"text/javascript\" src=\"//js.hsforms.net/forms/v2.js\"></script>\n        <script>\n          hbspt.forms.create({\n            portalId: \"2312149\",\n            formId: \"565ac665-208a-4b45-a6d6-f60ac6e2b1fe\"\n          });\n        </script>"
       }
     }
   },

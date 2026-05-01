@@ -32,25 +32,25 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify://shop_images/shop.png",
+            "image": "shopify://shop_images/Image_19.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Shop All",
             "title": "Shop All",
             "button_text": "Shop All",
-            "button_link": "shopify://collections/outdoor-seating",
+            "button_link": "shopify://collections/patio-furniture",
             "apply_overlay": true
           }
         },
         "ac497a03-93bd-4a18-8b0b-355e13f73591": {
           "type": "collection",
           "settings": {
-            "collection": "dinning-chairs",
-            "image": "shopify://shop_images/2-dining-chairs.png",
+            "collection": "outdoor-dining-sets",
+            "image": "shopify://shop_images/Mask_group_1.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Dining Chairs",
+            "title": "",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": false
@@ -59,12 +59,12 @@
         "d32286ee-8151-4530-81be-77ca42e218ba": {
           "type": "collection",
           "settings": {
-            "collection": "lounge-chairs-deep-seating",
-            "image": "shopify://shop_images/3-lounge-chairs.png",
+            "collection": "outdoor-patio-sets",
+            "image": "shopify://shop_images/Group_3028.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Lounge Chairs",
+            "title": "Outdoor Patio Sets",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": true
@@ -73,25 +73,26 @@
         "8bdcb90e-f47e-4a0c-a9db-c54eaacfd330": {
           "type": "collection",
           "settings": {
-            "collection": "lounge-and-deep-seating",
-            "image": "shopify://shop_images/4-chaise-loungers.png",
+            "collection": "",
+            "image": "shopify://shop_images/Mask_group.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Chaise Loungers",
+            "title": "Outdoor Seating",
             "button_text": "View products",
-            "button_link": "",
+            "button_link": "shopify://pages/outdoor-seating",
             "apply_overlay": true
           }
         },
         "c068eee9-3dc1-46fe-af8d-f26bf8dd46c3": {
           "type": "collection",
           "settings": {
-            "collection": "rocking-chairs-and-gliders",
+            "collection": "outdoor-lounge",
+            "image": "shopify://shop_images/Mask_group_2.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Swivel Rockers",
+            "title": "Outdoor Lounge",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": true
@@ -100,24 +101,26 @@
         "542c1ffb-299a-4c4d-9b55-f635862e808a": {
           "type": "collection",
           "settings": {
-            "collection": "gliding-chairs",
+            "collection": "",
+            "image": "shopify://shop_images/Mask_group_3.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Gliding Chairs",
+            "title": "Patio Tables",
             "button_text": "View products",
-            "button_link": "",
+            "button_link": "shopify://pages/patio-tables",
             "apply_overlay": true
           }
         },
         "40a21edd-db53-47ec-a47c-6d8112b965ba": {
           "type": "collection",
           "settings": {
-            "collection": "bar-stools",
+            "collection": "patio-umbrellas-bases",
+            "image": "shopify://shop_images/Mask_group_4.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Bar Stools",
+            "title": "Collection name",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": true
@@ -126,11 +129,12 @@
         "966dd87c-fdbb-4ec2-8005-bbbc6292ebf6": {
           "type": "collection",
           "settings": {
-            "collection": "balcony-chairs",
+            "collection": "patio-furniture-covers",
+            "image": "shopify://shop_images/Mask_group_5.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Balcony Chairs",
+            "title": "Collection name",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": true
@@ -139,12 +143,12 @@
         "7d195c04-039a-4b7f-ae7c-bda12ed9ebb0": {
           "type": "collection",
           "settings": {
-            "collection": "sofas-loveseats",
-            "image": "shopify://shop_images/9.png",
+            "collection": "commercial-furniture",
+            "image": "shopify://shop_images/Mask_group_6.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Loveseats",
+            "title": "Collection name",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": true
@@ -153,53 +157,12 @@
         "b5c984f9-885e-41d1-a22b-f9ce484259b6": {
           "type": "collection",
           "settings": {
-            "collection": "sofas",
-            "image": "shopify://shop_images/10.png",
+            "collection": "deals-of-the-month-1",
+            "image": "shopify://shop_images/Mask_group.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Sofas",
-            "button_text": "View products",
-            "button_link": "",
-            "apply_overlay": true
-          }
-        },
-        "54dc446c-c344-46fd-8ddc-22a8d964fe8a": {
-          "type": "collection",
-          "settings": {
-            "collection": "daybeds",
-            "image": "shopify://shop_images/11.png",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "Sub-heading",
-            "title": "Daybeds",
-            "button_text": "View products",
-            "button_link": "",
-            "apply_overlay": true
-          }
-        },
-        "8d60f275-6134-4d6e-ba58-f4e418e47d50": {
-          "type": "collection",
-          "settings": {
-            "collection": "ottomans",
-            "image": "shopify://shop_images/12.jpg",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "Sub-heading",
-            "title": "Ottomans",
-            "button_text": "View products",
-            "button_link": "",
-            "apply_overlay": true
-          }
-        },
-        "collection_WzbJT4": {
-          "type": "collection",
-          "settings": {
-            "collection": "polywood-1",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "Sub-heading",
-            "title": "Polywood",
+            "title": "Collection name",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": true
@@ -216,13 +179,11 @@
         "40a21edd-db53-47ec-a47c-6d8112b965ba",
         "966dd87c-fdbb-4ec2-8005-bbbc6292ebf6",
         "7d195c04-039a-4b7f-ae7c-bda12ed9ebb0",
-        "b5c984f9-885e-41d1-a22b-f9ce484259b6",
-        "54dc446c-c344-46fd-8ddc-22a8d964fe8a",
-        "8d60f275-6134-4d6e-ba58-f4e418e47d50",
-        "collection_WzbJT4"
+        "b5c984f9-885e-41d1-a22b-f9ce484259b6"
       ],
+      "disabled": true,
       "settings": {
-        "title": "Outdoor Seating",
+        "title": "Default Collection Page",
         "sub-heading": "Shop By Category",
         "image_size": "large",
         "add_spacing": true,
@@ -240,74 +201,24 @@
         "template--17486864122152__ec8cbadd-b314-43f6-8b0c-3fa5a1e6e02b-16755240059697acff-0": {
           "type": "look",
           "settings": {
-            "image": "shopify://shop_images/1_7d70eeb0-35d4-4eb7-8442-100d37545cb8.jpg",
+            "image": "shopify://shop_images/87690d9b-ba2b-4dad-914b-82cc712db137.jpg",
             "dot_style": "light",
-            "product_1": "catalina-lounge-chair",
-            "product_1_horizontal_position": 78,
-            "product_1_vertical_position": 60,
-            "product_2": "catalina-ottoman",
-            "product_2_horizontal_position": 38,
-            "product_2_vertical_position": 77,
-            "product_3": "",
-            "product_3_horizontal_position": 35,
-            "product_3_vertical_position": 51
-          }
-        },
-        "f567ea18-4cc7-4a85-aec8-451544adb07b": {
-          "type": "look",
-          "settings": {
-            "image": "shopify://shop_images/2_64377996-0cc7-48c4-9790-693ab3120a91.jpg",
-            "dot_style": "light",
-            "product_1": "patio-furniture-telescope-casual-mgp-sling-chaise-lounge-9n30",
-            "product_1_horizontal_position": 51,
-            "product_1_vertical_position": 74,
-            "product_2": "",
-            "product_2_horizontal_position": 50,
-            "product_2_vertical_position": 50,
-            "product_3": "",
-            "product_3_horizontal_position": 85,
-            "product_3_vertical_position": 85
-          }
-        },
-        "27acfbe9-8791-404d-bb50-c614a55081f1": {
-          "type": "look",
-          "settings": {
-            "image": "shopify://shop_images/3_6be546ab-357d-411d-9431-a5ee46464ef7.jpg",
-            "dot_style": "light",
-            "product_1": "elements-lounge-chair-with-loom-arms-and-back",
-            "product_1_horizontal_position": 50,
-            "product_1_vertical_position": 70,
-            "product_2": "ledge-lounger-14-side-table",
-            "product_2_horizontal_position": 20,
-            "product_2_vertical_position": 54,
-            "product_3": "",
-            "product_3_horizontal_position": 85,
-            "product_3_vertical_position": 85
-          }
-        },
-        "a07198c7-1618-43d4-820a-a67428897db2": {
-          "type": "look",
-          "settings": {
-            "image": "shopify://shop_images/4_8f7e9e66-02fb-4fbf-b94b-d677e6873c25.jpg",
-            "dot_style": "light",
-            "product_1": "telescope-casual-mgp-sling-patio-swivel-rocker-9450",
-            "product_1_horizontal_position": 75,
-            "product_1_vertical_position": 71,
-            "product_2": "telescope-casual-42-by-84-rectangle-mgp-top-dining-table",
-            "product_2_horizontal_position": 52,
-            "product_2_vertical_position": 59,
-            "product_3": "telescope-casual-mgp-sling-patio-arm-chair-9530",
-            "product_3_horizontal_position": 34,
-            "product_3_vertical_position": 69
+            "product_1": "chair-replacement-sling-1pc",
+            "product_1_horizontal_position": 18,
+            "product_1_vertical_position": 78,
+            "product_2": "ebel-replacement-cushions-sofa-n8430",
+            "product_2_horizontal_position": 45,
+            "product_2_vertical_position": 64,
+            "product_3": "outdoor-throw-pillows-decorative-pillows-p1",
+            "product_3_horizontal_position": 61,
+            "product_3_vertical_position": 62
           }
         }
       },
       "block_order": [
-        "template--17486864122152__ec8cbadd-b314-43f6-8b0c-3fa5a1e6e02b-16755240059697acff-0",
-        "f567ea18-4cc7-4a85-aec8-451544adb07b",
-        "27acfbe9-8791-404d-bb50-c614a55081f1",
-        "a07198c7-1618-43d4-820a-a67428897db2"
+        "template--17486864122152__ec8cbadd-b314-43f6-8b0c-3fa5a1e6e02b-16755240059697acff-0"
       ],
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "",
@@ -316,19 +227,20 @@
     },
     "c05c644c-3edc-4710-8f41-1b1feaab9fc7": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "settings": {
         "section_size": "large",
-        "image": "shopify://shop_images/Lake_Shore_05_2012_1_1.jpg",
+        "image": "shopify://shop_images/LF-AtlShowhouse2016-0018-Gen-Nova-SthBch_1_1.jpg",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 40,
         "subheading": "",
-        "title": "Get Inspired With Our Outdoor Seating Stylebook",
-        "content": "<p>Whether you’re looking for the perfect tan or a spot to dry over, we’ve curated the top 5 poolside furnishings to lounge on this summer!</p>",
+        "title": "Spend more time outdoors",
+        "content": "<p>Discover our wide range of patio & outdoor furniture – we have everything from smaller, lightweight aluminum furniture for the balcony, to a variety of sizes and materials, like rattan and solid wood furniture, for your spacious patio. Find the ones that suit your style and space and enjoy outdoor living!</p>",
         "show_on_mobile": false,
         "no_bottom_margin": false,
-        "button_1_text": "Read More",
-        "button_1_link": "shopify://blogs/sunniblog/top-5-must-have-poolside-furniture-for-a-true-staycation",
+        "button_1_text": "",
+        "button_1_link": "",
         "button_2_text": "",
         "button_2_link": "",
         "button_color": "#363636",
@@ -341,7 +253,7 @@
         "template--17486864122152__c28f1d47-d4fb-4dc7-8276-0d825bbd4561-1675524276aae637c6-0": {
           "type": "collection",
           "settings": {
-            "collection": "miami-collection",
+            "collection": "mandalay-collection",
             "dynamic_collection": false,
             "title": "Best Sellers",
             "grid_items_count": 8,
@@ -361,8 +273,9 @@
         "template--17486864122152__c28f1d47-d4fb-4dc7-8276-0d825bbd4561-1675524276aae637c6-0",
         "template--17486864122152__c28f1d47-d4fb-4dc7-8276-0d825bbd4561-1675524276aae637c6-1"
       ],
+      "disabled": true,
       "settings": {
-        "title": "Shop the most popular outdoor seating collections.",
+        "title": "Our widely admired patio replacement slings",
         "layout_mode": "carousel",
         "show_product_info": true,
         "show_vendor": false,
@@ -387,6 +300,7 @@
       "block_order": [
         "template--17486864122152__825354a6-df15-4c92-aba2-3b921d5ffd1c-167552443103ce4182-0"
       ],
+      "disabled": true,
       "settings": {
         "subheading": "Read articles by our experts to answer all your patio questions!",
         "title": "Sunniblog",
@@ -397,6 +311,7 @@
     },
     "d89e36e0-4766-472a-8fc4-e7f8422b2760": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "settings": {
         "section_size": "large",
         "image": "shopify://shop_images/Youtube-section-cover.jpg",
@@ -409,11 +324,105 @@
         "show_on_mobile": true,
         "no_bottom_margin": true,
         "button_1_text": "Visit Our Channel",
-        "button_1_link": "https://www.youtube.com/@sunnilandpatio2441",
+        "button_1_link": "",
         "button_2_text": "",
         "button_2_link": "",
         "button_color": "#363636",
         "button_background": "#ffffff"
+      }
+    },
+    "1774353724c7632b94": {
+      "type": "apps",
+      "blocks": {
+        "bloy_loyalty_rewards_bloy_loyalty_points_program_QanE7C": {
+          "type": "shopify://apps/bloy-loyalty-rewards/blocks/bloy-loyalty-points-program/97e8894d-00f0-41a9-b986-49828146257c",
+          "settings": {
+            "primary_color": "#f94c43",
+            "background_color": "#ffffff",
+            "image": "shopify://shop_images/FU880ECU7_zm.jpg",
+            "heading_text": "Join our SunniPoints program",
+            "subtitle": "Become a member to earn Sunnipoints and gain exclusive rewards for every purchase you make",
+            "primary_button": "Join now",
+            "secondary_button": "Sign in"
+          }
+        }
+      },
+      "block_order": [
+        "bloy_loyalty_rewards_bloy_loyalty_points_program_QanE7C"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1774353804b378f366": {
+      "type": "apps",
+      "blocks": {
+        "bloy_loyalty_rewards_bloy_loyalty_guide_JM4tpX": {
+          "type": "shopify://apps/bloy-loyalty-rewards/blocks/bloy-loyalty-guide/97e8894d-00f0-41a9-b986-49828146257c",
+          "settings": {
+            "background_color": "#fff9f9",
+            "heading_text": "How it works",
+            "join_title": "Join",
+            "join_content": "Sign up or log in to earn Sunnipoints",
+            "earn_title": "Earn",
+            "earn_content": "Earn Sunnipoints for every purchase made",
+            "redeem_title": "Redeem",
+            "redeem_content": "Redeem Sunnipoints for exclusive rewards"
+          }
+        }
+      },
+      "block_order": [
+        "bloy_loyalty_rewards_bloy_loyalty_guide_JM4tpX"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1774356404cb989dcc": {
+      "type": "apps",
+      "blocks": {
+        "bloy_loyalty_rewards_bloy_loyalty_ways_earn_nCcyTe": {
+          "type": "shopify://apps/bloy-loyalty-rewards/blocks/bloy-loyalty-ways-earn/97e8894d-00f0-41a9-b986-49828146257c",
+          "settings": {
+            "primary_color": "#f94c43",
+            "background_color": "#ffffff",
+            "modal_primary_color": "#f94c43",
+            "heading_title": "Ways to earn points",
+            "subtitle": "Complete the actions below to earn points - unlock exclusive rewards by engaging with our store.",
+            "sign_up_button": "Complete",
+            "make_purchase_button": "Make a purchase",
+            "celebrate_birthday_button": "Update",
+            "follow_instagram_button": "Complete",
+            "share_facebook_button": "Complete",
+            "like_facebook_button": "Complete",
+            "follow_x_button": "Complete",
+            "share_x_button": "Complete",
+            "follow_tiktok_button": "Complete",
+            "review_button": "Complete",
+            "refer_button": "Refer",
+            "subscribe_button": "Subscribe",
+            "birthday_title": "Celebrate your birthday",
+            "birthday_subtitle": "Birthday rewards can only be claimed once per year. Please enter or update your birthday at least 30 days in advance.",
+            "birthday_button": "Update",
+            "birthday_updated_title": "Birthday updated",
+            "birthday_updated_subtitle": "You'll automatically receive {x points} on your birthday.",
+            "birthday_updated_button": "Okay",
+            "subscribe_updated_title": "Thank you for your subscription!",
+            "subscribe_updated_subtitle": "You’ve earned {x points} to unlock exciting rewards ahead!"
+          }
+        }
+      },
+      "block_order": [
+        "bloy_loyalty_rewards_bloy_loyalty_ways_earn_nCcyTe"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "17743529814035881d": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
       }
     }
   },
@@ -425,6 +434,10 @@
     "c05c644c-3edc-4710-8f41-1b1feaab9fc7",
     "c28f1d47-d4fb-4dc7-8276-0d825bbd4561",
     "825354a6-df15-4c92-aba2-3b921d5ffd1c",
-    "d89e36e0-4766-472a-8fc4-e7f8422b2760"
+    "d89e36e0-4766-472a-8fc4-e7f8422b2760",
+    "1774353724c7632b94",
+    "1774353804b378f366",
+    "1774356404cb989dcc",
+    "17743529814035881d"
   ]
 }

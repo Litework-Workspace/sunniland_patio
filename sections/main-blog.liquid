@@ -150,6 +150,7 @@
       {% endfor %}
     {% assign tags = tags | split: ',' | uniq %}
           <div class="blog-links">
+          <ul>
           <li class="Linklist__Item">
             <button class="article-filter filter-reset Link Link--primary">All Articles</button>
           </li>
@@ -158,6 +159,7 @@
               <button class="article-filter Link Link--primary">{{ tag }}</button>
             </li>
           {% endfor %}
+          </ul>
           </div>
           <div class="blogSubscribe-Form">
             <h2 class="Heading u-h2">Subscribe to email updates</h2>
@@ -178,6 +180,7 @@
           {% if section.settings.link_1_text != blank or section.settings.link_2_text != blank %}
             <div class="RecentPost">
               <h2 class="Heading u-h2">Recent Posts</h2>
+              <ul>
               {% if section.settings.link_1 != blank %}
               <li class="Linklist__Item">
                 <a href="{{ section.settings.link_1 }}" id="recentPost-Link" class="Link Link--primary">{{ section.settings.link_1_text | escape }}</a>
@@ -188,6 +191,7 @@
                 <a href="{{ section.settings.link_2 }}" id="recentPost-Link" class="Link Link--primary">{{ section.settings.link_2_text | escape }}</a>
               </li>
               {% endif %}
+              </ul>
             </div>
           {% endif %}
         </div>

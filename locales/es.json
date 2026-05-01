@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "404": {
     "general": {
@@ -49,7 +58,7 @@
   "header": {
     "general": {
       "locale": "Idioma",
-      "country": "País\/región"
+      "country": "País/región"
     },
     "navigation": {
       "account": "Cuenta",
@@ -69,7 +78,7 @@
   "footer": {
     "general": {
       "locale": "Idioma",
-      "country": "País\/región"
+      "country": "País/región"
     },
     "newsletter": {
       "success": "Se ha registrado en nuestra newsltetter",
@@ -202,8 +211,8 @@
       "back_to_account": "Volver a la cuenta",
       "cancelled_at": "Pedido cancelado el {{ date }}",
       "placed_at": "Pedido realizado el {{ date }}",
-      "fulfillment_html": "Su pedido ha sido enviado. Realice un seguimiento del envío con el número {{tracking_number}} o haciendo clic aquí: <a href=\"{{tracking_url}}\" class=\"Link Link--underlineNative\" target=\"_blank\">{{tracking_url}}<\/a>",
-      "line_fulfillment_html": "Se envió su producto \"{{product_title}}\". Realice un seguimiento del envío con el número {{tracking_number}} o haciendo clic aquí: <a href=\"{{tracking_url}}\" class=\"Link Link--underlineNative\" target=\"_blank\">{{tracking_url}}<\/a>",
+      "fulfillment_html": "Su pedido ha sido enviado. Realice un seguimiento del envío con el número {{tracking_number}} o haciendo clic aquí: <a href=\"{{tracking_url}}\" class=\"Link Link--underlineNative\" target=\"_blank\">{{tracking_url}}</a>",
+      "line_fulfillment_html": "Se envió su producto \"{{product_title}}\". Realice un seguimiento del envío con el número {{tracking_number}} o haciendo clic aquí: <a href=\"{{tracking_url}}\" class=\"Link Link--underlineNative\" target=\"_blank\">{{tracking_url}}</a>",
       "product": "Producto",
       "quantity": "Cantidad",
       "line_price": "Total",
@@ -310,7 +319,7 @@
     "general": {
       "include_taxes": "Impuestos incluídos",
       "view_in_space": "Ver en tu espacio",
-      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link link--accented\"> Envío calculado <\/a> al finalizar la compra.",
+      "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link link--accented\"> Envío calculado </a> al finalizar la compra.",
       "reviews_count": {
         "zero": "{{ count }} reseña",
         "one": "{{ count }} reseña",
@@ -363,8 +372,8 @@
       "check_other_stores": "Consultar disponibilidad en otras tiendas",
       "pick_up_available": "Recogida disponible",
       "pick_up_currently_unavailable": "Recogida no disponible",
-      "pick_up_available_at_html": "Recogida disponible en <strong>{{ location_name }}<\/strong> ",
-      "pick_up_unavailable_at_html": "Recogida no disponible actualmente en <strong> {{location_name}} <\/strong>"
+      "pick_up_available_at_html": "Recogida disponible en <strong>{{ location_name }}</strong> ",
+      "pick_up_unavailable_at_html": "Recogida no disponible actualmente en <strong> {{location_name}} </strong>"
     }
   },
   "gift_card": {
@@ -423,7 +432,7 @@
   },
   "date_formats": {
     "month_day_year": "%d %B, %Y",
-    "month_day_year_short": "%d\/%m\/%Y",
+    "month_day_year_short": "%d/%m/%Y",
     "month_day_year_time": "%d %B, %Y a las %I:%M%p"
   },
   "pagefly": {

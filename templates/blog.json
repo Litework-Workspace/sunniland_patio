@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "ff851b78-819c-400c-b57c-6a1728170480": {
@@ -6,15 +15,15 @@
         "template--17486863434024__ff851b78-819c-400c-b57c-6a1728170480-16766370017e5d33d8-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/850_2780_MOD_1.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/850_2780_MOD_1_1.jpg",
+            "image": "shopify://shop_images/850_2780_MOD_1.jpg",
+            "mobile_image": "shopify://shop_images/850_2780_MOD_1_1.jpg",
             "apply_overlay": true,
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "The Future Of Patio Furniture",
-            "content": "<p>With function and design in mind, here's 3 ways in which the patio furniture industry is going to change in the near future.<\/p>",
+            "content": "<p>With function and design in mind, here's 3 ways in which the patio furniture industry is going to change in the near future.</p>",
             "button_1_text": "Read More",
-            "button_1_link": "https:\/\/www.sunnilandpatio.com\/blogs\/sunniblog\/the-future-of-patio-furniture",
+            "button_1_link": "https://www.sunnilandpatio.com/blogs/sunniblog/the-future-of-patio-furniture",
             "button_2_text": "",
             "button_2_link": ""
           }
@@ -27,7 +36,7 @@
             "content_position": "bottomLeft",
             "subheading": "Slide title",
             "title": "Tell your story",
-            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+            "content": "<p>Add your own custom content to give more information about your store, availability details...</p>",
             "button_1_text": "",
             "button_1_link": "",
             "button_2_text": "",
@@ -52,7 +61,7 @@
     "main": {
       "type": "main-blog",
       "settings": {
-        "logo": "shopify:\/\/shop_images\/Sunniblog.png",
+        "logo": "shopify://shop_images/Sunniblog.png",
         "show_rss": false,
         "show_tags": false,
         "show_featured_article": false,
@@ -71,7 +80,7 @@
         "quote": {
           "type": "quote",
           "settings": {
-            "content": "<p>You can use this element to add a quote, content...<\/p>",
+            "content": "<p>You can use this element to add a quote, content...</p>",
             "author": ""
           }
         }

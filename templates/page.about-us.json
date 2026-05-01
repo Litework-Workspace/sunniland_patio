@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "0fa506b9-dd53-4820-9bd4-5ba6acfaf728": {
@@ -6,13 +15,13 @@
         "template--17486863565096__0fa506b9-dd53-4820-9bd4-5ba6acfaf728-1681865118fb48cdc3-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_9235_1.png",
-            "mobile_image": "shopify:\/\/shop_images\/IMG_9235_1_copy.jpg",
+            "image": "shopify://shop_images/IMG_9235_1.png",
+            "mobile_image": "shopify://shop_images/IMG_9235_1_copy.jpg",
             "apply_overlay": true,
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "Our Mission",
-            "content": "<p>At Sunniland Patio Furniture, our mission is to enhance your outdoor living experience by providing top-quality patio furniture and exceptional customer service. Plus we seek to keep furniture out of landfills by empowering our customers to renew it and reuse it!<\/p>",
+            "content": "<p>At Sunniland Patio Furniture, our mission is to enhance your outdoor living experience by providing top-quality patio furniture and exceptional customer service. Plus we seek to keep furniture out of landfills by empowering our customers to renew it and reuse it!</p>",
             "button_1_text": "",
             "button_1_link": "",
             "button_2_text": "",
@@ -48,8 +57,7 @@
     "main": {
       "type": "main-contact",
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     },
     "1ddf2a8b-0421-41fe-b9bf-fd09ffe57f58": {
       "type": "custom-liquid",
@@ -57,7 +65,7 @@
       "settings": {
         "subheading": "",
         "title": "",
-        "liquid": "<div class=\"About-Us-Page\">\n  <div class=\"history_container\">\n    <div class=\"history_left\">\n      <h2 class=\"history_title\">History of Sunniland - The beginnings<\/h2>\n      <p class=\"history_content\">Founded in 1972, SunnilandPatio has been providing a superior level of service in patio retail for more than 50 years. \n      <br>\n      <br>\n      We have been helping homeowners just like you enjoy better outdoor living. Our reputation for integrity, quality, and reliability sets the standard for the rest of the retail patio industry.\n      <br>\n      <br>\n      Founded in 1972, SunnilandPatio has been providing a superior level of service in patio retail for more than 50 years. \n      <br>\n      <br>\n      We have been helping homeowners just like you enjoy better outdoor living. Our reputation for integrity, quality, and reliability sets the standard for the rest of the retail patio industry.<\/p>\n      <img src=\"{{ 'Frame-58.png' | asset_url }}\" alt=\"\">\n    <\/div>\n    <div class=\"history_right\">\n      <img src=\"{{ 'Group-3239.png' | asset_url }}\" alt=\"\">\n    <\/div>\n  <\/div>\n<\/div>"
+        "liquid": "<div class=\"About-Us-Page\">\n  <div class=\"history_container\">\n    <div class=\"history_left\">\n      <h2 class=\"history_title\">History of Sunniland - The beginnings</h2>\n      <p class=\"history_content\">Founded in 1972, SunnilandPatio has been providing a superior level of service in patio retail for more than 50 years. \n      <br>\n      <br>\n      We have been helping homeowners just like you enjoy better outdoor living. Our reputation for integrity, quality, and reliability sets the standard for the rest of the retail patio industry.\n      <br>\n      <br>\n      Founded in 1972, SunnilandPatio has been providing a superior level of service in patio retail for more than 50 years. \n      <br>\n      <br>\n      We have been helping homeowners just like you enjoy better outdoor living. Our reputation for integrity, quality, and reliability sets the standard for the rest of the retail patio industry.</p>\n      <img src=\"{{ 'Frame-58.png' | asset_url }}\" alt=\"\">\n    </div>\n    <div class=\"history_right\">\n      <img src=\"{{ 'Group-3239.png' | asset_url }}\" alt=\"\">\n    </div>\n  </div>\n</div>"
       }
     },
     "f6be4951-2d1a-4da4-9b2f-78eb71c14b05": {
@@ -66,25 +74,25 @@
         "75329ea7-494e-41d2-8695-6b9d9192160e": {
           "type": "image_text",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Artboard_1_3x_copy.png",
+            "image": "shopify://shop_images/Artboard_1_3x_copy.png",
             "heading": "Service",
-            "content": "<p>We are dedicated to providing exceptional customer service, going above and beyond to ensure your satisfaction and exceed your expectations.<\/p>"
+            "content": "<p>We are dedicated to providing exceptional customer service, going above and beyond to ensure your satisfaction and exceed your expectations.</p>"
           }
         },
         "1640afbf-5180-4faa-a163-3bd89b52886d": {
           "type": "image_text",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Artboard_1_3x_d6eaba55-38b2-44d8-94e9-bdd6f6a04958.png",
+            "image": "shopify://shop_images/Artboard_1_3x_d6eaba55-38b2-44d8-94e9-bdd6f6a04958.png",
             "heading": "Honesty & Fairness",
-            "content": "<p>We believe in conducting business with integrity, maintaining transparent and honest practices in all our interactions, while treating everyone with fairness and respect.<\/p>"
+            "content": "<p>We believe in conducting business with integrity, maintaining transparent and honest practices in all our interactions, while treating everyone with fairness and respect.</p>"
           }
         },
         "6baf6eb8-cd12-4ff8-bc51-a2fcd43be105": {
           "type": "image_text",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Positive_Impact_3x_3fd680a9-2fd1-4495-a281-20193bf39898.png",
+            "image": "shopify://shop_images/Positive_Impact_3x_3fd680a9-2fd1-4495-a281-20193bf39898.png",
             "heading": "Positive Impact",
-            "content": "<p>We strive to keep furniture out of landfills by providing the tutorials and parts our customers need to refresh and reuse their old patio furniture. <\/p>"
+            "content": "<p>We strive to keep furniture out of landfills by providing the tutorials and parts our customers need to refresh and reuse their old patio furniture. </p>"
           }
         }
       },
@@ -95,7 +103,7 @@
       ],
       "settings": {
         "title": "Values We Believe",
-        "content": "<p>Guided by our values of service, honesty, fairness, and positive impact we are dedicated to providing exceptional customer service, personalized recommendations, and a friendly atmosphere. <br\/><br\/>For the last 50 years we have been serving generations of families to build their dream patios. Inheriting the craft from his mother & father, Jeff Bender and his team of experts is here to help you find all your patio furniture and fixtures in one place!<\/p>"
+        "content": "<p>Guided by our values of service, honesty, fairness, and positive impact we are dedicated to providing exceptional customer service, personalized recommendations, and a friendly atmosphere. <br/><br/>For the last 50 years we have been serving generations of families to build their dream patios. Inheriting the craft from his mother & father, Jeff Bender and his team of experts is here to help you find all your patio furniture and fixtures in one place!</p>"
       }
     },
     "e222108a-67ce-48ff-87b8-accb7f5fac72": {
@@ -105,11 +113,11 @@
           "type": "richtext",
           "settings": {
             "title": "History of Sunniland - The beginnings",
-            "content": "<p>Founded in 1972 by John, a visionary entrepreneur who started the business by purchasing a furniture distribution route. Traveling up and down the coast of Florida, he introduced gold anodized furniture to local stores and condominiums. John's dedication and passion for the industry laid the foundation for its success.<\/p><p>John involved his family from the very beginning and his sons grew up immersed in the business. From early childhood memories of weaving straps onto furniture at less than 10 years old, to working in the back room as teenagers, they have experienced the growth and evolution of Sunniland Patio firsthand. <br\/><br\/>John instilled a motto that guides  every business action: \"Be honest and fair. Always return calls.\" <\/p>",
-            "image_1": "shopify:\/\/shop_images\/Group_3229.png",
-            "image_2": "shopify:\/\/shop_images\/Group_3232.png",
-            "mobile-top-img": "shopify:\/\/shop_images\/Group_3229.png",
-            "mobile-bottom-img": "shopify:\/\/shop_images\/Group_3232.png",
+            "content": "<p>Founded in 1972 by John, a visionary entrepreneur who started the business by purchasing a furniture distribution route. Traveling up and down the coast of Florida, he introduced gold anodized furniture to local stores and condominiums. John's dedication and passion for the industry laid the foundation for its success.</p><p>John involved his family from the very beginning and his sons grew up immersed in the business. From early childhood memories of weaving straps onto furniture at less than 10 years old, to working in the back room as teenagers, they have experienced the growth and evolution of Sunniland Patio firsthand. <br/><br/>John instilled a motto that guides  every business action: \"Be honest and fair. Always return calls.\" </p>",
+            "image_1": "shopify://shop_images/Group_3229.png",
+            "image_2": "shopify://shop_images/Group_3232.png",
+            "mobile-top-img": "shopify://shop_images/Group_3229.png",
+            "mobile-bottom-img": "shopify://shop_images/Group_3232.png",
             "banner_title": "Banner Title Mobile",
             "banner_subheading": "Banner Subheading Mobile"
           }
@@ -117,7 +125,7 @@
         "template--18832775053608__e222108a-67ce-48ff-87b8-accb7f5fac72-168351692035ef99db-1": {
           "type": "image",
           "settings": {
-            "side_image": "shopify:\/\/shop_images\/Group_3239.png"
+            "side_image": "shopify://shop_images/Group_3239.png"
           }
         }
       },
@@ -137,13 +145,13 @@
       ],
       "settings": {
         "section_size": "large",
-        "image": "shopify:\/\/shop_images\/Sustainability_Banner.png",
+        "image": "shopify://shop_images/Sustainability_Banner.png",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 30,
         "subheading": "",
         "title": "Through The Years",
-        "content": "<p>Since the 1970s, Sunniland Patio Furniture has undergone gradual growth and expansion. Our store has expanded in size, allowing us to showcase an extensive collection of patio furniture to meet the evolving needs and preferences of our customers. Over the years, we have witnessed remarkable changes in furniture styles and types, and we take pride in offering a diverse range of options to suit various outdoor aesthetics.<\/p>",
+        "content": "<p>Since the 1970s, Sunniland Patio Furniture has undergone gradual growth and expansion. Our store has expanded in size, allowing us to showcase an extensive collection of patio furniture to meet the evolving needs and preferences of our customers. Over the years, we have witnessed remarkable changes in furniture styles and types, and we take pride in offering a diverse range of options to suit various outdoor aesthetics.</p>",
         "show_on_mobile": true,
         "no_bottom_margin": true,
         "button_1_text": "",
@@ -161,13 +169,13 @@
           "type": "richtext",
           "settings": {
             "title": "A Family Legacy",
-            "content": "<p>John's legacy in the business was defined by his honesty, fairness, and approachability. He always strived to do his best so that after a day's hard work he could sleep soundly at night. <\/p><p>Being passed down from father to son, Sunniland Patio Furniture carries forth John's principles by maintaining the same high standards he set. <\/p><p>Sunniland's commitment to honesty, fairness, and approachability remains at the core of the operations and it's something customers can sense as they walk through the door!<\/p>",
-            "image_1": "shopify:\/\/shop_images\/IMG_9224_2.png",
-            "image_2": "shopify:\/\/shop_images\/IMG_9226_2.png",
-            "mobile-top-img": "shopify:\/\/shop_images\/IMG_9224_2.png",
-            "mobile-bottom-img": "shopify:\/\/shop_images\/IMG_9226_2.png",
-            "bottom_banner": "shopify:\/\/shop_images\/Frame_64.png",
-            "bottom_banner-mobile": "shopify:\/\/shop_images\/IMG_9238_1_1.png",
+            "content": "<p>John's legacy in the business was defined by his honesty, fairness, and approachability. He always strived to do his best so that after a day's hard work he could sleep soundly at night. </p><p>Being passed down from father to son, Sunniland Patio Furniture carries forth John's principles by maintaining the same high standards he set. </p><p>Sunniland's commitment to honesty, fairness, and approachability remains at the core of the operations and it's something customers can sense as they walk through the door!</p>",
+            "image_1": "shopify://shop_images/IMG_9224_2.png",
+            "image_2": "shopify://shop_images/IMG_9226_2.png",
+            "mobile-top-img": "shopify://shop_images/IMG_9224_2.png",
+            "mobile-bottom-img": "shopify://shop_images/IMG_9226_2.png",
+            "bottom_banner": "shopify://shop_images/Frame_64.png",
+            "bottom_banner-mobile": "shopify://shop_images/IMG_9238_1_1.png",
             "banner_title": "\"Our biggest accomplishment is carrying on a successful family business that serves the community for over 50 years!\"",
             "banner_subheading": "Jeff B."
           }
@@ -175,7 +183,7 @@
         "template--18832775053608__358fe575-1d69-4eea-822b-c7e6fa8b6c56-168351692035ef99db-1": {
           "type": "image",
           "settings": {
-            "side_image": "shopify:\/\/shop_images\/Mask_group_8.png"
+            "side_image": "shopify://shop_images/Mask_group_8.png"
           }
         }
       },

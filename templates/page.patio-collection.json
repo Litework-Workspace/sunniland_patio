@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -9,13 +18,11 @@
     },
     "8ca26768-041f-40eb-b635-d33e84b5b2e0": {
       "type": "custom-html",
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "subheading": "",
         "title": "",
-        "html": "<p class=\"Free-SHipping_Banner\"><b>Free Shipping<\/b> on all patio furniture orders above $500. No code needed.<\/p>"
+        "html": "<p class=\"Free-SHipping_Banner\"><b>Free Shipping</b> on all patio furniture orders above $500. No code needed.</p>"
       }
     },
     "fb3facf5-59a5-46dd-a4b9-3f6b442916de": {
@@ -25,13 +32,13 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Image_19.png",
+            "image": "shopify://shop_images/Image_19.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Shop All",
             "title": "Shop All",
             "button_text": "Shop All",
-            "button_link": "shopify:\/\/collections\/patio-furniture",
+            "button_link": "shopify://collections/patio-furniture",
             "apply_overlay": true
           }
         },
@@ -39,7 +46,7 @@
           "type": "collection",
           "settings": {
             "collection": "outdoor-dining-sets",
-            "image": "shopify:\/\/shop_images\/Mask_group_1.jpg",
+            "image": "shopify://shop_images/Mask_group_1.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -53,7 +60,7 @@
           "type": "collection",
           "settings": {
             "collection": "outdoor-patio-sets",
-            "image": "shopify:\/\/shop_images\/Group_3028.png",
+            "image": "shopify://shop_images/Group_3028.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -67,13 +74,13 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Mask_group.png",
+            "image": "shopify://shop_images/Mask_group.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "Outdoor Seating",
             "button_text": "View products",
-            "button_link": "shopify:\/\/pages\/outdoor-seating",
+            "button_link": "shopify://pages/outdoor-seating",
             "apply_overlay": true
           }
         },
@@ -81,7 +88,7 @@
           "type": "collection",
           "settings": {
             "collection": "outdoor-lounge",
-            "image": "shopify:\/\/shop_images\/Mask_group_2.png",
+            "image": "shopify://shop_images/Mask_group_2.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -95,13 +102,13 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Mask_group_3.png",
+            "image": "shopify://shop_images/Mask_group_3.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "Patio Tables",
             "button_text": "View products",
-            "button_link": "shopify:\/\/pages\/patio-tables",
+            "button_link": "shopify://pages/patio-tables",
             "apply_overlay": true
           }
         },
@@ -109,13 +116,13 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Mask_group_4.png",
+            "image": "shopify://shop_images/Mask_group_4.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "Patio Umbrellas",
             "button_text": "View products",
-            "button_link": "shopify:\/\/pages\/umbrellas-main-page",
+            "button_link": "shopify://pages/umbrellas-main-page",
             "apply_overlay": true
           }
         },
@@ -123,7 +130,7 @@
           "type": "collection",
           "settings": {
             "collection": "patio-furniture-covers",
-            "image": "shopify:\/\/shop_images\/Mask_group_5.png",
+            "image": "shopify://shop_images/Mask_group_5.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -137,7 +144,7 @@
           "type": "collection",
           "settings": {
             "collection": "commercial-furniture",
-            "image": "shopify:\/\/shop_images\/Mask_group_6.png",
+            "image": "shopify://shop_images/Mask_group_6.png",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -151,7 +158,7 @@
           "type": "collection",
           "settings": {
             "collection": "deals-of-the-month-1",
-            "image": "shopify:\/\/shop_images\/Mask_group.jpg",
+            "image": "shopify://shop_images/Mask_group.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -193,7 +200,7 @@
         "template--17486864122152__ec8cbadd-b314-43f6-8b0c-3fa5a1e6e02b-16755240059697acff-0": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1.1.jpg",
+            "image": "shopify://shop_images/1.1.jpg",
             "dot_style": "light",
             "product_1": "andover-recliner-item-510452",
             "product_1_horizontal_position": 18,
@@ -209,7 +216,7 @@
         "5cf0a172-efbe-483c-a1c2-1e9dbcad24f4": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_e120c87e-ada7-41dd-9da4-6fdbcab2a73a.jpg",
+            "image": "shopify://shop_images/2_e120c87e-ada7-41dd-9da4-6fdbcab2a73a.jpg",
             "dot_style": "light",
             "product_1": "telescope-casual-bazza-sling-cafe-chair",
             "product_1_horizontal_position": 16,
@@ -225,7 +232,7 @@
         "7729b54e-9684-4ed8-baf2-7d385cee91bf": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3_62e4c77e-83b1-4c32-a190-a8e6d51c8b93.jpg",
+            "image": "shopify://shop_images/3_62e4c77e-83b1-4c32-a190-a8e6d51c8b93.jpg",
             "dot_style": "light",
             "product_1": "mandalay-loveseat",
             "product_1_horizontal_position": 52,
@@ -241,7 +248,7 @@
         "9fdc57dc-f0cb-42ed-84cd-5542ddcd79f0": {
           "type": "look",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4_e7ef6f7d-8cca-47c7-a5d3-23c686011089.jpg",
+            "image": "shopify://shop_images/4_e7ef6f7d-8cca-47c7-a5d3-23c686011089.jpg",
             "dot_style": "light",
             "product_1": "newport-club-chair-with-cushions-in-cast-silver",
             "product_1_horizontal_position": 36,
@@ -271,13 +278,13 @@
       "type": "image-with-text-overlay",
       "settings": {
         "section_size": "large",
-        "image": "shopify:\/\/shop_images\/LF-AtlShowhouse2016-0018-Gen-Nova-SthBch_1_1_1.jpg",
+        "image": "shopify://shop_images/LF-AtlShowhouse2016-0018-Gen-Nova-SthBch_1_1_1.jpg",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 35,
         "subheading": "",
         "title": "High Quality Patio Furniture",
-        "content": "<p>Discover our wide range of patio & outdoor furniture – we have everything from smaller, lightweight aluminum furniture for the balcony, to a variety of sizes and materials, like rattan and solid wood furniture, for your spacious patio. Find the ones that suit your style and enjoy outdoor living!<\/p>",
+        "content": "<p>Discover our wide range of patio & outdoor furniture – we have everything from smaller, lightweight aluminum furniture for the balcony, to a variety of sizes and materials, like rattan and solid wood furniture, for your spacious patio. Find the ones that suit your style and enjoy outdoor living!</p>",
         "show_on_mobile": false,
         "no_bottom_margin": false,
         "button_1_text": "",
@@ -352,17 +359,17 @@
       "type": "image-with-text-overlay",
       "settings": {
         "section_size": "large",
-        "image": "shopify:\/\/shop_images\/Youtube-section-cover.jpg",
+        "image": "shopify://shop_images/Youtube-section-cover.jpg",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 30,
         "subheading": "",
         "title": "Find Sunniland on Youtube",
-        "content": "<p>Learn how to repair your patio furniture the easy way with our DIY video tutorials.<\/p>",
+        "content": "<p>Learn how to repair your patio furniture the easy way with our DIY video tutorials.</p>",
         "show_on_mobile": true,
         "no_bottom_margin": true,
         "button_1_text": "Visit Our Channel",
-        "button_1_link": "https:\/\/www.youtube.com\/@sunnilandpatio2441",
+        "button_1_link": "https://www.youtube.com/@sunnilandpatio2441",
         "button_2_text": "",
         "button_2_link": "",
         "button_color": "#363636",
