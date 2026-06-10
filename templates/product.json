@@ -23,9 +23,13 @@
           "settings": {
             "show_vendor": true,
             "show_sku": false,
-            "show_product_rating": true,
+            "show_product_rating": false,
             "show_taxes_included": false
           }
+        },
+        "judge_me_reviews_preview_badge_MKdzeC": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         },
         "cb196c07-9c2e-4e96-ad2d-b74ffa172298": {
           "type": "hulkapps_options",
@@ -104,16 +108,12 @@
             "content_5": "",
             "content_5_collections": ""
           }
-        },
-        "judge_me_reviews_preview_badge_MKdzeC": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "disabled": true,
-          "settings": {}
         }
       },
       "block_order": [
         "liquid_A6YqNp",
         "product_meta",
+        "judge_me_reviews_preview_badge_MKdzeC",
         "cb196c07-9c2e-4e96-ad2d-b74ffa172298",
         "variant_selector",
         "quantity_selector",
@@ -122,8 +122,7 @@
         "share_buttons",
         "7d9a9524-f2e9-42f1-9e7f-1d36b38e11f4",
         "69b5edb8-6071-4233-956f-022465ab5414",
-        "338c321b-e54c-4fe5-8667-bc595493dd2b",
-        "judge_me_reviews_preview_badge_MKdzeC"
+        "338c321b-e54c-4fe5-8667-bc595493dd2b"
       ],
       "settings": {
         "image_size": "large",
@@ -151,6 +150,27 @@
       ],
       "settings": {
         "include_margins": true
+      }
+    },
+    "febe0032-e415-45f8-b840-cd4ed71979b9": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "large",
+        "image": "shopify://shop_images/Youtube-section-cover.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 10,
+        "subheading": "",
+        "title": "Find Sunniland on Youtube",
+        "content": "<p>Learn how to repair your patio furniture the easy way with our do-it-yourself video tutorials on our Youtube channel.</p>",
+        "show_on_mobile": true,
+        "no_bottom_margin": true,
+        "button_1_text": "Subscribe",
+        "button_1_link": "https://www.youtube.com/@sunnilandpatio2441",
+        "button_2_text": "",
+        "button_2_link": "",
+        "button_color": "#363636",
+        "button_background": "#ffffff"
       }
     },
     "a3b8ac53-c548-48a5-9ee4-9cd222e76ca7": {
@@ -208,27 +228,6 @@
         "show_product_info": true,
         "show_vendor": false,
         "show_color_swatch": false
-      }
-    },
-    "febe0032-e415-45f8-b840-cd4ed71979b9": {
-      "type": "image-with-text-overlay",
-      "settings": {
-        "section_size": "large",
-        "image": "shopify://shop_images/Youtube-section-cover.jpg",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 10,
-        "subheading": "",
-        "title": "Find Sunniland on Youtube",
-        "content": "<p>Learn how to repair your patio furniture the easy way with our do-it-yourself video tutorials on our Youtube channel.</p>",
-        "show_on_mobile": true,
-        "no_bottom_margin": true,
-        "button_1_text": "Subscribe",
-        "button_1_link": "https://www.youtube.com/@sunnilandpatio2441",
-        "button_2_text": "",
-        "button_2_link": "",
-        "button_color": "#363636",
-        "button_background": "#ffffff"
       }
     }
   },
