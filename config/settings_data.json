@@ -83,8 +83,8 @@
           "home_page_only": false,
           "background": "#000000",
           "text_color": "#ffffff",
-          "content": "Upgrade your patio before Summer ends ☀️ 10% off Polywood & Ledge Lounger - online only.",
-          "link": "shopify://collections/polywood-1"
+          "content": "This Labor Day, upgrade your patio! Shop $1,000 or more online and get $100 off!",
+          "link": "shopify://collections"
         }
       },
       "header": {
@@ -304,8 +304,6 @@
         "settings": {
           "greeting_message": "👋 Hello! Please message us if you have questions, or give an idea of what you’re looking for. We’re happy to make recommendations.",
           "button_color": "#ce4737",
-          "secondary_color": "#FFFFFF",
-          "ternary_color": "#6A6A6A",
           "button_icon": "chat_bubble",
           "button_text": "no_text",
           "button_horizontal_position": "bottom_right",
