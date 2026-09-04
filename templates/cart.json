@@ -28,15 +28,6 @@
     },
     "1788528251fc9d774b": {
       "type": "apps",
-      "blocks": {
-        "appstle_loyalty_appstle_loyalty_redeem_widget_bMNYfe": {
-          "type": "shopify://apps/appstle-loyalty/blocks/appstle-loyalty-redeem-widget/1886c0f8-77b6-4a85-af11-b43cc17ae1c1",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "appstle_loyalty_appstle_loyalty_redeem_widget_bMNYfe"
-      ],
       "settings": {
         "include_margins": true
       }
