@@ -58,6 +58,10 @@
             "show_payment_button": false
           }
         },
+        "appstle_loyalty_appstle_loyalty_acquire_points_inMmUx": {
+          "type": "shopify://apps/appstle-loyalty/blocks/appstle-loyalty-acquire-points/1886c0f8-77b6-4a85-af11-b43cc17ae1c1",
+          "settings": {}
+        },
         "description": {
           "type": "description",
           "settings": {}
@@ -118,6 +122,7 @@
         "variant_selector",
         "quantity_selector",
         "buy_buttons",
+        "appstle_loyalty_appstle_loyalty_acquire_points_inMmUx",
         "description",
         "share_buttons",
         "7d9a9524-f2e9-42f1-9e7f-1d36b38e11f4",
