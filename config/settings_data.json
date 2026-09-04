@@ -324,6 +324,11 @@
           "agent_activator_font_size": 15,
           "agent_border_radius": 16
         }
+      },
+      "16237003337219470499": {
+        "type": "shopify://apps/appstle-loyalty/blocks/appstle-loyalty/1886c0f8-77b6-4a85-af11-b43cc17ae1c1",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
