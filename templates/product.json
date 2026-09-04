@@ -31,6 +31,10 @@
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         },
+        "appstle_loyalty_appstle_loyalty_acquire_points_inMmUx": {
+          "type": "shopify://apps/appstle-loyalty/blocks/appstle-loyalty-acquire-points/1886c0f8-77b6-4a85-af11-b43cc17ae1c1",
+          "settings": {}
+        },
         "cb196c07-9c2e-4e96-ad2d-b74ffa172298": {
           "type": "hulkapps_options",
           "settings": {}
@@ -57,10 +61,6 @@
             "show_price_in_button": false,
             "show_payment_button": false
           }
-        },
-        "appstle_loyalty_appstle_loyalty_acquire_points_inMmUx": {
-          "type": "shopify://apps/appstle-loyalty/blocks/appstle-loyalty-acquire-points/1886c0f8-77b6-4a85-af11-b43cc17ae1c1",
-          "settings": {}
         },
         "description": {
           "type": "description",
@@ -118,11 +118,11 @@
         "liquid_A6YqNp",
         "product_meta",
         "judge_me_reviews_preview_badge_MKdzeC",
+        "appstle_loyalty_appstle_loyalty_acquire_points_inMmUx",
         "cb196c07-9c2e-4e96-ad2d-b74ffa172298",
         "variant_selector",
         "quantity_selector",
         "buy_buttons",
-        "appstle_loyalty_appstle_loyalty_acquire_points_inMmUx",
         "description",
         "share_buttons",
         "7d9a9524-f2e9-42f1-9e7f-1d36b38e11f4",
