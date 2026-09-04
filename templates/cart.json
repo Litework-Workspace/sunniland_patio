@@ -11,15 +11,40 @@
   "sections": {
     "main": {
       "type": "main-cart",
-      "settings": {}
+      "settings": {
+        "show_shipping_estimator": true,
+        "shipping_estimator_default_country": "United States"
+      }
     },
     "recently-viewed-products": {
       "type": "recently-viewed-products",
-      "settings": {}
+      "settings": {
+        "title": "Recently viewed",
+        "sub-heading": "",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false
+      }
+    },
+    "1788528251fc9d774b": {
+      "type": "apps",
+      "blocks": {
+        "appstle_loyalty_appstle_loyalty_redeem_widget_bMNYfe": {
+          "type": "shopify://apps/appstle-loyalty/blocks/appstle-loyalty-redeem-widget/1886c0f8-77b6-4a85-af11-b43cc17ae1c1",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "appstle_loyalty_appstle_loyalty_redeem_widget_bMNYfe"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
-    "recently-viewed-products"
+    "recently-viewed-products",
+    "1788528251fc9d774b"
   ]
 }
